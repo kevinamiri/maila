@@ -1,0 +1,21 @@
+{
+  "copytools": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-copytools-copytools-130747-authRole",
+      "UnauthRoleArn": "arn:aws:iam::316529357869:role/amplify-copytools-copytools-130747-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::316529357869:role/amplify-copytools-copytools-130747-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-copytools-copytools-130747-deployment",
+      "UnauthRoleName": "amplify-copytools-copytools-130747-unauthRole",
+      "StackName": "amplify-copytools-copytools-130747",
+      "StackId": "arn:aws:cloudformation:us-east-2:316529357869:stack/amplify-copytools-copytools-130747/3f127620-d8ca-11eb-a88d-06b880c23a16",
+      "AmplifyAppId": "dh95j1gdqylf4"
+    },
+    "categories": {
+      "auth": {
+        "copytools37c33678": {},
+        "true": {}
+      }
+    }
+  }
+}
