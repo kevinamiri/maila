@@ -151,8 +151,10 @@ const themesOptions = {
         secondary: '#6b778c'
       },
       warning: {
-        contrastText: '#ffffff',
-        main: '#ff9800'
+        main: '#FFB020',
+        light: '#FFBF4C',
+        dark: '#B27B16',
+        contrastText: '#FFFFFF',
       }
     },
     shadows: lightShadows
@@ -197,8 +199,10 @@ const themesOptions = {
         contrastText: 'rgba(0, 0, 0, 0.87)'
       },
       warning: {
-        contrastText: '#ffffff',
-        main: '#ff9800'
+        main: '#FFB020',
+        light: '#FFBF4C',
+        dark: '#B27B16',
+        contrastText: '#111827',
       }
     },
     shadows: darkShadows
