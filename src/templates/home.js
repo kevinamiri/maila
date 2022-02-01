@@ -56,9 +56,10 @@ export const pageQuery = graphql`query HomePageQuery($id: String!) {
       node {
         articles {
           en
-          zh
+          da
           sv
-          de
+          fi
+          no
         }
       }
     }
@@ -79,7 +80,6 @@ export const pageQuery = graphql`query HomePageQuery($id: String!) {
           gatsbyImageData(width: 248, quality: 100, layout: CONSTRAINED)
         }
       }
-      heading01
       T0152
       H0121
       H0118 {

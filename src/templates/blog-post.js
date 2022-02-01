@@ -67,10 +67,10 @@ export const pageQuery = graphql`query BlogPostByID($id: String!) {
       node {
         articles {
           en
-          fa
-          zh
+          no
+          fi
           sv
-          de
+          da
         }
       }
     }

@@ -93,26 +93,9 @@ export const pageQuery = graphql`query AboutPageQuery($id: String!) {
         articles {
           en
           sv
-          fr
-          de
-          nl
-          pl
-          ru
-          it
-          es
-          pt
           da
-          fi
-          hu
-          el
-          cs
-          sk
-          lt
-          lv
-          ro
           no
-          bg
-          zh
+          fi
         }
       }
     }

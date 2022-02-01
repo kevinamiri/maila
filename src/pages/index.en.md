@@ -4,7 +4,7 @@ title: "AI copywriting tools"
 description: "AI-powered copywriting tools are designed to help you quickly write content for your brand."
 templateKey: home
 tags:
-  - copy.tools
+  - Maila.ai
 lang: en
 date: 2020-12-25
 image: ../img/logo.png
@@ -27,7 +27,7 @@ B100:
   - "Crafting powerful and memorable taglines that become the heart of your brand."
   - "Define your brand voice and tailor every aspect of your brand to communicate its strengths and values."
   - "Use these powerful words to create a strong foundation for your content landing pages."
-H0121: "Copy.Tools is an AI-powered Copywriting platform that makes it easy to produce high-quality content. From blogs and website copy to email newsletters. Our platform helps you to speed up your writing process."
+H0121: "Maila.ai is an AI-powered Copywriting platform that makes it easy to produce high-quality content. From blogs and website copy to email newsletters. Our platform helps you to speed up your writing process."
 T0152: "Next Level AI-Powered Copywriting Platform"
 H01051:
   - "Everyone loves unique and original content. And now with AI generating original content for your site, it’s easier to stand out from your competitors."
