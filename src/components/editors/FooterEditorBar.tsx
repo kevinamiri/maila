@@ -20,6 +20,16 @@ const TotalCharacters = styled("div")(({ theme }) => ({
   borderRadius: "10%",
 }));
 
+const TotalCharactersWarning = styled("div")(({ theme }) => ({
+  padding: "0.1em 0.1rem",
+  color: theme.palette.warning.main,
+  fontSize: "80%",
+  maxHeight: "24px",
+  fontWeight: 600,
+  textAlign: "center",
+  borderRadius: "10%",
+}));
+
 interface footerEditorBarProps {
   editor: Editor;
   handleTranser?: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -31,7 +41,9 @@ export const FooterEditorBar = ({
   handleTranser,
   disabled = false,
 }: footerEditorBarProps) => {
-  console.log("FooterEditorBar");
+  const CharCount =
+    serialize(editor).length > 1000 ? TotalCharactersWarning : TotalCharacters;
+
   return (
     <>
       <Divider
@@ -85,7 +97,7 @@ export const FooterEditorBar = ({
               display='block'
               gutterBottom
             >
-              <TotalCharacters>{serialize(editor).length}</TotalCharacters>
+              <CharCount>{serialize(editor).length}</CharCount>
             </Typography>
           }
         />

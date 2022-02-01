@@ -182,7 +182,13 @@ const MainSlateEditor = (props) => {
           p: 1,
         }}
       >
-        <Grid item xs={12}>
+        <Grid
+          item
+          sx={{
+            color: (theme) => theme.palette.text.secondary,
+          }}
+          xs={12}
+        >
           <Slate
             editor={editor}
             value={value}
@@ -194,6 +200,7 @@ const MainSlateEditor = (props) => {
               placeholder={props.placeholder}
               spellCheck
               autoFocus
+              decorate={decorate}
               onFocus={onFocus}
               onBlur={onBlur}
               onKeyDown={(event) => {
@@ -207,6 +214,7 @@ const MainSlateEditor = (props) => {
                         focus: Editor.end(editor, []),
                       });
                     }
+                    toggleMark(editor, mark);
                   }
                 }
               }}

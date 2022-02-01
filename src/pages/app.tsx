@@ -54,7 +54,7 @@ export default function App() {
   const appContext = useContext(AppContext);
   const [context, setContext] = useState(appContext);
   const i18nMessages = require(`../data/messages/${context.stateLanguage}`);
-  const inputList = 401;
+  const inputList = 800;
 
   useEffect(() => {
     checkUser();

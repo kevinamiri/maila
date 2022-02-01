@@ -2,10 +2,19 @@ import React from "react";
 import { css, cx } from "@emotion/css";
 import { styled } from "@mui/material/styles";
 
+const WSpan = styled("span")(({ theme }) => ({
+  color: theme.palette.text.primary,
+}));
+
+const SecondarySpan = styled("span")(({ theme }) => ({
+  color: theme.palette.text.secondary,
+}));
+
+const PrimarySpan = styled("span")(({ theme }) => ({
+  color: theme.palette.text.primary,
+}));
+
 export const Leaf = ({ attributes, children, leaf }) => {
-  const WSpan = styled("span")(({ theme }) => ({
-    color: theme.palette.text.primary,
-  }));
   if (leaf.bold) {
     children = <strong>{children}</strong>;
   }
@@ -15,14 +24,14 @@ export const Leaf = ({ attributes, children, leaf }) => {
   }
 
   if (leaf.highlight) {
-    children = <WSpan>{children}</WSpan>;
+    children = <PrimarySpan>{children}</PrimarySpan>;
   }
 
   if (leaf.selecthighlight) {
     children = (
       <span
         className={css`
-          color: black;
+          color: #6b778c;
           background-color: yellow;
         `}
       >
@@ -39,16 +48,7 @@ export const Leaf = ({ attributes, children, leaf }) => {
     children = <u>{children}</u>;
   }
 
-  return (
-    <span
-      {...attributes}
-      className={css`
-        color: black;
-      `}
-    >
-      {children}
-    </span>
-  );
+  return <SecondarySpan {...attributes}>{children}</SecondarySpan>;
 };
 
 export default Leaf;

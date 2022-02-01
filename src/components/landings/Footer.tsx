@@ -33,38 +33,24 @@ export default function Footer(props) {
       <NewContainer>
         <Grid container spacing={4} justifyContent='space-evenly'>
           <Grid item xs={6} sm={3} key={"connect"}>
-            <Typography
-              sx={{ mb: 2 }}
-              variant='subtitle1'
-              color='text.primary'
-              gutterBottom
-            >
+            <Typography sx={{ mb: 2 }} variant='subtitle1' gutterBottom>
               <FormattedMessage id='T04' />
             </Typography>
-            <Typography sx={{ mt: 2 }} variant='subtitle2' color='text.primary'>
+            <Typography sx={{ mt: 2 }} variant='subtitle2'>
               <ContactDialogs />
             </Typography>
           </Grid>
           <Grid item xs={6} sm={3} key={"explore"}>
-            <Typography
-              sx={{ mb: 2 }}
-              variant='subtitle1'
-              color='text.primary'
-              gutterBottom
-            >
+            <Typography sx={{ mb: 2 }} variant='subtitle2' gutterBottom>
               <FormattedMessage id='T05' />
             </Typography>
-            <Typography
-              sx={{ mb: 2 }}
-              variant='subtitle1'
-              color='text.primary'
-            ></Typography>
+            <Typography sx={{ mb: 2 }} variant='subtitle1'></Typography>
           </Grid>
           <Grid item xs={6} sm={3} key={"support"}>
-            <Typography variant='subtitle1' color='text.primary' gutterBottom>
+            <Typography variant='subtitle1' gutterBottom>
               <FormattedMessage id='S01' />
             </Typography>
-            <Typography sx={{ mb: 2 }} variant='subtitle1' color='text.primary'>
+            <Typography sx={{ mb: 2 }} variant='subtitle2'>
               <Link to={`/${props.langKey}/contact`}>
                 <FormattedMessage id='CA094' />
               </Link>
@@ -75,12 +61,12 @@ export default function Footer(props) {
             <Typography variant='subtitle1' color='text.primary' gutterBottom>
               <FormattedMessage id='TAS025' />
             </Typography>
-            <Typography sx={{ mb: 1 }} variant='subtitle1' color='text.primary'>
+            <Typography sx={{ mb: 1 }} variant='subtitle2' color='primary'>
               <Link to={`/${props.langKey}/legal/terms-of-use`}>
                 <FormattedMessage id='TS01' />
               </Link>
             </Typography>
-            <Typography sx={{ mb: 1 }} variant='subtitle1' color='text.primary'>
+            <Typography sx={{ mb: 1 }} variant='subtitle2'>
               <Link to={`/${props.langKey}/legal/privacy-policy`}>
                 <FormattedMessage id='PP01' />
               </Link>
