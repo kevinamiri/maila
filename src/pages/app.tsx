@@ -413,8 +413,8 @@ export default function App() {
                       path='/thanks-you-email'
                     />
                     <ProductDescription
-                      message01='describe reasons for reaching out right, and how the customer can contact you.'
-                      mainPlaceholder='describe reasons for reaching out right, and how the customer can contact you.'
+                      message01='Describe the reasons why you want to reach out and how the customer can contact you.'
+                      mainPlaceholder='Describe the reasons why you want to reach out and how the customer can contact you.'
                       inputLimitation={inputList}
                       productType='23'
                       productUrl='generate'
