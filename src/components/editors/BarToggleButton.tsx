@@ -5,7 +5,10 @@ import { useSelector } from "react-redux";
 
 export default function BarToggleButton({ format, icon, handleClick }) {
   const { selectedTextValue } = useSelector((state) => state.editorParams);
-  const selectionStatus = selectedTextValue.length > 2 ? false : true;
+  const selectionStatus =
+    selectedTextValue.length > 2 && selectedTextValue.length < 250
+      ? false
+      : true;
   return (
     <IconButton
       size='small'
