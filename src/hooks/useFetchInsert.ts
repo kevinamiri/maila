@@ -9,7 +9,7 @@ import { selectedText } from "./currentSelectEditor";
 //fetching the data from the api and then inserting it into the editor
 async function useFetchInsert(dispatch,enqueueSnackbar, editors, gtoken, url, fieldValues) {
   const selectedTextValue = selectedText(editors[0])
-  console.log(editors[0])
+
     const textLists = await useFetchDataSelected(
       selectedTextValue,
       gtoken,

@@ -34,11 +34,11 @@ const EditorToolsBoxBar = ({
           icon={<ShortTextIcon />}
           handleClick={handleSimplify}
         />
-        <BarToggleButton
+        {/* <BarToggleButton
           format='Advancify'
           icon={<TextRotationAngleupIcon />}
           handleClick={handleAdvancify}
-        />
+        /> */}
         <BarToggleButton
           format='Spellcheck'
           icon={<SpellcheckIcon />}
