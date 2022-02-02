@@ -38,14 +38,6 @@ function SocialSignIn() {
       >
         <Button
           variant='outlined'
-          color='primary'
-          onClick={() => Auth.federatedSignIn({ provider: "Facebook" })}
-          startIcon={<FilledFaFacebookSquare />}
-        >
-          Facebook
-        </Button>
-        <Button
-          variant='outlined'
           onClick={() => Auth.federatedSignIn({ provider: "Google" })}
           color='primary'
           startIcon={<FilledFcGoogle />}
