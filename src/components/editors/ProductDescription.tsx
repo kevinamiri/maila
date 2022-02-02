@@ -8,7 +8,8 @@ import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
-import { Divider } from "@mui/material";
+import Divider from "@mui/material/Divider";
+import Box from "@mui/material/Box";
 import LinearProgressLoading from "../subcomponents/LinearProgressLoading";
 import loadScriptByURL from "./google";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
@@ -17,7 +18,7 @@ import Card3EditorsRightSide from "./Card3EditorsRightSide";
 import GenerationButton from "./GenerationButton";
 import LanguageAutocomplete from "../subcomponents/LanguageAutocomplete";
 const MainSlateEditor = React.lazy(() => import("./MainSlateEditor"));
-
+import FormHelperText from "@mui/material/FormHelperText";
 interface passageContext {
   children: SlateNode[];
   type: string;
@@ -88,6 +89,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                 <FormRedux toneTextField labelsLists={labelsLists} />
               ) : null}
               <Suspense fallback={<div>Loading...</div>}>
+                <FormHelperText sx={{ mb: 2 }}>{message01}</FormHelperText>
                 <MainSlateEditor
                   placeholder={mainPlaceholder}
                   editor={editor}

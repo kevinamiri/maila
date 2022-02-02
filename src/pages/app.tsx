@@ -153,7 +153,7 @@ export default function App() {
                         component={ProductDescriptionApp}
                       /> */}
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder="Let's get started with a product description, shall we?"
                       inputLimitation={inputList}
                       productType='4'
@@ -187,7 +187,7 @@ export default function App() {
                       path='/productdescription'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder="Let's get started with a product description, shall we?"
                       inputLimitation={inputList}
                       productType='4'
@@ -221,7 +221,7 @@ export default function App() {
                       path='/productfeatures'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='prompt'
                       inputLimitation={inputList}
                       productType='8'
@@ -233,7 +233,7 @@ export default function App() {
                       path='/pro'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Grammar Correction'
                       inputLimitation={inputList}
                       productType='9'
@@ -275,7 +275,7 @@ export default function App() {
                       path='/brandvoice'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Tagline Generator'
                       inputLimitation={inputList}
                       productType='10'
@@ -293,7 +293,7 @@ export default function App() {
                       path='/tagline'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Describe what your company does.'
                       inputLimitation={inputList}
                       productType='11'
@@ -305,7 +305,7 @@ export default function App() {
                       path='/mission-statement'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Describe what your company does.'
                       inputLimitation={inputList}
                       productType='12'
@@ -317,7 +317,7 @@ export default function App() {
                       path='/vision-statement'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder="Describe your product, and we'll create a value proposition based on your product description."
                       inputLimitation={inputList}
                       productType='20'
@@ -329,7 +329,7 @@ export default function App() {
                       path='/value-proposition'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder="customize your content based on your company's tone and voice"
                       inputLimitation={inputList}
                       productType='19'
@@ -341,7 +341,7 @@ export default function App() {
                       path='/adjust-tone'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Write an Email'
                       inputLimitation={inputList}
                       productType='13'
@@ -353,7 +353,7 @@ export default function App() {
                       path='/write-email'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Paraphrase a passage'
                       inputLimitation={inputList}
                       productType='17'
@@ -365,7 +365,7 @@ export default function App() {
                       path='/paraphrase'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Paraphrase a passage'
                       inputLimitation={inputList}
                       productType='18'
@@ -377,7 +377,7 @@ export default function App() {
                       path='/repherase'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Cold Email'
                       inputLimitation={inputList}
                       productType='21'
@@ -389,7 +389,7 @@ export default function App() {
                       path='/cold-email'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Thank You Email'
                       inputLimitation={inputList}
                       productType='22'
@@ -401,7 +401,7 @@ export default function App() {
                       path='/thanks-you-email'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Thank You Email'
                       inputLimitation={inputList}
                       productType='22'
@@ -413,8 +413,8 @@ export default function App() {
                       path='/thanks-you-email'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
-                      mainPlaceholder='Prospecting email'
+                      message01='describe reasons for reaching out right, and how the customer can contact you.'
+                      mainPlaceholder='describe reasons for reaching out right, and how the customer can contact you.'
                       inputLimitation={inputList}
                       productType='23'
                       productUrl='generate'
@@ -425,7 +425,7 @@ export default function App() {
                       path='/prospecting-email'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Followup Email'
                       inputLimitation={inputList}
                       productType='37'
@@ -437,7 +437,7 @@ export default function App() {
                       path='/followup-email'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Blog Post Intro'
                       inputLimitation={inputList}
                       productType='24'
@@ -449,7 +449,7 @@ export default function App() {
                       path='/blog-post-intro'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Blog Post Ideas'
                       inputLimitation={inputList}
                       productType='39'
@@ -462,7 +462,7 @@ export default function App() {
                     />
 
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Blog Post Conclusion'
                       inputLimitation={inputList}
                       productType='27'
@@ -474,7 +474,7 @@ export default function App() {
                       path='/blog-post-conclusion'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Blog Post Summary'
                       inputLimitation={inputList}
                       productType='26'
@@ -486,7 +486,7 @@ export default function App() {
                       path='/blog-post-summary'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Blog Post AIDA'
                       inputLimitation={inputList}
                       productType='25'
@@ -498,7 +498,7 @@ export default function App() {
                       path='/blog-post-aida'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Blog Post PAS'
                       inputLimitation={inputList}
                       productType='38'
@@ -510,7 +510,7 @@ export default function App() {
                       path='/blog-post-pas'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Blog Post Headline'
                       inputLimitation={inputList}
                       productType='28'
@@ -522,7 +522,7 @@ export default function App() {
                       path='/blog-post-headline'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Landing Page Headline Description'
                       inputLimitation={inputList}
                       productType='29'
@@ -534,7 +534,7 @@ export default function App() {
                       path='/landing-page-headline-description'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='landing-page-headline'
                       inputLimitation={inputList}
                       productType='30'
@@ -546,7 +546,7 @@ export default function App() {
                       path='/landing-page-headline'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='meta-descriptions'
                       inputLimitation={inputList}
                       productType='31'
@@ -558,7 +558,7 @@ export default function App() {
                       path='/meta-descriptions'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='question-generator'
                       inputLimitation={inputList}
                       productType='32'
@@ -570,7 +570,7 @@ export default function App() {
                       path='/question-generator'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='subject-finder'
                       inputLimitation={inputList}
                       productType='33'
@@ -582,7 +582,7 @@ export default function App() {
                       path='/subject-finder'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='subject-finder'
                       inputLimitation={inputList}
                       productType='34'
@@ -594,7 +594,7 @@ export default function App() {
                       path='/keyword-finder'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='Good English'
                       inputLimitation={inputList}
                       productType='35'
@@ -606,7 +606,7 @@ export default function App() {
                       path='/grammar'
                     />
                     <ProductDescription
-                      message01='Please select the text you would like to modify'
+                      message01=''
                       mainPlaceholder='sub-headers'
                       inputLimitation={inputList}
                       productType='36'
