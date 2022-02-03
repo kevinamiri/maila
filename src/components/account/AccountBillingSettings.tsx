@@ -1,6 +1,6 @@
 import React from "react";
-import Skeleton from "@mui/material/Skeleton";
 import Box from "@mui/material/Box";
+// import Skeleton from "@mui/material/Skeleton";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -10,6 +10,7 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Label from "../subcomponents/Label";
 import usePayInfo from "../../hooks/usePayInfo";
+import BillingPlanCardContent from "./BillingPlanCardContent";
 
 const plans = [
   {
@@ -264,7 +265,7 @@ const AccountBillingSettings = (props) => {
             </Paper>
           ))
         ) : (
-          <Skeleton />
+          <BillingPlanCardContent />
         )}
         <Box
           sx={{
