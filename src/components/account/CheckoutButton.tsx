@@ -8,7 +8,7 @@ const CheckoutButton = ({ buttonTextLabel }) => {
       color='inherit'
       startIcon={<UpgradeIcon fontSize='small' />}
       variant='text'
-      href='https://buy.stripe.com/00gaGuc3Ieoq8wM144'
+      href='https://buy.stripe.com/5kA7sP6x5fJdeAgfYY'
     >
       {buttonTextLabel}
     </Button>
