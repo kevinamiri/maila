@@ -16,8 +16,6 @@ import PrivateRoute from "../components/layout/PrivateRoute";
 // import CopyEditing from "../components/editors/CopyEditing";
 // import Translation from "../components/editors/Translation";
 import ProductDescription from "../components/editors/ProductDescription";
-// suspence react
-import ProductDescriptionApp from "../components/products/ProductDescriptionApp";
 // import VoiceCompatible from "../components/editors/voiceCompatible";
 import AccountManage from "../components/AccountManage";
 import { styled } from "@mui/material/styles";
@@ -31,6 +29,7 @@ import {
 import { Router } from "@reach/router";
 import Box from "@mui/material/Box";
 import SearchBox from "../components/subcomponents/searchBox";
+import LanguageAutocompleteApp from "../components/subcomponents/languageAutocompleteApp";
 // import CssBaseline from "@mui/material/CssBaseline";
 // import { QuickStats } from "../components/QuickStats";
 
@@ -65,8 +64,6 @@ export default function App() {
     Auth.currentAuthenticatedUser().then(setUser);
   }, []);
 
-  console.log(context.stateLanguage);
-
   async function checkUser() {
     try {
       const user = await Auth.currentAuthenticatedUser();
@@ -88,8 +85,11 @@ export default function App() {
     setContext({ ...context, IsOpen: !context.IsOpen });
   };
 
-  const changeLanguage = () => {
-    setContext({ ...context, stateLanguage: "sv" });
+  const changeLanguage = (event: any, newValue: any) => {
+    setContext({
+      ...context,
+      stateLanguage: newValue ? newValue.LangCode : "en",
+    });
   };
 
   const state = {
@@ -143,7 +143,7 @@ export default function App() {
                   }}
                 >
                   <SearchBox />
-                  {/* <button onClick={changeLanguage}>test</button> */}
+                  {/* <LanguageAutocompleteApp handleChange={changeLanguage} /> */}
                   <Router basepath='/app'>
                     {/* <CopyEditing path='/pro' /> */}
                     {/* <VoiceCompatible path='/brandvoice' /> */}
