@@ -127,12 +127,12 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
                     overflow: "hidden",
                     p: 1,
                     "& svg": {
-                      height: "auto",
-                      width: "100%",
+                      height: "50px",
+                      width: "50px",
                     },
                   }}
                 >
-                  <Icon />
+                  <Icon fontSize='small' />
                 </Box>
                 <Typography align='center' sx={{ mt: 1 }} variant='subtitle2'>
                   {label}
