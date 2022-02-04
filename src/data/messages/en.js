@@ -62,7 +62,6 @@ module.exports = {
   SF011: "Submit",
   SF014: "Subscribe",
   SF015: "Sign Up",
-  CF004: "Signup and get the ten chapters of the book for free",
   CF005: "By submitting this form, you agree to the ",
   TAS045: "Terms of Use",
   TAS0452: "and",
