@@ -10,12 +10,22 @@ import MenuIcon from "./subcomponents/MenuIcon";
 import Box from "@mui/material/Box";
 import { navigate } from "gatsby";
 import { FormattedMessage } from "react-intl";
-import styled from "@emotion/styled";
 import { SeverityPill } from "./severity-pill";
+
+import Divider from "@mui/material/Divider";
+// import { styled } from "@mui/material/styles";
+
+// const CustomLink = styled(MuiLink)(({ theme }) => ({
+//   color: theme.palette.primary.main,
+//   textDecoration: "none",
+//   "&:hover": {
+//     borderBottom: `2px solid ${theme.palette.primary.main}`,
+//   },
+// }));
 
 const drawerWidth = 240;
 
-const TopBar = ({ title, icon }) => {
+const TopBar = ({ title, icon, uilang }) => {
   const { IsOpen, toggleOpen, logout } = React.useContext(AppContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
@@ -83,7 +93,16 @@ const TopBar = ({ title, icon }) => {
               beta
             </SeverityPill>
           </Box>
-          <UserAvatar handleClick={handleClick} />
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+            }}
+          >
+            {uilang}
+            <UserAvatar handleClick={handleClick} />
+          </Box>
+
           {selectedUrl && (
             <Menu
               id='demo-positioned-menu'

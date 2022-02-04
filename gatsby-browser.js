@@ -21,6 +21,7 @@ import store from './src/store';
 
 function TopLayout(props) {
     const { settings } = useSettings();
+
     const theme = createTheme({
         direction: settings.direction,
         responsiveFontSizes: settings.responsiveFontSizes,

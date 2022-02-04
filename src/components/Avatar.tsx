@@ -43,8 +43,8 @@ function UserAvatar({ handleClick }) {
       <>
         <Avatar
           sx={{
-            color: (theme) => theme.palette.getContrastText(deepPurple[500]),
-            backgroundColor: deepPurple[500],
+            color: (theme) => theme.palette.text.secondary,
+            backgroundColor: (theme) => theme.palette.background.default,
           }}
           onClick={handleClick}
         >
