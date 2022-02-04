@@ -27,7 +27,7 @@ B100:
   - "Crafting powerful and memorable taglines that become the heart of your brand."
   - "Define your brand voice and tailor every aspect of your brand to communicate its strengths and values."
   - "Use these powerful words to create a strong foundation for your content landing pages."
-H0121: "Maila.ai is an AI-powered Copywriting platform that makes it easy to produce high-quality content. From blogs and website copy to email newsletters. Our platform helps you to speed up your writing process."
+H0121: "Maila.ai is a revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content quickly and easily. Whether you need to write a blog post, create content for a website or craft a marketing email, our platform will help you speed up your writing process."
 T0152: "Next Level AI-Powered Copywriting Platform"
 H01051:
   - "Everyone loves unique and original content. And now with AI generating original content for your site, it’s easier to stand out from your competitors."
