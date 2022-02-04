@@ -20,6 +20,7 @@ const getValues = (settings) => ({
   responsiveFontSizes: settings.responsiveFontSizes,
   roundedCorners: settings.roundedCorners,
   theme: settings.theme,
+  lang: settings.lang,
 });
 
 interface settings {
@@ -27,6 +28,7 @@ interface settings {
   responsiveFontSizes: any;
   roundedCorners: any;
   theme: string;
+  lang: string;
 }
 
 const SettingsDrawer = () => {

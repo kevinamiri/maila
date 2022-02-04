@@ -36,15 +36,13 @@ const getValues = (settings) => ({
   direction: settings.direction,
   responsiveFontSizes: settings.responsiveFontSizes,
   theme: settings.theme,
+  lang: settings.lang,
 });
 
 const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
   const { open, onClose, langs, ...other } = props;
   const { settings, saveSettings } = useSettings();
   const [values, setValues] = React.useState(getValues(settings));
-  React.useEffect(() => {
-    setValues(getValues(settings));
-  }, [settings]);
 
   const handleChange = (field, value): void => {
     setValues({
