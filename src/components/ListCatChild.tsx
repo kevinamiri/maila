@@ -15,7 +15,7 @@ interface listProps {
   iconComponent: React.FC;
 }
 
-const ListCat = (props: listProps) => {
+const ListCatChild = (props: listProps) => {
   let selectedList = (url) => {
     if (url == window.location.pathname) {
       return true;
@@ -57,7 +57,17 @@ const ListCat = (props: listProps) => {
           >
             <ListItemText
               primary={
-                <Typography color='primary' variant='body1'>
+                <Typography
+                  sx={{
+                    fontWeight: 400,
+                    fontSize: ".8rem",
+                    lineHeight: "1.9",
+                    fontFamily:
+                      'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+                  }}
+                  color='primary'
+                  variant='body1'
+                >
                   <FormattedMessage id={formattedIdList} />
                 </Typography>
               }
@@ -69,4 +79,4 @@ const ListCat = (props: listProps) => {
   );
 };
 
-export default ListCat;
+export default ListCatChild;

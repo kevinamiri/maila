@@ -16,7 +16,7 @@ interface PopUpCardProps {
 
 const PopUpCard: React.FC<PopUpCardProps> = ({
   title = "Headline:",
-  input = "The Secret of Writing Magnetic Headlines.",
+  input = "The Secret of Writing Magnetic",
   output = "Who Else Wants To Be A More Creative Person?",
   buttonLabel = "Accept",
 }: PopUpCardProps) => {
