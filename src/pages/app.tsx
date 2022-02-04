@@ -61,6 +61,9 @@ export default function App() {
   const appContext = useContext(AppContext);
   const [context, setContext] = useState(appContext);
   const { settings, saveSettings } = useSettings();
+  /**
+   * why state? When the component receives updates, the result is displayed immediately, otherwise we can use ref.
+   */
   const [values, setValues] = React.useState(getValues(settings));
   const i18nMessages = require(`../data/messages/${values.lang}`);
   const inputList = 800;
@@ -71,11 +74,16 @@ export default function App() {
       ...values,
       [field]: value,
     });
+    // if we set sate as values then be actually updating the prev lang not the new lang
+    saveSettings({
+      ...values,
+      [field]: value,
+    });
   };
 
   const changeLanguage = (event: any, newValue: any) => {
     handleChange("lang", newValue ? newValue.LangCode : "en");
-    saveSettings(values);
+    // saveSettings(values);
   };
   // ................ end handle UI lang change ...............
 

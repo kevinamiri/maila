@@ -43,7 +43,6 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
   const { open, onClose, langs, ...other } = props;
   const { settings, saveSettings } = useSettings();
   const [values, setValues] = React.useState(getValues(settings));
-
   const handleChange = (field, value): void => {
     setValues({
       ...values,
