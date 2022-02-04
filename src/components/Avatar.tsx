@@ -45,6 +45,7 @@ function UserAvatar({ handleClick }) {
           sx={{
             color: (theme) => theme.palette.text.secondary,
             backgroundColor: (theme) => theme.palette.background.default,
+            border: (theme) => `2px solid ${theme.palette.divider}`,
           }}
           onClick={handleClick}
         >

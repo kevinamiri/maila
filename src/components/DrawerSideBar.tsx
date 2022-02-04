@@ -1,5 +1,5 @@
 import * as React from "react";
-import { experimentalStyled as styled } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import { useTheme, Theme, CSSObject } from "@mui/material/styles";
 import MuiDrawer from "@mui/material/Drawer";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
@@ -75,7 +75,7 @@ const DrawerSideBar = () => {
           edge='start'
           sx={{
             marginRight: "36px",
-            ...(IsOpen && { display: "none" }),
+            // ...(IsOpen && { display: "none" }),
           }}
           color='primary'
           fontSize='large'
@@ -87,6 +87,7 @@ const DrawerSideBar = () => {
             fontSize: "1rem",
             fontWeight: 600,
             textTransform: "uppercase",
+            mr: "12px",
           }}
           variant='subtitle2'
           gutterBottom
