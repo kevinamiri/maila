@@ -38,13 +38,13 @@ H0118:
     - Is the copy original?
     - All generated contents are unique, and original.
     - How long does it take to get a response when I submit an inquiry?
-    - Our customers receive responses in hours or even minutes.
+    - AI-powered copy-writing is the idea of using artificial intelligence to write content for your company. This type of copy-writing can be used for a number of different aspects of your company, such as your product descriptions, social media updates, email subject lines, and more.
     - How much does it cost?
     - We offer a free trial so you can see if our AI can help you produce great content.
     - Why would I use this instead of creating my own content?
-    - Our AI is built to generate original content that is highly optimized for each keyword that you input. This approach gives you flexibility in your content creation efforts, allowing you to focus on other aspects of your business.
+    - AI-powered copy-writing can be a great way to save time, especially if you are short on staff. Automated writing can produce content at a quicker rate than having a human writer do it.
     - How long does it take?
-    - We generate copy in real-time, so your results are ready immediately. As our copy generation engine is completely automated, it also allows us to scale our output to match your needs.
+    - We generate contents in real-time, so your results are ready immediately. As our copy generation engine is completely automated, it also allows us to scale our output to match your needs.
   H01194: "From the beginings I was in here"
 L0401:
   - Get Started
