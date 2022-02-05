@@ -44,8 +44,8 @@ const deeplTranslation = async (text, target) => {
 //     return files;
 // };
 
-// const LanguageLists = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hu', 'it', 'ja', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'zh'];
-const LanguageLists = ['sv', 'en'];
+const LanguageLists = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hu', 'it', 'ja', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'zh'];
+// const LanguageLists = ['sv', 'en'];
 
 const languageUrl = (url) => {
     langLists = {}
@@ -121,8 +121,8 @@ ${passage}
 
 
 const createPost = async () => {
-    const tagsList = `blog, cold email for digital marketing services`
-    const postTitleStr = `writing a cold email for digital marketing services`
+    const tagsList = `note, How to Write a Positioning Statement`
+    const postTitleStr = `Positioning Statement`
     const postUrl = kebabCase(postTitleStr)
     const dateString = new Date().toISOString().slice(0, 10)
     const year = new Date().toISOString().slice(0, 4)
@@ -130,7 +130,7 @@ const createPost = async () => {
     // const folderDir = `blog/${year}/${month}`
     const folderDir = `blog`
     const imageNameString = "terms.png"
-    const postDescriptionStr = `When writing a cold email for digital marketing services, it is important to introduce yourself and your company, and to explain why you are reaching out to the recipient. It is also important to explain what you can offer the recipient and how you can help them meet their goals.`
+    const postDescriptionStr = `The key benefits of using a positioning statement are that it can help you to clarify your company's unique selling proposition (USP), it can help you to target your market, and it can help you to create a competitive advantage.`
     const NewDocument = fs.readFileSync('./newDoc.md', 'utf8');
     const allpassage = NewDocument.split('\n')
     for (let index = 0; index < LanguageLists.length; index++) {
