@@ -88,18 +88,19 @@ export default function LangSettingsDials({ changeLanguage }) {
         color='text.secondary'
         onClick={handleClickOpen}
       > */}
-      <Tooltip title='Contacts'>
+      <Tooltip title='UI Language'>
         <IconButton
           sx={{
             mx: 2,
             backgroundColor: (theme) => theme.palette.background.default,
+            borderRadius: "10px",
             "&:hover": {
               backgroundColor: (theme) => theme.palette.divider,
             },
           }}
           onClick={handleClickOpen}
         >
-          <GTranslateRoundedIcon fontSize='medium' />
+          <GTranslateRoundedIcon fontSize='small' />
         </IconButton>
       </Tooltip>
       {/* <CustomLink style={{ cursor: "pointer" }}>Language</CustomLink> */}

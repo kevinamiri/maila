@@ -307,11 +307,11 @@ export default function App() {
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Tagline Generator'
+                    mainPlaceholder='Tagline Suggestion'
                     inputLimitation={inputList}
                     productType='10'
                     productUrl='generate'
-                    generateButtonName='Tagline Generator'
+                    generateButtonName='Tagline Suggestion'
                     toneTextField={true}
                     headerTitle='Tagline'
                     labelsLists={[
