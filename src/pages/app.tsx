@@ -375,13 +375,13 @@ export default function App() {
                     message01=''
                     mainPlaceholder='Write an Email'
                     inputLimitation={inputList}
-                    productType='13'
+                    productType='41'
                     productUrl='generate'
                     generateButtonName='Generate Email'
-                    toneTextField={true}
+                    toneTextField={false}
                     headerTitle='Write an Email'
                     labelsLists={[]}
-                    path='/write-email'
+                    path='/friendly-email'
                   />
                   <ProductDescription
                     message01=''

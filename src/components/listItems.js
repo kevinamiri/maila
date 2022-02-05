@@ -117,6 +117,7 @@ const ListSidebar = () => {
                 <Collapse in={(state.EmailTools01)} timeout="auto" unmountOnExit>
                     <List dense>
                         <ListCatChild dirList="/app/write-email" formattedId="ET01" iconComponent={<AddEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        <ListCatChild dirList="/app/friendly-email" formattedId="ET09" iconComponent={<AddEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/followup-email" formattedId="ET02" iconComponent={<WriteFollowUpEmail viewBox="0 0 512 512" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/cold-email" formattedId="ET03" iconComponent={<WriteColdEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/thanks-you-email" formattedId="ET04" iconComponent={<Thankyou viewBox="0 0 512 512" height="24" width="24" fontSize="small" />} />

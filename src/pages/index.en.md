@@ -37,7 +37,7 @@ H0118:
   A0117q:
     - Is the copy original?
     - All generated contents are unique, and original.
-    - How long does it take to get a response when I submit an inquiry?
+    - How can AI-powered copywriting be used in a business?
     - AI-powered copy-writing is the idea of using artificial intelligence to write content for your company. This type of copy-writing can be used for a number of different aspects of your company, such as your product descriptions, social media updates, email subject lines, and more.
     - How much does it cost?
     - We offer a free trial so you can see if our AI can help you produce great content.
