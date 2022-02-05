@@ -17,6 +17,7 @@ module.exports = {
   PD02: "Product Description",
   PD03: "Product Description Amazon",
   ET01: "Email Tools",
+  ET09: "Friendly Email",
   ET02: "Follow Up Email",
   ET03: "Cold Template",
   ET04: "Thank you Email",

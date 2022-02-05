@@ -44,8 +44,8 @@ const deeplTranslation = async (text, target) => {
 //     return files;
 // };
 
-const LanguageLists = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hu', 'it', 'ja', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'zh'];
-// const LanguageLists = ['sv', 'en'];
+// const LanguageLists = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hu', 'it', 'ja', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'zh'];
+const LanguageLists = ['sv', 'en', 'no', 'fi', 'da'];
 
 const languageUrl = (url) => {
     langLists = {}
@@ -127,9 +127,9 @@ const createPost = async () => {
     const dateString = new Date().toISOString().slice(0, 10)
     const year = new Date().toISOString().slice(0, 4)
     const month = new Date().toISOString().slice(5, 7)
-    // const folderDir = `blog/${year}/${month}`
-    const folderDir = `blog`
-    const imageNameString = "terms.png"
+    const folderDir = `blog/${year}/${month}`
+    // const folderDir = `blog`
+    const imageNameString = "terms.jpg"
     const postDescriptionStr = `The key benefits of using a positioning statement are that it can help you to clarify your company's unique selling proposition (USP), it can help you to target your market, and it can help you to create a competitive advantage.`
     const NewDocument = fs.readFileSync('./newDoc.md', 'utf8');
     const allpassage = NewDocument.split('\n')
