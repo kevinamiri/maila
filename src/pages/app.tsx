@@ -2,21 +2,19 @@ import React, { useContext, useState, useEffect } from "react";
 import { Auth } from "aws-amplify";
 import { navigate } from "gatsby";
 import { Helmet } from "react-helmet";
-import { Suspense } from "react";
+import { FormattedMessage, IntlProvider, useIntl } from "react-intl";
 import "../../configureAmplify";
-// import Dashboard from "../components/Dashboard";
+import {
+  ProductDescriptionTool,
+  ProductTaglineTool,
+} from "../components/ProductTools";
 import AppContext from "../contexts/AppContext";
-import { IntlProvider } from "react-intl";
 import SignIn from "../components/SignIn";
-import { SnackbarProvider } from "notistack";
 import TopBar from "../components/TopBar";
 import DrawerSideBar from "../components/DrawerSideBar";
 import Container from "@mui/material/Container";
 import PrivateRoute from "../components/layout/PrivateRoute";
-// import CopyEditing from "../components/editors/CopyEditing";
-// import Translation from "../components/editors/Translation";
 import ProductDescription from "../components/editors/ProductDescription";
-// import VoiceCompatible from "../components/editors/voiceCompatible";
 import AccountManage from "../components/AccountManage";
 import { styled } from "@mui/material/styles";
 // @refresh reset
@@ -33,7 +31,7 @@ import useSettings from "../hooks/useSettings";
 // import CssBaseline from "@mui/material/CssBaseline";
 // import { QuickStats } from "../components/QuickStats";
 import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
-
+const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
   minHeight: 48,
   [theme.breakpoints.down("sm")]: {
@@ -66,10 +64,9 @@ export default function App() {
    */
   const [values, setValues] = React.useState(getValues(settings));
   const i18nMessages = require(`../data/messages/${values.lang}`);
-  const inputList = 800;
 
   // ................ handle UI lang change ...............
-  const handleChange = (field, value): void => {
+  const handleChange = (field: any, value: any): void => {
     setValues({
       ...values,
       [field]: value,
@@ -87,7 +84,6 @@ export default function App() {
   };
   // ................ end handle UI lang change ...............
 
-  // ################### Handling User auth contexts #########
   useEffect(() => {
     checkUser();
   }, []);
@@ -143,7 +139,7 @@ export default function App() {
               name='viewport'
               content='width=device-width, initial-scale=1.0'
             />
-            <title>Dashboard</title>
+            <title>Maila APP</title>
           </Helmet>
           <Box
             sx={{
@@ -176,96 +172,22 @@ export default function App() {
 
                 {/* <LanguageAutocompleteApp handleChange={changeLanguage} /> */}
                 <Router basepath='/app'>
-                  {/* <CopyEditing path='/pro' /> */}
-                  {/* <VoiceCompatible path='/brandvoice' /> */}
                   <PrivateRoute path='/profile' component={AccountManage} />
                   {/* <PrivateRoute
                         path='/productdescription'
                         component={ProductDescriptionApp}
                       /> */}
-                  <ProductDescription
+                  <ProductDescriptionTool
                     message01=''
-                    mainPlaceholder="Let's get started with a product description, shall we?"
                     inputLimitation={inputList}
                     productType='4'
                     productUrl='generate'
-                    generateButtonName='Generate description'
                     toneTextField={true}
-                    headerTitle='Product description'
-                    labelsLists={[
-                      {
-                        label: "Brand name",
-                        placeholder: "Brand/Business name",
-                        dispatcher: updateBusinessNameValue,
-                      },
-                      {
-                        label: "Audience",
-                        placeholder:
-                          "Audience: e.g., those who love coffee, or public",
-                        dispatcher: updateAudienceValue,
-                      },
-                      {
-                        label: "keywords",
-                        placeholder: "keywords are separated by commas",
-                        dispatcher: updateKeywordValue,
-                      },
-                      {
-                        label: "Features",
-                        placeholder: "Features are separated by commas",
-                        dispatcher: updateFeatureValue,
-                      },
-                    ]}
                     path='/productdescription'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder="Let's get started with a product description, shall we?"
-                    inputLimitation={inputList}
-                    productType='4'
-                    productUrl='generate'
-                    generateButtonName='Generate description'
-                    toneTextField={true}
-                    headerTitle='Product Features'
-                    labelsLists={[
-                      {
-                        label: "Brand name",
-                        placeholder: "Brand/Business name",
-                        dispatcher: updateBusinessNameValue,
-                      },
-                      {
-                        label: "Audience",
-                        placeholder:
-                          "Audience: e.g., those who love coffee, or public",
-                        dispatcher: updateAudienceValue,
-                      },
-                      {
-                        label: "keywords",
-                        placeholder: "keywords are separated by commas",
-                        dispatcher: updateKeywordValue,
-                      },
-                      {
-                        label: "Features",
-                        placeholder: "Features are separated by commas",
-                        dispatcher: updateFeatureValue,
-                      },
-                    ]}
-                    path='/productfeatures'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder='prompt'
-                    inputLimitation={inputList}
-                    productType='8'
-                    productUrl='generate'
-                    generateButtonName='Generate'
-                    toneTextField={false}
-                    headerTitle='prompt'
-                    labelsLists={[]}
-                    path='/pro'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder='Grammar Correction'
+                    mainPlaceholder={<FormattedMessage id='A0013' />}
                     inputLimitation={inputList}
                     productType='9'
                     productUrl='generate'
@@ -275,37 +197,7 @@ export default function App() {
                     labelsLists={[]}
                     path='/grammar'
                   />
-                  <ProductDescription
-                    message01='A Writer Helps You Deliver Your Message the Same Way Every Time'
-                    mainPlaceholder='A user-friendly application that allows brand teams and marketing managers to keep all content consistent, organized, and up-to-date.'
-                    inputLimitation={inputList}
-                    productType='translation'
-                    productUrl='generate'
-                    generateButtonName='Apply voice'
-                    toneTextField={true}
-                    headerTitle='Brand Vision Statement'
-                    labelsLists={[]}
-                    path='/brandvisionstatement'
-                  />
-                  <ProductDescription
-                    message01='A Writer Helps You Deliver Your Message the Same Way Every Time'
-                    mainPlaceholder='A user-friendly'
-                    inputLimitation={inputList}
-                    productType='7'
-                    productUrl='generate'
-                    generateButtonName='Apply voice'
-                    toneTextField={true}
-                    headerTitle='Making sure your text sounds consistent with your brand voice.'
-                    labelsLists={[
-                      {
-                        label: "Brand name",
-                        placeholder: "Brand/Business name",
-                        dispatcher: updateBusinessNameValue,
-                      },
-                    ]}
-                    path='/brandvoice'
-                  />
-                  <ProductDescription
+                  <ProductTaglineTool
                     message01=''
                     mainPlaceholder='Tagline Suggestion'
                     inputLimitation={inputList}
@@ -314,13 +206,6 @@ export default function App() {
                     generateButtonName='Tagline Suggestion'
                     toneTextField={true}
                     headerTitle='Tagline'
-                    labelsLists={[
-                      {
-                        label: "keywords",
-                        placeholder: "keywords are separated by commas",
-                        dispatcher: updateKeywordValue,
-                      },
-                    ]}
                     path='/tagline'
                   />
                   <ProductDescription

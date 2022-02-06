@@ -1,8 +1,7 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import { useTheme, Theme, CSSObject } from "@mui/material/styles";
+import { Theme, CSSObject } from "@mui/material/styles";
 import MuiDrawer from "@mui/material/Drawer";
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
