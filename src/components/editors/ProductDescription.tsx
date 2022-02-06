@@ -19,6 +19,7 @@ import GenerationButton from "./GenerationButton";
 import LanguageAutocomplete from "../subcomponents/LanguageAutocomplete";
 const MainSlateEditor = React.lazy(() => import("./MainSlateEditor"));
 import FormHelperText from "@mui/material/FormHelperText";
+
 interface passageContext {
   children: SlateNode[];
   type: string;
@@ -32,14 +33,14 @@ interface placeholdersList {
 type placeholderLists = placeholdersList[];
 
 interface ProductGenerationProps {
-  generateButtonName?: string;
+  generateButtonName?: string | any;
   inputLimitation?: number;
-  message01?: string;
-  mainPlaceholder?: String;
-  headerTitle?: string;
+  message01?: string | any;
+  mainPlaceholder?: String | any;
+  headerTitle?: string | any;
   toneTextField?: boolean;
   productType: string;
-  productUrl?: string;
+  productUrl: string;
   labelsLists?: placeholderLists;
   path: string;
   component?: React.ComponentType<{}>;
@@ -50,7 +51,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   mainPlaceholder = `Let's get started with a product description, shall we?`,
   inputLimitation = 201,
   productType = "4",
-  productUrl,
+  productUrl = "generate",
   generateButtonName = "generate",
   headerTitle = "write down some text",
   toneTextField,
