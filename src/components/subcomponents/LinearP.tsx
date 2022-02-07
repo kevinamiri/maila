@@ -75,14 +75,14 @@ export default function LinearP({ progressType }) {
     datasource().then(setProgress);
   }, []);
 
-  const descr = `${progress} of 10000 characters`;
+  const descr = `${Math.round(progress / 4)} of 25000 words`;
   return (
     <>
       {progressType ? (
-        <CircularProgressWithLabel value={(progress * 100) / 10000} />
+        <CircularProgressWithLabel value={(progress * 100) / 100000} />
       ) : (
         <LinearProgressBalance
-          linearValue={(progress * 100) / 10000}
+          linearValue={(progress * 100) / 100000}
           description={descr}
         />
       )}

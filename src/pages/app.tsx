@@ -244,11 +244,11 @@ export default function App() {
                     inputLimitation={inputList}
                     productType='19'
                     productUrl='generate'
-                    generateButtonName='Rewrite a passage'
+                    generateButtonName='Rewrite'
                     toneTextField={true}
                     headerTitle='Rewrite'
                     labelsLists={[]}
-                    path='/adjust-tone'
+                    path='/adjust-tone-rewriting'
                   />
                   <ProductDescription
                     message01=''
