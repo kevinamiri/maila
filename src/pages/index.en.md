@@ -47,7 +47,7 @@ H0118:
     - We generate contents in real-time, so your results are ready immediately. As our copy generation engine is completely automated, it also allows us to scale our output to match your needs.
   H01194: "From the beginings I was in here"
 L0401:
-  - Get Started
+  - Sign up
   - Login
 path: /en/
 slug: /en/
