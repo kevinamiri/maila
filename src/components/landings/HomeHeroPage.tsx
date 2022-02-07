@@ -13,6 +13,7 @@ const afterTwo = (string: string) => string.split(" ").slice(2, 100).join(" ");
 interface HomeHeroPageProps {
   title?: string;
   header?: string;
+  cta?: string;
   labelbutton?: string;
   helpernotice?: string;
 }
@@ -21,6 +22,7 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
   header = "the here text",
   title = "the hero title",
   labelbutton = "Button name",
+  cta = "Start writing with your first 10,000 words free trial and see if your work improves.",
   helpernotice = "These results are pre-generated and fully powered by AI",
 }: HomeHeroPageProps) => {
   const matches = useMediaQuery("(min-width:600px)");
@@ -91,13 +93,20 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
                 <Typography color='text.secondary' variant='body2'>
                   {header}
                 </Typography>
-                <Typography sx={{ mt: 1 }} variant='body2'>
-                  {
-                    "Start writing with your first 10,000 words free trial and see if your work improves."
-                  }
+                <Typography
+                  sx={{ mt: 1 }}
+                  color='text.secondary'
+                  variant='body2'
+                >
+                  {cta}
                 </Typography>
               </Grid>
-              <Grid item justifyContent='center' alignContent='center'>
+              <Grid
+                sx={{ mb: 3 }}
+                item
+                justifyContent='center'
+                alignContent='center'
+              >
                 <Button href='/app' variant='contained'>
                   <Typography
                     variant='body2'

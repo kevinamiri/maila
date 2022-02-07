@@ -29,10 +29,9 @@ B100:
 - " Bruk disse kraftfulle ordene for å skape et sterkt fundament for ditt innholdslandingssider."
 H0121: "Maila.ai is an AI-powered Copywriting platform that makes it easy to produce high-quality content. From blogs and website copy to email newsletters. Our platform helps you to speed up your writing process."
 T0152: "Next Level AI-Powered Copywriting Platform"
-H01051:
-  - "Alle elsker unike og originale innhold. Og nå med AI som genererer originale innhold for nettstedet ditt, er det enklere å skille seg ut fra konkurrentene dine.."
+H01051: "Alle elsker unike og originale innhold. Og nå med AI som genererer originale innhold for nettstedet ditt, er det enklere å skille seg ut fra konkurrentene dine.."
 H01062:
-  H01047: "AI-drevne kopieringsverktøy er designet for å hjelpe deg med å skrive mer interessante"
+H01047: "AI-drevne kopieringsverktøy er designet for å hjelpe deg med å skrive mer interessante"
 H0118:
   A0117q:
   - Er kopien/innholdet original?

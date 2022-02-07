@@ -29,10 +29,9 @@ B100:
   - "Använd dessa kraftfulla ord för att skapa en stark grund för dina innehållsplatser."
 rubrik01: "Alla vill ha en unik webbplats med innehåll som sticker ut. Men att skapa en unik kopia för din webbplats på egen hand är inte bara tidskrävande utan kräver också expertkunskaper som skrivande, redigering och logiskt tänkande. maila.ai är en revolutionerande AI-driven copy editing-plattform som använder en maskininlärningsalgoritm för att skapa en perfekt produktbeskrivning, tagline eller etc för ditt varumärke. Det är som att ha ett copywritingteam i din hand."
 T0152: "Ta ditt skrivande till nästa nivå"
-H01051:
-  - "Alla älskar unikt och originellt innehåll. Och nu när AI genererar originalinnehåll för din webbplats är det lättare att sticka ut från dina konkurrenter."
+H01051: "Alla älskar unikt och originellt innehåll. Och nu när AI genererar originalinnehåll för din webbplats är det lättare att sticka ut från dina konkurrenter."
 H01062:
-  H01047: "AI-drivna verktyg för copywriting är utformade för att hjälpa dig att skriva mer intressant."
+H01047: "AI-drivna verktyg för copywriting är utformade för att hjälpa dig att skriva mer intressant."
 H0118:
   A0117q:
     - Är texten originell?

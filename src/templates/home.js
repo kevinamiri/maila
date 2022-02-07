@@ -29,7 +29,7 @@ const HomePage = (props) => {
       location={props.location}
     >
       <SEO frontmatter={frontmatter} postImage={image} />
-      <HomeHeroPage header={dataMarkdown.frontmatter.H0121} title={dataMarkdown.frontmatter.T0152} labelbutton={dataMarkdown.frontmatter.L0401[0]} helpernotice={"These results are pre-generated and fully empowered by AI"} />
+      <HomeHeroPage header={dataMarkdown.frontmatter.H0121} cta={dataMarkdown.frontmatter.H01051} title={dataMarkdown.frontmatter.T0152} labelbutton={dataMarkdown.frontmatter.L0401[0]} helpernotice={dataMarkdown.frontmatter.H01047} />
       <CardFeatureBlock titles={dataMarkdown.frontmatter.T100} bodys={dataMarkdown.frontmatter.B100} />
       <HomeBlock03
         langKey={langKey}
@@ -58,7 +58,6 @@ export const pageQuery = graphql`query HomePageQuery($id: String!) {
           en
           da
           sv
-          fi
           no
         }
       }
@@ -82,6 +81,8 @@ export const pageQuery = graphql`query HomePageQuery($id: String!) {
       }
       T0152
       H0121
+      H01047
+      H01051
       H0118 {
         A0117q
         H01194

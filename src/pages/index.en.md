@@ -9,30 +9,28 @@ lang: en
 date: 2020-12-25
 image: ../img/logo.png
 F100:
-  - AI-driven copywriting tools
-  - When it comes to creating high-quality content for your business, sometimes it can be difficult to know where to start. You may not have the time or resources to do it yourself, and hiring a professional writer can be expensive. AI-powered copywriting tools that can help you to create professional-grade content quickly and easily.
-  - Integrates machine learning into your contents
-  - If you want to increase your revenue, it's important to spend less time on discovery and brainstorming, and more time actually producing results. Machine learning can help improve the quality and accuracy of your content. By incorporating machine learning algorithms into your editorial process, You can be confident that your content is consistence with your brand.
+  - AI powered Sales Copy Email Generator
+  - With AI-powered Sales Copy Email Generator, you can create sales-oriented emails that will motivate your audience to take action. Simply enter some product information, and our advanced engine will generate a marketing message that takes your product to the next level.
+  - Integrating AI into your editorial process.
+  - It's important to spend less time discovering and brainstorming and more time actually producing results. By incorporating AI algorithms into your editorial process, you can bring new ideas into your business. no matter if you need to write a blog post, create content for a website or create a marketing email, our platform can help you speed up your writing process.
 T100:
   - "Product description"
   - "Copywriting Formulas"
   - "Sales Copy Email"
-  - "Taglines"
+  - "Brainstorming"
   - "Branding"
   - "Content Enhancer"
 B100: 
   - "Create a unique description that markets the value of your product."
   - "The proven formulas for creating structured statements about your product."
   - "Generate sales copy emails with powerful words and phrases for your product."
-  - "Crafting powerful and memorable taglines that become the heart of your brand."
-  - "Define your brand voice and tailor every aspect of your brand to communicate its strengths and values."
-  - "Use these powerful words to create a strong foundation for your content landing pages."
-H0121: "Maila.ai is a revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content quickly and easily. Whether you need to write a blog post, create content for a website or craft a marketing email, our platform will help you speed up your writing process."
+  - "Effective ways to bring new ideas into your Product."
+  - "Reshape your brand statements and tailor every aspect of your brand to communicate its strengths and values."
+  - "Use powerful tools to create a strong voice for your content landing pages."
+H0121: "Maila.ai is a revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
 T0152: "Next Level AI-Powered Copywriting Platform"
-H01051:
-  - "Everyone loves unique and original content. And now with AI generating original content for your site, it’s easier to stand out from your competitors."
-H01062:
-  H01047: "AI-driven copywriting tools are designed to help you write more interesting"
+H01051: "Start writing with your first 10,000 words free trial and see if your work improves."
+H01047: "These results are pre-generated and fully empowered by AI"
 H0118:
   A0117q:
     - Is the copy original?
@@ -45,7 +43,9 @@ H0118:
     - AI-powered copy-writing can be a great way to save time, especially if you are short on staff. Automated writing can produce content at a quicker rate than having a human writer do it.
     - How long does it take?
     - We generate contents in real-time, so your results are ready immediately. As our copy generation engine is completely automated, it also allows us to scale our output to match your needs.
-  H01194: "From the beginings I was in here"
+    - Can I create content in other languages?
+    - Yes, we support languages other than English. The best quality translations are currently available in English.
+  H01194: ""
 L0401:
   - Sign up
   - Login
