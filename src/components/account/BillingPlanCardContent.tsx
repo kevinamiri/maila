@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 const planOptions = [
   {
     id: "1",
-    description: "free 10,000 words",
+    description: "free 25,000 words",
     label: "Free",
     priceOptions: [
       {

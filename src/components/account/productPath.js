@@ -20,7 +20,7 @@ const productPath = [
   { url: "/app/vision-statement", label: "Vision Statement" },
   { url: "/app/value-proposition", label: "Value Proposition" },
   { url: "/app/adjust-tone", label: "Adjust Tone" },
-  { url: "/app/write-email", label: "Write Email" },
+  { url: "/app/friendly-email", label: "Write business friendly email" },
   { url: "/app/followup-email", label: "Followup Email" },
   { url: "/app/cold-email", label: "Cold Email" },
   { url: "/app/thanks-you-email", label: "Thanks You Email" },
