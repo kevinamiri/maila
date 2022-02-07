@@ -91,10 +91,22 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
                 <Typography color='text.secondary' variant='body2'>
                   {header}
                 </Typography>
+                <Typography sx={{ mt: 1 }} variant='body2'>
+                  {
+                    "Start writing with your first 10,000 words free trial and see if your work improves."
+                  }
+                </Typography>
               </Grid>
               <Grid item justifyContent='center' alignContent='center'>
-                <Button variant='contained' color='primary'>
-                  {labelbutton}
+                <Button href='/app' variant='contained'>
+                  <Typography
+                    variant='body2'
+                    sx={{
+                      color: "white",
+                    }}
+                  >
+                    {labelbutton}
+                  </Typography>
                 </Button>
               </Grid>
             </Grid>

@@ -18,12 +18,6 @@ import ProductDescription from "../components/editors/ProductDescription";
 import AccountManage from "../components/AccountManage";
 import { styled } from "@mui/material/styles";
 // @refresh reset
-import {
-  updateAudienceValue,
-  updateBusinessNameValue,
-  updateKeywordValue,
-  updateFeatureValue,
-} from "../slices/fieldsValue";
 import { Router } from "@reach/router";
 import Box from "@mui/material/Box";
 import SearchBox from "../components/subcomponents/searchBox";
