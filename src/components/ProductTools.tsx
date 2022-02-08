@@ -76,3 +76,39 @@ export const ProductTaglineTool = (props) => {
     />
   );
 };
+
+export const AdsGoogleTool = (props) => {
+  const intl = useIntl();
+  const brandName: string = intl.formatMessage({ id: "A005" });
+  const brandNamebusiness: string = intl.formatMessage({ id: "A006" });
+
+  const keywordslabel: string = intl.formatMessage({ id: "A009" });
+  const keywordsplaceholder: string = intl.formatMessage({ id: "A0010" });
+
+  const Featurelabel: string = intl.formatMessage({ id: "A0011" });
+  const Featureplaceholder: string = intl.formatMessage({ id: "A0012" });
+
+  return (
+    <ProductDescription
+      generateButtonName={intl.formatMessage({ id: "A003" })}
+      labelsLists={[
+        {
+          label: brandName,
+          placeholder: brandNamebusiness,
+          dispatcher: updateBusinessNameValue,
+        },
+        {
+          label: keywordslabel,
+          placeholder: keywordsplaceholder,
+          dispatcher: updateKeywordValue,
+        },
+        {
+          label: Featurelabel,
+          placeholder: Featureplaceholder,
+          dispatcher: updateFeatureValue,
+        },
+      ]}
+      {...props}
+    />
+  );
+};

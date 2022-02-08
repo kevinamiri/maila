@@ -19,7 +19,7 @@ const productPath = [
   { url: "/app/mission-statement", label: "Mission Statement" },
   { url: "/app/vision-statement", label: "Vision Statement" },
   { url: "/app/value-proposition", label: "Value Proposition" },
-  { url: "/app/adjust-tone-rewriting", label: "Adjust Tone" },
+  { url: "/app/adjust-tone-rewriting", label: "Rewrite - Adjust Tone" },
   { url: "/app/friendly-email", label: "Write business friendly email" },
   { url: "/app/followup-email", label: "Followup Email" },
   { url: "/app/cold-email", label: "Cold Email" },
@@ -27,6 +27,8 @@ const productPath = [
   { url: "/app/prospecting-email", label: "Prospecting Email" },
   { url: "/app/productdescription", label: "Product Description" },
   { url: "/app/productdescriptionamazon", label: "Product Description Amazon" },
+  { url: "/app/g-ad-title", label: "Google Ad Tilte" },
+  { url: "/app/g-ad-description", label: "Google Ad Description" },
 ];
 
 export default productPath;

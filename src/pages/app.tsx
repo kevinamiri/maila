@@ -7,6 +7,7 @@ import "../../configureAmplify";
 import {
   ProductDescriptionTool,
   ProductTaglineTool,
+  AdsGoogleTool,
 } from "../components/ProductTools";
 import AppContext from "../contexts/AppContext";
 import SignIn from "../components/SignIn";
@@ -179,6 +180,26 @@ export default function App() {
                     toneTextField={true}
                     path='/productdescription'
                   />
+                  <AdsGoogleTool
+                    message01=''
+                    mainPlaceholder={<FormattedMessage id='AG0021' />}
+                    inputLimitation={inputList}
+                    productType='6'
+                    productUrl='generate'
+                    headerTitle={<FormattedMessage id='AG0021' />}
+                    toneTextField={true}
+                    path='/g-ad-title'
+                  />
+                  <AdsGoogleTool
+                    message01=''
+                    mainPlaceholder={<FormattedMessage id='AG0022' />}
+                    inputLimitation={inputList}
+                    productType='9'
+                    productUrl='generate'
+                    headerTitle={<FormattedMessage id='AG0022' />}
+                    toneTextField={true}
+                    path='/g-ad-description'
+                  />
                   <ProductDescription
                     message01=''
                     mainPlaceholder={<FormattedMessage id='A0013' />}
@@ -248,7 +269,7 @@ export default function App() {
                     toneTextField={true}
                     headerTitle='Rewrite'
                     labelsLists={[]}
-                    path='/adjust-tone-rewriting'
+                    path='/x'
                   />
                   <ProductDescription
                     message01=''
