@@ -6,6 +6,7 @@ import { FormattedMessage } from "react-intl";
 import BorderColorRoundedIcon from '@mui/icons-material/BorderColorRounded';
 import EmailIcon from '@mui/icons-material/Email';
 import { RiAdvertisementFill } from "react-icons/ri";
+import { SiGoogleads, SiGoogleadsense } from 'react-icons/si';
 import LibraryBooksRoundedIcon from '@mui/icons-material/LibraryBooksRounded';
 import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';
 import CopyrightRoundedIcon from '@mui/icons-material/CopyrightRounded';
@@ -53,6 +54,8 @@ function reducer(state, action) {
             return { BlogTools01: !(state.BlogTools01) };
         case 'TranslationTools01':
             return { TranslationTools01: !(state.TranslationTools01) };
+        case 'GAds01':
+            return { GAds01: !(state.GAds01) };
         case 'WebPageTools01':
             return { WebPageTools01: !(state.WebPageTools01) };
         default:
@@ -63,7 +66,8 @@ function reducer(state, action) {
 
 const ListSidebar = () => {
     const [state, dispatch] = React.useReducer(reducer, initialState);
-    const MaterialRiAdvertisementFill = asSvgIcon(RiAdvertisementFill);
+    const MaterialSiGoogleadsense = asSvgIcon(SiGoogleadsense);
+    const MaterialSiGoogleads = asSvgIcon(SiGoogleads);
 
     function ListItemLink(props) {
         return <Link {...props} />;
@@ -138,7 +142,7 @@ const ListSidebar = () => {
                         <ListCatChild dirList="/app/mission-statement" formattedId="B01" iconComponent={<WriteMissionStatement viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/vision-statement" formattedId="B02" iconComponent={<WriteVisionStatement viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/value-proposition" formattedId="B03" iconComponent={<VrpanoOutlinedIcon fontSize="small" />} />
-                        <ListCatChild dirList="/app/adjust-tone-rewriting" formattedId="B04" iconComponent={<BrandVoiceicon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+
                     </List>
                 </Collapse>
                 {/* ************************************************************************************* */}
@@ -156,6 +160,7 @@ const ListSidebar = () => {
                     <List dense>
                         <ListCatChild dirList="/app/paraphrase" formattedId="RH004" iconComponent={<DictionaryCheck viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/grammar" formattedId="GC009" iconComponent={<GrammarCorrection viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        <ListCatChild dirList="/app/adjust-tone-rewriting" formattedId="B04" iconComponent={<BrandVoiceicon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                     </List>
                 </Collapse>
                 {/* ************************************************************************************* */}
@@ -202,18 +207,22 @@ const ListSidebar = () => {
                         <ListCatChild dirList="/app/subject-finder" formattedId="LP07" iconComponent={<SubjectFinder viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                     </List>
                 </Collapse>
-                {/* ************************************************************************************* */}
-                {/* <Tooltip title={<FormattedMessage id='TT02' />} disableFocusListener placement='right-start' disableInteractive >
-                    <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'TranslationTools01' })}>
+
+                <Tooltip title={<FormattedMessage id='TT02' />} disableFocusListener placement='right-start' disableInteractive >
+                    <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'GAds01' })}>
                         <ListItemIcon>
-                            <Link to="/app/translation">
-                                <TranslateRoundedIcon />
-                            </Link>
+                            <MaterialSiGoogleadsense />
                         </ListItemIcon>
                         <ListItemTextParent primary={<FormattedMessage id='TT02' />} />
-                        {(state.CopyTools01) ? <ExpandLess /> : <ExpandMore />}
+                        {(state.GAds01) ? <ExpandLess /> : <ExpandMore />}
                     </ListItem>
-                </Tooltip> */}
+                </Tooltip>
+                <Collapse in={(state.GAds01)} timeout="auto" unmountOnExit>
+                    <List dense>
+                        <ListCatChild dirList="/app/g-ad-title" formattedId="AG0021" iconComponent={<MaterialSiGoogleads viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        <ListCatChild dirList="/app/g-ad-description" formattedId="AG0022" iconComponent={<MaterialSiGoogleads viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                    </List>
+                </Collapse>
             </List>
         </>
     )
