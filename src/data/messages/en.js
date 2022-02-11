@@ -25,7 +25,9 @@ module.exports = {
   //copy tools
   CT01: "Copy Tools",
   B01: "Mission Statement",
+  B010: "Brand Mission Statement",
   B02: "Vision Statement",
+  B020: "Brand Vision Statement",
   B03: "Value Proposition",
   B04: "Brand Voice",
   //ads tools
@@ -42,7 +44,7 @@ module.exports = {
   LP05: "Sub-headers",
   LP06: "Keyword Detection",
   LP07: "Subject and Topic Suggestion",
-  TG03: "Tagline Generator",
+  TG03: "Tagline Suggestion",
   //blog tools
   BT02: "Blog Tools",
   BT03: "Blog Post Intro",
@@ -87,4 +89,10 @@ module.exports = {
   TAS025: "Terms & Conditions",
   S400: "Share",
   CM019: "Comments",
+  //description and text helpers
+  D102: "Describe what your company does",
+  D103: "Generate Statement",
+  D104: "Describe your product, and we'll create a value proposition based on your product description.",
+  CT940: "Create Outline",
+
 };

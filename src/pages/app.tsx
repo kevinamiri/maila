@@ -214,42 +214,42 @@ export default function App() {
                   />
                   <ProductTaglineTool
                     message01=''
-                    mainPlaceholder='Tagline Suggestion'
+                    mainPlaceholder={<FormattedMessage id='TG03' />}
                     inputLimitation={inputList}
                     productType='10'
                     productUrl='generate'
-                    generateButtonName='Tagline Suggestion'
+                    generateButtonName={<FormattedMessage id='TG03' />}
                     toneTextField={true}
                     headerTitle='Tagline'
                     path='/tagline'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Describe what your company does.'
+                    mainPlaceholder={<FormattedMessage id='D102' />}
                     inputLimitation={inputList}
                     productType='11'
                     productUrl='generate'
-                    generateButtonName='Generate Statement'
+                    generateButtonName={<FormattedMessage id='D103' />}
                     toneTextField={false}
-                    headerTitle='Brand Mission Statement'
+                    headerTitle={<FormattedMessage id='B010' />}
                     labelsLists={[]}
                     path='/mission-statement'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Describe what your company does.'
+                    mainPlaceholder={<FormattedMessage id='D102' />}
                     inputLimitation={inputList}
                     productType='12'
                     productUrl='generate'
-                    generateButtonName='Generate Statement'
+                    generateButtonName={<FormattedMessage id='D103' />}
                     toneTextField={false}
-                    headerTitle='Brand Vision Statement'
+                    headerTitle={<FormattedMessage id='B020' />}
                     labelsLists={[]}
                     path='/vision-statement'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder="Describe your product, and we'll create a value proposition based on your product description."
+                    mainPlaceholder={<FormattedMessage id='D104' />}
                     inputLimitation={inputList}
                     productType='20'
                     productUrl='generate'
@@ -547,6 +547,18 @@ export default function App() {
                     headerTitle='sub-headers'
                     labelsLists={[]}
                     path='/sub-headers'
+                  />
+                  <ProductDescription
+                    message01=''
+                    mainPlaceholder='Create Outline'
+                    inputLimitation={inputList}
+                    productType='42'
+                    productUrl='generate'
+                    generateButtonName='Compose'
+                    toneTextField={false}
+                    headerTitle='Create Outline'
+                    labelsLists={[]}
+                    path='/create-outline'
                   />
                   <AccountManage path='/profile' />
                 </Router>

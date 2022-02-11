@@ -29,6 +29,7 @@ const productPath = [
   { url: "/app/productdescriptionamazon", label: "Product Description Amazon" },
   { url: "/app/g-ad-title", label: "Google Ad Tilte" },
   { url: "/app/g-ad-description", label: "Google Ad Description" },
+  { url: "/app/create-outline", label: "Create Outline" },
 ];
 
 export default productPath;

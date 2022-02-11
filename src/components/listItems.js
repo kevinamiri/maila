@@ -6,6 +6,7 @@ import { FormattedMessage } from "react-intl";
 import BorderColorRoundedIcon from '@mui/icons-material/BorderColorRounded';
 import EmailIcon from '@mui/icons-material/Email';
 import { RiAdvertisementFill } from "react-icons/ri";
+import DoneOutlineRoundedIcon from '@mui/icons-material/DoneOutlineRounded';
 import { SiGoogleads, SiGoogleadsense } from 'react-icons/si';
 import LibraryBooksRoundedIcon from '@mui/icons-material/LibraryBooksRounded';
 import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';
@@ -161,6 +162,7 @@ const ListSidebar = () => {
                         <ListCatChild dirList="/app/paraphrase" formattedId="RH004" iconComponent={<DictionaryCheck viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/grammar" formattedId="GC009" iconComponent={<GrammarCorrection viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/adjust-tone-rewriting" formattedId="B04" iconComponent={<BrandVoiceicon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        <ListCatChild dirList="/app/create-outline" formattedId="CT940" iconComponent={<DoneOutlineRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                     </List>
                 </Collapse>
                 {/* ************************************************************************************* */}
