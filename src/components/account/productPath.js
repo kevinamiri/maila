@@ -30,6 +30,7 @@ const productPath = [
   { url: "/app/g-ad-title", label: "Google Ad Tilte" },
   { url: "/app/g-ad-description", label: "Google Ad Description" },
   { url: "/app/create-outline", label: "Create Outline" },
+  { url: "/app/expand", label: "Expand an outline" },
 ];
 
 export default productPath;

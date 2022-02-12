@@ -94,5 +94,6 @@ module.exports = {
   D103: "Generate Statement",
   D104: "Describe your product, and we'll create a value proposition based on your product description.",
   CT940: "Create Outline",
+  E405: "Expand an outline"
 
 };

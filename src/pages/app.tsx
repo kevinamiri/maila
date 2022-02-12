@@ -560,6 +560,18 @@ export default function App() {
                     labelsLists={[]}
                     path='/create-outline'
                   />
+                  <ProductDescription
+                    message01=''
+                    mainPlaceholder='Expand an Outline'
+                    inputLimitation={inputList}
+                    productType='43'
+                    productUrl='generate'
+                    generateButtonName='Compose'
+                    toneTextField={false}
+                    headerTitle='Expand an Outline'
+                    labelsLists={[]}
+                    path='/expand'
+                  />
                   <AccountManage path='/profile' />
                 </Router>
               </Container>
