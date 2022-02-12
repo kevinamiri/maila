@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 
 const WSpan = styled("span")(({ theme }) => ({
   color: theme.palette.text.primary,
+  backgroundColor: "#79ffe1",
 }));
 
 const SecondarySpan = styled("span")(({ theme }) => ({
@@ -24,7 +25,7 @@ export const Leaf = ({ attributes, children, leaf }) => {
   }
 
   if (leaf.highlight) {
-    children = <PrimarySpan>{children}</PrimarySpan>;
+    children = <WSpan>{children}</WSpan>;
   }
 
   if (leaf.selecthighlight) {
@@ -48,7 +49,7 @@ export const Leaf = ({ attributes, children, leaf }) => {
     children = <u>{children}</u>;
   }
 
-  return <SecondarySpan {...attributes}>{children}</SecondarySpan>;
+  return <PrimarySpan {...attributes}>{children}</PrimarySpan>;
 };
 
 export default Leaf;

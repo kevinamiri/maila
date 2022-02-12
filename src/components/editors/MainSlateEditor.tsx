@@ -23,6 +23,7 @@ import {
 } from "../../slices/editorParams";
 import { useDispatch } from "react-redux";
 import FooterEditorBar from "./FooterEditorBar";
+import { selectedText } from "hooks/currentSelectEditor";
 
 const HOTKEYS = {
   "mod+b": "bold",
@@ -35,7 +36,6 @@ const HOTKEYS = {
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
 const MainSlateEditor = (props) => {
-  console.log("MainSlateEditor");
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
   const FooterEditorBarX = useCallback(
@@ -48,34 +48,7 @@ const MainSlateEditor = (props) => {
   const editor4 = props.editor4;
   let inputLimitation = props.limitChar;
   const dispatch = useDispatch();
-  let premitedText = serialize(editor).slice(0, inputLimitation);
 
-  const decorate = useCallback(
-    ([node, path]) => {
-      const ranges = [];
-
-      if (premitedText && Text.isText(node)) {
-        const { text } = node;
-        const parts = text.split(premitedText);
-        let offset = 0;
-
-        parts.forEach((part, i) => {
-          if (i !== 0) {
-            ranges.push({
-              anchor: { path, offset: offset - premitedText.length },
-              focus: { path, offset },
-              highlight: true,
-            });
-          }
-
-          offset = offset + part.length + premitedText.length;
-        });
-      }
-
-      return ranges;
-    },
-    [premitedText]
-  );
   const defaultValue = () => {
     return (
       JSON.parse(
@@ -106,6 +79,7 @@ const MainSlateEditor = (props) => {
 
   const onBlur = React.useCallback(() => {
     savedSelection.current = editor.selection;
+    //TODO should add the position of select when for remined text as user would know which text is selected
     dispatch(setCurrentWordRange(savedSelection.current));
     divRef.current.style.boxShadow = `0 0 0 1px ${theme.palette.action.disabled}`;
   }, []);
@@ -200,7 +174,6 @@ const MainSlateEditor = (props) => {
               placeholder={props.placeholder}
               spellCheck
               autoFocus
-              decorate={decorate}
               onFocus={onFocus}
               onBlur={onBlur}
               onKeyDown={(event) => {
@@ -317,9 +290,9 @@ const Element = ({ attributes, children, element }) => {
       return <ol {...attributes}>{children}</ol>;
     default:
       return (
-        <span style={{ backgroundColor: "f4f9f9" }} {...attributes}>
+        <p style={{ backgroundColor: "f4f9f9" }} {...attributes}>
           {children}
-        </span>
+        </p>
       );
   }
 };
