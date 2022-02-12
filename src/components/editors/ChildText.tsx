@@ -56,7 +56,6 @@ const ChildText = (props) => {
     //save selection
 
     // console.log(editor.selection);
-    console.log(currentWordRange);
 
     editor.selection &&
       Transforms.insertText(editor, selectedContent, {
@@ -70,7 +69,6 @@ const ChildText = (props) => {
      * here editor.selection means that selected text exist but cursor is not in the editor
      */
     if (!editor.selection) {
-      console.log(currentWordRange);
       Transforms.insertText(editor, selectedContent, {
         at: currentWordRange ? currentWordRange : Editor.end(editor, []),
       });
