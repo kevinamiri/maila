@@ -247,123 +247,111 @@ export default function App() {
                     labelsLists={[]}
                     path='/vision-statement'
                   />
+
                   <ProductDescription
                     message01=''
                     mainPlaceholder={<FormattedMessage id='D104' />}
                     inputLimitation={inputList}
                     productType='20'
                     productUrl='generate'
-                    generateButtonName='Generate Statement'
+                    generateButtonName={<FormattedMessage id='D103' />}
                     toneTextField={false}
-                    headerTitle='Value proposition'
+                    headerTitle={<FormattedMessage id='B03' />}
                     labelsLists={[]}
                     path='/value-proposition'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder="customize your content based on your company's tone and voice"
+                    mainPlaceholder={<FormattedMessage id='W203' />}
                     inputLimitation={inputList}
                     productType='19'
                     productUrl='generate'
-                    generateButtonName='Rewrite'
+                    generateButtonName={<FormattedMessage id='W204' />}
                     toneTextField={true}
-                    headerTitle='Rewrite'
+                    headerTitle={<FormattedMessage id='W204' />}
                     labelsLists={[]}
-                    path='/x'
+                    path='/adjust-tone-rewriting'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Write an Email'
+                    mainPlaceholder={<FormattedMessage id='W201' />}
                     inputLimitation={inputList}
                     productType='41'
                     productUrl='generate'
-                    generateButtonName='Generate Email'
+                    generateButtonName={<FormattedMessage id='W202' />}
                     toneTextField={false}
-                    headerTitle='Write an Email'
+                    headerTitle={<FormattedMessage id='W201' />}
                     labelsLists={[]}
                     path='/friendly-email'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Paraphrase a passage'
+                    mainPlaceholder={<FormattedMessage id='W207' />}
                     inputLimitation={inputList}
                     productType='17'
                     productUrl='generate'
-                    generateButtonName='Paraphrase'
+                    generateButtonName={<FormattedMessage id='W207' />}
                     toneTextField={true}
-                    headerTitle='Paraphrase'
+                    headerTitle={<FormattedMessage id='W207' />}
                     labelsLists={[]}
                     path='/paraphrase'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Paraphrase a passage'
+                    mainPlaceholder={<FormattedMessage id='W205' />}
                     inputLimitation={inputList}
                     productType='18'
                     productUrl='generate'
-                    generateButtonName='Summary and Paraphrase'
+                    generateButtonName={<FormattedMessage id='W206' />}
                     toneTextField={true}
-                    headerTitle='Summary and Paraphrase'
+                    headerTitle={<FormattedMessage id='W205' />}
                     labelsLists={[]}
                     path='/repherase'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Cold Email'
+                    mainPlaceholder={<FormattedMessage id='W209' />}
                     inputLimitation={inputList}
                     productType='21'
                     productUrl='generate'
-                    generateButtonName='Compose'
+                    generateButtonName={<FormattedMessage id='W208' />}
                     toneTextField={true}
-                    headerTitle='Cold Email Template'
+                    headerTitle={<FormattedMessage id='W209' />}
                     labelsLists={[]}
                     path='/cold-email'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Thank You Email'
+                    mainPlaceholder={<FormattedMessage id='W210' />}
                     inputLimitation={inputList}
                     productType='22'
-                    productUrl='generate'
-                    generateButtonName='Compose'
+                    generateButtonName={<FormattedMessage id='W208' />}
                     toneTextField={true}
-                    headerTitle='Thank You Email'
+                    headerTitle={<FormattedMessage id='W210' />}
                     labelsLists={[]}
                     path='/thanks-you-email'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='Thank You Email'
-                    inputLimitation={inputList}
-                    productType='22'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={true}
-                    headerTitle='Thank You Email'
-                    labelsLists={[]}
-                    path='/thanks-you-email'
-                  />
-                  <ProductDescription
-                    message01='Describe the reasons why you want to reach out and how the customer can contact you.'
-                    mainPlaceholder='Describe the reasons why you want to reach out and how the customer can contact you.'
+                    message01={<FormattedMessage id='W211' />}
+                    mainPlaceholder={<FormattedMessage id='W211' />}
                     inputLimitation={inputList}
                     productType='23'
                     productUrl='generate'
-                    generateButtonName='Compose'
+                    generateButtonName={<FormattedMessage id='W208' />}
                     toneTextField={true}
-                    headerTitle='Prospecting email'
+                    headerTitle={<FormattedMessage id='W212' />}
                     labelsLists={[]}
                     path='/prospecting-email'
                   />
                   <ProductDescription
                     message01=''
-                    mainPlaceholder='Followup Email'
+                    mainPlaceholder={<FormattedMessage id='W212' />}
                     inputLimitation={inputList}
                     productType='37'
                     productUrl='generate'
-                    generateButtonName='Compose'
+                    generateButtonName={<FormattedMessage id='W208' />}
                     toneTextField={true}
-                    headerTitle='Followup Email'
+                    headerTitle={<FormattedMessage id='W212' />}
                     labelsLists={[]}
                     path='/followup-email'
                   />
