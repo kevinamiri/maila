@@ -32,8 +32,14 @@ const baseOptions = {
         titleTypographyProps: {
           variant: 'h6'
         }
-      }
+      },
+      styleOverrides: {
+        avatar: {
+          marginRight: '0.1px',
+        },
+      },
     },
+
     MuiLinearProgress: {
       styleOverrides: {
         root: {
