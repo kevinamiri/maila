@@ -40,7 +40,7 @@ interface ProductGenerationProps {
   headerTitle?: string | any;
   toneTextField?: boolean;
   productType: string;
-  productUrl: string;
+  productUrl?: string;
   labelsLists?: placeholderLists;
   path: string;
   component?: React.ComponentType<{}>;
