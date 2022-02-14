@@ -9,7 +9,6 @@ import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Divider from "@mui/material/Divider";
-import Box from "@mui/material/Box";
 import LinearProgressLoading from "../subcomponents/LinearProgressLoading";
 import loadScriptByURL from "./google";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
@@ -19,6 +18,7 @@ import GenerationButton from "./GenerationButton";
 import LanguageAutocomplete from "../subcomponents/LanguageAutocomplete";
 const MainSlateEditor = React.lazy(() => import("./MainSlateEditor"));
 import FormHelperText from "@mui/material/FormHelperText";
+import QuestionMarkIcon from "../subcomponents/questionMarkIcon";
 
 interface passageContext {
   children: SlateNode[];
@@ -43,6 +43,10 @@ interface ProductGenerationProps {
   productUrl?: string;
   labelsLists?: placeholderLists;
   path: string;
+  label?: String | any;
+  description?: String | any;
+  example?: String | any;
+  instructHelp?: String | any;
   component?: React.ComponentType<{}>;
 }
 
@@ -51,11 +55,15 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   mainPlaceholder = `Let's get started with a product description, shall we?`,
   inputLimitation = 201,
   productType = "4",
+  label,
   productUrl = "generate",
   generateButtonName = "generate",
   headerTitle = "write down some text",
   toneTextField,
   labelsLists,
+  description,
+  instructHelp,
+  example,
 }: ProductGenerationProps) => {
   const editor = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor2 = useMemo(() => withHistory(withReact(createEditor())), []);
@@ -84,15 +92,19 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
               backgroundColor: "background.paper",
             }}
           >
-            <CardHeader title={headerTitle} />
+            <CardHeader
+              title={label}
+              avatar={<QuestionMarkIcon title={description} />}
+            />
+
             <CardContent>
               {toneTextField ? (
                 <FormRedux toneTextField labelsLists={labelsLists} />
               ) : null}
               <Suspense fallback={<div>Loading...</div>}>
-                <FormHelperText sx={{ mb: 2 }}>{message01}</FormHelperText>
+                <FormHelperText sx={{ mb: 2 }}>{instructHelp}</FormHelperText>
                 <MainSlateEditor
-                  placeholder={mainPlaceholder}
+                  placeholder={example}
                   editor={editor}
                   limitChar={inputLimitation}
                   editor2={editor2}
