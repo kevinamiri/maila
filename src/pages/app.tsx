@@ -25,6 +25,7 @@ import SearchBox from "../components/subcomponents/searchBox";
 import useSettings from "../hooks/useSettings";
 // import CssBaseline from "@mui/material/CssBaseline";
 // import { QuickStats } from "../components/QuickStats";
+import { toolLists } from "../components/account/productPath";
 import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
@@ -169,11 +170,16 @@ export default function App() {
                 <Router basepath='/app'>
                   <PrivateRoute path='/profile' component={AccountManage} />
                   {/* <PrivateRoute
-                        path='/productdescription'
-                        component={ProductDescriptionApp}
+                      path='/productdescription'
+                      component={ProductDescriptionApp}
                       /> */}
                   <ProductDescriptionTool
-                    message01=''
+                    label={<FormattedMessage id='L12319' />}
+                    headerTitle={<FormattedMessage id='T09819' />}
+                    description={<FormattedMessage id='D76519' />}
+                    example={<FormattedMessage id='E56719' />}
+                    instructHelp={<FormattedMessage id='H43219' />}
+                    generateButtonName={<FormattedMessage id='N78919' />}
                     inputLimitation={inputList}
                     productType='4'
                     productUrl='generate'
@@ -182,35 +188,31 @@ export default function App() {
                   />
                   <AdsGoogleTool
                     message01=''
-                    mainPlaceholder={<FormattedMessage id='AG0021' />}
+                    label={<FormattedMessage id='L12330' />}
+                    headerTitle={<FormattedMessage id='T09830' />}
+                    description={<FormattedMessage id='D76530' />}
+                    example={<FormattedMessage id='E56730' />}
+                    instructHelp={<FormattedMessage id='H43230' />}
+                    generateButtonName={<FormattedMessage id='N78930' />}
                     inputLimitation={inputList}
                     productType='6'
                     productUrl='generate'
-                    headerTitle={<FormattedMessage id='AG0021' />}
                     toneTextField={true}
                     path='/g-ad-title'
                   />
                   <AdsGoogleTool
                     message01=''
-                    mainPlaceholder={<FormattedMessage id='AG0022' />}
+                    label={<FormattedMessage id='L12331' />}
+                    headerTitle={<FormattedMessage id='T09831' />}
+                    description={<FormattedMessage id='D76531' />}
+                    example={<FormattedMessage id='E56731' />}
+                    instructHelp={<FormattedMessage id='H43231' />}
+                    generateButtonName={<FormattedMessage id='N78931' />}
                     inputLimitation={inputList}
                     productType='9'
                     productUrl='generate'
-                    headerTitle={<FormattedMessage id='AG0022' />}
                     toneTextField={true}
                     path='/g-ad-description'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='A0013' />}
-                    inputLimitation={inputList}
-                    productType='9'
-                    productUrl='generate'
-                    generateButtonName='check'
-                    toneTextField={false}
-                    headerTitle='Grammar Correction'
-                    labelsLists={[]}
-                    path='/grammar'
                   />
                   <ProductTaglineTool
                     message01=''
@@ -223,342 +225,342 @@ export default function App() {
                     headerTitle='Tagline'
                     path='/tagline'
                   />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='D102' />}
-                    inputLimitation={inputList}
-                    productType='11'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='D103' />}
-                    toneTextField={false}
-                    headerTitle={<FormattedMessage id='B010' />}
-                    labelsLists={[]}
-                    path='/mission-statement'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='D102' />}
-                    inputLimitation={inputList}
-                    productType='12'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='D103' />}
-                    toneTextField={false}
-                    headerTitle={<FormattedMessage id='B020' />}
-                    labelsLists={[]}
-                    path='/vision-statement'
-                  />
 
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='D104' />}
-                    inputLimitation={inputList}
-                    productType='20'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='D103' />}
-                    toneTextField={false}
-                    headerTitle={<FormattedMessage id='B03' />}
-                    labelsLists={[]}
-                    path='/value-proposition'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='W203' />}
-                    inputLimitation={inputList}
-                    productType='19'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='W204' />}
-                    toneTextField={true}
-                    headerTitle={<FormattedMessage id='W204' />}
-                    labelsLists={[]}
-                    path='/adjust-tone-rewriting'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='W201' />}
-                    inputLimitation={inputList}
-                    productType='41'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='W202' />}
-                    toneTextField={false}
-                    headerTitle={<FormattedMessage id='W201' />}
-                    labelsLists={[]}
-                    path='/friendly-email'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='W207' />}
-                    inputLimitation={inputList}
-                    productType='17'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='W207' />}
-                    toneTextField={true}
-                    headerTitle={<FormattedMessage id='W207' />}
-                    labelsLists={[]}
-                    path='/paraphrase'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='W205' />}
-                    inputLimitation={inputList}
-                    productType='18'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='W206' />}
-                    toneTextField={true}
-                    headerTitle={<FormattedMessage id='W205' />}
-                    labelsLists={[]}
-                    path='/repherase'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='W209' />}
-                    inputLimitation={inputList}
-                    productType='21'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='W208' />}
-                    toneTextField={true}
-                    headerTitle={<FormattedMessage id='W209' />}
-                    labelsLists={[]}
-                    path='/cold-email'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='W210' />}
-                    inputLimitation={inputList}
-                    productType='22'
-                    generateButtonName={<FormattedMessage id='W208' />}
-                    toneTextField={true}
-                    headerTitle={<FormattedMessage id='W210' />}
-                    labelsLists={[]}
-                    path='/thanks-you-email'
-                  />
-                  <ProductDescription
-                    message01={<FormattedMessage id='W211' />}
-                    mainPlaceholder={<FormattedMessage id='W211' />}
-                    inputLimitation={inputList}
-                    productType='23'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='W208' />}
-                    toneTextField={true}
-                    headerTitle={<FormattedMessage id='W212' />}
-                    labelsLists={[]}
-                    path='/prospecting-email'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder={<FormattedMessage id='W212' />}
-                    inputLimitation={inputList}
-                    productType='37'
-                    productUrl='generate'
-                    generateButtonName={<FormattedMessage id='W208' />}
-                    toneTextField={true}
-                    headerTitle={<FormattedMessage id='W212' />}
-                    labelsLists={[]}
-                    path='/followup-email'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder='Blog Post Intro'
-                    inputLimitation={inputList}
+                    label={<FormattedMessage id='L1230' />}
+                    headerTitle={<FormattedMessage id='T0980' />}
+                    description={<FormattedMessage id='D7650' />}
+                    example={<FormattedMessage id='E5670' />}
+                    instructHelp={<FormattedMessage id='H4320' />}
+                    generateButtonName={<FormattedMessage id='N7890' />}
                     productType='24'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={true}
-                    headerTitle='Blog Post Intro'
-                    labelsLists={[]}
                     path='/blog-post-intro'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder='Blog Post Ideas'
-                    inputLimitation={inputList}
-                    productType='39'
-                    productUrl='generate'
-                    generateButtonName='Compose'
                     toneTextField={true}
-                    headerTitle='Blog Post Ideas'
                     labelsLists={[]}
-                    path='/blog-post-ideas'
                   />
-
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='Blog Post Conclusion'
-                    inputLimitation={inputList}
+                    label={<FormattedMessage id='L1231' />}
+                    headerTitle={<FormattedMessage id='T0981' />}
+                    description={<FormattedMessage id='D7651' />}
+                    example={<FormattedMessage id='E5671' />}
+                    instructHelp={<FormattedMessage id='H4321' />}
+                    generateButtonName={<FormattedMessage id='N7891' />}
                     productType='27'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={true}
-                    headerTitle='Blog Post Conclusion'
-                    labelsLists={[]}
                     path='/blog-post-conclusion'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder='Blog Post Summary'
-                    inputLimitation={inputList}
-                    productType='26'
-                    productUrl='generate'
-                    generateButtonName='Compose'
                     toneTextField={true}
-                    headerTitle='Blog Post Summary'
                     labelsLists={[]}
-                    path='/blog-post-summary'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='Blog Post AIDA'
-                    inputLimitation={inputList}
-                    productType='25'
-                    productUrl='generate'
-                    generateButtonName='Compose'
+                    label={<FormattedMessage id='L1233' />}
+                    headerTitle={<FormattedMessage id='T0983' />}
+                    description={<FormattedMessage id='D7653' />}
+                    example={<FormattedMessage id='E5673' />}
+                    instructHelp={<FormattedMessage id='H4323' />}
+                    generateButtonName={<FormattedMessage id='N7893' />}
+                    productType='39'
+                    path='/blog-post-ideas'
                     toneTextField={true}
-                    headerTitle='Blog Post AIDA'
                     labelsLists={[]}
-                    path='/blog-post-aida'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='Blog Post PAS'
-                    inputLimitation={inputList}
-                    productType='38'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={true}
-                    headerTitle='Blog Post PAS'
-                    labelsLists={[]}
-                    path='/blog-post-pas'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder='Blog Post Headline'
-                    inputLimitation={inputList}
+                    label={<FormattedMessage id='L1234' />}
+                    headerTitle={<FormattedMessage id='T0984' />}
+                    description={<FormattedMessage id='D7654' />}
+                    example={<FormattedMessage id='E5674' />}
+                    instructHelp={<FormattedMessage id='H4324' />}
+                    generateButtonName={<FormattedMessage id='N7894' />}
                     productType='28'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={true}
-                    headerTitle='Blog Post Headline'
-                    labelsLists={[]}
                     path='/blog-post-headline'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder='Landing Page Headline Description'
-                    inputLimitation={inputList}
-                    productType='29'
-                    productUrl='generate'
-                    generateButtonName='Compose'
                     toneTextField={true}
-                    headerTitle='Landing Page Headline & Headline Description'
                     labelsLists={[]}
-                    path='/landing-page-headline-description'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='landing-page-headline'
-                    inputLimitation={inputList}
-                    productType='30'
-                    productUrl='generate'
-                    generateButtonName='Compose'
+                    label={<FormattedMessage id='L1235' />}
+                    headerTitle={<FormattedMessage id='T0985' />}
+                    description={<FormattedMessage id='D7655' />}
+                    example={<FormattedMessage id='E5675' />}
+                    instructHelp={<FormattedMessage id='H4325' />}
+                    generateButtonName={<FormattedMessage id='N7895' />}
+                    productType='27'
+                    path='/blog-post-summary'
                     toneTextField={true}
-                    headerTitle='landing-page-headline'
                     labelsLists={[]}
-                    path='/landing-page-headline'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='meta-descriptions'
-                    inputLimitation={inputList}
-                    productType='31'
-                    productUrl='generate'
-                    generateButtonName='Compose'
+                    label={<FormattedMessage id='L12324' />}
+                    headerTitle={<FormattedMessage id='T09824' />}
+                    description={<FormattedMessage id='D76524' />}
+                    example={<FormattedMessage id='E56724' />}
+                    instructHelp={<FormattedMessage id='H43224' />}
+                    generateButtonName={<FormattedMessage id='N78924' />}
+                    productType='17'
+                    path='/paraphrase'
                     toneTextField={true}
-                    headerTitle='meta-descriptions'
                     labelsLists={[]}
-                    path='/meta-descriptions'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='question-generator'
-                    inputLimitation={inputList}
-                    productType='32'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={false}
-                    headerTitle='question-generator'
+                    label={<FormattedMessage id='L1237' />}
+                    headerTitle={<FormattedMessage id='T0987' />}
+                    description={<FormattedMessage id='D7657' />}
+                    example={<FormattedMessage id='E5677' />}
+                    instructHelp={<FormattedMessage id='H4327' />}
+                    generateButtonName={<FormattedMessage id='N7897' />}
+                    productType='11'
+                    path='/mission-statement'
+                    toneTextField={true}
                     labelsLists={[]}
-                    path='/question-generator'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='subject-finder'
-                    inputLimitation={inputList}
-                    productType='33'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={false}
-                    headerTitle='subject-finder'
+                    label={<FormattedMessage id='L1238' />}
+                    headerTitle={<FormattedMessage id='T0988' />}
+                    description={<FormattedMessage id='D7658' />}
+                    example={<FormattedMessage id='E5678' />}
+                    instructHelp={<FormattedMessage id='H4328' />}
+                    generateButtonName={<FormattedMessage id='N7898' />}
+                    productType='12'
+                    path='/vision-statement'
+                    toneTextField={true}
                     labelsLists={[]}
-                    path='/subject-finder'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='subject-finder'
-                    inputLimitation={inputList}
-                    productType='34'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={false}
-                    headerTitle='keyword-related'
+                    label={<FormattedMessage id='L1239' />}
+                    headerTitle={<FormattedMessage id='T0989' />}
+                    description={<FormattedMessage id='D7659' />}
+                    example={<FormattedMessage id='E5679' />}
+                    instructHelp={<FormattedMessage id='H4329' />}
+                    generateButtonName={<FormattedMessage id='N7899' />}
+                    productType='20'
+                    path='/value-proposition'
+                    toneTextField={true}
                     labelsLists={[]}
-                    path='/keyword-finder'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='Good English'
-                    inputLimitation={inputList}
+                    label={<FormattedMessage id='L12310' />}
+                    headerTitle={<FormattedMessage id='T09810' />}
+                    description={<FormattedMessage id='D76510' />}
+                    example={<FormattedMessage id='E56710' />}
+                    instructHelp={<FormattedMessage id='H43210' />}
+                    generateButtonName={<FormattedMessage id='N78910' />}
+                    productType='19'
+                    path='/adjust-tone-rewriting'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12311' />}
+                    headerTitle={<FormattedMessage id='T09811' />}
+                    description={<FormattedMessage id='D76511' />}
+                    example={<FormattedMessage id='E56711' />}
+                    instructHelp={<FormattedMessage id='H43211' />}
+                    generateButtonName={<FormattedMessage id='N78911' />}
+                    productType='41'
+                    path='/write-business-friendly-email'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12312' />}
+                    headerTitle={<FormattedMessage id='T09812' />}
+                    description={<FormattedMessage id='D76512' />}
+                    example={<FormattedMessage id='E56712' />}
+                    instructHelp={<FormattedMessage id='H43212' />}
+                    generateButtonName={<FormattedMessage id='N78912' />}
+                    productType='37'
+                    path='/followup-email'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12313' />}
+                    headerTitle={<FormattedMessage id='T09813' />}
+                    description={<FormattedMessage id='D76513' />}
+                    example={<FormattedMessage id='E56713' />}
+                    instructHelp={<FormattedMessage id='H43213' />}
+                    generateButtonName={<FormattedMessage id='N78913' />}
+                    productType='21'
+                    path='/cold-email'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12314' />}
+                    headerTitle={<FormattedMessage id='T09814' />}
+                    description={<FormattedMessage id='D76514' />}
+                    example={<FormattedMessage id='E56714' />}
+                    instructHelp={<FormattedMessage id='H43214' />}
+                    generateButtonName={<FormattedMessage id='N78914' />}
+                    productType='22'
+                    path='/thanks-you-email'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12315' />}
+                    headerTitle={<FormattedMessage id='T09815' />}
+                    description={<FormattedMessage id='D76515' />}
+                    example={<FormattedMessage id='E56715' />}
+                    instructHelp={<FormattedMessage id='H43215' />}
+                    generateButtonName={<FormattedMessage id='N78915' />}
+                    productType='23'
+                    path='/prospecting-email'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12316' />}
+                    headerTitle={<FormattedMessage id='T09816' />}
+                    description={<FormattedMessage id='D76516' />}
+                    example={<FormattedMessage id='E56716' />}
+                    instructHelp={<FormattedMessage id='H43216' />}
+                    generateButtonName={<FormattedMessage id='N78916' />}
                     productType='35'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={false}
-                    headerTitle='Good English'
-                    labelsLists={[]}
                     path='/grammar'
-                  />
-                  <ProductDescription
-                    message01=''
-                    mainPlaceholder='sub-headers'
-                    inputLimitation={inputList}
-                    productType='36'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={false}
-                    headerTitle='sub-headers'
+                    toneTextField={true}
                     labelsLists={[]}
-                    path='/sub-headers'
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='Create Outline'
-                    inputLimitation={inputList}
+                    label={<FormattedMessage id='L12317' />}
+                    headerTitle={<FormattedMessage id='T09817' />}
+                    description={<FormattedMessage id='D76517' />}
+                    example={<FormattedMessage id='E56717' />}
+                    instructHelp={<FormattedMessage id='H43217' />}
+                    generateButtonName={<FormattedMessage id='N78917' />}
+                    productType='14'
+                    path='/subject-suggestion'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12318' />}
+                    headerTitle={<FormattedMessage id='T09818' />}
+                    description={<FormattedMessage id='D76518' />}
+                    example={<FormattedMessage id='E56718' />}
+                    instructHelp={<FormattedMessage id='H43218' />}
+                    generateButtonName={<FormattedMessage id='N78918' />}
+                    productType='31'
+                    path='/meta-descriptions'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12320' />}
+                    headerTitle={<FormattedMessage id='T09820' />}
+                    description={<FormattedMessage id='D76520' />}
+                    example={<FormattedMessage id='E56720' />}
+                    instructHelp={<FormattedMessage id='H43220' />}
+                    generateButtonName={<FormattedMessage id='N78920' />}
+                    productType='4'
+                    path='/productdescriptionamazon'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12321' />}
+                    headerTitle={<FormattedMessage id='T09821' />}
+                    description={<FormattedMessage id='D76521' />}
+                    example={<FormattedMessage id='E56721' />}
+                    instructHelp={<FormattedMessage id='H43221' />}
+                    generateButtonName={<FormattedMessage id='N78921' />}
                     productType='42'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={false}
-                    headerTitle='Create Outline'
-                    labelsLists={[]}
                     path='/create-outline'
+                    toneTextField={true}
+                    labelsLists={[]}
                   />
                   <ProductDescription
-                    message01=''
-                    mainPlaceholder='Expand an Outline'
-                    inputLimitation={inputList}
+                    label={<FormattedMessage id='L12322' />}
+                    headerTitle={<FormattedMessage id='T09822' />}
+                    description={<FormattedMessage id='D76522' />}
+                    example={<FormattedMessage id='E56722' />}
+                    instructHelp={<FormattedMessage id='H43222' />}
+                    generateButtonName={<FormattedMessage id='N78922' />}
                     productType='43'
-                    productUrl='generate'
-                    generateButtonName='Compose'
-                    toneTextField={false}
-                    headerTitle='Expand an Outline'
-                    labelsLists={[]}
                     path='/expand'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12323' />}
+                    headerTitle={<FormattedMessage id='T09823' />}
+                    description={<FormattedMessage id='D76523' />}
+                    example={<FormattedMessage id='E56723' />}
+                    instructHelp={<FormattedMessage id='H43223' />}
+                    generateButtonName={<FormattedMessage id='N78923' />}
+                    productType='34'
+                    path='/keyword-finder'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12325' />}
+                    headerTitle={<FormattedMessage id='T09825' />}
+                    description={<FormattedMessage id='D76525' />}
+                    example={<FormattedMessage id='E56725' />}
+                    instructHelp={<FormattedMessage id='H43225' />}
+                    generateButtonName={<FormattedMessage id='N78925' />}
+                    productType='32'
+                    path='/question-generator'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12326' />}
+                    headerTitle={<FormattedMessage id='T09826' />}
+                    description={<FormattedMessage id='D76526' />}
+                    example={<FormattedMessage id='E56726' />}
+                    instructHelp={<FormattedMessage id='H43226' />}
+                    generateButtonName={<FormattedMessage id='N78926' />}
+                    productType='36'
+                    path='/sub-headers'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12327' />}
+                    headerTitle={<FormattedMessage id='T09827' />}
+                    description={<FormattedMessage id='D76527' />}
+                    example={<FormattedMessage id='E56727' />}
+                    instructHelp={<FormattedMessage id='H43227' />}
+                    generateButtonName={<FormattedMessage id='N78927' />}
+                    productType='29'
+                    path='/landing-page-headline-description'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12328' />}
+                    headerTitle={<FormattedMessage id='T09828' />}
+                    description={<FormattedMessage id='D76528' />}
+                    example={<FormattedMessage id='E56728' />}
+                    instructHelp={<FormattedMessage id='H43228' />}
+                    generateButtonName={<FormattedMessage id='N78928' />}
+                    productType='30'
+                    path='/landing-page-headline'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12329' />}
+                    headerTitle={<FormattedMessage id='T09829' />}
+                    description={<FormattedMessage id='D76529' />}
+                    example={<FormattedMessage id='E56729' />}
+                    instructHelp={<FormattedMessage id='H43229' />}
+                    generateButtonName={<FormattedMessage id='N78929' />}
+                    productType='16'
+                    path='/blog-post-aida'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={<FormattedMessage id='L12330' />}
+                    headerTitle={<FormattedMessage id='T09830' />}
+                    description={<FormattedMessage id='D76530' />}
+                    example={<FormattedMessage id='E56730' />}
+                    instructHelp={<FormattedMessage id='H43230' />}
+                    generateButtonName={<FormattedMessage id='N78930' />}
+                    productType='38'
+                    path='/blog-post-pas'
+                    toneTextField={true}
+                    labelsLists={[]}
                   />
                   <AccountManage path='/profile' />
                 </Router>

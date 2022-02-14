@@ -112,3 +112,18 @@ export const AdsGoogleTool = (props) => {
     />
   );
 };
+
+{
+  /* <ProductDescription
+label={<FormattedMessage id='L12319' />}
+headerTitle={<FormattedMessage id='T09819' />}
+description={<FormattedMessage id='D76519' />}
+example={<FormattedMessage id='E56719' />}
+instructHelp={<FormattedMessage id='H43219' />}
+generateButtonName={<FormattedMessage id='N78919' />}
+productType='25'
+path='/productdescription'
+toneTextField={true}
+labelsLists={[]}
+/> */
+}
