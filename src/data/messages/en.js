@@ -31,6 +31,7 @@ module.exports = {
   B03: "Value Proposition",
   B04: "Brand Voice",
   //ads tools
+  A1203: "Ads Tools",
   AG0021: "Google Ad Header",
   AG0022: "Google Ad Description",
   //writing tools
