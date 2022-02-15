@@ -212,12 +212,12 @@ const ListSidebar = () => {
                     </List>
                 </Collapse>
 
-                <Tooltip title={<FormattedMessage id='TT02' />} disableFocusListener placement='right-start' disableInteractive >
+                <Tooltip title={<FormattedMessage id='A1203' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'GAds01' })}>
                         <ListItemIcon>
                             <MaterialSiGoogleadsense />
                         </ListItemIcon>
-                        <ListItemTextParent primary={<FormattedMessage id='TT02' />} />
+                        <ListItemTextParent primary={<FormattedMessage id='A1203' />} />
                         {(state.GAds01) ? <ExpandLess /> : <ExpandMore />}
                     </ListItem>
                 </Tooltip>
