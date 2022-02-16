@@ -30,6 +30,7 @@ const HomeBlock03 = (props) => {
       direction='row'
       justifyContent='center'
       alignItems='center'
+      component='section'
     >
       <Grid item xs={12} sm={12} md={6}>
         <ConceptBlock01 />
