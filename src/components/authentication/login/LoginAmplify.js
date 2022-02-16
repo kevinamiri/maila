@@ -14,6 +14,7 @@ const LoginAmplify = () => {
   const signIn = async (username, password) => {
     return await Auth.signIn(username, password)
   }
+
   return (
     <>
       <Box
@@ -61,7 +62,6 @@ const LoginAmplify = () => {
 
           } catch (err) {
             console.error(err);
-
             if (err.code === 'UserNotConfirmedException') {
               navigate('/auth/verify', {
                 state: {
