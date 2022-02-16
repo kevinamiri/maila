@@ -10,7 +10,7 @@ import { styled } from "@mui/material/styles";
 import ContactDialogs from "../homepage/ContactDialogs";
 
 export default function Footer(props) {
-  const NewContainer = styled("div")(({ theme }) => ({
+  const NewContainer = styled("footer")(({ theme }) => ({
     borderTop: `1px solid ${theme.palette.divider}`,
     backgroundColor: theme.palette.background.default,
     maxWidth: "100%",

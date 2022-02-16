@@ -8,9 +8,10 @@ import CardFeature from "./card/CardFeature";
 interface CardFeatureBlockProps {
   titles?: [];
   bodys?: [];
+  component?: String;
 }
 
-const FWrapper = styled("div")(({ theme }) => ({
+const FWrapper = styled("section")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   flexDirection: "row",

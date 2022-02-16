@@ -75,7 +75,7 @@ export default function ContactDialogs() {
         color='text.secondary'
         onClick={handleClickOpen}
       >
-        <CustomLink style={{ cursor: "pointer" }}>Leave a feadback</CustomLink>
+        <CustomLink style={{ cursor: "pointer" }}>Leave a Feadback</CustomLink>
       </Typography>
       <BootstrapDialog
         onClose={handleClose}

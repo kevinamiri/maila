@@ -17,6 +17,7 @@ const AccordionBlock = ({ questions }: QuestionListProps) => {
         sx={{
           backgroundColor: (theme) => `${theme.palette.background.paper}`,
         }}
+        conponent='section'
       >
         <Box
           sx={{

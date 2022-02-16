@@ -44,95 +44,93 @@ const TopBar = ({ title, icon, uilang }) => {
     }
   };
   return (
-    <Box>
-      <AppBar
-        position='fixed'
-        color='inherit'
-        elevation={0}
-        sx={{
-          backgroundColor: "background.paper",
-          color: "text.primary",
-          zIndex: (theme) => theme.zIndex.drawer + 1,
-          borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
+    <AppBar
+      position='fixed'
+      color='inherit'
+      elevation={0}
+      sx={{
+        backgroundColor: "background.paper",
+        color: "text.primary",
+        zIndex: (theme) => theme.zIndex.drawer + 1,
+        borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
+        transition: (theme) =>
+          theme.transitions.create(["width", "margin"], {
+            easing: theme.transitions.easing.sharp,
+            duration: theme.transitions.duration.leavingScreen,
+          }),
+        ...(IsOpen && {
+          marginLeft: drawerWidth,
+          width: `calc(100% - ${drawerWidth}px)`,
+          backgroundColor: "rgb(255, 255, 255)",
           transition: (theme) =>
             theme.transitions.create(["width", "margin"], {
               easing: theme.transitions.easing.sharp,
-              duration: theme.transitions.duration.leavingScreen,
+              duration: theme.transitions.duration.enteringScreen,
             }),
-          ...(IsOpen && {
-            marginLeft: drawerWidth,
-            width: `calc(100% - ${drawerWidth}px)`,
-            backgroundColor: "rgb(255, 255, 255)",
-            transition: (theme) =>
-              theme.transitions.create(["width", "margin"], {
-                easing: theme.transitions.easing.sharp,
-                duration: theme.transitions.duration.enteringScreen,
-              }),
-          }),
-        }}
-      >
-        <Toolbar>
-          <MenuIcon icontype={icon} />
-          <Box
+        }),
+      }}
+    >
+      <Toolbar component='nav'>
+        <MenuIcon icontype={icon} />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            flexGrow: 1,
+            ml: 1,
+          }}
+        >
+          <SeverityPill
             sx={{
-              display: "flex",
-              flexDirection: "row",
-              flexGrow: 1,
+              alignSelf: "flex-end",
+              mr: 1,
               ml: 1,
+              mt: 1,
             }}
+            color='success'
           >
-            <SeverityPill
-              sx={{
-                alignSelf: "flex-end",
-                mr: 1,
-                ml: 1,
-                mt: 1,
-              }}
-              color='success'
-            >
-              beta
-            </SeverityPill>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-            }}
-          >
-            {uilang}
-            <UserAvatar handleClick={handleClick} />
-          </Box>
+            beta
+          </SeverityPill>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+          }}
+        >
+          {uilang}
+          <UserAvatar handleClick={handleClick} />
+        </Box>
 
-          {selectedUrl && (
-            <Menu
-              id='demo-positioned-menu'
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-            >
-              <MenuItem onClick={() => navigate("/app/profile")}>
-                <FormattedMessage id='MC01' />
-              </MenuItem>
-              <MenuItem>
-                <FormattedMessage id='MC02' />
-              </MenuItem>
-              <MenuItem onClick={logout}>
-                <FormattedMessage id='MC03' />
-              </MenuItem>
-            </Menu>
-          )}
-        </Toolbar>
-      </AppBar>
-    </Box>
+        {selectedUrl && (
+          <Menu
+            id='demo-positioned-menu'
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "left",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+          >
+            <MenuItem onClick={() => navigate("/app/profile")}>
+              <FormattedMessage id='MC01' />
+            </MenuItem>
+            <MenuItem>
+              <FormattedMessage id='MC02' />
+            </MenuItem>
+            <MenuItem onClick={logout}>
+              <FormattedMessage id='MC03' />
+            </MenuItem>
+          </Menu>
+        )}
+      </Toolbar>
+    </AppBar>
   );
 };
 

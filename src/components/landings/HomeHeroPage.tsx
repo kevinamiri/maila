@@ -35,6 +35,7 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
           backgroundColor: (theme) => theme.palette.background.paper,
           marginTop: "4rem",
         }}
+        component='section'
       >
         <Grid
           item
