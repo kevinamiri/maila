@@ -20,12 +20,13 @@ import AccountManage from "../components/AccountManage";
 import { styled } from "@mui/material/styles";
 // @refresh reset
 import { Router } from "@reach/router";
+import { useLocation } from "@reach/router";
 import Box from "@mui/material/Box";
 import SearchBox from "../components/subcomponents/searchBox";
 import useSettings from "../hooks/useSettings";
+import { useSnackbar } from "notistack";
 // import CssBaseline from "@mui/material/CssBaseline";
 // import { QuickStats } from "../components/QuickStats";
-import { toolLists } from "../components/account/productPath";
 import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
@@ -51,10 +52,15 @@ const getValues = (settings) => ({
   lang: settings.lang,
 });
 
+const isNew = (str, text) => {
+  return str.toLowerCase().includes(text.toLowerCase());
+};
 export default function App() {
   const appContext = useContext(AppContext);
   const [context, setContext] = useState(appContext);
   const { settings, saveSettings } = useSettings();
+  const location = useLocation();
+  const { enqueueSnackbar } = useSnackbar();
   /**
    * why state? When the component receives updates, the result is displayed immediately, otherwise we can use ref.
    */
@@ -95,7 +101,15 @@ export default function App() {
       setContext({ ...context, userInfo: user });
     } catch (err) {
       setContext({ ...context, userInfo: err });
-      navigate("/login");
+      isNew(location.search, "error_description") &&
+        enqueueSnackbar("User has been successfully registered", {
+          variant: "success",
+        });
+      enqueueSnackbar("Try to login again", {
+        variant: "success",
+      });
+
+      navigate("/auth/login");
     }
   }
   const logout = async () => {
