@@ -3,13 +3,12 @@ import { updateProgressValue } from "../slices/progress";
 import { Editor, Transforms } from "slate";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import { ReactEditor } from "editable-slate-react";
-import { selectedText } from "./currentSelectEditor";
+
 
 
 //fetching the data from the api and then inserting it into the editor
 async function useFetchInsert(dispatch,enqueueSnackbar, editors, gtoken, url, fieldValues) {
-  const selectedTextValue = selectedText(editors[0])
-
+  const selectedTextValue = Editor.string(editors[0], editors[0].selection);
     const textLists = await useFetchDataSelected(
       selectedTextValue,
       gtoken,
