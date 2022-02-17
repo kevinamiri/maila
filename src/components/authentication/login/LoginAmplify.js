@@ -98,6 +98,7 @@ const LoginAmplify = (props) => {
               type="email"
               value={values.email}
               variant="outlined"
+              disabled={props.isRedirecting}
             />
             <TextField
               error={Boolean(touched.password && errors.password)}
@@ -111,6 +112,7 @@ const LoginAmplify = (props) => {
               type="password"
               value={values.password}
               variant="outlined"
+              disabled={props.isRedirecting}
             />
             {errors.submit && (
               <Box sx={{ mt: 3 }}>
@@ -122,7 +124,7 @@ const LoginAmplify = (props) => {
             <Box sx={{ mt: 2 }}>
               <Button
                 color="primary"
-                disabled={isSubmitting}
+                disabled={isSubmitting || props.isRedirecting}
                 fullWidth
                 size="large"
                 type="submit"
@@ -139,7 +141,7 @@ const LoginAmplify = (props) => {
         )}
       </Formik>
       <Divider sx={{ my: 3 }} />
-      <SocialSignIn />
+      <SocialSignIn disabled={props.isRedirecting} />
       <Box sx={{ display: "flex", p: 1 }}>
         <Box sx={{ p: 1, flexGrow: 1 }}>
           <Link color='textSecondary' to='/auth/recovery'>

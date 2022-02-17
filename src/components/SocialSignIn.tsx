@@ -26,7 +26,7 @@ function asSvgIcon(reactSvgComponent) {
 
   return Icon;
 }
-function SocialSignIn() {
+function SocialSignIn(props) {
   const FilledFaFacebookSquare = asSvgIcon(FaFacebookSquare);
   const FilledFcGoogle = asSvgIcon(FcGoogle);
   return (
@@ -39,6 +39,7 @@ function SocialSignIn() {
         <Button
           variant='outlined'
           onClick={() => Auth.federatedSignIn({ provider: "Google" })}
+          {...props}
           color='primary'
           startIcon={<FilledFcGoogle />}
         >
