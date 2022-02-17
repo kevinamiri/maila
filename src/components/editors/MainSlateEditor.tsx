@@ -182,6 +182,8 @@ const MainSlateEditor = (props) => {
                     event.preventDefault();
                     const mark = HOTKEYS[hotkey];
                     if (mark === "selectAll") {
+                      savedSelection.current = editor.selection;
+                      dispatch(setCurrentWordRange(savedSelection.current));
                       Transforms.select(editor, {
                         anchor: Editor.start(editor, []),
                         focus: Editor.end(editor, []),

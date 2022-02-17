@@ -44,9 +44,7 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
   //hooks must be outside of the function
   const dispatch = useDispatch();
   const { enqueueSnackbar } = useSnackbar();
-  const selected = selectedText(editor);
   const fieldValues = useSelector((state) => state.fieldsValue);
-
   const editors = [editor, editor2, editor3, editor4];
 
   const handleClarify = (e) => {
