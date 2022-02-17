@@ -9,6 +9,19 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
+const neutral = {
+  100: '#F3F4F6',
+  200: '#E5E7EB',
+  300: '#D1D5DB',
+  400: '#9CA3AF',
+  500: '#6B7280',
+  600: '#4B5563',
+  700: '#374151',
+  800: '#1F2937',
+  900: '#111827',
+};
+
+
 const baseOptions = {
   direction: 'ltr',
   components: {
@@ -208,7 +221,7 @@ const themesOptions = {
         main: '#FFB020',
         light: '#FFBF4C',
         dark: '#B27B16',
-        contrastText: '#111827',
+        contrastText: neutral[900],
       }
     },
     shadows: darkShadows
