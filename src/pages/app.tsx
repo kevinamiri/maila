@@ -28,6 +28,7 @@ import { useSnackbar } from "notistack";
 // import CssBaseline from "@mui/material/CssBaseline";
 // import { QuickStats } from "../components/QuickStats";
 import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
+
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
   minHeight: 48,
@@ -60,6 +61,7 @@ export default function App() {
   const [context, setContext] = useState(appContext);
   const { settings, saveSettings } = useSettings();
   const location = useLocation();
+  console.log(location);
   const { enqueueSnackbar } = useSnackbar();
   /**
    * why state? When the component receives updates, the result is displayed immediately, otherwise we can use ref.
@@ -104,10 +106,16 @@ export default function App() {
       isNew(location.search, "error_description") &&
         enqueueSnackbar("User has been successfully registered", {
           variant: "success",
+          autoHideDuration: 15000,
         });
-      enqueueSnackbar("Try to login again", {
-        variant: "success",
-      });
+      setTimeout(
+        () =>
+          enqueueSnackbar("To access the app you need to sign in again.", {
+            variant: "warning",
+            autoHideDuration: 3000,
+          }),
+        3000
+      );
 
       navigate("/auth/login");
     }
@@ -135,7 +143,11 @@ export default function App() {
   if (!user || user == null || user === "The user is not authenticated") {
     return (
       <>
-        <SignIn />
+        {isNew(location.search, "?code=") ? (
+          <SignIn isRedirecting={true} />
+        ) : (
+          <SignIn />
+        )}
       </>
     );
   } else {

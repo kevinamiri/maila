@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Login from "../pages/auth/login";
 
-const SignIn = () => {
+const SignIn = (props) => {
   const [isMount, setMount] = useState(false);
   React.useEffect(() => {
     setMount(true);
@@ -11,6 +11,6 @@ const SignIn = () => {
     return <div>loading...</div>;
   }
 
-  return <Login />;
+  return <Login {...props} />;
 };
 export default SignIn;
