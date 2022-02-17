@@ -3,11 +3,11 @@ import "../../../configureAmplify";
 import AuthenticationLayout from "../../components/layout/AuthenticationLayout";
 import LoginAmplify from "../../components/authentication/login/LoginAmplify";
 
-export default function Login() {
+export default function Login(props) {
   return (
     <>
       <AuthenticationLayout>
-        <LoginAmplify />
+        <LoginAmplify {...props} />
       </AuthenticationLayout>
     </>
   );

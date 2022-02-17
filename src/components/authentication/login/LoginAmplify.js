@@ -2,13 +2,14 @@ import React from 'react'
 import { navigate, Link } from 'gatsby';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
-import { Alert, Box, Button, FormHelperText, TextField, Divider, Typography } from '@mui/material';
+import { Box, Button, FormHelperText, TextField, Divider, Typography } from '@mui/material';
 import { Auth } from "aws-amplify";
 import useIsMountedRef from '../../../hooks/useIsMountedRef';
 import SocialSignIn from '../../../components/SocialSignIn'
 import { useSnackbar } from "notistack";
+import CircularProgress from '@mui/material/CircularProgress';
 
-const LoginAmplify = () => {
+const LoginAmplify = (props) => {
   const isMountedRef = useIsMountedRef();
   const { enqueueSnackbar } = useSnackbar();
   const signIn = async (username, password) => {
@@ -27,7 +28,7 @@ const LoginAmplify = () => {
       >
         <div>
           <Typography color='textPrimary' gutterBottom variant='h4'>
-            Login
+            {props.isRedirecting ? <CircularProgress /> : 'Login'}
           </Typography>
         </div>
       </Box>
