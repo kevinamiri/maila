@@ -13,17 +13,25 @@ import { Text, Node as SlateNode } from "slate";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import ToggleButton from "@mui/material/ToggleButton";
-import { useTheme } from "@mui/material/styles";
+import { styled, useTheme } from "@mui/material/styles";
 import Leaf from "./Leaf";
 import {
-  updateCommandPointWords,
   setCurrentWordRange,
-  updateSelectionStatus,
   updateSelectedText,
 } from "../../slices/editorParams";
 import { useDispatch } from "react-redux";
 import FooterEditorBar from "./FooterEditorBar";
-import { selectedText } from "hooks/currentSelectEditor";
+
+import FormatBoldRoundedIcon from "@mui/icons-material/FormatBold";
+import FormatItalicRoundedIcon from "@mui/icons-material/FormatItalic";
+import FormatUnderlinedRoundedIcon from "@mui/icons-material/FormatUnderlined";
+import CodeRoundedIcon from "@mui/icons-material/Code";
+import LooksOneRoundedIcon from "@mui/icons-material/LooksOne";
+import LooksTwoRoundedIcon from "@mui/icons-material/LooksTwo";
+import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuote";
+import FormatListNumberedRoundedIcon from "@mui/icons-material/FormatListNumbered";
+import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBulleted";
+import { ToggleButtonGroup } from "@mui/material";
 
 const HOTKEYS = {
   "mod+b": "bold",
@@ -35,6 +43,23 @@ const HOTKEYS = {
 };
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
+
+const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
+  "& .MuiToggleButtonGroup-grouped": {
+    margin: theme.spacing(0.5),
+    border: 0,
+    "&.Mui-disabled": {
+      border: 0,
+    },
+    "&:not(:first-of-type)": {
+      borderRadius: theme.shape.borderRadius,
+    },
+    "&:first-of-type": {
+      borderRadius: theme.shape.borderRadius,
+    },
+  },
+}));
+
 const MainSlateEditor = (props) => {
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
@@ -74,15 +99,8 @@ const MainSlateEditor = (props) => {
     //     savedSelection.current ?? Editor.end(editor, [])
     //   );
     // }
-    divRef.current.style.boxShadow = `0 0 0 2px ${theme.palette.primary.main}`;
+    divRef.current.style.boxShadow = `0 0 0 2px ${theme.palette.divider}`;
   }, []);
-
-  // const onBlur = React.useCallback(() => {
-  //   divRef.current.style.boxShadow = `0 0 0 1px ${theme.palette.action.disabled}`;
-  //   !editor.selection && dispatch(setCurrentWordRange(savedSelection.current));
-  //   if (!editor.selection) return;
-  //   dispatch(setCurrentWordRange(editor.selection));
-  // }, []);
 
   const onBlur = React.useCallback(() => {
     // savedSelection.current = editor.selection;
@@ -111,52 +129,6 @@ const MainSlateEditor = (props) => {
     const fragmentsText = fragment.map((x) => SlateNode.string(x)).join("\n");
     dispatch(updateSelectedText(fragmentsText));
   };
-
-  // const updateCurrentWord = () => {
-  //   if (!editor.selection) return;
-  //   let [node]: any = Editor.node(editor, editor.selection);
-  //   const selectedTextStr = Editor.string(editor, editor.selection);
-  //   if (!node.text) return;
-  //   const textToSelection = node.text.slice(
-  //     0,
-  //     Range.start(editor.selection).offset
-  //   );
-  //   const selectedTextR = node.text.slice(
-  //     editor.selection.anchor.offset,
-  //     editor.selection.focus.offset
-  //   );
-  //   const selectedTextL = node.text.slice(
-  //     editor.selection.focus.offset,
-  //     editor.selection.anchor.offset
-  //   );
-  //   const whichPointisStarting = selectedTextR
-  //     ? { offset: editor.selection.anchor.offset }
-  //     : { offset: editor.selection.focus.offset };
-
-  //   let selectedText = selectedTextR ? selectedTextR : selectedTextL;
-  //   dispatch(updateSelectedText(selectedTextStr));
-  //   console.log(selectedTextStr);
-  //   const commandCompatiblePointWords = {
-  //     offset: whichPointisStarting.offset,
-  //     path: editor.selection.anchor.path,
-  //     text: selectedText,
-  //   };
-  //   dispatch(updateCommandPointWords(commandCompatiblePointWords));
-
-  //   // let selectedPoint = {
-  //   //   anchor: {
-  //   //     path: editor.selection.anchor.path,
-  //   //     offset: editor.selection.anchor.offset,
-  //   //   },
-  //   //   focus: {
-  //   //     path: editor.selection.focus.path,
-  //   //     offset: editor.selection.focus.offset,
-  //   //   },
-  //   // };
-
-  //   // dispatch(setCurrentWordRange(selectedPoint));
-  //   // console.log(selectedPoint);
-  // };
 
   return (
     <>
@@ -187,6 +159,43 @@ const MainSlateEditor = (props) => {
             value={value}
             onChange={(value) => handleChange(value)}
           >
+            <StyledToggleButtonGroup size='small' aria-label='text formatting'>
+              <MarkButton format='bold'>
+                <FormatBoldRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </MarkButton>
+              <MarkButton format='italic'>
+                <FormatItalicRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </MarkButton>
+              <MarkButton format='underline'>
+                <FormatUnderlinedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </MarkButton>
+              <MarkButton format='code'>
+                <CodeRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </MarkButton>
+            </StyledToggleButtonGroup>
+
+            <StyledToggleButtonGroup
+              size='small'
+              exclusive
+              aria-label='text alignment'
+            >
+              <BlockButton format='heading-one'>
+                <LooksOneRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </BlockButton>
+              <BlockButton format='heading-two'>
+                <LooksTwoRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </BlockButton>
+              <BlockButton format='block-quote'>
+                <FormatQuoteRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </BlockButton>
+              <BlockButton format='numbered-list'>
+                <FormatListNumberedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </BlockButton>
+              <BlockButton format='bulleted-list'>
+                <FormatListBulletedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+              </BlockButton>
+            </StyledToggleButtonGroup>
+
             <Editable
               renderElement={renderElement}
               renderLeaf={renderLeaf}
@@ -247,15 +256,6 @@ const toggleBlock = (editor, format) => {
   }
 };
 
-const toggleFormat = (editor, format) => {
-  const isActive = isFormatActive(editor, format);
-  Transforms.setNodes(
-    editor,
-    { [format]: isActive ? null : true },
-    { match: Text.isText, split: true }
-  );
-};
-
 const toggleMark = (editor, format) => {
   const isActive = isMarkActive(editor, format);
 
@@ -273,19 +273,17 @@ const TransformsSelect = (editor) => {
   });
 };
 
-const isFormatActive = (editor, format) => {
-  const [match] = Editor.nodes(editor, {
-    match: (n) => n[format] === true,
-    mode: "all",
-  });
-  return !!match;
-};
-
 const isBlockActive = (editor, format) => {
-  const [match] = Editor.nodes(editor, {
-    match: (n) =>
-      !Editor.isEditor(n) && SlateElement.isElement(n) && n.type === format,
-  });
+  const { selection } = editor;
+  if (!selection) return false;
+
+  const [match] = Array.from(
+    Editor.nodes(editor, {
+      at: Editor.unhangRange(editor, selection),
+      match: (n) =>
+        !Editor.isEditor(n) && SlateElement.isElement(n) && n.type === format,
+    })
+  );
 
   return !!match;
 };
@@ -321,15 +319,23 @@ const Element = ({ attributes, children, element }) => {
 const BlockButton = ({ format, children }) => {
   const editor = useSlate();
   return (
-    <Box ml={1} mt={1}>
+    <Box
+      sx={{
+        m: 0.5,
+      }}
+    >
       <ToggleButton
         value={format}
+        size='small'
+        sx={{
+          border: 0,
+          padding: "5px",
+        }}
         selected={isBlockActive(editor, format)}
         onMouseDown={(event) => {
           event.preventDefault();
           toggleBlock(editor, format);
         }}
-        style={{ lineHeight: 1 }}
       >
         {children}
       </ToggleButton>
@@ -349,7 +355,7 @@ const MarkButton = ({ format, children }) => {
         size='small'
         sx={{
           border: 0,
-          padding: "1px",
+          padding: "5px",
         }}
         value={format}
         selected={isMarkActive(editor, format)}
@@ -380,36 +386,6 @@ const HoverButton = ({ format, children }) => {
         value={format}
         onMouseDown={(event) => {
           event.preventDefault();
-        }}
-      >
-        {children}
-      </ToggleButton>
-    </Box>
-  );
-};
-
-const getTheTextValueOfTheEditor = (editorValue) => {
-  const arrofTexts = [];
-  const ParagraphesorNodes = editorValue
-    .map((x) => x)
-    .map((x) => x.children[0]);
-  for (let i = 0; i < ParagraphesorNodes.length; i++) {
-    const element = ParagraphesorNodes[i];
-    arrofTexts.push(element.text);
-  }
-  return arrofTexts.join("");
-};
-
-const FormatButton = ({ format, children }) => {
-  const editor = useSlate();
-  return (
-    <Box ml={1} mt={1}>
-      <ToggleButton
-        value={format}
-        selected={isFormatActive(editor, format)}
-        onMouseDown={(event) => {
-          event.preventDefault();
-          toggleFormat(editor, format);
         }}
       >
         {children}
