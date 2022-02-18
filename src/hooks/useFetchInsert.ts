@@ -3,12 +3,13 @@ import { updateProgressValue } from "../slices/progress";
 import { Editor, Transforms } from "slate";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import { ReactEditor } from "editable-slate-react";
-
+import {  Node as SlateNode } from "slate";
 
 
 //fetching the data from the api and then inserting it into the editor
 async function useFetchInsert(dispatch,enqueueSnackbar, editors, gtoken, url, fieldValues) {
-  const selectedTextValue = Editor.string(editors[0], editors[0].selection);
+  //selected text of editor with /n
+  const selectedTextValue = editors[0].selection && SlateNode.fragment(editors[0], editors[0].selection).map((x) => SlateNode.string(x)).join("\n")
     const textLists = await useFetchDataSelected(
       selectedTextValue,
       gtoken,

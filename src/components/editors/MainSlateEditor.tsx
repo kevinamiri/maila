@@ -77,10 +77,16 @@ const MainSlateEditor = (props) => {
     divRef.current.style.boxShadow = `0 0 0 2px ${theme.palette.primary.main}`;
   }, []);
 
+  // const onBlur = React.useCallback(() => {
+  //   divRef.current.style.boxShadow = `0 0 0 1px ${theme.palette.action.disabled}`;
+  //   !editor.selection && dispatch(setCurrentWordRange(savedSelection.current));
+  //   if (!editor.selection) return;
+  //   dispatch(setCurrentWordRange(editor.selection));
+  // }, []);
+
   const onBlur = React.useCallback(() => {
-    savedSelection.current = editor.selection;
-    //TODO should add the position of select when for remined text as user would know which text is selected
-    dispatch(setCurrentWordRange(savedSelection.current));
+    // savedSelection.current = editor.selection;
+    // dispatch(setCurrentWordRange(editor.selection));
     divRef.current.style.boxShadow = `0 0 0 1px ${theme.palette.action.disabled}`;
   }, []);
 
@@ -90,54 +96,60 @@ const MainSlateEditor = (props) => {
     setValue(value);
     const content = JSON.stringify(value);
     localStorage.setItem("content", content);
-    updateCurrentWord();
-  };
-
-  const updateCurrentWord = () => {
     if (!editor.selection) return;
-    let [node]: any = Editor.node(editor, editor.selection);
-    if (!node.text) return;
-    const textToSelection = node.text.slice(
-      0,
-      Range.start(editor.selection).offset
-    );
-    const selectedTextR = node.text.slice(
-      editor.selection.anchor.offset,
-      editor.selection.focus.offset
-    );
-    const selectedTextL = node.text.slice(
-      editor.selection.focus.offset,
-      editor.selection.anchor.offset
-    );
-
-    const whichPointisStarting = selectedTextR
-      ? { offset: editor.selection.anchor.offset }
-      : { offset: editor.selection.focus.offset };
-
-    let selectedText = selectedTextR ? selectedTextR : selectedTextL;
-    dispatch(updateSelectedText(selectedText));
-
-    const commandCompatiblePointWords = {
-      offset: whichPointisStarting.offset,
-      path: editor.selection.anchor.path,
-      text: selectedText,
-    };
-    dispatch(updateCommandPointWords(commandCompatiblePointWords));
-
-    // let selectedPoint = {
-    //   anchor: {
-    //     path: editor.selection.anchor.path,
-    //     offset: editor.selection.anchor.offset,
-    //   },
-    //   focus: {
-    //     path: editor.selection.focus.path,
-    //     offset: editor.selection.focus.offset,
-    //   },
-    // };
-
-    // dispatch(setCurrentWordRange(selectedPoint));
-    // console.log(selectedPoint);
+    dispatch(setCurrentWordRange(editor.selection));
+    // savedSelection.current = editor.selection;
+    // const selectedText = Editor.string(editor, editor.selection);
+    const fragment = SlateNode.fragment(editor, editor.selection);
+    const fragmentsText = fragment.map((x) => SlateNode.string(x)).join("\n");
+    dispatch(updateSelectedText(fragmentsText));
   };
+
+  // const updateCurrentWord = () => {
+  //   if (!editor.selection) return;
+  //   let [node]: any = Editor.node(editor, editor.selection);
+  //   const selectedTextStr = Editor.string(editor, editor.selection);
+  //   if (!node.text) return;
+  //   const textToSelection = node.text.slice(
+  //     0,
+  //     Range.start(editor.selection).offset
+  //   );
+  //   const selectedTextR = node.text.slice(
+  //     editor.selection.anchor.offset,
+  //     editor.selection.focus.offset
+  //   );
+  //   const selectedTextL = node.text.slice(
+  //     editor.selection.focus.offset,
+  //     editor.selection.anchor.offset
+  //   );
+  //   const whichPointisStarting = selectedTextR
+  //     ? { offset: editor.selection.anchor.offset }
+  //     : { offset: editor.selection.focus.offset };
+
+  //   let selectedText = selectedTextR ? selectedTextR : selectedTextL;
+  //   dispatch(updateSelectedText(selectedTextStr));
+  //   console.log(selectedTextStr);
+  //   const commandCompatiblePointWords = {
+  //     offset: whichPointisStarting.offset,
+  //     path: editor.selection.anchor.path,
+  //     text: selectedText,
+  //   };
+  //   dispatch(updateCommandPointWords(commandCompatiblePointWords));
+
+  //   // let selectedPoint = {
+  //   //   anchor: {
+  //   //     path: editor.selection.anchor.path,
+  //   //     offset: editor.selection.anchor.offset,
+  //   //   },
+  //   //   focus: {
+  //   //     path: editor.selection.focus.path,
+  //   //     offset: editor.selection.focus.offset,
+  //   //   },
+  //   // };
+
+  //   // dispatch(setCurrentWordRange(selectedPoint));
+  //   // console.log(selectedPoint);
+  // };
 
   return (
     <>
