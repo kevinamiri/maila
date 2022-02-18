@@ -7,14 +7,14 @@ import {  Node as SlateNode } from "slate";
 
 
 //fetching the data from the api and then inserting it into the editor
-async function useFetchInsert(dispatch,enqueueSnackbar, editors, gtoken, url, fieldValues) {
+async function useFetchInsert(dispatch,enqueueSnackbar, editors, gtoken, url, fieldValues, selectedStr) {
   //selected text of editor with /n
-  const selectedTextValue = editors[0].selection && SlateNode.fragment(editors[0], editors[0].selection).map((x) => SlateNode.string(x)).join("\n")
+  const selectedTextValue = editors[0].selection && SlateNode.fragment(editors[0], editors[0].selection).map((x) => SlateNode.string(x)).join("\n") || selectedStr
     const textLists = await useFetchDataSelected(
       selectedTextValue,
       gtoken,
       url,
-      fieldValues
+      fieldValues,
     );
     dispatch(updateProgressValue(50));
     let textOptions = Object.values(textLists);
