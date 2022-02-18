@@ -86,8 +86,15 @@ const MainSlateEditor = (props) => {
 
   const onBlur = React.useCallback(() => {
     // savedSelection.current = editor.selection;
-    // dispatch(setCurrentWordRange(editor.selection));
+    dispatch(setCurrentWordRange(editor.selection));
+    const fragmentText =
+      editor.selection &&
+      SlateNode.fragment(editor, editor.selection)
+        .map((x) => SlateNode.string(x))
+        .join("\n");
+    dispatch(updateSelectedText(fragmentText));
     divRef.current.style.boxShadow = `0 0 0 1px ${theme.palette.action.disabled}`;
+    console.log(fragmentText);
   }, []);
 
   const [value, setValue] = useState<Descendant[]>(defaultValue);

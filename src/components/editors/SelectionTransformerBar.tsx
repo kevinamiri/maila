@@ -45,6 +45,7 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
   const dispatch = useDispatch();
   const { enqueueSnackbar } = useSnackbar();
   const fieldValues = useSelector((state) => state.fieldsValue);
+  const { selectedTextValue } = useSelector((state) => state.editorParams);
   const editors = [editor, editor2, editor3, editor4];
 
   const handleClarify = (e) => {
@@ -60,7 +61,8 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
             editors,
             gtoken,
             "15",
-            fieldValues
+            fieldValues,
+            selectedTextValue
           );
         });
     });
@@ -78,7 +80,8 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
             editors,
             gtoken,
             "35",
-            fieldValues
+            fieldValues,
+            selectedTextValue
           );
           e.preventDefault();
         });
@@ -97,7 +100,8 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
             editors,
             gtoken,
             "40",
-            fieldValues
+            fieldValues,
+            selectedTextValue
           );
           e.preventDefault();
         });
@@ -117,7 +121,8 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
             editors,
             gtoken,
             "2",
-            fieldValues
+            fieldValues,
+            selectedTextValue
           );
         });
     });
