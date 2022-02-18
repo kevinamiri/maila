@@ -92,4 +92,5 @@ export const serialize = (editorname:Editor) => {
   return editorname.children.map((x) => SlateNode.string(x)).join("\n");
 };
 
+
 export default selectedPoint;
