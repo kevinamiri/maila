@@ -19,6 +19,7 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import WebRoundedIcon from '@mui/icons-material/WebRounded';
 // import TranslateRoundedIcon from '@mui/icons-material/TranslateRounded';
 import { Link } from 'gatsby';
+import HistoryEduRoundedIcon from '@mui/icons-material/HistoryEduRounded';
 import ListCatChild from './ListCatChild'
 import SvgIcon from '@mui/material/SvgIcon';
 import SummarizeOutlinedIcon from '@mui/icons-material/SummarizeOutlined';
@@ -161,6 +162,7 @@ const ListSidebar = () => {
                 <Collapse in={(state.WritingTools01)} timeout="auto" unmountOnExit>
                     <List dense>
                         <ListCatChild dirList="/app/paraphrase" formattedId="RH004" iconComponent={<DictionaryCheck viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        <ListCatChild dirList="/app/story" formattedId="RH004" iconComponent={<HistoryEduRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/grammar" formattedId="GC009" iconComponent={<GrammarCorrection viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/adjust-tone-rewriting" formattedId="B04" iconComponent={<BrandVoiceicon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/create-outline" formattedId="CT940" iconComponent={<DoneOutlineRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
