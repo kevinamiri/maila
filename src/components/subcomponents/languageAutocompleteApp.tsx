@@ -18,7 +18,6 @@ export default function LanguageAutocompleteApp({ handleChange }) {
     <Stack spacing={2} sx={{ width: 200 }}>
       <Autocomplete
         size='small'
-        id='checkboxes-language'
         onChange={handleChange}
         inputValue={inputValue}
         onInputChange={(event, newInputValue) => {

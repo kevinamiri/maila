@@ -21,7 +21,6 @@ export default function LanguageAutocomplete() {
     <Stack spacing={2} sx={{ width: 200 }}>
       <Autocomplete
         size='small'
-        id='checkboxes-language'
         onChange={(event: any, newValue: any) => {
           dispatch(updateDefaultLanguage(newValue));
         }}

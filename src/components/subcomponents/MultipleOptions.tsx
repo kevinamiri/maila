@@ -26,7 +26,6 @@ export default function CheckboxesTags() {
     <Autocomplete
       multiple
       size='small'
-      id='checkboxes-tags-demo'
       freeSolo
       onChange={(event, newValue) => {
         if (typeof newValue === "string") {
