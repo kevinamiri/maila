@@ -588,6 +588,20 @@ export default function App() {
                     toneTextField={true}
                     labelsLists={[]}
                   />
+                  <ProductDescription
+                    label={"story about product text"}
+                    headerTitle={"story about product text"}
+                    description={"story about product text"}
+                    example={
+                      "AI to brainstorm blog posts meta descriptions tag and be more productive."
+                    }
+                    instructHelp={"story about product text"}
+                    generateButtonName={"story about product text"}
+                    productType='44'
+                    path='/story'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
                   <AccountManage path='/profile' />
                 </Router>
               </Container>
