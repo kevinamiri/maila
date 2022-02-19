@@ -28,7 +28,6 @@ export default function ProductAutocompleteUrl({
         size='small'
         freeSolo
         disableClearable
-        id='checkboxes-language'
         onChange={(event: any, newValue: any) => {
           navigate(newValue.url);
         }}
