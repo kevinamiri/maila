@@ -19,12 +19,12 @@ function UserAvatar({ handleClick }) {
       <>
         <Button
           sx={{
-            margin: "2px",
+            mx: 1,
             textTransform: "none",
           }}
           href='/app'
           onClick={redirect}
-          size='medium'
+          size='small'
           variant='contained'
         >
           <Typography

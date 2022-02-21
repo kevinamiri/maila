@@ -18,7 +18,6 @@ export default function MenuIcon({ icontype }) {
           display: "none",
         }),
       }}
-      size='large'
       component='span'
     >
       {icontype === "MenuRoundedIcon" ? <MenuRoundedIcon /> : <Logo />}
