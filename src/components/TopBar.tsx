@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import UserAvatar from "./Avatar";
 import AppContext from "../contexts/AppContext";
 import MenuIcon from "./subcomponents/MenuIcon";
