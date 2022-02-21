@@ -140,7 +140,7 @@ const RegisterAmplify = () => {
                 <Link
                   color="primary"
                   component="a"
-                  href="#"
+                  href="/en/legal/terms-of-use"
                 >
                   Terms and Conditions
                 </Link>

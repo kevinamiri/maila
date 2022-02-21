@@ -21,7 +21,7 @@ function UserAvatar({ handleClick }) {
             mx: 1,
             textTransform: "none",
           }}
-          href='/auth/login/'
+          href='/app'
           onClick={redirect}
           size='small'
           variant='contained'

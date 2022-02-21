@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Auth } from "aws-amplify";
 import { navigate } from "gatsby";
 import { Helmet } from "react-helmet";
-import { FormattedMessage, IntlProvider, useIntl } from "react-intl";
+import { FormattedMessage, IntlProvider } from "react-intl";
 import "../../configureAmplify";
 import {
   ProductDescriptionTool,
@@ -61,7 +61,6 @@ export default function App() {
   const [context, setContext] = useState(appContext);
   const { settings, saveSettings } = useSettings();
   const location = useLocation();
-  console.log(location);
   const { enqueueSnackbar } = useSnackbar();
   /**
    * why state? When the component receives updates, the result is displayed immediately, otherwise we can use ref.

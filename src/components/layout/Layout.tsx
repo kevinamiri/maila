@@ -89,7 +89,7 @@ const Layout = (props) => {
         >
           <GlobalStyles />
           {/* <SettingsDrawer /> */}
-          <TopBar langs={langsMenu} title='maila.ai' icon='logo' />
+          <TopBar title='maila.ai' icon='logo' />
           {props.children}
           <Footer langKey={langKey} langs={langsMenu} />
         </Box>

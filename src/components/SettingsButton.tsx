@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import SettingsIcon from "@mui/icons-material/Settings";
 import SettingsDrawer from "./settings-drawer";
 
 export const SettingsButton = () => {
@@ -21,8 +21,10 @@ export const SettingsButton = () => {
       <Tooltip title='Settings'>
         <IconButton
           onClick={handleOpen}
+          size='small'
           sx={{
             mx: 1,
+            p: 1,
             zIndex: 1900,
             backgroundColor: (theme) => theme.palette.background.default,
             "&:hover": {
@@ -30,7 +32,7 @@ export const SettingsButton = () => {
             },
           }}
         >
-          <SettingsOutlinedIcon />
+          <SettingsIcon />
         </IconButton>
       </Tooltip>
       <SettingsDrawer onClose={handleClose} open={open} />
