@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Fab, IconButton, Tooltip } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import SettingsDrawer from "./settings-drawer";
 
