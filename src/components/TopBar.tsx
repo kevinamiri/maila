@@ -13,6 +13,7 @@ import { FormattedMessage } from "react-intl";
 import { SeverityPill } from "./severity-pill";
 
 import Divider from "@mui/material/Divider";
+import { SettingsButton } from "./SettingsButton";
 // import { styled } from "@mui/material/styles";
 
 // const CustomLink = styled(MuiLink)(({ theme }) => ({
@@ -25,7 +26,7 @@ import Divider from "@mui/material/Divider";
 
 const drawerWidth = 240;
 
-const TopBar = ({ title, icon, uilang }) => {
+const TopBar = ({ langs, title, icon, uilang }) => {
   const { IsOpen, toggleOpen, logout } = React.useContext(AppContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
@@ -98,7 +99,8 @@ const TopBar = ({ title, icon, uilang }) => {
             flexDirection: "row",
           }}
         >
-          {uilang}
+          {uilang && uilang}
+          <SettingsButton langs={langs} />
           <UserAvatar handleClick={handleClick} />
         </Box>
 
