@@ -81,8 +81,7 @@ const LayoutTag = (props) => {
             backgroundColor: "background.paper",
           }}
         >
-          <SettingsButton langs={langsMenu} />
-          <TopBar langs={langsMenu} title='Home' icon='logo' />
+          <TopBar title='Home' icon='logo' />
           {props.children}
           <Footer langKey={langKey} langs={langsMenu} />
         </Box>

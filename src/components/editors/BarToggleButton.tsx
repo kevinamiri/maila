@@ -6,9 +6,11 @@ import { useSelector } from "react-redux";
 export default function BarToggleButton({ format, icon, handleClick }) {
   const { selectedTextValue } = useSelector((state) => state.editorParams);
   const { progressValue } = useSelector((state) => state.progressValue);
-  const loading = progressValue > 0 && progressValue < 100;
+  const loading = progressValue && progressValue > 0 && progressValue < 100;
   const selectionStatus =
-    selectedTextValue.length > 2 && selectedTextValue.length < 850
+    selectedTextValue &&
+    selectedTextValue.length > 2 &&
+    selectedTextValue.length < 850
       ? false
       : true;
 

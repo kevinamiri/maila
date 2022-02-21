@@ -12,13 +12,6 @@ import { Link as MuiLink, Tooltip } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import GTranslateRoundedIcon from "@mui/icons-material/GTranslateRounded";
 
-const CustomLink = styled(MuiLink)(({ theme }) => ({
-  color: theme.palette.primary.main,
-  textDecoration: "none",
-  "&:hover": {
-    borderBottom: `2px solid ${theme.palette.primary.main}`,
-  },
-}));
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -82,16 +75,12 @@ export default function LangSettingsDials({ changeLanguage }) {
 
   return (
     <div>
-      {/* <Typography
-        sx={{ mt: 1 }}
-        variant='subtitle2'
-        color='text.secondary'
-        onClick={handleClickOpen}
-      > */}
       <Tooltip title='UI Language'>
         <IconButton
+          size='small'
           sx={{
             mx: 1,
+            p: 1,
             backgroundColor: (theme) => theme.palette.background.default,
             "&:hover": {
               backgroundColor: (theme) => theme.palette.divider,
@@ -102,8 +91,6 @@ export default function LangSettingsDials({ changeLanguage }) {
           <GTranslateRoundedIcon />
         </IconButton>
       </Tooltip>
-      {/* <CustomLink style={{ cursor: "pointer" }}>Language</CustomLink> */}
-      {/* </Typography> */}
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby='customized-dialog-title'
