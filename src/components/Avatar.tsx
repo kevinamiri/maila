@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import AppContext from "../contexts/AppContext";
 import { Avatar, Button, Typography } from "@mui/material";
 import { navigate } from "gatsby";
-import { deepPurple } from "@mui/material/colors";
 
 function UserAvatar({ handleClick }) {
   const { userInfo, checkUser } = useContext(AppContext);

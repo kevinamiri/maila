@@ -171,7 +171,6 @@ export default function App() {
             <TopBar
               icon='MenuRoundedIcon'
               title='maila.ai'
-              langs={langs}
               uilang={<LangSettingsDials changeLanguage={changeLanguage} />}
             />
             <DrawerSideBar />
