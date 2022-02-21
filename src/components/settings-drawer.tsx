@@ -150,7 +150,6 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
         >
           Language
         </Typography> */}
-        {/* <SelectLanguage langs={langs} /> */}
         <Button
           color='primary'
           fullWidth

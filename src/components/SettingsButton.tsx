@@ -4,7 +4,7 @@ import { Fab, IconButton, Tooltip } from "@mui/material";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import SettingsDrawer from "./settings-drawer";
 
-export const SettingsButton = ({ langs }) => {
+export const SettingsButton = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   const handleOpen = (): void => {
@@ -32,7 +32,7 @@ export const SettingsButton = ({ langs }) => {
           <SettingsOutlinedIcon />
         </IconButton>
       </Tooltip>
-      <SettingsDrawer onClose={handleClose} open={open} langs={langs} />
+      <SettingsDrawer onClose={handleClose} open={open} />
     </>
   );
 };
