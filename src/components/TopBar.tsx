@@ -12,26 +12,9 @@ import { navigate } from "gatsby";
 import { FormattedMessage } from "react-intl";
 import { SeverityPill } from "./severity-pill";
 
-import Divider from "@mui/material/Divider";
 import { SettingsButton } from "./SettingsButton";
-// import { styled } from "@mui/material/styles";
-
-// const CustomLink = styled(MuiLink)(({ theme }) => ({
-//   color: theme.palette.primary.main,
-//   textDecoration: "none",
-//   "&:hover": {
-//     borderBottom: `2px solid ${theme.palette.primary.main}`,
-//   },
-// }));
 
 const drawerWidth = 240;
-
-interface TopBarProps {
-  langs: any;
-  title: any;
-  icon: any;
-  uilang?: any;
-}
 
 const TopBar = ({ langs, title, icon, uilang }: TopBarProps) => {
   const { IsOpen, toggleOpen, logout } = React.useContext(AppContext);
