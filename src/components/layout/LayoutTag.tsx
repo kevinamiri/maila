@@ -82,7 +82,7 @@ const LayoutTag = (props) => {
           }}
         >
           <SettingsButton langs={langsMenu} />
-          <TopBar title='Home' icon='logo' />
+          <TopBar langs={langsMenu} title='Home' icon='logo' />
           {props.children}
           <Footer langKey={langKey} langs={langsMenu} />
         </Box>

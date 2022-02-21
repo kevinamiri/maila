@@ -1,5 +1,6 @@
 import React from "react";
 import { SvgIcon } from "@mui/material";
+import { navigate } from "gatsby";
 
 function asSvgIcon(reactSvgComponent) {
   const Icon = function (props) {
@@ -23,7 +24,7 @@ function asSvgIcon(reactSvgComponent) {
 
 function HomeIcon(props) {
   return (
-    <SvgIcon {...props}>
+    <SvgIcon onClick={() => navigate("/")} {...props}>
       <svg
         width='24px'
         height='24px'
@@ -50,19 +51,19 @@ function HomeIcon(props) {
             cx='8956.74'
             cy='4256.79'
             r='4166.67'
-            style={{ fill: "#56f8d3", fillOpacity: "0.86" }}
+            style={{ fill: "#56f8d3", fillOpacity: 0.86 }}
           />
           <circle
             cx='7870.16'
             cy='8144.3'
             r='4166.67'
-            style={{ fill: "#ffb1e6", fillOpacity: "0.7" }}
+            style={{ fill: "#ffb1e6", fillOpacity: 0.7 }}
           />
           <circle
             cx='4792.45'
             cy='5744.83'
             r='4166.67'
-            style={{ fill: "#5664d2", fillOpacity: "0.8" }}
+            style={{ fill: "#5664d2", fillOpacity: 0.8 }}
           />
         </g>
       </svg>

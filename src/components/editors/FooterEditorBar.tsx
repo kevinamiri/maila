@@ -9,6 +9,7 @@ import UndoIcon from "@mui/icons-material/Undo";
 import ToggleButtonList from "../subcomponents/ToggleButtonList";
 import CopyToClipboard from "../subcomponents/CopyToClipboard";
 import { serialize } from "hooks/currentSelectEditor";
+import BookmarkBorderRoundedIcon from "@mui/icons-material/BookmarkBorderRounded";
 
 const TotalCharacters = styled("div")(({ theme }) => ({
   padding: "0.1em 0.1rem",
@@ -62,6 +63,11 @@ export const FooterEditorBar = ({
       <Grid item xs={11} container direction='row' alignItems='flex-end'>
         {disabled ? "" : <Arrow onClick={handleTranser} />}
         <CopyToClipboard editor={editor} />
+        <ToggleButtonList
+          title='BookmarkBorderRoundedIcon'
+          icon={<BookmarkBorderRoundedIcon fontSize='inherit' />}
+          disabled={true}
+        />
       </Grid>
       <Grid
         item
