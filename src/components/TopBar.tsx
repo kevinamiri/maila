@@ -90,7 +90,7 @@ const TopBar = ({ langs, title, icon, uilang }) => {
           }}
         >
           {uilang && uilang}
-          <SettingsButton langs={langs} />
+          <SettingsButton />
           <UserAvatar handleClick={handleClick} />
         </Box>
 
