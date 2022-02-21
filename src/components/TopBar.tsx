@@ -16,7 +16,7 @@ import { SettingsButton } from "./SettingsButton";
 
 const drawerWidth = 240;
 
-const TopBar = ({ langs, title, icon, uilang }: TopBarProps) => {
+const TopBar = ({ langs, title, icon, uilang }) => {
   const { IsOpen, toggleOpen, logout } = React.useContext(AppContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
