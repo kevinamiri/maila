@@ -15,7 +15,7 @@ import SelectLanguage from "./homepage/SelectLanguage";
 
 interface SettingsDrawerProps {
   onClose?: () => void;
-  langs: string[];
+  langs?: string[];
   open?: boolean;
 }
 
@@ -139,7 +139,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           })}
         </Box>
         <Divider sx={{ mt: 5 }} />
-        <Typography
+        {/* <Typography
           color='textSecondary'
           sx={{
             display: "block",
@@ -149,8 +149,8 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           variant='overline'
         >
           Language
-        </Typography>
-        <SelectLanguage langs={langs} />
+        </Typography> */}
+        {/* <SelectLanguage langs={langs} /> */}
         <Button
           color='primary'
           fullWidth
