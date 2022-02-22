@@ -9,10 +9,10 @@ lang: da
 date: 2020-12-25
 image: ../img/logo.png
 F100:
-  - AI-drevne værktøjer til tekstforfatning
-  - Når du skal skabe indhold af høj kvalitet til din virksomhed, kan det nogle gange være svært at vide, hvor du skal starte. Du har måske ikke tid eller ressourcer til at gøre det selv, og det kan være dyrt at hyre en professionel skribent. AI-drevne tekstforfatterværktøjer, der kan hjælpe dig med at skabe indhold af professionel kvalitet hurtigt og nemt.
-  - Integrerer maskinlæring i dit indhold
-  - Hvis du ønsker at øge din omsætning, er det vigtigt at bruge mindre tid på opdagelse og brainstorming og mere tid på rent faktisk at producere resultater. Maskinlæring kan hjælpe med at forbedre kvaliteten og nøjagtigheden af dit indhold. Ved at indarbejde maskinlæringsalgoritmer i din redaktionelle proces kan du være sikker på, at dit indhold er konsistens med dit brand.
+  - AI-drevne værktøjer til generering af salgsmails
+  - Med AI-drevet salgskopi-e-mailgenerator kan du oprette salgsorienterede e-mails, der vil motivere din målgruppe til at handle. Du skal blot indtaste nogle produktoplysninger, og vores avancerede motor vil generere en markedsføringsbesked, der tager dit produkt til det næste niveau.
+  - Integrer AI i din redaktionelle proces
+  - Det er vigtigt at bruge mindre tid på at opdage og brainstorme og mere tid på rent faktisk at producere resultater. Ved at integrere AI-algoritmer i din redaktionelle proces kan du få nye idéer ind i din virksomhed. uanset om du skal skrive et blogindlæg, skabe indhold til et websted eller oprette en markedsføringsmail, kan vores platform hjælpe dig med at fremskynde din skriveproces.
 T100:
   - "Produktbeskrivelse"
   - "Copywriting-formler"
