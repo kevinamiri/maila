@@ -9,9 +9,9 @@ lang: en
 date: 2020-12-25
 image: ../img/logo.png
 F100:
-  - AI powered Sales Copy Email Generator
+  - AI-powered sales email generation tools
   - With AI-powered Sales Copy Email Generator, you can create sales-oriented emails that will motivate your audience to take action. Simply enter some product information, and our advanced engine will generate a marketing message that takes your product to the next level.
-  - Integrating AI into your editorial process.
+  - Integrate AI into your editorial process
   - It's important to spend less time discovering and brainstorming and more time actually producing results. By incorporating AI algorithms into your editorial process, you can bring new ideas into your business. no matter if you need to write a blog post, create content for a website or create a marketing email, our platform can help you speed up your writing process.
 T100:
   - "Product description"
