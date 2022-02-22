@@ -9,11 +9,10 @@ lang: sv
 date: 2020-12-25
 image: ../img/logo.png
 F100:
-  - Bygga upp ett innehåll som är anpassat till varumärket
-  - Det viktigaste du behöver göra när du skapar en ny webbplats är att se till att varumärkets röst är konsekvent och tydlig i allt innehåll. Vi vet vilka ord som väger tungt hos din publik. Om din röst inte stämmer överens med det innehåll du skapar för dem kommer de inte att kunna ta till sig vad du säger, så se till att bygga lämpligt varumärkesinnehåll och se till att varje innehåll du skapar har en tydlig röst.
-  - Varumärkets struktur
-  - Ett bra skrivande inkluderar ditt uppdrag, dina värderingar och en konsekvent visuell stil som kopplar till dina kunder. Ett bra varumärkesbyggande talar om dina varumärkesstyrkor samt om dina svagheter på marknaden och hur ditt varumärke kan erbjuda en lösning. Dina varumärkesval kan förändras beroende på din specifika bransch och de beslut du fattar om din differentiering, innovation och framtid.
-T100:
+  - AI-drivna verktyg för att generera e-postmeddelanden för försäljning
+  - Med AI-driven e-postgenerator för försäljningskopior kan du skapa säljinriktade e-postmeddelanden som motiverar din målgrupp att vidta åtgärder. Ange bara lite produktinformation, så genererar vår avancerade motor ett marknadsföringsmeddelande som tar din produkt till nästa nivå.
+  - Integrera AI i din redaktionella process
+  - Det är viktigt att spendera mindre tid på att upptäcka och brainstorma och mer tid på att faktiskt producera resultat. Genom att integrera AI-algoritmer i din redaktionella process kan du få in nya idéer i din verksamhet. oavsett om du behöver skriva ett blogginlägg, skapa innehåll för en webbplats eller skapa ett marknadsföringsmejl kan vår plattform hjälpa dig att påskynda din skrivprocess.
   - "Produktbeskrivning"
   - "Kopieringsformler"
   - "Säljepostmeddelande"
