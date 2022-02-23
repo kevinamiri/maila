@@ -153,14 +153,13 @@ export default function App() {
     return (
       <AppContext.Provider value={state}>
         <IntlProvider locale={values.lang} messages={i18nMessages}>
-          {/* <CacheProvider value={cache}> */}
           <Helmet>
             <meta charSet='utf-8' />
             <meta
               name='viewport'
               content='width=device-width, initial-scale=1.0'
             />
-            <title>Maila APP</title>
+            <title>Maila App</title>
           </Helmet>
           <Box
             sx={{
@@ -606,7 +605,6 @@ export default function App() {
               </Container>
             </Box>
           </Box>
-          {/* </CacheProvider> */}
         </IntlProvider>
       </AppContext.Provider>
     );
