@@ -74,7 +74,7 @@ export default function App() {
       ...values,
       [field]: value,
     });
-    // if we set sate as values then be actually updating the prev lang not the new lang
+
     saveSettings({
       ...values,
       [field]: value,
