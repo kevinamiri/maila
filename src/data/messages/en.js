@@ -125,7 +125,7 @@ module.exports = {
   E5671: 'e.g., a reusable cup that keeps coffee warm and is eco-friendly.',
   N7891: 'Compose',
 
-  L1232: 'Blog Post Aida',
+  L1232: 'Blog Post AIDA',
   T0092: 'Blog Post Attention- Interest- Desire- Action',
   D7652: 'It can be used to help you create a persuasive and attention-grabbing blog post by outlining the key points that you want to cover in your post.',
   H4322: 'Write about your product or an idea; then we will use AIDA: Attention, Interest, Desire, Action for it.',
