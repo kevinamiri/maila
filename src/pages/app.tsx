@@ -563,12 +563,12 @@ export default function App() {
                     labelsLists={[]}
                   />
                   <ProductDescription
-                    label={<FormattedMessage id='L12329' />}
-                    headerTitle={<FormattedMessage id='T09829' />}
-                    description={<FormattedMessage id='D76529' />}
-                    example={<FormattedMessage id='E56729' />}
-                    instructHelp={<FormattedMessage id='H43229' />}
-                    generateButtonName={<FormattedMessage id='N78929' />}
+                    label={<FormattedMessage id='L1232' />}
+                    headerTitle={<FormattedMessage id='T0982' />}
+                    description={<FormattedMessage id='D7652' />}
+                    example={<FormattedMessage id='E5672' />}
+                    instructHelp={<FormattedMessage id='H4322' />}
+                    generateButtonName={<FormattedMessage id='N7892' />}
                     productType='16'
                     path='/blog-post-aida'
                     toneTextField={true}
