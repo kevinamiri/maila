@@ -28,7 +28,7 @@ export default function BarToggleButton({ format, icon, handleClick }) {
         },
       }}
       component='span'
-      disabled={selectionStatus || loading}
+      disabled={selectionStatus ? true : false || loading ? true : false}
       onClick={handleClick}
     >
       <Tooltip title={format} arrow>
