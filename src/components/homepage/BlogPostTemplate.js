@@ -30,6 +30,8 @@ const BlogPostTemplate = ({
         <Box>
           <Box sx={{
             p: 2,
+            mt: 7,
+            pt: 4,
           }}>
             <Typography variant="h3" color="initial">
               {title}
