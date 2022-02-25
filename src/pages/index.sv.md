@@ -9,16 +9,17 @@ lang: sv
 date: 2020-12-25
 image: ../img/logo.png
 F100:
-  - AI-drivna verktyg för att generera e-postmeddelanden för försäljning
-  - Med AI-driven e-postgenerator för försäljningskopior kan du skapa säljinriktade e-postmeddelanden som motiverar din målgrupp att vidta åtgärder. Ange bara lite produktinformation, så genererar vår avancerade motor ett marknadsföringsmeddelande som tar din produkt till nästa nivå.
-  - Integrera AI i din redaktionella process
-  - Det är viktigt att spendera mindre tid på att upptäcka och brainstorma och mer tid på att faktiskt producera resultat. Genom att integrera AI-algoritmer i din redaktionella process kan du få in nya idéer i din verksamhet. oavsett om du behöver skriva ett blogginlägg, skapa innehåll för en webbplats eller skapa ett marknadsföringsmejl kan vår plattform hjälpa dig att påskynda din skrivprocess.
-  - "Produktbeskrivning"
-  - "Kopieringsformler"
-  - "Säljepostmeddelande"
-  - "Tagline"
+  - AI-powered sales email generation tools
+  - With AI-powered Sales Copy Email Generator, you can create sales-oriented emails that will motivate your audience to take action. Simply enter some product information, and our advanced engine will generate a marketing message that takes your product to the next level.
+  - Integrate AI into your editorial process
+  - It's important to spend less time discovering and brainstorming and more time actually producing results. By incorporating AI algorithms into your editorial process, you can bring new ideas into your business. no matter if you need to write a blog post, create content for a website or create a marketing email, our platform can help you speed up your writing process.
+T100:
+  - "Product description"
+  - "Copywriting Formulas"
+  - "Sales Copy Email"
+  - "Brainstorming"
   - "Branding"
-  - "Innehållsförstärkare"
+  - "Content Enhancer"
 B100: 
   - "Skapa en unik beskrivning som marknadsför produktens värde."
   - "De beprövade formlerna för att skapa strukturerade meningar om ditt produkt."
