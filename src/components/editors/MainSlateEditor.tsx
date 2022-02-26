@@ -9,7 +9,7 @@ import {
   BaseEditor,
   Descendant,
 } from "slate";
-import { Text, Node as SlateNode } from "slate";
+import { Node as SlateNode } from "slate";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import ToggleButton from "@mui/material/ToggleButton";
@@ -38,6 +38,7 @@ const HOTKEYS = {
   "mod+i": "italic",
   "mod+u": "underline",
   "mod+`": "code",
+  "mod+s": "subject",
   //
   "mod+a": "selectAll",
 };
@@ -218,6 +219,7 @@ const MainSlateEditor = (props) => {
                       });
                     }
                     toggleMark(editor, mark);
+                    toggleBlock(editor, mark);
                   }
                 }
               }}
@@ -293,10 +295,16 @@ const isMarkActive = (editor, format) => {
   return marks ? marks[format] === true : false;
 };
 
+const Blockquote = styled("blockquote")(({ theme }) => ({
+  borderLeft: `3px solid ${theme.palette.text.primary}`,
+  fontStyle: "italic",
+  paddingLeft: "0.8em",
+}));
+
 const Element = ({ attributes, children, element }) => {
   switch (element.type) {
     case "block-quote":
-      return <blockquote {...attributes}>{children}</blockquote>;
+      return <Blockquote {...attributes}>{children}</Blockquote>;
     case "bulleted-list":
       return <ul {...attributes}>{children}</ul>;
     case "heading-one":
