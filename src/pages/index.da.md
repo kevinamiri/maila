@@ -24,26 +24,27 @@ B100:
   - "Lav en unik beskrivelse, der markedsfører værdien af dit produkt."
   - "De gennemprøvede formler til at skabe strukturerede udsagn om dit produkt."
   - "Generer salgstekst-e-mails med stærke ord og sætninger for dit produkt."
-  - "Udarbejdelse af kraftfulde og mindeværdige taglines, der bliver hjertet af dit brand."
-  - "Definer din brand voice og skræddersy alle aspekter af dit brand til at kommunikere dets styrker og værdier."
-  - "Brug disse kraftfulde ord til at skabe et stærkt fundament for dine landingssider med indhold."
-H0121: "Maila.ai is a platform that provides AI-powered copywriting and writing assistance to help you produce professional-grade content. Whether you need to create blog posts, website content, or marketing emails, our platform can help you speed up your writing process."
-T0152: "Næste niveau af AI-drevet Copywriting-platform"
-H01051: "Alle elsker unikt og originalt indhold. Og nu, hvor AI genererer originalt indhold til dit websted, er det nemmere at skille sig ud fra dine konkurrenter."
-H01062:
-  H01047: "AI-drevne værktøjer til tekstforfatning er designet til at hjælpe dig med at skrive mere interessante tekster"
+  - "Effektive måder at bringe nye idéer ind i dit produkt på."
+  - "Omform dine brand statements og skræddersy alle aspekter af dit brand til at kommunikere dets styrker og værdier."
+  - "Brug kraftfulde værktøjer til at skabe en stærk stemme til dine landingssider med indhold."
+H0121: "Maila.ai er en revolutionerende AI-drevet platform til tekstforfatning og skriveassistance, der gør det muligt at producere professionelt indhold på få minutter."
+T0152: "Næste niveau af AI-drevet platform til tekstforfatning"
+H01051: "Begynd at skrive med din første gratis prøveperiode på 25.000 ord, og se, om dit arbejde bliver bedre."
+H01047: "Disse resultater er præ-genereret og fuldt ud styrket af AI"
 H0118:
   A0117q:
-    - Er kopien original?
-    - Alt genereret indhold er unikt og originalt.
-    - Hvor lang tid går der, før jeg får svar, når jeg sender en forespørgsel?
-    - Vores kunder får svar inden for få timer eller endda minutter.
+    - Er AI-genereret indhold plagiatfrit? 
+    - Vores AI-genererede indhold er plagiatfrit og nøjagtigt.
+    - Hvordan kan AI-drevet tekstforfatning bruges i en virksomhed?
+    - AI-drevet tekstforfatning er ideen om at bruge kunstig intelligens til at skrive indhold til din virksomhed. Denne type tekstforfatning kan bruges til en række forskellige aspekter af din virksomhed, f.eks. dine produktbeskrivelser, opdateringer på sociale medier, emnelinjer i e-mails og meget mere.
     - Hvor meget koster det?
     - Vi tilbyder en gratis prøveperiode, så du kan se, om vores AI kan hjælpe dig med at producere godt indhold.
     - Hvorfor skulle jeg bruge dette i stedet for at skabe mit eget indhold?
-    - Vores AI er bygget til at generere originalt indhold, der er stærkt optimeret til hvert søgeord, du indtaster. Denne tilgang giver dig fleksibilitet i din indsats for at skabe indhold, så du kan fokusere på andre aspekter af din virksomhed.
+    - AI-drevet tekstskrivning kan være en fantastisk måde at spare tid på, især hvis du mangler personale. Automatiseret skrivning kan producere indhold hurtigere end at få en menneskelig skribent til at gøre det.
     - Hvor lang tid tager det?
-    - Vi genererer tekster i realtid, så dine resultater er klar med det samme. Da vores kopigenereringsmotor er helt automatiseret, giver det os også mulighed for at skalere vores output til at matche dine behov.
+    - Vi genererer indhold i realtid, så dine resultater er klar med det samme. Da vores kopi-genereringsmotor er helt automatiseret, giver det os også mulighed for at skalere vores output til at matche dine behov.
+    - Kan jeg oprette indhold på andre sprog?
+    - Ja, vi understøtter andre sprog end engelsk. Oversættelserne af den bedste kvalitet er i øjeblikket tilgængelige på engelsk.
   H01194: "From the beginings I was in here"
 L0401:
   - Get Started
