@@ -33,8 +33,8 @@ H01051: "Start writing with your first 25,000 words free trial and see if your w
 H01047: "These results are pre-generated and fully empowered by AI"
 H0118:
   A0117q:
-    - Is the copy original?
-    - All generated contents are unique, and original.
+    - Is AI-generated content plagiarism-free? 
+    - Our AI-generated content is plagiarism-free and accurate.
     - How can AI-powered copywriting be used in a business?
     - AI-powered copy-writing is the idea of using artificial intelligence to write content for your company. This type of copy-writing can be used for a number of different aspects of your company, such as your product descriptions, social media updates, email subject lines, and more.
     - How much does it cost?
