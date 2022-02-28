@@ -7,8 +7,8 @@ export const getIdJsonUrl = (id, langKey, jsonData) => {
             case "en":
                 res = jsonData[id].en;
                 break;
-            case "sv":
-                res = jsonData[id].sv;
+            case "fi":
+                res = jsonData[id].fi;
                 break;
             case "zh":
                 res = jsonData[id].zh;
@@ -41,9 +41,9 @@ export const check_path = (langKey, _url, id_article, jsonData) => {
 export const setLangsMenu = (langsMenu, id, basePath, jsonData) => {
     if (id !== "undefined") {
         langsMenu[0].link =
-            `/en/${basePath}` + getIdJsonUrl(id, "en", jsonData) + "";
+            `/en/${basePath}` + getIdJsonUrl(id, "en", jsonData) + "/";
         langsMenu[1].link =
-            `/sv/${basePath}` + getIdJsonUrl(id, "sv", jsonData) + "";
+            `/sv/${basePath}` + getIdJsonUrl(id, "sv", jsonData) + "/";
     } else {
         console.log("missed id in the setLangsMenu() function!");
     }
