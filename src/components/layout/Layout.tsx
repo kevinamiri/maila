@@ -4,21 +4,14 @@ import Helmet from "react-helmet";
 import TopBar from "../../components/TopBar";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
-import AppContext from "../../contexts/AppContext";
 import GlobalStyles from "../../components/GlobalStyles";
-import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
-import {
-  getIdJsonUrl,
-  startPath,
-  check_path,
-  setLangsMenu,
-} from "../../utils/LangAddon";
+// import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
+
 import { Box } from "@mui/material";
 import useSettings from "../../hooks/useSettings";
 
 const Layout = (props) => {
-  const { stateLanguage } = React.useContext(AppContext);
-  const i18nMessages = require(`../../data/messages/${stateLanguage}`);
+  // const { stateLanguage } = React.useContext(AppContext);
   const description = props.data.markdownRemark.frontmatter.description;
   const jsonData = props.jsonData;
   const location = props.location;
@@ -28,30 +21,12 @@ const Layout = (props) => {
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
-  const id_article = props.data.markdownRemark.frontmatter.id;
-  const id = Number(id_article) - 1;
-  const basename = check_path(langKey, url, id, jsonData);
-  var basePath = startPath(langKey, langsMenu, basename[0], url);
+  // const id_article = props.data.markdownRemark.frontmatter.id;
+  // const id = Number(id_article) - 1;
+  // const basename = check_path(langKey, url, id, jsonData);
+  // var basePath = startPath(langKey, langsMenu, basename[0], url);
   //finally here we set the desired url...
-  setLangsMenu(langsMenu, basename[1], basePath, jsonData);
-
-  async function polyfill(locale) {
-    if (shouldPolyfill()) {
-      // Load the polyfill 1st BEFORE loading data
-      await import("@formatjs/intl-relativetimeformat/polyfill");
-    }
-
-    if (Intl.RelativeTimeFormat.polyfilled) {
-      switch (locale) {
-        default:
-          await import("@formatjs/intl-relativetimeformat/locale-data/en");
-          break;
-        case "fa":
-          await import("@formatjs/intl-relativetimeformat/locale-data/fa");
-          break;
-      }
-    }
-  }
+  // setLangsMenu(langsMenu, basename[1], basePath, jsonData);
 
   const { settings, saveSettings } = useSettings();
   const handleChange = (field, value) => {
@@ -59,7 +34,7 @@ const Layout = (props) => {
       ...settings,
       [field]: value,
     });
-    polyfill(value);
+    // polyfill(value);
   };
 
   React.useEffect(() => {
@@ -73,6 +48,10 @@ const Layout = (props) => {
       ? handleChange("lang", "da")
       : handleChange("lang", "en");
   }, []);
+
+  const i18nMessages = require(`../../data/messages/${
+    langKey || settings.lang
+  }`);
 
   return (
     <>
