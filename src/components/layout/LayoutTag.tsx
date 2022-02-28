@@ -7,7 +7,6 @@ import { IntlProvider } from "react-intl";
 import AppContext from "../../contexts/AppContext";
 import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
 import { Box } from "@mui/material";
-import { SettingsButton } from "../../components/SettingsButton";
 
 const LayoutTag = (props) => {
   const { stateLanguage } = React.useContext(AppContext);

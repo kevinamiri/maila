@@ -7,7 +7,6 @@ import { IntlProvider } from "react-intl";
 import AppContext from "../../contexts/AppContext";
 import GlobalStyles from "../../components/GlobalStyles";
 import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
-import { SettingsButton } from "../../components/SettingsButton";
 import {
   getIdJsonUrl,
   startPath,
@@ -15,11 +14,11 @@ import {
   setLangsMenu,
 } from "../../utils/LangAddon";
 import { Box } from "@mui/material";
+import useSettings from "../../hooks/useSettings";
 
 const Layout = (props) => {
   const { stateLanguage } = React.useContext(AppContext);
   const i18nMessages = require(`../../data/messages/${stateLanguage}`);
-
   const description = props.data.markdownRemark.frontmatter.description;
   const jsonData = props.jsonData;
   const location = props.location;
@@ -35,15 +34,6 @@ const Layout = (props) => {
   var basePath = startPath(langKey, langsMenu, basename[0], url);
   //finally here we set the desired url...
   setLangsMenu(langsMenu, basename[1], basePath, jsonData);
-  const [langKeyM, setLangKeyM] = useState(langKey);
-  const [theDirection, setTheDirection] = useState(false);
-
-  const handleLang = (langKey) => {
-    if (langKey != langKeyM) {
-      setLangKeyM(langKey);
-      polyfill(langKey);
-    }
-  };
 
   async function polyfill(locale) {
     if (shouldPolyfill()) {
@@ -63,8 +53,25 @@ const Layout = (props) => {
     }
   }
 
-  useEffect(() => {
-    handleLang;
+  const { settings, saveSettings } = useSettings();
+  const handleChange = (field, value) => {
+    saveSettings({
+      ...settings,
+      [field]: value,
+    });
+    polyfill(value);
+  };
+
+  React.useEffect(() => {
+    langKey === "sv"
+      ? handleChange("lang", "sv")
+      : langKey === "no"
+      ? handleChange("lang", "no")
+      : langKey === "fi"
+      ? handleChange("lang", "fi")
+      : langKey === "da"
+      ? handleChange("lang", "da")
+      : handleChange("lang", "en");
   }, []);
 
   return (
@@ -88,7 +95,6 @@ const Layout = (props) => {
           }}
         >
           <GlobalStyles />
-          {/* <SettingsDrawer /> */}
           <TopBar title='maila.ai' icon='logo' />
           {props.children}
           <Footer langKey={langKey} langs={langsMenu} />

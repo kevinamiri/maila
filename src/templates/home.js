@@ -2,13 +2,11 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
 import SEO from "../components/SEO/SEO";
-import Select from "../components/landings/Select";
 import CardFeatureBlock from '../components/landings/CardFeatureBlock'
 import HomeBlock03 from '../components/landings/HomeBlock03'
 import AccordionBlock from '../components/landings/AccordionBlock'
 import HomeHeroPage from '../components/landings/HomeHeroPage'
 import _ from "lodash";
-import useSettings from "../hooks/useSettings";
 
 
 const HomePage = (props) => {
@@ -23,28 +21,10 @@ const HomePage = (props) => {
   const langKey = dataMarkdown.frontmatter.lang;
   const { frontmatter } = data.markdownRemark;
 
-  const { settings, saveSettings } = useSettings();
-  const handleChange = (field, value) => {
-
-    saveSettings({
-      ...settings,
-      [field]: value,
-    });
-  };
-
-  React.useEffect(() => {
-    (langKey === "sv") ? handleChange("lang", "sv") :
-      (langKey === "no") ? handleChange("lang", "no") :
-        (langKey === "fi") ? handleChange("lang", "fi") :
-          (langKey === "da") ? handleChange("lang", "da") :
-            handleChange("lang", "en")
-  }, [])
-
 
 
   const image = frontmatter.image.childImageSharp.gatsbyImageData.src;
-  const tags = frontmatter.tags;
-
+  // const tags = frontmatter.tags;
 
   return (
     <Layout
@@ -52,7 +32,7 @@ const HomePage = (props) => {
       jsonData={jsonData}
       location={props.location}
     >
-      <SEO frontmatter={frontmatter} postImage={image} />
+      <SEO frontmatter={frontmatter} postImage={image && image} />
       <HomeHeroPage header={dataMarkdown.frontmatter.H0121} cta={dataMarkdown.frontmatter.H01051} title={dataMarkdown.frontmatter.T0152} labelbutton={dataMarkdown.frontmatter.L0401[0]} helpernotice={dataMarkdown.frontmatter.H01047} />
       <CardFeatureBlock titles={dataMarkdown.frontmatter.T100} bodys={dataMarkdown.frontmatter.B100} />
       <HomeBlock03

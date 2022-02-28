@@ -1,28 +1,16 @@
 import React from "react";
-import Footer from "./landings/Footer";
-import TopBar from "../components/TopBar";
+import Footer from "../landings/Footer";
+import TopBar from "../TopBar";
 import { Helmet } from "react-helmet";
 
-import { getCurrentLangKey, getLangs, getUrlForLang } from "../langfile";
+import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
-// import GlobalStyles from "../../components/GlobalStyles";
 import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
-import {
-  getIdJsonUrl,
-  startPath,
-  check_path,
-  setLangsMenu,
-} from "../utils/LangAddon";
+import { startPath, check_path, setLangsMenu } from "../../utils/LangAddon";
 import { Box } from "@mui/material";
+import useSettings from "../../hooks/useSettings";
 
-// interface HomeLayoutProps {
-//   children?: React.ReactNode;
-//   description?: string;
-//   title?: string;
-//   footerLabels?: FooterLabelsobject;
-// }
-
-const HomeLayout = (props) => {
+const StaticPageLayout = (props) => {
   const description = props.description;
   const jsonData = props.jsonData;
   const location = props.location;
@@ -38,15 +26,7 @@ const HomeLayout = (props) => {
   var basePath = startPath(langKey, langsMenu, basename[0], url);
   //finally here we set the desired url...
   setLangsMenu(langsMenu, basename[1], basePath, jsonData);
-  const [langKeyM, setLangKeyM] = React.useState(langKey);
-  const i18nMessages = require(`../data/messages/${langKey}`);
-  // const [theDirection, setTheDirection] = React.useState(false);
-  const handleLang = (langKey) => {
-    if (langKey != langKeyM) {
-      setLangKeyM(langKey);
-      polyfill(langKey);
-    }
-  };
+  const i18nMessages = require(`../../data/messages/${langKey}`);
 
   async function polyfill(locale) {
     if (shouldPolyfill()) {
@@ -59,16 +39,34 @@ const HomeLayout = (props) => {
         default:
           await import("@formatjs/intl-relativetimeformat/locale-data/en");
           break;
-        case "zh":
-          await import("@formatjs/intl-relativetimeformat/locale-data/zh");
+        case "sv":
+          await import("@formatjs/intl-relativetimeformat/locale-data/sv");
           break;
       }
     }
   }
 
+  const { settings, saveSettings } = useSettings();
+  const handleChange = (field, value) => {
+    saveSettings({
+      ...settings,
+      [field]: value,
+    });
+    polyfill(value);
+  };
+
   React.useEffect(() => {
-    handleLang(langKey);
+    langKey === "sv"
+      ? handleChange("lang", "sv")
+      : langKey === "no"
+      ? handleChange("lang", "no")
+      : langKey === "fi"
+      ? handleChange("lang", "fi")
+      : langKey === "da"
+      ? handleChange("lang", "da")
+      : handleChange("lang", "en");
   }, []);
+
   return (
     <>
       <Helmet
@@ -91,14 +89,8 @@ const HomeLayout = (props) => {
             backgroundColor: "background.default",
           }}
         >
-          <TopBar
-            // langKey={langKey}
-            langs={langsMenu}
-            title={`maila.ai`}
-            icon={`maila.ai`}
-          />
+          <TopBar title={`maila.ai`} icon={`maila.ai`} />
           {props.children}
-          {/* <Footer footerLabels={footerLabels} /> */}
           <Footer langKey={langKey} langs={langsMenu} />
         </Box>
       </IntlProvider>
@@ -106,4 +98,4 @@ const HomeLayout = (props) => {
   );
 };
 
-export default HomeLayout;
+export default StaticPageLayout;
