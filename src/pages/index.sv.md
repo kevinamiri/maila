@@ -1,6 +1,6 @@
 ---
 id: "01"
-title: "AI-drivna copywriting-verktyg är utformade för att hjälpa dig att skriva mer intressant"
+title: "AI-skrivarassistent och mejlverktyg"
 description: "AI-drivna verktyg för copywriting är utformade för att hjälpa dig att skriva mer intressant"
 templateKey: home
 tags:
@@ -9,8 +9,8 @@ lang: sv
 date: 2020-12-25
 image: ../img/logo.png
 F100:
-  - AI-drivna verktyg för att generera e-postmeddelanden för försäljning
-  - Med AI-driven e-postgenerator för försäljningskopior kan du skapa säljinriktade e-postmeddelanden som motiverar din målgrupp att vidta åtgärder. Ange bara lite produktinformation, så genererar vår avancerade motor ett marknadsföringsmeddelande som tar din produkt till nästa nivå.
+  - AI-drivna verktyg för att skapa mejl
+  - Med AI-driven e-postgenerator för försäljningskopior kan du skapa säljinriktade mejl som motiverar din målgrupp att vidta åtgärder. Ange bara lite produktinformation, så genererar vår avancerade motor ett marknadsföringsmeddelande som tar din produkt till nästa nivå.
   - Integrera AI i din redaktionella process
   - Det är viktigt att spendera mindre tid på att upptäcka och brainstorma och mer tid på att faktiskt producera resultat. Genom att integrera AI-algoritmer i din redaktionella process kan du få in nya idéer i din verksamhet. oavsett om du behöver skriva ett blogginlägg, skapa innehåll för en webbplats eller skapa ett marknadsföringsmejl kan vår plattform hjälpa dig att påskynda din skrivprocess.
 T100:
@@ -28,7 +28,7 @@ B100:
   - "Omforma dina varumärkesuttalanden och skräddarsy varje aspekt av ditt varumärke för att kommunicera dess styrkor och värden."
   - "Använd kraftfulla verktyg för att skapa en stark röst för dina innehållslandningssidor."
 H0121: "Maila.ai är en revolutionerande AI-driven plattform för copywriting och skrivhjälp som gör det möjligt för dig att producera professionellt innehåll på några minuter."
-T0152: "Nästa nivå av AI-driven plattform för copywriting"
+T0152: "AI-driven assistent för att skriva mejl"
 H01051: "Börja skriva med din första kostnadsfria provperiod på 25 000 ord och se om ditt arbete förbättras."
 H01047: "Dessa resultat är genererade i förväg och har full kapacitet av artificiell intelligens."
 H0118:
