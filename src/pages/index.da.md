@@ -1,6 +1,6 @@
 ---
 id: "01"
-title: "AI copywriting tools"
+title: "AI-skriveassistent og redskaber til tekstforfatning"
 description: "AI-drevne værktøjer til tekstforfatning er designet til at hjælpe dig med hurtigt at skrive indhold til dit brand."
 templateKey: home
 tags:
@@ -28,7 +28,7 @@ B100:
   - "Omform dine brand statements og skræddersy alle aspekter af dit brand til at kommunikere dets styrker og værdier."
   - "Brug kraftfulde værktøjer til at skabe en stærk stemme til dine landingssider med indhold."
 H0121: "Maila.ai er en revolutionerende AI-drevet platform til tekstforfatning og skriveassistance, der gør det muligt at producere professionelt indhold på få minutter."
-T0152: "Næste niveau af AI-drevet platform til tekstforfatning"
+T0152: "AI-drevet assistent til at skrive e-mails!"
 H01051: "Begynd at skrive med din første gratis prøveperiode på 25.000 ord, og se, om dit arbejde bliver bedre."
 H01047: "Disse resultater er præ-genereret og fuldt ud styrket af AI"
 H0118:
