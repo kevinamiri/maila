@@ -1,25 +1,34 @@
 import React from "react";
 import { graphql, navigate, withPrefix } from "gatsby";
-import { getUserLangKey } from "ptz-i18n";
+import getUserLangKey from "../langfile/getUserLangKey";
+import useSettings from "../hooks/useSettings";
 
-class RedirectIndex extends React.PureComponent {
-  constructor(props) {
-    super(props);
 
-    // Skip build, Browsers only
-    if (typeof window !== "undefined") {
-      const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
-      const langKey = getUserLangKey(langs, defaultLangKey);
+const RedirectIndex = ({ data }) => {
+  const { settings, saveSettings } = useSettings();
+  const handleChange = (field, value) => {
+    saveSettings({
+      ...settings,
+      [field]: value,
+    });
+  };
+  // Skip build, Browsers only
+  if (typeof window !== "undefined") {
+    const { langs, defaultLangKey } = data.site.siteMetadata.languages;
+    const langKey = getUserLangKey(langs, defaultLangKey);
+    if (settings.lang === langKey) {
       const homeUrl = withPrefix(`/${langKey}/`);
-
       navigate(homeUrl);
     }
-  }
+    else {
+      const homeLanguage = withPrefix(`/${settings.lang}/`);
+      navigate(homeLanguage);
+    }
 
-  render() {
-    return <div />;
   }
-}
+  return <div />;
+};
+
 
 export default RedirectIndex;
 

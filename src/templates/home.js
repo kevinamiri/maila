@@ -8,8 +8,11 @@ import HomeBlock03 from '../components/landings/HomeBlock03'
 import AccordionBlock from '../components/landings/AccordionBlock'
 import HomeHeroPage from '../components/landings/HomeHeroPage'
 import _ from "lodash";
+import useSettings from "../hooks/useSettings";
+
 
 const HomePage = (props) => {
+
   let data;
   let dataMarkdown = [];
   if (props.data !== null) {
@@ -19,9 +22,30 @@ const HomePage = (props) => {
   const jsonData = data.allArticlesJson.edges[0].node.articles;
   const langKey = dataMarkdown.frontmatter.lang;
   const { frontmatter } = data.markdownRemark;
-  const sel = Select(langKey);
+
+  const { settings, saveSettings } = useSettings();
+  const handleChange = (field, value) => {
+
+    saveSettings({
+      ...settings,
+      [field]: value,
+    });
+  };
+
+  React.useEffect(() => {
+    (langKey === "sv") ? handleChange("lang", "sv") :
+      (langKey === "no") ? handleChange("lang", "no") :
+        (langKey === "fi") ? handleChange("lang", "fi") :
+          (langKey === "da") ? handleChange("lang", "da") :
+            handleChange("lang", "en")
+  }, [])
+
+
+
   const image = frontmatter.image.childImageSharp.gatsbyImageData.src;
   const tags = frontmatter.tags;
+
+
   return (
     <Layout
       data={props.data}
@@ -59,6 +83,7 @@ export const pageQuery = graphql`query HomePageQuery($id: String!) {
           da
           sv
           no
+          fi
         }
       }
     }
