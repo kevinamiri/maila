@@ -19,16 +19,13 @@ const HomePage = (props) => {
   }
   const jsonData = data.allArticlesJson.edges[0].node.articles;
   const langKey = dataMarkdown.frontmatter.lang;
-  const { frontmatter } = data.markdownRemark;
-  const image = frontmatter.image.childImageSharp.gatsbyImageData.src;
-  const imageStatus = image ? true : false
   return (
     <Layout
       data={props.data}
       jsonData={jsonData}
       location={props.location}
     >
-      <SEO frontmatter={frontmatter} postImage={imageStatus && image} />
+
       <HomeHeroPage header={dataMarkdown.frontmatter.H0121} cta={dataMarkdown.frontmatter.H01051} title={dataMarkdown.frontmatter.T0152} labelbutton={dataMarkdown.frontmatter.L0401[0]} helpernotice={dataMarkdown.frontmatter.H01047} />
       <CardFeatureBlock titles={dataMarkdown.frontmatter.T100} bodys={dataMarkdown.frontmatter.B100} />
       <HomeBlock03

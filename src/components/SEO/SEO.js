@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import SchemaOrg from "./SchemaOrg";
 
-const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost }) => (
+const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost, langKey }) => (
   <StaticQuery
     query={graphql`
       {
@@ -33,9 +33,10 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost }) => (
       const postMeta =
         frontmatter || postData.childMarkdownRemark.frontmatter || {};
 
-      const title = seo.title;
-      const description = postMeta.description || seo.description;
+      const title = frontmatter.title || seo.title;
+      const description = frontmatter.description || seo.description;
       const image = postImage ? `${seo.siteUrl}${postImage}` : seo.image;
+
       const url = postMeta.slug
         ? `${seo.siteUrl}/${postMeta.slug}/`
         : seo.siteUrl;
@@ -43,15 +44,19 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost }) => (
 
       return (
         <React.Fragment>
-          <Helmet>
-            {/* General tags */}
+          <Helmet
+            key='app-head'
+            defaultTitle={title}
+            titleTemplate={`%s | ${title}`}
+          >
+            <html lang={langKey} />
             <title>{title}</title>
             <meta name='description' content={description} />
             <meta name='author' content={seo.author.name} />
             <meta name='image' content={image} />
-            <link rel='canonical' href={seo.siteUrl} />
             <meta property='og:url' content={url} />
             {isBlogPost ? <meta property='og:type' content='article' /> : null}
+            <link rel='canonical' href={seo.siteUrl} />
             <meta property='og:title' content={title} />
             <meta property='og:description' content={description} />
             <meta property="og:site_name" content={title} />

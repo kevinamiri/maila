@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../../components/landings/Footer";
+import SEO from "../../components/SEO/SEO";
 import Helmet from "react-helmet";
 import TopBar from "../../components/TopBar";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
 import GlobalStyles from "../../components/GlobalStyles";
 // import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
-
+import { getSrc, getImage } from "gatsby-plugin-image";
 import { Box } from "@mui/material";
 import useSettings from "../../hooks/useSettings";
 
@@ -15,7 +16,13 @@ const Layout = (props) => {
   const description = props.data.markdownRemark.frontmatter.description;
   const jsonData = props.jsonData;
   const location = props.location;
-  const title = props.data.markdownRemark.frontmatter.title;
+  const imageSrc =
+    props.data.markdownRemark.frontmatter.image &&
+    getSrc(props.data.markdownRemark.frontmatter.image);
+  console.log(imageSrc);
+  // const image =
+  //   props.data.markdownRemark.frontmatter.image.childImageSharp.gatsbyImageData;
+  const frontmatter = props.data.markdownRemark.frontmatter;
   const url = location.pathname;
   const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
@@ -53,16 +60,23 @@ const Layout = (props) => {
     langKey || settings.lang
   }`);
 
+  const imageStatus = imageSrc ? true : false;
+
   return (
     <>
       <Helmet
         key='app-head'
-        defaultTitle={title}
-        titleTemplate={`%s | ${title}`}
+        defaultTitle={frontmatter.title}
+        titleTemplate={`%s | ${frontmatter.title}`}
       >
         <html lang={langKey} />
-        <meta name='description' content={description} />
+        <meta name='description' content={frontmatter.description} />
       </Helmet>
+      <SEO
+        frontmatter={frontmatter}
+        postImage={imageStatus && imageSrc}
+        langKey={langKey}
+      />
       <IntlProvider
         locale={langKey}
         messages={i18nMessages}
