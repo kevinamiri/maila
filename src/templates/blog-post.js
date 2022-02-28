@@ -6,28 +6,13 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
 import { HTMLContent } from "../components/homepage/Content";
 import BlogPostTemplate from "../components/homepage/BlogPostTemplate";
-import useSettings from "../hooks/useSettings";
+
 
 const BlogPost = ({ data, location }) => {
   const { markdownRemark: post } = data;
   const jsonData = data.allArticlesJson.edges[0].node.articles;
   const langKey = post.frontmatter.lang;
-  const { settings, saveSettings } = useSettings();
-  const handleChange = (field, value) => {
 
-    saveSettings({
-      ...settings,
-      [field]: value,
-    });
-  };
-
-  React.useEffect(() => {
-    (langKey === "sv") ? handleChange("lang", "sv") :
-      (langKey === "no") ? handleChange("lang", "no") :
-        (langKey === "fi") ? handleChange("lang", "fi") :
-          (langKey === "da") ? handleChange("lang", "da") :
-            handleChange("lang", "en")
-  }, [])
   return (
     <Layout
       data={data}
