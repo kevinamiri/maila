@@ -5,7 +5,7 @@ description: "Tekoälypohjaiset copywriting-työkalut on suunniteltu auttamaan s
 templateKey: home
 tags:
   - Maila.ai
-lang: en
+lang: fi
 date: 2020-12-25
 image: ../img/logo.png
 F100:
@@ -49,8 +49,8 @@ H0118:
 L0401:
   - Rekisteröidy
   - Kirjaudu sisään
-path: /en/
-slug: /en/
+path: /fi/
+slug: /fi/
 ---
 
 

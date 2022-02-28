@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import LayoutTag from "../components/layout/LayoutTag";
 import TagRouteTemplate from "../components/homepage/TagRouteTemplate";
+import useSettings from "../hooks/useSettings";
 
 const TagRoute = (props) => {
-  //pathname: window.location.pathname,
-  console.log(props)
   const [location, setLocation] = useState({
     pathname: "/en/tags/",
   });
@@ -20,6 +19,25 @@ const TagRoute = (props) => {
     data = props.data;
     pageContext = props.pageContext;
   }
+
+  const langKey = data.allMarkdownRemark.edges[0].node.fields.langKey
+
+  const { settings, saveSettings } = useSettings();
+  const handleChange = (field, value) => {
+
+    saveSettings({
+      ...settings,
+      [field]: value,
+    });
+  };
+
+  React.useEffect(() => {
+    (langKey === "sv") ? handleChange("lang", "sv") :
+      (langKey === "no") ? handleChange("lang", "no") :
+        (langKey === "fi") ? handleChange("lang", "fi") :
+          (langKey === "da") ? handleChange("lang", "da") :
+            handleChange("lang", "en")
+  }, [])
   return (
     <LayoutTag data={data} location={location}>
       <TagRouteTemplate
