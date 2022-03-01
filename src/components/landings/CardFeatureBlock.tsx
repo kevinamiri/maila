@@ -8,7 +8,7 @@ import CardFeature from "./card/CardFeature";
 interface CardFeatureBlockProps {
   titles?: [];
   bodys?: [];
-  component?: String;
+  badgeLabel?: String;
 }
 
 const FWrapper = styled("section")(({ theme }) => ({
@@ -25,7 +25,11 @@ const FWrapper = styled("section")(({ theme }) => ({
   },
 }));
 
-const CardFeatureBlock = ({ titles, bodys, badgeLabel }) => {
+const CardFeatureBlock = ({
+  titles,
+  bodys,
+  badgeLabel,
+}: CardFeatureBlockProps) => {
   return (
     <FWrapper>
       {titles.map((x, i) => (

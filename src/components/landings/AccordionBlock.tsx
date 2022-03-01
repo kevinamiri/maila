@@ -4,7 +4,7 @@ import SimpleAccordion from "./card/SimpleAccordion";
 import { Grid } from "@mui/material";
 
 interface QuestionListProps {
-  questions?: [];
+  questions?: any | unknown;
 }
 
 const AccordionBlock = ({ questions }: QuestionListProps) => {
@@ -17,7 +17,7 @@ const AccordionBlock = ({ questions }: QuestionListProps) => {
         sx={{
           backgroundColor: (theme) => `${theme.palette.background.paper}`,
         }}
-        conponent='section'
+        component='section'
       >
         <Box
           sx={{
