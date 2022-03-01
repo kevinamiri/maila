@@ -12,7 +12,7 @@ import { Box } from "@mui/material";
 import useSettings from "../../hooks/useSettings";
 
 const Layout = (props) => {
-  // const { stateLanguage } = React.useContext(AppContext);
+  const data = props.data;
   const description = props.data.markdownRemark.frontmatter.description;
   const jsonData = props.jsonData;
   const location = props.location;
@@ -73,7 +73,7 @@ const Layout = (props) => {
         <meta name='description' content={frontmatter.description} />
       </Helmet>
       <SEO
-        frontmatter={frontmatter}
+        postData={data}
         postImage={imageStatus && imageSrc}
         langKey={langKey}
       />

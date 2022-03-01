@@ -74,6 +74,7 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
                 }}
                 justifyContent='center'
                 alignContent='center'
+                component='header'
               >
                 <Box
                   sx={{
@@ -83,7 +84,6 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
                   }}
                 >
                   <Typography color='primary' variant='h1'>
-                    {/* <UnderlinedText>{title}</UnderlinedText> */}
                     {firstTwoWords(title) + " "}
                   </Typography>
                   <Typography color='success.main' variant='h1'>

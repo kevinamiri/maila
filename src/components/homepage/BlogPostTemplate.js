@@ -10,8 +10,6 @@ import Container from '@mui/material/Container'
 
 
 const BlogPostTemplate = ({
-  data,
-  location,
   dateOfPost,
   content,
   contentComponent,

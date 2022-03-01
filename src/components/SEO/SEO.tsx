@@ -1,10 +1,27 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-import PropTypes from "prop-types";
 import SchemaOrg from "./SchemaOrg";
 
-const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost, langKey }) => (
+interface SEOProps {
+  isBlogPost?: boolean;
+  postData?: {
+    markdownRemark: {
+      frontmatter: {
+        title: string;
+        description: string;
+        date: string;
+        image: string;
+        slug: string;
+      };
+      excerpt: string;
+    };
+  };
+  postImage?: string;
+  langKey?: string;
+}
+
+const SEO = ({ postData, postImage, isBlogPost, langKey }: SEOProps) => (
   <StaticQuery
     query={graphql`
       {
@@ -30,17 +47,15 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost, langKey }) => 
       }
     `}
     render={({ site: { siteMetadata: seo } }) => {
-      const postMeta =
-        frontmatter || postData.childMarkdownRemark.frontmatter || {};
-
-      const title = frontmatter.title || seo.title;
-      const description = frontmatter.description || seo.description;
+      const title = postData.markdownRemark.frontmatter.title || seo.title;
+      const description =
+        postData.markdownRemark.frontmatter.description || seo.description;
       const image = postImage ? `${seo.siteUrl}${postImage}` : seo.image;
 
-      const url = postMeta.slug
-        ? `${seo.siteUrl}/${postMeta.slug}/`
+      const url = postData.markdownRemark.frontmatter.slug
+        ? `${seo.siteUrl}/${postData.markdownRemark.frontmatter.slug}/`
         : seo.siteUrl;
-      const datePublished = isBlogPost ? postMeta.datePublished : false;
+      const datePublished = postData.markdownRemark.frontmatter.date;
 
       return (
         <React.Fragment>
@@ -59,13 +74,9 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost, langKey }) => 
             <link rel='canonical' href={seo.siteUrl} />
             <meta property='og:title' content={title} />
             <meta property='og:description' content={description} />
-            <meta property="og:site_name" content={title} />
+            <meta property='og:site_name' content={title} />
             <meta property='og:image' content={image} />
-            {image ? (
-              <meta property='og:image' content={image} />
-            ) : (
-              ""
-            )}
+            {image ? <meta property='og:image' content={image} /> : ""}
             {/* Twitter Card tags */}
             <meta name='twitter:card' content='summary_large_image' />
             <meta name='twitter:site' content={seo.social.twitter} />
@@ -75,7 +86,7 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost, langKey }) => 
             <meta name='twitter:image' content={image} />
           </Helmet>
           <SchemaOrg
-            isBlogPost={isBlogPost}
+            isBlogPost={isBlogPost ? true : false}
             url={url}
             title={title}
             image={image}
@@ -83,7 +94,6 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost, langKey }) => 
             author={seo.author.name}
             datePublished={datePublished}
             siteUrl={seo.siteUrl}
-            author={seo.author}
             organization={seo.organization}
             defaultTitle={seo.title}
           />
@@ -92,22 +102,5 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost, langKey }) => 
     }}
   />
 );
-
-SEO.propTypes = {
-  isBlogPost: PropTypes.bool,
-  postData: PropTypes.shape({
-    childMarkdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.any,
-      excerpt: PropTypes.any,
-    }),
-  }),
-  postImage: PropTypes.string,
-};
-
-SEO.defaultProps = {
-  isBlogPost: false,
-  postData: { childMarkdownRemark: {} },
-  postImage: null,
-};
 
 export default SEO;
