@@ -50,7 +50,7 @@ module.exports = {
       resolve: "gatsby-plugin-i18n-tags",
       options: {
         // Default options
-        tagPage: "src/templates/tags.js",
+        tagPage: "src/templates/tags.tsx",
         tagsUrl: "/tags/",
         langKeyForNull: "any",
       },
@@ -141,8 +141,8 @@ module.exports = {
         icon: `src/img/logo.png`,
         localize: [
           {
-            start_url: `/fa/`,
-            lang: `fa`,
+            start_url: `/sv/`,
+            lang: `sv`,
             name: `A sophisticated copy editing platforms`,
             short_name: `Copy tools`,
             description: `What if AI could do sophisticated copy editing of your documents? We did it! But first, let's explain what copy editing is…`,

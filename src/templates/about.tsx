@@ -5,8 +5,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
 import SEO from "../components/SEO/SEO";
 import Content, { HTMLContent } from "../components/homepage/Content";
-import { Typography, Container, Box } from '@mui/material'
-
+import { Typography, Container, Box } from "@mui/material";
 
 const AboutPageTemplate = ({
   title,
@@ -18,19 +17,20 @@ const AboutPageTemplate = ({
   const PageContent = contentComponent || Content;
   return (
     <Box>
-      <Typography variant="h1" color="primary">
+      <Typography variant='h1' color='primary'>
         {title}
       </Typography>
-      <Container sx={{
-        mt: 5
-      }}>
+      <Container
+        sx={{
+          mt: 5,
+        }}
+      >
         <PageContent content={content} />
         <TagList tags={tags} langKey={langKey} />
       </Container>
     </Box>
   );
 };
-
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
@@ -40,37 +40,27 @@ AboutPageTemplate.propTypes = {
   langKey: PropTypes.string,
 };
 
-
 const AboutPage = (props) => {
-  var dataMarkdown = [];
-  if (props.data !== null) {
-    dataMarkdown = props.data.markdownRemark;
-  }
+  console.log(props);
+  const data = props.data;
+  const markdownRemark = props.data.markdownRemark;
   const jsonData = props.data.allArticlesJson.edges[0].node.articles;
-  const { frontmatter } = dataMarkdown;
-  const image = frontmatter.image.childImageSharp.gatsbyImageData.src | ""
-  const langKey = frontmatter.lang;
-  const tags = frontmatter.tags;
+  const langKey = markdownRemark.frontmatter.lang;
+  const tags = markdownRemark.frontmatter.tags;
   return (
-    <Layout
-      data={props.data}
-      jsonData={jsonData}
-      location={props.location}
-    >
-      <SEO frontmatter={frontmatter} postImage={image} />
+    <Layout data={props.data} jsonData={jsonData} location={props.location}>
       <Container>
         <AboutPageTemplate
           contentComponent={HTMLContent}
-          title={dataMarkdown.frontmatter.title}
-          content={dataMarkdown.html}
+          title={markdownRemark.frontmatter.title}
+          content={markdownRemark.html}
           tags={tags}
           langKey={langKey}
         />
       </Container>
     </Layout>
   );
-}
-
+};
 
 AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
@@ -78,45 +68,46 @@ AboutPage.propTypes = {
 
 export default AboutPage;
 
-export const pageQuery = graphql`query AboutPageQuery($id: String!) {
-  site {
-    siteMetadata {
-      languages {
-        defaultLangKey
-        langs
-      }
-    }
-  }
-  allArticlesJson(filter: {title: {eq: "home"}}) {
-    edges {
-      node {
-        articles {
-          en
-          sv
-          da
-          no
-          fi
+export const pageQuery = graphql`
+  query AboutPageQuery($id: String!) {
+    site {
+      siteMetadata {
+        languages {
+          defaultLangKey
+          langs
         }
       }
     }
-  }
-  markdownRemark(id: {eq: $id}) {
-    html
-    frontmatter {
-      id
-      title
-      description
-      tags
-      lang
-      image {
-        childImageSharp {
-          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+    allArticlesJson(filter: { title: { eq: "home" } }) {
+      edges {
+        node {
+          articles {
+            en
+            sv
+            da
+            no
+            fi
+          }
         }
       }
     }
-    fields {
-      slug
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        id
+        title
+        description
+        tags
+        lang
+        image {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
+      }
+      fields {
+        slug
+      }
     }
   }
-}
 `;

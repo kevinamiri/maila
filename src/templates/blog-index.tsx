@@ -5,7 +5,7 @@ import BlogRoll from "../components/homepage/BlogRoll";
 import SEO from "../components/SEO/SEO";
 import { FormattedMessage } from "react-intl";
 import { graphql } from "gatsby";
-import { Box, Grid } from '@mui/material'
+import { Box, Grid } from "@mui/material";
 
 const BlogIndexPage = (props) => {
   const data = props.data;
@@ -13,16 +13,19 @@ const BlogIndexPage = (props) => {
   const jsonData = data.allArticlesJson.edges[0].node.articles;
   return (
     <Layout data={data} jsonData={jsonData} location={location}>
-      <SEO frontmatter={data.markdownRemark.frontmatter} />
-      <Box >
-        <Grid container
+      <Box>
+        <Grid
+          container
           direction='row'
           justifyContent='center'
-          alignItems='center' >
+          alignItems='center'
+        >
           <Grid item xs={11}>
-            <Box sx={{
-              mt: 3,
-            }}>
+            <Box
+              sx={{
+                mt: 3,
+              }}
+            >
               <FormattedMessage id='B01' />
             </Box>
             <BlogRoll />
@@ -31,9 +34,9 @@ const BlogIndexPage = (props) => {
       </Box>
     </Layout>
   );
-}
+};
 
-export default BlogIndexPage
+export default BlogIndexPage;
 
 BlogIndexPage.propTypes = {
   location: PropTypes.shape({
