@@ -7,19 +7,14 @@ import Layout from "../components/layout/Layout";
 import { HTMLContent } from "../components/homepage/Content";
 import BlogPostTemplate from "../components/homepage/BlogPostTemplate";
 
-
 const BlogPost = ({ data, location }) => {
   const { markdownRemark: post } = data;
   const jsonData = data.allArticlesJson.edges[0].node.articles;
   const langKey = post.frontmatter.lang;
 
   return (
-    <Layout
-      data={data}
-      jsonData={jsonData}
-      location={location}
-    >
-      <SEO frontmatter={post.frontmatter} isBlogPost />
+    <Layout data={data} jsonData={jsonData} location={location}>
+      <SEO postData={data} isBlogPost />
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -53,45 +48,46 @@ BlogPost.propTypes = {
 
 export default BlogPost;
 
-export const pageQuery = graphql`query BlogPostByID($id: String!) {
-  site {
-    siteMetadata {
-      title
-      languages {
-        langs
-        defaultLangKey
-      }
-    }
-  }
-  allArticlesJson(filter: {title: {eq: "home"}}) {
-    edges {
-      node {
-        articles {
-          en
-          no
-          fi
-          sv
-          da
+export const pageQuery = graphql`
+  query BlogPostByID($id: String!) {
+    site {
+      siteMetadata {
+        title
+        languages {
+          langs
+          defaultLangKey
         }
       }
     }
-  }
-  markdownRemark(id: {eq: $id}) {
-    id
-    html
-    frontmatter {
+    allArticlesJson(filter: { title: { eq: "home" } }) {
+      edges {
+        node {
+          articles {
+            en
+            no
+            fi
+            sv
+            da
+          }
+        }
+      }
+    }
+    markdownRemark(id: { eq: $id }) {
       id
-      title
-      image {
-        childImageSharp {
-          gatsbyImageData(width: 800, layout: CONSTRAINED)
+      html
+      frontmatter {
+        id
+        title
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 800, layout: CONSTRAINED)
+          }
         }
+        description
+        date
+        tags
+        lang
       }
-      description
-      date
-      tags
-      lang
     }
   }
-}
 `;
