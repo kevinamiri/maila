@@ -75,12 +75,12 @@ const baseOptions = {
     },
     h2: {
       fontWeight: 500,
-      fontSize: '3rem',
+      fontSize: '2.5rem',
       fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
     },
     h3: {
       fontWeight: 500,
-      fontSize: '2.25rem',
+      fontSize: '2rem',
       fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
     },
     h4: {

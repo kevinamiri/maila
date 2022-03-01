@@ -44,7 +44,11 @@ H0118:
   - Vår AI er bygd for å generere unikt innhold som er svært optimalisert for hver enkelt søkeord som du angir. Dette gir deg fleksibilitet i dine innholdsproduksjonsanstrengelser, slik at du kan fokusere på andre aspekter av din bedrift.
   - Hvor lang tid tar det?
   - Vi genererer kopi i sanntid, så dine resultater er klare umiddelbart. Som vår kopigenerasjonsmaskin er helt automatisert, tillater det oss også å skalere vår utgave etter dine behov.
-  H01194: "From the beginings I was in here"
+H01194: 
+  - AI Copywriting Tool
+  - AI copywriting tool that can help you write better copy for your website or marketing campaign.
+  - AI Email Generation Tool
+  - Sales email emails are an important part of any sales process, but they can be difficult to write. An AI email tool could help you write sales email emails that are more effective and more likely to result in sales.
 L0401:
   - Starter
   - Login

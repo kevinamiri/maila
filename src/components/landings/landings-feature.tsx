@@ -21,9 +21,16 @@ const LandingsFeature = ({
   descriptionLeft,
   ctaActionText,
 }: LandingsFeatureProps) => (
-  <Box sx={{ pt: 15 }}>
-    <Container maxWidth='lg'>
-      <Card elevation={0} sx={{ backgroundColor: "neutral.100" }}>
+  <Box sx={{ pt: 15, mb: 12 }}>
+    <Container component='section' maxWidth='lg'>
+      <Card
+        elevation={0}
+        sx={{
+          background: (theme) =>
+            `linear-gradient(180deg, ${theme.palette.background.default} 50%, ${theme.palette.background.default} 50%)`,
+          borderRadius: "6px",
+        }}
+      >
         <Grid
           container
           sx={{
@@ -45,9 +52,6 @@ const LandingsFeature = ({
             item
             md={6}
             sx={{
-              borderRight: (theme) => ({
-                md: `1px solid ${theme.palette.divider}`,
-              }),
               display: "flex",
               flexDirection: "column",
               mb: {
@@ -60,7 +64,7 @@ const LandingsFeature = ({
             }}
             xs={12}
           >
-            <Typography color='textPrimary' variant='h4'>
+            <Typography color='primary' variant='h2'>
               {headerRight && headerRight}
             </Typography>
             <Typography
@@ -103,7 +107,7 @@ const LandingsFeature = ({
             }}
             xs={12}
           >
-            <Typography color='textPrimary' variant='h4'>
+            <Typography color='primary' variant='h2'>
               {headerLeft && headerLeft}
             </Typography>
             <Typography
