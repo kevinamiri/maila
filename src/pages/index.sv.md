@@ -45,7 +45,11 @@ H0118:
     - Vi genererar innehåll i realtid, så dina resultat är klara omedelbart. Eftersom vår motor för kopieringsgenerering är helt automatiserad gör det också att vi kan skala vår produktion för att matcha dina behov.
     - Kan jag skapa innehåll på andra språk?
     - Ja, vi stöder andra språk än engelska. Översättningar av bästa kvalitet finns för närvarande tillgängliga på engelska.
-  H01194: ""
+H01194: 
+  - AI-skrivassistent
+  - AI-verktyg för copywriting som kan hjälpa dig att skriva bättre texter till din webbplats eller marknadsföringskampanj genom att tillhandahålla ett verktyg som är lätt att använda och gör copywritingprocessen effektivare.
+  - AI-innehållsgenerator
+  - Försäljningsmejl är en viktig del av varje försäljningsprocess, men de kan vara svåra att skriva. Ett AI e-postverktyg kan hjälpa dig att skriva e-postmeddelanden för försäljning som är effektivare och mer sannolikt leder till försäljning.
 L0401:
   - Registrera dig
   - Logga in

@@ -24,10 +24,10 @@ const HomePage = (props) => {
         helpernotice={dataMarkdown.frontmatter.H01047}
       />
       <LandingsFeature
-        headerRight='text1'
-        descriptionRight='text1'
-        headerLeft='text1'
-        descriptionLeft='text1'
+        headerRight={dataMarkdown.frontmatter.H01194[0]}
+        descriptionRight={dataMarkdown.frontmatter.H01194[1]}
+        headerLeft={dataMarkdown.frontmatter.H01194[2]}
+        descriptionLeft={dataMarkdown.frontmatter.H01194[3]}
       />
       <CardFeatureBlock
         titles={dataMarkdown.frontmatter.T100}
@@ -91,8 +91,8 @@ export const pageQuery = graphql`
         H01051
         H0118 {
           A0117q
-          H01194
         }
+        H01194
         L0401
       }
       fields {

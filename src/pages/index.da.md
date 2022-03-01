@@ -45,7 +45,11 @@ H0118:
     - Vi genererer indhold i realtid, så dine resultater er klar med det samme. Da vores kopi-genereringsmotor er helt automatiseret, giver det os også mulighed for at skalere vores output til at matche dine behov.
     - Kan jeg oprette indhold på andre sprog?
     - Ja, vi understøtter andre sprog end engelsk. Oversættelserne af den bedste kvalitet er i øjeblikket tilgængelige på engelsk.
-  H01194: "From the beginings I was in here"
+H01194: 
+  - AI Copywriting Tool
+  - AI copywriting tool that can help you write better copy for your website or marketing campaign.
+  - AI Email Generation Tool
+  - Sales email emails are an important part of any sales process, but they can be difficult to write. An AI email tool could help you write sales email emails that are more effective and more likely to result in sales.
 L0401:
   - Get Started
   - Login

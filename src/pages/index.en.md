@@ -9,8 +9,8 @@ lang: en
 date: 2020-12-25
 image: ../img/logo.png
 F100:
-  - AI-powered sales email generation tools
-  - With AI-powered Sales Copy Email Generator, you can create sales-oriented emails that will motivate your audience to take action. Simply enter some product information, and our advanced engine will generate a marketing message that takes your product to the next level.
+  - AI-powered email generation tools
+  - With AI-powered email generator, you can create sales-oriented emails that will motivate your audience to take action. Simply enter some product information, and our advanced engine will generate a marketing message that takes your product to the next level.
   - Integrate AI into your editorial process
   - It's important to spend less time discovering and brainstorming and more time actually producing results. By incorporating AI algorithms into your editorial process, you can bring new ideas into your business. no matter if you need to write a blog post, create content for a website or create a marketing email, our platform can help you speed up your writing process.
 T100:
@@ -45,7 +45,11 @@ H0118:
     - We generate contents in real-time, so your results are ready immediately. As our copy generation engine is completely automated, it also allows us to scale our output to match your needs.
     - Can I create content in other languages?
     - Yes, we support languages other than English. The best quality translations are currently available in English.
-  H01194: ""
+H01194: 
+  - AI Writing Assistant
+  - AI copywriting tool that can help you write better copy for your website or marketing campaign by providing a tool that is easy to use and makes the copywriting process more efficient.
+  - AI Content Generator
+  - Sales email emails are an important part of any sales process, but they can be difficult to write. An AI email tool could help you write sales email emails that are more effective and more likely to result in sales.
 L0401:
   - Sign up
   - Login

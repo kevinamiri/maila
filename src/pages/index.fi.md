@@ -45,7 +45,11 @@ H0118:
     - Tuotamme sisältöä reaaliajassa, joten tulokset ovat valmiina heti. Koska kopioiden tuottamismoottorimme on täysin automatisoitu, voimme myös skaalata tuotoksemme tarpeittesi mukaan.
     - Voinko luoda sisältöä muilla kielillä?
     - Kyllä, tuemme muitakin kieliä kuin englantia. Laadukkaimmat käännökset ovat tällä hetkellä saatavilla englanniksi.
-  H01194: ""
+H01194: 
+  - AI Copywriting Tool
+  - AI copywriting tool that can help you write better copy for your website or marketing campaign.
+  - AI Email Generation Tool
+  - Sales email emails are an important part of any sales process, but they can be difficult to write. An AI email tool could help you write sales email emails that are more effective and more likely to result in sales.
 L0401:
   - Rekisteröidy
   - Kirjaudu sisään
