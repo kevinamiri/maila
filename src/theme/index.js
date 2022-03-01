@@ -70,34 +70,34 @@ const baseOptions = {
       '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Tahoma, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
     h1: {
       fontWeight: 700,
-      fontSize: '3.3rem',
+      fontSize: '3rem',
       fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
     },
     h2: {
-      fontWeight: 500,
-      fontSize: '2.25rem',
+      fontWeight: 700,
+      fontSize: '1.7rem',
       fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
     },
     h3: {
       fontWeight: 500,
-      fontSize: '2rem',
+      fontSize: '1.6rem',
       fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
     },
     h4: {
-      fontWeight: 500,
-      fontSize: '2rem',
-      fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
-
-    },
-    h5: {
       fontWeight: 500,
       fontSize: '1.5rem',
       fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
 
     },
+    h5: {
+      fontWeight: 500,
+      fontSize: '1.2rem',
+      fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+
+    },
     h6: {
       fontWeight: 500,
-      fontSize: '1.125rem',
+      fontSize: '1rem',
       lineHeight: '1.75',
       fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
 

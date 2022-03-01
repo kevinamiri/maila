@@ -13,7 +13,11 @@ interface LandingsFeatureProps {
   descriptionRight?: string;
   ctaActionText?: string;
 }
-
+/**
+ * This is a feature component for landing page consisting of a header, description, and call to action button.
+ * @link components/landings/landings-feature
+ * @returns Landing page feature block
+ */
 const LandingsFeature = ({
   headerRight,
   headerLeft,
@@ -21,8 +25,8 @@ const LandingsFeature = ({
   descriptionLeft,
   ctaActionText,
 }: LandingsFeatureProps) => (
-  <Box sx={{ pt: 15, mb: 12 }}>
-    <Container component='section' maxWidth='lg'>
+  <Box component='section' sx={{ pt: 15, mb: 12 }}>
+    <Container maxWidth='lg'>
       <Card
         elevation={0}
         sx={{
@@ -68,7 +72,7 @@ const LandingsFeature = ({
               {headerRight && headerRight}
             </Typography>
             <Typography
-              color='textSecondary'
+              color='textPrimary'
               variant='subtitle1'
               sx={{
                 mb: 4,
@@ -111,7 +115,7 @@ const LandingsFeature = ({
               {headerLeft && headerLeft}
             </Typography>
             <Typography
-              color='textSecondary'
+              color='textPrimary'
               variant='subtitle1'
               sx={{
                 mb: 4,
