@@ -28,7 +28,7 @@ B100:
   - "Reshape your brand statements and tailor every aspect of your brand to communicate its strengths and values."
   - "Use powerful tools to create a strong voice for your content landing pages."
 H0121: "Maila.ai is a revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
-T0152: "AI Email Generation Platform"
+T0152: "Next Level AI-Powered Copywriting Platform"
 H01051: "Start writing with your first 25,000 words free trial and see if your work improves."
 H01047: "These results are pre-generated and fully empowered by AI"
 H0118:
