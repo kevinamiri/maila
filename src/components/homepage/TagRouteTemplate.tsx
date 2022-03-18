@@ -1,8 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
 import PostList from "./PostList";
-import { FormattedMessage } from "react-intl";
-import Helmet from "react-helmet";
 import Badge from "@mui/material/Badge";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
@@ -18,26 +15,19 @@ const TagRouteTemplate = ({ data, pageContext }) => {
         flexDirection: "column",
         justifyContent: "center",
         flexWrap: "wrap",
-        backgroundColor: "background.paper",
+        backgroundColor: "background.default",
       }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center",
+          justifyContent: "flex-start",
+          m: 5,
         }}
       >
-        <FormattedMessage id='tags'>
-          {(txt) => (
-            <Helmet
-              title={`${pageContext.tag} | ${txt}`}
-              meta={[{ name: "description", content: `${txt}` }]}
-            />
-          )}
-        </FormattedMessage>
         <Badge badgeContent={data.allMarkdownRemark.totalCount} color='primary'>
-          <Typography variant='h3' color='primary'>
+          <Typography variant='h1' sx={{ fontSize: "20px" }} color='primary'>
             {pageContext.tag}
           </Typography>
         </Badge>
@@ -53,9 +43,6 @@ const TagRouteTemplate = ({ data, pageContext }) => {
         }}
       >
         <PostList posts={posts} />
-      </Box>
-      <Box>
-        <Typography variant='caption' color='initial'></Typography>
       </Box>
     </Box>
   );
