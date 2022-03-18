@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: "https://maila.ai",
     image: "img/logo-dark.png",
     author: {
-      name: "Kevin Levin",
+      name: "Kevin Amiri",
     },
     organization: {
       name: "NeuralWord",
@@ -56,10 +56,18 @@ module.exports = {
       },
     },
     `gatsby-transformer-json`,
+    `gatsby-transformer-csv`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/data/articles`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/sheets`,
+        name: "sheets",
       },
     },
     {
