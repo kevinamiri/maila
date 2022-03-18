@@ -1,42 +1,53 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import AuthenticationLayout from "../components/layout/AuthenticationLayout";
-import { FormattedMessage } from "react-intl";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import { Container, Typography } from "@mui/material"
+import { Container } from "@mui/material";
 
+import { IntlProvider } from "react-intl";
+import useSettings from "../hooks/useSettings";
+
+export const WrapLayout = ({ children }) => {
+  const { settings } = useSettings();
+  const i18nMessages = require(`../data/messages/${settings.lang}`);
+  return (
+    <IntlProvider
+      locale={settings.lang}
+      messages={i18nMessages}
+      textComponent={React.Fragment}
+    >
+      {children}
+    </IntlProvider>
+  );
+};
 
 const PageStatus = () => {
   const [isMount, setMount] = useState(false);
 
   useEffect(() => {
     setMount(true);
-  }, [])
+  }, []);
 
   if (!isMount) {
-    return (
-      <div>loading</div>
-    )
+    return <div>loading</div>;
   }
 
-  return (
-    <div>Page Not Found</div>
-  )
-
-
-}
-
+  return <div>Page Not Found</div>;
+};
 
 const NotFoundPage = ({ children }) => {
-  // const jsonData = data.allArticlesJson.edges[0].node.articles;
   return (
-    <AuthenticationLayout>
-      {!children && <Container>
-        <PageStatus />
-      </Container>}
+    <WrapLayout>
+      <AuthenticationLayout>
+        {!children && (
+          <Container>
+            <PageStatus />
+          </Container>
+        )}
 
-      {children}
-    </AuthenticationLayout>
+        {children}
+      </AuthenticationLayout>
+    </WrapLayout>
   );
 };
 
@@ -62,7 +73,10 @@ export const pageQuery = graphql`
         node {
           articles {
             en
-            fa
+            sv
+            no
+            da
+            fi
           }
         }
       }
