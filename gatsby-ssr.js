@@ -2,7 +2,6 @@ import React from 'react';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { SettingsProvider } from "./src/contexts/SettingsContext";
 import useSettings from "./src/hooks/useSettings";
-import { THEMES } from "./src/constants";
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from "./src/theme";
