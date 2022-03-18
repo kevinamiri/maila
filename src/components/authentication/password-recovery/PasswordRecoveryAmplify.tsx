@@ -1,15 +1,21 @@
-import React from 'react';
-import { navigate, Link } from 'gatsby';
-import * as Yup from 'yup';
-import { Formik } from 'formik';
-import { Box, Button, FormHelperText, TextField, Divider } from '@mui/material';
+import React from "react";
+import { navigate } from "gatsby";
+import * as Yup from "yup";
+import { Formik } from "formik";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import FormHelperText from "@mui/material/FormHelperText";
+import TextField from "@mui/material/TextField";
+import Divider from "@mui/material/Divider";
 import { Auth } from "aws-amplify";
 import Typography from "@mui/material/Typography";
 import { useSnackbar } from "notistack";
-import useIsMountedRef from '../../../hooks/useIsMountedRef';
-
+import useIsMountedRef from "../../../hooks/useIsMountedRef";
+import { useIntl } from "react-intl";
+import Link from "../../Link";
 
 const PasswordRecoveryAmplify = () => {
+  const intl = useIntl();
   const isMountedRef = useIsMountedRef();
   const { enqueueSnackbar } = useSnackbar();
 
@@ -25,38 +31,35 @@ const PasswordRecoveryAmplify = () => {
       >
         <div>
           <Typography color='textPrimary' gutterBottom variant='h4'>
-            Recover Password
+            {intl.formatMessage({ id: "F35" })}
           </Typography>
         </div>
       </Box>
       <Formik
         initialValues={{
-          email: '',
-          submit: null
+          email: "",
+          submit: null,
         }}
-        validationSchema={Yup
-          .object()
-          .shape({
-            email: Yup
-              .string()
-              .email('Must be a valid email')
-              .max(255)
-              .required('Email is required')
-          })}
+        validationSchema={Yup.object().shape({
+          email: Yup.string()
+            .email(`${intl.formatMessage({ id: "E501" })}`)
+            .max(255)
+            .required(`${intl.formatMessage({ id: "E502" })}`),
+        })}
         onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
           try {
             await Auth.forgotPassword(values.email).then((seccessful) => {
-              let { CodeDeliveryDetails } = seccessful
-              let emailDestination = CodeDeliveryDetails.Destination
+              let { CodeDeliveryDetails } = seccessful;
+              let emailDestination = CodeDeliveryDetails.Destination;
               setStatus({ success: true });
               setErrors({ submit: seccessful.message });
-              setSubmitting(true)
-              navigate('/auth/reset', {
+              setSubmitting(true);
+              navigate("/auth/reset", {
                 state: {
-                  username: values.email
-                }
-              })
-            })
+                  username: values.email,
+                },
+              });
+            });
           } catch (err) {
             console.error(err);
             if (isMountedRef.current) {
@@ -67,42 +70,45 @@ const PasswordRecoveryAmplify = () => {
           }
         }}
       >
-        {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
-          <form
-            noValidate
-            onSubmit={handleSubmit}
-          >
+        {({
+          errors,
+          handleBlur,
+          handleChange,
+          handleSubmit,
+          isSubmitting,
+          touched,
+          values,
+        }) => (
+          <form noValidate onSubmit={handleSubmit}>
             <TextField
               autoFocus
               error={Boolean(touched.email && errors.email)}
               fullWidth
               helperText={touched.email && errors.email}
-              label="Email Address"
-              margin="normal"
-              name="email"
+              label={intl.formatMessage({ id: "F44" })}
+              margin='normal'
+              name='email'
               onBlur={handleBlur}
               onChange={handleChange}
-              type="email"
+              type='email'
               value={values.email}
-              variant="outlined"
+              variant='outlined'
             />
             {errors.submit && (
               <Box sx={{ mt: 3 }}>
-                <FormHelperText error>
-                  {errors.submit}
-                </FormHelperText>
+                <FormHelperText error>{errors.submit}</FormHelperText>
               </Box>
             )}
             <Box sx={{ mt: 3 }}>
               <Button
-                color="primary"
+                color='primary'
                 disabled={isSubmitting}
                 fullWidth
-                size="large"
-                type="submit"
-                variant="contained"
+                size='large'
+                type='submit'
+                variant='contained'
               >
-                Recover Password
+                {intl.formatMessage({ id: "F35" })}
               </Button>
             </Box>
           </form>
@@ -112,12 +118,12 @@ const PasswordRecoveryAmplify = () => {
       <Box sx={{ display: "flex", p: 1 }}>
         <Box sx={{ p: 1, flexGrow: 1 }}>
           <Link color='textSecondary' to='/auth/login'>
-            Login
+            {intl.formatMessage({ id: "L66" })}
           </Link>
         </Box>
         <Box sx={{ p: 1 }}>
           <Link color='textSecondary' to='/auth/register'>
-            Create an account
+            {intl.formatMessage({ id: "F34" })}
           </Link>
         </Box>
       </Box>
