@@ -7,5 +7,6 @@ date: "11-10-2021"
 slug: /en/contact
 path: /en/contact
 lang: en
-tags: ['contact author', 'contact me']
+tags: ['contact us']
 ---
+Connect
