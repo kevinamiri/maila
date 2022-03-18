@@ -45,7 +45,7 @@ const deeplTranslation = async (text, target) => {
 // };
 
 const LanguageLists = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hu', 'it', 'ja', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'zh'];
-// const LanguageLists = ['sv', 'en', 'no', 'fi', 'da'];
+// const LanguageLists = ['sv', 'en', 'fi', 'da', ];
 
 const languageUrl = (url) => {
     langLists = {}
@@ -121,8 +121,8 @@ ${passage}
 
 
 const createPost = async () => {
-    const tagsList = `AIDA copywriting formula`
-    const postTitleStr = `Machine learning algorithms can help create targeted content`
+    const tagsList = `AI Product Description, Automatic product description, AI clothings Product description `
+    const postTitleStr = `Product Description Generator Using AI`
     const postUrl = kebabCase(postTitleStr)
     const dateString = new Date().toISOString().slice(0, 10)
     const year = new Date().toISOString().slice(0, 4)
@@ -130,8 +130,8 @@ const createPost = async () => {
     const folderDir = `blog/${year}/${month}`
     // const folderDir = `blog`
     const imageNameString = "terms.jpg"
-    const postDescriptionStr = `Machine learning algorithms can be used to analyze and learn from large data sets in order to identify patterns. This can then be used to create content that is targeted at specific audiences based on their interests. By using machine learning, businesses can create content that is more relevant to their customers and that will help to increase sales.`
-    const NewDocument = fs.readFileSync('./newDoc.md', 'utf8');
+    const postDescriptionStr = `Are you looking for a way to create unique and optimized product descriptions? If so, you may want to consider using AI-powered copywriting. This tool uses AI to generate product descriptions that are tailored to your specific keywords.`
+    const NewDocument = fs.readFileSync('./draft.md', 'utf8');
     const allpassage = NewDocument.split('\n')
     for (let index = 0; index < LanguageLists.length; index++) {
         const lang = LanguageLists[index];
