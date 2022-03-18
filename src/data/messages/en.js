@@ -1,4 +1,61 @@
 module.exports = {
+  //Landing Page data Object
+  P1AN: [
+    {
+      name: "Individual",
+      price: "25,000",
+      features: [
+        "7 days free use (10.000 words)",
+        "Access all languages",
+        "Ideal for individual creators & freelancers",
+        "25,000 words/mo",
+        "24/7 support",
+      ],
+    },
+    {
+      name: "Growth",
+      price: "250,000",
+      features: [
+        "7 days free use (10.000 words)",
+        "Ideal for start-ups & small businesses",
+        "250,000 words/mo",
+        "Access all features",
+        "Access all languages",
+        "First access to new features",
+        "24/7 support",
+      ],
+    },
+    {
+      name: "Corporate",
+      price: "Unlimited",
+      features: [
+        "7 days free use (10.000 words)",
+        "Ideal for large companies & agencies",
+        "Unlimited words/mo",
+        "Access all features",
+        "Access all languages",
+        "First access to new features",
+        "24/7 support",
+      ],
+    },
+  ],
+  F123: [
+    {
+      name: "1 - Select a type of copy",
+      description:
+        "Choose from headlines, blog intros, product descriptions, and much more.",
+    },
+    {
+      name: "2 - Describe your product",
+      description:
+        "Just enter the name of your company and 1-2 sentences on what you do.",
+    },
+    {
+      name: "3 - Get your results and edit",
+      description:
+        "You’ll get 10 results at a time, and you can run the tool again for more ideas.",
+    },
+  ],
   //Landing page
   K01: "Learn More",
   B01: "Blog",
@@ -12,6 +69,48 @@ module.exports = {
   TS01: "Terms of Use",
   T04: "Company",
   T05: "Explore",
+  L66: "Login",
+  B11: "BETA",
+  //Auth
+  F30: 'Send reset request',
+  F31: 'Verify',
+  F32: 'Verification',
+  F33: 'Forgot password',
+  F34: 'Create an account',
+  F35: 'Recover Password',
+  F36: 'Reset Password',
+  F37: 'Send a new reset request / another email?',
+  F38: 'Login with your new email and password',
+  F39: 'Verification code',
+  F40: 'Create a new Account',
+  F41: 'Terms and Conditions',
+  F42: 'Register',
+  F43: 'I have read the',
+  F44: 'Email Address',
+  F45: 'Password',
+  AU10: 'Authentication',
+  F46: 'This is the authentication page for the login, registration and password recovery system.',
+  F47: 'Password Confirmation',
+
+  //footer
+  F50: 'Leave a feadback',
+  F51: "We're always looking for ways to improve our service. If you had a great experience with us, please leave us a review. If not, please let us know how we can improve.",
+  F52: "Close",
+
+  //auth error
+  E501: "Must be a valid email",
+  E502: "Email is required",
+  E503: "Code is required",
+  E504: "Must be at least 8 characters",
+  E505: "Required",
+  E506: "Passwords must match",
+  E507: "This field must be checked",
+  E508: "Password is required",
+  E509: "Login using email and password you have created",
+  E510: "Settings",
+  E511: "Redirecting to the app",
+  E512: "User has been successfully registered",
+  E513: "To access the app you need to sign in again.",
   //Clinet area
   PT01: "Product Tools",
   PD02: "Product Description",
@@ -19,11 +118,11 @@ module.exports = {
   ET01: "Email Tools",
   ET09: "Friendly Email",
   ET02: "Follow Up Email",
-  ET03: "Cold Template",
+  ET03: "Cold Email",
   ET04: "Thank you Email",
   ET05: "Prospecting Email",
-  //copy tools
-  CT01: "Copy Tools",
+  //Branding tools
+  CT01: "Brand Identity",
   B01: "Mission Statement",
   B010: "Brand Mission Statement",
   B02: "Vision Statement",
@@ -110,7 +209,6 @@ module.exports = {
   W212: "Prospecting email",
   W213: "Followup Email",
 
-
   L1230: 'Blog Post Intro',
   T0090: 'Blog Post Intro',
   D7650: 'It is used to introduce the topic of the blog post and to provide a brief overview of what the reader can expect to learn by reading the blog post.',
@@ -125,7 +223,7 @@ module.exports = {
   E5671: 'e.g., a reusable cup that keeps coffee warm and is eco-friendly.',
   N7891: 'Compose',
 
-  L1232: 'Blog Post AIDA',
+  L1232: 'Blog Post Aida',
   T0092: 'Blog Post Attention- Interest- Desire- Action',
   D7652: 'It can be used to help you create a persuasive and attention-grabbing blog post by outlining the key points that you want to cover in your post.',
   H4322: 'Write about your product or an idea; then we will use AIDA: Attention, Interest, Desire, Action for it.',

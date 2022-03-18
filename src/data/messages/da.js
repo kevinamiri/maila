@@ -1,4 +1,60 @@
 module.exports = {
+  P1AN: [
+    {
+      name: "Individuel",
+      price: "25.000",
+      features: [
+        "7 dage fri bruger (10.000 ord)",
+        "Tilgå alle sprog",
+        "Individuelle forfattere & freelancer",
+        "25.000 ord/måned",
+        "24/7 support",
+      ],
+    },
+    {
+      name: "Vækst",
+      price: "250.000",
+      features: [
+        "7 dage fri bruger (10.000 ord)",
+        "Virksomheder & små virksomheder",
+        "250.000 ord/måned",
+        "Tilgå alle sprog",
+        "Tilgå alle funktioner",
+        "Første tilgang til nye funktioner",
+        "24/7 support",
+      ],
+    },
+    {
+      name: "Korporativ",
+      price: "Ubegrænset",
+      features: [
+        "7 dage fri bruger (10.000 ord)",
+        "Virksomheder & større virksomheder",
+        "Ubegrænset antal ord/måned",
+        "Tilgå alle sprog",
+        "Tilgå alle funktioner",
+        "Første tilgang til nye funktioner",
+        "24/7 support",
+      ],
+    },
+  ],
+  F123: [
+    {
+      name: "1 - Vælg en kopi-type",
+      description:
+        "Vælg fra overskrifter, blogginnlegg introduksjoner, produktbeskrivelser og mye mer.",
+    },
+    {
+      name: "2 - Beskriv dit produkt",
+      description:
+        "Bare skriv navnet på firmaet ditt og 1-2 setninger om hva du gjør.",
+    },
+    {
+      name: "3 - Få dine resultater og rediger",
+      description:
+        "Du får 10 resultater på en gang, og du kan kjøre verktøyet på nytt for flere ideer.",
+    },
+  ],
   //Landing page
   K01: "Lær mere",
   B01: "Blog",
@@ -12,15 +68,62 @@ module.exports = {
   TS01: "Brugerbetingelser",
   T04: "Firma",
   T05: "Udforsk",
+  L66: "Log ind",
+  B11: "BETA",
+
+  //Auth
+  F30: "Send anmodning om nulstilling",
+  F31: "Bekræft",
+  F32: "Verifikation",
+  F33: "Glemt adgangskode",
+  F34: "Opret en konto",
+  F35: "Gendanne adgangskode",
+  F36: "Nulstil adgangskode",
+  F37: "Send en ny anmodning om nulstilling / en anden e-mail?",
+  F38: "Log ind med din nye e-mail og adgangskode",
+  F39: "Bekræftelseskode",
+  F40: "Opret en ny konto",
+  F41: "Vilkår og betingelser",
+  F42: "Registrer",
+  F43: "Jeg har læst",
+  F44: "E-mail-adresse",
+  F45: "Adgangskode",
+  AU10: "Autentifikation",
+  F46: "Dette er autentifikationssiden for systemet til login, registrering og inddrivelse af adgangskode.",
+  F47: 'Bekræftelse af adgangskode',
+
+  //sidefod
+  F50: 'Giv os feedback',
+  F51: "Vi ser altid efter nye måter at forbedre vores service. Hvis du havde en god oplevelse med os, giv os en anmeldelse. Hvis ikke, lad os vide hvordan vi kan forbedre.",
+  F52: "Luk",
+  //auth erros
+  E501: "Skal være en gyldig e-mail adresse",
+  E502: "E-mail er påkrævet",
+  E503: "Kode er påkrævet",
+  E504: "Skal være mindst 8 tegn",
+  E505: "Påkrævet",
+  E506: "Adgangskoder skal matche",
+  E507: "Dette felt skal kontrolleres",
+  E508: "Adgangskode er påkrævet",
+  E509: "Log ind med e-mail og adgangskode du har oprettet",
+  E510: "Indstillinger",
+  E511: "Omdirigerer til appen",
+  E512: "Bruger er blevet registreret",
+  E513: "For at komme til appen skal du logge ind igen.",
   //Clinet-området
-  PT01: "Produkt Værktøjer",
-  PD02: "Produkt Beskrivelse",
-  PD03: "Produkt Beskrivelse Amazon",
-  ET01: "Email Værktøjer",
-  ET02: "Følg Op Email",
-  ET03: "Kold Template",
-  ET04: "Tak Email",
+  PT01: "Produktværktøjer",
+  PD02: "Produktbeskrivelse",
+  PD03: "Produktbeskrivelse Amazon",
+  ET01: "E-mail-værktøjer",
+  ET09: "Venlig e-mail",
+  ET02: "Opfølgningsmail",
+  ET03: "Kold e-mail",
+  ET04: "Tak-e-mail",
   ET05: "Prospecting Email",
+  // ads tools
+  A1203: "Ads Tools",
+  AG0021: "Google Ad Header",
+  AG0022: "Google Ad Description",
   //copy tools
   CT01: "Kopier Værktøjer",
   B01: "Mission Statement",
@@ -50,9 +153,23 @@ module.exports = {
   BT09: "Blog PAS",
   WT02: "WebPage Værktøjer",
   TT02: "Oversættelses Værktøjer",
+  //app tools
+  A001: "Lad os begynde med en produktbeskrivelse, okay?",
+  A002: "f.eks. Borstarna er lavet af højkvalitets syntetisk hår, og de er bløde og bløde på din krop. De kommer i en smuk rygsæk, så du kan tage med dig dem på rejsen.",
+  A003: "Generer beskrivelse",
+  A004: "Produktbeskrivelse",
+  A005: "Mærke",
+  A006: "Mærke / firma navn",
+  A007: "Audience",
+  A008: "Audience: f.eks. dem, der elsker kaffe, eller offentligheden",
+  A009: "Nøgleord",
+  A0010: "Nøgleord separeres med komma",
+  A0011: "Funktioner",
+  A0012: "Funktioner separeres med komma",
+  A0013: "Grammatikfejl",
   //profile
-  MC01: "Min Konto",
-  MC02: "Mine Dokumenter",
+  MC01: "Min konto",
+  MC02: "Mine dokumenter",
   MC03: "Log ud",
   //contact form
   N001: "Navn",
@@ -89,7 +206,6 @@ module.exports = {
   W211: "Beskriv grundene til, at du ønsker at nå ud, og hvordan kunden kan kontakte dig.",
   W212: "Prospekteringsmail",
   W213: "Opfølgningsmail",
-
 
   L1230: "Blogindlæg Intro",
   T0090: "Blog Post Intro",

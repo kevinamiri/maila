@@ -7,34 +7,22 @@ import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
 import GlobalStyles from "../../components/GlobalStyles";
 // import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
-import { getSrc, getImage } from "gatsby-plugin-image";
+import { getSrc } from "gatsby-plugin-image";
 import { Box } from "@mui/material";
 import useSettings from "../../hooks/useSettings";
 
 const Layout = (props) => {
   const data = props.data;
-  const description = props.data.markdownRemark.frontmatter.description;
-  const jsonData = props.jsonData;
   const location = props.location;
   const imageSrc =
     props.data.markdownRemark.frontmatter.image &&
     getSrc(props.data.markdownRemark.frontmatter.image);
-  console.log(imageSrc);
-  // const image =
-  //   props.data.markdownRemark.frontmatter.image.childImageSharp.gatsbyImageData;
   const frontmatter = props.data.markdownRemark.frontmatter;
   const url = location.pathname;
   const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
-  // const id_article = props.data.markdownRemark.frontmatter.id;
-  // const id = Number(id_article) - 1;
-  // const basename = check_path(langKey, url, id, jsonData);
-  // var basePath = startPath(langKey, langsMenu, basename[0], url);
-  //finally here we set the desired url...
-  // setLangsMenu(langsMenu, basename[1], basePath, jsonData);
-
   const { settings, saveSettings } = useSettings();
   const handleChange = (field, value) => {
     saveSettings({

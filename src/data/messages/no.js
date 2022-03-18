@@ -1,4 +1,60 @@
 module.exports = {
+  P1AN: [
+    {
+      name: "Individual",
+      price: "25,000",
+      features: [
+        "7 dager gratis bruk (10 000 ord)",
+        "Få tilgang til alle språk",
+        "Ideal for individual creators & freelancers",
+        "25,000 ord/måned",
+        "24/7 support",
+      ],
+    },
+    {
+      name: "Growth",
+      price: "250,000",
+      features: [
+        "7 dager gratis bruk (10 000 ord)",
+        "Ideal for start-ups & small businesses",
+        "250,000 ord/måned",
+        "Få tilgang til alle funksjoner",
+        "Få tilgang til alle språk",
+        "Første tilgang til nye funksjoner",
+        "24/7 support",
+      ],
+    },
+    {
+      name: "Corporate",
+      price: "Ubegrenset",
+      features: [
+        "7 dager gratis bruk (10 000 ord)",
+        "Ideal for large companies & agencies",
+        "Ubegrenset ord/måned",
+        "Få tilgang til alle funksjoner",
+        "Få tilgang til alle språk",
+        "Første tilgang til nye funksjoner",
+        "24/7 support",
+      ],
+    },
+  ],
+  F123: [
+    {
+      name: "1 - Velg en kopi-type",
+      description:
+        "Velg fra overskrifter, blogginnlegg introduksjoner, produktbeskrivelser og mye mer.",
+    },
+    {
+      name: "2 - Beskriv ditt produkt",
+      description:
+        "Bare skriv navnet på firmaet ditt og 1-2 setninger om hva du gjør.",
+    },
+    {
+      name: "3 - Få dine resultater og rediger",
+      description:
+        "Du får 10 resultater på en gang, og du kan kjøre verktøyet på nytt for flere ideer.",
+    },
+  ],
   //Landing side
   K01: "Lær mer",
   B01: "Blogg",
@@ -12,6 +68,50 @@ module.exports = {
   TS01: "Vilkår for bruk",
   T04: "Selskapet",
   T05: "Utforsk",
+  L66: "Logg inn",
+  B11: "BETA",
+
+  F50: 'Gi oss tilbakemelding',
+  F51: "Vi ser alltid etter nye måter å forbedre vår tjeneste. Hvis du har hatt en bra erfaring med oss, gi oss en anmeldelse. Hvis ikke, la oss vite hvordan vi kan forbedre.",
+  F52: "Lukk",
+
+  //auth errors
+  E501: "Må være en gyldig e-postadresse",
+  E502: "E-post er påkrevd",
+  E503: "Kode er påkrevd",
+  E504: "Må være minst 8 tegn",
+  E505: "Påkrevd",
+  E506: "Passord må matche",
+  E507: "Dette feltet må kontrolleres",
+  E508: "Passord er påkrevd",
+  E509: "Logg inn med e-post og passord du har opprettet",
+  E510: "Innstillinger",
+  E511: "Omdirigerer til appen",
+  E512: "Bruker er registrert",
+  E513: "For å komme til appen må du logge inn på nytt.",
+
+
+
+
+  F30: 'Send tilbakestillingsforespørsel',
+  F31: 'Verifiser',
+  F32: 'Verifisering',
+  F33: 'Glemt passord',
+  F34: 'Opprett konto',
+  F35: 'Gjenopprett passord',
+  F36: 'Tilbakestill passord',
+  F37: 'Send en ny tilbakestillingsforespørsel / en annen e-post?',
+  F38: 'Logg inn med din nye e-post og passord',
+  F39: 'Verifiseringskode',
+  F40: 'Opprett en ny konto',
+  F41: 'Vilkår og betingelser',
+  F42: 'Registrer',
+  F43: 'Jeg har lest',
+  F44: 'E-postadresse',
+  F45: 'Passord',
+  AU10: 'Autentisering',
+  F46: 'Dette er autentiseringssiden for innlogging, registrering og gjenoppretting av passord.',
+  F47: 'Passordbekreftelse',
   //Clinet-området
   PT01: "Produktverktøy",
   PD02: "Produktbeskrivelse",
