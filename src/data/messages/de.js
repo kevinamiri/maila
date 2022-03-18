@@ -12,6 +12,7 @@ module.exports = {
   TS01: "Nutzungsbedingungen",
   T04: "Unternehmen",
   T05: "Erkunden",
+  L66: "Login",
   //Clinet area
   PT01: "Produkt Tools",
   PD02: "Produktbeschreibung",
