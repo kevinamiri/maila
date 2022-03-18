@@ -5,41 +5,10 @@ import TagRouteTemplate from "../components/homepage/TagRouteTemplate";
 import useSettings from "../hooks/useSettings";
 
 const TagRoute = (props) => {
-  const [location, setLocation] = useState({
-    pathname: "/en/tags/",
-  });
-
-  useEffect(() => {
-    setLocation(window.location);
-  }, []);
-
-  let data;
-  let pageContext;
-  if (props.data !== null) {
-    data = props.data;
-    pageContext = props.pageContext;
-  }
-
-  const langKey = data.allMarkdownRemark.edges[0].node.fields.langKey
-
-  const { settings, saveSettings } = useSettings();
-  const handleChange = (field, value) => {
-
-    saveSettings({
-      ...settings,
-      [field]: value,
-    });
-  };
-
-  React.useEffect(() => {
-    (langKey === "sv") ? handleChange("lang", "sv") :
-      (langKey === "no") ? handleChange("lang", "no") :
-        (langKey === "fi") ? handleChange("lang", "fi") :
-          (langKey === "da") ? handleChange("lang", "da") :
-            handleChange("lang", "en")
-  }, [])
+  const data = props.data;
+  const pageContext = props.pageContext;
   return (
-    <LayoutTag data={data} location={location}>
+    <LayoutTag data={data} location={props.location}>
       <TagRouteTemplate
         data={data}
         pageContext={pageContext}

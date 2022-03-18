@@ -4,12 +4,10 @@ import Helmet from "react-helmet";
 import TopBar from "../TopBar";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
-import AppContext from "../../contexts/AppContext";
-import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
 import { Box } from "@mui/material";
+import useSettings from "../../hooks/useSettings";
 
 const LayoutTag = (props) => {
-  const { stateLanguage } = React.useContext(AppContext);
   const data = props.data;
   const description = props.data.markdownRemark.frontmatter.description;
   const title = props.data.markdownRemark.frontmatter.title;
@@ -18,47 +16,30 @@ const LayoutTag = (props) => {
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
-  const i18nMessages = require(`../../data/messages/${
-    langKey || stateLanguage
-  }`);
-  const [langKeyM, setLangKeyM] = useState(langKey);
-  const [theDirection, setTheDirection] = useState(false);
-
-  const handleLang = (langKey) => {
-    if (langKey != langKeyM) {
-      setLangKeyM(langKey);
-      polyfill(langKey);
-    }
+  const { settings, saveSettings } = useSettings();
+  const handleChange = (field, value) => {
+    saveSettings({
+      ...settings,
+      [field]: value,
+    });
+    // polyfill(value);
   };
 
-  async function polyfill(locale) {
-    if (shouldPolyfill()) {
-      // Load the polyfill 1st BEFORE loading data
-      await import("@formatjs/intl-relativetimeformat/polyfill");
-    }
-
-    if (Intl.RelativeTimeFormat.polyfilled) {
-      switch (locale) {
-        default:
-          await import("@formatjs/intl-relativetimeformat/locale-data/en");
-          break;
-        case "sv":
-          await import("@formatjs/intl-relativetimeformat/locale-data/sv");
-          break;
-      }
-    }
-  }
-
-  useEffect(() => {
-    handleLang;
-    if (langKey === "en") {
-      setTheDirection(false);
-    } else if (langKey === "sv") {
-      setTheDirection(true);
-    } else if (langKey === "zh") {
-      setTheDirection(false);
-    }
+  React.useEffect(() => {
+    langKey === "sv"
+      ? handleChange("lang", "sv")
+      : langKey === "no"
+      ? handleChange("lang", "no")
+      : langKey === "fi"
+      ? handleChange("lang", "fi")
+      : langKey === "da"
+      ? handleChange("lang", "da")
+      : handleChange("lang", "en");
   }, []);
+
+  const i18nMessages = require(`../../data/messages/${
+    langKey || settings.lang
+  }`);
 
   return (
     <>

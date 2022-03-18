@@ -41,7 +41,6 @@ AboutPageTemplate.propTypes = {
 };
 
 const AboutPage = (props) => {
-  console.log(props);
   const data = props.data;
   const markdownRemark = props.data.markdownRemark;
   const jsonData = props.data.allArticlesJson.edges[0].node.articles;
