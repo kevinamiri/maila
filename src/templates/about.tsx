@@ -16,10 +16,11 @@ const AboutPageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content;
   return (
-    <Box>
-      <Typography variant='h1' color='primary'>
-        {title}
-      </Typography>
+    <Box
+      sx={{
+        mt: 8,
+      }}
+    >
       <Container
         sx={{
           mt: 5,
