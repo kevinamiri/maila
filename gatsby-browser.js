@@ -29,6 +29,7 @@ function TopLayout(props) {
         theme: settings.theme,
         lang: settings.lang,
     });
+
     return (
         // <StyledEngineProvider injectFirst>
         <SettingsProvider>
