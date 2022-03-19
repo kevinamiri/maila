@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
+// import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 // import CommentIcon from "@mui/icons-material/Comment";
 import NoUnderLineLink from "../nounderline-link";
@@ -34,14 +34,7 @@ const BlogCard = ({
       }}
     >
       <Box sx={{ p: 2 }}>
-        <CardMedia
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          {/* image or media here */}
-        </CardMedia>
+        {/* image or media here via </CardMedia> */}
         <Box
           sx={{
             alignItems: "center",
