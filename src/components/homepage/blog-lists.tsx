@@ -4,7 +4,6 @@ import Box from "@mui/material/Box";
 import { Grid } from "@mui/material";
 
 const BlogLists = (props) => {
-  console.log(props.data);
   const posts = props.data.allMarkdownRemark.edges;
   return (
     <Grid
@@ -15,8 +14,8 @@ const BlogLists = (props) => {
       alignItems='center'
     >
       {posts &&
-        posts.map(({ node: post }) => (
-          <Grid item md={6} xs={12}>
+        posts.map(({ node: post }, i) => (
+          <Grid item key={i + 130450} md={6} xs={12}>
             <Box
               sx={{
                 display: "flex",

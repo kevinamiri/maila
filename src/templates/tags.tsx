@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import LayoutTag from "../components/layout/LayoutTag";
 import TagRouteTemplate from "../components/homepage/TagRouteTemplate";
-import useSettings from "../hooks/useSettings";
 
 const TagRoute = (props) => {
   const data = props.data;

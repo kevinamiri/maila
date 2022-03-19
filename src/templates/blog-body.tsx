@@ -1,40 +1,23 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import SEO from "../components/SEO/SEO";
 import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
-import { HTMLContent } from "../components/homepage/Content";
 import BlogPostTemplate from "../components/homepage/BlogPostTemplate";
 
 const BlogPost = (props) => {
   const data = props.data;
   const { markdownRemark: post } = data;
-  const langKey = post.frontmatter.lang;
-
   return (
-    <Layout data={data} location={location}>
-      <SEO postData={data} isBlogPost />
+    <Layout data={data} location={location} isBlogPost>
       <BlogPostTemplate
         content={post.html}
-        contentComponent={HTMLContent}
         description={post.frontmatter.description}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
-        dateOfPost={post.frontmatter.date}
-        langKey={langKey}
+        date={post.frontmatter.date}
+        lang={post.frontmatter.lang}
       />
     </Layout>
   );
-};
-
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default BlogPost;

@@ -1,32 +1,49 @@
 import React from "react";
-import PropTypes from "prop-types";
 import TagList from "../landings/modules/TagList";
-import Content from "./Content";
 import Time from "./Time";
-import { FormattedMessage } from "react-intl";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 const BlogPostTemplate = (data) => {
-  console.log(data);
   return (
     <>
-      <Container maxWidth='lg'>
-        <Box
-          sx={{
-            backgroundColor: "background.default",
-            minHeight: "100%",
-            p: 3,
-          }}
-        >
-          <Grid container spacing={3} sx={{ mt: 10 }}>
-            <Grid item md={4} xs={12}>
-              test
-            </Grid>
+      <Container
+        sx={{
+          minHeight: "100%",
+          mt: 8,
+        }}
+        maxWidth='lg'
+        component='section'
+      >
+        <Grid container spacing={3}>
+          <Grid item xs={12} sx={{ my: 4 }}>
+            <Time date={data.date} />
+            <Typography
+              variant='body1'
+              component='div'
+              sx={{
+                backgroundColor: "background.paper",
+                borderRadius: 8,
+                my: 4,
+                p: 5,
+              }}
+              dangerouslySetInnerHTML={{ __html: data.content }}
+            />
           </Grid>
-        </Box>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              alignItem: "flex-start",
+              flexWrap: "wrap",
+              mb: 5,
+            }}
+          >
+            <TagList tags={data.tags} langKey={data.lang} />
+          </Box>
+        </Grid>
       </Container>
     </>
   );

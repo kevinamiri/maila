@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Footer from "../../components/landings/Footer";
 import SEO from "../../components/SEO/SEO";
-import Helmet from "react-helmet";
 import TopBar from "../../components/TopBar";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
 import GlobalStyles from "../../components/GlobalStyles";
-// import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
 import { getSrc } from "gatsby-plugin-image";
 import { Box } from "@mui/material";
 import useSettings from "../../hooks/useSettings";
@@ -14,6 +12,7 @@ import useSettings from "../../hooks/useSettings";
 const Layout = (props) => {
   const data = props.data;
   const location = props.location;
+  const isBlogPost = props.isBlogPost;
   const imageSrc =
     props.data.markdownRemark.frontmatter.image &&
     getSrc(props.data.markdownRemark.frontmatter.image);
@@ -53,18 +52,11 @@ const Layout = (props) => {
 
   return (
     <>
-      <Helmet
-        key='app-head'
-        defaultTitle={frontmatter.title}
-        titleTemplate={siteTitle ? `%s | ${siteTitle}` : "Maila AI"}
-      >
-        <html lang={langKey} />
-        <meta name='description' content={frontmatter.description} />
-      </Helmet>
       <SEO
         postData={data}
         postImage={imageStatus && imageSrc}
         langKey={langKey}
+        isBlogPost={isBlogPost ? true : false}
       />
       <IntlProvider
         locale={langKey}

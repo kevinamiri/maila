@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Layout from "../components/layout/Layout";
 import BlogLists from "../components/homepage/blog-lists";
 import { graphql } from "gatsby";
@@ -15,12 +14,6 @@ const BlogListsPage = (props) => {
 };
 
 export default BlogListsPage;
-
-BlogListsPage.propTypes = {
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
-};
 
 export const pageQuery = graphql`
   query BlogRollQuery($id: String, $lang: String) {
