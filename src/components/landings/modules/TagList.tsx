@@ -18,29 +18,26 @@ const TagList = ({ tags, langKey }: tagListsProps) => {
         justifyContent: "flex-end",
       }}
     >
-      {tags && tags.length ? (
-        <Box>
-          {tags.map((tag, i) => (
-            <Link key={i} to={`/${langKey}/tags/${kebabCase(tag)}/`}>
-              <Chip
-                sx={{
-                  m: 1,
-                }}
-                icon={
-                  <TagIcon
-                    style={{
-                      color: "#308f96",
-                    }}
-                  />
-                }
-                size='small'
-                label={tag}
-                clickable
-              />
-            </Link>
-          ))}
-        </Box>
-      ) : null}
+      {tags &&
+        tags.map((tag, i) => (
+          <Link key={i} to={`/${langKey}/tags/${kebabCase(tag)}/`}>
+            <Chip
+              sx={{
+                m: 1,
+              }}
+              icon={
+                <TagIcon
+                  style={{
+                    color: "#308f96",
+                  }}
+                />
+              }
+              label={tag}
+              size='small'
+              clickable
+            />
+          </Link>
+        ))}
     </Box>
   );
 };

@@ -62,7 +62,7 @@ const SEO = ({ postData, postImage, isBlogPost, langKey }: SEOProps) => (
           <Helmet
             key='app-head'
             defaultTitle={title}
-            titleTemplate={`%s | ${title}`}
+            titleTemplate={`%s | ${seo.title}`}
           >
             <html lang={langKey} />
             <title>{title}</title>
