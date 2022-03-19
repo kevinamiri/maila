@@ -5,6 +5,7 @@ import BlogPostTemplate from "../components/homepage/BlogPostTemplate";
 
 const BlogPost = (props) => {
   const data = props.data;
+  const location = props.location;
   const { markdownRemark: post } = data;
   return (
     <Layout data={data} location={location} isBlogPost>
