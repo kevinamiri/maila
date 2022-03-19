@@ -33,19 +33,6 @@ export const pageQuery = graphql`
         }
       }
     }
-    allArticlesJson(filter: { title: { eq: "home" } }) {
-      edges {
-        node {
-          articles {
-            en
-            no
-            fi
-            sv
-            da
-          }
-        }
-      }
-    }
     markdownRemark(id: { eq: $id }) {
       id
       html
