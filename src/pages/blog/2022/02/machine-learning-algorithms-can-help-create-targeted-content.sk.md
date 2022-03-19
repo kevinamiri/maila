@@ -2,8 +2,8 @@
 id: "19"
 title: "Algoritmy strojového učenia môžu pomôcť vytvárať cielený obsah"
 description: "Algoritmy strojového učenia možno použiť na analýzu a učenie sa z veľkých súborov údajov s cieľom identifikovať vzory. To sa potom môže použiť na vytvorenie obsahu, ktorý je zameraný na konkrétne publikum na základe jeho záujmov. Pomocou strojového učenia môžu podniky vytvárať obsah, ktorý je relevantnejší pre ich zákazníkov a ktorý pomôže zvýšiť predaj."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /sk/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

@@ -2,8 +2,8 @@
 id: "20"
 title: "Algorithmen für maschinelles Lernen können bei der Erstellung zielgerichteter Inhalte helfen"
 description: "Algorithmen des maschinellen Lernens können zur Analyse und zum Lernen aus großen Datensätzen verwendet werden, um Muster zu erkennen. Diese können dann genutzt werden, um Inhalte zu erstellen, die auf bestimmte Zielgruppen und deren Interessen ausgerichtet sind. Durch den Einsatz von maschinellem Lernen können Unternehmen Inhalte erstellen, die für ihre Kunden relevanter sind und zur Steigerung des Umsatzes beitragen."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /de/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

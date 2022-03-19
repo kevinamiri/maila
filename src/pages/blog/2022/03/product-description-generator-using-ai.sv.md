@@ -2,8 +2,8 @@
 id: "21"
 title: "Produktbeskrivning Generator som använder AI"
 description: "Letar du efter ett sätt att skapa unika och optimerade produktbeskrivningar? Om så är fallet kan du överväga att använda AI-drivna copywriter. Det här verktyget använder AI för att generera produktbeskrivningar som är skräddarsydda för dina specifika sökord."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /sv/blog/2022/03/product-description-generator-using-ai

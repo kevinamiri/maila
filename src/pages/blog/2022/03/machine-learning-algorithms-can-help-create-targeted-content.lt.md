@@ -2,8 +2,8 @@
 id: "20"
 title: "Mašininio mokymosi algoritmai gali padėti kurti tikslinį turinį"
 description: "Mašininio mokymosi algoritmai gali būti naudojami dideliems duomenų rinkiniams analizuoti ir mokytis iš jų, kad būtų galima nustatyti modelius. Tai galima panaudoti kuriant turinį, skirtą konkrečioms auditorijoms pagal jų interesus. Naudodamos mašininį mokymąsi, įmonės gali kurti turinį, kuris būtų aktualesnis jų klientams ir padėtų padidinti pardavimus."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /lt/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

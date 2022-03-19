@@ -2,8 +2,8 @@
 id: "16"
 title: "Art of Writing Engaging Copy"
 description: "In this article, we’ll share some tips for writing effective copy that engages your audience and drives results."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-01-16"
 slug: /en/blog/2022/01/art-of-writing-engaging-copy

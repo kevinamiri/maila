@@ -2,8 +2,8 @@
 id: "21"
 title: "Descriere produs Generator de descriere a produsului Folosind AI"
 description: "Căutați o modalitate de a crea descrieri de produs unice și optimizate? Dacă da, poate doriți să luați în considerare utilizarea copywriting-ului cu ajutorul AI. Acest instrument utilizează AI pentru a genera descrieri de produse care sunt adaptate la cuvintele dvs. cheie specifice."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /ro/blog/2022/03/product-description-generator-using-ai

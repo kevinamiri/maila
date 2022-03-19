@@ -2,8 +2,8 @@
 id: "17"
 title: "skriva ett kallt e-postmeddelande för digitala marknadsföringstjänster"
 description: "När du skriver ett kallt e-postmeddelande för digitala marknadsföringstjänster är det viktigt att du presenterar dig själv och ditt företag och förklarar varför du kontaktar mottagaren. Det är också viktigt att förklara vad du kan erbjuda mottagaren och hur du kan hjälpa dem att nå sina mål."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-01-21"
 slug: /sv/blog/writing-a-cold-email-for-digital-marketing-services

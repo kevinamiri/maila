@@ -9,7 +9,7 @@ import { Box } from "@mui/material";
 
 const PostListItem = ({ post }) => {
   return (
-    <Box sx={{ maxWidth: 500, m: 1 }}>
+    <Box sx={{ maxWidth: 450, m: 1 }}>
       <Card>
         <CardContent>
           <Time date={post.frontmatter.date} />

@@ -2,8 +2,8 @@
 id: "21"
 title: "Produkta apraksta ģenerators, izmantojot AI"
 description: "Vai meklējat veidu, kā izveidot unikālus un optimizētus produktu aprakstus? Ja jā, tad, iespējams, vēlaties apsvērt iespēju izmantot mākslīgā intelekta darbināmu tekstu rakstīšanu. Šis rīks izmanto mākslīgo intelektu, lai ģenerētu produktu aprakstus, kas ir pielāgoti jūsu konkrētiem atslēgvārdiem."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /lv/blog/2022/03/product-description-generator-using-ai

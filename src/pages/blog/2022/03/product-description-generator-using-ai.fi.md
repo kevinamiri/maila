@@ -2,8 +2,8 @@
 id: "21"
 title: "Tuotekuvaus Generaattori käyttäen AI"
 description: "Etsitkö tapaa luoda ainutlaatuisia ja optimoituja tuotekuvauksia? Jos näin on, kannattaa ehkä harkita tekoälyllä toimivan copywritingin käyttöä. Tämä työkalu käyttää tekoälyä luodakseen tuotekuvauksia, jotka on räätälöity tiettyihin avainsanoihisi."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /fi/blog/2022/03/product-description-generator-using-ai

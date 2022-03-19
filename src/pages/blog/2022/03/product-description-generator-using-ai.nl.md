@@ -2,8 +2,8 @@
 id: "21"
 title: "Product Beschrijving Generator met behulp van AI"
 description: "Bent u op zoek naar een manier om unieke en geoptimaliseerde productbeschrijvingen te maken? Zo ja, dan kunt u overwegen om gebruik te maken van AI-powered copywriting. Deze tool gebruikt AI om productbeschrijvingen te genereren die zijn afgestemd op uw specifieke zoekwoorden."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /nl/blog/2022/03/product-description-generator-using-ai

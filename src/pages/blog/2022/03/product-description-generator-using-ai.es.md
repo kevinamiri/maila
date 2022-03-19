@@ -2,8 +2,8 @@
 id: "21"
 title: "Generador de descripciones de productos mediante IA"
 description: "¿Busca una forma de crear descripciones de productos únicas y optimizadas? Si es así, puede considerar el uso de la redacción con IA. Esta herramienta utiliza la IA para generar descripciones de productos que se adaptan a tus palabras clave específicas."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /es/blog/2022/03/product-description-generator-using-ai

@@ -2,8 +2,8 @@
 id: "20"
 title: "機械学習アルゴリズムにより、ターゲットを絞ったコンテンツを作成することができます"
 description: "機械学習のアルゴリズムは、大規模なデータセットを分析・学習し、パターンを特定するために使用することができます。これを利用して、特定の視聴者の興味に基づいたコンテンツを作成することができます。機械学習を利用することで、企業は顧客にとってより適切なコンテンツを作成し、売上を伸ばすことができる。"
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /ja/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

@@ -2,8 +2,8 @@
 id: "19"
 title: "A gépi tanulási algoritmusok segíthetnek a célzott tartalom létrehozásában"
 description: "A gépi tanulási algoritmusok nagy adathalmazok elemzésére és tanulására használhatók a minták azonosítása érdekében. Ezt azután fel lehet használni olyan tartalmak létrehozására, amelyek az érdeklődési körük alapján célzottan célozzák meg a célközönséget. A gépi tanulás alkalmazásával a vállalkozások olyan tartalmakat hozhatnak létre, amelyek relevánsabbak az ügyfeleik számára, és amelyek hozzájárulnak az eladások növeléséhez."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /hu/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

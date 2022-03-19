@@ -2,8 +2,8 @@
 id: "21"
 title: "Generatore di descrizione del prodotto utilizzando AI"
 description: "Stai cercando un modo per creare descrizioni dei prodotti uniche e ottimizzate? Se è così, potresti prendere in considerazione l'utilizzo del copywriting basato sull'AI. Questo strumento utilizza l'intelligenza artificiale per generare descrizioni di prodotti che sono su misura per le tue specifiche parole chiave."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /it/blog/2022/03/product-description-generator-using-ai

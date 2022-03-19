@@ -2,8 +2,8 @@
 id: "20"
 title: "Les algorithmes d'apprentissage automatique peuvent aider à créer du contenu ciblé"
 description: "Les algorithmes d'apprentissage automatique peuvent être utilisés pour analyser et apprendre de grands ensembles de données afin d'identifier des modèles. Ils peuvent ensuite être utilisés pour créer du contenu ciblant des publics spécifiques en fonction de leurs intérêts. En utilisant l'apprentissage automatique, les entreprises peuvent créer un contenu plus pertinent pour leurs clients, ce qui contribuera à augmenter les ventes."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /fr/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

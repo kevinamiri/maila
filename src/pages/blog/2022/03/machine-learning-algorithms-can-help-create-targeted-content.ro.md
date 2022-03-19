@@ -2,8 +2,8 @@
 id: "20"
 title: "Algoritmii de învățare automată pot ajuta la crearea de conținut direcționat"
 description: "Algoritmii de învățare automată pot fi utilizați pentru a analiza și a învăța din seturi mari de date pentru a identifica modele. Acestea pot fi apoi folosite pentru a crea conținuturi care se adresează unor audiențe specifice pe baza intereselor acestora. Prin utilizarea învățării automate, întreprinderile pot crea conținut mai relevant pentru clienții lor și care va contribui la creșterea vânzărilor."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /ro/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

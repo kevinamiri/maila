@@ -2,8 +2,8 @@
 id: "21"
 title: "Toote kirjelduse generaator, kasutades tehisintellekti"
 description: "Kas otsite võimalust luua unikaalseid ja optimeeritud tootekirjeldusi? Kui jah, siis võiksite kaaluda tehisintellektipõhise tekstikirjutamise kasutamist. See tööriist kasutab tehisintellekti, et luua tootekirjeldusi, mis on kohandatud teie konkreetsetele märksõnadele."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /et/blog/2022/03/product-description-generator-using-ai

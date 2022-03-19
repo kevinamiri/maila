@@ -2,8 +2,8 @@
 id: "21"
 title: "Opis izdelka Generator z uporabo AI"
 description: "Iščete način za ustvarjanje edinstvenih in optimiziranih opisov izdelkov? Če je odgovor pritrdilen, morda želite razmisliti o uporabi pisanja besedil s pomočjo umetne inteligence. To orodje uporablja umetno inteligenco za ustvarjanje opisov izdelkov, ki so prilagojeni vašim specifičnim ključnim besedam."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /sl/blog/2022/03/product-description-generator-using-ai

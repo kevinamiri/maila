@@ -2,8 +2,8 @@
 id: "21"
 title: "Produktbeskrivelse Generator ved hjælp af AI"
 description: "Leder du efter en måde at skabe unikke og optimerede produktbeskrivelser på? Hvis ja, kan du overveje at bruge AI-drevet tekstforfatning. Dette værktøj bruger AI til at generere produktbeskrivelser, der er skræddersyet til dine specifikke søgeord."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /da/blog/2022/03/product-description-generator-using-ai

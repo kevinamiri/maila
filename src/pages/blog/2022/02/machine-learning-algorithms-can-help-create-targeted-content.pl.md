@@ -2,8 +2,8 @@
 id: "19"
 title: "Algorytmy uczenia maszynowego mogą pomóc w tworzeniu ukierunkowanych treści"
 description: "Algorytmy uczenia maszynowego mogą być wykorzystywane do analizy i uczenia się z dużych zbiorów danych w celu identyfikacji wzorców. Następnie można je wykorzystać do tworzenia treści skierowanych do konkretnych odbiorców na podstawie ich zainteresowań. Dzięki wykorzystaniu uczenia maszynowego, firmy mogą tworzyć treści, które są bardziej odpowiednie dla ich klientów i które pomogą zwiększyć sprzedaż."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /pl/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

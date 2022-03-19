@@ -2,8 +2,8 @@
 id: "20"
 title: "Masinõppe algoritmid võivad aidata luua sihipärast sisu"
 description: "Masinõppe algoritme saab kasutada suurte andmekogumite analüüsimiseks ja õppimiseks, et tuvastada mustreid. Seejärel saab seda kasutada sellise sisu loomiseks, mis on suunatud konkreetsele sihtrühmale tema huvide alusel. Masinõppe abil saavad ettevõtted luua sisu, mis on nende klientidele asjakohasem ja aitab suurendada müüki."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /et/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

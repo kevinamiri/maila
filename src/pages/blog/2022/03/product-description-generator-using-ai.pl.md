@@ -2,8 +2,8 @@
 id: "21"
 title: "Opis produktu Generator wykorzystujący AI"
 description: "Czy szukasz sposobu na tworzenie unikalnych i zoptymalizowanych opisów produktów? Jeśli tak, to warto rozważyć skorzystanie z narzędzia do copywritingu opartego na sztucznej inteligencji. Narzędzie to wykorzystuje sztuczną inteligencję do generowania opisów produktów, które są dostosowane do konkretnych słów kluczowych."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /pl/blog/2022/03/product-description-generator-using-ai

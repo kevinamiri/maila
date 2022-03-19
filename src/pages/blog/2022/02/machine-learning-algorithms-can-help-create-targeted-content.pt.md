@@ -2,8 +2,8 @@
 id: "19"
 title: "Algoritmos de aprendizagem de máquinas podem ajudar a criar conteúdos direccionados"
 description: "Os algoritmos de aprendizagem de máquinas podem ser usados para analisar e aprender com grandes conjuntos de dados, a fim de identificar padrões. Isto pode então ser usado para criar conteúdos que são dirigidos a públicos específicos com base nos seus interesses. Ao utilizar a aprendizagem de máquinas, as empresas podem criar conteúdos mais relevantes para os seus clientes e que ajudarão a aumentar as vendas."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /pt/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

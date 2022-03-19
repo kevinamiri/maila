@@ -2,8 +2,8 @@
 id: "21"
 title: "Produkto aprašymo generatorius naudojant AI"
 description: "Ieškote būdo, kaip sukurti unikalius ir optimizuotus produktų aprašymus? Jei taip, galbūt norėtumėte apsvarstyti galimybę pasinaudoti dirbtinio intelekto valdomu tekstų rašymu. Šis įrankis naudoja dirbtinį intelektą, kad sukurtų produktų aprašymus, pritaikytus konkretiems raktažodžiams."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /lt/blog/2022/03/product-description-generator-using-ai
