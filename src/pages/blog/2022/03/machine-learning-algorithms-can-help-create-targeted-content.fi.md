@@ -2,8 +2,8 @@
 id: "20"
 title: "Koneoppimisen algoritmit voivat auttaa luomaan kohdennettua sisältöä"
 description: "Koneoppimisalgoritmeja voidaan käyttää suurten tietokokonaisuuksien analysointiin ja oppimiseen kuvioiden tunnistamiseksi. Tätä voidaan sitten käyttää sellaisten sisältöjen luomiseen, jotka on suunnattu tietyille kohderyhmille heidän kiinnostuksen kohteidensa perusteella. Koneoppimisen avulla yritykset voivat luoda sisältöä, joka on merkityksellisempää asiakkailleen ja joka auttaa lisäämään myyntiä."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /fi/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

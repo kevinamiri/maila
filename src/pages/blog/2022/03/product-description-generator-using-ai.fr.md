@@ -2,8 +2,8 @@
 id: "21"
 title: "Description du produit Générateur utilisant l'IA"
 description: "Vous cherchez un moyen de créer des descriptions de produits uniques et optimisées ? Si oui, vous pouvez envisager d'utiliser la rédaction assistée par l'IA. Cet outil utilise l'IA pour générer des descriptions de produits adaptées à vos mots-clés spécifiques."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /fr/blog/2022/03/product-description-generator-using-ai

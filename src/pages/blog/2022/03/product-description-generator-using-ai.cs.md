@@ -2,8 +2,8 @@
 id: "21"
 title: "Generátor popisu produktu pomocí AI"
 description: "Hledáte způsob, jak vytvořit jedinečné a optimalizované popisy produktů? Pokud ano, možná byste měli zvážit použití copywritingu s umělou inteligencí. Tento nástroj využívá umělou inteligenci k vytváření popisů produktů, které jsou přizpůsobeny vašim konkrétním klíčovým slovům."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /cs/blog/2022/03/product-description-generator-using-ai

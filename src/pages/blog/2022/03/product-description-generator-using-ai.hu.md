@@ -2,8 +2,8 @@
 id: "21"
 title: "Termékleírás generátor AI használatával"
 description: "Egyedi és optimalizált termékleírásokat szeretne készíteni? Ha igen, akkor érdemes megfontolnia a mesterséges intelligencia alapú szövegírást. Ez az eszköz a mesterséges intelligencia segítségével olyan termékleírásokat generál, amelyek az Ön konkrét kulcsszavaira szabottak."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /hu/blog/2022/03/product-description-generator-using-ai

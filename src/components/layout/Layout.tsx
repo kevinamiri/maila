@@ -18,6 +18,7 @@ const Layout = (props) => {
     props.data.markdownRemark.frontmatter.image &&
     getSrc(props.data.markdownRemark.frontmatter.image);
   const frontmatter = props.data.markdownRemark.frontmatter;
+  const siteTitle = props.data.site.siteMetadata.title;
   const url = location.pathname;
   const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
@@ -55,7 +56,7 @@ const Layout = (props) => {
       <Helmet
         key='app-head'
         defaultTitle={frontmatter.title}
-        titleTemplate={`%s | ${frontmatter.title}`}
+        titleTemplate={siteTitle ? `%s | ${siteTitle}` : "Maila AI"}
       >
         <html lang={langKey} />
         <meta name='description' content={frontmatter.description} />

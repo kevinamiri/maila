@@ -2,8 +2,8 @@
 id: "20"
 title: "Algoritmer för maskininlärning kan hjälpa till att skapa målinriktat innehåll"
 description: "Algoritmer för maskininlärning kan användas för att analysera och lära sig av stora datamängder för att identifiera mönster. Detta kan sedan användas för att skapa innehåll som är riktat till specifika målgrupper utifrån deras intressen. Genom att använda maskininlärning kan företag skapa innehåll som är mer relevant för deras kunder och som bidrar till ökad försäljning."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /sv/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

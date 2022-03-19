@@ -2,8 +2,8 @@
 id: "21"
 title: "使用AI的产品描述生成器"
 description: "你是否在寻找一种方法来创建独特和优化的产品描述？如果是这样，你可能要考虑使用人工智能驱动的文案写作。这个工具使用人工智能来生成适合你的特定关键词的产品描述。"
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /zh/blog/2022/03/product-description-generator-using-ai

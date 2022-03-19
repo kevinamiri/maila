@@ -2,8 +2,8 @@
 id: "19"
 title: "机器学习算法可以帮助创建有针对性的内容"
 description: "机器学习算法可用于分析和学习大型数据集，以确定模式。然后，这可以被用来创建基于特定受众兴趣的内容。通过使用机器学习，企业可以创建与客户更相关的内容，这将有助于增加销售。"
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /zh/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

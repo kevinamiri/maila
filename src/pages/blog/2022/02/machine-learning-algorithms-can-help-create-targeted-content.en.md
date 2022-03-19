@@ -2,8 +2,8 @@
 id: "19"
 title: "Machine learning algorithms can help create targeted content"
 description: "Machine learning algorithms can be used to analyze and learn from large data sets in order to identify patterns. This can then be used to create content that is targeted at specific audiences based on their interests. By using machine learning, businesses can create content that is more relevant to their customers and that will help to increase sales."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /en/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

@@ -2,8 +2,8 @@
 id: "19"
 title: "Gli algoritmi di apprendimento automatico possono aiutare a creare contenuti mirati"
 description: "Gli algoritmi di apprendimento automatico possono essere utilizzati per analizzare e imparare da grandi serie di dati al fine di identificare i modelli. Questo può poi essere utilizzato per creare contenuti che sono mirati a un pubblico specifico in base ai loro interessi. Utilizzando l'apprendimento automatico, le aziende possono creare contenuti che sono più rilevanti per i loro clienti e che contribuiranno ad aumentare le vendite."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /it/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

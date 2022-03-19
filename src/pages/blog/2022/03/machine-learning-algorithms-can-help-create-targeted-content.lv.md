@@ -2,8 +2,8 @@
 id: "20"
 title: "Mašīnmācīšanās algoritmi var palīdzēt izveidot mērķtiecīgu saturu"
 description: "Mašīnmācīšanās algoritmus var izmantot, lai analizētu un mācītos no lielām datu kopām, lai noteiktu modeļus. Pēc tam to var izmantot, lai radītu saturu, kas ir paredzēts konkrētai auditorijai, pamatojoties uz tās interesēm. Izmantojot mašīnmācīšanos, uzņēmumi var radīt saturu, kas ir atbilstošāks klientiem un palīdz palielināt pārdošanas apjomus."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /lv/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content

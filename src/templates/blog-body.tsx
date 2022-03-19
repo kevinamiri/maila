@@ -7,27 +7,18 @@ import Layout from "../components/layout/Layout";
 import { HTMLContent } from "../components/homepage/Content";
 import BlogPostTemplate from "../components/homepage/BlogPostTemplate";
 
-const BlogPost = ({ data, location }) => {
+const BlogPost = (props) => {
+  const data = props.data;
   const { markdownRemark: post } = data;
-  const jsonData = data.allArticlesJson.edges[0].node.articles;
   const langKey = post.frontmatter.lang;
 
   return (
-    <Layout data={data} jsonData={jsonData} location={location}>
+    <Layout data={data} location={location}>
       <SEO postData={data} isBlogPost />
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={
-          <Helmet titleTemplate='%s | maila.ai'>
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name='description'
-              content={`${post.frontmatter.description}`}
-            />
-          </Helmet>
-        }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         dateOfPost={post.frontmatter.date}

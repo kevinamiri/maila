@@ -2,8 +2,8 @@
 id: "19"
 title: "Algoritmi strojnega učenja lahko pomagajo ustvariti ciljno usmerjeno vsebino"
 description: "Algoritmi strojnega učenja se lahko uporabljajo za analizo in učenje iz velikih zbirk podatkov, da bi prepoznali vzorce. To se lahko nato uporabi za ustvarjanje vsebin, ki so namenjene določenemu občinstvu glede na njegove interese. Z uporabo strojnega učenja lahko podjetja ustvarjajo vsebine, ki so bolj relevantne za njihove stranke in ki bodo pripomogle k povečanju prodaje."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /sl/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

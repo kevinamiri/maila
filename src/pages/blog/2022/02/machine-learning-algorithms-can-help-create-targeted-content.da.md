@@ -2,8 +2,8 @@
 id: "19"
 title: "Maskinlæringsalgoritmer kan hjælpe med at skabe målrettet indhold"
 description: "Maskinlæringsalgoritmer kan bruges til at analysere og lære af store datasæt med henblik på at identificere mønstre. Dette kan derefter bruges til at skabe indhold, der er målrettet mod bestemte målgrupper baseret på deres interesser. Ved at bruge maskinlæring kan virksomheder skabe indhold, der er mere relevant for deres kunder, og som vil bidrage til at øge salget."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /da/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

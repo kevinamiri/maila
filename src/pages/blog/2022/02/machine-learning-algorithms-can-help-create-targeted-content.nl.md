@@ -2,8 +2,8 @@
 id: "19"
 title: "Algoritmen voor machinaal leren kunnen helpen gerichte inhoud te creëren"
 description: "Machine learning-algoritmen kunnen worden gebruikt om grote gegevensreeksen te analyseren en ervan te leren om patronen te identificeren. Dit kan vervolgens worden gebruikt om content te creëren die is gericht op specifieke doelgroepen op basis van hun interesses. Door gebruik te maken van machine learning kunnen bedrijven content creëren die relevanter is voor hun klanten en die zal helpen om de verkoop te verhogen."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-02-25"
 slug: /nl/blog/2022/02/machine-learning-algorithms-can-help-create-targeted-content

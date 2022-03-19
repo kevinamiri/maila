@@ -2,8 +2,8 @@
 id: "21"
 title: "Produktbeschreibungsgenerator mit AI"
 description: "Suchen Sie nach einer Möglichkeit, einzigartige und optimierte Produktbeschreibungen zu erstellen? Dann sollten Sie den Einsatz von KI-gestütztem Copywriting in Betracht ziehen. Dieses Tool nutzt KI, um Produktbeschreibungen zu erstellen, die auf Ihre spezifischen Keywords zugeschnitten sind."
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /de/blog/2022/03/product-description-generator-using-ai

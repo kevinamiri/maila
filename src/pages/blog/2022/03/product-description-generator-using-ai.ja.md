@@ -2,8 +2,8 @@
 id: "21"
 title: "AIを活用した製品説明ジェネレーター"
 description: "ユニークで最適化された商品説明文を作成する方法をお探しですか？もしそうなら、AIを活用したコピーライティングの利用を検討されてはいかがでしょうか。このツールは、AIを利用して、特定のキーワードに合わせた商品説明文を生成します。"
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "2022-03-18"
 slug: /ja/blog/2022/03/product-description-generator-using-ai
