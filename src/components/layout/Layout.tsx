@@ -53,7 +53,7 @@ const Layout = (props) => {
   return (
     <>
       <SEO
-        postData={data}
+        frontmatter={frontmatter}
         postImage={imageStatus && imageSrc}
         langKey={langKey}
         isBlogPost={isBlogPost ? true : false}
