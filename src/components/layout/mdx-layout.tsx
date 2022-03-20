@@ -6,10 +6,16 @@ import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
 import GlobalStyles from "../GlobalStyles";
 import { getSrc } from "gatsby-plugin-image";
-import { Box } from "@mui/material";
 import useSettings from "../../hooks/useSettings";
+import TagList from "../landings/modules/TagList";
+
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 
 import { StaticQuery, graphql } from "gatsby";
+import Time from "../../components/homepage/Time";
 
 const Layout = (props) => {
   const frontmatter = props.pageContext.frontmatter;
@@ -107,7 +113,46 @@ const Layout = (props) => {
                 >
                   <GlobalStyles />
                   <TopBar title='maila.ai' icon='logo' />
-                  {props.children}
+                  <Container
+                    sx={{
+                      minHeight: "100%",
+                      mt: 8,
+                    }}
+                    maxWidth='lg'
+                    component='section'
+                  >
+                    <Grid container spacing={3}>
+                      <Grid item xs={12} sx={{ my: 4 }}>
+                        <Time date={frontmatter.date} />
+                        <Typography
+                          variant='body1'
+                          component='div'
+                          sx={{
+                            backgroundColor: "background.paper",
+                            borderRadius: 8,
+                            my: 4,
+                            p: 5,
+                          }}
+                        />
+                        {props.children}
+                      </Grid>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          flexDirection: "row",
+                          alignItem: "flex-start",
+                          flexWrap: "wrap",
+                          mb: 5,
+                        }}
+                      >
+                        <TagList
+                          tags={frontmatter.tags}
+                          langKey={frontmatter.lang}
+                        />
+                      </Box>
+                    </Grid>
+                  </Container>
+
                   <Footer langKey={langKey} langs={langsMenu} />
                 </Box>
               </>
