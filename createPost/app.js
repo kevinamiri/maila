@@ -121,8 +121,8 @@ ${passage}
 
 
 const createPost = async () => {
-    const tagsList = `AI Product Description, Automatic product description, AI clothings Product description `
-    const postTitleStr = `Product Description Generator Using AI`
+    const tagsList = `write a call invitation, phone call invitation, invite someone to participate in a phone call, invitation letter phone call`
+    const postTitleStr = `How to write a call invitation email with examples`
     const postUrl = kebabCase(postTitleStr)
     const dateString = new Date().toISOString().slice(0, 10)
     const year = new Date().toISOString().slice(0, 4)

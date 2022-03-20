@@ -8,16 +8,10 @@ import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import ContactForm from "./ContactForm";
-import { Link as MuiLink } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import Link from "../Link";
+import { useIntl } from "react-intl";
 
-const CustomLink = styled(MuiLink)(({ theme }) => ({
-  color: theme.palette.primary.main,
-  textDecoration: "none",
-  "&:hover": {
-    borderBottom: `2px solid ${theme.palette.primary.main}`,
-  },
-}));
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -59,7 +53,7 @@ const BootstrapDialogTitle = (props: DialogTitleProps) => {
 
 export default function ContactDialogs() {
   const [open, setOpen] = React.useState(false);
-
+  const intl = useIntl();
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -75,30 +69,27 @@ export default function ContactDialogs() {
         color='text.secondary'
         onClick={handleClickOpen}
       >
-        <CustomLink style={{ cursor: "pointer" }}>Leave a Feadback</CustomLink>
+        <Link style={{ cursor: "pointer" }}>
+          {intl.formatMessage({ id: "F50" })}
+        </Link>
       </Typography>
       <BootstrapDialog
         onClose={handleClose}
-        aria-labelledby='customized-dialog-title'
+        aria-labelledby='feadbacl-dialog-title'
         open={open}
       >
-        <BootstrapDialogTitle
-          id='customized-dialog-title'
-          onClose={handleClose}
-        >
-          Leave a Feadback
+        <BootstrapDialogTitle id='feadback-dialog-title' onClose={handleClose}>
+          {intl.formatMessage({ id: "F50" })}
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
-            We're always looking for ways to improve our service. If you had a
-            great experience with us, please leave us a review. If not, please
-            let us know how we can improve.
+            {intl.formatMessage({ id: "F51" })}
           </Typography>
           <ContactForm />
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose}>
-            Close
+            {intl.formatMessage({ id: "F52" })}
           </Button>
         </DialogActions>
       </BootstrapDialog>
