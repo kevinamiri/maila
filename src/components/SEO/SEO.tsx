@@ -3,25 +3,21 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import SchemaOrg from "./SchemaOrg";
 
+interface frontmatter {
+  title: string;
+  description: string;
+  date: string;
+  image: string;
+  slug: string;
+}
 interface SEOProps {
   isBlogPost?: boolean;
-  postData?: {
-    markdownRemark: {
-      frontmatter: {
-        title: string;
-        description: string;
-        date: string;
-        image: string;
-        slug: string;
-      };
-      excerpt: string;
-    };
-  };
+  frontmatter?: frontmatter;
   postImage?: string;
   langKey?: string;
 }
 
-const SEO = ({ postData, postImage, isBlogPost, langKey }: SEOProps) => (
+const SEO = ({ frontmatter, postImage, isBlogPost, langKey }: SEOProps) => (
   <StaticQuery
     query={graphql`
       {
@@ -47,15 +43,14 @@ const SEO = ({ postData, postImage, isBlogPost, langKey }: SEOProps) => (
       }
     `}
     render={({ site: { siteMetadata: seo } }) => {
-      const title = postData.markdownRemark.frontmatter.title || seo.title;
-      const description =
-        postData.markdownRemark.frontmatter.description || seo.description;
+      const title = frontmatter.title || seo.title;
+      const description = frontmatter.description || seo.description;
       const image = postImage ? `${seo.siteUrl}${postImage}` : seo.image;
 
-      const url = postData.markdownRemark.frontmatter.slug
-        ? `${seo.siteUrl}/${postData.markdownRemark.frontmatter.slug}/`
+      const url = frontmatter.slug
+        ? `${seo.siteUrl}/${frontmatter.slug}/`
         : seo.siteUrl;
-      const datePublished = postData.markdownRemark.frontmatter.date;
+      const datePublished = frontmatter.date;
 
       return (
         <React.Fragment>

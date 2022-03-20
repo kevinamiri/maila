@@ -92,6 +92,15 @@ module.exports = {
         name: "images",
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          posts: require.resolve("./src/components/layout/mdx-layout.tsx"),
+          default: require.resolve("./src/components/layout/mdx-layout.tsx"),
+        },
+      },
+    },
     "gatsby-transformer-javascript-frontmatter",
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
