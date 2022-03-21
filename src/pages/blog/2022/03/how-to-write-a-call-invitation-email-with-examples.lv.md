@@ -1,0 +1,127 @@
+---
+id: "22"
+title: "Kā uzrakstīt uzaicinājuma e-pastu ar piemēriem"
+description: "Zvanu uzaicinājums pa e-pastu ir lielisks veids, kā sarunāt tikšanos vai konsultāciju ar potenciālo klientu vai klientu."
+template: blog-body
+templateKey: blog-body
+author: 'Kevin Levin'
+date: "2022-03-21"
+slug: /lv/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
+path: /lv/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
+lang: lv
+tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+image: ../images/phone-call-invitation.jpg
+imageStatus: false
+---
+## Ievads
+
+Zvana uzaicinājuma e-pasts ir e-pasts, kas tiek nosūtīts potenciālajam klientam vai klientam, lai uzaicinātu viņu uz telefona zvanu. Šāda veida e-pasta vēstuli parasti izmanto, lai norunātu tikšanos vai konsultāciju, un tajā parasti ir norādīts zvana datums, laiks un mērķis.
+
+
+Kā uzrakstīt uzaicinājuma e-pastu?
+
+Lai uzrakstītu uzaicinājuma e-pastu, jums būs jāsavāc šāda informācija:
+
+-Aicināmās personas vārds un uzvārds.
+-zvana datums un laiks
+-Aicināmās personas tālruņa numurs.
+
+Kad šī informācija ir pieejama, varat sākt rakstīt e-pasta vēstuli.
+
+Vispirms jums būs jāiepazīstina ar sevi un jāpaskaidro, kāpēc personai, kuru aicināt, vajadzētu pievienoties jūsu zvanam. Pēc tam jums būs jānorāda zvana datums un laiks, kā arī uzaicinātās personas tālruņa numurs. Visbeidzot, jums būs jāpalūdz, lai persona pievienojas jūsu zvanam.
+
+Lai pabeigtu e-pasta vēstuli, jums būs jāpateicas personai par veltīto laiku un jāpievieno sava kontaktinformācija.
+
+
+# Piemērs
+
+Dārgais Smita kungs,
+
+Mans vārds ir Džons Doe, un es esmu uzņēmuma ABC vadītājs. Vēlos jūs uzaicināt uz telefona sarunu ceturtdien, 1. janvārī, plkst. 10:00. Šī zvana mērķis ir apspriest iespēju strādāt kopā pie jauna projekta.
+
+Lūdzu, zvaniet man pa tālruni 555-555-5555, lai pievienotos zvanam.
+
+Paldies,
+
+John Doe
+
+# Tips
+
+E-pastā norādiet zvana datumu, laiku un mērķi.
+
+E-pastā norādiet savu tālruņa numuru.
+
+-Noteikti aiciniet šo personu pievienoties jūsu zvanam.
+
+# Template
+
+Cienījamais [Personas vārds],
+
+Mans vārds ir [Jūsu vārds], un es esmu [Jūsu nosaukums] no [Jūsu uzņēmums]. Es vēlos uzaicināt jūs uz telefona sarunu [Zvana datums] [Zvana laiks]. Šī zvana mērķis ir [Zvana mērķis].
+
+Lūdzu, zvaniet man pa tālruni [Jūsu tālruņa numurs], lai pievienotos zvanam.
+
+Paldies,
+
+[Jūsu vārds]
+
+---
+
+Sveiki [uzaicinātās personas vārds],
+
+Vēlos jūs uzaicināt apmeklēt [pasākuma nosaukums] [pasākuma datums]. Šis pasākums notiks [pasākuma norises vieta].
+
+Lūdzu, informējiet mani, ja varat piedalīties. Es ceru jūs tur redzēt!
+
+Ar cieņu,
+
+[Jūsu vārds]
+
+---
+
+Formāls tonis
+
+Sveiki [uzaicinātās personas vārds],
+
+Vēlos jūs uzaicināt apmeklēt [pasākuma nosaukums] [pasākuma datums]. Šis pasākums notiks [pasākuma norises vieta].
+
+Lūdzu, informējiet mani, ja varat piedalīties. Es ceru jūs tur redzēt!
+
+Ar cieņu,
+
+[Jūsu vārds]
+
+
+
+Dārgais ____,
+
+Mums ir liels prieks aicināt jūs uz mūsu gaidāmo pasākumu.
+
+Pasākums notiks _____ vietnē _____.
+
+Mēs ceram, ka jūs varēsiet mums pievienoties, lai piedalītos šajā pasākumā, kas solās būt ļoti neaizmirstams.
+
+Ar cieņu,
+
+___
+
+
+
+Labdien, [Vārds],
+
+Es ceru, ka šī ziņa jums nāks par labu.
+
+Rakstu, lai uzaicinātu jūs piedalīties telefona sarunā ar mani un citiem [komanda/uzņēmums] locekļiem. Šī zvana mērķis ir [apspriest/pārrunāt/uzsākt prāta vētru/aktualizēt] [tematu/projektu].
+
+Es domāju, ka jūsu viedoklis būtu vērtīgs, un es ceru, ka jūs varēsiet mums pievienoties. Zvans notiks [datums un laiks].
+
+Paldies par jūsu laiku un ceru, ka drīz ar jums parunāsim.
+
+Ar cieņu,
+
+[Jūsu vārds]
+
+
+
+
+

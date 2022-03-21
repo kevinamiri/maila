@@ -103,8 +103,8 @@ const addTemplate = async (title, description, folder, slug, lang, tags, date, p
 id: "${lastId}"
 title: "${title}"
 description: "${description}"
-template: blog-post
-templateKey: blog-post
+template: blog-body
+templateKey: blog-body
 author: 'Kevin Levin'
 date: "${date}"
 slug: /${lang}/${folder}/${slug}
@@ -123,15 +123,14 @@ ${passage}
 const createPost = async () => {
     const tagsList = `write a call invitation, phone call invitation, invite someone to participate in a phone call, invitation letter phone call`
     const postTitleStr = `How to write a call invitation email with examples`
+    const imageNameString = "phone-call-invitation.jpg"
+    const postDescriptionStr = `A call invite email is a great way to set up a meeting or consultation with a potential customer or client`
+    const NewDocument = fs.readFileSync('./newDoc.md', 'utf8');
     const postUrl = kebabCase(postTitleStr)
     const dateString = new Date().toISOString().slice(0, 10)
     const year = new Date().toISOString().slice(0, 4)
     const month = new Date().toISOString().slice(5, 7)
     const folderDir = `blog/${year}/${month}`
-    // const folderDir = `blog`
-    const imageNameString = "terms.jpg"
-    const postDescriptionStr = `Are you looking for a way to create unique and optimized product descriptions? If so, you may want to consider using AI-powered copywriting. This tool uses AI to generate product descriptions that are tailored to your specific keywords.`
-    const NewDocument = fs.readFileSync('./draft.md', 'utf8');
     const allpassage = NewDocument.split('\n')
     for (let index = 0; index < LanguageLists.length; index++) {
         const lang = LanguageLists[index];
