@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /hu/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /hu/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: hu
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Bevezetés
+# Hívás meghívó e-mail.
+
 
 A hívásmeghívó e-mail egy olyan e-mail, amelyet egy potenciális ügyfélnek vagy ügyfélnek küldenek, hogy meghívják őket egy telefonhívásra. Az ilyen típusú e-mailt általában találkozó vagy konzultáció összehívására használják, és általában tartalmazza a hívás dátumát, időpontját és célját.
 
-
-Hogyan kell megírni egy felhívás meghívó e-mailt?
+#### Hogyan kell megírni egy felhívó e-mailt?
 
 A hívásmeghívó e-mail megírásához a következő információkat kell összegyűjtenie:
 
--A meghívott személy neve
--A hívás dátuma és időpontja
--A meghívott személy telefonszáma
+- A meghívott személy neve
+- A hívás dátuma és időpontja
+- A meghívott személy telefonszáma
 
 Ha már rendelkezik ezekkel az információkkal, elkezdheti megírni az e-mailt.
 
@@ -32,28 +32,41 @@ Kezdetben be kell mutatkoznia, és el kell magyaráznia, hogy a meghívott szem�
 
 Az e-mail befejezéseként meg kell köszönnie az illetőnek, hogy időt szánt rá, és hozzá kell adnia elérhetőségét.
 
+## Utasítások
 
-# Példa
+- Az e-mail tárgysorába írja be a hívás dátumát és időpontját, valamint a hívás célját.
 
-Kedves Mr. Smith,
+- A hívásmeghívó e-mailt mindig azzal kell kezdenie, hogy bemutatkozik, és elmagyarázza, miért érdemes a meghívott személynek csatlakoznia a híváshoz.
 
-A nevem John Doe, és én vagyok az ABC Company vezérigazgatója. Szeretném meghívni Önt egy telefonbeszélgetésre január 1-jén, csütörtökön délelőtt 10:00 órára. A hívás célja, hogy megvitassuk egy új projektben való együttműködés lehetőségét.
+- Mindig adja meg a hívás dátumát és időpontját, valamint a meghívott személy telefonszámát.
 
-Kérem, hívjon az 555-555-5555 telefonszámon, hogy csatlakozhasson a híváshoz.
+- Az e-mail szövegében kérje meg az illetőt, hogy csatlakozzon a híváshoz.
 
-Köszönöm,
+- E-mailje végén köszönje meg az illetőnek, hogy időt szánt rá, és adja meg elérhetőségét.
 
-John Doe
 
-# Tippek
+## Alapszerkezet
 
--Ügyeljen arra, hogy az e-mailben szerepeljen a hívás dátuma, időpontja és célja.
+- Mutatkozzon be, és magyarázza el, hogy a meghívott személynek miért érdemes csatlakoznia a híváshoz.
 
--Ügyeljen arra, hogy az e-mailben szerepeljen a telefonszáma.
+- Adja meg a hívás dátumát és időpontját.
 
--Kérje meg az illetőt, hogy csatlakozzon a hívásához.
+- Adja meg a meghívott személy telefonszámát.
 
-# Template
+- Kérje meg az illetőt, hogy csatlakozzon a hívásához.
+
+- Köszönje meg az illetőnek az idejét.
+
+- Adja hozzá elérhetőségét.
+
+
+## Tippek
+
+- A hívásmeghívó e-maileknek rövidnek kell lenniük, ezért próbálja meg egy bekezdésen belül tartani az e-mailt.
+- Ha nem ismeri a meghívott személyt, mindig adja meg elérhetőségét az e-mailben, hogy a meghívott személy szükség esetén kapcsolatba léphessen Önnel.
+- Igyekezzen mindig feltüntetni a hívás dátumát és időpontját az e-mail tárgysorában, valamint az e-mail szövegében.
+
+## Sablonok
 
 Kedves [a személy neve],
 
@@ -79,8 +92,6 @@ Tisztelettel,
 
 ---
 
-Hivatalos hangnem
-
 Üdvözlöm [a meghívott neve],
 
 Szeretném meghívni Önt a [rendezvény neve] [rendezvény időpontja] rendezvényre. Az eseményre a [rendezvény helye] helyszínen kerül sor.
@@ -91,7 +102,7 @@ Tisztelettel,
 
 [Az Ön neve]
 
-
+---
 
 Kedves ____,
 
@@ -103,9 +114,7 @@ Reméljük, hogy csatlakozhat hozzánk, ami egy nagyon emlékezetes alkalomnak �
 
 Tisztelettel,
 
-___
-
-
+---
 
 Helló [név],
 
@@ -121,7 +130,14 @@ Tisztelettel,
 
 [Az Ön neve]
 
+---
 
+Kedves Mr. Smith,
 
+A nevem John Doe, és én vagyok az ABC Company vezérigazgatója. Szeretném meghívni Önt egy telefonbeszélgetésre január 1-jén, csütörtökön délelőtt 10:00 órára. A hívás célja, hogy megvitassuk egy új projektben való együttműködés lehetőségét.
 
+Kérem, hívjon az 555-555-5555 telefonszámon, hogy csatlakozhasson a híváshoz.
 
+Köszönöm,
+
+John Doe

@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /it/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /it/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: it
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Introduzione
+# Chiama l'e-mail di invito.
+
 
 Un'e-mail di invito è un'e-mail che viene inviata a un potenziale cliente per invitarlo a una telefonata. Questo tipo di email è tipicamente usato per organizzare un incontro o una consultazione, e di solito include la data, l'ora e lo scopo della chiamata.
 
-
-Come scrivere una e-mail di invito?
+#### Come scrivere una e-mail di invito?
 
 Per scrivere un'e-mail di invito, è necessario raccogliere le seguenti informazioni:
 
--Il nome della persona che state invitando
--La data e l'ora della chiamata
--Il numero di telefono della persona che state invitando
+- Il nome della persona che stai invitando
+- La data e l'ora della chiamata
+- Il numero di telefono della persona che stai invitando
 
 Una volta che hai queste informazioni, puoi iniziare a scrivere la tua e-mail.
 
@@ -32,28 +32,41 @@ Per iniziare, dovrai presentarti e spiegare perché la persona che stai invitand
 
 Per terminare la tua e-mail, dovrai ringraziare la persona per il suo tempo e aggiungere le tue informazioni di contatto.
 
+## Istruzioni
 
-# Esempio
+- Nella riga dell'oggetto della tua e-mail, dovresti scrivere la data e l'ora della tua chiamata, così come lo scopo della chiamata.
 
-Caro signor Smith,
+- Dovresti sempre iniziare la tua e-mail di invito alla chiamata presentandoti e spiegando perché la persona che stai invitando dovrebbe unirsi alla tua chiamata.
 
-Mi chiamo John Doe e sono l'amministratore delegato della società ABC. Vorrei invitarla a una telefonata giovedì 1 gennaio alle 10:00. Lo scopo di questa telefonata è di discutere la possibilità di lavorare insieme su un nuovo progetto.
+- Dovresti sempre fornire la data e l'ora della chiamata, così come il numero di telefono della persona che stai invitando.
 
-Per favore, chiamatemi al 555-555-5555 per partecipare alla chiamata.
+- Nel corpo della tua e-mail, dovresti chiedere alla persona di unirsi alla tua chiamata.
 
-Grazie,
+- Per finire la tua e-mail, dovresti ringraziare la persona per il suo tempo e aggiungere le tue informazioni di contatto.
 
-John Doe
 
-# Suggerimenti
+## Struttura di base
 
-Assicurati di includere la data, l'ora e lo scopo della chiamata nella tua e-mail.
+- Presentati e spiega perché la persona che stai invitando dovrebbe partecipare alla tua chiamata.
 
-Assicurati di includere il tuo numero di telefono nella tua e-mail.
+- Fornire la data e l'ora della chiamata.
 
--Assicurati di chiedere alla persona di unirsi alla tua chiamata.
+- Fornisci il numero di telefono della persona che stai invitando.
 
-# Template
+- Chiedete alla persona di unirsi alla vostra chiamata.
+
+- Ringrazia la persona per il suo tempo.
+
+- Aggiungi le tue informazioni di contatto.
+
+
+## Suggerimenti
+
+- Le e-mail di invito dovrebbero essere brevi, quindi cerca di mantenere la tua e-mail ad un paragrafo.
+- Se non conosci la persona che stai contattando, dovresti sempre includere i tuoi dati di contatto nell'e-mail, in modo che la persona che stai invitando possa contattarti se ne ha bisogno.
+- Dovresti sempre cercare di includere la data e l'ora della tua chiamata nell'oggetto della tua e-mail, così come nel corpo dell'e-mail.
+
+## Modelli
 
 Caro [nome della persona],
 
@@ -79,8 +92,6 @@ Sinceramente,
 
 ---
 
-Tono formale
-
 Salve [nome della persona invitata],
 
 Vorrei invitarti a partecipare al [nome dell'evento] il [data dell'evento]. Questo evento si terrà a [luogo dell'evento].
@@ -91,7 +102,7 @@ Sinceramente,
 
 [Il tuo nome]
 
-
+---
 
 Caro ____,
 
@@ -103,9 +114,7 @@ Speriamo che possiate unirvi a noi per quella che promette di essere un'occasion
 
 Sinceramente,
 
-___
-
-
+---
 
 Hello [Name],
 
@@ -121,7 +130,14 @@ Sinceramente,
 
 [Il tuo nome]
 
+---
 
+Caro signor Smith,
 
+Mi chiamo John Doe e sono l'amministratore delegato della società ABC. Vorrei invitarla a una telefonata giovedì 1 gennaio alle 10:00. Lo scopo di questa telefonata è di discutere la possibilità di lavorare insieme su un nuovo progetto.
 
+Per favore, chiamatemi al 555-555-5555 per partecipare alla chiamata.
 
+Grazie,
+
+John Doe

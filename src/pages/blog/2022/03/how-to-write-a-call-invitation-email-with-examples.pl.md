@@ -9,51 +9,64 @@ date: "2022-03-21"
 slug: /pl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /pl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: pl
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Wprowadzenie
+# Call invitation email.
+
 
 Wiadomość e-mail z zaproszeniem do rozmowy to wiadomość wysyłana do potencjalnego klienta lub kontrahenta w celu zaproszenia go do rozmowy telefonicznej. Ten rodzaj wiadomości e-mail jest zwykle używany w celu umówienia spotkania lub konsultacji i zawiera datę, godzinę i cel rozmowy.
 
-
-Jak napisać wiadomość e-mail z zaproszeniem?
+#### Jak napisać e-mail z zaproszeniem?
 
 Aby napisać wiadomość e-mail z zaproszeniem, należy zebrać następujące informacje:
 
--imię i nazwisko osoby, którą zapraszasz
--Data i godzina połączenia
--Numer telefonu osoby, którą zapraszasz
+- Imię i nazwisko osoby, którą zapraszasz
+- Data i godzina połączenia
+- Numer telefonu osoby, którą zapraszasz
 
 Po uzyskaniu tych informacji można przystąpić do pisania wiadomości e-mail.
 
-Na początek należy się przedstawić i wyjaśnić, dlaczego osoba, którą zapraszamy, powinna wziąć udział w rozmowie. Następnie należy podać datę i godzinę rozmowy oraz numer telefonu osoby, którą zapraszamy. Na koniec należy poprosić daną osobę o dołączenie do rozmowy.
+Na początek należy się przedstawić i wyjaśnić, dlaczego osoba, którą zapraszamy, powinna wziąć udział w rozmowie. Następnie należy podać datę i godzinę rozmowy oraz numer telefonu osoby, którą zapraszamy. Na koniec należy poprosić tę osobę o dołączenie do rozmowy.
 
 Na zakończenie wiadomości e-mail należy podziękować danej osobie za poświęcony czas i podać swoje dane kontaktowe.
 
+## Instrukcje
 
-# Przykład
+- W temacie wiadomości e-mail należy wpisać datę i godzinę rozmowy, a także jej cel.
 
-Drogi Panie Smith,
+- Wiadomość z zaproszeniem do rozmowy zawsze należy rozpocząć od przedstawienia się i wyjaśnienia, dlaczego osoba, którą zapraszamy, powinna dołączyć do rozmowy.
 
-Nazywam się John Doe i jestem Dyrektorem Generalnym firmy ABC. Chciałbym zaprosić Cię na rozmowę telefoniczną w czwartek, 1 stycznia o godz. 10:00. Celem tej rozmowy jest omówienie możliwości wspólnej pracy nad nowym projektem.
+- Zawsze należy podać datę i godzinę rozmowy, a także numer telefonu osoby, którą zapraszamy.
 
-Aby dołączyć do rozmowy, proszę o kontakt telefoniczny pod numerem 555-555-5555.
+- W treści wiadomości e-mail należy poprosić daną osobę o dołączenie do rozmowy.
 
-Dziękuję,
+- Na końcu wiadomości e-mail należy podziękować za poświęcony czas i podać swoje dane kontaktowe.
 
-John Doe
 
-# Porady
+## Struktura podstawowa
 
-Należy pamiętać o podaniu w wiadomości e-mail daty, godziny i celu rozmowy.
+- Przedstaw się i wyjaśnij, dlaczego osoba, którą zapraszasz, powinna dołączyć do rozmowy.
 
-W wiadomości e-mail należy koniecznie podać swój numer telefonu.
+- Podaj datę i godzinę połączenia.
 
--Pamiętaj, aby poprosić daną osobę o dołączenie do rozmowy.
+- Podaj numer telefonu osoby, którą zapraszasz.
 
-# Szablon
+- Poproś daną osobę, aby przyłączyła się do waszej rozmowy.
+
+- Podziękuj za poświęcony czas.
+
+- Dodaj swoje dane kontaktowe.
+
+
+## Porady
+
+- E-maile z zaproszeniem do rozmowy powinny być krótkie, dlatego postaraj się ograniczyć je do jednego akapitu.
+- Jeśli nie znasz osoby, z którą się kontaktujesz, zawsze podawaj w e-mailu swoje dane kontaktowe, aby osoba, którą zapraszasz, mogła się z Tobą skontaktować w razie potrzeby.
+- Należy zawsze starać się umieścić datę i godzinę rozmowy w temacie wiadomości e-mail oraz w jej treści.
+
+## Szablony
 
 Szanowny [Nazwisko osoby],
 
@@ -79,8 +92,6 @@ Z poważaniem,
 
 ---
 
-Ton formalny
-
 Witam [imię i nazwisko osoby zapraszanej],
 
 Chciałbym zaprosić Pana/Panią do udziału w [nazwa imprezy] w dniu [data imprezy]. Impreza ta odbędzie się w [miejsce imprezy].
@@ -91,7 +102,7 @@ Z poważaniem,
 
 [Imię i nazwisko]
 
-
+---
 
 Droga ____,
 
@@ -103,9 +114,7 @@ Mamy nadzieję, że dołączycie do nas w tym niezapomnianym wydarzeniu.
 
 Z poważaniem,
 
-___
-
-
+---
 
 Witaj [imię],
 
@@ -121,7 +130,14 @@ Z poważaniem,
 
 [Imię i nazwisko]
 
+---
 
+Drogi Panie Smith,
 
+Nazywam się John Doe i jestem Dyrektorem Generalnym firmy ABC. Chciałbym zaprosić Cię na rozmowę telefoniczną w czwartek, 1 stycznia o godz. 10:00. Celem tej rozmowy jest omówienie możliwości wspólnej pracy nad nowym projektem.
 
+Aby dołączyć do rozmowy, proszę o kontakt telefoniczny pod numerem 555-555-5555.
 
+Dziękuję,
+
+John Doe

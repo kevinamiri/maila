@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /sl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /sl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: sl
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Uvod
+# Klicno vabilo po e-pošti.
+
 
 E-poštno sporočilo z vabilom za klic je e-poštno sporočilo, ki ga pošljete potencialni stranki ali naročniku, da bi jo povabili na telefonski klic. Ta vrsta e-poštnega sporočila se običajno uporablja za dogovarjanje o sestanku ali posvetovanju in običajno vključuje datum, uro in namen klica.
 
-
-Kako napisati povabilo za elektronsko pošto?
+#### Kako napisati povabilo k sodelovanju po e-pošti?
 
 Če želite napisati e-poštno sporočilo s povabilom, morate zbrati naslednje informacije:
 
--Ime osebe, ki jo vabite
--datum in čas klica
--telefonska številka osebe, ki jo vabite
+- Ime osebe, ki jo vabite.
+- datum in čas klica
+- Telefonska številka osebe, ki jo vabite.
 
 Ko imate te informacije, lahko začnete pisati e-poštno sporočilo.
 
@@ -32,28 +32,41 @@ Najprej se morate predstaviti in pojasniti, zakaj bi se oseba, ki jo vabite, mor
 
 Na koncu e-poštnega sporočila se morate osebi zahvaliti za njen čas in dodati svoje kontaktne podatke.
 
+## Navodila
 
-# Primer
+- V naslovno vrstico e-poštnega sporočila napišite datum in uro klica ter namen klica.
 
-Spoštovani gospod Smith,
+- E-poštno sporočilo z vabilom za klic morate vedno začeti s predstavitvijo sebe in pojasnilom, zakaj bi se oseba, ki jo vabite, morala pridružiti vašemu klicu.
 
-Moje ime je John Doe in sem direktor podjetja ABC. Rad bi vas povabil na telefonski pogovor v četrtek, 1. januarja, ob 10.00. Namen tega klica je pogovor o možnosti sodelovanja pri novem projektu.
+- Vedno morate navesti datum in uro klica ter telefonsko številko osebe, ki jo vabite.
 
-Pokličite me na številko 555-555-5555 in se pridružite klicu.
+- V besedilu e-poštnega sporočila osebo prosite, naj se pridruži vašemu klicu.
 
-Zahvaljujemo se vam,
+- Na koncu e-poštnega sporočila se osebi zahvalite za njen čas in dodajte svoje kontaktne podatke.
 
-John Doe
 
-# Nasveti
+## Osnovna struktura
 
-V e-poštno sporočilo obvezno vključite datum, uro in namen klica.
+- Predstavite se in pojasnite, zakaj bi se oseba, ki jo vabite, morala pridružiti vašemu klicu.
 
-V e-poštno sporočilo obvezno vključite svojo telefonsko številko.
+- Navedite datum in čas klica.
 
--Ne pozabite osebo prositi, da se pridruži vašemu klicu.
+- Navedite telefonsko številko osebe, ki jo vabite.
 
-# Predloga
+- Osebo prosite, naj se pridruži vašemu klicu.
+
+- Zahvalite se osebi za njen čas.
+
+- Dodajte svoje kontaktne podatke.
+
+
+## Nasveti
+
+- Elektronska sporočila s povabilom k sodelovanju morajo biti kratka, zato se potrudite, da bo vaše elektronsko sporočilo obsegalo en odstavek.
+- Če osebe, ki jo vabite, ne poznate, v e-poštno sporočilo vedno vključite svoje kontaktne podatke, da vas lahko povabljena oseba po potrebi kontaktira.
+- Datum in uro klica morate vedno poskusiti vključiti v predmetno vrstico e-pošte ter v vsebino e-pošte.
+
+## Predloge
 
 Spoštovani [ime osebe],
 
@@ -79,8 +92,6 @@ S spoštovanjem,
 
 ---
 
-Formalni ton
-
 Pozdravljeni [ime povabljene osebe],
 
 Rad bi vas povabil na [ime dogodka] [datum dogodka]. Dogodek bo potekal v [kraj dogodka].
@@ -91,7 +102,7 @@ S spoštovanjem,
 
 [Vaše ime]
 
-
+---
 
 Spoštovani ____,
 
@@ -103,9 +114,7 @@ Upamo, da se nam boste lahko pridružili na dogodku, ki bo nepozaben.
 
 S spoštovanjem,
 
-___
-
-
+---
 
 Pozdravljeni [ime],
 
@@ -121,7 +130,14 @@ S spoštovanjem,
 
 [Vaše ime]
 
+---
 
+Spoštovani gospod Smith,
 
+Moje ime je John Doe in sem direktor podjetja ABC. Rad bi vas povabil na telefonski pogovor v četrtek, 1. januarja, ob 10.00. Namen tega klica je pogovor o možnosti sodelovanja pri novem projektu.
 
+Pokličite me na številko 555-555-5555 in se pridružite klicu.
 
+Zahvaljujemo se vam,
+
+John Doe

@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /fi/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /fi/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: fi
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Johdanto
+# Soita kutsu sähköpostitse.
+
 
 Puhelinkutsusähköposti on sähköpostiviesti, joka lähetetään potentiaaliselle asiakkaalle tai asiakkaalle, jotta hänet voidaan kutsua puheluun. Tällaista sähköpostia käytetään yleensä tapaamisen tai konsultaation järjestämiseen, ja se sisältää yleensä puhelun päivämäärän, kellonajan ja tarkoituksen.
 
-
-Kuinka kirjoittaa kutsukutsu sähköpostiin?
+#### Kuinka kirjoittaa kutsukutsu sähköpostiin?
 
 Jotta voit kirjoittaa kutsuviestin, sinun on kerättävä seuraavat tiedot:
 
--Kutsumasi henkilön nimi
--Puhelun päivämäärä ja kellonaika
--Kutsumasi henkilön puhelinnumero.
+- Kutsumasi henkilön nimi
+- Puhelun päivämäärä ja kellonaika
+- Kutsumasi henkilön puhelinnumero
 
 Kun sinulla on nämä tiedot, voit aloittaa sähköpostin kirjoittamisen.
 
@@ -32,28 +32,41 @@ Aluksi sinun on esiteltävä itsesi ja selitettävä, miksi kutsumasi henkilön 
 
 Sähköpostiviestin lopuksi sinun on kiitettävä henkilöä hänen käyttämästään ajasta ja lisättävä yhteystietosi.
 
+## Ohjeet
 
-# Esimerkki
+- Kirjoita sähköpostin otsikkoriville puhelun päivämäärä ja kellonaika sekä puhelun tarkoitus.
 
-Hyvä herra Smith,
+- Sinun tulisi aina aloittaa kutsuviestisi esittelemällä itsesi ja selittämällä, miksi kutsuttavan henkilön tulisi osallistua puheluun.
 
-Nimeni on John Doe, ja olen ABC-yhtiön toimitusjohtaja. Haluaisin kutsua teidät puhelinkeskusteluun torstaina 1. tammikuuta klo 10.00. Puhelun tarkoituksena on keskustella mahdollisuudesta työskennellä yhdessä uuden projektin parissa.
+- Ilmoita aina puhelun päivämäärä ja kellonaika sekä kutsumasi henkilön puhelinnumero.
 
-Soita minulle numeroon 555-555-5555 ja liity puheluun.
+- Pyydä sähköpostiviestissäsi henkilöä liittymään puheluusi.
 
-Kiitos,
+- Sähköpostiviestin lopuksi sinun tulisi kiittää henkilöä hänen käyttämästään ajasta ja lisätä yhteystietosi.
 
-John Doe
 
-# Tips
+## Perusrakenne
 
--Muista mainita sähköpostiviestissäsi puhelun päivämäärä, kellonaika ja tarkoitus.
+- Esittele itsesi ja selitä, miksi kutsumasi henkilön pitäisi osallistua puheluusi.
 
--Muista sisällyttää puhelinnumerosi sähköpostiin.
+- Ilmoita puhelun päivämäärä ja kellonaika.
 
--Pyydä henkilöä liittymään puheluusi.
+- Ilmoita kutsumasi henkilön puhelinnumero.
 
-# Template
+- Pyydä henkilöä liittymään puheluusi.
+
+- Kiitä henkilöä hänen ajastaan.
+
+- Lisää yhteystietosi.
+
+
+## Vinkkejä
+
+- Kutsuviestien tulisi olla lyhyitä, joten yritä pitää sähköpostiviestisi yhdessä kappaleessa.
+- Jos et tunne henkilöä, johon olet ottamassa yhteyttä, sinun on aina annettava sähköpostiviestissä yhteystietosi, jotta kutsuttu henkilö voi tarvittaessa ottaa sinuun yhteyttä.
+- Pyri aina sisällyttämään puhelun päivämäärä ja kellonaika sähköpostin otsikkoriviin sekä sähköpostin tekstiin.
+
+## Mallit
 
 Hyvä [henkilön nimi],
 
@@ -79,8 +92,6 @@ Ystävällisin terveisin,
 
 ---
 
-Virallinen sävy
-
 Hei [kutsutun henkilön nimi],
 
 Haluaisin kutsua sinut [tapahtuman nimi] [tapahtuman päivämäärä]. Tapahtuma järjestetään [tapahtumapaikka].
@@ -91,7 +102,7 @@ Ystävällisin terveisin,
 
 [Nimesi]
 
-
+---
 
 Rakas ____,
 
@@ -103,9 +114,7 @@ Toivomme, että voitte liittyä seuraamme, sillä tapahtumasta on tulossa hyvin 
 
 Ystävällisin terveisin,
 
-___
-
-
+---
 
 Hei [Nimi],
 
@@ -121,7 +130,14 @@ Ystävällisin terveisin,
 
 [Nimesi]
 
+---
 
+Hyvä herra Smith,
 
+Nimeni on John Doe, ja olen ABC-yhtiön toimitusjohtaja. Haluaisin kutsua teidät puhelinkeskusteluun torstaina 1. tammikuuta klo 10.00. Puhelun tarkoituksena on keskustella mahdollisuudesta työskennellä yhdessä uuden projektin parissa.
 
+Soita minulle numeroon 555-555-5555 ja liity puheluun.
 
+Kiitos,
+
+John Doe

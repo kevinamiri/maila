@@ -1,15 +1,15 @@
-## Introduction
+# Call invitation email.
+
 
 A call invite email is an email that is sent to a potential customer or client in order to invite them to a phone call. This type of email is typically used in order to set up a meeting or consultation, and it usually includes the date, time, and purpose of the call.
 
-
-How to write a Call invite Email?
+#### How to write a Call invite Email?
 
 To write a call invite email, you will need to gather the following information:
 
--The name of the person you are inviting
--The date and time of the call
--The phone number of the person you are inviting
+- The name of the person you are inviting
+- The date and time of the call
+- The phone number of the person you are inviting
 
 Once you have this information, you can begin to write your email.
 
@@ -17,28 +17,41 @@ To start, you will need to introduce yourself and explain why the person you are
 
 To end your email, you will need to thank the person for their time and add your contact information.
 
+## Instructions
 
-# Example
+-  In the subject line of your email, you should write the date and time of your call, as well as the purpose of the call.
 
-Dear Mr. Smith,
+-  You should always start your call invite email by introducing yourself and explaining why the person you are inviting should join your call.
 
-My name is John Doe, and I am the CEO of ABC Company. I would like to invite you to a phone call on Thursday, January 1st at 10:00 AM. The purpose of this call is to discuss the possibility of working together on a new project.
+-  You should always provide the date and time of the call, as well as the phone number of the person you are inviting.
 
-Please call me at 555-555-5555 to join the call.
+-  In the body of your email, you should ask the person to please join your call.
 
-Thank you,
+-  To end your email, you should thank the person for their time and add your contact information.
 
-John Doe
 
-# Tips
+## Basic Structure
 
--Be sure to include the date, time, and purpose of the call in your email.
+- Introduce yourself and explain why the person you are inviting should join your call.
 
--Be sure to include your phone number in your email.
+- Provide the date and time of the call.
 
--Be sure to ask the person to join your call.
+- Provide the phone number of the person you are inviting.
 
-# Template
+- Ask the person to please join your call.
+
+- Thank the person for their time.
+
+- Add your contact information.
+
+
+## Tips
+
+-  Call invite emails should be short, so try to keep your email to one paragraph.
+-  If you don't know the person you are contacting, you should always include your contact details in the email, so that the person you are inviting can contact you if they need to.
+-  You should always try to include the date and time of your call in the subject line of your email, as well as in the body of the email.
+
+## Templates
 
 Dear [Name of Person],
 
@@ -64,8 +77,6 @@ Sincerely,
 
 ---
 
-Formal tone
-
 Hello [name of person being invited],
 
 I would like to invite you to attend the [name of event] on [date of event]. This event will be held at [location of event].
@@ -76,7 +87,7 @@ Sincerely,
 
 [Your name]
 
-
+---
 
 Dear ____,
 
@@ -88,9 +99,7 @@ We hope you can join us for what promises to be a very memorable occasion.
 
 Sincerely,
 
-___
-
-
+---
 
 Hello [Name],
 
@@ -106,6 +115,14 @@ Sincerely,
 
 [Your name]
 
+---
 
+Dear Mr. Smith,
 
+My name is John Doe, and I am the CEO of ABC Company. I would like to invite you to a phone call on Thursday, January 1st at 10:00 AM. The purpose of this call is to discuss the possibility of working together on a new project.
 
+Please call me at 555-555-5555 to join the call.
+
+Thank you,
+
+John Doe
