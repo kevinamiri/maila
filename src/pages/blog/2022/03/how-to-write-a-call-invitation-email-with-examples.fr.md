@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /fr/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /fr/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: fr
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Introduction
+# Appeler l'email d'invitation.
+
 
 Un courriel d'invitation à un appel est un courriel envoyé à un client potentiel pour l'inviter à un appel téléphonique. Ce type d'e-mail est généralement utilisé pour organiser une réunion ou une consultation, et il indique généralement la date, l'heure et l'objet de l'appel.
 
-
-Comment rédiger un courriel d'invitation à téléphoner ?
+#### Comment rédiger un courriel d'invitation à téléphoner ?
 
 Pour rédiger un courriel d'invitation, vous devrez rassembler les informations suivantes :
 
--Le nom de la personne que vous invitez.
--La date et l'heure de l'appel
--Le numéro de téléphone de la personne que vous invitez.
+- Le nom de la personne que vous invitez
+- La date et l'heure de l'appel
+- Le numéro de téléphone de la personne que vous invitez
 
 Une fois que vous avez ces informations, vous pouvez commencer à rédiger votre courriel.
 
@@ -32,28 +32,41 @@ Pour commencer, vous devrez vous présenter et expliquer pourquoi la personne qu
 
 Pour terminer votre courriel, vous devrez remercier la personne de son temps et ajouter vos coordonnées.
 
+## Instructions
 
-# Exemple
+- Dans la ligne d'objet de votre courriel, vous devez indiquer la date et l'heure de votre appel, ainsi que l'objet de l'appel.
 
-Cher M. Smith,
+- Vous devez toujours commencer votre e-mail d'invitation à un appel en vous présentant et en expliquant pourquoi la personne que vous invitez devrait se joindre à votre appel.
 
-Je m'appelle John Doe et je suis le PDG de la société ABC. Je voudrais vous inviter à un appel téléphonique le jeudi 1er janvier à 10h00. Le but de cet appel est de discuter de la possibilité de travailler ensemble sur un nouveau projet.
+- Vous devez toujours indiquer la date et l'heure de l'appel, ainsi que le numéro de téléphone de la personne que vous invitez.
 
-Veuillez m'appeler au 555-555-5555 pour vous joindre à l'appel.
+- Dans le corps de votre courriel, vous devez demander à la personne de se joindre à votre appel.
 
-Merci,
+- Pour terminer votre courriel, vous devez remercier la personne de son temps et ajouter vos coordonnées.
 
-John Doe
 
-# Conseils
+## Structure de base
 
--N'oubliez pas d'indiquer la date, l'heure et l'objet de l'appel dans votre courriel.
+- Présentez-vous et expliquez pourquoi la personne que vous invitez devrait se joindre à votre appel.
 
--N'oubliez pas d'indiquer votre numéro de téléphone dans votre courriel.
+- Indiquez la date et l'heure de l'appel.
 
--N'oubliez pas de demander à la personne de se joindre à votre appel.
+- Indiquez le numéro de téléphone de la personne que vous invitez.
 
-# Template
+- Demandez à la personne de se joindre à votre appel.
+
+- Remerciez la personne pour son temps.
+
+- Ajoutez vos informations de contact.
+
+
+## Tips
+
+- Les courriels d'invitation à participer à des appels doivent être courts. Essayez donc de ne pas dépasser un paragraphe.
+- Si vous ne connaissez pas la personne que vous contactez, vous devez toujours inclure vos coordonnées dans le courriel, afin que la personne que vous invitez puisse vous contacter en cas de besoin.
+- Vous devez toujours essayer d'inclure la date et l'heure de votre appel dans la ligne d'objet de votre courriel, ainsi que dans le corps du courriel.
+
+## Modèles
 
 Cher [nom de la personne],
 
@@ -79,8 +92,6 @@ Sincèrement,
 
 ---
 
-Ton formel
-
 Bonjour [nom de la personne invitée],
 
 J'aimerais vous inviter à assister à [nom de l'événement] le [date de l'événement]. Cet événement aura lieu à [lieu de l'événement].
@@ -91,7 +102,7 @@ Sincèrement,
 
 [Votre nom]
 
-
+---
 
 Cher ____,
 
@@ -103,9 +114,7 @@ Nous espérons que vous pourrez vous joindre à nous pour ce qui promet d'être 
 
 Sincèrement,
 
-___
-
-
+---
 
 Bonjour [Nom],
 
@@ -121,7 +130,14 @@ Sincèrement,
 
 [Votre nom]
 
+---
 
+Cher M. Smith,
 
+Je m'appelle John Doe et je suis le PDG de la société ABC. Je voudrais vous inviter à un appel téléphonique le jeudi 1er janvier à 10h00. Le but de cet appel est de discuter de la possibilité de travailler ensemble sur un nouveau projet.
 
+Veuillez m'appeler au 555-555-5555 pour vous joindre à l'appel.
 
+Merci,
+
+John Doe

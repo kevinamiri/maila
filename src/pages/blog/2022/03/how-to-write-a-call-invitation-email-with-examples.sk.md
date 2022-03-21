@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /sk/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /sk/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: sk
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Úvod
+# Pozvánka na výzvu e-mailom.
+
 
 E-mail s pozvánkou na hovor je e-mail, ktorý sa posiela potenciálnemu zákazníkovi alebo klientovi s cieľom pozvať ho na telefonický hovor. Tento typ e-mailu sa zvyčajne používa na dohodnutie stretnutia alebo konzultácie a zvyčajne obsahuje dátum, čas a účel hovoru.
 
-
-Ako napísať e-mail s výzvou?
+#### Ako napísať e-mail s pozvánkou?
 
 Ak chcete napísať e-mail s pozvánkou, musíte zhromaždiť tieto informácie:
 
--meno pozývanej osoby
--Dátum a čas hovoru
--telefónne číslo pozývanej osoby
+- Meno pozývanej osoby
+- Dátum a čas hovoru
+- Telefónne číslo pozývanej osoby
 
 Keď máte tieto informácie, môžete začať písať e-mail.
 
@@ -32,28 +32,41 @@ Na začiatku sa musíte predstaviť a vysvetliť, prečo by sa pozývaná osoba 
 
 Na záver e-mailu musíte poďakovať osobe za jej čas a pridať svoje kontaktné údaje.
 
+## Pokyny
 
-# Príklad
+- Do predmetu e-mailu by ste mali napísať dátum a čas hovoru, ako aj jeho účel.
 
-Vážený pán Smith,
+- E-mail s pozvánkou na hovor by ste mali vždy začať predstavením seba a vysvetlením, prečo by sa pozývaná osoba mala pripojiť k vášmu hovoru.
 
-Volám sa John Doe a som generálny riaditeľ spoločnosti ABC. Rád by som vás pozval na telefonický rozhovor vo štvrtok 1. januára o 10:00 hod. Účelom tohto telefonátu je prediskutovať možnosť spolupráce na novom projekte.
+- Vždy by ste mali uviesť dátum a čas hovoru, ako aj telefónne číslo pozývanej osoby.
 
-Zavolajte mi na číslo 555-555-5555 a prihláste sa do hovoru.
+- V tele e-mailu by ste mali požiadať danú osobu, aby sa pripojila k vášmu hovoru.
 
-Ďakujeme,
+- Na záver e-mailu by ste sa mali poďakovať za čas, ktorý vám venoval, a pridať svoje kontaktné údaje.
 
-John Doe
 
-# Tipy
+## Základná štruktúra
 
-V e-maile nezabudnite uviesť dátum, čas a účel hovoru.
+- Predstavte sa a vysvetlite, prečo by sa pozývaná osoba mala pripojiť k vášmu hovoru.
 
-Nezabudnite do e-mailu uviesť svoje telefónne číslo.
+- Uveďte dátum a čas hovoru.
 
--Uistite sa, že ste požiadali osobu, aby sa pripojila k vášmu hovoru.
+- Uveďte telefónne číslo pozývanej osoby.
 
-# Šablóna
+- Požiadajte túto osobu, aby sa pripojila k vášmu hovoru.
+
+- Poďakujte osobe za jej čas.
+
+- Pridajte svoje kontaktné údaje.
+
+
+## Tipy
+
+- E-maily s pozvánkou na stretnutie by mali byť krátke, preto sa snažte, aby váš e-mail neobsahoval viac ako jeden odsek.
+- Ak kontaktovanú osobu nepoznáte, mali by ste v e-maile vždy uviesť svoje kontaktné údaje, aby vás pozývaná osoba mohla v prípade potreby kontaktovať.
+- Vždy by ste sa mali snažiť uviesť dátum a čas hovoru v predmete e-mailu, ako aj v jeho tele.
+
+## Šablóny
 
 Vážený [meno osoby],
 
@@ -79,8 +92,6 @@ S úctou,
 
 ---
 
-Formálny tón
-
 Dobrý deň [meno pozývanej osoby],
 
 Rád by som vás pozval na [názov podujatia] dňa [dátum podujatia]. Toto podujatie sa bude konať v [miesto konania].
@@ -91,7 +102,7 @@ S úctou,
 
 [Vaše meno]
 
-
+---
 
 Drahá ____,
 
@@ -103,9 +114,7 @@ Dúfame, že sa k nám môžete pripojiť, čo sľubuje veľmi nezabudnuteľnú 
 
 S úctou,
 
-___
-
-
+---
 
 Dobrý deň [meno],
 
@@ -121,7 +130,14 @@ S úctou,
 
 [Vaše meno]
 
+---
 
+Vážený pán Smith,
 
+Volám sa John Doe a som generálny riaditeľ spoločnosti ABC. Rád by som vás pozval na telefonický rozhovor vo štvrtok 1. januára o 10:00 hod. Účelom tohto telefonátu je prediskutovať možnosť spolupráce na novom projekte.
 
+Zavolajte mi na číslo 555-555-5555 a prihláste sa do hovoru.
 
+Ďakujeme,
+
+John Doe

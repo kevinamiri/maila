@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /lt/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /lt/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: lt
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Įvadas
-
-Kvietimo skambinti el. laiškas - tai el. laiškas, kuris siunčiamas potencialiam klientui ar klientei, siekiant pakviesti juos į pokalbį telefonu. Tokio tipo el. laiškas paprastai naudojamas siekiant susitarti dėl susitikimo ar konsultacijos, jame paprastai nurodoma skambučio data, laikas ir tikslas.
+# Kvietimo kvietimas el. paštu.
 
 
-Kaip rašyti kvietimą elektroniniu paštu?
+Kvietimo skambinti el. laiškas - tai el. laiškas, siunčiamas potencialiam klientui ar klientei, siekiant pakviesti juos į pokalbį telefonu. Tokio tipo el. laiškas paprastai naudojamas siekiant susitarti dėl susitikimo ar konsultacijos, jame paprastai nurodoma skambučio data, laikas ir tikslas.
+
+#### Kaip rašyti kvietimą elektroniniu paštu?
 
 Norėdami parašyti kvietimą į el. paštą, turite surinkti šią informaciją:
 
--Kviečiamo asmens vardas ir pavardė
--skambučio data ir laikas
--Kviečiamo asmens telefono numeris
+- Kviečiamo asmens vardas ir pavardė
+- skambučio data ir laikas
+- Kviečiamo asmens telefono numeris
 
 Turėdami šią informaciją, galite pradėti rašyti el. laišką.
 
@@ -32,28 +32,41 @@ Pirmiausia turite prisistatyti ir paaiškinti, kodėl kviečiamas asmuo turėtų
 
 Baigdami el. laišką padėkokite asmeniui už skirtą laiką ir pridėkite savo kontaktinę informaciją.
 
+## Instrukcijos
 
-# Pavyzdys
+- El. laiško temos eilutėje turėtumėte parašyti skambučio datą ir laiką, taip pat skambučio tikslą.
 
-Gerbiamas pone Smitai,
+- Kvietimo skambinti el. laišką visada turėtumėte pradėti prisistatydami ir paaiškindami, kodėl kviečiamas asmuo turėtų prisijungti prie jūsų skambučio.
 
-Mano vardas - Johnas Doe, esu "ABC Company" generalinis direktorius. Norėčiau pakviesti jus į pokalbį telefonu sausio 1 d., ketvirtadienį, 10.00 val. Šio skambučio tikslas - aptarti galimybę kartu dirbti prie naujo projekto.
+- Visada turėtumėte nurodyti skambučio datą ir laiką, taip pat kviečiamo asmens telefono numerį.
 
-Norėdami prisijungti prie pokalbio, skambinkite man telefonu 555-555-5555.
+- Elektroninio laiško turinyje turėtumėte paprašyti asmens prisijungti prie jūsų skambučio.
 
-Ačiū,
+- Laiško pabaigoje turėtumėte padėkoti asmeniui už skirtą laiką ir pridėti savo kontaktinę informaciją.
 
-John Doe
 
-# Patarimai
+## Pagrindinė struktūra
 
--El. laiške būtinai nurodykite skambučio datą, laiką ir tikslą.
+- Prisistatykite ir paaiškinkite, kodėl kviečiamas asmuo turėtų prisijungti prie jūsų skambučio.
 
--El. laiške būtinai nurodykite savo telefono numerį.
+- Nurodykite skambučio datą ir laiką.
 
--Būtinai paprašykite asmens prisijungti prie jūsų skambučio.
+- Nurodykite kviečiamo asmens telefono numerį.
 
-# Šablonas
+- Paprašykite asmens prisijungti prie jūsų skambučio.
+
+- Padėkokite asmeniui už jo laiką.
+
+- Pridėkite savo kontaktinę informaciją.
+
+
+## Patarimai
+
+- Kvietimų el. laiškai turėtų būti trumpi, todėl pasistenkite, kad jų apimtis neviršytų vienos pastraipos.
+- Jei nepažįstate asmens, į kurį kreipiatės, el. laiške visada turėtumėte nurodyti savo kontaktinius duomenis, kad kviečiamas asmuo prireikus galėtų su jumis susisiekti.
+- Laiško temos eilutėje ir laiško tekste visada stenkitės nurodyti skambučio datą ir laiką.
+
+## Šablonai
 
 Gerbiamas [Asmens vardas ir pavardė],
 
@@ -79,8 +92,6 @@ Nuoširdžiai,
 
 ---
 
-Formalus tonas
-
 Sveiki [kviečiamo asmens vardas ir pavardė],
 
 Norėčiau jus pakviesti dalyvauti [renginio pavadinimas] [renginio data]. Šis renginys vyks [renginio vieta].
@@ -91,7 +102,7 @@ Nuoširdžiai,
 
 [Jūsų vardas ir pavardė]
 
-
+---
 
 Gerbiamas ____,
 
@@ -103,9 +114,7 @@ Tikimės, kad galėsite prisijungti prie mūsų ir dalyvauti šioje, kaip žadam
 
 Nuoširdžiai,
 
-___
-
-
+---
 
 Sveiki [Vardas],
 
@@ -121,7 +130,14 @@ Nuoširdžiai,
 
 [Jūsų vardas ir pavardė]
 
+---
 
+Gerbiamas pone Smitai,
 
+Mano vardas - Johnas Doe, esu "ABC Company" generalinis direktorius. Norėčiau pakviesti jus į pokalbį telefonu sausio 1 d., ketvirtadienį, 10.00 val. Šio skambučio tikslas - aptarti galimybę kartu dirbti prie naujo projekto.
 
+Norėdami prisijungti prie pokalbio, skambinkite man telefonu 555-555-5555.
 
+Ačiū,
+
+John Doe

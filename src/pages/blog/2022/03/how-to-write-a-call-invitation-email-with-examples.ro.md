@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /ro/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /ro/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: ro
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Introducere
+# Apelarea invitației prin e-mail.
+
 
 Un e-mail de invitație la apel este un e-mail care este trimis unui potențial client sau client pentru a-l invita la un apel telefonic. Acest tip de e-mail este utilizat de obicei pentru a stabili o întâlnire sau o consultare și include de obicei data, ora și scopul apelului.
 
-
-Cum să scrieți un e-mail de invitație?
+#### Cum se scrie un e-mail de invitație?
 
 Pentru a scrie un e-mail de invitație la apel, va trebui să adunați următoarele informații:
 
--Numele persoanei pe care o invitați.
--Data și ora apelului
--Numărul de telefon al persoanei pe care o invitați.
+- Numele persoanei pe care o invitați
+- Data și ora apelului
+- Numărul de telefon al persoanei pe care o invitați
 
 Odată ce aveți aceste informații, puteți începe să vă scrieți e-mailul.
 
@@ -32,28 +32,41 @@ Pentru a începe, va trebui să vă prezentați și să explicați de ce persoan
 
 Pentru a încheia e-mailul, va trebui să mulțumiți persoanei pentru timpul acordat și să adăugați informațiile dumneavoastră de contact.
 
+## Instrucțiuni
 
-# Exemplu
+- În subiectul e-mailului, trebuie să scrieți data și ora apelului, precum și scopul acestuia.
 
-Dragă domnule Smith,
+- Întotdeauna ar trebui să începeți e-mailul de invitație la convorbire prin a vă prezenta și a explica de ce persoana pe care o invitați ar trebui să participe la convorbire.
 
-Mă numesc John Doe și sunt directorul general al companiei ABC. Aș dori să vă invit la o convorbire telefonică joi, 1 ianuarie, la ora 10:00 AM. Scopul acestei convorbiri este de a discuta posibilitatea de a lucra împreună la un nou proiect.
+- Trebuie să indicați întotdeauna data și ora apelului, precum și numărul de telefon al persoanei pe care o invitați.
 
-Vă rog să mă sunați la 555-555-5555 pentru a participa la apel.
+- În corpul e-mailului, trebuie să rugați persoana respectivă să se alăture apelului dumneavoastră.
 
-Vă mulțumesc,
+- În finalul e-mailului, trebuie să mulțumiți persoanei pentru timpul acordat și să adăugați informațiile dumneavoastră de contact.
 
-John Doe
 
-# Sfaturi
+## Structura de bază
 
-Asigurați-vă că includeți în e-mail data, ora și scopul apelului.
+- Prezentați-vă și explicați de ce persoana pe care o invitați ar trebui să se alăture apelului dumneavoastră.
 
-Asigurați-vă că includeți numărul dvs. de telefon în e-mail.
+- Indicați data și ora apelului.
 
-Asigurați-vă că îi cereți persoanei să se alăture apelului dumneavoastră.
+- Indicați numărul de telefon al persoanei pe care o invitați.
 
-# Template
+- Rugați persoana respectivă să se alăture apelului dumneavoastră.
+
+- Mulțumiți-i persoanei pentru timpul acordat.
+
+- Adăugați informațiile dumneavoastră de contact.
+
+
+## Sfaturi
+
+- E-mailurile de invitație trebuie să fie scurte, așa că încercați să vă limitați la un paragraf.
+- Dacă nu cunoașteți persoana pe care o contactați, ar trebui să includeți întotdeauna în e-mail datele dvs. de contact, astfel încât persoana pe care o invitați să vă poată contacta dacă are nevoie.
+- Întotdeauna trebuie să încercați să includeți data și ora apelului în subiectul e-mailului, precum și în corpul acestuia.
+
+## Șabloane
 
 Stimate [Numele persoanei],
 
@@ -79,8 +92,6 @@ Cu stimă,
 
 ---
 
-Tonul formal
-
 Bună ziua [numele persoanei invitate],
 
 Aș dori să vă invit să participați la [numele evenimentului] în data de [data evenimentului]. Acest eveniment va avea loc la [locația evenimentului].
@@ -91,7 +102,7 @@ Cu stimă,
 
 [Numele dvs.]
 
-
+---
 
 Dragă ____,
 
@@ -103,9 +114,7 @@ Sperăm să vă puteți alătura nouă pentru ceea ce se anunță a fi o ocazie 
 
 Cu stimă,
 
-___
-
-
+---
 
 Bună ziua [Nume],
 
@@ -121,7 +130,14 @@ Cu stimă,
 
 [Numele dvs.]
 
+---
 
+Dragă domnule Smith,
 
+Mă numesc John Doe și sunt directorul general al companiei ABC. Aș dori să vă invit la o convorbire telefonică joi, 1 ianuarie, la ora 10:00 AM. Scopul acestei convorbiri este de a discuta posibilitatea de a lucra împreună la un nou proiect.
 
+Vă rog să mă sunați la 555-555-5555 pentru a participa la apel.
 
+Vă mulțumesc,
+
+John Doe

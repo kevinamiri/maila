@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /es/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /es/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: es
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Introducción
+# Llamada de invitación por correo electrónico.
+
 
 Un correo electrónico de invitación a una llamada es un correo electrónico que se envía a un cliente potencial para invitarle a una llamada telefónica. Este tipo de correo electrónico se utiliza normalmente para concertar una reunión o consulta, y suele incluir la fecha, la hora y el objetivo de la llamada.
 
+#### ¿Cómo se escribe un correo electrónico de invitación a participar?
 
-¿Cómo escribir un correo electrónico de invitación?
+Para redactar un correo electrónico de invitación a la llamada, tendrá que reunir la siguiente información:
 
-Para redactar un correo electrónico de invitación a la compra, tendrá que reunir la siguiente información:
-
--El nombre de la persona a la que invita
--La fecha y la hora de la llamada
--El número de teléfono de la persona a la que invitas
+- El nombre de la persona a la que invita
+- La fecha y la hora de la llamada
+- El número de teléfono de la persona que invita
 
 Una vez que tenga esta información, puede empezar a escribir su correo electrónico.
 
@@ -32,28 +32,41 @@ Para empezar, tendrá que presentarse y explicar por qué la persona a la que in
 
 Para terminar tu correo electrónico, tendrás que agradecer a la persona su tiempo y añadir tu información de contacto.
 
+## Instrucciones
 
-# Ejemplo
+- En el asunto de su correo electrónico, debe escribir la fecha y la hora de la llamada, así como el propósito de la misma.
 
-Estimado Sr. Smith,
+- Siempre debe comenzar su correo electrónico de invitación a la llamada presentándose y explicando por qué la persona a la que invita debería unirse a su llamada.
 
-Me llamo John Doe y soy el director general de la empresa ABC. Me gustaría invitarle a una llamada telefónica el jueves 1 de enero a las 10:00 horas. El propósito de esta llamada es discutir la posibilidad de trabajar juntos en un nuevo proyecto.
+- Siempre debe indicar la fecha y la hora de la llamada, así como el número de teléfono de la persona a la que invita.
 
-Por favor, llámeme al 555-555-5555 para unirse a la llamada.
+- En el cuerpo de su correo electrónico, debe pedir a la persona que por favor se una a su llamada.
 
-Gracias,
+- Para terminar tu correo electrónico, debes agradecer a la persona su tiempo y añadir tu información de contacto.
 
-Juan Pérez
 
-# Consejos
+## Estructura básica
 
--Asegúrese de incluir la fecha, la hora y el propósito de la llamada en su correo electrónico.
+- Preséntese y explique por qué la persona a la que invita debería unirse a su llamada.
 
--Asegúrese de incluir su número de teléfono en su correo electrónico.
+- Indique la fecha y la hora de la llamada.
 
--Asegúrate de pedirle a la persona que se una a tu llamada.
+- Indique el número de teléfono de la persona a la que invita.
 
-# Plantilla
+- Pídale a la persona que por favor se una a su llamada.
+
+- Agradece a la persona su tiempo.
+
+- Añade tu información de contacto.
+
+
+## Consejos
+
+- Los correos electrónicos de invitación a la convocatoria deben ser breves, así que intente que su correo electrónico sea de un solo párrafo.
+- Si no conoces a la persona a la que te diriges, siempre debes incluir tus datos de contacto en el correo electrónico, para que la persona a la que invitas pueda ponerse en contacto contigo si lo necesita.
+- Procure incluir siempre la fecha y la hora de la llamada en el asunto del correo electrónico, así como en el cuerpo del mismo.
+
+## Plantillas
 
 Estimado [Nombre de la persona],
 
@@ -79,8 +92,6 @@ Sinceramente,
 
 ---
 
-Tono formal
-
 Hola [nombre de la persona invitada],
 
 Me gustaría invitarle a asistir al [nombre del evento] en [fecha del evento]. Este acto se celebrará en [lugar del acto].
@@ -91,7 +102,7 @@ Sinceramente,
 
 [Su nombre]
 
-
+---
 
 Estimado ____,
 
@@ -103,9 +114,7 @@ Esperamos que pueda acompañarnos en lo que promete ser una ocasión memorable.
 
 Sinceramente,
 
-___
-
-
+---
 
 Hola [Nombre],
 
@@ -121,7 +130,14 @@ Sinceramente,
 
 [Su nombre]
 
+---
 
+Estimado Sr. Smith,
 
+Me llamo John Doe y soy el director general de la empresa ABC. Me gustaría invitarle a una llamada telefónica el jueves 1 de enero a las 10:00 horas. El propósito de esta llamada es discutir la posibilidad de trabajar juntos en un nuevo proyecto.
 
+Por favor, llámeme al 555-555-5555 para unirse a la llamada.
 
+Gracias,
+
+Juan Pérez

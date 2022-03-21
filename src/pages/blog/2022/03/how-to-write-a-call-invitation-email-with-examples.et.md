@@ -9,22 +9,22 @@ date: "2022-03-21"
 slug: /et/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /et/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: et
-tags: ["write a call invitation","phone call invitation","invite someone to participate in a phone call","invitation letter phone call"]
+tags: ["Email", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-## Sissejuhatus
+# Kutsekõne e-kiri.
+
 
 Kutsekiri on e-kiri, mis saadetakse potentsiaalsele kliendile või kliendile, et kutsuda teda telefonikõnele. Seda tüüpi e-kirja kasutatakse tavaliselt kohtumise või konsultatsiooni kokkuleppimiseks ning see sisaldab tavaliselt kuupäeva, kellaaega ja kõne eesmärki.
 
-
-Kuidas kirjutada kutsekutse e-kiri?
+#### Kuidas kirjutada kutsekutse e-kirja?
 
 Kutsekirja kirjutamiseks peate koguma järgmise teabe:
 
--Kutsutava isiku nimi.
--Kõne kuupäev ja kellaaeg
--Kutsutava isiku telefoninumber.
+- Kutsutava isiku nimi
+- Kõne kuupäev ja kellaaeg
+- Kutsutava isiku telefoninumber
 
 Kui teil on see teave olemas, võite alustada oma e-kirja kirjutamist.
 
@@ -32,28 +32,41 @@ Alustuseks peate ennast tutvustama ja selgitama, miks peaks kutsutav isik teie k
 
 E-kirja lõpetamiseks peate tänama isikut tema aja eest ja lisama oma kontaktandmed.
 
+## Juhised
 
-# Näide
+- Kirjutage oma e-kirja teemasse kõne kuupäev ja kellaaeg ning kõne eesmärk.
 
-Lugupeetud härra Smith,
+- Te peaksite oma kõne kutsumise e-kirja alati alustama enda tutvustamisega ja selgitama, miks kutsutav isik peaks teie kõnega liituma.
 
-Minu nimi on John Doe ja ma olen ABC Company tegevjuht. Tahaksin teid kutsuda neljapäeval, 1. jaanuaril kell 10:00 telefonikõnele. Selle kõne eesmärk on arutada võimalust töötada koos uue projekti kallal.
+- Te peaksite alati teatama kõne kuupäeva ja kellaaja ning kutsutava isiku telefoninumbri.
 
-Palun helistage mulle telefonil 555-555-5555, et osaleda kõnega.
+- Oma e-kirja tekstis peaksite paluma, et isik ühineks teie kõnega.
 
-Tänan teid,
+- E-kirja lõpus peaksite tänama isikut tema aja eest ja lisama oma kontaktandmed.
 
-John Doe
 
-# Nõuanded
+## Põhistruktuur
 
-Lisage oma e-kirjas kindlasti kõne kuupäev, kellaaeg ja eesmärk.
+- Tutvustage ennast ja selgitage, miks peaks kutsutav isik teie kõne osalema.
 
-Lisage kindlasti oma telefoninumber oma e-kirjale.
+- Esitage kõne kuupäev ja kellaaeg.
 
--Paluge kindlasti, et isik ühineks teie kõnega.
+- Esitage kutsutava isiku telefoninumber.
 
-# Template
+- Paluge isikul teie kõnega liituda.
+
+- Tänage inimest tema aja eest.
+
+- Lisage oma kontaktandmed.
+
+
+## Nõuanded
+
+- Kutsete e-kirjad peaksid olema lühikesed, seega püüdke hoida oma e-kirja ühe lõiguni.
+- Kui te ei tunne isikut, kellega te ühendust võtate, peaksite alati lisama oma kontaktandmed e-kirjale, et kutsutav isik saaks vajadusel teiega ühendust võtta.
+- Püüdke alati lisada oma kõne kuupäev ja kellaaeg nii e-kirja teemaritta kui ka e-kirja teksti.
+
+## Mallid
 
 Lugupeetud [isiku nimi],
 
@@ -79,8 +92,6 @@ Lugupidamisega,
 
 ---
 
-Ametlik toon
-
 Tere [kutsutava nimi],
 
 Soovin teid kutsuda [ürituse nimi] [ürituse kuupäev] toimuvale [ürituse nimi] üritusele. See üritus toimub [ürituse toimumiskoht].
@@ -91,7 +102,7 @@ Lugupidamisega,
 
 [Teie nimi]
 
-
+---
 
 Lugupeetud ____,
 
@@ -103,9 +114,7 @@ Loodame, et saate meiega ühineda, mis tõotab olla väga meeldejääv sündmus.
 
 Lugupidamisega,
 
-___
-
-
+---
 
 Tere [nimi],
 
@@ -121,7 +130,14 @@ Lugupidamisega,
 
 [Teie nimi]
 
+---
 
+Lugupeetud härra Smith,
 
+Minu nimi on John Doe ja ma olen ABC Company tegevjuht. Tahaksin teid kutsuda neljapäeval, 1. jaanuaril kell 10:00 telefonikõnele. Selle kõne eesmärk on arutada võimalust töötada koos uue projekti kallal.
 
+Palun helistage mulle telefonil 555-555-5555, et osaleda kõnega.
 
+Tänan teid,
+
+John Doe
