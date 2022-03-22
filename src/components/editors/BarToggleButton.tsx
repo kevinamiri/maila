@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 export default function BarToggleButton({ format, icon, handleClick }) {
   const { selectedTextValue } = useSelector((state) => state.editorParams);
   const { progressValue } = useSelector((state) => state.progressValue);
-  const loading = progressValue && progressValue > 0 && progressValue < 100;
+  const loading = progressValue > 0 && progressValue < 100;
   const selectionStatus =
     selectedTextValue &&
     selectedTextValue.length > 2 &&
@@ -28,7 +28,7 @@ export default function BarToggleButton({ format, icon, handleClick }) {
         },
       }}
       component='span'
-      disabled={selectionStatus ? true : false || loading ? true : false}
+      disabled={selectionStatus || loading}
       onClick={handleClick}
     >
       <Tooltip title={format} arrow>
