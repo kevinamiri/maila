@@ -9,6 +9,7 @@ import { BaseEditor } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { HistoryEditor } from "slate-history";
 import useFetchInsert from "hooks/useFetchInsert";
+import UseCompletionSuffix from "hooks/UseCompletionSuffix";
 
 import { selectedText } from "hooks/currentSelectEditor";
 
@@ -47,6 +48,25 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
   const fieldValues = useSelector((state) => state.fieldsValue);
   const { selectedTextValue } = useSelector((state) => state.editorParams);
   const editors = [editor, editor2, editor3, editor4];
+
+  const handleSuffix = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          UseCompletionSuffix(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "46",
+            fieldValues
+          );
+        });
+    });
+  };
 
   const handleClarify = (e) => {
     e.preventDefault();
@@ -131,6 +151,7 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
   return (
     <>
       <EditorToolsBoxBar
+        handleSuffix={handleSuffix}
         handleSpellcheck={HandleSpellcheck}
         handleAdvancify={handleAdvancify}
         handleSimplify={handleSimplify}

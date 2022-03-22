@@ -70,14 +70,13 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
     productUrl: string
   ) {
     try {
-      const charLimitValidate = serialize(editor).substring(0, inputLimitation);
-
+      const editorContents = serialize(editor).substring(0, inputLimitation);
       serialize(editor).length > 1000
         ? enqueueSnackbar("request is more than the allowed amount of text.")
         : "";
       // string , url, gtoken
       const textLists = await fetchData(
-        charLimitValidate,
+        editorContents,
         gtoken,
         url,
         productUrl

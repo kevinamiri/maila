@@ -600,6 +600,18 @@ export default function App() {
                     toneTextField={true}
                     labelsLists={[]}
                   />
+                  <ProductDescription
+                    label={"suffix"}
+                    headerTitle={"suffix"}
+                    description={"suffix"}
+                    example={"suffix test"}
+                    instructHelp={"suffix about product text"}
+                    generateButtonName={"suffix about product text"}
+                    productType='46'
+                    path='/suffix'
+                    toneTextField={true}
+                    labelsLists={[]}
+                  />
                   <AccountManage path='/profile' />
                 </Router>
               </Container>
