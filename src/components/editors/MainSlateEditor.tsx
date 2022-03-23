@@ -174,6 +174,7 @@ const MainSlateEditor = (props) => {
           boxSizing: "border-box",
           boxShadow: (theme) => `0 0 0 2px ${theme.palette.divider}`,
           borderRadius: (theme) => `calc(1px * ${theme.shape.borderRadius})`,
+          lineHeight: "1.5rem",
           p: 1,
         }}
       >

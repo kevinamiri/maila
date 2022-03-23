@@ -124,6 +124,7 @@ const ChildText = (props) => {
             boxSizing: "border-box",
             fontSize: "1em",
             padding: "0.5em",
+            lineHeight: "1.5rem",
             marginLeft: "0.1rem",
             marginRight: "0.1rem",
             marginBottom: "0.2rem",
