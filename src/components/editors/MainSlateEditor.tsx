@@ -19,9 +19,8 @@ import {
   setCurrentWordRange,
   updateSelectedText,
 } from "../../slices/editorParams";
-import { useDispatch } from "react-redux";
 import FooterEditorBar from "./FooterEditorBar";
-
+const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import FormatBoldRoundedIcon from "@mui/icons-material/FormatBold";
 import FormatItalicRoundedIcon from "@mui/icons-material/FormatItalic";
 import FormatUnderlinedRoundedIcon from "@mui/icons-material/FormatUnderlined";
@@ -32,6 +31,10 @@ import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuote";
 import FormatListNumberedRoundedIcon from "@mui/icons-material/FormatListNumbered";
 import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBulleted";
 import { ToggleButtonGroup } from "@mui/material";
+import UseCompletionSuffix from "hooks/UseCompletionSuffix";
+import { useSelector, useDispatch } from "react-redux";
+import { updateProgressValue } from "../../slices/progress";
+import { useSnackbar } from "notistack";
 
 const HOTKEYS = {
   "mod+b": "bold",
@@ -41,6 +44,7 @@ const HOTKEYS = {
   "mod+s": "subject",
   //
   "mod+a": "selectAll",
+  "mod+enter": "enter",
 };
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
@@ -62,6 +66,10 @@ const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
 }));
 
 const MainSlateEditor = (props) => {
+  //hooks must be inside of the function
+  const dispatch = useDispatch();
+  const fieldValues = useSelector((state) => state.fieldsValue);
+  const { enqueueSnackbar } = useSnackbar();
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
   const FooterEditorBarX = useCallback(
@@ -72,8 +80,8 @@ const MainSlateEditor = (props) => {
   const editor2 = props.editor2;
   const editor3 = props.editor3;
   const editor4 = props.editor4;
+  const editors = [editor, editor2, editor3, editor4];
   let inputLimitation = props.limitChar;
-  const dispatch = useDispatch();
 
   const defaultValue = () => {
     return (
@@ -131,6 +139,25 @@ const MainSlateEditor = (props) => {
     const fragment = SlateNode.fragment(editor, editor.selection);
     const fragmentsText = fragment.map((x) => SlateNode.string(x)).join("\n");
     dispatch(updateSelectedText(fragmentsText));
+  };
+
+  const handleSuffix = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          UseCompletionSuffix(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "46",
+            fieldValues
+          );
+        });
+    });
   };
 
   return (
@@ -212,6 +239,9 @@ const MainSlateEditor = (props) => {
                   if (isHotkey(hotkey, event as any)) {
                     event.preventDefault();
                     const mark = HOTKEYS[hotkey];
+                    if (mark === "enter") {
+                      handleSuffix(event);
+                    }
                     if (mark === "selectAll") {
                       savedSelection.current = editor.selection;
                       dispatch(setCurrentWordRange(savedSelection.current));

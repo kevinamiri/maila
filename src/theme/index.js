@@ -114,7 +114,7 @@ const baseOptions = {
       fontWeight: 400,
       fontSize: '.88rem',
       lineHeight: '1.9',
-      fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Roboto,Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+      fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
 
     },
     overline: {
