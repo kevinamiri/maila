@@ -49,25 +49,6 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
   const { selectedTextValue } = useSelector((state) => state.editorParams);
   const editors = [editor, editor2, editor3, editor4];
 
-  const handleSuffix = (e) => {
-    e.preventDefault();
-    window.grecaptcha.ready(() => {
-      window.grecaptcha
-        .execute(SITE_KEY, { action: "submit" })
-        .then((gtoken) => {
-          dispatch(updateProgressValue(15));
-          UseCompletionSuffix(
-            dispatch,
-            enqueueSnackbar,
-            editors,
-            gtoken,
-            "46",
-            fieldValues
-          );
-        });
-    });
-  };
-
   const handleClarify = (e) => {
     e.preventDefault();
     window.grecaptcha.ready(() => {
@@ -151,7 +132,6 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
   return (
     <>
       <EditorToolsBoxBar
-        handleSuffix={handleSuffix}
         handleSpellcheck={HandleSpellcheck}
         handleAdvancify={handleAdvancify}
         handleSimplify={handleSimplify}

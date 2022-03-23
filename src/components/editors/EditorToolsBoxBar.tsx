@@ -8,7 +8,6 @@ import BarToggleButton from "components/editors/BarToggleButton";
 import SpellcheckIcon from "@mui/icons-material/Spellcheck";
 
 const EditorToolsBoxBar = ({
-  handleSuffix,
   handleClarify,
   handleSimplify,
   handleAdvancify,
@@ -25,11 +24,6 @@ const EditorToolsBoxBar = ({
           justifyContent: "end",
         }}
       >
-        <BarToggleButton
-          format='Suffix'
-          icon={<RestorePageIcon />}
-          handleClick={handleSuffix}
-        />
         <BarToggleButton
           format='Clarify'
           icon={<RestorePageIcon />}
