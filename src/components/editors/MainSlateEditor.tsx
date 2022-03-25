@@ -35,6 +35,7 @@ import UseCompletionSuffix from "hooks/UseCompletionSuffix";
 import { useSelector, useDispatch } from "react-redux";
 import { updateProgressValue } from "../../slices/progress";
 import { useSnackbar } from "notistack";
+import HoveringToolbar from "./HoveringToolbar";
 
 const HOTKEYS = {
   "mod+b": "bold",
@@ -226,7 +227,12 @@ const MainSlateEditor = (props) => {
                 <FormatListBulletedRoundedIcon sx={{ fontSize: "1.2rem" }} />
               </BlockButton>
             </StyledToggleButtonGroup>
-
+            <HoveringToolbar
+              editor={editor}
+              editor2={editor2}
+              editor3={editor3}
+              editor4={editor4}
+            />
             <Editable
               renderElement={renderElement}
               renderLeaf={renderLeaf}
@@ -414,6 +420,7 @@ const MarkButton = ({ format, children }) => {
     </Box>
   );
 };
+
 const HoverButton = ({ format, children }) => {
   const editor = useSlate();
   return (

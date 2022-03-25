@@ -56,7 +56,6 @@ async function UseCompletionSuffix(
     );
   dispatch(updateProgressValue(100));
   ReactEditor.focus(editors[0]);
-  // Transforms.select(editors[0], Editor.end(editors[0], []));
   Transforms.select(
     editors[0],
     editors[0].selection ? editors[0].selection : Editor.end(editors[0], [])
