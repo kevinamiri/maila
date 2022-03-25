@@ -30,12 +30,13 @@ import LooksTwoRoundedIcon from "@mui/icons-material/LooksTwo";
 import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuote";
 import FormatListNumberedRoundedIcon from "@mui/icons-material/FormatListNumbered";
 import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBulleted";
-import { ToggleButtonGroup } from "@mui/material";
+import { IconButton, ToggleButtonGroup, Tooltip } from "@mui/material";
 import UseCompletionSuffix from "hooks/UseCompletionSuffix";
 import { useSelector, useDispatch } from "react-redux";
 import { updateProgressValue } from "../../slices/progress";
 import { useSnackbar } from "notistack";
 import HoveringToolbar from "./HoveringToolbar";
+import AutoFixHighRoundedIcon from "@mui/icons-material/AutoFixHighRounded";
 
 const HOTKEYS = {
   "mod+b": "bold",
@@ -191,42 +192,56 @@ const MainSlateEditor = (props) => {
             value={value}
             onChange={(value) => handleChange(value)}
           >
-            <StyledToggleButtonGroup size='small' aria-label='text formatting'>
-              <MarkButton format='bold'>
-                <FormatBoldRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </MarkButton>
-              <MarkButton format='italic'>
-                <FormatItalicRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </MarkButton>
-              <MarkButton format='underline'>
-                <FormatUnderlinedRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </MarkButton>
-              <MarkButton format='code'>
-                <CodeRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </MarkButton>
-            </StyledToggleButtonGroup>
-
-            <StyledToggleButtonGroup
-              size='small'
-              exclusive
-              aria-label='text alignment'
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexWrap: "wrap",
+              }}
             >
-              <BlockButton format='heading-one'>
-                <LooksOneRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </BlockButton>
-              <BlockButton format='heading-two'>
-                <LooksTwoRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </BlockButton>
-              <BlockButton format='block-quote'>
-                <FormatQuoteRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </BlockButton>
-              <BlockButton format='numbered-list'>
-                <FormatListNumberedRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </BlockButton>
-              <BlockButton format='bulleted-list'>
-                <FormatListBulletedRoundedIcon sx={{ fontSize: "1.2rem" }} />
-              </BlockButton>
-            </StyledToggleButtonGroup>
+              <StyledToggleButtonGroup
+                size='small'
+                aria-label='text formatting'
+              >
+                <MarkButton format='bold'>
+                  <FormatBoldRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </MarkButton>
+                <MarkButton format='italic'>
+                  <FormatItalicRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </MarkButton>
+                <MarkButton format='underline'>
+                  <FormatUnderlinedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </MarkButton>
+                <MarkButton format='code'>
+                  <CodeRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </MarkButton>
+              </StyledToggleButtonGroup>
+
+              <StyledToggleButtonGroup
+                size='small'
+                exclusive
+                aria-label='text alignment'
+              >
+                <BlockButton format='heading-one'>
+                  <LooksOneRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </BlockButton>
+                <BlockButton format='heading-two'>
+                  <LooksTwoRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </BlockButton>
+                <BlockButton format='block-quote'>
+                  <FormatQuoteRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </BlockButton>
+                <BlockButton format='numbered-list'>
+                  <FormatListNumberedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </BlockButton>
+                <BlockButton format='bulleted-list'>
+                  <FormatListBulletedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                </BlockButton>
+              </StyledToggleButtonGroup>
+              <StyledToggleButtonGroup>
+                <MagicButton onClick={handleSuffix} />
+              </StyledToggleButtonGroup>
+            </Box>
             <HoveringToolbar
               editor={editor}
               editor2={editor2}
@@ -421,27 +436,30 @@ const MarkButton = ({ format, children }) => {
   );
 };
 
-const HoverButton = ({ format, children }) => {
-  const editor = useSlate();
+const MagicButton = ({ onClick }) => {
+  const { progressValue } = useSelector((state) => state.progressValue);
+  const loading = progressValue > 0 && progressValue < 100;
+
   return (
     <Box
       sx={{
         m: 0.5,
       }}
     >
-      <ToggleButton
-        size='small'
-        sx={{
-          border: 0,
-          padding: "1px",
-        }}
-        value={format}
-        onMouseDown={(event) => {
-          event.preventDefault();
-        }}
-      >
-        {children}
-      </ToggleButton>
+      <Tooltip title='AI Autocomplete'>
+        <IconButton
+          size='small'
+          sx={{
+            border: 0,
+            padding: "2px",
+            borderRadius: 1,
+          }}
+          disabled={loading}
+          onClick={onClick}
+        >
+          <AutoFixHighRoundedIcon sx={{ fontSize: "1.2rem" }} />
+        </IconButton>
+      </Tooltip>
     </Box>
   );
 };
