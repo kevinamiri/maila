@@ -189,8 +189,6 @@ export default function App() {
                 }}
               >
                 <SearchBox />
-
-                {/* <LanguageAutocompleteApp handleChange={changeLanguage} /> */}
                 <Router basepath='/app'>
                   <PrivateRoute path='/profile' component={AccountManage} />
                   {/* <PrivateRoute

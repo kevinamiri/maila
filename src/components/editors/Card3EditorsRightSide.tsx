@@ -1,9 +1,10 @@
 import React from "react";
+import Box from "@mui/material/Box";
 import ChildText from "./ChildText";
 
 const Card3EditorsRightSide = ({ editor, editor2, editor3, editor4 }) => {
   return (
-    <>
+    <Box sx={{ height: "144vh", overflow: "auto" }}>
       <ChildText
         mainEditor={editor}
         correspondedEditor={editor2}
@@ -19,7 +20,7 @@ const Card3EditorsRightSide = ({ editor, editor2, editor3, editor4 }) => {
         correspondedEditor={editor4}
         storageName='content44'
       />
-    </>
+    </Box>
   );
 };
 
