@@ -235,6 +235,10 @@ const MainSlateEditor = (props) => {
               autoFocus
               onFocus={onFocus}
               onBlur={onBlur}
+              style={{
+                height: "100vh",
+                overflow: "auto",
+              }}
               onKeyDown={(event) => {
                 for (const hotkey in HOTKEYS) {
                   if (isHotkey(hotkey, event as any)) {
