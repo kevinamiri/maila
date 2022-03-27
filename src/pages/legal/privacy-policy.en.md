@@ -5,7 +5,7 @@ description: "This privacy policy governs the manner in which The we collects, u
 templateKey: about
 lang: en
 image: ../../img/vpn.png
-date: "11-11-2020"
+date: "2020-10-10"
 path: /en/legal/privacy-policy
 slug: /en/legal/privacy-policy
 ---
@@ -26,14 +26,6 @@ Our Terms of Use (“Terms”) govern all use of our Service and together with t
 
 You agree to our Privacy Policy by using our Website.
 
-
-
-
-TABLE OF CONTENTS
-
-```toc
-
-```
 
 ### **Definitions**
 

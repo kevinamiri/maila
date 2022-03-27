@@ -5,15 +5,11 @@ description: "This document describes the terms and conditions upon which CopyTo
 templateKey: about
 lang: en
 image: ../../img/vpn.png
-date: "11-10-2020"
+date: "2020-10-10"
 path: /en/legal/terms-of-use
 slug: /en/legal/terms-of-use
 ---
 
-
-```toc
-
-```
 
 ## TERMS OF USE
 
