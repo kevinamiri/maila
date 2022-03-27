@@ -1,0 +1,291 @@
+[
+    {
+        "id": "018",
+        "title": "Blog Post Intro",
+        "header": " Esittele blogisi yhteenveto-lauseella.",
+        "description": "Se on käytetty esittelemään blogin aihe ja antamaan lyhyt yleiskuva siitä, mitä lukija voi odottaa oppivansa lukemalla blogin.",
+        "url": "/app/blog-post-intro",
+        "status": "",
+        "tag": "Website",
+        "tagId": 2,
+        "helpHint": "mitä haluat lukijoiden ottavan mukaan tai minkälaista taustaa blogiisi kirjoitat, luomme blogin esittelyn sen perusteella."
+    },
+    {
+        "id": "124",
+        "title": "Blogin päätös",
+        "header": " Kirjoita houkutteleva blogin päätös, joka pitää lukijat mukana.\n",
+        "description": "Blogin päätös kokoaa yhteen blogin pääkohdat ja antaa lyhyen yhteenvedon siitä, mitä lukija on oppinut.",
+        "url": "/app/blog-post-conclusion",
+        "status": "",
+        "tag": "Blog",
+        "tagId": 5,
+        "helpHint": "Kirjoita muutama kappale blogistasi ja luomme sitten blogin päätöksen sen perusteella."
+    },
+    {
+        "id": "26",
+        "title": "Blog Post AIDA",
+        "header": " Luo blogi-postaus kolmella osalla: huomio, halu, toiminta.\n",
+        "description": "Se voidaan käyttää auttamaan sinua luomaan vakuuttavan ja huomiota herättävän blogi-postauksen kuvaamalla avainkohtia, joita haluat käsitellä postauksessasi.",
+        "url": "/app/blog-post-aida",
+        "status": "",
+        "tag": "Website",
+        "tagId": 2,
+        "helpHint": "Kirjoita tuotteestasi tai ideastasi; sitten käytämme AIDA: Attention, Interest, Desire, Action for it."
+    },
+    {
+        "id": "421",
+        "title": "Blogin otsikko",
+        "header": " Työkalu houkuttelevien otsikoiden luomiseen blogiisi.\n",
+        "description": "Blogin otsikko voi auttaa sinua luomaan houkuttelevan otsikon blogiisi.",
+        "url": "/app/blog-post-headline",
+        "status": "",
+        "tag": "Blog",
+        "tagId": 5,
+        "helpHint": "Kirjoita muutama kappale blogistasi tähän, ja annamme sinulle otsikon blogillesi."
+    },
+    {
+        "id": "512",
+        "title": "Blog Post Summary",
+        "header": " Generate a short summary of a longer blog post with a click of a button.\n",
+        "description": "It can be used to summarize the blog post and provide a concise description.",
+        "url": "/app/blog-post-summary",
+        "status": "",
+        "tag": "Blog",
+        "tagId": 5,
+        "helpHint": "Write a few paragraphs about your blog here or any other idea; then we'll create a summary blog post for it."
+    },
+    {
+        "id": "611",
+        "title": "Paraphrase",
+        "header": " Luo omaa sisältöä muuttamalla vain sanoja ja lauseita olemassa olevasta sisällöstä.\n",
+        "description": "Se voidaan käyttää tekstin uudelleenkirjoittamiseen luettavuuden parantamiseksi ja varmistamiseksi, että tekstin merkitys säilyy.",
+        "url": "/app/paraphrase",
+        "status": "",
+        "tag": "Writing Aid",
+        "tagId": 3,
+        "helpHint": "Kirjoita tuotteestasi tai ideastasi; sitten me paraphrase sitä sinulle."
+    },
+    {
+        "id": "71",
+        "title": "Mission Statement",
+        "header": " Yrityksesi tarkoitus ja arvot tiivistettynä.\n",
+        "description": "A mission statement is a declaration of the purpose of a company or organization. It is a statement of the organization's core values and beliefs, and its overall goal or purpose.",
+        "url": "/app/mission-statement",
+        "status": "",
+        "tag": "Brand",
+        "tagId": 1,
+        "helpHint": "Kirjoita muutama kappale yrityksestäsi tai tuotteestasi; sitten luomme sinulle mission statementin."
+    },
+    {
+        "id": "87",
+        "title": "Vision Statement",
+        "header": " Luo vahva lausuma, joka innostaa tiimiäsi ja asiakkaitasi.\n",
+        "description": "Vision lausuma on yrityksen tarkoituksen julistus tai julistus siitä, mitä yritys toivoo saavuttavansa tulevaisuudessa.",
+        "url": "/app/vision-statement",
+        "status": "",
+        "tag": "Brand",
+        "tagId": 1,
+        "helpHint": "Kirjoita muutama kappale yrityksestäsi tai tuotteestasi; sitten luomme vision lausuman siitä."
+    },
+    {
+        "id": "95",
+        "title": "Arvon lupaus",
+        "header": " Craft your value proposition statement that resonates with customers and drives sales.\n",
+        "description": "A value proposition is a statement that summarizes the benefit that a customer will receive by using a particular product or service.",
+        "url": "/app/value-proposition",
+        "status": "",
+        "tag": "Brand",
+        "tagId": 1,
+        "helpHint": "Write a few paragraphs about your business or product; then we'll create a value proposition for it."
+    },
+    {
+        "id": "1020",
+        "title": "Rewrite - Adjust Tone",
+        "header": " Muotoile sisältöä vastaamaan tiettyä sävyä, esimerkiksi ystävällistä tai vakuuttavaa.\n",
+        "description": "Se voidaan käyttää säätämään asiakirjan sävyä tehdäkseen siitä vakuuttavamman tai vastaamaan yrityksen brändäyksen sävyä.",
+        "url": "/app/adjust-tone-rewriting",
+        "status": "",
+        "tag": "Writing Aid",
+        "tagId": 3,
+        "helpHint": "Kirjoita muutama kappale yrityksestäsi tai tuotteestasi, sitten kirjoitamme siitä eri sävyllä ja äänellä."
+    },
+    {
+        "id": "1127",
+        "title": "Ystävällinen sähköposti",
+        "header": " Kirjoita myyntisähköposteja, jotka ovat yhtä ystävällisiä kuin ne ovat vakuuttavia.\n",
+        "description": "Sitä voidaan käyttää laatimaan ammattimaista ja ystävällistä sähköpostia kollegalle tai asiakkaalle.",
+        "url": "/app/friendly-email",
+        "status": "",
+        "tag": "Sähköposti",
+        "tagId": 6,
+        "helpHint": "Kirjoita tässä sähköpostissa käsiteltävä pääkohta ja luomme sen pohjalta ystävällisen sähköpostin."
+    },
+    {
+        "id": "1222",
+        "title": "Seurantasähköposti",
+        "header": " Kirjoita sähköposti, joka kannustaa asiakasta ostamaan tuotettasi.\n",
+        "description": "Seurantasähköpostia voidaan käyttää muistuttamaan asiakasta tuotteesta, joka oli kiinnostanut tai tarjoamaan lisätietoja jo ostetusta tuotteesta.",
+        "url": "/app/followup-email",
+        "status": "",
+        "tag": "Sähköposti",
+        "tagId": 6,
+        "helpHint": "Kirjoita tärkein asia, jonka haluat nostaa esille tässä sähköpostissa, ja me kääritään se parhaalla mahdollisella tavalla seurantasähköpostipohjalla."
+    },
+    {
+        "id": "1314",
+        "title": "Kylmä sähköposti",
+        "header": "Luo sähköposteja kylmään markkinointiin saadaksesi yrityksesi oikeiden ihmisten eteen.\n",
+        "description": "Kylmä sähköposti on viesti, joka lähetetään potentiaaliselle asiakkaalle, jota lähettäjä ei ole aiemmin ottanut yhteyttä. Se käytetään tuotteen tai palvelun esittelyyn ja tapaamisen tai mahdollisuuden pyytämiseen tuotteen tai palvelun keskustelemiseksi edelleen.",
+        "url": "/app/cold-email",
+        "status": "",
+        "tag": "Sähköposti",
+        "tagId": 6,
+        "helpHint": "Kirjoita muutama kappale yrityksestäsi tai tuotteestasi; sitten kääri se kylmään malliin mahdollisimman hyvin."
+    },
+    {
+        "id": "1426",
+        "title": "Kiitos sähköposti",
+        "header": " Kirjoita sähköposti kiittää asiakkaita heidän ostoksensa jälkeen.\n",
+        "description": "Tunnustaminen ja kiittäminen joku heidän apuaan tai tukea voi olla hyvä tapa osoittaa arvostusta ja vahvistaa suhteita.",
+        "url": "/app/thanks-you-email",
+        "status": "",
+        "tag": "Sähköposti",
+        "tagId": 6,
+        "helpHint": "Kirjoita muutama kappale liiketoiminnan tai tuotteen; sitten me kääri se kiitos sinulle mallin parhaalla mahdollisella tavalla."
+    },
+    {
+        "id": "164",
+        "title": "Grammar",
+        "header": " Tarkista tekstisi kielioppi ja tee siitä houkuttelevampi.\n",
+        "description": "AI-voimin kielioppityökalut voivat auttaa parantamaan kirjoittamasi tekstin kielioppia ja välimerkkejä.",
+        "url": "/app/grammar",
+        "status": "",
+        "tag": "Writing Aid",
+        "tagId": 3,
+        "helpHint": "Kirjoita muutama kappale; sitten parannamme annetun tekstin kielioppia."
+    },
+    {
+        "id": "1825",
+        "title": "Meta Descriptions",
+        "header": " Kirjoita kuvaus sivustostasi, joka saa hakukoneet rankkaamaan sivustosi.",
+        "description": "It can be used to create meta descriptions, which are short summaries of the page that appear in search engine results.",
+        "url": "/app/meta-descriptions",
+        "status": "",
+        "tag": "Blog",
+        "tagId": 5,
+        "helpHint": "Write a few paragraphs; then we'll create a meta description for the given text."
+    },
+    {
+        "id": "198",
+        "title": "Tuotteen kuvaus",
+        "header": " Luo ainutlaatuinen kuvaus, joka markkinoi tuotteen arvoa.\n",
+        "description": "Se voidaan käyttää luomaan hyvin kirjoitettu ja informatiivinen tuotekuvaus Amazonille.",
+        "url": "/app/productdescription",
+        "status": "",
+        "tag": "Tuotteen kehitys",
+        "tagId": 4,
+        "helpHint": "Kirjoita muutama kappale; sitten luomme tuotekuvauksen annetulle tekstille."
+    },
+    {
+        "id": "2215",
+        "title": "Laajenna esitys",
+        "header": " Generate ideas by expanding a key point.\n",
+        "description": "It can be used to expand the ideas presented in an outline to help you write a more detailed and comprehensive document.",
+        "url": "/app/expand",
+        "status": "",
+        "tag": "Blog",
+        "tagId": 5,
+        "helpHint": "Write a few paragraphs; then we'll expand the given text."
+    },
+    {
+        "id": "2317",
+        "title": "Avainsanahaku",
+        "header": " Etsi oikeat avainsanat yrityksellesi.\n",
+        "description": "Se auttaa sinua löytämään parhaat kohdeavainsanat sisällöllesi ja kuinka optimoitu sisältösi voi olla hakukoneille eri avainsanoilla.",
+        "url": "/app/keyword-finder",
+        "status": "",
+        "tag": "Kirjoitusapu",
+        "tagId": 3,
+        "helpHint": "Kirjoita muutama kappale; sitten löydämme parhaat avainsanat annetulle tekstille, joka on optimoitu hakukoneille ja sisältölle, joka välittää sen."
+    },
+    {
+        "id": "2410",
+        "title": "Kysymysgeneraattori",
+        "header": " Luo kysymyksiä, jotka saavat potentiaaliset asiakkaasi haluamaan ostaa.\n",
+        "description": "Se voidaan käyttää kysymyksen luomiseen kappaleesta tai tietystä aiheesta.",
+        "url": "/app/question-generator",
+        "status": "",
+        "tag": "Kirjoitusapu",
+        "tagId": 3,
+        "helpHint": "Kirjoita muutama kappale; sitten luomme kysymyksen annetulle tekstille."
+    },
+    {
+        "id": "259",
+        "title": "Alaotsikot",
+        "header": " Luo vakuuttavia alaotsikoita, jotka houkuttelevat ihmisiä lukemaan sisältöäsi.\n",
+        "description": "On hyödyllistä luoda lisäotsikko tai otsikko heti pääotsikon tai tekstin pääotsikon jälkeen.",
+        "url": "/app/sub-headers",
+        "status": "",
+        "tag": "Website",
+        "tagId": 2,
+        "helpHint": "Kirjoita muutama kappale; sitten luomme alaotsikon annetulle tekstille."
+    },
+    {
+        "id": "262",
+        "title": "Landing Page Headline Description",
+        "header": " A recipe for creating a compelling and engaging headline for a homepage.",
+        "description": "It can be used to create a short and catchy description that invites users to learn more about the product or service.",
+        "url": "/app/landing-page-headline-description",
+        "status": "",
+        "tag": "Website",
+        "tagId": 2,
+        "helpHint": "Write a few paragraphs; then we'll create a Landing Page Headline Description for the given text."
+    },
+    {
+        "id": "2619",
+        "title": "Landing Page Headline Description",
+        "header": "Koota kiinnostava otsikko, joka luo toimintaan kutsuvan kuvauksen sivullesi.",
+        "description": "Se voidaan käyttää luomaan lyhyt ja tarttuva kuvaus, joka kutsuu käyttäjiä oppimaan lisää tuotteesta tai palvelusta.",
+        "url": "/app/landing-page-headline-description",
+        "status": "",
+        "tag": "Blog",
+        "tagId": 5,
+        "helpHint": "Kirjoita muutama kappale; sitten luomme Landing Page Headline Description annetulle tekstille."
+    },
+    {
+        "id": "2816",
+        "title": "Blog Post PAS",
+        "header": " Generate unique posts using the best formats and the best words.\n",
+        "description": "Pain, Agitate, Solve. Or Problem, Agitate, Solution. If you want to write a good copy, you should think about the problem that your reader is experiencing, and then agitate that problem. Finally, offer a solution that will make the reader's life better.",
+        "url": "/app/blog-post-pas",
+        "status": "",
+        "tag": "Blog",
+        "tagId": 5,
+        "helpHint": "Write a few paragraphs and then we will create a problem, an agitation and a solution for the given text.",
+        "translation": {
+            "fi": "Kirjoita muutama kappale ja luomme ongelman, herättämisen ja ratkaisun annetulle tekstille."
+        }
+    },
+    {
+        "id": "2923",
+        "title": "Google Ad Description",
+        "header": " Kirjoita houkuttelevia mainoksia, jotka tuottavat klikkauksia.\n",
+        "description": "Se voidaan käyttää luomaan lyhyen ja tarttuvan kuvauksen, joka kutsuu käyttäjiä oppimaan lisää tuotteesta tai palvelusta.",
+        "url": "/app/g-ad-description",
+        "status": "",
+        "tag": "Ads",
+        "tagId": 4,
+        "helpHint": "Kirjoita muutama kappale; sitten luomme Google Ad Description annetun tekstin perusteella."
+    },
+    {
+        "id": "3013",
+        "title": "Google Ad Headline",
+        "header": "Luo mainosotsikoita, jotka huomataan.\n",
+        "description": "Google Ad Headlines are used to create a catchy headline for your Google Ad.",
+        "url": "/app/g-ad-title",
+        "status": "",
+        "tag": "Ads",
+        "tagId": 4,
+        "helpHint": "Write a few paragraphs; then we'll create a Google Ad Headline for the given text."
+    }
+]
