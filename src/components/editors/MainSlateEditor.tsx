@@ -446,7 +446,7 @@ const MagicButton = ({ onClick }) => {
         m: 0.5,
       }}
     >
-      <Tooltip title='AI Autocomplete'>
+      <Tooltip title='AI Autocomplete(⌘⏎)'>
         <IconButton
           size='small'
           sx={{
