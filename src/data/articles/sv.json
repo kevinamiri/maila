@@ -285,4 +285,15 @@
         "tagId": 4,
         "helpHint": "Skriv ett par stycken; sedan skapar vi en Google Ad Headline för den givna texten."
     },
+    {
+        "id": "3511",
+        "title": "Möjliga svar",
+        "header": "Den snabbaste vägen att få troliga svar och möjliga svar på vanliga frågor",
+        "description": "Det kan användas för att hitta möjliga svar på vanliga frågor",
+        "url": "/app/possible-answers",
+        "status": "",
+        "tag": "Writing Aid",
+        "tagId": 3,
+        "helpHint": "Låt oss ställa en fråga och sedan skapa ett troligt svar för den givna frågan."
+    }
 ]

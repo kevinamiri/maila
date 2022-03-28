@@ -287,5 +287,16 @@
         "tag": "Ads",
         "tagId": 4,
         "helpHint": "Write a few paragraphs; then we'll create a Google Ad Headline for the given text."
+    },
+    {
+        "id": "3511",
+        "title": "Mahdolliset Vastaukset",
+        "header": "Nopein tapa löytää todennäköiset vastaukset ja mahdolliset vastaukset yleisiin kysymyksiin",
+        "description": "Sitä voidaan käyttää löytämään mahdollisia vastauksia yleisiin kysymyksiin",
+        "url": "/app/possible-answers",
+        "status": "",
+        "tag": "Writing Aid",
+        "tagId": 3,
+        "helpHint": "Kysymme kysymyksen ja luomme sitten uskottavan vastauksen annettuun kysymykseen."
     }
 ]

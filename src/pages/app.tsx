@@ -585,16 +585,22 @@ export default function App() {
                     labelsLists={[]}
                   />
                   <ProductDescription
-                    label={"story about product text"}
-                    headerTitle={"story about product text"}
-                    description={"story about product text"}
+                    label={"questions and answers"}
+                    headerTitle={
+                      "The fastest way to get probable answers and factual verification to questions that come up when you write."
+                    }
+                    description={
+                      "It can be used to find answers for questions or fact-check content."
+                    }
                     example={
                       "AI to brainstorm blog posts meta descriptions tag and be more productive."
                     }
-                    instructHelp={"story about product text"}
-                    generateButtonName={"story about product text"}
+                    instructHelp={
+                      "Write a few paragraphs; we'll take it from there to the fact-check or answer to the questions that arise from your text."
+                    }
+                    generateButtonName={"compose"}
                     productType='44'
-                    path='/story'
+                    path='/questions-answers'
                     toneTextField={true}
                     labelsLists={[]}
                   />
