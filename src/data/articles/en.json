@@ -284,5 +284,16 @@
     "tag": "Ads",
     "tagId": 4,
     "helpHint": "Write a few paragraphs; then we'll create a Google Ad Headline for the given text."
+  },
+  {
+    "id": "3511",
+    "title": "Possible Answers",
+    "header": "The fastest way to get probable answers and possible answers to common questions",
+    "description": "It can be used to find possible answers for common questions",
+    "url": "/app/possible-answers",
+    "status": "",
+    "tag": "Writing Aid",
+    "tagId": 3,
+    "helpHint": "Let's ask a question and then create a plausible answer for the given question."
   }
 ]
