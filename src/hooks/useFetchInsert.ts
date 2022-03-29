@@ -1,7 +1,6 @@
 import useFetchDataSelected from "./useFetchDataSelected";
 import { updateProgressValue } from "../slices/progress";
 import { Editor, Transforms } from "slate";
-const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
 

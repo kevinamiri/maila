@@ -19,7 +19,18 @@ const useFetchSuffix = async (
     params["suffix"] = suffix;
     params["finalLang"] = fieldValues.language.LangCode;
     params["grecaptcharesponse"] = gtoken;
-
+    fieldValues.maxTokens
+      ? (params["maxTokens"] = fieldValues.maxTokens)
+      : null;
+    fieldValues.presencePenalty
+      ? (params["presencePenalty"] = fieldValues.presencePenalty)
+      : null;
+    fieldValues.temperature
+      ? (params["temperature"] = fieldValues.temperature)
+      : null;
+    fieldValues.frequencyPenalty
+      ? (params["frequencyPenalty"] = fieldValues.frequencyPenalty)
+      : null;
     selectedVoices ? (params["tone"] = selectedVoices) : null;
     urlType ? (params["type"] = urlType) : null;
     const data = JSON.stringify(params);

@@ -600,9 +600,30 @@ export default function App() {
                     }
                     generateButtonName={"compose"}
                     productType='44'
-                    path='/questions-answers'
+                    path='/possible-answers'
                     toneTextField={true}
                     labelsLists={[]}
+                  />
+                  <ProductDescription
+                    label={"advanced editor"}
+                    headerTitle={
+                      "This is an advanced editor for special applications and tuning outputs."
+                    }
+                    description={
+                      "This is an advanced editor for special applications and tuning outputs."
+                    }
+                    example={
+                      "This is an advanced editor for special applications and tuning outputs.."
+                    }
+                    instructHelp={
+                      "This is an advanced editor for special applications and tuning outputs."
+                    }
+                    generateButtonName={"Generate"}
+                    productType='44'
+                    path='/prompt'
+                    toneTextField={true}
+                    labelsLists={[]}
+                    tunningOptions
                   />
                   <ProductDescription
                     label={"suffix"}

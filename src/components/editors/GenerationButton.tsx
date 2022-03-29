@@ -144,6 +144,18 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
       fieldValues.featureValue
         ? (params["feature"] = fieldValues.featureValue)
         : null;
+      fieldValues.maxTokens
+        ? (params["maxTokens"] = fieldValues.maxTokens)
+        : null;
+      fieldValues.presencePenalty
+        ? (params["presencePenalty"] = fieldValues.presencePenalty)
+        : null;
+      fieldValues.temperature
+        ? (params["temperature"] = fieldValues.temperature)
+        : null;
+      fieldValues.frequencyPenalty
+        ? (params["frequencyPenalty"] = fieldValues.frequencyPenalty)
+        : null;
       urlType ? (params["type"] = urlType) : null;
       const data = JSON.stringify(params);
       const response = await fetch(theUrl, {
