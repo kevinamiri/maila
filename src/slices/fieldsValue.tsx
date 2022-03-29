@@ -69,16 +69,53 @@ const slice = createSlice({
       return updatedObject;
     },
 
-    // bugResolved: (bugs, action) => {
-    //   const index = bugs.findIndex((bug) => bug.id === action.payload.id);
-    //   bugs[index].resolved = true;
-    // },
-
-    // bugRemoved: (bugs, action) => {
-    //   const temp = bugs.filter((bug) => bug.id !== action.payload.id);
-    //   console.log(temp);
-    //   return temp;
-    // },
+    updateSuffix: (state: typedFieldsValue, action: PayloadAction<string>) => {
+      const updatedObject = {
+        ...state,
+        suffix: action.payload,
+      };
+      return updatedObject;
+    },
+    updateMaxTokens: (
+      state: typedFieldsValue,
+      action: PayloadAction<number>
+    ) => {
+      const updatedObject = {
+        ...state,
+        maxTokens: action.payload,
+      };
+      return updatedObject;
+    },
+    updateTemperature: (
+      state: typedFieldsValue,
+      action: PayloadAction<number>
+    ) => {
+      const updatedObject = {
+        ...state,
+        temperature: action.payload,
+      };
+      return updatedObject;
+    },
+    updatePresencePenalty: (
+      state: typedFieldsValue,
+      action: PayloadAction<number>
+    ) => {
+      const updatedObject = {
+        ...state,
+        presencePenalty: action.payload,
+      };
+      return updatedObject;
+    },
+    updateFrequencyPenalty: (
+      state: typedFieldsValue,
+      action: PayloadAction<number>
+    ) => {
+      const updatedObject = {
+        ...state,
+        frequencyPenalty: action.payload,
+      };
+      return updatedObject;
+    },
   },
 });
 
@@ -118,4 +155,32 @@ export const updateDefaultLanguage =
     dispatch(slice.actions.updateDefaultLanguage(x));
   };
 
-export default slice;
+export const updateSuffix =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateSuffix(x));
+  };
+
+export const updateMaxTokens =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateMaxTokens(x));
+  };
+
+export const updateTemperature =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateTemperature(x));
+  };
+
+export const updatePresencePenalty =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updatePresencePenalty(x));
+  };
+
+export const updateFrequencyPenalty =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateFrequencyPenalty(x));
+  };

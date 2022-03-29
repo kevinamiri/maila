@@ -42,7 +42,7 @@ async function UseCompletionSuffix(
     url,
     fieldValues
   );
-  console.log(textLists);
+
   dispatch(updateProgressValue(50));
   let textOptions = Object.values(textLists);
   console.log(textOptions);

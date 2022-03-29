@@ -19,6 +19,7 @@ import LanguageAutocomplete from "../subcomponents/LanguageAutocomplete";
 const MainSlateEditor = React.lazy(() => import("./MainSlateEditor"));
 import FormHelperText from "@mui/material/FormHelperText";
 import QuestionMarkIcon from "../subcomponents/questionMarkIcon";
+import InputSettings from "./input-settings";
 
 interface passageContext {
   children: SlateNode[];
@@ -44,6 +45,7 @@ interface ProductGenerationProps {
   labelsLists?: placeholderLists;
   path: string;
   label?: String | any;
+  tunningOptions?: any;
   description?: String | any;
   example?: String | any;
   instructHelp?: String | any;
@@ -64,6 +66,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   description,
   instructHelp,
   example,
+  tunningOptions,
 }: ProductGenerationProps) => {
   const editor = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor2 = useMemo(() => withHistory(withReact(createEditor())), []);
@@ -98,6 +101,9 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
             />
 
             <CardContent>
+              {tunningOptions && (
+                <InputSettings temperature tokenL frequencyP presenceP />
+              )}
               {toneTextField ? (
                 <FormRedux toneTextField labelsLists={labelsLists} />
               ) : null}
