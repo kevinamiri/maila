@@ -9,8 +9,8 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import ContactForm from "./ContactForm";
 import { styled } from "@mui/material/styles";
-import Link from "../Link";
 import { useIntl } from "react-intl";
+import Link from "@mui/material/Link";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {

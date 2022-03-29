@@ -4,7 +4,7 @@ import ChildText from "./ChildText";
 
 const Card3EditorsRightSide = ({ editor, editor2, editor3, editor4 }) => {
   return (
-    <Box sx={{ height: "144vh", overflow: "auto" }}>
+    <Box>
       <ChildText
         mainEditor={editor}
         correspondedEditor={editor2}
