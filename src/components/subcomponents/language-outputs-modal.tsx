@@ -70,7 +70,7 @@ export default function LanguageOutputsModal() {
           }}
           onClick={handleClickOpen}
         >
-          <TranslateRoundedIcon fontSize='medium' />
+          <TranslateRoundedIcon fontSize='small' />
         </IconButton>
       </Tooltip>
       <BootstrapDialog

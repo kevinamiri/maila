@@ -143,7 +143,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                     size='small'
                     aria-label='Expanding window'
                   >
-                    <OpenInFullRoundedIcon />
+                    <OpenInFullRoundedIcon fontSize='small' />
                   </IconButton>
                 </>
               }
