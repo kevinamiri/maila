@@ -106,7 +106,7 @@ const baseOptions = {
     body2: {
       fontWeight: 600,
       fontSize: '0.9rem',
-      lineHeight: '1.5',
+      lineHeight: '1.45',
       fontFamily:
         '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Tahoma, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
 
@@ -114,7 +114,7 @@ const baseOptions = {
     body1: {
       fontWeight: 400,
       fontSize: '.88rem',
-      lineHeight: '1.5',
+      lineHeight: '1.45',
       fontFamily: 'BlinkMacSystemFont,"Helvetica Neue","Roboto",Tahoma,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
 
     },
