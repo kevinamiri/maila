@@ -21,28 +21,44 @@ async function useFetchInsert(
         .map((x) => SlateNode.string(x))
         .join("\n")) ||
     selectedStr;
-  const textLists = await useFetchDataSelected(
-    selectedTextValue,
-    gtoken,
-    url,
-    fieldValues
-  );
-  dispatch(updateProgressValue(50));
-  let textOptions = Object.values(textLists);
-  textOptions
-    .filter((x: any) => x.search("Error 4043") != -1)
-    .map((element) => enqueueSnackbar(element));
-  textOptions
-    .filter((x: any) => x.search("Error 4043") == -1)
-    .map((text, index) =>
-      Transforms.insertText(editors[index + 1], text, { at: [0] })
-    );
-  dispatch(updateProgressValue(100));
-  ReactEditor.focus(editors[0]);
-  // Transforms.select(editors[0], Editor.end(editors[0], []));
-  Transforms.select(
-    editors[0],
-    editors[0].selection ? editors[0].selection : Editor.end(editors[0], [])
+  await useFetchDataSelected(selectedTextValue, gtoken, url, fieldValues).then(
+    (data) => {
+      if (data) {
+        dispatch(updateProgressValue(50));
+        let textOptions = Object.values(data);
+        textOptions
+          .filter((x: any) => x.search("Error 4043") != -1)
+          .map((element) => enqueueSnackbar(element));
+        textOptions
+          .filter((x: any) => x.search("Error 4043") == -1)
+          .map((text, index) =>
+            Transforms.insertText(editors[index + 1], text, { at: [0] })
+          );
+        dispatch(updateProgressValue(100));
+        ReactEditor.focus(editors[0]);
+        // Transforms.select(editors[0], Editor.end(editors[0], []));
+        Transforms.select(
+          editors[0],
+          editors[0].selection
+            ? editors[0].selection
+            : Editor.end(editors[0], [])
+        );
+      } else {
+        enqueueSnackbar(
+          "Something went wrong, please try again, if the problem persists please contact the support@maila.ai",
+          {
+            variant: "error",
+          }
+        );
+        Transforms.insertText(
+          editors[1],
+          data.message +
+            "Something went wrong, please try again, if the problem persists please contact the support@maila.ai",
+          { at: [0] }
+        );
+        dispatch(updateProgressValue(100));
+      }
+    }
   );
 }
 

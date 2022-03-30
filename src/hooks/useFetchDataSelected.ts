@@ -46,6 +46,7 @@ const useFetchDataSelected = async (
     return rerurningData;
   } catch (error) {
     console.error(error);
+    return error;
   }
 };
 

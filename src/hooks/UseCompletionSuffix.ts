@@ -35,31 +35,44 @@ async function UseCompletionSuffix(
     .join("\n");
   /** End: geting before selection and after selection */
 
-  const textLists = await useFetchSuffix(
+  await useFetchSuffix(
     beforeEditor,
     afterEditor,
     gtoken,
     url,
     fieldValues
-  );
-
-  dispatch(updateProgressValue(50));
-  let textOptions = Object.values(textLists);
-  console.log(textOptions);
-  textOptions
-    .filter((x: any) => x.search("Error 4043") != -1)
-    .map((element) => enqueueSnackbar(element));
-  textOptions
-    .filter((x: any) => x.search("Error 4043") == -1)
-    .map((text, index) =>
-      Transforms.insertText(editors[index + 1], text, { at: [0] })
-    );
-  dispatch(updateProgressValue(100));
-  ReactEditor.focus(editors[0]);
-  Transforms.select(
-    editors[0],
-    editors[0].selection ? editors[0].selection : Editor.end(editors[0], [])
-  );
+  ).then((data) => {
+    if (data) {
+      dispatch(updateProgressValue(50));
+      let textOptions = Object.values(data);
+      console.log(textOptions);
+      textOptions
+        .filter((x: any) => x.search("Error 4043") != -1)
+        .map((element) => enqueueSnackbar(element));
+      textOptions
+        .filter((x: any) => x.search("Error 4043") == -1)
+        .map((text, index) =>
+          Transforms.insertText(editors[index + 1], text, { at: [0] })
+        );
+      dispatch(updateProgressValue(100));
+      ReactEditor.focus(editors[0]);
+      Transforms.select(
+        editors[0],
+        editors[0].selection ? editors[0].selection : Editor.end(editors[0], [])
+      );
+    } else {
+      enqueueSnackbar(
+        "Something went wrong, please try again, if the problem persists please contact the support@maila.ai"
+      );
+      Transforms.insertText(
+        editors[1],
+        data.message +
+          "Something went wrong, please try again, if the problem persists please contact the support@maila.ai",
+        { at: [0] }
+      );
+      dispatch(updateProgressValue(100));
+    }
+  });
 }
 
 export default UseCompletionSuffix;

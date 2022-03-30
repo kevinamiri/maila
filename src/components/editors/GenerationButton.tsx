@@ -101,7 +101,8 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
     } catch (error) {
       Transforms.insertText(
         editors[1],
-        error.message + " Please contact the support@maila.ai",
+        error.message +
+          "Something went wrong, please try again, if the problem persists please contact the support@maila.ai",
         { at: [0] }
       );
       dispatch(updateProgressValue(100));
