@@ -181,11 +181,10 @@ export default function App() {
               component='main'
             >
               <MarginBox />
-              <Container
-                maxWidth='lg'
+              <Box
                 sx={{
-                  paddingTop: (theme) => theme.spacing(4),
-                  paddingBottom: (theme) => theme.spacing(4),
+                  py: 3,
+                  px: "1vw",
                 }}
               >
                 <SearchBox />
@@ -639,7 +638,7 @@ export default function App() {
                   />
                   <AccountManage path='/profile' />
                 </Router>
-              </Container>
+              </Box>
             </Box>
           </Box>
         </IntlProvider>

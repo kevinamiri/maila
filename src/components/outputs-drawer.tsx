@@ -30,7 +30,7 @@ const OutputsDrawer: FC<SettingsDrawerProps> = (props) => {
         sx: {
           width: { xs: "100%", md: "31%" },
           height: { xs: "43%", md: "100%" },
-          mt: { xs: 0, md: "5.5rem" },
+          mt: { xs: 0, md: "5rem" },
           border: (theme) => `1px solid ${theme.palette.divider}`,
           borderRadius: 1,
         },
