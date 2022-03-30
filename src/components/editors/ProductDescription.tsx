@@ -20,11 +20,17 @@ const MainSlateEditor = React.lazy(() => import("./MainSlateEditor"));
 import FormHelperText from "@mui/material/FormHelperText";
 import QuestionMarkIcon from "../subcomponents/questionMarkIcon";
 import InputSettings from "./input-settings";
-
-interface passageContext {
-  children: SlateNode[];
-  type: string;
-}
+import OutputsDrawer from "components/outputs-drawer";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import IconButton from "@mui/material/IconButton";
+import OpenInFullRoundedIcon from "@mui/icons-material/OpenInFullRounded";
+import { useDispatch, useSelector } from "react-redux";
+import { updateExpansion } from "../../slices/ui-states";
+import TranslateRoundedIcon from "@mui/icons-material/TranslateRounded";
+import LanguageOutputsModal from "../../components/subcomponents/language-outputs-modal";
 
 interface placeholdersList {
   label: string;
@@ -72,8 +78,11 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   const editor2 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor3 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor4 = useMemo(() => withHistory(withReact(createEditor())), []);
+  const [open, setOpen] = React.useState(false);
+  const dispatch = useDispatch();
+  const { expand } = useSelector((state) => state.expandReducer);
 
-  console.log("ProductDescription");
+  console.log(expand);
   useEffect(() => {
     // load the script by passing the URL
     loadScriptByURL(
@@ -84,11 +93,39 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
       }
     );
   }, []);
+  const handleClose = (): void => {
+    dispatch(updateExpansion(false));
+  };
+  const handleExpand = (): void => {
+    dispatch(updateExpansion(!expand));
+  };
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <>
-      <Grid container spacing={1}>
-        <Grid item xs={12} sm={12} md={7}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Box
+          sx={{
+            flexGrow: 1,
+            // height: 233,
+            width: "100%",
+            // 'vw' make it more smoother than '%'
+            ...(expand && {
+              width: { xs: "100%", md: "calc(100% - 30%)" },
+              height: { xs: "calc(100% - 30%)", md: "100%" },
+              marginRight: { xs: "0%", md: "33%" },
+              marginBottom: { xs: "60vw", md: "0%" },
+            }),
+          }}
+        >
           <Card
             elevation={1}
             sx={{
@@ -98,6 +135,18 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
             <CardHeader
               title={label}
               avatar={<QuestionMarkIcon title={description} />}
+              action={
+                <>
+                  <LanguageOutputsModal />
+                  <IconButton
+                    onClick={handleExpand}
+                    size='small'
+                    aria-label='Expanding window'
+                  >
+                    <OpenInFullRoundedIcon />
+                  </IconButton>
+                </>
+              }
             />
 
             <CardContent>
@@ -134,20 +183,35 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
               />
             </CardActions>
           </Card>
-        </Grid>
-        <Grid item xs={12} sm={12} md={5}>
-          <Card elevation={1}>
-            <LinearProgressLoading />
-            <CardHeader avatar={<LanguageAutocomplete />} />
-            <Card3EditorsRightSide
-              editor={editor}
-              editor2={editor2}
-              editor3={editor3}
-              editor4={editor4}
-            />
-          </Card>
-        </Grid>
-      </Grid>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: { xs: "center", md: "flex-start" },
+
+            // top: { xs: "40%", md: "100%" },
+          }}
+        >
+          <OutputsDrawer
+            anchor={matches ? "right" : "bottom"}
+            handleExpand={handleExpand}
+            onClose={handleClose}
+            open={expand}
+          >
+            <Card elevation={1} sx={{ width: "100%" }}>
+              <LinearProgressLoading />
+              {/* <CardHeader avatar={<LanguageAutocomplete />} /> */}
+              <Card3EditorsRightSide
+                editor={editor}
+                editor2={editor2}
+                editor3={editor3}
+                editor4={editor4}
+              />
+            </Card>
+          </OutputsDrawer>
+        </Box>
+      </Box>
     </>
   );
 };
