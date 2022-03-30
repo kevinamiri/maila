@@ -8,6 +8,7 @@ import AccordionBlock from "../components/landings/AccordionBlock";
 import HomeHeroPage from "../components/landings/HomeHeroPage";
 import _ from "lodash";
 import LandingsFeature from "../components/landings/landings-feature";
+import Container from "@mui/material/Container";
 
 const HomePage = (props) => {
   const data = props.data;
@@ -16,30 +17,32 @@ const HomePage = (props) => {
   const langKey = dataMarkdown.frontmatter.lang;
   return (
     <Layout data={props.data} jsonData={jsonData} location={props.location}>
-      <HomeHeroPage
-        header={dataMarkdown.frontmatter.H0121}
-        cta={dataMarkdown.frontmatter.H01051}
-        title={dataMarkdown.frontmatter.T0152}
-        labelbutton={dataMarkdown.frontmatter.L0401[0]}
-        helpernotice={dataMarkdown.frontmatter.H01047}
-      />
-      <LandingsFeature
-        headerRight={dataMarkdown.frontmatter.H01194[0]}
-        descriptionRight={dataMarkdown.frontmatter.H01194[1]}
-        headerLeft={dataMarkdown.frontmatter.H01194[2]}
-        descriptionLeft={dataMarkdown.frontmatter.H01194[3]}
-      />
-      <CardFeatureBlock
-        titles={dataMarkdown.frontmatter.T100}
-        bodys={dataMarkdown.frontmatter.B100}
-      />
-      <HomeBlock03
-        langKey={langKey}
-        list={_.chunk(dataMarkdown.frontmatter.F100, 2)}
-      />
-      <AccordionBlock
-        questions={_.chunk(dataMarkdown.frontmatter.H0118.A0117q, 2)}
-      />
+      <Container maxWidth='xl'>
+        <HomeHeroPage
+          header={dataMarkdown.frontmatter.H0121}
+          cta={dataMarkdown.frontmatter.H01051}
+          title={dataMarkdown.frontmatter.T0152}
+          labelbutton={dataMarkdown.frontmatter.L0401[0]}
+          helpernotice={dataMarkdown.frontmatter.H01047}
+        />
+        <LandingsFeature
+          headerRight={dataMarkdown.frontmatter.H01194[0]}
+          descriptionRight={dataMarkdown.frontmatter.H01194[1]}
+          headerLeft={dataMarkdown.frontmatter.H01194[2]}
+          descriptionLeft={dataMarkdown.frontmatter.H01194[3]}
+        />
+        <CardFeatureBlock
+          titles={dataMarkdown.frontmatter.T100}
+          bodys={dataMarkdown.frontmatter.B100}
+        />
+        <HomeBlock03
+          langKey={langKey}
+          list={_.chunk(dataMarkdown.frontmatter.F100, 2)}
+        />
+        <AccordionBlock
+          questions={_.chunk(dataMarkdown.frontmatter.H0118.A0117q, 2)}
+        />
+      </Container>
     </Layout>
   );
 };

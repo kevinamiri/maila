@@ -7,7 +7,7 @@ export default {
     '"Segoe UI"',
     "DM Sans",
     '"Helvetica Neue"',
-    "Arial",
+    "Inter",
     "sans-serif",
     '"Apple Color Emoji"',
     '"Segoe UI Emoji"',

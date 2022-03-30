@@ -12,6 +12,7 @@ import { FormattedMessage } from "react-intl";
 import { SeverityPill } from "./severity-pill";
 
 import { SettingsButton } from "./SettingsButton";
+import Container from "@mui/material/Container";
 
 const drawerWidth = 240;
 
@@ -66,67 +67,69 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
         }),
       }}
     >
-      <Toolbar component='nav'>
-        <MenuIcon icontype={icon} />
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            flexGrow: 1,
-            ml: 1,
-          }}
-        >
-          <SeverityPill
+      <Container maxWidth='xl'>
+        <Toolbar component='nav'>
+          <MenuIcon icontype={icon} />
+          <Box
             sx={{
-              alignSelf: "flex-end",
-              mr: 1,
+              display: "flex",
+              flexDirection: "row",
+              flexGrow: 1,
               ml: 1,
-              mt: 1,
             }}
-            color='success'
           >
-            beta
-          </SeverityPill>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-          }}
-        >
-          {uilang && uilang}
-          <SettingsButton />
-          <UserAvatar handleClick={handleClick} />
-        </Box>
+            <SeverityPill
+              sx={{
+                alignSelf: "flex-end",
+                mr: 1,
+                ml: 1,
+                mt: 1,
+              }}
+              color='success'
+            >
+              beta
+            </SeverityPill>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+            }}
+          >
+            {uilang && uilang}
+            <SettingsButton />
+            <UserAvatar handleClick={handleClick} />
+          </Box>
 
-        {selectedUrl && (
-          <Menu
-            id='demo-positioned-menu'
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "left",
-            }}
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-          >
-            <MenuItem onClick={() => navigate("/app/profile")}>
-              <FormattedMessage id='MC01' />
-            </MenuItem>
-            <MenuItem>
-              <FormattedMessage id='MC02' />
-            </MenuItem>
-            <MenuItem onClick={logout}>
-              <FormattedMessage id='MC03' />
-            </MenuItem>
-          </Menu>
-        )}
-      </Toolbar>
+          {selectedUrl && (
+            <Menu
+              id='demo-positioned-menu'
+              anchorEl={anchorEl}
+              keepMounted
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+            >
+              <MenuItem onClick={() => navigate("/app/profile")}>
+                <FormattedMessage id='MC01' />
+              </MenuItem>
+              <MenuItem>
+                <FormattedMessage id='MC02' />
+              </MenuItem>
+              <MenuItem onClick={logout}>
+                <FormattedMessage id='MC03' />
+              </MenuItem>
+            </Menu>
+          )}
+        </Toolbar>
+      </Container>
     </AppBar>
   );
 };
