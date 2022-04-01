@@ -470,7 +470,7 @@ export default function App() {
                     example={<FormattedMessage id='E56720' />}
                     instructHelp={<FormattedMessage id='H43220' />}
                     generateButtonName={<FormattedMessage id='N78920' />}
-                    productType='4'
+                    productType='5'
                     path='/productdescriptionamazon'
                     toneTextField={true}
                     labelsLists={[]}
