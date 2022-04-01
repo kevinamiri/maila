@@ -463,7 +463,7 @@ export default function App() {
                     toneTextField={true}
                     labelsLists={[]}
                   />
-                  <ProductDescription
+                  <ProductDescriptionTool
                     label={<FormattedMessage id='L12320' />}
                     headerTitle={<FormattedMessage id='T09820' />}
                     description={<FormattedMessage id='D76520' />}
@@ -473,7 +473,6 @@ export default function App() {
                     productType='5'
                     path='/productdescriptionamazon'
                     toneTextField={true}
-                    labelsLists={[]}
                   />
                   <ProductDescription
                     label={<FormattedMessage id='L12321' />}
