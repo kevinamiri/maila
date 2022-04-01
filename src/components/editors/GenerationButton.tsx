@@ -32,7 +32,7 @@ interface GenerationButtonProps {
 }
 
 const GenerationButton: React.FC<GenerationButtonProps> = ({
-  inputLimitation = 201,
+  inputLimitation = 15000,
   productType = "4",
   productUrl = "generate",
   generateButtonName = "Generate",
@@ -71,7 +71,7 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
   ) {
     try {
       const editorContents = serialize(editor).substring(0, inputLimitation);
-      serialize(editor).length > 1000
+      serialize(editor).length > 15000
         ? enqueueSnackbar("request is more than the allowed amount of text.")
         : "";
       // string , url, gtoken

@@ -12,7 +12,7 @@ export default function ProductDescriptionApp() {
         <ProductDescription
           message01='Please select the text you would like to modify'
           mainPlaceholder="Let's get started with a product description, shall we?"
-          inputLimitation={201}
+          inputLimitation={15000}
           productType='4'
           headerTitle='Product Description'
           generateButtonName='Generate description'

@@ -1,9 +1,7 @@
 import React, { useMemo, useEffect, Suspense } from "react";
 import { withReact } from "editable-slate-react";
 import { createEditor } from "slate";
-import { Node as SlateNode } from "slate";
 import { withHistory } from "slate-history";
-import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
@@ -15,13 +13,11 @@ const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import FormRedux from "./FormRedux";
 import Card3EditorsRightSide from "./Card3EditorsRightSide";
 import GenerationButton from "./GenerationButton";
-import LanguageAutocomplete from "../subcomponents/LanguageAutocomplete";
 const MainSlateEditor = React.lazy(() => import("./MainSlateEditor"));
 import FormHelperText from "@mui/material/FormHelperText";
 import QuestionMarkIcon from "../subcomponents/questionMarkIcon";
 import InputSettings from "./input-settings";
 import OutputsDrawer from "components/outputs-drawer";
-import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -29,7 +25,6 @@ import IconButton from "@mui/material/IconButton";
 import OpenInFullRoundedIcon from "@mui/icons-material/OpenInFullRounded";
 import { useDispatch, useSelector } from "react-redux";
 import { updateExpansion } from "../../slices/ui-states";
-import TranslateRoundedIcon from "@mui/icons-material/TranslateRounded";
 import LanguageOutputsModal from "../../components/subcomponents/language-outputs-modal";
 
 interface placeholdersList {
@@ -61,7 +56,7 @@ interface ProductGenerationProps {
 const ProductDescription: React.FC<ProductGenerationProps> = ({
   message01 = "Please select the text you would like to modify",
   mainPlaceholder = `Let's get started with a product description, shall we?`,
-  inputLimitation = 201,
+  inputLimitation = 15000,
   productType = "4",
   label,
   productUrl = "generate",

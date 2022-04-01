@@ -1,6 +1,6 @@
 import React from "react";
 import { Auth } from "aws-amplify";
-
+// Fetch data from API
 const useFetchDataSelected = async (
   parameters: string,
   gtoken: string,
