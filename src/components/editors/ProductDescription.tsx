@@ -26,12 +26,9 @@ import OpenInFullRoundedIcon from "@mui/icons-material/OpenInFullRounded";
 import { useDispatch, useSelector } from "react-redux";
 import { updateExpansion } from "../../slices/ui-states";
 import LanguageOutputsModal from "../../components/subcomponents/language-outputs-modal";
+import { 
 
-interface placeholdersList {
-  label: string;
-  placeholder: string;
-  dispatcher: Function;
-}
+interface
 type placeholderLists = placeholdersList[];
 
 interface ProductGenerationProps {
@@ -73,7 +70,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   const editor2 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor3 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor4 = useMemo(() => withHistory(withReact(createEditor())), []);
-  const [open, setOpen] = React.useState(false);
+  const editor5 = useMemo(() => withHistory(withReact(createEditor())), []);
   const dispatch = useDispatch();
   const { expand } = useSelector((state) => state.expandReducer);
 
