@@ -83,12 +83,15 @@ const MainSlateEditor = (props) => {
   const editor3 = props.editor3;
   const editor4 = props.editor4;
   const editors = [editor, editor2, editor3, editor4];
+  const storageKey =
+    props.storageKey === undefined ? "document" : props.storageKey;
+
   let inputLimitation = props.limitChar;
 
   const defaultValue = () => {
     return (
       JSON.parse(
-        typeof window !== "undefined" && window.localStorage.getItem("content")
+        typeof window !== "undefined" && window.localStorage.getItem(storageKey)
       ) || [
         {
           type: "paragraph",
@@ -133,7 +136,7 @@ const MainSlateEditor = (props) => {
   const handleChange = (value: SlateNode[]) => {
     setValue(value);
     const content = JSON.stringify(value);
-    localStorage.setItem("content", content);
+    localStorage.setItem(storageKey, content);
     if (!editor.selection) return;
     dispatch(setCurrentWordRange(editor.selection));
     // savedSelection.current = editor.selection;

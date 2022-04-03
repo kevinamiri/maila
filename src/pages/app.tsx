@@ -28,6 +28,7 @@ import { useSnackbar } from "notistack";
 // import CssBaseline from "@mui/material/CssBaseline";
 // import { QuickStats } from "../components/QuickStats";
 import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
+import EditorManage from "../components/editor-manage";
 
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
@@ -602,7 +603,7 @@ export default function App() {
                     toneTextField={true}
                     labelsLists={[]}
                   />
-                  <ProductDescription
+                  <EditorManage
                     label={"advanced editor"}
                     headerTitle={
                       "This is an advanced editor for special applications and tuning outputs."
@@ -636,6 +637,7 @@ export default function App() {
                     labelsLists={[]}
                   />
                   <AccountManage path='/profile' />
+                  <EditorManage path='/editor' />
                 </Router>
               </Box>
             </Box>

@@ -26,19 +26,22 @@ import OpenInFullRoundedIcon from "@mui/icons-material/OpenInFullRounded";
 import { useDispatch, useSelector } from "react-redux";
 import { updateExpansion } from "../../slices/ui-states";
 import LanguageOutputsModal from "../../components/subcomponents/language-outputs-modal";
-import { 
 
-interface
+interface placeholdersList {
+  label: string;
+  placeholder: string;
+  dispatcher: (value: string) => void;
+}
 type placeholderLists = placeholdersList[];
 
-interface ProductGenerationProps {
+export interface ProductGenerationProps {
   generateButtonName?: string | any;
   inputLimitation?: number;
   message01?: string | any;
   mainPlaceholder?: String | any;
   headerTitle?: string | any;
   toneTextField?: boolean;
-  productType: string;
+  productType?: string;
   productUrl?: string;
   labelsLists?: placeholderLists;
   path: string;
@@ -48,6 +51,7 @@ interface ProductGenerationProps {
   example?: String | any;
   instructHelp?: String | any;
   component?: React.ComponentType<{}>;
+  editorType?: "document" | "draft";
 }
 
 const ProductDescription: React.FC<ProductGenerationProps> = ({
@@ -65,16 +69,28 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   instructHelp,
   example,
   tunningOptions,
+  editorType = "document",
 }: ProductGenerationProps) => {
-  const editor = useMemo(() => withHistory(withReact(createEditor())), []);
+  // const editor = useMemo(() => withHistory(withReact(createEditor())), []);
+  const editor1 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor2 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor3 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor4 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor5 = useMemo(() => withHistory(withReact(createEditor())), []);
+
+  // const editors = [editor, editor2, editor3, editor4, editor5];
   const dispatch = useDispatch();
   const { expand } = useSelector((state) => state.expandReducer);
 
-  console.log(expand);
+  const mainEditors = {
+    document: editor1,
+    draft: editor5,
+    storageKey: ["draft", "document"],
+  };
+
+  const editor = editorType === "draft" ? editor5 : editor1;
+  const storageKey = editorType === "draft" ? "draft" : "document";
+
   useEffect(() => {
     // load the script by passing the URL
     loadScriptByURL(
@@ -154,6 +170,8 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                   placeholder={example}
                   editor={editor}
                   limitChar={inputLimitation}
+                  //main editor storage name for editor
+                  storageKey={storageKey}
                   editor2={editor2}
                   editor3={editor3}
                   editor4={editor4}
@@ -168,6 +186,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                 productUrl={productUrl}
                 generateButtonName={generateButtonName}
                 headerTitle={headerTitle}
+                // the main editor is editor
                 editor={editor}
                 editor2={editor2}
                 editor3={editor3}
@@ -181,8 +200,6 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
             display: "flex",
             flexDirection: "column",
             alignItems: { xs: "center", md: "flex-start" },
-
-            // top: { xs: "40%", md: "100%" },
           }}
         >
           <OutputsDrawer
@@ -193,8 +210,8 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
           >
             <Card elevation={1} sx={{ width: "100%" }}>
               <LinearProgressLoading />
-              {/* <CardHeader avatar={<LanguageAutocomplete />} /> */}
               <Card3EditorsRightSide
+                // the main editor is editor
                 editor={editor}
                 editor2={editor2}
                 editor3={editor3}
