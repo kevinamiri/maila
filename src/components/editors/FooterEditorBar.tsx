@@ -43,9 +43,9 @@ export const FooterEditorBar = ({
   disabled = false,
 }: footerEditorBarProps) => {
   const CharCount =
-    serialize(editor).length > 1000 ? TotalCharactersWarning : TotalCharacters;
+    serialize(editor).length > 15000 ? TotalCharactersWarning : TotalCharacters;
   const warningMessage =
-    serialize(editor).length > 1000
+    serialize(editor).length > 15000
       ? "Please enter a maximum of 200 words."
       : "";
 

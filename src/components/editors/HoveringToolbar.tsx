@@ -10,7 +10,7 @@ export default function HoveringToolbar(props) {
   const selectionStatus =
     selectedTextValue &&
     selectedTextValue.length > 2 &&
-    selectedTextValue.length < 1000
+    selectedTextValue.length < 15000
       ? true
       : false;
 

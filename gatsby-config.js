@@ -140,7 +140,7 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://maila.ai",
-        sitemap: "https://maila.ai/sitemap.xml",
+        sitemap: "https://maila.ai/sitemap/sitemap-0.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
