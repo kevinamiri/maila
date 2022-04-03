@@ -14,29 +14,22 @@ const SearchBox: FC = () => {
         minHeight: "100%",
         pb: 2,
         width: "100%",
-        // 'vw' make it more smoother than '%'
         ...(expand && {
           width: { xs: "100%", md: "calc(100% - 33%)" },
-          // height: { xs: "calc(100% - 30%)", md: "100%" },
-          // marginRight: { xs: "0%", md: "33%" },
-          // marginBottom: { xs: "60vw", md: "0%" },
         }),
       }}
     >
       <Paper>
         <Box sx={{ p: 1 }}>
-          <Container maxWidth='md'>
-            <Box
-              sx={{
-                alignItems: "center",
-                justifyContent: "center",
-                display: "flex",
-                m: 1,
-              }}
-            >
-              <ProductAutocompleteUrl />
-            </Box>
-          </Container>
+          <Box
+            sx={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <ProductAutocompleteUrl />
+          </Box>
         </Box>
       </Paper>
     </Box>

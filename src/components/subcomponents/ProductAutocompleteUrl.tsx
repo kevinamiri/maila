@@ -23,7 +23,7 @@ export default function ProductAutocompleteUrl({
 }: ProductAutocompleteUrlProps) {
   const [inputValue, setInputValue] = React.useState("");
   return (
-    <Stack spacing={2} sx={{ width: 500 }}>
+    <Stack spacing={2} sx={{ width: { xs: "80%", md: "70%" } }}>
       <Autocomplete
         size='small'
         freeSolo

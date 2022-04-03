@@ -65,7 +65,7 @@ const baseOptions = {
     MuiTab: {
       styleOverrides: {
         root: {
-          fontSize: 14,
+          fontSize: 12,
           fontWeight: 500,
           lineHeight: 1.71,
           minWidth: 'auto',
