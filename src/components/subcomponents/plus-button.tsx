@@ -1,11 +1,8 @@
 import React from "react";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ToggleButtonList from "./ToggleButtonList";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 
-export default function Arrow(props) {
+export default function BarButtonPlusReplace(props) {
   return (
     <ToggleButtonList
       title='Replacement'

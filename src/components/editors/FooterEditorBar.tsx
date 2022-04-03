@@ -1,5 +1,5 @@
 import React from "react";
-import Arrow from "../subcomponents/Arrow";
+import PlusButton from "../subcomponents/plus-button";
 import { Grid, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
@@ -61,7 +61,7 @@ export const FooterEditorBar = ({
         }}
       />
       <Grid item xs={11} container direction='row' alignItems='flex-end'>
-        {disabled ? "" : <Arrow onClick={handleTranser} />}
+        {disabled ? "" : <PlusButton onClick={handleTranser} />}
         <CopyToClipboard editor={editor} />
         <ToggleButtonList
           title='BookmarkBorderRoundedIcon'
