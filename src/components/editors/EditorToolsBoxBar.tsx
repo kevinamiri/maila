@@ -10,6 +10,7 @@ import SaveIcon from "@mui/icons-material/Save";
 import { useSelector } from "react-redux";
 import CircularProgress from "@mui/material/CircularProgress";
 import LoadingButton from "@mui/lab/LoadingButton";
+import Play from "components/subcomponents/Play";
 const EditorToolsBoxBar = ({
   handleClarify,
   handleSimplify,
@@ -50,6 +51,7 @@ const EditorToolsBoxBar = ({
           icon={<SpellcheckIcon />}
           handleClick={handleSpellcheck}
         />
+        <Play />
       </Box>
     </>
   );
