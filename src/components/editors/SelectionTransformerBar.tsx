@@ -109,6 +109,26 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
     });
   };
 
+  const handleElegantify = (e) => {
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          useFetchInsert(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "47",
+            fieldValues,
+            selectedTextValue
+          );
+          e.preventDefault();
+        });
+    });
+  };
+
   const handleSimplify = (e) => {
     e.preventDefault();
     window.grecaptcha.ready(() => {
@@ -136,6 +156,7 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
         handleAdvancify={handleAdvancify}
         handleSimplify={handleSimplify}
         handleClarify={handleClarify}
+        handleElegantify={handleElegantify}
       />
     </>
   );

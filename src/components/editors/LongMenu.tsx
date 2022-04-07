@@ -52,7 +52,6 @@ export default function LongMenu({ handleSpellcheck }) {
           icon={<SpellcheckIcon />}
           handleClick={handleSpellcheck}
         />
-        <Play />
       </Menu>
     </div>
   );

@@ -10,6 +10,7 @@ import ToggleButtonList from "../subcomponents/ToggleButtonList";
 import CopyToClipboard from "../subcomponents/CopyToClipboard";
 import { serialize } from "hooks/currentSelectEditor";
 import BookmarkBorderRoundedIcon from "@mui/icons-material/BookmarkBorderRounded";
+import Play from "components/subcomponents/Play";
 
 const TotalCharacters = styled("div")(({ theme }) => ({
   padding: "0.1em 0.1rem",
@@ -68,6 +69,7 @@ export const FooterEditorBar = ({
           icon={<BookmarkBorderRoundedIcon fontSize='inherit' />}
           disabled={true}
         />
+        <Play />
       </Grid>
       <Grid
         item

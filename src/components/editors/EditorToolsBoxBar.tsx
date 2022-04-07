@@ -16,6 +16,7 @@ const EditorToolsBoxBar = ({
   handleSimplify,
   handleAdvancify,
   handleSpellcheck,
+  handleElegantify,
 }) => {
   const { progressValue } = useSelector((state) => state.progressValue);
   const loading = progressValue > 0 && progressValue < 100;
@@ -47,11 +48,15 @@ const EditorToolsBoxBar = ({
           handleClick={handleAdvancify}
         />
         <BarToggleButton
+          format='Elegantify'
+          icon={<TextRotationAngleupIcon />}
+          handleClick={handleElegantify}
+        />
+        <BarToggleButton
           format='Spellcheck'
           icon={<SpellcheckIcon />}
           handleClick={handleSpellcheck}
         />
-        <Play />
       </Box>
     </>
   );

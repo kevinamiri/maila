@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Grid, IconButton, Tooltip } from "@mui/material";
 import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
 import { useSelector } from "react-redux";
+import ToggleButtonList from "./ToggleButtonList";
 //Mui theme
 
 export default function Play() {
@@ -20,21 +21,29 @@ export default function Play() {
         </audio>
       </Grid>
       <Tooltip title='Listen' arrow>
-        <IconButton
+        <ToggleButtonList
+          icon={<PlayCircleOutlineRoundedIcon fontSize='inherit' />}
+          onClick={() => {
+            serverAudioStreamControl.current.load();
+            serverAudioStreamControl.current.play();
+          }}
+          disabled={selectedTextValue.length > 2 ? false : true}
+        />
+        {/* <IconButton
           size='small'
           color='primary'
           sx={{
-            p: 0.5,
+            p: 0.0,
           }}
           component='span'
-          disabled={selectionStatus}
+          disabled={selectedTextValue.length > 2 ? false : true}
           onClick={() => {
             serverAudioStreamControl.current.load();
             serverAudioStreamControl.current.play();
           }}
         >
           <PlayCircleOutlineRoundedIcon />
-        </IconButton>
+        </IconButton> */}
       </Tooltip>
     </>
   );
