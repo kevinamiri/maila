@@ -4,6 +4,7 @@ import RestorePageIcon from "@mui/icons-material/RestorePage";
 import TextRotationAngleupIcon from "@mui/icons-material/TextRotationAngleup";
 import ShortTextIcon from "@mui/icons-material/ShortText";
 import BarToggleButton from "components/editors/BarToggleButton";
+import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
 // import LongMenu from "./LongMenu";
 import SpellcheckIcon from "@mui/icons-material/Spellcheck";
 import SaveIcon from "@mui/icons-material/Save";
@@ -19,7 +20,6 @@ const EditorToolsBoxBar = ({
   handleElegantify,
 }) => {
   const { progressValue } = useSelector((state) => state.progressValue);
-  const loading = progressValue > 0 && progressValue < 100;
   return (
     <>
       <Box
@@ -31,7 +31,6 @@ const EditorToolsBoxBar = ({
           justifyContent: "start",
         }}
       >
-        {loading && <CircularProgress style={{ padding: "10px" }} />}
         <BarToggleButton
           format='Clarify'
           icon={<RestorePageIcon />}
@@ -44,12 +43,13 @@ const EditorToolsBoxBar = ({
         />
         <BarToggleButton
           format='Advancify'
+          d
           icon={<TextRotationAngleupIcon />}
           handleClick={handleAdvancify}
         />
         <BarToggleButton
-          format='Elegantify'
-          icon={<TextRotationAngleupIcon />}
+          format='More elegant'
+          icon={<AutoAwesomeRoundedIcon />}
           handleClick={handleElegantify}
         />
         <BarToggleButton

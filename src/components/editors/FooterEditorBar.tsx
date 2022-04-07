@@ -36,11 +36,13 @@ interface footerEditorBarProps {
   editor: Editor;
   handleTranser?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
+  voice?: boolean;
 }
 
 export const FooterEditorBar = ({
   editor,
   handleTranser,
+  voice = false,
   disabled = false,
 }: footerEditorBarProps) => {
   const CharCount =
@@ -69,7 +71,7 @@ export const FooterEditorBar = ({
           icon={<BookmarkBorderRoundedIcon fontSize='inherit' />}
           disabled={true}
         />
-        <Play />
+        {voice ? <Play /> : ""}
       </Grid>
       <Grid
         item

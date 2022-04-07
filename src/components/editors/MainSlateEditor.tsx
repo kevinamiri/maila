@@ -283,7 +283,7 @@ const MainSlateEditor = (props) => {
             />
           </Slate>
         </Grid>
-        <FooterEditorBar disabled={true} editor={editor} />
+        <FooterEditorBar voice={true} disabled={true} editor={editor} />
       </Grid>
     </>
   );
