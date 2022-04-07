@@ -38,7 +38,7 @@ export default function HoveringToolbar(props) {
                 border: (theme) => `1px solid ${theme.palette.divider}`,
                 transition: "opacity 0.75s",
                 borderRadius: 1,
-                p: 1,
+                p: 0.5,
                 bgcolor: "background.paper",
               }}
             >

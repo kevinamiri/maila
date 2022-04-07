@@ -7,11 +7,11 @@ import BarToggleButton from "components/editors/BarToggleButton";
 import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
 // import LongMenu from "./LongMenu";
 import SpellcheckIcon from "@mui/icons-material/Spellcheck";
-import SaveIcon from "@mui/icons-material/Save";
+// import SaveIcon from "@mui/icons-material/Save";
 import { useSelector } from "react-redux";
-import CircularProgress from "@mui/material/CircularProgress";
-import LoadingButton from "@mui/lab/LoadingButton";
-import Play from "components/subcomponents/Play";
+// import CircularProgress from "@mui/material/CircularProgress";
+// import LoadingButton from "@mui/lab/LoadingButton";
+// import Play from "components/subcomponents/Play";
 const EditorToolsBoxBar = ({
   handleClarify,
   handleSimplify,
@@ -19,7 +19,6 @@ const EditorToolsBoxBar = ({
   handleSpellcheck,
   handleElegantify,
 }) => {
-  const { progressValue } = useSelector((state) => state.progressValue);
   return (
     <>
       <Box
@@ -32,28 +31,27 @@ const EditorToolsBoxBar = ({
         }}
       >
         <BarToggleButton
-          format='Clarify'
+          format='Clarifying'
           icon={<RestorePageIcon />}
           handleClick={handleClarify}
         />
         <BarToggleButton
-          format='Simplify'
+          format='Simplifying'
           icon={<ShortTextIcon />}
           handleClick={handleSimplify}
         />
         <BarToggleButton
-          format='Advancify'
-          d
+          format='Formal Style'
           icon={<TextRotationAngleupIcon />}
           handleClick={handleAdvancify}
         />
         <BarToggleButton
-          format='More elegant'
+          format='Elegant Style'
           icon={<AutoAwesomeRoundedIcon />}
           handleClick={handleElegantify}
         />
         <BarToggleButton
-          format='Spellcheck'
+          format='Grammar Check'
           icon={<SpellcheckIcon />}
           handleClick={handleSpellcheck}
         />

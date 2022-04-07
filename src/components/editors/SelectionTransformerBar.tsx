@@ -9,9 +9,9 @@ import { BaseEditor } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { HistoryEditor } from "slate-history";
 import useFetchInsert from "hooks/useFetchInsert";
-import UseCompletionSuffix from "hooks/UseCompletionSuffix";
+// import UseCompletionSuffix from "hooks/UseCompletionSuffix";
 
-import { selectedText } from "hooks/currentSelectEditor";
+// import { selectedText } from "hooks/currentSelectEditor";
 
 type CustomText = { text: string };
 type CustomElement = { type: "paragraph"; children: CustomText[] };
