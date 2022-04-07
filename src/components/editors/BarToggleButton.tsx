@@ -10,7 +10,7 @@ export default function BarToggleButton({ format, icon, handleClick }) {
   const selectionStatus =
     selectedTextValue &&
     selectedTextValue.length > 2 &&
-    selectedTextValue.length < 850
+    selectedTextValue.length < 15000
       ? false
       : true;
 
