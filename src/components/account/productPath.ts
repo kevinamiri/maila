@@ -1,8 +1,9 @@
-
-
 const productPath = [
   { url: "/app/tagline", label: "Tagline" },
-  { url: "/app/landing-page-headline-description", label: "Landing Page Headline Description" },
+  {
+    url: "/app/landing-page-headline-description",
+    label: "Landing Page Headline Description",
+  },
   { url: "/app/landing-page-headline", label: "Landing Page Headline" },
   { url: "/app/meta-descriptions", label: "Meta Descriptions" },
   { url: "/app/question-generator", label: "Question Generator" },
@@ -22,7 +23,7 @@ const productPath = [
   { url: "/app/vision-statement", label: "Vision Statement" },
   { url: "/app/value-proposition", label: "Value Proposition" },
   { url: "/app/adjust-tone-rewriting", label: "Rewrite - Adjust Tone" },
-  { url: "/app/write-business-friendly-email", label: "Write business friendly email" },
+  { url: "/app/friendly-email", label: "Write business friendly email" },
   { url: "/app/followup-email", label: "Followup Email" },
   { url: "/app/cold-email", label: "Cold Email" },
   { url: "/app/thanks-you-email", label: "Thanks You Email" },
@@ -37,7 +38,6 @@ const productPath = [
 
 export default productPath;
 
-
 interface productsTools {
   label: string;
   path: string;
@@ -49,8 +49,8 @@ interface productsTools {
   headerTitle: string;
   labelsLists: any[];
   inputLimitation: string;
-}[]
-
+}
+[];
 
 /*
 Blog Post Intro: It is used to introduce the topic of the blog post and to provide a brief overview of what the reader can expect to learn by reading the blog post.

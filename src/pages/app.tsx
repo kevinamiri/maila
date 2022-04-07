@@ -376,7 +376,7 @@ export default function App() {
                     instructHelp={<FormattedMessage id='H43211' />}
                     generateButtonName={<FormattedMessage id='N78911' />}
                     productType='41'
-                    path='/write-business-friendly-email'
+                    path='/friendly-email'
                     toneTextField={true}
                     labelsLists={[]}
                   />
