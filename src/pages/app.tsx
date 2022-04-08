@@ -523,7 +523,7 @@ export default function App() {
                     toneTextField={true}
                     labelsLists={[]}
                   />
-                  <ProductDescription
+                  {/* <ProductDescription
                     label={<FormattedMessage id='L12326' />}
                     headerTitle={<FormattedMessage id='T09826' />}
                     description={<FormattedMessage id='D76526' />}
@@ -534,7 +534,7 @@ export default function App() {
                     path='/sub-headers'
                     toneTextField={true}
                     labelsLists={[]}
-                  />
+                  /> */}
                   <ProductDescription
                     label={<FormattedMessage id='L12327' />}
                     headerTitle={<FormattedMessage id='T09827' />}
