@@ -547,6 +547,7 @@ export default function App() {
                     toneTextField={true}
                     labelsLists={[]}
                   />
+
                   <ProductDescription
                     label={<FormattedMessage id='L12328' />}
                     headerTitle={<FormattedMessage id='T09828' />}
