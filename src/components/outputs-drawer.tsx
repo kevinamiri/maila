@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { X as XIcon } from "../icons/x";
 import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
+import LinearProgressLoading from "./subcomponents/LinearProgressLoading";
 
 interface SettingsDrawerProps {
   onClose?: () => void;
@@ -52,9 +53,14 @@ const OutputsDrawer: FC<SettingsDrawerProps> = (props) => {
           zIndex: 10,
         }}
       >
-        <IconButton color='primary' onClick={onClose}>
-          <XIcon fontSize='small' />
-        </IconButton>
+        <Box sx={{ flexGrow: 1 }}>
+          <LinearProgressLoading />
+        </Box>
+        <Box>
+          <IconButton color='primary' onClick={onClose}>
+            <XIcon fontSize='small' />
+          </IconButton>
+        </Box>
       </Box>
 
       <Box

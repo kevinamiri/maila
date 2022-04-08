@@ -2,6 +2,14 @@ import React, { RefCallback, RefObject } from "react";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 
+/**
+ *
+ * @param onClick, the function to be called when the button is clicked
+ * @param title, the title of the button
+ * @param icon, the icon to be displayed
+ * @param disabled, whether the button is disabled
+ * @param ariaLabel, the aria label of the button
+ */
 interface ToggleButtonListProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   title?: string;

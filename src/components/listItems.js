@@ -208,7 +208,6 @@ const ListSidebar = () => {
                         <ListCatChild dirList="/app/landing-page-headline" formattedId="LP01" iconComponent={<LandingPageHeader viewBox="0 0 656 656" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/meta-descriptions" formattedId="LP03" iconComponent={<MetaDescription viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/question-generator" formattedId="LP04" iconComponent={<QuestionGeneration viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/sub-headers" formattedId="LP05" iconComponent={<SubHeader viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/keyword-finder" formattedId="LP06" iconComponent={<SearchKeyword viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/subject-suggestion" formattedId="LP07" iconComponent={<SubjectFinder viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                     </List>

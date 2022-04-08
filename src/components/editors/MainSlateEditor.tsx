@@ -44,10 +44,9 @@ const HOTKEYS = {
   "mod+u": "underline",
   "mod+`": "code",
   "mod+s": "subject",
-  //
   "mod+a": "selectAll",
   "mod+enter": "enter",
-  "mod+j": "suffix",
+  "mod+g": "suffix",
 };
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
@@ -284,8 +283,11 @@ const MainSlateEditor = (props) => {
                   if (isHotkey(hotkey, event as any)) {
                     event.preventDefault();
                     const mark = HOTKEYS[hotkey];
-                    if (mark === "enter") {
+                    if (mark === "suffix") {
                       handleSuffix(event);
+                    }
+                    if (mark === "enter") {
+                      handleGenerate(event);
                     }
                     if (mark === "selectAll") {
                       savedSelection.current = editor.selection;
@@ -465,7 +467,7 @@ const MagicButton = ({ onClick }) => {
         m: 0.5,
       }}
     >
-      <Tooltip title='AI Autocomplete(⌘⏎)'>
+      <Tooltip placement='top' title='Autocomplete(⌘G) at the cursor position'>
         <IconButton
           size='small'
           sx={{

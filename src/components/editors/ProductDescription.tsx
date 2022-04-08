@@ -209,7 +209,6 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
             open={expand}
           >
             <Card elevation={1} sx={{ width: "100%" }}>
-              <LinearProgressLoading />
               <Card3EditorsRightSide
                 // the main editor is editor
                 editor={editor}

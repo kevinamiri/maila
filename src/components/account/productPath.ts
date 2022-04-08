@@ -23,9 +23,10 @@ const productPath = [
   { url: "/app/vision-statement", label: "Vision Statement" },
   { url: "/app/value-proposition", label: "Value Proposition" },
   { url: "/app/adjust-tone-rewriting", label: "Rewrite - Adjust Tone" },
-  { url: "/app/friendly-email", label: "Write business friendly email" },
+  { url: "/app/informal-email", label: "Informal Email" },
+  { url: "/app/formal-email", label: "Formal Email" },
   { url: "/app/followup-email", label: "Followup Email" },
-  { url: "/app/cold-email", label: "Cold Email" },
+  { url: "/app/cold-email", label: "Sales Email" },
   { url: "/app/thanks-you-email", label: "Thanks You Email" },
   { url: "/app/prospecting-email", label: "Prospecting Email" },
   { url: "/app/productdescription", label: "Product Description" },
@@ -74,7 +75,7 @@ Mission Statement: A mission statement is a declaration of the purpose of a comp
 Vision Statement: A vision statement is a declaration of the company's purpose or a declaration of what the company hopes to achieve in the future.
 Value Proposition: A value proposition is a statement that summarizes the benefit that a customer will receive by using a particular product or service.
 Rewrite - Adjust Tone: It can be used to adjust the tone of a document to make it more persuasive or to match the tone of the company's branding.
-Write business friendly email: It can be used to draft a professional and friendly email to a colleague or client.
+Informal Email: It can be used to draft a professional and friendly email to a colleague or client.
 Followup Email: A followup email can be used to remind a customer about a product they were interested in or to provide additional information about a product they have already purchased.
 Cold Email: A cold email is a message that is sent to a potential customer who has not been previously contacted by the sender. It is used to introduce a product or service and to request a meeting or an opportunity to discuss the product or service further.
 Thanks You Email: Acknowledging and thanking someone for their help or support can be a great way to show your appreciation and to strengthen the relationship.

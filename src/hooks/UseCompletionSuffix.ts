@@ -18,21 +18,23 @@ async function UseCompletionSuffix(
   url: string,
   fieldValues: any
 ) {
-  /** Start: geting before selection and after selection */
-  // const savedSelection = React.useRef(editors[0].selection);
+  /** Get the text before the cursor (editor selection) */
   const beforeEditor = Editor.fragment(editors[0], {
     anchor: { path: [0, 0], offset: 0 },
     focus: editors[0].selection.focus,
   })
     .map((x) => SlateNode.string(x))
     .join("\n");
+  /** Get the text at the end of the editor */
   const endPointEditor = Editor.end(editors[0], []);
+  /** Get the text after the cursor */
   const afterEditor = Editor.fragment(editors[0], {
     anchor: editors[0].selection.focus,
     focus: endPointEditor,
   })
     .map((x) => SlateNode.string(x))
     .join("\n");
+
   /** End: geting before selection and after selection */
 
   await useFetchSuffix(
