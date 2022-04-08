@@ -47,6 +47,7 @@ const HOTKEYS = {
   //
   "mod+a": "selectAll",
   "mod+enter": "enter",
+  "mod+j": "suffix",
 };
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
@@ -159,6 +160,25 @@ const MainSlateEditor = (props) => {
             editors,
             gtoken,
             "46",
+            fieldValues
+          );
+        });
+    });
+  };
+
+  const handleGenerate = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          UseCompletionSuffix(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "44",
             fieldValues
           );
         });
