@@ -201,7 +201,6 @@ export default function App() {
                     description={<FormattedMessage id='D76519' />}
                     example={<FormattedMessage id='E56719' />}
                     instructHelp={<FormattedMessage id='H43219' />}
-                    generateButtonName={<FormattedMessage id='N78919' />}
                     inputLimitation={inputList}
                     productType='4'
                     productUrl='generate'
@@ -215,7 +214,6 @@ export default function App() {
                     description={<FormattedMessage id='D76530' />}
                     example={<FormattedMessage id='E56730' />}
                     instructHelp={<FormattedMessage id='H43230' />}
-                    generateButtonName={<FormattedMessage id='N78930' />}
                     inputLimitation={inputList}
                     productType='6'
                     productUrl='generate'
@@ -229,7 +227,6 @@ export default function App() {
                     description={<FormattedMessage id='D76531' />}
                     example={<FormattedMessage id='E56731' />}
                     instructHelp={<FormattedMessage id='H43231' />}
-                    generateButtonName={<FormattedMessage id='N78931' />}
                     inputLimitation={inputList}
                     productType='9'
                     productUrl='generate'
@@ -242,7 +239,6 @@ export default function App() {
                     inputLimitation={inputList}
                     productType='10'
                     productUrl='generate'
-                    generateButtonName={<FormattedMessage id='TG03' />}
                     toneTextField={true}
                     headerTitle='Tagline'
                     path='/tagline'
@@ -254,7 +250,6 @@ export default function App() {
                     description={<FormattedMessage id='D7650' />}
                     example={<FormattedMessage id='E5670' />}
                     instructHelp={<FormattedMessage id='H4320' />}
-                    generateButtonName={<FormattedMessage id='N7890' />}
                     productType='24'
                     path='/blog-post-intro'
                     toneTextField={true}
@@ -266,7 +261,6 @@ export default function App() {
                     description={<FormattedMessage id='D7651' />}
                     example={<FormattedMessage id='E5671' />}
                     instructHelp={<FormattedMessage id='H4321' />}
-                    generateButtonName={<FormattedMessage id='N7891' />}
                     productType='27'
                     path='/blog-post-conclusion'
                     toneTextField={true}
@@ -278,7 +272,6 @@ export default function App() {
                     description={<FormattedMessage id='D7653' />}
                     example={<FormattedMessage id='E5673' />}
                     instructHelp={<FormattedMessage id='H4323' />}
-                    generateButtonName={<FormattedMessage id='N7893' />}
                     productType='39'
                     path='/blog-post-ideas'
                     toneTextField={true}
@@ -290,7 +283,6 @@ export default function App() {
                     description={<FormattedMessage id='D7654' />}
                     example={<FormattedMessage id='E5674' />}
                     instructHelp={<FormattedMessage id='H4324' />}
-                    generateButtonName={<FormattedMessage id='N7894' />}
                     productType='28'
                     path='/blog-post-headline'
                     toneTextField={true}
@@ -302,7 +294,6 @@ export default function App() {
                     description={<FormattedMessage id='D7655' />}
                     example={<FormattedMessage id='E5675' />}
                     instructHelp={<FormattedMessage id='H4325' />}
-                    generateButtonName={<FormattedMessage id='N7895' />}
                     productType='27'
                     path='/blog-post-summary'
                     toneTextField={true}
@@ -314,7 +305,6 @@ export default function App() {
                     description={<FormattedMessage id='D76524' />}
                     example={<FormattedMessage id='E56724' />}
                     instructHelp={<FormattedMessage id='H43224' />}
-                    generateButtonName={<FormattedMessage id='N78924' />}
                     productType='17'
                     path='/paraphrase'
                     toneTextField={true}
@@ -326,7 +316,6 @@ export default function App() {
                     description={<FormattedMessage id='D7657' />}
                     example={<FormattedMessage id='E5677' />}
                     instructHelp={<FormattedMessage id='H4327' />}
-                    generateButtonName={<FormattedMessage id='N7897' />}
                     productType='11'
                     path='/mission-statement'
                     toneTextField={true}
@@ -338,7 +327,6 @@ export default function App() {
                     description={<FormattedMessage id='D7658' />}
                     example={<FormattedMessage id='E5678' />}
                     instructHelp={<FormattedMessage id='H4328' />}
-                    generateButtonName={<FormattedMessage id='N7898' />}
                     productType='12'
                     path='/vision-statement'
                     toneTextField={true}
@@ -350,7 +338,6 @@ export default function App() {
                     description={<FormattedMessage id='D7659' />}
                     example={<FormattedMessage id='E5679' />}
                     instructHelp={<FormattedMessage id='H4329' />}
-                    generateButtonName={<FormattedMessage id='N7899' />}
                     productType='20'
                     path='/value-proposition'
                     toneTextField={true}
@@ -362,7 +349,6 @@ export default function App() {
                     description={<FormattedMessage id='D76510' />}
                     example={<FormattedMessage id='E56710' />}
                     instructHelp={<FormattedMessage id='H43210' />}
-                    generateButtonName={<FormattedMessage id='N78910' />}
                     productType='19'
                     path='/adjust-tone-rewriting'
                     toneTextField={true}
@@ -374,7 +360,6 @@ export default function App() {
                     description={<FormattedMessage id='D76511' />}
                     example={<FormattedMessage id='E56711' />}
                     instructHelp={<FormattedMessage id='H43211' />}
-                    generateButtonName={<FormattedMessage id='N78911' />}
                     productType='41'
                     path='/friendly-email'
                     toneTextField={true}
@@ -386,7 +371,6 @@ export default function App() {
                     description={<FormattedMessage id='D76512' />}
                     example={<FormattedMessage id='E56712' />}
                     instructHelp={<FormattedMessage id='H43212' />}
-                    generateButtonName={<FormattedMessage id='N78912' />}
                     productType='37'
                     path='/followup-email'
                     toneTextField={true}
@@ -398,7 +382,6 @@ export default function App() {
                     description={<FormattedMessage id='D76513' />}
                     example={<FormattedMessage id='E56713' />}
                     instructHelp={<FormattedMessage id='H43213' />}
-                    generateButtonName={<FormattedMessage id='N78913' />}
                     productType='21'
                     path='/cold-email'
                     toneTextField={true}
@@ -410,7 +393,6 @@ export default function App() {
                     description={<FormattedMessage id='D76514' />}
                     example={<FormattedMessage id='E56714' />}
                     instructHelp={<FormattedMessage id='H43214' />}
-                    generateButtonName={<FormattedMessage id='N78914' />}
                     productType='22'
                     path='/thanks-you-email'
                     toneTextField={true}
@@ -422,7 +404,6 @@ export default function App() {
                     description={<FormattedMessage id='D76515' />}
                     example={<FormattedMessage id='E56715' />}
                     instructHelp={<FormattedMessage id='H43215' />}
-                    generateButtonName={<FormattedMessage id='N78915' />}
                     productType='23'
                     path='/prospecting-email'
                     toneTextField={true}
@@ -434,9 +415,8 @@ export default function App() {
                     description={<FormattedMessage id='D76516' />}
                     example={<FormattedMessage id='E56716' />}
                     instructHelp={<FormattedMessage id='H43216' />}
-                    generateButtonName={<FormattedMessage id='N78916' />}
                     productType='35'
-                    path='/grammar'
+                    path='/grammar-correction'
                     toneTextField={true}
                     labelsLists={[]}
                   />
@@ -446,7 +426,6 @@ export default function App() {
                     description={<FormattedMessage id='D76517' />}
                     example={<FormattedMessage id='E56717' />}
                     instructHelp={<FormattedMessage id='H43217' />}
-                    generateButtonName={<FormattedMessage id='N78917' />}
                     productType='14'
                     path='/subject-suggestion'
                     toneTextField={true}
@@ -458,7 +437,6 @@ export default function App() {
                     description={<FormattedMessage id='D76518' />}
                     example={<FormattedMessage id='E56718' />}
                     instructHelp={<FormattedMessage id='H43218' />}
-                    generateButtonName={<FormattedMessage id='N78918' />}
                     productType='31'
                     path='/meta-descriptions'
                     toneTextField={true}
@@ -470,7 +448,6 @@ export default function App() {
                     description={<FormattedMessage id='D76520' />}
                     example={<FormattedMessage id='E56720' />}
                     instructHelp={<FormattedMessage id='H43220' />}
-                    generateButtonName={<FormattedMessage id='N78920' />}
                     productType='5'
                     path='/productdescriptionamazon'
                     toneTextField={true}
@@ -481,7 +458,6 @@ export default function App() {
                     description={<FormattedMessage id='D76521' />}
                     example={<FormattedMessage id='E56721' />}
                     instructHelp={<FormattedMessage id='H43221' />}
-                    generateButtonName={<FormattedMessage id='N78921' />}
                     productType='42'
                     path='/create-outline'
                     toneTextField={true}
@@ -493,7 +469,6 @@ export default function App() {
                     description={<FormattedMessage id='D76522' />}
                     example={<FormattedMessage id='E56722' />}
                     instructHelp={<FormattedMessage id='H43222' />}
-                    generateButtonName={<FormattedMessage id='N78922' />}
                     productType='43'
                     path='/expand'
                     toneTextField={true}
@@ -505,9 +480,8 @@ export default function App() {
                     description={<FormattedMessage id='D76523' />}
                     example={<FormattedMessage id='E56723' />}
                     instructHelp={<FormattedMessage id='H43223' />}
-                    generateButtonName={<FormattedMessage id='N78923' />}
                     productType='34'
-                    path='/keyword-finder'
+                    path='/keyword-suggestion'
                     toneTextField={true}
                     labelsLists={[]}
                   />
@@ -517,31 +491,17 @@ export default function App() {
                     description={<FormattedMessage id='D76525' />}
                     example={<FormattedMessage id='E56725' />}
                     instructHelp={<FormattedMessage id='H43225' />}
-                    generateButtonName={<FormattedMessage id='N78925' />}
                     productType='32'
                     path='/question-generator'
                     toneTextField={true}
                     labelsLists={[]}
                   />
-                  {/* <ProductDescription
-                    label={<FormattedMessage id='L12326' />}
-                    headerTitle={<FormattedMessage id='T09826' />}
-                    description={<FormattedMessage id='D76526' />}
-                    example={<FormattedMessage id='E56726' />}
-                    instructHelp={<FormattedMessage id='H43226' />}
-                    generateButtonName={<FormattedMessage id='N78926' />}
-                    productType='36'
-                    path='/sub-headers'
-                    toneTextField={true}
-                    labelsLists={[]}
-                  /> */}
                   <ProductDescription
                     label={<FormattedMessage id='L12327' />}
                     headerTitle={<FormattedMessage id='T09827' />}
                     description={<FormattedMessage id='D76527' />}
                     example={<FormattedMessage id='E56727' />}
                     instructHelp={<FormattedMessage id='H43227' />}
-                    generateButtonName={<FormattedMessage id='N78927' />}
                     productType='29'
                     path='/landing-page-headline-description'
                     toneTextField={true}
@@ -554,7 +514,6 @@ export default function App() {
                     description={<FormattedMessage id='D76528' />}
                     example={<FormattedMessage id='E56728' />}
                     instructHelp={<FormattedMessage id='H43228' />}
-                    generateButtonName={<FormattedMessage id='N78928' />}
                     productType='30'
                     path='/landing-page-headline'
                     toneTextField={true}
@@ -566,7 +525,6 @@ export default function App() {
                     description={<FormattedMessage id='D7652' />}
                     example={<FormattedMessage id='E5672' />}
                     instructHelp={<FormattedMessage id='H4322' />}
-                    generateButtonName={<FormattedMessage id='N7892' />}
                     productType='16'
                     path='/blog-post-aida'
                     toneTextField={true}
@@ -578,34 +536,13 @@ export default function App() {
                     description={<FormattedMessage id='D76530' />}
                     example={<FormattedMessage id='E56730' />}
                     instructHelp={<FormattedMessage id='H43230' />}
-                    generateButtonName={<FormattedMessage id='N78930' />}
                     productType='38'
                     path='/blog-post-pas'
                     toneTextField={true}
                     labelsLists={[]}
                   />
-                  <ProductDescription
-                    label={"questions and answers"}
-                    headerTitle={
-                      "The fastest way to get probable answers and factual verification to questions that come up when you write."
-                    }
-                    description={
-                      "It can be used to find answers for questions or fact-check content."
-                    }
-                    example={
-                      "AI to brainstorm blog posts meta descriptions tag and be more productive."
-                    }
-                    instructHelp={
-                      "Write a few paragraphs; we'll take it from there to the fact-check or answer to the questions that arise from your text."
-                    }
-                    generateButtonName={"compose"}
-                    productType='44'
-                    path='/possible-answers'
-                    toneTextField={true}
-                    labelsLists={[]}
-                  />
                   <EditorManage
-                    label={"advanced editor"}
+                    label={"Advanced Editor"}
                     headerTitle={
                       "This is an advanced editor for special applications and tuning outputs."
                     }
@@ -618,7 +555,6 @@ export default function App() {
                     instructHelp={
                       "This is an advanced editor for special applications and tuning outputs."
                     }
-                    generateButtonName={"Generate"}
                     productType='44'
                     path='/prompt'
                     toneTextField={true}
@@ -631,7 +567,6 @@ export default function App() {
                     description={"suffix"}
                     example={"suffix test"}
                     instructHelp={"suffix about product text"}
-                    generateButtonName={"suffix about product text"}
                     productType='46'
                     path='/suffix'
                     toneTextField={true}

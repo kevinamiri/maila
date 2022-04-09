@@ -19,7 +19,6 @@ const serialize = (editorname: Editor) => {
   return editorname.children.map((x) => SlateNode.string(x)).join("\n");
 };
 interface GenerationButtonProps {
-  generateButtonName?: string;
   inputLimitation?: number;
   mainPlaceholder?: String;
   headerTitle?: string;
@@ -35,7 +34,6 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
   inputLimitation = 15000,
   productType = "4",
   productUrl = "generate",
-  generateButtonName = "Generate",
   headerTitle = "write down some text",
   editor,
   editor2,
@@ -192,7 +190,7 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
           size='small'
           color='primary'
           variant='contained'
-          title={generateButtonName}
+          title='Compose'
           onClick={handleOnClick}
         />
       </Box>

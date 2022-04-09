@@ -4,7 +4,8 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import { navigate } from "gatsby";
 import Autocomplete from "@mui/material/Autocomplete";
-import productPath from "../account/productPath";
+// import productPath from "../account/productPath";
+import useToolsPathes from "../../hooks/useToolsPathes";
 
 /**
  * searching Product
@@ -21,6 +22,8 @@ interface ProductAutocompleteUrlProps {
 export default function ProductAutocompleteUrl({
   placeholder = "Search",
 }: ProductAutocompleteUrlProps) {
+  const toolsPathes = useToolsPathes();
+  const toolsPathe = toolsPathes.map((x) => x.node.frontmatter);
   const [inputValue, setInputValue] = React.useState("");
   return (
     <Stack spacing={2} sx={{ width: { xs: "80%", md: "70%" } }}>
@@ -35,10 +38,10 @@ export default function ProductAutocompleteUrl({
         onInputChange={(event, newInputValue) => {
           setInputValue(newInputValue);
         }}
-        options={productPath as productPathType[]}
+        options={toolsPathe as productPathType[]}
         autoHighlight
-        getOptionLabel={(option) => option.label}
-        renderOption={(props, option) => <li {...props}>{option.label}</li>}
+        getOptionLabel={(option) => option.title}
+        renderOption={(props, option) => <li {...props}>{option.title}</li>}
         renderInput={(params) => (
           <TextField
             {...params}
