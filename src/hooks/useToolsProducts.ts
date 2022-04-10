@@ -19,7 +19,7 @@ export const useToolsProducts = () => {
                 tags
                 title
                 url
-                productType
+                product_type
                 jsonId
               }
             }
@@ -31,13 +31,15 @@ export const useToolsProducts = () => {
               frontmatter {
                 description
                 header
+                placeholder
+                usage
                 help_hint
                 id
                 slug
                 tags
                 title
                 url
-                productType
+                product_type
                 jsonId
               }
             }
