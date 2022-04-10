@@ -1,0 +1,7 @@
+title: "Blog Post Ideas"
+description: "Need some help coming up with ideas for your next blog post? The following generator can help you come up with a list of ideas that are closely related to your business and industry."
+header: "Generate a list of ideas for your next blog post."
+usage: "Blog posts can be used to promote your business, product, or service. The following generator can help you come up with a list of ideas that are closely related to your business and industry."
+placeholder: "b2b, ecommerce, healthcare"
+help_hint: "What are some topics that are related to your business and industry? Write them down and we'll generate a list of ideas for your next blog post."
+tags: ["Copywriting", "Blogging"]

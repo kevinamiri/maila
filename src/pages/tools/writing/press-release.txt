@@ -1,0 +1,8 @@
+title: "Press Release"
+description: "A press release is a type of letter that is used to announce a new product, service, or event. Press releases are often used to generate publicity for a company or product, and they can also be used to announce a new partnership or joint venture."
+header: "Generate a press release that announces your new product, service, or event."
+usage: "Press releases can be used to generate publicity for a company or product, and they can also be used to announce a new partnership or joint venture."
+placeholder: "Product or service name"
+help_hint: "Think of a new product, service, or event that you want to announce, then we'll create a press release for it."
+tags: ["Copywriting", "PR"]
+

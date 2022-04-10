@@ -1,0 +1,16 @@
+---
+id: "120"
+title: "About Us Statement Generator"
+description: "The About Us page is an important part of any website. It's a chance to introduce your company to potential customers, and to explain what you do and what you stand for. It's also an opportunity to show some personality, and to make a connection with your audience."
+header: "Tell your story, and make a connection with your audience."
+usage: "This can be used to create an About Us page for a website."
+placeholder: "Our company was founded in 2020 with the mission of helping small businesses grow. We are a team of passionate entrepreneurs who are dedicated to helping our clients succeed. We offer a variety of services, including marketing, web design, and copywriting, and we are always looking for new ways to help our clients grow."
+help_hint: "Tell us a little bit about your company, and we'll help you write an About Us page that tells your story and makes a connection with your audience."
+tags: ["Copywriting", "Brand"]
+date: "2022-03-28"
+slug: /en/tools/copywriting/about-us-generator
+url: /app/about-us
+lang: en
+jsonId: "95"
+product_type: "333"
+---

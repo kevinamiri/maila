@@ -29,6 +29,7 @@ import { useSnackbar } from "notistack";
 // import { QuickStats } from "../components/QuickStats";
 import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
 import EditorManage from "../components/editor-manage";
+import useToolsProducts from "../hooks/useToolsProducts";
 
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
@@ -58,6 +59,8 @@ const isNew = (str, text) => {
   return str.toLowerCase().includes(text.toLowerCase());
 };
 export default function App() {
+  const useTools = useToolsProducts();
+  // console.log(useTools);
   const appContext = useContext(AppContext);
   const [context, setContext] = useState(appContext);
   const { settings, saveSettings } = useSettings();
@@ -68,7 +71,10 @@ export default function App() {
    */
   const [values, setValues] = React.useState(getValues(settings));
   const i18nMessages = require(`../data/messages/${values.lang}`);
-
+  const products = useTools[`${values.lang}`].edges.map(
+    (item) => item.node.frontmatter
+  );
+  console.log(products);
   // ................ handle UI lang change ...............
   const handleChange = (field: any, value: any): void => {
     setValues({
@@ -243,7 +249,7 @@ export default function App() {
                     headerTitle='Tagline'
                     path='/tagline'
                   />
-
+                  {/* 
                   <ProductDescription
                     label={<FormattedMessage id='L1230' />}
                     headerTitle={<FormattedMessage id='T0980' />}
@@ -540,7 +546,24 @@ export default function App() {
                     path='/blog-post-pas'
                     toneTextField={true}
                     labelsLists={[]}
-                  />
+                  /> */}
+                  {/* {products.map((product, index) => {
+                    return (
+                      <ProductDescription
+                        key={index}
+                        label={product.title}
+                        headerTitle={product.header}
+                        description={product.description}
+                        example={'product.example'}
+                        instructHelp={product.instructHelp}
+                        productType={product.productType}
+                        path={product.path}
+                        toneTextField={product.toneTextField}
+                        labelsLists={product.labelsLists}
+                      />
+
+                    )
+                  }} */}
                   <EditorManage
                     label={"Advanced Editor"}
                     headerTitle={

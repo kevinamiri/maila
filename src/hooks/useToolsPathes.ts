@@ -5,7 +5,7 @@ export const useToolsPathes = () => {
   const { allMdx } = useStaticQuery(
     graphql`
       query UseToolPaths {
-        allMdx {
+        allMdx(filter: { frontmatter: { lang: { eq: "en" } } }) {
           totalCount
           edges {
             node {

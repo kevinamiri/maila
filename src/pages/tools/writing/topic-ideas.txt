@@ -1,0 +1,7 @@
+title: "Topic Ideas"
+description: "Topic ideas are a list of potential topics that you can write about. The purpose of this tool is to help you find the most relevant and popular topics for your content. To use this tool, simply enter a word or phrase into the search bar and we will generate a list of related topics."
+header: "Generate a list of potential topics to write about."
+usage: "This tool can be used to generate a list of potential topics to write about. To use this tool, simply enter a word or phrase into the search bar and we will generate a list of related topics."
+placeholder: "topic, ideas, content"
+help_hint: "What word or phrase would you like to generate topic ideas for?"
+tags: ["Topics", "Ideas", "Content"]
