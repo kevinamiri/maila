@@ -249,7 +249,7 @@ export default function App() {
                     headerTitle='Tagline'
                     path='/tagline'
                   />
-                  {/* 
+
                   <ProductDescription
                     label={<FormattedMessage id='L1230' />}
                     headerTitle={<FormattedMessage id='T0980' />}
@@ -546,7 +546,7 @@ export default function App() {
                     path='/blog-post-pas'
                     toneTextField={true}
                     labelsLists={[]}
-                  /> */}
+                  />
                   {/* {products.map((product, index) => {
                     return (
                       <ProductDescription
