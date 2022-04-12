@@ -86,7 +86,7 @@
   "license": "MIT",
   "resolutions": "",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "NODE_OPTIONS=--max-old-space-size=4096 gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "deploy": "gatsby-plugin-s3 deploy",
     "start": "gatsby serve"

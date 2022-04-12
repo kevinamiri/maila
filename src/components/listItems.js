@@ -27,6 +27,9 @@ import ViewHeadlineOutlinedIcon from '@mui/icons-material/ViewHeadlineOutlined';
 import VrpanoOutlinedIcon from '@mui/icons-material/VrpanoOutlined';
 import { BrandVoiceicon, SubHeader, SubjectFinder, SearchKeyword, QuestionGeneration, MetaDescription, LandingPageHeader, LandingPageHeaderDescription, BlogConclusion, Thankyou, BlogIntro, BlogOutline, ProspectingEmail, TaglineIcon, KeywordIcon, TagIcon, DictionaryCheck, BulpIdea, AddEmail, ProductDescriptionIcon, Hashtag, WriteVisionStatement, AdjustTone, GrammarCorrection, ProductDescriptionAmazon, WriteFollowUpEmail, WriteColdEmail, WriteMissionStatement } from '../icons/Icons'
 import ListItemTextParent from './ListItemTextParent'
+import { THEMES } from "../constants";
+import useToolsProducts from "../hooks/useToolsProducts";
+import useSettings from "../hooks/useSettings";
 
 function asSvgIcon(reactSvgComponent) {
     const Icon = function (props) {
@@ -66,8 +69,22 @@ function reducer(state, action) {
     }
 }
 
-
 const ListSidebar = () => {
+    const useTools = useToolsProducts();
+    const { settings, saveSettings } = useSettings();
+
+    const products = useTools[`${settings.lang}`].edges.map(
+        (item) => item.node.frontmatter
+    );
+
+    const blog = products.filter((item) => item.slug.split("/")[3] === "blog")
+    const copywriting = products.filter((item) => item.slug.split("/")[3] === "copywriting")
+    const emails = products.filter((item) => item.slug.split("/")[3] === "email")
+    const writing = products.filter((item) => item.slug.split("/")[3] === "writing")
+
+
+
+
     const [state, dispatch] = React.useReducer(reducer, initialState);
     const MaterialSiGoogleadsense = asSvgIcon(SiGoogleadsense);
     const MaterialSiGoogleads = asSvgIcon(SiGoogleads);
@@ -95,7 +112,7 @@ const ListSidebar = () => {
                 overflowX: "clip"
             }} dense>
 
-                <Tooltip title={<FormattedMessage id='PT01' />} disableFocusListener placement='right-start' disableInteractive >
+                {/* <Tooltip title={<FormattedMessage id='PT01' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'ProductTools01' })}>
                         <ListItemIcon>
                             <DescriptionRoundedIcon />
@@ -110,7 +127,7 @@ const ListSidebar = () => {
                         <ListCatChild dirList="/app/productdescription" formattedId="PD02" iconComponent={<ProductDescriptionIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/productdescriptionamazon" formattedId="PD03" iconComponent={<ProductDescriptionAmazon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                     </List>
-                </Collapse>
+                </Collapse> */}
 
                 <Tooltip title={<FormattedMessage id='ET01' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'EmailTools01' })}>
@@ -123,11 +140,16 @@ const ListSidebar = () => {
                 </Tooltip>
                 <Collapse in={(state.EmailTools01)} timeout="auto" unmountOnExit>
                     <List dense>
-                        <ListCatChild dirList="/app/friendly-email" formattedId="ET09" iconComponent={<AddEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        {emails.map((item, index) => {
+                            return (
+                                <ListCatChild key={index} dirList={item.url} formattedId={item.title} iconComponent={<EmailIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                            )
+                        })}
+                        {/* <ListCatChild dirList="/app/friendly-email" formattedId="ET09" iconComponent={<AddEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/followup-email" formattedId="ET02" iconComponent={<WriteFollowUpEmail viewBox="0 0 512 512" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/cold-email" formattedId="ET03" iconComponent={<WriteColdEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/thanks-you-email" formattedId="ET04" iconComponent={<Thankyou viewBox="0 0 512 512" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/prospecting-email" formattedId="ET05" iconComponent={<ProspectingEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        <ListCatChild dirList="/app/prospecting-email" formattedId="ET05" iconComponent={<ProspectingEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} /> */}
                     </List>
                 </Collapse>
                 <Tooltip title={<FormattedMessage id='CT01' />} disableFocusListener placement='right-start' disableInteractive >
@@ -142,9 +164,14 @@ const ListSidebar = () => {
 
                 <Collapse in={(state.CopyTools01)} timeout="auto" unmountOnExit>
                     <List dense>
-                        <ListCatChild dirList="/app/mission-statement" formattedId="B01" iconComponent={<WriteMissionStatement viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        {copywriting.map((item, index) => {
+                            return (
+                                <ListCatChild key={index} dirList={item.url} formattedId={item.title} iconComponent={<MetaDescription viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                            )
+                        })}
+                        {/* <ListCatChild dirList="/app/mission-statement" formattedId="B01" iconComponent={<WriteMissionStatement viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/vision-statement" formattedId="B02" iconComponent={<WriteVisionStatement viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/value-proposition" formattedId="B03" iconComponent={<VrpanoOutlinedIcon fontSize="small" />} />
+                        <ListCatChild dirList="/app/value-proposition" formattedId="B03" iconComponent={<VrpanoOutlinedIcon fontSize="small" />} /> */}
 
                     </List>
                 </Collapse>
@@ -161,12 +188,17 @@ const ListSidebar = () => {
 
                 <Collapse in={(state.WritingTools01)} timeout="auto" unmountOnExit>
                     <List dense>
-                        <ListCatChild dirList="/app/paraphrase" formattedId="RH004" iconComponent={<DictionaryCheck viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        {writing.map((item, index) => {
+                            return (
+                                <ListCatChild key={index} dirList={item.url} formattedId={item.title} iconComponent={<BorderColorRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                            )
+                        })}
+                        {/* <ListCatChild dirList="/app/paraphrase" formattedId="RH004" iconComponent={<DictionaryCheck viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/possible-answers" formattedId="RH004" iconComponent={<HistoryEduRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/grammar" formattedId="GC009" iconComponent={<GrammarCorrection viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/adjust-tone-rewriting" formattedId="B04" iconComponent={<BrandVoiceicon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/create-outline" formattedId="CT940" iconComponent={<DoneOutlineRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/expand" formattedId="E405" iconComponent={<PlaylistAddRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        <ListCatChild dirList="/app/expand" formattedId="E405" iconComponent={<PlaylistAddRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} /> */}
                     </List>
                 </Collapse>
                 {/* ************************************************************************************* */}
@@ -182,17 +214,22 @@ const ListSidebar = () => {
 
                 <Collapse in={(state.BlogTools01)} timeout="auto" unmountOnExit>
                     <List dense>
-                        <ListCatChild dirList="/app/blog-post-intro" formattedId="BT03" iconComponent={<BlogIntro viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        {blog.map((item, index) => {
+                            return (
+                                <ListCatChild key={index} dirList={item.url} formattedId={item.title} iconComponent={<LibraryBooksRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                            )
+                        })}
+                        {/* <ListCatChild dirList="/app/blog-post-intro" formattedId="BT03" iconComponent={<BlogIntro viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/blog-post-ideas" formattedId="BT04" iconComponent={<BulpIdea viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/blog-post-conclusion" formattedId="BT05" iconComponent={<BlogConclusion viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/blog-post-headline" formattedId="BT06" iconComponent={<ViewHeadlineOutlinedIcon fontSize="small" />} />
                         <ListCatChild dirList="/app/blog-post-summary" formattedId="BT07" iconComponent={<SummarizeOutlinedIcon fontSize="small" />} />
                         <ListCatChild dirList="/app/blog-post-aida" formattedId="BT08" iconComponent={<BulpIdea viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/blog-post-pas" formattedId="BT09" iconComponent={<BlogOutline viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                        <ListCatChild dirList="/app/blog-post-pas" formattedId="BT09" iconComponent={<BlogOutline viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} /> */}
                     </List>
                 </Collapse>
                 {/* ************************************************************************************* */}
-                <Tooltip title={<FormattedMessage id='WT02' />} disableFocusListener placement='right-start' disableInteractive >
+                {/* <Tooltip title={<FormattedMessage id='WT02' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'WebPageTools01' })}>
                         <ListItemIcon>
                             <WebRoundedIcon />
@@ -200,8 +237,8 @@ const ListSidebar = () => {
                         <ListItemTextParent primary={<FormattedMessage id='WT02' />} />
                         {(state.WebPageTools01) ? <ExpandLess /> : <ExpandMore />}
                     </ListItem>
-                </Tooltip>
-                <Collapse in={(state.WebPageTools01)} timeout="auto" unmountOnExit>
+                </Tooltip> */}
+                {/* <Collapse in={(state.WebPageTools01)} timeout="auto" unmountOnExit>
                     <List dense>
                         <ListCatChild dirList="/app/tagline" formattedId="TG03" iconComponent={<TaglineIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/landing-page-headline-description" formattedId="LP02" iconComponent={<LandingPageHeaderDescription viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
@@ -211,7 +248,7 @@ const ListSidebar = () => {
                         <ListCatChild dirList="/app/keyword-finder" formattedId="LP06" iconComponent={<SearchKeyword viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/subject-suggestion" formattedId="LP07" iconComponent={<SubjectFinder viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                     </List>
-                </Collapse>
+                </Collapse> */}
 
                 <Tooltip title={<FormattedMessage id='A1203' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'GAds01' })}>

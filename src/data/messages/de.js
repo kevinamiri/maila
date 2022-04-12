@@ -23,7 +23,7 @@ module.exports = {
   ET04: "Thank you Email",
   ET05: "Prospecting Email",
   //copy tools
-  CT01: "Copy Tools",
+  CT01: "Copywriting Tools",
   B01: "Mission Statement",
   B02: "Vision Statement",
   B03: "Value Proposition",

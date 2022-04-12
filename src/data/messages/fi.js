@@ -121,7 +121,7 @@ module.exports = {
 
 
   //copy tools
-  CT01: "Copy Tools",
+  CT01: "Copywriting Tools",
   B01: "Mission Statement",
   B010: "Brand Mission Statement",
   B02: "Vision Statement",

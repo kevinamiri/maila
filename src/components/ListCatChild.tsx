@@ -33,28 +33,26 @@ const ListCatChild = (props: listProps) => {
         title={<FormattedMessage id={formattedIdList} />}
         placement='right-start'
       >
-        <ListItem
-          button
-          selected={selectedList(dirListName)}
-          sx={{
-            paddingLeft: 4,
-            ...(selectedList(dirListName) && {
-              color: "primary.main",
-              "& svg": {
-                color: "primary.main",
-              },
-            }),
+        <Link
+          style={{
+            textDecoration: "none",
           }}
+          to={dirListName}
         >
-          <ListItemIcon sx={{ minWidth: 40 }}>
-            <Link to={dirListName}>{iconComponent}</Link>
-          </ListItemIcon>
-          <Link
-            style={{
-              textDecoration: "none",
+          <ListItem
+            button
+            selected={selectedList(dirListName)}
+            sx={{
+              paddingLeft: 4,
+              ...(selectedList(dirListName) && {
+                color: "primary.main",
+                "& svg": {
+                  color: "primary.main",
+                },
+              }),
             }}
-            to={dirListName}
           >
+            <ListItemIcon sx={{ minWidth: 40 }}>{iconComponent}</ListItemIcon>
             <ListItemText
               primary={
                 <Typography
@@ -72,8 +70,8 @@ const ListCatChild = (props: listProps) => {
                 </Typography>
               }
             />
-          </Link>
-        </ListItem>
+          </ListItem>
+        </Link>
       </Tooltip>
     </>
   );

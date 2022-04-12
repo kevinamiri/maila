@@ -74,7 +74,10 @@ export default function App() {
   const products = useTools[`${values.lang}`].edges.map(
     (item) => item.node.frontmatter
   );
-  console.log(products);
+  // const blog = products.find((item) => item.slug.split("/")[3] === "blog")
+  // const copywriting = products.find((item) => item.slug.split("/")[3] === "copywriting")
+  // const email = products.find((item) => item.slug.split("/")[3] === "email")
+  // const writing = products.find((item) => item.slug.split("/")[3] === "writing")
   // ................ handle UI lang change ...............
   const handleChange = (field: any, value: any): void => {
     setValues({
@@ -249,7 +252,7 @@ export default function App() {
                     headerTitle='Tagline'
                     path='/tagline'
                   />
-
+                  {/* 
                   <ProductDescription
                     label={<FormattedMessage id='L1230' />}
                     headerTitle={<FormattedMessage id='T0980' />}
@@ -546,24 +549,24 @@ export default function App() {
                     path='/blog-post-pas'
                     toneTextField={true}
                     labelsLists={[]}
-                  />
-                  {/* {products.map((product, index) => {
+                  /> */}
+                  {products.map((product, index) => {
+                    const path = product.url.split("/")[2];
                     return (
                       <ProductDescription
                         key={index}
                         label={product.title}
-                        headerTitle={product.header}
-                        description={product.description}
-                        example={'product.example'}
-                        instructHelp={product.instructHelp}
-                        productType={product.productType}
-                        path={product.path}
-                        toneTextField={product.toneTextField}
-                        labelsLists={product.labelsLists}
+                        headerTitle={product.title}
+                        description={product.usage}
+                        example={product.placeholder}
+                        instructHelp={product.help_hint}
+                        productType={product.product_type}
+                        path={path}
+                        toneTextField={false}
+                        labelsLists={[]}
                       />
-
-                    )
-                  }} */}
+                    );
+                  })}
                   <EditorManage
                     label={"Advanced Editor"}
                     headerTitle={

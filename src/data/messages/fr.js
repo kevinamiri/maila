@@ -121,7 +121,7 @@ module.exports = {
   ET04: "Email de remerciement",
   ET05: "Email de prospection",
   //outils de copie
-  CT01: "Copy Tools",
+  CT01: "Copywriting Tools",
   B01: "Mission Statement",
   B010: "Mission de la marque",
   B02: "Déclaration de vision",

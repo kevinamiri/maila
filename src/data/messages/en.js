@@ -122,7 +122,7 @@ module.exports = {
   ET04: "Thank you Email",
   ET05: "Prospecting Email",
   //Branding tools
-  CT01: "Brand Identity",
+  CT01: "Copywriting Tools",
   B01: "Mission Statement",
   B010: "Brand Mission Statement",
   B02: "Vision Statement",
