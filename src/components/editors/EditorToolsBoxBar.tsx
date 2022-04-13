@@ -46,12 +46,12 @@ const EditorToolsBoxBar = ({
           handleClick={handleAdvancify}
         />
         <BarToggleButton
-          format='Elegant Style'
+          format='Rephrasing'
           icon={<AutoAwesomeRoundedIcon />}
           handleClick={handleElegantify}
         />
         <BarToggleButton
-          format='Grammar Check'
+          format='Grammar checking'
           icon={<SpellcheckIcon />}
           handleClick={handleSpellcheck}
         />
