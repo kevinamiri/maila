@@ -5,44 +5,18 @@ import { Tooltip } from '@mui/material';
 import { FormattedMessage } from "react-intl";
 import BorderColorRoundedIcon from '@mui/icons-material/BorderColorRounded';
 import EmailIcon from '@mui/icons-material/Email';
-import { RiAdvertisementFill } from "react-icons/ri";
-import PlaylistAddRoundedIcon from '@mui/icons-material/PlaylistAddRounded';
-import DoneOutlineRoundedIcon from '@mui/icons-material/DoneOutlineRounded';
-import { SiGoogleads, SiGoogleadsense } from 'react-icons/si';
 import LibraryBooksRoundedIcon from '@mui/icons-material/LibraryBooksRounded';
-import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';
 import CopyrightRoundedIcon from '@mui/icons-material/CopyrightRounded';
 import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import WebRoundedIcon from '@mui/icons-material/WebRounded';
-// import TranslateRoundedIcon from '@mui/icons-material/TranslateRounded';
-import { Link } from 'gatsby';
-import HistoryEduRoundedIcon from '@mui/icons-material/HistoryEduRounded';
 import ListCatChild from './ListCatChild'
-import SvgIcon from '@mui/material/SvgIcon';
-import SummarizeOutlinedIcon from '@mui/icons-material/SummarizeOutlined';
-import ViewHeadlineOutlinedIcon from '@mui/icons-material/ViewHeadlineOutlined';
-import VrpanoOutlinedIcon from '@mui/icons-material/VrpanoOutlined';
-import { BrandVoiceicon, SubHeader, SubjectFinder, SearchKeyword, QuestionGeneration, MetaDescription, LandingPageHeader, LandingPageHeaderDescription, BlogConclusion, Thankyou, BlogIntro, BlogOutline, ProspectingEmail, TaglineIcon, KeywordIcon, TagIcon, DictionaryCheck, BulpIdea, AddEmail, ProductDescriptionIcon, Hashtag, WriteVisionStatement, AdjustTone, GrammarCorrection, ProductDescriptionAmazon, WriteFollowUpEmail, WriteColdEmail, WriteMissionStatement } from '../icons/Icons'
 import ListItemTextParent from './ListItemTextParent'
-import { THEMES } from "../constants";
 import useToolsProducts from "../hooks/useToolsProducts";
 import useSettings from "../hooks/useSettings";
-
-function asSvgIcon(reactSvgComponent) {
-    const Icon = function (props) {
-        const viewBox = React.useMemo(() => reactSvgComponent({}).props.attr.viewBox, []);
-        return <SvgIcon component={reactSvgComponent} viewBox={viewBox} {...props} />;
-    };
-
-    Object.defineProperty(Icon, 'displayName', {
-        value: `AsSvgIcon(${reactSvgComponent.displayName || reactSvgComponent.name})`,
-    });
-
-    return Icon;
-}
+import IconsList from './icons'
+import { MetaDescription, ProductDescriptionIcon } from "../icons/Icons";
 
 const initialState = { ProductTools01: false, EmailTools01: false, CopyTools01: false, WritingTools01: false, BlogTools01: false, WebPageTools01: false, TranslationTools01: false };
 
@@ -69,32 +43,23 @@ function reducer(state, action) {
     }
 }
 
+const iconList = (props) => (
+    <IconsList type={props.icon} />
+)
+
 const ListSidebar = () => {
     const useTools = useToolsProducts();
     const { settings, saveSettings } = useSettings();
-
     const products = useTools[`${settings.lang}`].edges.map(
         (item) => item.node.frontmatter
     );
-
     const blog = products.filter((item) => item.slug.split("/")[3] === "blog")
     const copywriting = products.filter((item) => item.slug.split("/")[3] === "copywriting")
     const emails = products.filter((item) => item.slug.split("/")[3] === "email")
     const writing = products.filter((item) => item.slug.split("/")[3] === "writing")
 
-
-
-
     const [state, dispatch] = React.useReducer(reducer, initialState);
-    const MaterialSiGoogleadsense = asSvgIcon(SiGoogleadsense);
-    const MaterialSiGoogleads = asSvgIcon(SiGoogleads);
-
-    function ListItemLink(props) {
-        return <Link {...props} />;
-    }
     let windowsStatus = (window.location.pathname == '/app/productdescription') ? true : false
-    console.log(windowsStatus)
-
     let selectedList = (url) => {
         if (url == window.location.pathname) {
             return true
@@ -111,24 +76,6 @@ const ListSidebar = () => {
                 overflowY: 'auto',
                 overflowX: "clip"
             }} dense>
-
-                {/* <Tooltip title={<FormattedMessage id='PT01' />} disableFocusListener placement='right-start' disableInteractive >
-                    <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'ProductTools01' })}>
-                        <ListItemIcon>
-                            <DescriptionRoundedIcon />
-                        </ListItemIcon >
-
-                        <ListItemTextParent primary={<FormattedMessage id='PT01' />} />
-                        {(state.ProductTools01) ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
-                </Tooltip>
-                <Collapse in={(state.ProductTools01)} timeout="auto" unmountOnExit>
-                    <List dense>
-                        <ListCatChild dirList="/app/productdescription" formattedId="PD02" iconComponent={<ProductDescriptionIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/productdescriptionamazon" formattedId="PD03" iconComponent={<ProductDescriptionAmazon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                    </List>
-                </Collapse> */}
-
                 <Tooltip title={<FormattedMessage id='ET01' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'EmailTools01' })}>
                         <ListItemIcon>
@@ -141,15 +88,13 @@ const ListSidebar = () => {
                 <Collapse in={(state.EmailTools01)} timeout="auto" unmountOnExit>
                     <List dense>
                         {emails.map((item, index) => {
+                            console.log(item)
                             return (
-                                <ListCatChild key={index} dirList={item.url} formattedId={item.title} iconComponent={<EmailIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                                <ListCatChild key={index} dirList={item.url} formattedId={item.title}>
+                                    <IconsList type={item.icon} />
+                                </ListCatChild>
                             )
                         })}
-                        {/* <ListCatChild dirList="/app/friendly-email" formattedId="ET09" iconComponent={<AddEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/followup-email" formattedId="ET02" iconComponent={<WriteFollowUpEmail viewBox="0 0 512 512" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/cold-email" formattedId="ET03" iconComponent={<WriteColdEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/thanks-you-email" formattedId="ET04" iconComponent={<Thankyou viewBox="0 0 512 512" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/prospecting-email" formattedId="ET05" iconComponent={<ProspectingEmail viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} /> */}
                     </List>
                 </Collapse>
                 <Tooltip title={<FormattedMessage id='CT01' />} disableFocusListener placement='right-start' disableInteractive >
@@ -166,12 +111,12 @@ const ListSidebar = () => {
                     <List dense>
                         {copywriting.map((item, index) => {
                             return (
-                                <ListCatChild key={index} dirList={item.url} formattedId={item.title} iconComponent={<MetaDescription viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                                <ListCatChild key={index} dirList={item.url} formattedId={item.title}>
+                                    <IconsList type={item.icon} />
+                                </ListCatChild>
                             )
                         })}
-                        {/* <ListCatChild dirList="/app/mission-statement" formattedId="B01" iconComponent={<WriteMissionStatement viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/vision-statement" formattedId="B02" iconComponent={<WriteVisionStatement viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/value-proposition" formattedId="B03" iconComponent={<VrpanoOutlinedIcon fontSize="small" />} /> */}
+                        <ListCatChild dirList="/app/product-description" formattedId="PD02" iconComponent={<ProductDescriptionIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
 
                     </List>
                 </Collapse>
@@ -190,7 +135,9 @@ const ListSidebar = () => {
                     <List dense>
                         {writing.map((item, index) => {
                             return (
-                                <ListCatChild key={index} dirList={item.url} formattedId={item.title} iconComponent={<BorderColorRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                                <ListCatChild key={index} dirList={item.url} formattedId={item.title}>
+                                    <IconsList type={item.icon} />
+                                </ListCatChild>
                             )
                         })}
                         {/* <ListCatChild dirList="/app/paraphrase" formattedId="RH004" iconComponent={<DictionaryCheck viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
@@ -216,7 +163,9 @@ const ListSidebar = () => {
                     <List dense>
                         {blog.map((item, index) => {
                             return (
-                                <ListCatChild key={index} dirList={item.url} formattedId={item.title} iconComponent={<LibraryBooksRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
+                                <ListCatChild key={index} dirList={item.url} formattedId={item.title}>
+                                    <IconsList type={item.icon} />
+                                </ListCatChild>
                             )
                         })}
                         {/* <ListCatChild dirList="/app/blog-post-intro" formattedId="BT03" iconComponent={<BlogIntro viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
@@ -250,7 +199,7 @@ const ListSidebar = () => {
                     </List>
                 </Collapse> */}
 
-                <Tooltip title={<FormattedMessage id='A1203' />} disableFocusListener placement='right-start' disableInteractive >
+                {/* <Tooltip title={<FormattedMessage id='A1203' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'GAds01' })}>
                         <ListItemIcon>
                             <MaterialSiGoogleadsense />
@@ -264,7 +213,7 @@ const ListSidebar = () => {
                         <ListCatChild dirList="/app/g-ad-title" formattedId="AG0021" iconComponent={<MaterialSiGoogleads viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                         <ListCatChild dirList="/app/g-ad-description" formattedId="AG0022" iconComponent={<MaterialSiGoogleads viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
                     </List>
-                </Collapse>
+                </Collapse> */}
             </List>
         </>
     )

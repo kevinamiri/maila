@@ -71,10 +71,20 @@ export default function App() {
    */
   const [values, setValues] = React.useState(getValues(settings));
   const i18nMessages = require(`../data/messages/${values.lang}`);
-  const products = useTools[`${values.lang}`].edges.map(
+
+  // because product description uses the ProductDescriptionTool template, I filter out the product description
+  const productsNoFilter = useTools[`${values.lang}`].edges.map(
     (item) => item.node.frontmatter
   );
-  // const blog = products.find((item) => item.slug.split("/")[3] === "blog")
+
+  const products = productsNoFilter.filter(
+    (item) => item.slug.split("/")[4] !== "product-description"
+  );
+  const productDescription = productsNoFilter.filter(
+    (item) => item.slug.split("/")[4] === "product-description"
+  )[0];
+  console.log(productDescription);
+
   // const copywriting = products.find((item) => item.slug.split("/")[3] === "copywriting")
   // const email = products.find((item) => item.slug.split("/")[3] === "email")
   // const writing = products.find((item) => item.slug.split("/")[3] === "writing")
@@ -205,16 +215,14 @@ export default function App() {
                       component={ProductDescriptionApp}
                       /> */}
                   <ProductDescriptionTool
-                    label={<FormattedMessage id='L12319' />}
-                    headerTitle={<FormattedMessage id='T09819' />}
-                    description={<FormattedMessage id='D76519' />}
-                    example={<FormattedMessage id='E56719' />}
-                    instructHelp={<FormattedMessage id='H43219' />}
-                    inputLimitation={inputList}
-                    productType='4'
-                    productUrl='generate'
+                    label={productDescription.title}
+                    headerTitle={productDescription.title}
+                    description={productDescription.usage}
+                    example={productDescription.placeholder}
+                    instructHelp={productDescription.help_hint}
+                    productType={productDescription.product_type}
                     toneTextField={true}
-                    path='/productdescription'
+                    path='/product-description'
                   />
                   <AdsGoogleTool
                     message01=''

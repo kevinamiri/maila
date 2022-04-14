@@ -16,6 +16,7 @@ export const useToolsProducts = () => {
                 usage
                 id
                 slug
+                icon
                 tags
                 title
                 url
@@ -26,6 +27,46 @@ export const useToolsProducts = () => {
           }
         }
         sv: allMdx(filter: { frontmatter: { lang: { eq: "sv" } } }) {
+          edges {
+            node {
+              frontmatter {
+                description
+                header
+                placeholder
+                usage
+                help_hint
+                id
+                slug
+                tags
+                title
+                url
+                product_type
+                jsonId
+              }
+            }
+          }
+        }
+        da: allMdx(filter: { frontmatter: { lang: { eq: "da" } } }) {
+          edges {
+            node {
+              frontmatter {
+                description
+                header
+                placeholder
+                usage
+                help_hint
+                id
+                slug
+                tags
+                title
+                url
+                product_type
+                jsonId
+              }
+            }
+          }
+        }
+        fi: allMdx(filter: { frontmatter: { lang: { eq: "fi" } } }) {
           edges {
             node {
               frontmatter {

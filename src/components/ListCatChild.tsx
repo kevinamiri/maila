@@ -3,16 +3,13 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { Tooltip } from "@mui/material";
-import { FormattedMessage } from "react-intl";
 import { Typography } from "@mui/material";
 import { Link } from "gatsby";
-// import { Link } from "@mui/material";
-// import { Link } from "@reach/router";
 
 interface listProps {
   dirList: string;
   formattedId: string;
-  iconComponent: React.FC;
+  children: string;
 }
 
 const ListCatChild = (props: listProps) => {
@@ -26,13 +23,9 @@ const ListCatChild = (props: listProps) => {
 
   const dirListName = props.dirList;
   const formattedIdList = props.formattedId;
-  const iconComponent = props.iconComponent;
   return (
     <>
-      <Tooltip
-        title={<FormattedMessage id={formattedIdList} />}
-        placement='right-start'
-      >
+      <Tooltip title={formattedIdList} placement='right-start'>
         <Link
           style={{
             textDecoration: "none",
@@ -52,7 +45,7 @@ const ListCatChild = (props: listProps) => {
               }),
             }}
           >
-            <ListItemIcon sx={{ minWidth: 40 }}>{iconComponent}</ListItemIcon>
+            <ListItemIcon sx={{ minWidth: 40 }}>{props.children}</ListItemIcon>
             <ListItemText
               primary={
                 <Typography
@@ -66,7 +59,7 @@ const ListCatChild = (props: listProps) => {
                   color='primary'
                   variant='body1'
                 >
-                  <FormattedMessage id={formattedIdList} />
+                  {formattedIdList}
                 </Typography>
               }
             />
