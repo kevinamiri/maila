@@ -29,6 +29,7 @@ import {
   Thankyou,
   BlogIntro,
   BlogOutline,
+  RewriterIcon,
   ProspectingEmail,
   TaglineIcon,
   KeywordIcon,
@@ -39,8 +40,9 @@ import {
   ProductDescriptionIcon,
   Hashtag,
   WriteVisionStatement,
-  AdjustTone,
   GrammarCorrection,
+  WriteValueProp,
+  EcommerceDescription,
   ProductDescriptionAmazon,
   WriteFollowUpEmail,
   WriteColdEmail,
@@ -67,6 +69,17 @@ const IconsList = (props) => {
       return (
         <PlaylistAddRoundedIcon
           viewBox='0 0 32 32'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+
+    case "rewriter":
+      return (
+        <RewriterIcon
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -175,8 +188,8 @@ const IconsList = (props) => {
       );
     case "vrpano":
       return (
-        <VrpanoOutlinedIcon
-          viewBox='0 0 32 32'
+        <WriteValueProp
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -226,7 +239,7 @@ const IconsList = (props) => {
     case "searchKeyword":
       return (
         <SearchKeyword
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -286,7 +299,7 @@ const IconsList = (props) => {
     case "thankyou":
       return (
         <Thankyou
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -326,7 +339,7 @@ const IconsList = (props) => {
     case "taglineIcon":
       return (
         <TaglineIcon
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -353,10 +366,10 @@ const IconsList = (props) => {
           {...props}
         />
       );
-    case "dictionaryCheck":
+    case "paraphrase":
       return (
         <DictionaryCheck
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -386,7 +399,7 @@ const IconsList = (props) => {
     case "productDescriptionIcon":
       return (
         <ProductDescriptionIcon
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -426,7 +439,7 @@ const IconsList = (props) => {
     case "grammarCorrection":
       return (
         <GrammarCorrection
-          viewBox='0 0 32 32'
+          viewBox='0 0 24 24'
           height='24'
           width='24'
           fontSize='small'
@@ -456,7 +469,17 @@ const IconsList = (props) => {
     case "writeColdEmail":
       return (
         <WriteColdEmail
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+    case "ecommerceDescription":
+      return (
+        <EcommerceDescription
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -466,7 +489,7 @@ const IconsList = (props) => {
     case "writeMissionStatement":
       return (
         <WriteMissionStatement
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'

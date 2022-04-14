@@ -7,6 +7,7 @@ import BorderColorRoundedIcon from '@mui/icons-material/BorderColorRounded';
 import EmailIcon from '@mui/icons-material/Email';
 import LibraryBooksRoundedIcon from '@mui/icons-material/LibraryBooksRounded';
 import CopyrightRoundedIcon from '@mui/icons-material/CopyrightRounded';
+import StickyNote2RoundedIcon from '@mui/icons-material/StickyNote2Rounded';
 import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
@@ -16,7 +17,7 @@ import ListItemTextParent from './ListItemTextParent'
 import useToolsProducts from "../hooks/useToolsProducts";
 import useSettings from "../hooks/useSettings";
 import IconsList from './icons'
-import { MetaDescription, ProductDescriptionIcon } from "../icons/Icons";
+import { MetaDescription } from "../icons/Icons";
 
 const initialState = { ProductTools01: false, EmailTools01: false, CopyTools01: false, WritingTools01: false, BlogTools01: false, WebPageTools01: false, TranslationTools01: false };
 
@@ -88,7 +89,7 @@ const ListSidebar = () => {
                 <Collapse in={(state.EmailTools01)} timeout="auto" unmountOnExit>
                     <List dense>
                         {emails.map((item, index) => {
-                            console.log(item)
+
                             return (
                                 <ListCatChild key={index} dirList={item.url} formattedId={item.title}>
                                     <IconsList type={item.icon} />
@@ -116,8 +117,6 @@ const ListSidebar = () => {
                                 </ListCatChild>
                             )
                         })}
-                        <ListCatChild dirList="/app/product-description" formattedId="PD02" iconComponent={<ProductDescriptionIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-
                     </List>
                 </Collapse>
                 {/* ************************************************************************************* */}
@@ -164,7 +163,7 @@ const ListSidebar = () => {
                         {blog.map((item, index) => {
                             return (
                                 <ListCatChild key={index} dirList={item.url} formattedId={item.title}>
-                                    <IconsList type={item.icon} />
+                                    <StickyNote2RoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />
                                 </ListCatChild>
                             )
                         })}
