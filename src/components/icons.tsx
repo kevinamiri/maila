@@ -28,20 +28,22 @@ import {
   BlogConclusion,
   Thankyou,
   BlogIntro,
-  BlogOutline,
+  AddBlog,
   RewriterIcon,
   ProspectingEmail,
   TaglineIcon,
   KeywordIcon,
   TagIcon,
   DictionaryCheck,
-  BulpIdea,
+  EmailOpen,
   AddEmail,
   ProductDescriptionIcon,
   Hashtag,
   WriteVisionStatement,
   GrammarCorrection,
   WriteValueProp,
+  CopyWritingIcon,
+  WritingToolsIcon,
   EcommerceDescription,
   ProductDescriptionAmazon,
   WriteFollowUpEmail,
@@ -76,6 +78,16 @@ const IconsList = (props) => {
         />
       );
 
+    case "copyWritingIcon":
+      return (
+        <CopyWritingIcon
+          viewBox='0 0 32 32'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
     case "rewriter":
       return (
         <RewriterIcon
@@ -116,9 +128,9 @@ const IconsList = (props) => {
           {...props}
         />
       );
-    case "copyright":
+    case "writingToolsIcon":
       return (
-        <CopyrightRoundedIcon
+        <WritingToolsIcon
           viewBox='0 0 32 32'
           height='24'
           width='24'
@@ -316,9 +328,9 @@ const IconsList = (props) => {
           {...props}
         />
       );
-    case "blogOutline":
+    case "addBlog":
       return (
-        <BlogOutline
+        <AddBlog
           viewBox='0 0 32 32'
           height='24'
           width='24'
@@ -376,9 +388,9 @@ const IconsList = (props) => {
           {...props}
         />
       );
-    case "bulpIdea":
+    case "emailOpen":
       return (
-        <BulpIdea
+        <EmailOpen
           viewBox='0 0 32 32'
           height='24'
           width='24'

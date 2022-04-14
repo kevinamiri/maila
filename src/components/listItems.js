@@ -17,7 +17,7 @@ import ListItemTextParent from './ListItemTextParent'
 import useToolsProducts from "../hooks/useToolsProducts";
 import useSettings from "../hooks/useSettings";
 import IconsList from './icons'
-import { MetaDescription } from "../icons/Icons";
+import { EmailOpen, CopyWritingIcon, WritingToolsIcon, AddBlog } from "../icons/Icons";
 
 const initialState = { ProductTools01: false, EmailTools01: false, CopyTools01: false, WritingTools01: false, BlogTools01: false, WebPageTools01: false, TranslationTools01: false };
 
@@ -80,7 +80,7 @@ const ListSidebar = () => {
                 <Tooltip title={<FormattedMessage id='ET01' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'EmailTools01' })}>
                         <ListItemIcon>
-                            <EmailIcon />
+                            <EmailOpen />
                         </ListItemIcon>
                         <ListItemTextParent primary={<FormattedMessage id='ET01' />} />
                         {(state.EmailTools01) ? <ExpandLess /> : <ExpandMore />}
@@ -101,7 +101,7 @@ const ListSidebar = () => {
                 <Tooltip title={<FormattedMessage id='CT01' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'CopyTools01' })}>
                         <ListItemIcon>
-                            <CopyrightRoundedIcon />
+                            <CopyWritingIcon />
                         </ListItemIcon>
                         <ListItemTextParent primary={<FormattedMessage id='CT01' />} />
                         {(state.CopyTools01) ? <ExpandLess /> : <ExpandMore />}
@@ -123,7 +123,7 @@ const ListSidebar = () => {
                 <Tooltip title={<FormattedMessage id='WT01' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'WritingTools01' })}>
                         <ListItemIcon>
-                            <BorderColorRoundedIcon />
+                            <WritingToolsIcon />
                         </ListItemIcon>
                         <ListItemTextParent primary={<FormattedMessage id='WT01' />} />
                         {(state.WritingTools01) ? <ExpandLess /> : <ExpandMore />}
@@ -151,7 +151,7 @@ const ListSidebar = () => {
                 <Tooltip title={<FormattedMessage id='BT02' />} disableFocusListener placement='right-start' disableInteractive >
                     <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'BlogTools01' })}>
                         <ListItemIcon>
-                            <LibraryBooksRoundedIcon />
+                            <AddBlog />
                         </ListItemIcon>
                         <ListItemTextParent primary={<FormattedMessage id='BT02' />} />
                         {(state.BlogTools01) ? <ExpandLess /> : <ExpandMore />}
