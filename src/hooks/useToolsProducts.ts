@@ -32,11 +32,12 @@ export const useToolsProducts = () => {
               frontmatter {
                 description
                 header
+                help_hint
                 placeholder
                 usage
-                help_hint
                 id
                 slug
+                icon
                 tags
                 title
                 url
@@ -52,11 +53,12 @@ export const useToolsProducts = () => {
               frontmatter {
                 description
                 header
+                help_hint
                 placeholder
                 usage
-                help_hint
                 id
                 slug
+                icon
                 tags
                 title
                 url
@@ -72,11 +74,12 @@ export const useToolsProducts = () => {
               frontmatter {
                 description
                 header
+                help_hint
                 placeholder
                 usage
-                help_hint
                 id
                 slug
+                icon
                 tags
                 title
                 url
