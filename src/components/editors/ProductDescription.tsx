@@ -87,7 +87,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
       "recaptcha-key",
       `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`,
       function () {
-        console.log("Google captcha loaded!");
+        console.log("Google ReCaptcha loaded");
       }
     );
   }, []);

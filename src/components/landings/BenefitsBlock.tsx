@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import CardBenefits from "./card/CardBenefits";
 
 const BenefitsBlock = ({ list }) => {
-  console.log(list);
   const lists = list;
   return (
     <Box

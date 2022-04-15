@@ -18,8 +18,7 @@ const AccountNotificationsSettings = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     // NOTE: Make API request
-    console.log(event);
-    console.log("wait for 500s");
+
     enqueueSnackbar("Changes saved", {
       anchorOrigin: {
         horizontal: "right",

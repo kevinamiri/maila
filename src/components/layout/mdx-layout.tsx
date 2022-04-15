@@ -19,7 +19,6 @@ import Time from "../../components/homepage/Time";
 
 const Layout = (props) => {
   const frontmatter = props.pageContext.frontmatter;
-  console.log(props);
   const location = props.location;
   const isBlogPost = props.isBlogPost;
   const imageSrc =
@@ -87,8 +86,6 @@ const Layout = (props) => {
             }
           `}
           render={(data) => {
-            console.log(data);
-
             const { langs, defaultLangKey } = data.site.siteMetadata.languages;
             const langKey = getCurrentLangKey(langs, defaultLangKey, url);
             const homeLink = `/${langKey}/`;

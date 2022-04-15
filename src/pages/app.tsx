@@ -60,7 +60,6 @@ const isNew = (str, text) => {
 };
 export default function App() {
   const useTools = useToolsProducts();
-  // console.log(useTools);
   const appContext = useContext(AppContext);
   const [context, setContext] = useState(appContext);
   const { settings, saveSettings } = useSettings();

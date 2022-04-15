@@ -77,7 +77,6 @@ export const BillingPlanCardContent = () => {
     }),
     onSubmit: async (values, helpers) => {
       try {
-        console.log("Plan updated");
         helpers.setStatus({ success: true });
         helpers.setSubmitting(false);
       } catch (err) {

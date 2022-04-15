@@ -15,7 +15,7 @@ export default function HoveringToolbar(props) {
       : false;
 
   const handleClickAway = () => {
-    console.log("Clicked");
+    console.log("Click away");
   };
 
   const editor = props.editor;

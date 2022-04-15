@@ -125,7 +125,6 @@ const MainSlateEditor = (props) => {
           .join("\n");
       dispatch(updateSelectedText(fragmentText));
       divRef.current.style.boxShadow = `0 0 0 1px ${theme.palette.action.disabled}`;
-      console.log(fragmentText);
     }
   }, []);
 

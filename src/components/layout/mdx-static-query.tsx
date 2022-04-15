@@ -13,7 +13,7 @@
 
 // const Layout = (props) => {
 //   const data = props.pageContext;
-//   console.log(props);
+//
 //   const location = props.location;
 //   const isBlogPost = props.isBlogPost;
 //   const imageSrc =
@@ -81,7 +81,7 @@
 //             }
 //           `}
 //           render={(data) => {
-//             console.log(data);
+//
 //             const { langs, defaultLangKey } = data.site.siteMetadata.languages;
 //             const langKey = getCurrentLangKey(langs, defaultLangKey, url);
 //             const homeLink = `/${langKey}/`;

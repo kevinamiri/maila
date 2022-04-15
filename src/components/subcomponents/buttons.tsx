@@ -24,7 +24,6 @@ const Buttons: FC = (props) => {
   const [open, setOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(1);
 
-  console.log(selectedIndex);
   const handleMenuItemClick = (index: number): void => {
     setSelectedIndex(index);
     setOpen(false);

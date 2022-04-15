@@ -6,7 +6,7 @@ import ConceptBlock01 from "./ConceptBlock01";
 
 const HomeBlock03 = (props) => {
   const lists = props.list;
-  console.log(lists);
+
   const sel = select(props.langKey);
   const getClass = (langKey: string) => {
     switch (langKey) {

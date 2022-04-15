@@ -4,7 +4,6 @@ import AppContext from "../../contexts/AppContext";
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const { userInfo } = useContext(AppContext);
-  // console.log(userInfo.username);
   const status =
     !userInfo ||
     userInfo == null ||

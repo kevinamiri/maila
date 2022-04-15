@@ -31,10 +31,6 @@ export default function CheckboxesTags() {
         if (typeof newValue === "string") {
           dispatch(updateToneOfVoiceValue(newValue));
         } else if (newValue && inputValue) {
-          // Create a new value from the user input
-          // console.log(`inputValue: ${inputValue}`);
-          // console.log(`newValue: ${newValue}`);
-          // console.log("2");
           const newvaluearr = [...defaultVoice];
           newvaluearr.push({ tone: inputValue });
           dispatch(updateToneOfVoiceValue(newvaluearr));

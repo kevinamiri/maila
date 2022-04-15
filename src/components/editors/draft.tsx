@@ -10,4 +10,4 @@
 // };
 
 // dispatch(setCurrentWordRange(selectedPoint));
-// console.log(selectedPoint);
+//

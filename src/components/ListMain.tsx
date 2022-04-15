@@ -29,7 +29,6 @@ const ListMain = (props: listMainProps) => {
   const formattedIdList = props.formattedId;
   const dirListName = props.dirList;
   const iconComponent = props.iconComponent;
-  console.log(formattedIdList);
   return (
     <>
       <Tooltip

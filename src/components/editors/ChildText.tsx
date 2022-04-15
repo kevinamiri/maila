@@ -55,8 +55,6 @@ const ChildText = (props) => {
 
     //save selection
 
-    // console.log(editor.selection);
-
     editor.selection &&
       Transforms.insertText(editor, selectedContent, {
         at: editor.selection,

@@ -96,7 +96,7 @@ const slice = createSlice({
 
     // bugRemoved: (bugs, action) => {
     //   const temp = bugs.filter((bug) => bug.id !== action.payload.id);
-    //   console.log(temp);
+    //
     //   return temp;
     // },
   },

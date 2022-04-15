@@ -4,7 +4,7 @@ import { Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
 
-//fetching the data from the api and then inserting it into the editor
+// fetching the data from the api and then inserting it into the different editors
 async function useFetchInsert(
   dispatch,
   enqueueSnackbar,
@@ -14,7 +14,7 @@ async function useFetchInsert(
   fieldValues,
   selectedStr
 ) {
-  //selected text of editor with /n
+  // Selected text of editor with /n
   const selectedTextValue =
     (editors[0].selection &&
       SlateNode.fragment(editors[0], editors[0].selection)
@@ -25,13 +25,13 @@ async function useFetchInsert(
     (data) => {
       if (data) {
         dispatch(updateProgressValue(50));
-        let textOptions = Object.values(data);
-        textOptions
-          .filter((x: any) => x.search("Error 4043") != -1)
+        let options = Object.values(data);
+        options
+          .filter((x: any) => x.search("Error 404") != -1)
           .map((element) => enqueueSnackbar(element));
-        textOptions
-          .filter((x: any) => x.search("Error 4043") == -1)
-          .map((text, index) =>
+        options
+          .filter((x: any) => x.search("Error 404") == -1)
+          .map((text: string, index) =>
             Transforms.insertText(editors[index + 1], text, { at: [0] })
           );
         dispatch(updateProgressValue(100));
@@ -44,12 +44,9 @@ async function useFetchInsert(
             : Editor.end(editors[0], [])
         );
       } else {
-        enqueueSnackbar(
-          "Something went wrong, please try again, if the problem persists please contact the support@maila.ai",
-          {
-            variant: "error",
-          }
-        );
+        enqueueSnackbar("Something went wrong, Please try again", {
+          variant: "error",
+        });
         Transforms.insertText(
           editors[1],
           data.message +
