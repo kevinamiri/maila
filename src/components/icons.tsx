@@ -24,8 +24,9 @@ import {
   QuestionGeneration,
   MetaDescription,
   LandingPageHeader,
+  BlogPostHeaderIcon,
   LandingPageHeaderDescription,
-  BlogConclusion,
+  BlogPASIcon,
   Thankyou,
   BlogIntro,
   AddBlog,
@@ -49,6 +50,8 @@ import {
   WriteFollowUpEmail,
   WriteColdEmail,
   WriteMissionStatement,
+  BlogPostConclusionIcon,
+  BlogPostAidaIcon,
 } from "../icons/Icons";
 
 interface IconProps {
@@ -271,7 +274,7 @@ const IconsList = (props) => {
     case "metaDescription":
       return (
         <MetaDescription
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -298,10 +301,10 @@ const IconsList = (props) => {
           {...props}
         />
       );
-    case "blogConclusion":
+    case "blogPAS":
       return (
-        <BlogConclusion
-          viewBox='0 0 32 32'
+        <BlogPASIcon
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'
@@ -438,16 +441,6 @@ const IconsList = (props) => {
           {...props}
         />
       );
-    case "adjustTone":
-      return (
-        <AdjustTone
-          viewBox='0 0 32 32'
-          height='24'
-          width='24'
-          fontSize='small'
-          {...props}
-        />
-      );
     case "grammarCorrection":
       return (
         <GrammarCorrection
@@ -501,6 +494,36 @@ const IconsList = (props) => {
     case "writeMissionStatement":
       return (
         <WriteMissionStatement
+          viewBox='0 0 600 600'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+    case "blogPostAida":
+      return (
+        <BlogPostAidaIcon
+          viewBox='0 0 600 600'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+    case "blogPostConclusionIcon":
+      return (
+        <BlogPostConclusionIcon
+          viewBox='0 0 600 600'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+    case "blogPostHeaderIcon":
+      return (
+        <BlogPostHeaderIcon
           viewBox='0 0 600 600'
           height='24'
           width='24'

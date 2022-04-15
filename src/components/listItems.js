@@ -163,7 +163,7 @@ const ListSidebar = () => {
                         {blog.map((item, index) => {
                             return (
                                 <ListCatChild key={index} dirList={item.url} formattedId={item.title}>
-                                    <StickyNote2RoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />
+                                    <IconsList type={item.icon} />
                                 </ListCatChild>
                             )
                         })}
