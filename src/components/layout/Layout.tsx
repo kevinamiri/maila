@@ -6,7 +6,7 @@ import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
 import GlobalStyles from "../../components/GlobalStyles";
 import { getSrc } from "gatsby-plugin-image";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import useSettings from "../../hooks/useSettings";
 
 const Layout = (props) => {

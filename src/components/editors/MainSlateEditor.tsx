@@ -1,15 +1,7 @@
 import React, { useCallback, useState } from "react";
-import Prism from "./PrismJs";
 import isHotkey from "is-hotkey";
 import { Editable, useSlate, Slate, ReactEditor } from "editable-slate-react";
-import {
-  Editor,
-  Transforms,
-  Range,
-  Element as SlateElement,
-  Text as SlateText,
-  Descendant,
-} from "slate";
+import { Editor, Transforms, Element as SlateElement, Descendant } from "slate";
 import { Node as SlateNode } from "slate";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -21,6 +13,7 @@ import {
   updateSelectedText,
 } from "../../slices/editorParams";
 import FooterEditorBar from "./FooterEditorBar";
+import usePrism from "../../hooks/usePrism";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import FormatBoldRoundedIcon from "@mui/icons-material/FormatBold";
 import FormatItalicRoundedIcon from "@mui/icons-material/FormatItalic";
@@ -31,7 +24,9 @@ import LooksTwoRoundedIcon from "@mui/icons-material/LooksTwo";
 import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuote";
 import FormatListNumberedRoundedIcon from "@mui/icons-material/FormatListNumbered";
 import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBulleted";
-import { IconButton, ToggleButtonGroup, Tooltip } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import Tooltip from "@mui/material/Tooltip";
 import UseCompletionSuffix from "hooks/UseCompletionSuffix";
 import { useSelector, useDispatch } from "react-redux";
 import { updateProgressValue } from "../../slices/progress";
@@ -73,6 +68,7 @@ const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
 const MainSlateEditor = (props) => {
   //hooks must be inside of the function
   const dispatch = useDispatch();
+  const { decorate } = usePrism();
   const fieldValues = useSelector((state) => state.fieldsValue);
   const { enqueueSnackbar } = useSnackbar();
   const renderElement = useCallback((props) => <Element {...props} />, []);
@@ -132,7 +128,6 @@ const MainSlateEditor = (props) => {
   }, []);
 
   const [value, setValue] = useState<Descendant[]>(defaultValue);
-  const [language, setLanguage] = useState("js");
   const handleChange = (value: SlateNode[]) => {
     setValue(value);
     const content = JSON.stringify(value);
@@ -202,46 +197,6 @@ const MainSlateEditor = (props) => {
         });
     });
   };
-
-  const getLength = (token) => {
-    if (typeof token === "string") {
-      return token.length;
-    } else if (typeof token.content === "string") {
-      return token.content.length;
-    } else {
-      return token.content.reduce((l, t) => l + getLength(t), 0);
-    }
-  };
-
-  // decorate function depends on the language selected
-  const decorate = useCallback(
-    ([node, path]) => {
-      const ranges = [];
-      if (!SlateText.isText(node)) {
-        return ranges;
-      }
-      const tokens = Prism.tokenize(node.text, Prism.languages[language]);
-      let start = 0;
-
-      for (const token of tokens) {
-        const length = getLength(token);
-        const end = start + length;
-
-        if (typeof token !== "string") {
-          ranges.push({
-            [token.type]: true,
-            anchor: { path, offset: start },
-            focus: { path, offset: end },
-          });
-        }
-
-        start = end;
-      }
-
-      return ranges;
-    },
-    [language]
-  );
 
   return (
     <>

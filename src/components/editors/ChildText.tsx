@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Editable, Slate, ReactEditor } from "editable-slate-react";
-import { Editor, Location, Transforms } from "slate";
+import { Editable, Slate } from "editable-slate-react";
+import { Editor, Transforms } from "slate";
 import { Node as SlateNode } from "slate";
 import CardContent from "@mui/material/CardContent";
 import isHotkey from "is-hotkey";
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import FooterEditorBar from "./FooterEditorBar";
 import { selectedText, serialize } from "hooks/currentSelectEditor";
 import { useDispatch, useSelector } from "react-redux";
@@ -15,7 +15,6 @@ const HOTKEYS = {
   "mod+i": "italic",
   "mod+u": "underline",
   "mod+`": "code",
-  //
   "mod+a": "selectAll",
 };
 

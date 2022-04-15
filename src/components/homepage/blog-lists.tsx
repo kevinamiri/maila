@@ -1,7 +1,7 @@
 import React from "react";
 import BlogCard from "./blog-card";
 import Box from "@mui/material/Box";
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 const BlogLists = (props) => {
   const posts = props.data.allMarkdownRemark.edges;

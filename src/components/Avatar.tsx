@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import AppContext from "../contexts/AppContext";
-import { Avatar, Button, Typography } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import { navigate } from "gatsby";
 
 function UserAvatar({ handleClick }) {

@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import React from "react";
-import { Box, Container, Paper } from "@mui/material";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
 import { useSelector } from "react-redux";
 import ProductAutocompleteUrl from "./ProductAutocompleteUrl";
 

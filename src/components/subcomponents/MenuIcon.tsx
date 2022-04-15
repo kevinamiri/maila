@@ -1,5 +1,5 @@
 import React from "react";
-import { IconButton } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 import AppContext from "../../contexts/AppContext";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Logo from "../../components/logo";

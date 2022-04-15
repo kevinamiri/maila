@@ -1,16 +1,12 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import {
-  Box,
-  Button,
-  Drawer,
-  Fab,
-  FormControlLabel,
-  Switch,
-  TextField,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Drawer from "@mui/material/Drawer";
+import Fab from "@mui/material/Fab";
+import TextField from "@mui/material/TextField";
+import Tooltip from "@mui/material/Tooltip";
+import Typography from "@mui/material/Typography";
 import { THEMES } from "../constants";
 import useSettings from "../hooks/useSettings";
 import SettingsIcon from "@mui/icons-material/Settings";

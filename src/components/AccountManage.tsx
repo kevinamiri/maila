@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
-import {
-  Box,
-  Breadcrumbs,
-  Container,
-  Divider,
-  Grid,
-  Tab,
-  Tabs,
-  Typography,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
+import Typography from "@mui/material/Typography";
 import {
   AccountBillingSettings,
   AccountGeneralSettings,

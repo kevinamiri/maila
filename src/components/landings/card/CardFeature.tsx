@@ -2,9 +2,8 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
-import { Chip } from "@mui/material";
+import Chip from "@mui/material/Chip";
 import Typography from "@mui/material/Typography";
-import UnderlinedText from "../style/UnderlinedText";
 
 interface CardFeatureProps {
   title?: string;

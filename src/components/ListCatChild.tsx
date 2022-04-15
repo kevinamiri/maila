@@ -2,8 +2,8 @@ import React from "react";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { Tooltip } from "@mui/material";
-import { Typography } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
+import Typography from "@mui/material/Typography";
 import { Link } from "gatsby";
 
 interface listProps {

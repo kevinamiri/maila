@@ -1,6 +1,6 @@
 import React from "react";
 import PopUpCardBlockGrid from "./PopUpCardBlockGrid";
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import { StaticImage } from "gatsby-plugin-image";
 
 // a happy man watching his phone along with a concept for clarity his text

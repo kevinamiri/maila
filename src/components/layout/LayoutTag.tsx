@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Footer from "../landings/Footer";
 import Helmet from "react-helmet";
 import TopBar from "../TopBar";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import useSettings from "../../hooks/useSettings";
 
 const LayoutTag = (props) => {

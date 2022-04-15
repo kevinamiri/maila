@@ -1,14 +1,15 @@
 import React from "react";
 import PlusButton from "../subcomponents/plus-button";
-import { Grid, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
-import { Editor, Node as SlateNode } from "slate";
+import { Editor } from "slate";
 import RedoIcon from "@mui/icons-material/Redo";
 import UndoIcon from "@mui/icons-material/Undo";
 import ToggleButtonList from "../subcomponents/ToggleButtonList";
 import CopyToClipboard from "../subcomponents/CopyToClipboard";
-import { serialize } from "hooks/currentSelectEditor";
+import { serialize } from "../../hooks/currentSelectEditor";
 import BookmarkBorderRoundedIcon from "@mui/icons-material/BookmarkBorderRounded";
 import Play from "components/subcomponents/Play";
 

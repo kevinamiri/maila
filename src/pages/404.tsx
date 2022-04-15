@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AuthenticationLayout from "../components/layout/AuthenticationLayout";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import { Container } from "@mui/material";
+import Container from "@mui/material/Container";
 
 import { IntlProvider } from "react-intl";
 import useSettings from "../hooks/useSettings";

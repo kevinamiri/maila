@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import SimpleAccordion from "./card/SimpleAccordion";
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 interface QuestionListProps {
   questions?: any | unknown;

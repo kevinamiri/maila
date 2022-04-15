@@ -2,7 +2,7 @@ import React from "react";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { Tooltip } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 import { FormattedMessage } from "react-intl";
 import { Link } from "gatsby";
 import ExpandLess from "@mui/icons-material/ExpandLess";

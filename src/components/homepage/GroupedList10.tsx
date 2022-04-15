@@ -13,11 +13,9 @@ import Grid from "@mui/material/Grid";
 
 import { IconButtonProps } from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
+
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Avatar, Link } from "@mui/material";
+
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
 }

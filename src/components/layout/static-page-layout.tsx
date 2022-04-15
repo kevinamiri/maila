@@ -7,7 +7,7 @@ import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
 import { shouldPolyfill } from "@formatjs/intl-relativetimeformat/should-polyfill";
 import { startPath, check_path, setLangsMenu } from "../../utils/LangAddon";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import useSettings from "../../hooks/useSettings";
 
 const StaticPageLayout = (props) => {

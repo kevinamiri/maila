@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import { FormattedMessage } from "react-intl";
-import { Button, Typography, Grid } from '@mui/material';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import { zIndex } from '@mui/material/styles';
 
 //All GPT3 languages

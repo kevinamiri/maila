@@ -8,7 +8,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import LanguageAutocompleteApp from "./languageAutocompleteApp";
-import { Link as MuiLink, Tooltip } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 import GTranslateRoundedIcon from "@mui/icons-material/GTranslateRounded";
 

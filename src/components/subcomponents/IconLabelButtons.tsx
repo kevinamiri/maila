@@ -1,7 +1,7 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import { SvgIcon } from "@mui/material";
+import SvgIcon from "@mui/material/SvgIcon";
 import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 

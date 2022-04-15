@@ -2,7 +2,7 @@ import React from "react";
 import PostList from "./PostList";
 import Badge from "@mui/material/Badge";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 
 const TagRouteTemplate = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges.map((p) => p.node);

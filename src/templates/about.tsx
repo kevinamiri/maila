@@ -3,9 +3,9 @@ import * as PropTypes from "prop-types";
 import TagList from "../components/landings/modules/TagList";
 import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
-import SEO from "../components/SEO/SEO";
 import Content, { HTMLContent } from "../components/homepage/Content";
-import { Typography, Container, Box } from "@mui/material";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 
 const AboutPageTemplate = ({
   title,
