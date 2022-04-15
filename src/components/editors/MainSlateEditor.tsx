@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from "react";
+import Prism from "./PrismJs";
 import isHotkey from "is-hotkey";
 import { Editable, useSlate, Slate, ReactEditor } from "editable-slate-react";
 import {
@@ -6,7 +7,7 @@ import {
   Transforms,
   Range,
   Element as SlateElement,
-  BaseEditor,
+  Text as SlateText,
   Descendant,
 } from "slate";
 import { Node as SlateNode } from "slate";
@@ -47,7 +48,8 @@ const HOTKEYS = {
   "mod+a": "selectAll",
   "mod+enter": "enter",
   "mod+g": "suffix",
-  "alt+h": "highlight"
+  "alt+enter": "code-suffix",
+  "alt+h": "highlight",
 };
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
@@ -118,7 +120,7 @@ const MainSlateEditor = (props) => {
   const onBlur = React.useCallback(() => {
     // savedSelection.current = editor.selection;
     if (editor.selection) {
-      dispatch(setCurrentWordRange(editor.selection))
+      dispatch(setCurrentWordRange(editor.selection));
       const fragmentText =
         editor.selection &&
         SlateNode.fragment(editor, editor.selection)
@@ -130,7 +132,7 @@ const MainSlateEditor = (props) => {
   }, []);
 
   const [value, setValue] = useState<Descendant[]>(defaultValue);
-
+  const [language, setLanguage] = useState("js");
   const handleChange = (value: SlateNode[]) => {
     setValue(value);
     const content = JSON.stringify(value);
@@ -163,6 +165,25 @@ const MainSlateEditor = (props) => {
     });
   };
 
+  const handleSuffixCode = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          UseCompletionSuffix(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "48",
+            fieldValues
+          );
+        });
+    });
+  };
+
   const handleGenerate = (e) => {
     e.preventDefault();
     window.grecaptcha.ready(() => {
@@ -181,6 +202,46 @@ const MainSlateEditor = (props) => {
         });
     });
   };
+
+  const getLength = (token) => {
+    if (typeof token === "string") {
+      return token.length;
+    } else if (typeof token.content === "string") {
+      return token.content.length;
+    } else {
+      return token.content.reduce((l, t) => l + getLength(t), 0);
+    }
+  };
+
+  // decorate function depends on the language selected
+  const decorate = useCallback(
+    ([node, path]) => {
+      const ranges = [];
+      if (!SlateText.isText(node)) {
+        return ranges;
+      }
+      const tokens = Prism.tokenize(node.text, Prism.languages[language]);
+      let start = 0;
+
+      for (const token of tokens) {
+        const length = getLength(token);
+        const end = start + length;
+
+        if (typeof token !== "string") {
+          ranges.push({
+            [token.type]: true,
+            anchor: { path, offset: start },
+            focus: { path, offset: end },
+          });
+        }
+
+        start = end;
+      }
+
+      return ranges;
+    },
+    [language]
+  );
 
   return (
     <>
@@ -271,6 +332,7 @@ const MainSlateEditor = (props) => {
             <Editable
               renderElement={renderElement}
               renderLeaf={renderLeaf}
+              decorate={decorate}
               placeholder={props.placeholder}
               spellCheck
               autoFocus
@@ -286,6 +348,9 @@ const MainSlateEditor = (props) => {
                     }
                     if (mark === "enter") {
                       handleGenerate(event);
+                    }
+                    if (mark === "code-suffix") {
+                      handleSuffixCode(event);
                     }
                     if (mark === "selectAll") {
                       savedSelection.current = editor.selection;
