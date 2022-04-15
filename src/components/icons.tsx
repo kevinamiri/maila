@@ -434,7 +434,7 @@ const IconsList = (props) => {
     case "writeVisionStatement":
       return (
         <WriteVisionStatement
-          viewBox='0 0 32 32'
+          viewBox='0 0 600 600'
           height='24'
           width='24'
           fontSize='small'

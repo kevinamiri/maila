@@ -5,6 +5,7 @@ import TextRotationAngleupIcon from "@mui/icons-material/TextRotationAngleup";
 import ShortTextIcon from "@mui/icons-material/ShortText";
 import BarToggleButton from "components/editors/BarToggleButton";
 import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
+import Stars from "../../icons/stars";
 // import LongMenu from "./LongMenu";
 import SpellcheckIcon from "@mui/icons-material/Spellcheck";
 // import SaveIcon from "@mui/icons-material/Save";
@@ -41,17 +42,17 @@ const EditorToolsBoxBar = ({
           handleClick={handleSimplify}
         />
         <BarToggleButton
-          format='Formal Style'
+          format='To Formal Style'
           icon={<TextRotationAngleupIcon />}
           handleClick={handleAdvancify}
         />
         <BarToggleButton
-          format='Rephrasing'
+          format='Enhancing'
           icon={<AutoAwesomeRoundedIcon />}
           handleClick={handleElegantify}
         />
         <BarToggleButton
-          format='Grammar checking'
+          format='Grammar Checking'
           icon={<SpellcheckIcon />}
           handleClick={handleSpellcheck}
         />
