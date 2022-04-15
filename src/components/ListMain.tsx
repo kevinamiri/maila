@@ -4,7 +4,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { Tooltip } from "@mui/material";
 import { FormattedMessage } from "react-intl";
-import { Typography } from "@mui/material";
 import { Link } from "gatsby";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";

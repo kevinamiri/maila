@@ -62,6 +62,7 @@
     "node-fetch": "^2.1.0",
     "notistack": "^2.0.2",
     "path": "^0.12.7",
+    "prismjs": "^1.27.0",
     "prop-types": "^15.7.2",
     "ptz-i18n": "^1.0.0",
     "react": "^17.0.2",

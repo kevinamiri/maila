@@ -47,6 +47,7 @@ const HOTKEYS = {
   "mod+a": "selectAll",
   "mod+enter": "enter",
   "mod+g": "suffix",
+  "alt+h": "highlight"
 };
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
@@ -117,7 +118,7 @@ const MainSlateEditor = (props) => {
   const onBlur = React.useCallback(() => {
     // savedSelection.current = editor.selection;
     if (editor.selection) {
-      dispatch(setCurrentWordRange(editor.selection));
+      dispatch(setCurrentWordRange(editor.selection))
       const fragmentText =
         editor.selection &&
         SlateNode.fragment(editor, editor.selection)
@@ -295,7 +296,7 @@ const MainSlateEditor = (props) => {
                       });
                     }
                     toggleMark(editor, mark);
-                    toggleBlock(editor, mark);
+                    // toggleBlock(editor, mark);
                   }
                 }
               }}

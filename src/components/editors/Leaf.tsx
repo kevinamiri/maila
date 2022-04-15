@@ -20,6 +20,12 @@ export const Leaf = ({ attributes, children, leaf }) => {
     children = <strong>{children}</strong>;
   }
 
+  if (leaf.highlight) {
+    children = (
+      <mark style={{ backgroundColor: "rgb(20, 184, 166)" }}>{children}</mark>
+    );
+  }
+
   if (leaf.code) {
     children = <code>{children}</code>;
   }

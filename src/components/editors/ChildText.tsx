@@ -40,21 +40,31 @@ const ChildText = (props) => {
   const isDeleteHotkey = isHotkey("backspace");
 
   const [value2, setValue2] = useState<SlateNode[]>(defaultValue);
+
+  /**
+   * Following function would send the value of the editor to main editor
+   */
   const TransferingToMainEditor = () => {
     /* 
-    electStatus:
-    if we have editor2 selection text then the value would be the selected text of the editor2
-    but if we do not have any value in editor2 then the whole text would be the value for inserting
+     If we have editor2-selected text, the value is the selected text in editor2.
+    But if we have no selected value in editor2, the whole text is the value for process of inserting
     */
-    const selectStatus = (editor2.selection && selectedText(editor2)) || false;
 
+    // editor2-selected text
+    const fragmentText =
+      editor2.selection &&
+      SlateNode.fragment(editor2, editor2.selection)
+        .map((x) => SlateNode.string(x))
+        .join("\n");
+
+    // if we selected something in editor2, otherwise false
+    const selectStatus = (editor2.selection && selectedText(editor2)) || false;
     /*
-    so selectedContent is whether selected text of editor2 or not exist then the whole text
+    Thus If we have not selected text in editor2, we have to set the value of editor2 to the whole text.
     */
     const selectedContent = selectStatus ? selectStatus : serialize(editor2);
 
-    //save selection
-
+    // If save selection exist, we have to set the selection to the save selection.
     editor.selection &&
       Transforms.insertText(editor, selectedContent, {
         at: editor.selection,
