@@ -86,8 +86,6 @@ const MainSlateEditor = (props) => {
   const storageKey =
     props.storageKey === undefined ? "document" : props.storageKey;
 
-  let inputLimitation = props.limitChar;
-
   const defaultValue = () => {
     return (
       JSON.parse(

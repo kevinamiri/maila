@@ -21,7 +21,6 @@ const serialize = (editorname: Editor) => {
 interface GenerationButtonProps {
   inputLimitation?: number;
   mainPlaceholder?: String;
-  headerTitle?: string;
   productType?: string;
   productUrl?: string;
   editor: Editor;
@@ -34,7 +33,6 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
   inputLimitation = 15000,
   productType = "4",
   productUrl = "generate",
-  headerTitle = "write down some text",
   editor,
   editor2,
   editor3,

@@ -1,13 +1,10 @@
-import React, { useMemo, useEffect, Suspense } from "react";
-import { withReact } from "editable-slate-react";
-import { createEditor } from "slate";
-import { withHistory } from "slate-history";
+import React, { useEffect, Suspense } from "react";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Divider from "@mui/material/Divider";
-import LinearProgressLoading from "../subcomponents/LinearProgressLoading";
+import useEditors from "../../hooks/useEditors";
 import loadScriptByURL from "./google";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import FormRedux from "./FormRedux";
@@ -55,14 +52,10 @@ export interface ProductGenerationProps {
 }
 
 const ProductDescription: React.FC<ProductGenerationProps> = ({
-  message01 = "Please select the text you would like to modify",
-  mainPlaceholder = `Let's get started with a product description, shall we?`,
   inputLimitation = 15000,
   productType = "4",
   label,
   productUrl = "generate",
-  generateButtonName = "generate",
-  headerTitle = "write down some text",
   toneTextField,
   labelsLists,
   description,
@@ -72,11 +65,8 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   editorType = "document",
 }: ProductGenerationProps) => {
   // const editor = useMemo(() => withHistory(withReact(createEditor())), []);
-  const editor1 = useMemo(() => withHistory(withReact(createEditor())), []);
-  const editor2 = useMemo(() => withHistory(withReact(createEditor())), []);
-  const editor3 = useMemo(() => withHistory(withReact(createEditor())), []);
-  const editor4 = useMemo(() => withHistory(withReact(createEditor())), []);
-  const editor5 = useMemo(() => withHistory(withReact(createEditor())), []);
+  const editors = useEditors();
+  const [editor1, editor2, editor3, editor4, editor5] = editors;
 
   // const editors = [editor, editor2, editor3, editor4, editor5];
   const dispatch = useDispatch();
@@ -184,8 +174,6 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                 inputLimitation={inputLimitation}
                 productType={productType}
                 productUrl={productUrl}
-                generateButtonName={generateButtonName}
-                headerTitle={headerTitle}
                 // the main editor is editor
                 editor={editor}
                 editor2={editor2}
