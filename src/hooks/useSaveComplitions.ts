@@ -1,12 +1,12 @@
 import { Auth } from "aws-amplify";
 import React from "react";
 
-const postData = async (editor) => {
+const postData = async ({ editor }) => {
   const theUrl = `https://api.maila.ai/save-completions`;
   const user = await Auth.currentAuthenticatedUser();
   let params = {};
-  params["username"] = user.username;
   params["query"] = editor.children;
+  params["username"] = user.username;
   const data = JSON.stringify(params);
   const response = await fetch(theUrl, {
     headers: {
