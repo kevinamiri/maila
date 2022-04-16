@@ -30,6 +30,7 @@ import { useSnackbar } from "notistack";
 import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
 import EditorManage from "../components/editor-manage";
 import useToolsProducts from "../hooks/useToolsProducts";
+import DocumentsPage from "../components/documents-page";
 
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
@@ -82,8 +83,6 @@ export default function App() {
   const productDescription = productsNoFilter.filter(
     (item) => item.slug.split("/")[4] === "product-description"
   )[0];
-  console.log(productDescription);
-
   // const copywriting = products.find((item) => item.slug.split("/")[3] === "copywriting")
   // const email = products.find((item) => item.slug.split("/")[3] === "email")
   // const writing = products.find((item) => item.slug.split("/")[3] === "writing")
@@ -606,6 +605,7 @@ export default function App() {
                     labelsLists={[]}
                   />
                   <AccountManage path='/profile' />
+                  <DocumentsPage path='/documents' />
                   <EditorManage path='/editor' />
                 </Router>
               </Box>

@@ -10,8 +10,9 @@ import UndoIcon from "@mui/icons-material/Undo";
 import ToggleButtonList from "../subcomponents/ToggleButtonList";
 import CopyToClipboard from "../subcomponents/CopyToClipboard";
 import { serialize } from "../../hooks/currentSelectEditor";
-import BookmarkBorderRoundedIcon from "@mui/icons-material/BookmarkBorderRounded";
 import Play from "components/subcomponents/Play";
+import ButtonPostData from "./button-post-data";
+// @refresh reset
 
 const TotalCharacters = styled("div")(({ theme }) => ({
   padding: "0.1em 0.1rem",
@@ -48,10 +49,6 @@ export const FooterEditorBar = ({
 }: footerEditorBarProps) => {
   const CharCount =
     serialize(editor).length > 15000 ? TotalCharactersWarning : TotalCharacters;
-  const warningMessage =
-    serialize(editor).length > 15000
-      ? "Please enter a maximum of 200 words."
-      : "";
 
   return (
     <>
@@ -67,11 +64,7 @@ export const FooterEditorBar = ({
       <Grid item xs={11} container direction='row' alignItems='flex-end'>
         {disabled ? "" : <PlusButton onClick={handleTranser} />}
         <CopyToClipboard editor={editor} />
-        <ToggleButtonList
-          title='BookmarkBorderRoundedIcon'
-          icon={<BookmarkBorderRoundedIcon fontSize='inherit' />}
-          disabled={true}
-        />
+        <ButtonPostData editor={editor} />
         {voice ? <Play /> : ""}
       </Grid>
       <Grid
