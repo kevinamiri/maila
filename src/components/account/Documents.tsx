@@ -12,6 +12,11 @@ import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import { Auth } from "aws-amplify";
+import { Node as SlateNode } from "slate";
+
+export const serialize = (children) => {
+  return children.map((x) => SlateNode.string(x)).join("\n");
+};
 
 const Documents: FC = () => {
   const [posts, setPosts] = useState([]);
@@ -31,14 +36,17 @@ const Documents: FC = () => {
       body: JSON.stringify(params),
     });
     const data = await response.json();
-    return data;
+    const values = Object.values(data).filter((x) => {
+      // if x.userData  exists, then it is a post
+      return x.userData !== undefined;
+    });
+    console.log(values);
+    return values;
   };
 
   React.useEffect(() => {
     fetchData().then(setPosts);
   }, []);
-
-  const createdAt = subHours(new Date(), 1);
 
   return (
     <Box
@@ -49,13 +57,13 @@ const Documents: FC = () => {
       }}
     >
       <Card>
-        <CardHeader title='posts Summary' />
+        <CardHeader title='Saved Outputs' />
         <Divider />
         <Table>
           <TableBody>
             {posts.map((post) => (
               <TableRow
-                key={post.id}
+                key={post.generatedAt}
                 sx={{
                   "&:last-child td": {
                     border: 0,
@@ -63,35 +71,17 @@ const Documents: FC = () => {
                 }}
               >
                 <TableCell>
-                  <Typography sx={{ cursor: "pointer" }} variant='h5'>
-                    {post.id}
+                  <Typography sx={{ cursor: "pointer" }} variant='caption'>
+                    {post.generatedAt}
                   </Typography>
-                  <Box
-                    sx={{
-                      alignItems: "center",
-                      display: "flex",
-                      mt: 1,
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        height: 4,
-                        width: 4,
-                        borderRadius: 4,
-                        backgroundColor: "text.secondary",
-                        mx: 1,
-                      }}
-                    />
-                    <Typography color='textSecondary' variant='body1'>
-                      {formatDistanceToNowStrict(createdAt, {
-                        addSuffix: true,
-                      })}
-                    </Typography>
-                  </Box>
                 </TableCell>
-                <TableCell>{post.body}</TableCell>
+                <TableCell>
+                  <Typography color='textSecondary' variant='body1'>
+                    {serialize(post.userData)}{" "}
+                  </Typography>
+                </TableCell>
                 <TableCell align='right'>
-                  <Button size='small' variant='outlined'>
+                  <Button size='small' variant='outlined' disabled={true}>
                     View
                   </Button>
                 </TableCell>

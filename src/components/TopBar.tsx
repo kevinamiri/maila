@@ -120,7 +120,7 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
               <MenuItem onClick={() => navigate("/app/profile")}>
                 <FormattedMessage id='MC01' />
               </MenuItem>
-              <MenuItem>
+              <MenuItem onClick={() => navigate("/app/documents")}>
                 <FormattedMessage id='MC02' />
               </MenuItem>
               <MenuItem onClick={logout}>
