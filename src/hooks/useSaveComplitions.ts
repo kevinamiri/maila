@@ -1,5 +1,4 @@
 import { Auth } from "aws-amplify";
-import React from "react";
 
 const postData = async ({ editor }) => {
   const theUrl = `https://api.maila.ai/save-completions`;

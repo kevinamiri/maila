@@ -3,6 +3,7 @@ import { updateProgressValue } from "../slices/progress";
 import { Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
+import { updateExpansion } from "../slices/ui-states";
 
 // fetching the data from the api and then inserting it into the different editors
 async function useFetchInsert(
@@ -34,6 +35,7 @@ async function useFetchInsert(
           .map((text: string, index) =>
             Transforms.insertText(editors[index + 1], text, { at: [0] })
           );
+        dispatch(updateExpansion(true));
         dispatch(updateProgressValue(100));
         ReactEditor.focus(editors[0]);
         // Transforms.select(editors[0], Editor.end(editors[0], []));

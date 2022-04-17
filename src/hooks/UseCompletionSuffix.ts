@@ -5,6 +5,7 @@ import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
 import { HistoryEditor } from "slate-history";
 import React from "react";
+import { updateExpansion } from "slices/ui-states";
 
 //fetching the data from the api and then inserting it into the editor itself at the selection
 async function UseCompletionSuffix(
@@ -56,6 +57,7 @@ async function UseCompletionSuffix(
         .map((text, index) =>
           Transforms.insertText(editors[index + 1], text, { at: [0] })
         );
+      dispatch(updateExpansion(true));
       dispatch(updateProgressValue(100));
       ReactEditor.focus(editors[0]);
       Transforms.select(
