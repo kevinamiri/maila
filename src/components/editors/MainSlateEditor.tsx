@@ -25,7 +25,7 @@ import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuote";
 import FormatListNumberedRoundedIcon from "@mui/icons-material/FormatListNumbered";
 import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBulleted";
 import IconButton from "@mui/material/IconButton";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import { StyledToggleButtonGroup } from "./toggle-button-group";
 import Tooltip from "@mui/material/Tooltip";
 import UseCompletionSuffix from "hooks/UseCompletionSuffix";
 import { useSelector, useDispatch } from "react-redux";
@@ -33,37 +33,9 @@ import { updateProgressValue } from "../../slices/progress";
 import { useSnackbar } from "notistack";
 import HoveringToolbar from "./HoveringToolbar";
 import AutoFixHighRoundedIcon from "@mui/icons-material/AutoFixHighRounded";
-
-const HOTKEYS = {
-  "mod+b": "bold",
-  "mod+i": "italic",
-  "mod+u": "underline",
-  "mod+`": "code",
-  "mod+s": "subject",
-  "mod+a": "selectAll",
-  "mod+enter": "enter",
-  "mod+g": "suffix",
-  "alt+enter": "code-suffix",
-  "alt+h": "highlight",
-};
+import { HOTKEYS } from "./hotkeys";
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
-
-const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
-  "& .MuiToggleButtonGroup-grouped": {
-    margin: theme.spacing(0.5),
-    border: 0,
-    "&.Mui-disabled": {
-      border: 0,
-    },
-    "&:not(:first-of-type)": {
-      borderRadius: theme.shape.borderRadius,
-    },
-    "&:first-of-type": {
-      borderRadius: theme.shape.borderRadius,
-    },
-  },
-}));
 
 const MainSlateEditor = (props) => {
   //hooks must be inside of the function
@@ -198,6 +170,49 @@ const MainSlateEditor = (props) => {
     });
   };
 
+  const handleTranslate = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          UseCompletionSuffix(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "49",
+            fieldValues
+          );
+        });
+    });
+  };
+
+  const handleKeyDown = (event) => {
+    for (const hotkey in HOTKEYS) {
+      if (isHotkey(hotkey, event as any)) {
+        event.preventDefault();
+        const isSellect = hotkey === "mod+a" ? true : false;
+        const mark = HOTKEYS[hotkey];
+        mark === "code-suffix" && handleSuffixCode(event);
+        mark === "translate" && handleTranslate(event);
+        mark === "enter" && handleGenerate(event);
+        mark === "suffix" && handleSuffix(event);
+
+        if (mark === "selectAll") {
+          savedSelection.current = editor.selection;
+          dispatch(setCurrentWordRange(savedSelection.current));
+          Transforms.select(editor, {
+            anchor: Editor.start(editor, []),
+            focus: Editor.end(editor, []),
+          });
+        }
+        !isSellect && toggleMark(editor, mark);
+      }
+    }
+  };
+
   return (
     <>
       <Grid
@@ -293,33 +308,7 @@ const MainSlateEditor = (props) => {
               autoFocus
               onFocus={onFocus}
               onBlur={onBlur}
-              onKeyDown={(event) => {
-                for (const hotkey in HOTKEYS) {
-                  if (isHotkey(hotkey, event as any)) {
-                    event.preventDefault();
-                    const mark = HOTKEYS[hotkey];
-                    if (mark === "suffix") {
-                      handleSuffix(event);
-                    }
-                    if (mark === "enter") {
-                      handleGenerate(event);
-                    }
-                    if (mark === "code-suffix") {
-                      handleSuffixCode(event);
-                    }
-                    if (mark === "selectAll") {
-                      savedSelection.current = editor.selection;
-                      dispatch(setCurrentWordRange(savedSelection.current));
-                      Transforms.select(editor, {
-                        anchor: Editor.start(editor, []),
-                        focus: Editor.end(editor, []),
-                      });
-                    }
-                    toggleMark(editor, mark);
-                    // toggleBlock(editor, mark);
-                  }
-                }
-              }}
+              onKeyDown={handleKeyDown}
             />
           </Slate>
         </Grid>
@@ -327,10 +316,6 @@ const MainSlateEditor = (props) => {
       </Grid>
     </>
   );
-};
-
-const serialize = (editorname: Editor) => {
-  return editorname.children.map((x) => SlateNode.string(x)).join("\n");
 };
 
 const toggleBlock = (editor, format) => {
@@ -450,6 +435,7 @@ const BlockButton = ({ format, children }) => {
 
 const MarkButton = ({ format, children }) => {
   const editor = useSlate();
+
   return (
     <Box
       sx={{
