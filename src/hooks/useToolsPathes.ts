@@ -2,16 +2,22 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
 export const useToolsPathes = () => {
-  const { allMdx } = useStaticQuery(
+  const { allMarkdownRemark } = useStaticQuery(
     graphql`
       query UseToolPaths {
-        allMdx(filter: { frontmatter: { lang: { eq: "en" } } }) {
-          totalCount
+        allMarkdownRemark(
+          filter: {
+            frontmatter: {
+              templateKey: { eq: "tools-body" }
+              lang: { eq: "en" }
+            }
+          }
+        ) {
           edges {
             node {
               frontmatter {
-                url
                 title
+                url
               }
             }
           }
@@ -19,7 +25,7 @@ export const useToolsPathes = () => {
       }
     `
   );
-  return allMdx.edges;
+  return allMarkdownRemark.edges;
 };
 
 export default useToolsPathes;

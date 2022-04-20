@@ -11,6 +11,7 @@ date: "2022-02-22T00:00:00.000Z"
 slug: "/sv/tools/copywriting/product-description-ecommerce"
 lang: "sv"
 icon: "ecommerceDescription"
+templateKey: 'tools-body'
 product_type: "5"
 url: "/app/product-description-ecommerce"
 ---

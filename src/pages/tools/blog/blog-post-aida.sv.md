@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/sv/tools/blog/blog-post-aida"
 lang: "sv"
 icon: "blogPostAida"
+templateKey: 'tools-body'
 product_type: "16"
 url: "/app/blog-post-aida"
 ---

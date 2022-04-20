@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/fi/tools/writing/grammar-correction"
 lang: "fi"
 icon: "grammarCorrection"
+templateKey: 'tools-body'
 product_type: "35"
 url: "/app/grammar"
 ---

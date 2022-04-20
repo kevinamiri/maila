@@ -11,6 +11,7 @@ date: "2022-04-05"
 slug: /en/tools/email/informal-email
 lang: en
 icon: "addEmail"
+templateKey: 'tools-body'
 jsonId: "1127"
 product_type: "41"
 url: /app/informal-email

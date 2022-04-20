@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/writing/keyword-generator
 lang: en
 icon: "searchKeyword"
+templateKey: 'tools-body'
 jsonId: "2317"
 product_type: "34"
 url: /app/keyword-generator

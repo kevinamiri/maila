@@ -11,6 +11,7 @@ date: "2022-04-04"
 slug: "/fi/tools/email/sales-letters"
 lang: "fi"
 icon: "writeColdEmail"
+templateKey: 'tools-body'
 product_type: "23"
 url: "/app/sales-letters"
 ---

@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/de/tools/blog/blog-post-pas"
 lang: "de"
 icon: "blogPAS"
+templateKey: 'tools-body'
 product_type: "38"
 url: "/app/blog-post-pas"
 ---

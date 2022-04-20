@@ -10,6 +10,7 @@ date: "2022-04-04"
 slug: /en/tools/email/sales-letters/
 lang: en
 icon: "writeColdEmail"
+templateKey: 'tools-body'
 tags: ["Email"]
 jsonId: "1211"
 product_type: "23"

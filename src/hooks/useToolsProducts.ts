@@ -5,86 +5,122 @@ export const useToolsProducts = () => {
   const lang = useStaticQuery(
     graphql`
       query UseProducts {
-        en: allMdx(filter: { frontmatter: { lang: { eq: "en" } } }) {
+        en: allMarkdownRemark(
+          filter: {
+            frontmatter: {
+              templateKey: { eq: "tools-body" }
+              lang: { eq: "en" }
+            }
+          }
+        ) {
           edges {
             node {
               frontmatter {
+                title
                 description
                 header
-                help_hint
-                placeholder
                 usage
                 id
-                slug
-                icon
+                placeholder
+                help_hint
                 tags
-                title
-                url
+                date
+                slug
+                lang
                 product_type
+                url
                 jsonId
+                icon
               }
             }
           }
         }
-        sv: allMdx(filter: { frontmatter: { lang: { eq: "sv" } } }) {
+        sv: allMarkdownRemark(
+          filter: {
+            frontmatter: {
+              templateKey: { eq: "tools-body" }
+              lang: { eq: "sv" }
+            }
+          }
+        ) {
           edges {
             node {
               frontmatter {
+                title
                 description
                 header
-                help_hint
-                placeholder
                 usage
                 id
-                slug
-                icon
+                placeholder
+                help_hint
                 tags
-                title
-                url
+                date
+                slug
+                lang
                 product_type
+                url
                 jsonId
+                icon
               }
             }
           }
         }
-        da: allMdx(filter: { frontmatter: { lang: { eq: "da" } } }) {
+        da: allMarkdownRemark(
+          filter: {
+            frontmatter: {
+              templateKey: { eq: "tools-body" }
+              lang: { eq: "da" }
+            }
+          }
+        ) {
           edges {
             node {
               frontmatter {
+                title
                 description
                 header
-                help_hint
-                placeholder
                 usage
                 id
-                slug
-                icon
+                placeholder
+                help_hint
                 tags
-                title
-                url
+                date
+                slug
+                lang
                 product_type
+                url
                 jsonId
+                icon
               }
             }
           }
         }
-        fi: allMdx(filter: { frontmatter: { lang: { eq: "fi" } } }) {
+        fi: allMarkdownRemark(
+          filter: {
+            frontmatter: {
+              templateKey: { eq: "tools-body" }
+              lang: { eq: "fi" }
+            }
+          }
+        ) {
           edges {
             node {
               frontmatter {
+                title
                 description
                 header
-                help_hint
-                placeholder
                 usage
                 id
-                slug
-                icon
+                placeholder
+                help_hint
                 tags
-                title
-                url
+                date
+                slug
+                lang
                 product_type
+                url
                 jsonId
+                icon
               }
             }
           }

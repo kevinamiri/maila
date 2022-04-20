@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/da/tools/copywriting/tagline-suggestion"
 lang: "da"
 icon: "taglineIcon"
+templateKey: 'tools-body'
 product_type: "10"
 url: "/app/tagline-suggestion"
 ---

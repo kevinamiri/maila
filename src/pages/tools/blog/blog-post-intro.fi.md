@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/fi/tools/blog/blog-post-intro"
 lang: "fi"
 icon: "blogIntro"
+templateKey: 'tools-body'
 product_type: "24"
 url: "/app/blog-post-intro"
 ---

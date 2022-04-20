@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/sv/tools/blog/blog-post-headline"
 lang: "sv"
 icon: "blogPostHeaderIcon"
+templateKey: 'tools-body'
 product_type: "28"
 url: "/app/blog-post-headline"
 ---

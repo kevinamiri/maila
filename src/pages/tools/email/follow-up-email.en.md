@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/email/follow-up-email
 lang: en
 icon: "writeFollowUpEmail"
+templateKey: 'tools-body'
 jsonId: "1222"
 product_type: "37"
 url: /app/followup-email

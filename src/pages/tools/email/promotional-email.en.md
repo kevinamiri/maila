@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/email/promotional-email
 lang: en
 icon: "prospectingEmail"
+templateKey: 'tools-body'
 jsonId: "1314"
 product_type: "21"
 url: /app/promotional-email

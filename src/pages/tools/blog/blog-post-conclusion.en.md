@@ -12,6 +12,7 @@ slug: /en/tools/blog/blog-post-conclusion
 lang: en
 jsonId: "124"
 icon: "blogPostConclusionIcon"
+templateKey: 'tools-body'
 product_type: "27"
 url: /app/blog-post-conclusion
 ---
