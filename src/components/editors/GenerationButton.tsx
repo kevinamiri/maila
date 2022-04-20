@@ -1,12 +1,5 @@
 import React from "react";
-import { ReactEditor } from "editable-slate-react";
-import {
-  Editor,
-  Transforms,
-  Node as SlateNode,
-  Element as SlateElement,
-} from "slate";
-import { Auth } from "aws-amplify";
+import { Editor, Node as SlateNode } from "slate";
 import Box from "@mui/material/Box";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import { useSnackbar } from "notistack";
@@ -14,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateProgressValue } from "../../slices/progress";
 import SelectionTransformerBar from "./SelectionTransformerBar";
 import LoadingButtonProgress from "../subcomponents/LoadingButtonProgress";
+import useFetchAllData from "../../hooks/useFetchAllData";
 
 const serialize = (editorname: Editor) => {
   return editorname.children.map((x) => SlateNode.string(x)).join("\n");
@@ -54,122 +48,16 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
         .execute(SITE_KEY, { action: "submit" })
         .then((gtoken) => {
           dispatch(updateProgressValue(10));
-          fetchAndDistributeData(gtoken, productType, productUrl);
+          useFetchAllData(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            productType,
+            fieldValues
+          );
         });
     });
-  };
-
-  //get the limited text and send it to the api url
-  async function fetchAndDistributeData(
-    gtoken,
-    url: string,
-    productUrl: string
-  ) {
-    try {
-      const editorContents = serialize(editor).substring(0, inputLimitation);
-      serialize(editor).length > 15000
-        ? enqueueSnackbar("request is more than the allowed amount of text.")
-        : "";
-      // string , url, gtoken
-      const textLists = await fetchData(
-        editorContents,
-        gtoken,
-        url,
-        productUrl
-      );
-      dispatch(updateProgressValue(50));
-
-      let textOptions = Object.values(textLists);
-
-      textOptions
-        .filter((x: any) => x.search("Error 4043") != -1)
-        .map((element) => enqueueSnackbar(element));
-      textOptions
-        .filter((x: any) => x.search("Error 4043") == -1)
-        .map((text, index) =>
-          Transforms.insertText(editors[index + 1], text, { at: [0] })
-        );
-
-      dispatch(updateProgressValue(100));
-      // Moving cursor to the end of the document
-      ReactEditor.focus(editor);
-      Transforms.select(editor, Editor.end(editor, []));
-    } catch (error) {
-      Transforms.insertText(
-        editors[1],
-        error.message +
-          "Something went wrong, please try again, if the problem persists please contact the support@maila.ai",
-        { at: [0] }
-      );
-      dispatch(updateProgressValue(100));
-    }
-  }
-
-  interface ApiData {
-    text1: string;
-    text2: string;
-    text3: string;
-  }
-
-  const fetchData = async (
-    parameters: string,
-    gtoken: string,
-    url: string,
-    productUrl
-  ) => {
-    try {
-      const urlType = url;
-      const element = `${parameters}`;
-      const theUrl = `https://api.maila.ai/${productUrl}`;
-      const params = {};
-      const ListVoices = fieldValues.defaultVoice.map((x) => x.tone);
-      const selectedVoices = ListVoices.join(",");
-      params["query"] = element;
-      params["finalLang"] = fieldValues.language.LangCode;
-      params["grecaptcharesponse"] = gtoken;
-
-      selectedVoices ? (params["tone"] = selectedVoices) : null;
-      fieldValues.businessNameValue
-        ? (params["name"] = fieldValues.businessNameValue)
-        : null;
-      fieldValues.keywordValue
-        ? (params["keyword"] = fieldValues.keywordValue)
-        : null;
-      fieldValues.audienceValue
-        ? (params["audience"] = fieldValues.audienceValue)
-        : null;
-      fieldValues.featureValue
-        ? (params["feature"] = fieldValues.featureValue)
-        : null;
-      fieldValues.maxTokens
-        ? (params["maxTokens"] = fieldValues.maxTokens)
-        : null;
-      fieldValues.presencePenalty
-        ? (params["presencePenalty"] = fieldValues.presencePenalty)
-        : null;
-      fieldValues.temperature
-        ? (params["temperature"] = fieldValues.temperature)
-        : null;
-      fieldValues.frequencyPenalty
-        ? (params["frequencyPenalty"] = fieldValues.frequencyPenalty)
-        : null;
-      urlType ? (params["type"] = urlType) : null;
-      const data = JSON.stringify(params);
-      const response = await fetch(theUrl, {
-        headers: {
-          Authorization: `Bearer ${(await Auth.currentSession())
-            .getIdToken()
-            .getJwtToken()}`,
-        },
-        method: "POST",
-        body: data,
-      });
-      const res: ApiData = await response.json();
-      let rerurningData = res;
-      return rerurningData;
-    } catch (error) {
-      console.error(error);
-    }
   };
 
   return (

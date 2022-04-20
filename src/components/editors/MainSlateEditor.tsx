@@ -34,6 +34,7 @@ import { useSnackbar } from "notistack";
 import HoveringToolbar from "./HoveringToolbar";
 import AutoFixHighRoundedIcon from "@mui/icons-material/AutoFixHighRounded";
 import { HOTKEYS } from "./hotkeys";
+import useFetchAllData from "hooks/useFetchAllData";
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
 
@@ -53,6 +54,7 @@ const MainSlateEditor = (props) => {
   const editor2 = props.editor2;
   const editor3 = props.editor3;
   const editor4 = props.editor4;
+  const productType = props.productType;
   const editors = [editor, editor2, editor3, editor4];
   const storageKey =
     props.storageKey === undefined ? "document" : props.storageKey;
@@ -189,6 +191,26 @@ const MainSlateEditor = (props) => {
     });
   };
 
+  //handle clicks
+  const handleGenerateButton = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(10));
+          useFetchAllData(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            productType,
+            fieldValues
+          );
+        });
+    });
+  };
+
   const handleKeyDown = (event) => {
     for (const hotkey in HOTKEYS) {
       if (isHotkey(hotkey, event as any)) {
@@ -197,7 +219,7 @@ const MainSlateEditor = (props) => {
         const mark = HOTKEYS[hotkey];
         mark === "code-suffix" && handleSuffixCode(event);
         mark === "translate" && handleTranslate(event);
-        mark === "enter" && handleGenerate(event);
+        mark === "enter" && handleGenerateButton(event);
         mark === "suffix" && handleSuffix(event);
 
         if (mark === "selectAll") {

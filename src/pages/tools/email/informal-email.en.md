@@ -1,6 +1,6 @@
 ---
 id: "1127"
-title: "Informal Bussines Email"
+title: "Informal Business Email"
 description: "An informal business email is a email between two colleagues or business partners that is not overly formal. It is a way to build rapport and establish a relationship with the person you are emailing."
 usage: "Informal business emails can be used to introduce yourself to a new colleague or business partner. They can also be used to build rapport with someone you have already met."
 placeholder: "New feature in the app is rolling out soon."

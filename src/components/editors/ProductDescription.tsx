@@ -162,6 +162,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                   limitChar={inputLimitation}
                   //main editor storage name for editor
                   storageKey={storageKey}
+                  productType={productType}
                   editor2={editor2}
                   editor3={editor3}
                   editor4={editor4}
