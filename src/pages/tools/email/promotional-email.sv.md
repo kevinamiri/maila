@@ -12,7 +12,7 @@ slug: "/sv/tools/email/promotional-email"
 lang: "sv"
 icon: "prospectingEmail"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "21"
 url: "/app/promotional-email"

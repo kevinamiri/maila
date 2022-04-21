@@ -12,7 +12,7 @@ slug: "/fi/tools/blog/blog-post-pas"
 lang: "fi"
 icon: "blogPAS"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "38"
 url: "/app/blog-post-pas"

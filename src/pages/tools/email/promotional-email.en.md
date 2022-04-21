@@ -12,7 +12,7 @@ slug: /en/tools/email/promotional-email
 lang: en
 icon: "prospectingEmail"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "1314"
 product_type: "21"

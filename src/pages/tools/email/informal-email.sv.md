@@ -12,7 +12,7 @@ slug: "/sv/tools/email/informal-email"
 lang: "sv"
 icon: "addEmail"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "41"
 url: "/app/informal-email"

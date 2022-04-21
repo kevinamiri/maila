@@ -12,7 +12,7 @@ slug: /en/tools/email/follow-up-email
 lang: en
 icon: "writeFollowUpEmail"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "1222"
 product_type: "37"

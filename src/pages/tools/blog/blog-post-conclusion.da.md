@@ -12,7 +12,7 @@ slug: "/da/tools/blog/blog-post-conclusion"
 lang: "da"
 icon: "blogPostConclusionIcon"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "27"
 url: "/app/blog-post-conclusion"

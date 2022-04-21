@@ -12,7 +12,7 @@ slug: /en/tools/email/informal-email
 lang: en
 icon: "addEmail"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "1127"
 product_type: "41"

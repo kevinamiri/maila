@@ -12,7 +12,7 @@ slug: "/da/tools/blog/blog-post-aida"
 lang: "da"
 icon: "blogPostAida"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "16"
 url: "/app/blog-post-aida"

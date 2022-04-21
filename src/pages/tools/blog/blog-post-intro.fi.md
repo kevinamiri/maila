@@ -12,7 +12,7 @@ slug: "/fi/tools/blog/blog-post-intro"
 lang: "fi"
 icon: "blogIntro"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "24"
 url: "/app/blog-post-intro"

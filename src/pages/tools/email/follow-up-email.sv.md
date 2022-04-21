@@ -12,7 +12,7 @@ slug: "/sv/tools/email/follow-up-email"
 lang: "sv"
 icon: "writeFollowUpEmail"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "37"
 url: "/app/followup-email"

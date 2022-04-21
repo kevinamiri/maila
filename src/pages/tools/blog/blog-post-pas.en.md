@@ -12,7 +12,7 @@ slug: /en/tools/blog/blog-post-pas
 lang: en
 icon: "blogPAS"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "2816"
 product_type: "38"

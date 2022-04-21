@@ -13,7 +13,7 @@ lang: en
 jsonId: "124"
 icon: "blogPostConclusionIcon"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "27"
 url: /app/blog-post-conclusion

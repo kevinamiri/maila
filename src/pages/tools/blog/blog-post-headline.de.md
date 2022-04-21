@@ -12,7 +12,7 @@ slug: "/de/tools/blog/blog-post-headline"
 lang: "de"
 icon: "blogPostHeaderIcon"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "28"
 url: "/app/blog-post-headline"

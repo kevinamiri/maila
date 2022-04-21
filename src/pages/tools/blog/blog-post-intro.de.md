@@ -12,7 +12,7 @@ slug: "/de/tools/blog/blog-post-intro"
 lang: "de"
 icon: "blogIntro"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "24"
 url: "/app/blog-post-intro"
