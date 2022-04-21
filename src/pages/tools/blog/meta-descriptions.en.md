@@ -11,6 +11,7 @@ date: "2022-04-10"
 slug: /en/tools/blog/meta-descriptions
 lang: en
 icon: "metaDescription"
+tone: false
 templateKey: 'tools-body'
 product_type: "31"
 jsonId: "1825"

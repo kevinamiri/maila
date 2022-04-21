@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/writing/grammar-correction
 lang: en
 icon: "grammarCorrection"
+tone: false
 templateKey: 'tools-body'
 jsonId: "164"
 product_type: "35"

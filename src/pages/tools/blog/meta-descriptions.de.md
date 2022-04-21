@@ -11,6 +11,7 @@ date: "2022-04-10"
 slug: "/de/tools/blog/meta-descriptions"
 lang: "de"
 icon: "metaDescription"
+tone: false
 templateKey: 'tools-body'
 product_type: "31"
 url: "/app/meta-descriptions"

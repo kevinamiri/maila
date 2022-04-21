@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/sv/tools/copywriting/value-proposition"
 lang: "sv"
 icon: "vrpano"
+tone: false
 templateKey: 'tools-body'
 product_type: "20"
 url: "/app/value-proposition"

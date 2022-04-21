@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/blog/blog-post-pas
 lang: en
 icon: "blogPAS"
+tone: false
 templateKey: 'tools-body'
 jsonId: "2816"
 product_type: "38"

@@ -11,6 +11,7 @@ date: "2022-04-10"
 slug: "/da/tools/copywriting/vision-statement"
 lang: "da"
 icon: "writeVisionStatement"
+tone: false
 templateKey: 'tools-body'
 product_type: "12"
 url: "/app/vision-statement"

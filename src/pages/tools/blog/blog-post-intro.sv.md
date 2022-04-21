@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/sv/tools/blog/blog-post-intro"
 lang: "sv"
 icon: "blogIntro"
+tone: false
 templateKey: 'tools-body'
 product_type: "24"
 url: "/app/blog-post-intro"

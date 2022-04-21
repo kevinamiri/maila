@@ -11,6 +11,7 @@ date: "2022-02-22T00:00:00.000Z"
 slug: "/da/tools/copywriting/product-description"
 lang: "da"
 icon: "productDescriptionIcon"
+tone: false
 templateKey: 'tools-body'
 product_type: "4"
 url: "/app/product-description"

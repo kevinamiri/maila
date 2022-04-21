@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/copywriting/content-rewriter
 lang: en
 icon: "rewriter"
+tone: false
 templateKey: 'tools-body'
 jsonId: "1020"
 product_type: "19"

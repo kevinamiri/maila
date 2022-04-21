@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/da/tools/writing/keyword-generator"
 lang: "da"
 icon: "searchKeyword"
+tone: false
 templateKey: 'tools-body'
 product_type: "34"
 url: "/app/keyword-generator"

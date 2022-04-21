@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/de/tools/writing/paraphrase"
 lang: "de"
 icon: "paraphrase"
+tone: false
 templateKey: 'tools-body'
 product_type: "17"
 url: "/app/paraphrase"

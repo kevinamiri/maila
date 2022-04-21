@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/de/tools/email/promotional-email"
 lang: "de"
 icon: "prospectingEmail"
+tone: false
 templateKey: 'tools-body'
 product_type: "21"
 url: "/app/promotional-email"

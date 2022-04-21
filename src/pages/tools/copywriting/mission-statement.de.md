@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/de/tools/copywriting/mission-statement"
 lang: "de"
 icon: "writeMissionStatement"
+tone: false
 templateKey: 'tools-body'
 product_type: "11"
 url: "/app/mission-statement"

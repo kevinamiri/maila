@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/fi/tools/email/follow-up-email"
 lang: "fi"
 icon: "writeFollowUpEmail"
+tone: false
 templateKey: 'tools-body'
 product_type: "37"
 url: "/app/followup-email"

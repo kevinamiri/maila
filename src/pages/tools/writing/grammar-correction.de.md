@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/de/tools/writing/grammar-correction"
 lang: "de"
 icon: "grammarCorrection"
+tone: false
 templateKey: 'tools-body'
 product_type: "35"
 url: "/app/grammar"

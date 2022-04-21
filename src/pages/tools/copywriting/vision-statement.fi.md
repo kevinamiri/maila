@@ -11,6 +11,7 @@ date: "2022-04-10"
 slug: "/fi/tools/copywriting/vision-statement"
 lang: "fi"
 icon: "writeVisionStatement"
+tone: false
 templateKey: 'tools-body'
 product_type: "12"
 url: "/app/vision-statement"

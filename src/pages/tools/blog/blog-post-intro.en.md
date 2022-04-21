@@ -12,6 +12,7 @@ slug: /en/tools/blog/blog-post-intro
 lang: en
 jsonId: "018"
 icon: "blogIntro"
+tone: false
 templateKey: 'tools-body'
 url: /app/blog-post-intro
 product_type: "24"
