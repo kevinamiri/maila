@@ -11,7 +11,8 @@ date: "2022-03-28"
 slug: /en/tools/writing/paraphrase
 lang: en
 icon: "paraphrase"
-tone: false
+hasCustomTemplate: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "611"
 product_type: "17"

@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/copywriting/tagline-suggestion
 lang: en
 icon: "taglineIcon"
+hasCustomTemplate: true
 tone: false
 templateKey: 'tools-body'
 jsonId: "1020"

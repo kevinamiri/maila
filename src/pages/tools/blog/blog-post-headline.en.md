@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/blog/blog-post-headline
 lang: en
 icon: "blogPostHeaderIcon"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 url: /app/blog-post-headline

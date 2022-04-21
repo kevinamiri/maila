@@ -73,14 +73,18 @@ export default function App() {
   const i18nMessages = require(`../data/messages/${values.lang}`);
 
   // because product description uses the ProductDescriptionTool template, I filter out the product description
-  const productsNoFilter = useTools[`${values.lang}`].edges.map(
+  const allProducts = useTools[`${values.lang}`].edges.map(
     (item) => item.node.frontmatter
   );
 
-  const products = productsNoFilter.filter(
-    (item) => item.slug.split("/")[4] !== "product-description"
+  const products = allProducts.filter(
+    (item) => item.hasCustomTemplate == false
   );
-  const productDescription = productsNoFilter.filter(
+
+  const productDescription = allProducts.filter(
+    (item) => item.slug.split("/")[4] === "product-description"
+  )[0];
+  const tagline = allProducts.filter(
     (item) => item.slug.split("/")[4] === "product-description"
   )[0];
   // const copywriting = products.find((item) => item.slug.split("/")[3] === "copywriting")
@@ -256,7 +260,7 @@ export default function App() {
                     productUrl='generate'
                     toneTextField={true}
                     headerTitle='Tagline'
-                    path='/tagline'
+                    path='/tagline-suggestion'
                   />
                   {/* 
                   <ProductDescription
@@ -568,7 +572,7 @@ export default function App() {
                         instructHelp={product.help_hint}
                         productType={product.product_type}
                         path={path}
-                        toneTextField={false}
+                        toneTextField={product.tone}
                         labelsLists={[]}
                       />
                     );

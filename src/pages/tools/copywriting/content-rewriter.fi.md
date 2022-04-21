@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/fi/tools/copywriting/content-rewriter"
 lang: "fi"
 icon: "rewriter"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "19"

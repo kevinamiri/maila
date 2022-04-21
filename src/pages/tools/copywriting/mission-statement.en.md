@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/copywriting/mission-statement
 lang: en
 icon: "writeMissionStatement"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 jsonId: "71"

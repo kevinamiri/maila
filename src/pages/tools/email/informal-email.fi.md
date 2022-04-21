@@ -11,6 +11,7 @@ date: "2022-04-05"
 slug: "/fi/tools/email/informal-email"
 lang: "fi"
 icon: "addEmail"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "41"

@@ -11,6 +11,7 @@ slug: /en/tools/copywriting/product-description
 url: "/app/product-description"
 lang: en
 icon: "productDescriptionIcon"
+hasCustomTemplate: true
 tone: false
 templateKey: 'tools-body'
 product_type: "4"

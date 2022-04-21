@@ -12,7 +12,8 @@ slug: /en/tools/copywriting/value-proposition
 url: /app/value-proposition
 lang: en
 icon: "vrpano"
-tone: false
+hasCustomTemplate: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "95"
 product_type: "20"

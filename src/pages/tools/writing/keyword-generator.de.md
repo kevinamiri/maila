@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/de/tools/writing/keyword-generator"
 lang: "de"
 icon: "searchKeyword"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "34"

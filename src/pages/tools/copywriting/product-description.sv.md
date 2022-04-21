@@ -11,6 +11,7 @@ date: "2022-02-22T00:00:00.000Z"
 slug: "/sv/tools/copywriting/product-description"
 lang: "sv"
 icon: "productDescriptionIcon"
+hasCustomTemplate: true
 tone: false
 templateKey: 'tools-body'
 product_type: "4"

@@ -10,6 +10,7 @@ date: "2022-04-04"
 slug: /en/tools/email/sales-letters/
 lang: en
 icon: "writeColdEmail"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 tags: ["Email"]

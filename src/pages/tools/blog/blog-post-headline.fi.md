@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/fi/tools/blog/blog-post-headline"
 lang: "fi"
 icon: "blogPostHeaderIcon"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "28"

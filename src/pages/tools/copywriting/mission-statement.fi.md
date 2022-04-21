@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/fi/tools/copywriting/mission-statement"
 lang: "fi"
 icon: "writeMissionStatement"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "11"

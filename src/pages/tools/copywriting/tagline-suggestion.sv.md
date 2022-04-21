@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/sv/tools/copywriting/tagline-suggestion"
 lang: "sv"
 icon: "taglineIcon"
+hasCustomTemplate: true
 tone: false
 templateKey: 'tools-body'
 product_type: "10"

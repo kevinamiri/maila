@@ -11,6 +11,7 @@ date: "2022-04-04"
 slug: "/sv/tools/email/sales-letters"
 lang: "sv"
 icon: "writeColdEmail"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "23"

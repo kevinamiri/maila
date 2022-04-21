@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: "/da/tools/writing/grammar-correction"
 lang: "da"
 icon: "grammarCorrection"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "35"

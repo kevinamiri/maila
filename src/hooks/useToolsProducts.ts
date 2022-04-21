@@ -26,6 +26,7 @@ export const useToolsProducts = () => {
                 tags
                 date
                 tone
+                hasCustomTemplate
                 slug
                 lang
                 product_type
@@ -57,6 +58,7 @@ export const useToolsProducts = () => {
                 tags
                 date
                 slug
+                hasCustomTemplate
                 tone
                 lang
                 product_type
@@ -89,6 +91,7 @@ export const useToolsProducts = () => {
                 date
                 slug
                 tone
+                hasCustomTemplate
                 lang
                 product_type
                 url
@@ -120,6 +123,7 @@ export const useToolsProducts = () => {
                 date
                 slug
                 tone
+                hasCustomTemplate
                 lang
                 product_type
                 url

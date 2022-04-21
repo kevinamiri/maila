@@ -11,6 +11,7 @@ date: "2022-03-28"
 slug: /en/tools/email/thank-you-email
 lang: en
 icon: "thankyou"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 jsonId: "1426"

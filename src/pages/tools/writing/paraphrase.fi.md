@@ -11,7 +11,8 @@ date: "2022-03-28"
 slug: "/fi/tools/writing/paraphrase"
 lang: "fi"
 icon: "paraphrase"
-tone: false
+hasCustomTemplate: false
+tone: true
 templateKey: 'tools-body'
 product_type: "17"
 url: "/app/paraphrase"

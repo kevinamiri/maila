@@ -11,6 +11,7 @@ date: "2022-02-22T00:00:00.000Z"
 slug: "/de/tools/copywriting/product-description-ecommerce"
 lang: "de"
 icon: "ecommerceDescription"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "5"

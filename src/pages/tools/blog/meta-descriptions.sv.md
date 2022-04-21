@@ -11,6 +11,7 @@ date: "2022-04-10"
 slug: "/sv/tools/blog/meta-descriptions"
 lang: "sv"
 icon: "metaDescription"
+hasCustomTemplate: false
 tone: false
 templateKey: 'tools-body'
 product_type: "31"
