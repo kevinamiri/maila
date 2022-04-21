@@ -25,6 +25,7 @@ export const useToolsProducts = () => {
                 help_hint
                 tags
                 date
+                tone
                 slug
                 lang
                 product_type
@@ -56,6 +57,7 @@ export const useToolsProducts = () => {
                 tags
                 date
                 slug
+                tone
                 lang
                 product_type
                 url
@@ -86,6 +88,7 @@ export const useToolsProducts = () => {
                 tags
                 date
                 slug
+                tone
                 lang
                 product_type
                 url
@@ -116,6 +119,7 @@ export const useToolsProducts = () => {
                 tags
                 date
                 slug
+                tone
                 lang
                 product_type
                 url
