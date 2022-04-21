@@ -13,7 +13,7 @@ url: /app/value-proposition
 lang: en
 icon: "vrpano"
 hasCustomTemplate: false
-tone: true
+tone: false
 templateKey: 'tools-body'
 jsonId: "95"
 product_type: "20"

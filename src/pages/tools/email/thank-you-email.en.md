@@ -12,7 +12,7 @@ slug: /en/tools/email/thank-you-email
 lang: en
 icon: "thankyou"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "1426"
 product_type: "22"

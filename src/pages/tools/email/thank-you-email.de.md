@@ -12,7 +12,7 @@ slug: "/de/tools/email/thank-you-email"
 lang: "de"
 icon: "thankyou"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "22"
 url: "/app/thank-you-email"
