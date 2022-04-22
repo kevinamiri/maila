@@ -19,22 +19,6 @@ async function useFetchAllData(
   url: string,
   fieldValues
 ) {
-  /** Get the text before the cursor up to the editor.selection ’s position */
-  const beforeEditor = Editor.fragment(editors[0], {
-    anchor: { path: [0, 0], offset: 0 },
-    focus: editors[0].selection.focus,
-  })
-    .map((x) => SlateNode.string(x))
-    .join("\n");
-  /** Get the text at the end of the editor */
-  const endPointEditor = Editor.end(editors[0], []);
-  /** Get the text after the cursor */
-  const afterEditor = Editor.fragment(editors[0], {
-    anchor: editors[0].selection.focus,
-    focus: endPointEditor,
-  })
-    .map((x) => SlateNode.string(x))
-    .join("\n");
   /** Get The whole text of the editor */
   const editorContents = serialize(editors[0]).substring(0, 15000);
 
