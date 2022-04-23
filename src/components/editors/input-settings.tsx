@@ -11,6 +11,7 @@ import {
   updateFrequencyPenalty,
   updatePresencePenalty,
   updateMaxTokens,
+  updateEngineId,
 } from "../../slices/fieldsValue";
 
 export default function InputSettings({
@@ -18,6 +19,7 @@ export default function InputSettings({
   tokenL,
   frequencyP,
   presenceP,
+  engineId,
 }) {
   const dispatch = useDispatch();
   return (
@@ -128,6 +130,32 @@ export default function InputSettings({
             onChange={debounce((e) => {
               e.preventDefault();
               dispatch(updatePresencePenalty(e.target.value));
+            }, 300)}
+            valueLabelDisplay='auto'
+          />
+        </Grid>
+      )}
+      {engineId && (
+        <Grid
+          item
+          sx={{
+            mb: 2,
+          }}
+          xs={6}
+        >
+          <Typography variant='caption' color='initial'>
+            Engine Id:
+          </Typography>
+          <Slider
+            size='small'
+            defaultValue={0}
+            aria-label='Small'
+            min={0}
+            step={1}
+            max={100}
+            onChange={debounce((e) => {
+              e.preventDefault();
+              dispatch(updateEngineId(e.target.value));
             }, 300)}
             valueLabelDisplay='auto'
           />

@@ -26,6 +26,7 @@ const useFetchAll = async (
     fieldValues.temperature
       ? (params["temperature"] = fieldValues.temperature)
       : null;
+    fieldValues.engineId ? (params["engineId"] = fieldValues.engineId) : null;
     fieldValues.frequencyPenalty
       ? (params["frequencyPenalty"] = fieldValues.frequencyPenalty)
       : null;

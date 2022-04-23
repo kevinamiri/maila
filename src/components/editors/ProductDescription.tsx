@@ -149,7 +149,13 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
 
             <CardContent>
               {tunningOptions && (
-                <InputSettings temperature tokenL frequencyP presenceP />
+                <InputSettings
+                  temperature
+                  tokenL
+                  frequencyP
+                  presenceP
+                  engineId
+                />
               )}
               {toneTextField ? (
                 <FormRedux toneTextField labelsLists={labelsLists} />

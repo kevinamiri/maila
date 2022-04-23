@@ -18,11 +18,13 @@ export interface typedFieldsValue {
   temperature?: number | null;
   presencePenalty?: number | null;
   frequencyPenalty?: number | null;
+  engineId?: number | null;
 }
 
 export const initialState: typedFieldsValue = {
   keywordValue: "",
   suffix: "",
+  engineId: null,
   maxTokens: null,
   temperature: null,
   presencePenalty: null,

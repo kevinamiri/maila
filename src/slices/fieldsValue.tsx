@@ -116,6 +116,16 @@ const slice = createSlice({
       };
       return updatedObject;
     },
+    updateEngineId: (
+      state: typedFieldsValue,
+      action: PayloadAction<number>
+    ) => {
+      const updatedObject = {
+        ...state,
+        engineId: action.payload,
+      };
+      return updatedObject;
+    },
   },
 });
 
@@ -183,4 +193,10 @@ export const updateFrequencyPenalty =
   (x): AppThunk =>
   async (dispatch): Promise<void> => {
     dispatch(slice.actions.updateFrequencyPenalty(x));
+  };
+
+export const updateEngineId =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateEngineId(x));
   };
