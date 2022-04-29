@@ -66,6 +66,12 @@ export default function App() {
   const [context, setContext] = useState(appContext);
   const { settings, saveSettings } = useSettings();
   const location = useLocation();
+
+  const redirectToList = () => {
+    location.pathname === "/app" && navigate("/app/list");
+  };
+  redirectToList();
+
   const { enqueueSnackbar } = useSnackbar();
   /**
    * why state? When the component receives updates, the result is displayed immediately, otherwise we can use ref.
@@ -109,6 +115,7 @@ export default function App() {
     // saveSettings(values);
   };
   // ................ end handle UI lang change ...............
+  console.log("componentDidMount");
 
   useEffect(() => {
     checkUser();
