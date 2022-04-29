@@ -8,6 +8,52 @@ tags:
 lang: en
 date: 2020-12-25
 image: ../img/logo.png
+sectionlabel: "More Features"
+section1:
+    title: "Simplifying content"
+    description: "Simplify your articles, essays and reports with advanced artificial intelligence."
+section2:
+    title: " Translating content"
+    description: "Translate your articles, essays and reports from one language to another."
+section3:
+    title: " Fixing errors"
+    description: "Improve the quality of your content by fixing grammar errors, spelling mistakes and stylistic errors."
+tables:
+  button: "Sign up"
+  link: "/app"
+  header: "Pricing"
+  caption: "Plans"
+  cta: "Do you have a special case?"
+  cta_link: "/contact"
+  cta_button: "Contact us"
+  cta_caption: "Let’s talk about your specific requirements and see how we can help you."
+
+plans:
+  - free:
+      name: "Free"
+      price: "Free"
+      features:
+        - Ideal for individuals
+        - 25,000 words per month
+        - Access to free templates
+  - growth:
+      name: "Growth"
+      price: "Unlimited"
+      features:
+        - Ideal for start-ups & small businesses
+        - Unlimited words/mo
+        - Access all templates
+        - 24/7 support
+  - corporate:
+      name: "Corporate"
+      price: "Unlimited"
+      features:
+        - Ideal for large companies
+        - Unlimited words/mo
+        - Access all templates
+        - Customized models
+        - 24/7 support
+
 F100:
   - AI-powered email generation tools
   - With AI-powered email generator, you can create sales-oriented emails that will motivate your audience to take action. Simply enter some product information, and our advanced engine will generate a marketing message that takes your product to the next level.
@@ -28,7 +74,7 @@ B100:
   - "Reshape your brand statements and tailor every aspect of your brand to communicate its strengths and values."
   - "Use powerful tools to create a strong voice for your content landing pages."
 H0121: "Maila.ai is a revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
-T0152: "Next Level AI-Powered Copywriting Platform"
+T0152: "AI Copywriting & Writing Assistant"
 H01051: "Start writing with your first 25,000 words free trial and see if your work improves."
 H01047: "These results are pre-generated and fully empowered by AI"
 H0118:
@@ -46,10 +92,10 @@ H0118:
     - Can I create content in other languages?
     - Yes, we support languages other than English. The best quality translations are currently available in English.
 H01194: 
-  - AI Writing Assistant
-  - AI copywriting tool that can help you write better copy for your website or marketing campaign by providing a tool that is easy to use and makes the copywriting process more efficient.
-  - AI Content Generator
-  - Sales email emails are an important part of any sales process, but they can be difficult to write. An AI email tool could help you write sales email emails that are more effective and more likely to result in sales.
+  - AI Copywriting Tool
+  - Use advanced artificial intelligence to generate content for your website, blog or marketing materials.
+  - AI Writing Assistance
+  - Use advanced artificial intelligence to improve the quality of your content by fixing style and grammar errors.
 L0401:
   - Sign up
   - Login
@@ -57,5 +103,3 @@ path: /en/
 slug: /en/
 ---
 
-
-AI-driven copywriting tools are designed to help you write more interesting contents.

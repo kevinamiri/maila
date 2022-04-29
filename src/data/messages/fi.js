@@ -1,39 +1,32 @@
 module.exports = {
   P1AN: [
     {
-      name: "Individual",
+      name: "Vapaa",
       price: "25,000",
       features: [
-        "7 päivää ilmaista käyttöä (10.000 sanaa)",
-        "Saat käyttöösi kaikki kielet",
-        "Ideal for individual creators & freelancers",
+        "Sopii yksittäisille käyttäjille",
         "25,000 sanaa/kk",
-        "24/7 tuki",
+        "Pääsy ilmaisiin malleihin",
       ],
     },
     {
-      name: "Growth",
-      price: "250,000",
-      features: [
-        "7 päivää ilmaista käyttöä (10.000 sanaa)",
-        "Ideal for start-ups & small businesses",
-        "250,000 sanaa/kk",
-        "Saat käyttöösi kaikki ominaisuudet",
-        "Saat käyttöösi kaikki kielet",
-        "Ensimmäinen pääsy uusiin ominaisuuksiin",
-        "24/7 tuki",
-      ],
-    },
-    {
-      name: "Corporate",
+      name: "Kasvu",
       price: "Rajoittamaton",
       features: [
-        "7 päivää ilmaista käyttöä (10.000 sanaa)",
-        "Ideal for large companies & agencies",
-        "Rajoittamaton sana/kk",
-        "Saat käyttöösi kaikki ominaisuudet",
-        "Saat käyttöösi kaikki kielet",
-        "Ensimmäinen pääsy uusiin ominaisuuksiin",
+        "Sopii start-upeille ja pienyrityksille",
+        "Rajoittamaton määrä sanoja/kk",
+        "Pääsy kaikkiin malleihin",
+        "24/7 tuki",
+      ],
+    },
+    {
+      name: "Yritys",
+      price: "Rajoittamaton",
+      features: [
+        "Sopii suurille yrityksille",
+        "Rajoittamaton määrä sanoja/kk",
+        "Pääsy kaikkiin malleihin",
+        "Mukautetut mallit",
         "24/7 tuki",
       ],
     },

@@ -8,6 +8,51 @@ tags:
 lang: no
 date: 2020-12-25
 image: ../img/logo.png
+sectionlabel: "Flere funksjoner"
+section1:
+    title: "Forenkle innholdet"
+    description: "Forenkle artikler, essays og rapporter med avansert kunstig intelligens."
+section2:
+    title: "Oversette innhold"
+    description: "Oversett artikler, essays og rapporter fra ett språk til et annet."
+section3:
+    title: "Retting av feil"
+    description: "Forbedre kvaliteten på innholdet ved å rette grammatiske feil, stavefeil og stilistiske feil."
+tables:
+  button: "Registrer deg"
+  link: "/app"
+  header: "Priser"
+  caption: "Planer"
+  cta: "Har du en spesiell sak?"
+  cta_link: "/contact"
+  cta_button: "Kontakt oss"
+  cta_caption: "La oss snakke om dine spesifikke krav og se hvordan vi kan hjelpe deg."
+
+plans:
+  - free:
+      name: "Gratis"
+      price: "Gratis"
+      features:
+        - Ideell for individer
+        - 25 000 ord per måned
+        - Tilgang til gratis maler
+  - growth:
+      name: "Vekst"
+      price: "Ubegrenset"
+      features:
+        - Ideell for start-ups og små bedrifter
+        - Ubegrenset ord / måned
+        - Få tilgang til alle maler
+        - 24/7 support
+  - corporate:
+      name: "Korporativ"
+      price: "Ubegrenset"
+      features:
+        - Ideell for store selskaper
+        - Ubegrenset ord / måned
+        - Få tilgang til alle maler
+        - Tilpassede modeller
+        - 24/7 support
 F100:
 - AI-driven tekstproduksjonstilbud
 - Når det kommer til å skape høykvalitetsinnhold for din bedrift, kan det noen ganger være vanskelig å vite hvor du skal starte. Du kan ikke ha tid eller ressurser til å gjøre det selv, og å hyre en profesjonell skribent kan være dyrt. AI-drevne tekstproduksjonstilbud som kan hjelpe deg med å skape profesjonelt kvalitetsinnhold raskt og enkelt.

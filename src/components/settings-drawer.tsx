@@ -22,12 +22,12 @@ interface SettingsDrawerProps {
 const themes = [
   {
     label: "Light",
-    value: "LIGHT",
+    value: "light",
     icon: LightModeIcon,
   },
   {
     label: "Dark",
-    value: "DARK",
+    value: "dark",
     icon: DarkModeIcon,
   },
 ];
@@ -35,6 +35,7 @@ const themes = [
 const getValues = (settings) => ({
   direction: settings.direction,
   responsiveFontSizes: settings.responsiveFontSizes,
+  roundedCorners: settings.roundedCorners,
   theme: settings.theme,
   lang: settings.lang,
 });
@@ -53,6 +54,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
   const handleSave = (): void => {
     saveSettings(values);
     onClose?.();
+    window.location.reload();
   };
 
   return (
@@ -158,7 +160,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           size='small'
           variant='contained'
         >
-          Save Settings
+          Save Setting
         </Button>
       </Box>
     </Drawer>

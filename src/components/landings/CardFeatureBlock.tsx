@@ -16,12 +16,16 @@ const FWrapper = styled("section")(({ theme }) => ({
   justifyContent: "center",
   flexDirection: "row",
   flexWrap: "wrap",
-  backgroundColor: theme.palette.background.paper,
+  paddingTop: "5rem",
+  paddingBottom: "5rem",
+  backgroundColor: theme.palette.background.default,
   [theme.breakpoints.up("xs")]: {
     marginTop: "calc(20rem - 40vw)",
+    paddingTop: "5rem",
   },
   [theme.breakpoints.up("sm")]: {
     marginTop: "0rem",
+    paddingTop: "5rem",
   },
 }));
 

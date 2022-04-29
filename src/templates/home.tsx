@@ -9,12 +9,21 @@ import HomeHeroPage from "../components/landings/HomeHeroPage";
 import _ from "lodash";
 import LandingsFeature from "../components/landings/landings-feature";
 import Container from "@mui/material/Container";
+import HeroTwoColumn from "../components/landings/HeroTwoColumn";
+import WithIllustrationFeatures from "../components/landings/WithIllustrationFeatures";
+import { Pricing } from "../components/landings/pricing";
+import SimpleCta from "../components/landings/cta";
 
 const HomePage = (props) => {
   const data = props.data;
   const dataMarkdown = props.data.markdownRemark;
   const jsonData = data.allArticlesJson.edges[0].node.articles;
   const langKey = dataMarkdown.frontmatter.lang;
+  const features = [
+    dataMarkdown.frontmatter.section1,
+    dataMarkdown.frontmatter.section2,
+    dataMarkdown.frontmatter.section3,
+  ];
   return (
     <Layout data={props.data} jsonData={jsonData} location={props.location}>
       <Container maxWidth='xl'>
@@ -35,9 +44,19 @@ const HomePage = (props) => {
           titles={dataMarkdown.frontmatter.T100}
           bodys={dataMarkdown.frontmatter.B100}
         />
-        <HomeBlock03
+
+        <WithIllustrationFeatures
+          features={features}
+          sectionlabel={dataMarkdown.frontmatter.sectionlabel}
+        />
+        {/* <SimpleCta /> */}
+        {/* <HomeBlock03
           langKey={langKey}
           list={_.chunk(dataMarkdown.frontmatter.F100, 2)}
+        /> */}
+        <Pricing
+          tables={dataMarkdown.frontmatter.tables}
+          plans={dataMarkdown.frontmatter.plans}
         />
         <AccordionBlock
           questions={_.chunk(dataMarkdown.frontmatter.H0118.A0117q, 2)}
@@ -80,6 +99,47 @@ export const pageQuery = graphql`
         description
         tags
         lang
+        sectionlabel
+        plans {
+          corporate {
+            features
+            name
+            price
+          }
+          free {
+            features
+            name
+            price
+          }
+          growth {
+            features
+            name
+            price
+          }
+        }
+        tables {
+          button
+          link
+          header
+          caption
+          cta
+          cta_link
+          cta_button
+          cta_caption
+        }
+        section1 {
+          title
+          description
+        }
+
+        section2 {
+          title
+          description
+        }
+        section3 {
+          title
+          description
+        }
         T100
         B100
         F100

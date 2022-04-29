@@ -21,7 +21,12 @@ const PopUpCard: React.FC<PopUpCardProps> = ({
   buttonLabel = "Accept",
 }: PopUpCardProps) => {
   return (
-    <Card sx={{ minWidth: 270 }}>
+    <Card
+      sx={{
+        minWidth: 270,
+        border: (theme) => `2px solid ${theme.palette.divider}`,
+      }}
+    >
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color='textSecondary' gutterBottom>
           {title}
@@ -32,7 +37,7 @@ const PopUpCard: React.FC<PopUpCardProps> = ({
             component='span'
             sx={{
               textDecoration: "line-through",
-              backgroundColor: "#ef9a9a",
+              backgroundColor: (theme) => theme.palette.error.light,
               borderRadius: "2px",
               padding: "2px",
             }}
@@ -46,7 +51,7 @@ const PopUpCard: React.FC<PopUpCardProps> = ({
             variant='body1'
             component='span'
             sx={{
-              backgroundColor: "#b9f6ca",
+              backgroundColor: (theme) => theme.palette.success.light,
               borderRadius: "2px",
               padding: "2px",
             }}

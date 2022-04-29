@@ -8,6 +8,51 @@ tags:
 lang: fi
 date: 2020-12-25
 image: ../img/logo.png
+sectionlabel: "Lisää toimintoja"
+section1:
+    title: "Sisällön yksinkertaistaminen"
+    description: "Yksinkertaista artikkeleita, esseitä ja raportteja edistyneellä tekoälyllä."
+section2:
+    title: " Sisällön kääntäminen"
+    description: "Käännä artikkeleita, esseitä ja raportteja yhdestä kielestä toiseen."
+section3:
+    title: " Virheiden korjaaminen"
+    description: "Paranna sisältösi laatua korjaamalla kielioppivirheitä, kirjoitusvirheitä ja tyylivirheitä."
+tables:
+  button: "Rekisteröidy"
+  link: "/app"
+  header: "Hinnoittelu"
+  caption: "Suunnitelmat"
+  cta: "Onko sinulla erityistapaus?"
+  cta_link: "/contact"
+  cta_button: "Ota yhteyttä"
+  cta_caption: "Puhutaan erityisistä vaatimuksistasi ja katsotaan, miten voimme auttaa sinua."
+
+plans:
+  - free:
+      name: "Ilmainen"
+      price: "Ilmainen"
+      features:
+        - Sopii yksilöille
+        - 25 000 sanaa kuukaudessa
+        - Pääsy ilmaisiin malleihin
+  - growth:
+      name: "Kasvu"
+      price: "Rajoittamaton"
+      features:
+        - Sopii start-up-yrityksille ja pienyrityksille
+        - Rajoittamaton sana / mo
+        - Pääsy kaikkiin malleihin
+        - tuki 24/7
+  - corporate:
+      name: "Yritys"
+      price: "Rajoittamaton"
+      features:
+        - Sopii suurille yrityksille
+        - Rajoittamaton sana / mo
+        - Pääsy kaikkiin malleihin
+        - Muokatut mallit
+        - tuki 24/7
 F100:
   - Tekoälyllä toimivat myyntisähköpostien luomistyökalut
   - Tekoälyllä varustetulla myyntikopioiden sähköpostigeneraattorilla voit luoda myyntiin tähtääviä sähköpostiviestejä, jotka motivoivat yleisösi ryhtymään toimiin. Syötä vain joitakin tuotetietoja, ja kehittynyt moottorimme luo markkinointiviestin, joka vie tuotteesi seuraavalle tasolle.

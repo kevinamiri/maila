@@ -8,10 +8,10 @@ const initialSettings = JSON.parse(typeof window !== "undefined" && localStorage
   responsiveFontSizes: true,
   roundedCorners: false,
   lang: "en",
-  theme: THEMES.LIGHT
+  theme: 'light'
 };
 
-const defaultSetting = () => {
+const defaultSettings = () => {
   return (
     JSON.parse(typeof window !== "undefined" && localStorage.getItem("settings")) || {
       compact: true,
@@ -19,7 +19,7 @@ const defaultSetting = () => {
       responsiveFontSizes: true,
       roundedCorners: false,
       lang: "en",
-      theme: THEMES.LIGHT,
+      theme: 'light',
     }
   );
 };
@@ -40,8 +40,8 @@ export const restoreSettings = () => {
         roundedCorners: false,
         lang: "en",
         theme: window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? THEMES.DARK
-          : THEMES.LIGHT
+          ? 'dark'
+          : 'light'
       };
     }
   } catch (err) {
@@ -64,7 +64,7 @@ const SettingsContext = createContext({
 
 export const SettingsProvider = (props) => {
   const { children } = props;
-  const [settings, setSettings] = useState(defaultSetting);
+  const [settings, setSettings] = useState(defaultSettings);
 
   useEffect(() => {
     const restoredSettings = restoreSettings();

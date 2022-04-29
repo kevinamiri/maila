@@ -34,7 +34,7 @@ const closedMixin = (theme: Theme): CSSObject => ({
   overflowY: "hidden",
   width: `calc(${theme.spacing(7)} + 1px)`,
   [theme.breakpoints.up("sm")]: {
-    width: `calc(${theme.spacing(9)} + 1px)`,
+    width: `calc(${theme.spacing(7)} + 1px)`,
   },
 });
 
@@ -91,7 +91,7 @@ const DrawerSideBar = () => {
           variant='subtitle2'
           gutterBottom
         >
-          maila.ai
+          Maila.ai
         </Typography>
         <IconButton onClick={toggleOpen} color='primary' size='large'>
           <ChevronLeftIcon />

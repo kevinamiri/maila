@@ -8,6 +8,51 @@ tags:
 lang: sv
 date: 2020-12-25
 image: ../img/logo.png
+sectionlabel: "Fler funktioner"
+section1:
+    title: "Förenkla innehåll"
+    description: "Förenkla dina artiklar, uppsatser och rapporter med avancerad artificiell intelligens."
+section2:
+    title: "Översätt innehåll"
+    description: "Översätt dina artiklar, uppsatser och rapporter från ett språk till ett annat."
+section3:
+    title: "Rätta fel"
+    description: "Förbättra kvaliteten på ditt innehåll genom att rätta grammatikfel, stavfel och stilfel."
+tables:
+  button: "Registrera dig"
+  link: "/app"
+  header: "Priser"
+  caption: "Planer"
+  cta: "Har du ett speciellt fall?"
+  cta_link: "/contact"
+  cta_button: "Kontakta oss"
+  cta_caption: "Låt oss prata om dina specifika krav och se hur vi kan hjälpa dig."
+
+plans:
+  - free:
+      name: "Gratis"
+      price: "Gratis"
+      features:
+        - Lämplig för individer
+        - 25.000 ord per månad
+        - Tillgång till gratis mallar
+  - growth:
+      name: "Tillväxt"
+      price: "Obegränsad"
+      features:
+        - Lämplig för start-ups och små företag
+        - Obegränsat antal ord / månad
+        - Få tillgång till alla mallar
+        - 24/7-support
+  - corporate:
+      name: "Företag"
+      price: "Obegränsad"
+      features:
+        - Lämplig för stora företag
+        - Obegränsat antal ord / månad
+        - Få tillgång till alla mallar
+        - Anpassade modeller
+        - 24/7-support
 F100:
   - AI-drivna verktyg för att skapa mejl
   - Med AI-driven e-postgenerator för försäljningskopior kan du skapa säljinriktade mejl som motiverar din målgrupp att vidta åtgärder. Ange bara lite produktinformation, så genererar vår avancerade motor ett marknadsföringsmeddelande som tar din produkt till nästa nivå.

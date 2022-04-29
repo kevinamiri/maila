@@ -46,8 +46,6 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
       color='inherit'
       elevation={0}
       sx={{
-        backgroundColor: "background.paper",
-        color: "text.primary",
         zIndex: (theme) => theme.zIndex.drawer + 1,
         borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
         transition: (theme) =>
@@ -58,7 +56,6 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
         ...(IsOpen && {
           marginLeft: drawerWidth,
           width: `calc(100% - ${drawerWidth}px)`,
-          backgroundColor: "rgb(255, 255, 255)",
           transition: (theme) =>
             theme.transitions.create(["width", "margin"], {
               easing: theme.transitions.easing.sharp,

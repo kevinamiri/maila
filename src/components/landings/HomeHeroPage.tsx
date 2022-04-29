@@ -80,7 +80,7 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
                   sx={{
                     display: "flex",
                     flexWrap: "wrap",
-                    mb: 4,
+                    mb: "1rem",
                   }}
                 >
                   <Typography color='primary' variant='h1'>

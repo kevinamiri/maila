@@ -8,6 +8,51 @@ tags:
 lang: da
 date: 2020-12-25
 image: ../img/logo.png
+sectionlabel: "Flere funktioner"
+section1:
+    title: "Forenkling af indhold"
+    description: "Forenkle dine artikler, essays og rapporter med avanceret kunstig intelligens."
+section2:
+    title: " Oversætte indhold"
+    description: "Oversæt dine artikler, essays og rapporter fra et sprog til et andet."
+section3:
+    title: " Fejlrettelse"
+    description: "Forbedr kvaliteten af dit indhold ved at rette grammatiske fejl, stavefejl og stilistiske fejl."
+tables:
+  button: "Tilmeld dig"
+  link: "/app"
+  header: "Priser"
+  caption: "Planer"
+  cta: "Har du en særlig sag?"
+  cta_link: "/contact"
+  cta_button: "Kontakt os"
+  cta_caption: "Lad os tale om dine specifikke krav og se, hvordan vi kan hjælpe dig."
+
+plans:
+  - free:
+      name: "Gratis"
+      price: "Gratis"
+      features:
+        - Ideel for enkeltpersoner
+        - 25.000 ord om måneden
+        - Adgang til gratis skabeloner
+  - growth:
+      name: "Vækst"
+      price: "Ubegrænset"
+      features:
+        - Ideel til startups og små virksomheder
+        - Ubegrænsede ord / md
+        - Få adgang til alle skabeloner
+        - 24/7 support
+  - corporate:
+      name: "Korporat"
+      price: "Ubegrænset"
+      features:
+        - Ideel til store virksomheder
+        - Ubegrænsede ord / md
+        - Få adgang til alle skabeloner
+        - Tilpassede modeller
+        - 24/7 support
 F100:
   - AI-drevne værktøjer til generering af salgsmails
   - Med AI-drevet salgskopi-e-mailgenerator kan du oprette salgsorienterede e-mails, der vil motivere din målgruppe til at handle. Du skal blot indtaste nogle produktoplysninger, og vores avancerede motor vil generere en markedsføringsbesked, der tager dit produkt til det næste niveau.

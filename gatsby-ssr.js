@@ -25,7 +25,7 @@ function TopLayout(props) {
         responsiveFontSizes: settings.responsiveFontSizes,
         roundedCorners: settings.roundedCorners,
         theme: settings.theme,
-        lang: settings.lang
+        lang: settings.lang,
     });
     return (
         <>
