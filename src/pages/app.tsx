@@ -31,6 +31,7 @@ import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
 import EditorManage from "../components/editor-manage";
 import useToolsProducts from "../hooks/useToolsProducts";
 import DocumentsPage from "../components/documents-page";
+import States from "../components/app-components/states";
 
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
@@ -212,6 +213,7 @@ export default function App() {
                 <SearchBox />
                 <Router basepath='/app'>
                   <PrivateRoute path='/profile' component={AccountManage} />
+                  <PrivateRoute path='/list' component={States} />
                   {/* <PrivateRoute
                       path='/productdescription'
                       component={ProductDescriptionApp}
