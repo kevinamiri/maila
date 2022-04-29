@@ -184,7 +184,7 @@ const MainSlateEditor = (props) => {
             enqueueSnackbar,
             editors,
             gtoken,
-            "49",
+            "50",
             fieldValues
           );
         });

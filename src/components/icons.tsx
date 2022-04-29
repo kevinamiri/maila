@@ -52,6 +52,7 @@ import {
   WriteMissionStatement,
   BlogPostConclusionIcon,
   BlogPostAidaIcon,
+  LanguageTranslation,
 } from "../icons/Icons";
 
 interface IconProps {
@@ -515,6 +516,16 @@ const IconsList = (props) => {
       return (
         <BlogPostConclusionIcon
           viewBox='0 0 600 600'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+    case "languageTranslation":
+      return (
+        <LanguageTranslation
+          viewBox='0 0 24 24'
           height='24'
           width='24'
           fontSize='small'
