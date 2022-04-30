@@ -68,7 +68,8 @@ export default function App() {
   const location = useLocation();
 
   const redirectToList = () => {
-    location.pathname === "/app" && navigate("/app/list");
+    location.pathname === "/app/" ||
+      (location.pathname === "/app" && navigate("/app/list"));
   };
   redirectToList();
 
@@ -115,7 +116,6 @@ export default function App() {
     // saveSettings(values);
   };
   // ................ end handle UI lang change ...............
-  console.log("componentDidMount");
 
   useEffect(() => {
     checkUser();
