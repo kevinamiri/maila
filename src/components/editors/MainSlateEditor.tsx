@@ -35,6 +35,7 @@ import HoveringToolbar from "./HoveringToolbar";
 import AutoFixHighRoundedIcon from "@mui/icons-material/AutoFixHighRounded";
 import { HOTKEYS } from "./hotkeys";
 import useFetchAllData from "hooks/useFetchAllData";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
 
@@ -104,6 +105,7 @@ const MainSlateEditor = (props) => {
   const [value, setValue] = useState<Descendant[]>(defaultValue);
   const handleChange = (value: SlateNode[]) => {
     setValue(value);
+    console.log(editor);
     const content = JSON.stringify(value);
     localStorage.setItem(storageKey, content);
     if (!editor.selection) return;
@@ -215,14 +217,14 @@ const MainSlateEditor = (props) => {
     for (const hotkey in HOTKEYS) {
       if (isHotkey(hotkey, event as any)) {
         event.preventDefault();
-        const isSellect = hotkey === "mod+a" ? true : false;
-        const mark = HOTKEYS[hotkey];
-        mark === "code-suffix" && handleSuffixCode(event);
-        mark === "translate" && handleTranslate(event);
-        mark === "enter" && handleGenerateButton(event);
-        mark === "suffix" && handleSuffix(event);
 
-        if (mark === "selectAll") {
+        const isSellect = hotkey === "mod+a" ? true : false;
+        hotkey === "alt+t" && handleTranslate(event);
+        hotkey === "mod+g" && handleSuffix(event);
+        hotkey === "alt+enter" && handleSuffixCode(event);
+        hotkey === "alt+enter" && handleSuffixCode(event);
+        hotkey === "mod+enter" && handleGenerateButton(event);
+        if (hotkey === "mod+a") {
           savedSelection.current = editor.selection;
           dispatch(setCurrentWordRange(savedSelection.current));
           Transforms.select(editor, {
@@ -230,6 +232,7 @@ const MainSlateEditor = (props) => {
             focus: Editor.end(editor, []),
           });
         }
+        const mark = HOTKEYS[hotkey];
         !isSellect && toggleMark(editor, mark);
       }
     }
@@ -315,6 +318,7 @@ const MainSlateEditor = (props) => {
                 <MagicButton onClick={handleSuffix} />
               </StyledToggleButtonGroup>
             </Box>
+
             <HoveringToolbar
               editor={editor}
               editor2={editor2}
