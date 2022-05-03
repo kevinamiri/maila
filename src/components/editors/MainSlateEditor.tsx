@@ -38,6 +38,7 @@ import useFetchAllData from "hooks/useFetchAllData";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
+import BorderColorRoundedIcon from "@mui/icons-material/BorderColorRounded";
 
 const MainSlateEditor = (props) => {
   //hooks must be inside of the function
@@ -280,16 +281,19 @@ const MainSlateEditor = (props) => {
                 aria-label='text formatting'
               >
                 <MarkButton format='bold'>
-                  <FormatBoldRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <FormatBoldRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </MarkButton>
                 <MarkButton format='italic'>
-                  <FormatItalicRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <FormatItalicRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </MarkButton>
                 <MarkButton format='underline'>
-                  <FormatUnderlinedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <FormatUnderlinedRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </MarkButton>
                 <MarkButton format='code'>
-                  <CodeRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <CodeRoundedIcon sx={{ fontSize: "1.1rem" }} />
+                </MarkButton>
+                <MarkButton format='highlight'>
+                  <BorderColorRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </MarkButton>
               </StyledToggleButtonGroup>
 
@@ -299,19 +303,19 @@ const MainSlateEditor = (props) => {
                 aria-label='text alignment'
               >
                 <BlockButton format='heading-one'>
-                  <LooksOneRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <LooksOneRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </BlockButton>
                 <BlockButton format='heading-two'>
-                  <LooksTwoRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <LooksTwoRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </BlockButton>
                 <BlockButton format='block-quote'>
-                  <FormatQuoteRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <FormatQuoteRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </BlockButton>
                 <BlockButton format='numbered-list'>
-                  <FormatListNumberedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <FormatListNumberedRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </BlockButton>
                 <BlockButton format='bulleted-list'>
-                  <FormatListBulletedRoundedIcon sx={{ fontSize: "1.2rem" }} />
+                  <FormatListBulletedRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </BlockButton>
               </StyledToggleButtonGroup>
               <StyledToggleButtonGroup>
@@ -335,6 +339,7 @@ const MainSlateEditor = (props) => {
               onFocus={onFocus}
               onBlur={onBlur}
               onKeyDown={handleKeyDown}
+              style={{ height: "250px", overflowY: "scroll" }}
             />
           </Slate>
         </Grid>
@@ -445,7 +450,7 @@ const BlockButton = ({ format, children }) => {
         size='small'
         sx={{
           border: 0,
-          padding: "5px",
+          padding: "4px",
         }}
         selected={isBlockActive(editor, format)}
         onMouseDown={(event) => {
@@ -461,7 +466,6 @@ const BlockButton = ({ format, children }) => {
 
 const MarkButton = ({ format, children }) => {
   const editor = useSlate();
-
   return (
     <Box
       sx={{
@@ -472,7 +476,7 @@ const MarkButton = ({ format, children }) => {
         size='small'
         sx={{
           border: 0,
-          padding: "5px",
+          padding: "4px",
         }}
         value={format}
         selected={isMarkActive(editor, format)}
@@ -497,7 +501,7 @@ const MagicButton = ({ onClick }) => {
         m: 0.5,
       }}
     >
-      <Tooltip placement='top' title='Autocomplete(⌘G) at the cursor position'>
+      <Tooltip placement='top' title='Autocomplete(⌘G) at cursor position'>
         <IconButton
           size='small'
           sx={{
@@ -508,7 +512,7 @@ const MagicButton = ({ onClick }) => {
           disabled={loading}
           onClick={onClick}
         >
-          <AutoFixHighRoundedIcon sx={{ fontSize: "1.2rem" }} />
+          <AutoFixHighRoundedIcon sx={{ fontSize: "1.1rem" }} />
         </IconButton>
       </Tooltip>
     </Box>

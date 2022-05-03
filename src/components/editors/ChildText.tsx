@@ -79,6 +79,12 @@ const ChildText = (props) => {
       Transforms.insertText(editor, selectedContent, {
         at: currentWordRange ? currentWordRange : Editor.end(editor, []),
       });
+
+      // if we use transform 'move' then the cursor will move to the end of the current line
+      Transforms.select(
+        editor,
+        currentWordRange ? currentWordRange : Editor.end(editor, [])
+      );
       dispatch(setCurrentWordRange(false));
     }
 
