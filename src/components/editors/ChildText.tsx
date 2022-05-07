@@ -162,8 +162,7 @@ const ChildText = (props) => {
                   for (const hotkey in HOTKEYS) {
                     if (isHotkey(hotkey, event as any)) {
                       event.preventDefault();
-                      const mark = HOTKEYS[hotkey];
-                      if (mark === "selectAll") {
+                      if (hotkey === "mod+a") {
                         Transforms.select(editor2, {
                           anchor: Editor.start(editor2, []),
                           focus: Editor.end(editor2, []),

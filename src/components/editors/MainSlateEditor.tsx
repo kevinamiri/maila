@@ -106,12 +106,11 @@ const MainSlateEditor = (props) => {
   const [value, setValue] = useState<Descendant[]>(defaultValue);
   const handleChange = (value: SlateNode[]) => {
     setValue(value);
-    console.log(editor);
     const content = JSON.stringify(value);
     localStorage.setItem(storageKey, content);
     if (!editor.selection) return;
     dispatch(setCurrentWordRange(editor.selection));
-    // savedSelection.current = editor.selection;
+    savedSelection.current = editor.selection;
     // const selectedText = Editor.string(editor, editor.selection);
     const fragment = SlateNode.fragment(editor, editor.selection);
     const fragmentsText = fragment.map((x) => SlateNode.string(x)).join("\n");
