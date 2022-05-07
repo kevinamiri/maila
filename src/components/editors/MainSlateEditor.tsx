@@ -429,7 +429,10 @@ const Element = ({ attributes, children, element }) => {
       return <ol {...attributes}>{children}</ol>;
     default:
       return (
-        <p style={{ backgroundColor: "f4f9f9" }} {...attributes}>
+        <p
+          style={{ lineHeight: "1.4rem", backgroundColor: "f4f9f9" }}
+          {...attributes}
+        >
           {children}
         </p>
       );
