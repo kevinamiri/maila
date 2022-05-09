@@ -1,23 +1,21 @@
 const languages = require("./src/data/languages");
-const siteUrl = `https://maila.ai`
+const siteUrl = `https://maila.ai/en`
 module.exports = {
   siteMetadata: {
     title: `maila.ai`,
-    description: `
-    A sophisticated copy editing platforms
-`,
-    siteUrl: "https://maila.ai",
+    description: `AI Copywriting & Writing Assistant`,
+    siteUrl: "https://maila.ai/en",
     image: "img/logo-dark.png",
     author: {
       name: "Kevin Amiri",
     },
     organization: {
-      name: "NeuralWord",
-      url: "https://maila.ai",
+      name: "maila.ai",
+      url: "https://maila.ai/en",
       logo: "img/logo-dark.svg",
     },
     social: {
-      twitter: "@NeuralWord",
+      twitter: "@mailaai",
     },
     languages,
   },
@@ -154,15 +152,15 @@ module.exports = {
         theme_color: `#50a1ff`,
         start_url: `/en/`,
         display: `standalone`,
-        description: `A sophisticated copy editing platforms`,
+        description: `AI Copywriting & Writing Assistant`,
         icon: `src/img/logo.png`,
         localize: [
           {
             start_url: `/sv/`,
             lang: `sv`,
-            name: `A sophisticated copy editing platforms`,
+            name: `AI skrivassistent`,
             short_name: `Copy tools`,
-            description: `What if AI could do sophisticated copy editing of your documents? We did it! But first, let's explain what copy editing is…`,
+            description: `A revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes`,
           },
         ],
       },
