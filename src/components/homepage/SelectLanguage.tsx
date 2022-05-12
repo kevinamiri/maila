@@ -1,11 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "gatsby-link";
-import { FormattedMessage } from "react-intl";
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import { zIndex } from '@mui/material/styles';
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/styles";
+import Link from "../Link";
+// it could be your App.tsx file or theme file that is included in your tsconfig.json
+import { Theme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+
+const LangButton = styled(Button)(({ theme }) => ({
+  padding: "2px",
+  margin: 0,
+  textDecoration: "none",
+  "&:hover": {
+    textDecoration: "none",
+    color: theme.palette.primary.main,
+  },
+}));
+
+function FWB(props, ref) {
+  return <LangButton ref={ref} {...props} />;
+}
+const LanguageButton = React.forwardRef(FWB);
 
 //All GPT3 languages
 
@@ -55,34 +71,47 @@ const SelectLanguage = (props) => {
   };
   const linksOf = props.langs.map((lang, index) => {
     return (
-      <Grid item key={index + 3}
-        selected={lang.selected}
+      <Box
+        key={index + 3}
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+        }}
       >
         <Typography>
           <Link
+            sx={{
+              borderBottom: "none",
+              mr: 1,
+              cursor: lang.selected ? "default" : "pointer",
+              textDecoration: "none",
+              "&:hover": {
+                borderBottom: "none",
+                textDecoration: "none",
+              },
+            }}
             to={lang.link}
             alt={lang.langKey}
           >
-            {lang.selected ? <Button size="small" disabled>
+            <LanguageButton size='small' disabled={lang.selected}>
               {languageTag[`${lang.langKey}`]}
-            </Button> : <Button size="small" color="primary">
-              {languageTag[`${lang.langKey}`]}
-            </Button>}
+            </LanguageButton>
           </Link>
         </Typography>
-      </Grid>
+      </Box>
     );
   });
   return (
-    <Grid
-      container
-      direction="row"
-      justifyContent="center"
-      alignItems="flex-start"
-      spacing={1}
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+      }}
     >
       {linksOf}
-    </Grid>
+    </Box>
   );
 };
 
@@ -91,3 +120,8 @@ SelectLanguage.propTypes = {
 };
 
 export default SelectLanguage;
+
+//mui v4 => v5
+declare module "@mui/styles/defaultTheme" {
+  interface DefaultTheme extends Theme {}
+}

@@ -9,6 +9,7 @@ const CustomLink = styled(MuiLink)(({ theme }) => ({
   textDecoration: "none",
   "&:hover": {
     borderBottom: `2px solid ${theme.palette.primary.main}`,
+    textDecoration: "none",
   },
 }));
 

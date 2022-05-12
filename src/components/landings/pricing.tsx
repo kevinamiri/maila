@@ -46,8 +46,8 @@ export const Pricing = ({ tables, plans }) => {
         </Typography>
         <Grid container spacing={2} sx={{ mb: 5 }}>
           {plans &&
-            plans.map((plan) => (
-              <Grid item key={plan.name} md={4} xs={12}>
+            plans.map((plan, index) => (
+              <Grid item key={index + 4059} md={4} xs={12}>
                 <Card
                   elevation={2}
                   sx={{
@@ -80,7 +80,7 @@ export const Pricing = ({ tables, plans }) => {
                   >
                     {plan.free &&
                       plan.free.features.map((feature, index) => (
-                        <ListItem key={feature} disableGutters>
+                        <ListItem key={index + 454} disableGutters>
                           <ListItemIcon
                             sx={{
                               minWidth: "auto",
@@ -103,7 +103,7 @@ export const Pricing = ({ tables, plans }) => {
                       ))}
                     {plan.growth &&
                       plan.growth.features.map((feature, index) => (
-                        <ListItem key={feature} disableGutters>
+                        <ListItem key={index + 900} disableGutters>
                           <ListItemIcon
                             sx={{
                               minWidth: "auto",
