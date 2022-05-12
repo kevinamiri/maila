@@ -10,6 +10,8 @@ path: /sv/legal/terms-of-use
 slug: /sv/legal/terms-of-use
 ---
 
+```toc
+```
 ## ANVÄNDARVILLKOR
 
 Senast uppdaterad: 24 oktober 2021

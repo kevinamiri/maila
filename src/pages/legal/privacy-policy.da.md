@@ -9,6 +9,8 @@ date: "2020-10-10"
 path: /da/legal/privacy-policy
 slug: /da/legal/privacy-policy
 ---
+```toc
+```
 
 ## FORTROLIGHEDSPOLITIK
 

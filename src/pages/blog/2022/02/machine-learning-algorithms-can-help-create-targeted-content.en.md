@@ -13,6 +13,10 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+
+```toc
+```
+
 ## AIDA copywriting framework using AI
 
 In the digital age, brands have to focus on getting people's attention, making them interested in what they have to offer, and then motivating them to take action by buying their product or service.

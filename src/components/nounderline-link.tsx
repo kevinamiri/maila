@@ -6,7 +6,7 @@ import { styled } from "@mui/material/styles";
 const NoUnderLine = styled(MuiLink)(({ theme }) => ({
   textDecoration: "none",
   "&:hover": {
-    color: `${theme.palette.primary.light}`,
+    color: `${theme.palette.primary.main}`,
   },
 }));
 

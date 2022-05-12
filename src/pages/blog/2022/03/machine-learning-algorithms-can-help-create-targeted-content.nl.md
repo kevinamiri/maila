@@ -13,6 +13,8 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+```toc
+```
 ## AIDA copywriting framework met behulp van AI
 
 In het digitale tijdperk moeten merken de aandacht van mensen trekken, hen interesseren voor wat zij te bieden hebben en hen vervolgens motiveren om actie te ondernemen door hun product of dienst te kopen.

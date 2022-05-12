@@ -13,7 +13,8 @@ tags: ["User Content Generation Policy"]
 image: ./images/terms.png
 imageStatus: false
 ---
-
+```toc
+```
 
 ## Policy för generering av användarinnehåll
 

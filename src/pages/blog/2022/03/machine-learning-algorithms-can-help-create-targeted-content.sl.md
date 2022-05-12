@@ -13,6 +13,8 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+```toc
+```
 ## AIDA copywriting okvir z uporabo AI
 
 V digitalni dobi se morajo blagovne znamke osredotočiti na to, da pritegnejo pozornost ljudi, jih zanimajo za svojo ponudbo in jih nato spodbudijo k dejanjem z nakupom njihovega izdelka ali storitve.

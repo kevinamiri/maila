@@ -13,6 +13,9 @@ tags: ["AI Product Description","Automatic product description","AI clothings Pr
 image: ../images/terms.jpg
 imageStatus: false
 ---
+```toc
+```
+
 ## Uvod:
 V trenutnem okolju e-trgovine je pisanje dobro optimiziranih opisov izdelkov zelo zahtevno. Združiti morate prave ključne besede s prepričljivo zgodbo, ki bo vašemu izdelku pomagala izstopati in kupce prepričati, da ukrepajo. Pisanje besedil s pomočjo umetne inteligence je odlična rešitev za podjetja, ki iščejo način za nadgradnjo svojih opisov izdelkov.
 

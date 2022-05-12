@@ -13,6 +13,8 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+```toc
+```
 ## Rámec pre copywriting AIDA s využitím AI
 
 V digitálnom veku sa značky musia sústrediť na to, aby upútali pozornosť ľudí, vzbudili v nich záujem o to, čo ponúkajú, a potom ich motivovali, aby podnikli kroky a kúpili si ich výrobok alebo službu.

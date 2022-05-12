@@ -10,7 +10,8 @@ path: /en/legal/terms-of-use
 slug: /en/legal/terms-of-use
 ---
 
-
+```toc
+```
 ## TERMS OF USE
 
 Last updated: 24 October 2021

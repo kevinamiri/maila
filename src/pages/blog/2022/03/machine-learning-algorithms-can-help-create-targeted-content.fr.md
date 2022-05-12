@@ -13,6 +13,8 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+```toc
+```
 ## Cadre de copywriting AIDA utilisant l'IA
 
 À l'ère numérique, les marques doivent s'efforcer d'attirer l'attention des gens, de les intéresser à ce qu'elles ont à offrir, puis de les inciter à passer à l'action en achetant leur produit ou service.

@@ -13,6 +13,8 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+```toc
+```
 ##使用AI的AIDA文案写作框架
 
 在数字时代，品牌必须专注于吸引人们的注意力，使他们对他们所提供的东西感兴趣，然后激励他们采取行动，购买他们的产品或服务。

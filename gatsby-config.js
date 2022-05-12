@@ -2,7 +2,7 @@ const languages = require("./src/data/languages");
 const siteUrl = `https://maila.ai/en`
 module.exports = {
   siteMetadata: {
-    title: `maila.ai`,
+    title: `MAILA AI`,
     description: `AI Copywriting & Writing Assistant`,
     siteUrl: "https://maila.ai/en",
     image: "img/logo-dark.png",
@@ -10,7 +10,7 @@ module.exports = {
       name: "Kevin Amiri",
     },
     organization: {
-      name: "maila.ai",
+      name: "MAILA AI",
       url: "https://maila.ai/en",
       logo: "img/logo-dark.svg",
     },
@@ -104,7 +104,25 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     "gatsby-plugin-resolve-src",
-    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: "Table of Contents",
+              tight: false,
+              ordered: false,
+              fromHeading: 1,
+              toHeading: 6,
+              className: "table-of-contents"
+            },
+          },
+          `gatsby-remark-autolink-headers`
+        ],
+      },
+    },
 
     {
       resolve: "gatsby-plugin-sitemap",

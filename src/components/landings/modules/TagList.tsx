@@ -2,7 +2,7 @@ import React from "react";
 import { kebabCase } from "lodash";
 import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
-import { Link } from "gatsby";
+import Link from "../../Link";
 import TagIcon from "@mui/icons-material/Tag";
 
 interface tagListsProps {
@@ -20,19 +20,25 @@ const TagList = ({ tags, langKey }: tagListsProps) => {
     >
       {tags &&
         tags.map((tag, i) => (
-          <Link key={i} to={`/${langKey}/tags/${kebabCase(tag)}/`}>
+          <Link
+            sx={{
+              borderBottom: "none",
+              textDecoration: "none",
+              "&:hover": {
+                borderBottom: "none",
+                textDecoration: "none",
+              },
+            }}
+            key={i}
+            to={`/${langKey}/tags/${kebabCase(tag)}/`}
+          >
             <Chip
               sx={{
                 m: 1,
               }}
-              icon={
-                <TagIcon
-                  style={{
-                    color: "#308f96",
-                  }}
-                />
-              }
+              icon={<TagIcon color='success' />}
               label={tag}
+              color='success'
               size='small'
               clickable
             />

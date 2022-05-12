@@ -26,6 +26,25 @@ const deeplTranslation = async (text, target) => {
     return data.translations[0].text
 };
 
+const openTranslations = async (text, target) => {
+    let bodys = {
+        query: text,
+        finalLang: target,
+        type: 50,
+        temperature: 50,
+    };
+    const response = await fetch("https://api.maila.ai/generate", {
+        headers: {
+            "authorization": "Bearer eyJraWQiOiJIcHE3SzZ4U3ZMNXpNZnlQSVRtbFZJYXJydHJ6K3ZNU2ZtVTV6QlZqcEpBPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWU5vRFRFX0RQdXlKdERVNGt3b21VUSIsInN1YiI6IjA5ZThmYWZjLWVjNzUtNDE2Ni1hODcxLTgyZjA3ZjQzMmUxOCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9lVWtISklEUEUiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiMDllOGZhZmMtZWM3NS00MTY2LWE4NzEtODJmMDdmNDMyZTE4Iiwib3JpZ2luX2p0aSI6ImY4ZjA5MzBhLThkNWUtNDc3NS1iOWQ1LWQxM2M4MjkyZGI3NCIsImF1ZCI6IjNnbGxpNzE3cDE1b24yMXZrOTQyMm5oOTFuIiwiaWRlbnRpdGllcyI6W3sidXNlcklkIjoiMTA0NTk2ODE3NTM0MDk2MzczMTQxIiwicHJvdmlkZXJOYW1lIjoiR29vZ2xlIiwicHJvdmlkZXJUeXBlIjoiR29vZ2xlIiwiaXNzdWVyIjpudWxsLCJwcmltYXJ5IjoiZmFsc2UiLCJkYXRlQ3JlYXRlZCI6IjE2NDQwNTI0Njg3MDcifV0sInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjUxMjQ1Mjk4LCJleHAiOjE2NTIzNzU1MzgsImlhdCI6MTY1MjM3MTkzOCwianRpIjoiZGIzNzlkYmUtYjg3MS00OWUxLTkwYjEtZjY2ZDM3NjAwYzExIiwiZW1haWwiOiJrZXZpbkBtYWlsYS5haSJ9.wr7n35OhH0GEbUEain92u3ew58rX1JBowo05P6K8ncu_p6QRRzmxv43r-Y2jhelaXhoUIIHSljfsutGOOiy5eWHtmyqwsPG-C_SNXRN0W1wIiM9NzKiVNu6tkbvUUSMQIVNKAgEAsX3n1di3AfO0gSRpjpL5G2pEISRh-tATBIGUqfajRmUWOsYyO714xrAsX_VCPwcaNtTPVrVt0gcJyYbtBXX3QkcuDTVIy5fVZ7jiJ5Gc6qhfTW5T9auY9WJYPZWMbSfhsmCfMtvEczBSSdEdMxWMzEiKg3Dt7pTtfr44JcfTzaqs_X_rBiCZhLw1A4ZKWOraFLkcYW-bM3AYrQ",
+        },
+        body: JSON.stringify(bodys),
+        method: "POST",
+    });
+    const data = await response.json();
+    return data.text1
+};
+
+
 
 //list of all files in an array
 // const getAllFiles = (path) => {
@@ -44,8 +63,8 @@ const deeplTranslation = async (text, target) => {
 //     return files;
 // };
 
-const LanguageLists = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hu', 'it', 'ja', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'zh'];
-// const LanguageLists = ['sv', 'en', 'fi', 'da', ];
+// const LanguageLists = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hu', 'it', 'ja', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'zh'];
+const LanguageLists = ['sv', 'en', 'fi', 'da', 'no'];
 
 const languageUrl = (url) => {
     langLists = {}
@@ -121,10 +140,10 @@ ${passage}
 
 
 const createPost = async () => {
-    const tagsList = `write a call invitation, phone call invitation, invite someone to participate in a phone call, invitation letter phone call`
-    const postTitleStr = `How to write a call invitation email with examples`
-    const imageNameString = "phone-call-invitation.jpg"
-    const postDescriptionStr = `A call invite email is a great way to set up a meeting or consultation with a potential customer or client`
+    const tagsList = ` AI formal writing, AI formal emails, AI formal paragraphs, AI change style`
+    const postTitleStr = `How to change the style of a passage using maila.ai?`
+    const imageNameString = "formatting-style.png"
+    const postDescriptionStr = `We'll be discussing the importance of formatting your paragraphs in a formal style. maila.ai is a platform that allows you to easily write and send emails in a formal style.`
     const NewDocument = fs.readFileSync('./newDoc.md', 'utf8');
     const postUrl = kebabCase(postTitleStr)
     const dateString = new Date().toISOString().slice(0, 10)
@@ -134,12 +153,12 @@ const createPost = async () => {
     const allpassage = NewDocument.split('\n')
     for (let index = 0; index < LanguageLists.length; index++) {
         const lang = LanguageLists[index];
-        const postDescription = await deeplTranslation(postDescriptionStr, lang)
-        const postTitle = await deeplTranslation(postTitleStr, lang)
+        const postDescription = await openTranslations(postDescriptionStr, lang)
+        const postTitle = await openTranslations(postTitleStr, lang)
         const allpassages = []
         for (let index = 0; index < allpassage.length; index++) {
             const paragraph = allpassage[index];
-            const translatedP = await deeplTranslation(paragraph, lang)
+            const translatedP = await openTranslations(paragraph, lang)
             allpassages.push(translatedP)
         }
         const passage = allpassages.join('\n')

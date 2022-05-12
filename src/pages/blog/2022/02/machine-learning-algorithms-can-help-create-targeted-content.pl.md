@@ -13,6 +13,10 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+
+```toc
+```
+
 # AIDA copywriting framework using AI
 
 W erze cyfrowej, marki muszą skupić się na przyciągnięciu uwagi ludzi, zainteresowaniu ich tym, co mają do zaoferowania, a następnie zmotywowaniu ich do podjęcia działania poprzez zakup ich produktu lub usługi.

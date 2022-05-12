@@ -9,7 +9,8 @@ date: "2020-10-10"
 path: /sv/legal/privacy-policy
 slug: /sv/legal/privacy-policy
 ---
-
+```toc
+```
 ## SEKRETESSPOLICY
 
 Datum för ikraftträdande: 25 september 2021

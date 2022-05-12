@@ -9,7 +9,8 @@ date: "2020-10-10"
 path: /fi/legal/terms-of-use
 slug: /fi/legal/terms-of-use
 ---
-
+```toc
+```
 
 ## KÄYTTÖEHDOT
 

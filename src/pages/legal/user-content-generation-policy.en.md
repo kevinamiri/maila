@@ -14,6 +14,9 @@ image: ./images/terms.png
 imageStatus: false
 ---
 
+```toc
+```
+
 ## User Content Generation Policy
 
 We aim to create a safe and welcoming environment for all of our users. In order to do so, We prohibit users from knowingly generating—or allowing others to knowingly generate—the following categories of content:

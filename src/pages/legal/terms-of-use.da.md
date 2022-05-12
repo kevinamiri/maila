@@ -9,6 +9,8 @@ date: "2020-10-10"
 path: /da/legal/terms-of-use
 slug: /da/legal/terms-of-use
 ---
+```toc
+```
 
 ## VILKÅR FOR BRUG
 

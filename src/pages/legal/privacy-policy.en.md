@@ -10,6 +10,10 @@ path: /en/legal/privacy-policy
 slug: /en/legal/privacy-policy
 ---
 
+```toc
+# Privacy Policy
+```
+
 ## PRIVACY POLICY
 
 Effective date: 25 September 2021

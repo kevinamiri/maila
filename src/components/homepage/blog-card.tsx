@@ -43,7 +43,7 @@ const BlogCard = ({
           }}
         >
           <Box sx={{ ml: 1 }}>
-            <Typography variant='h3' component='div'>
+            <Typography variant='h3' component='h3'>
               <NoUnderLineLink sx={{ fontSize: "18px" }} to={slug ? slug : "#"}>
                 {title && title}
               </NoUnderLineLink>

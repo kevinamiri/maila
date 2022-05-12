@@ -13,6 +13,9 @@ tags: ["blog","cold email for digital marketing services"]
 image: ../images/terms.png
 imageStatus: false
 ---
+```toc
+```
+
 ## Hur skriver man ett kallt e-postmeddelande för digitala marknadsföringstjänster?
 
 Ett kallt e-postmeddelande är ett e-postmeddelande som inte skickas från ett personligt konto. Det skickas vanligtvis från ett företags e-postadress till en kund eller potentiell kund. Ett kallt e-postmeddelande används vanligtvis för att presentera en ny produkt, tjänst eller ett erbjudande.

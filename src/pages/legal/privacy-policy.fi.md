@@ -10,6 +10,9 @@ path: /fi/legal/privacy-policy
 slug: /fi/legal/privacy-policy
 ---
 
+```toc
+```
+
 ## TIETOSUOJAKÄYTÄNTÖ
 
 Voimaantulopäivä: 25. syyskuuta 2021

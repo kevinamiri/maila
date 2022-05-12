@@ -13,6 +13,9 @@ tags: ["blog","cold email for digital marketing services"]
 image: ../images/terms.png
 imageStatus: false
 ---
+```toc
+```
+
 ## How to write a cold email for digital marketing services?
 
 A cold email is an email that is not sent from a personal account. It is typically sent from a company's email address to a customer or potential customer. A cold email is typically used to introduce a new product, service, or offer.
