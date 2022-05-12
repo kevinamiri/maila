@@ -26,23 +26,23 @@ const deeplTranslation = async (text, target) => {
     return data.translations[0].text
 };
 
-const openTranslations = async (text, target) => {
-    let bodys = {
-        query: text,
-        finalLang: target,
-        type: 50,
-        temperature: 50,
-    };
-    const response = await fetch("https://api.maila.ai/generate", {
-        headers: {
-            "authorization": "Bearer eyJraWQiOiJIcHE3SzZ4U3ZMNXpNZnlQSVRtbFZJYXJydHJ6K3ZNU2ZtVTV6QlZqcEpBPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWU5vRFRFX0RQdXlKdERVNGt3b21VUSIsInN1YiI6IjA5ZThmYWZjLWVjNzUtNDE2Ni1hODcxLTgyZjA3ZjQzMmUxOCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9lVWtISklEUEUiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiMDllOGZhZmMtZWM3NS00MTY2LWE4NzEtODJmMDdmNDMyZTE4Iiwib3JpZ2luX2p0aSI6ImY4ZjA5MzBhLThkNWUtNDc3NS1iOWQ1LWQxM2M4MjkyZGI3NCIsImF1ZCI6IjNnbGxpNzE3cDE1b24yMXZrOTQyMm5oOTFuIiwiaWRlbnRpdGllcyI6W3sidXNlcklkIjoiMTA0NTk2ODE3NTM0MDk2MzczMTQxIiwicHJvdmlkZXJOYW1lIjoiR29vZ2xlIiwicHJvdmlkZXJUeXBlIjoiR29vZ2xlIiwiaXNzdWVyIjpudWxsLCJwcmltYXJ5IjoiZmFsc2UiLCJkYXRlQ3JlYXRlZCI6IjE2NDQwNTI0Njg3MDcifV0sInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjUxMjQ1Mjk4LCJleHAiOjE2NTIzNzU1MzgsImlhdCI6MTY1MjM3MTkzOCwianRpIjoiZGIzNzlkYmUtYjg3MS00OWUxLTkwYjEtZjY2ZDM3NjAwYzExIiwiZW1haWwiOiJrZXZpbkBtYWlsYS5haSJ9.wr7n35OhH0GEbUEain92u3ew58rX1JBowo05P6K8ncu_p6QRRzmxv43r-Y2jhelaXhoUIIHSljfsutGOOiy5eWHtmyqwsPG-C_SNXRN0W1wIiM9NzKiVNu6tkbvUUSMQIVNKAgEAsX3n1di3AfO0gSRpjpL5G2pEISRh-tATBIGUqfajRmUWOsYyO714xrAsX_VCPwcaNtTPVrVt0gcJyYbtBXX3QkcuDTVIy5fVZ7jiJ5Gc6qhfTW5T9auY9WJYPZWMbSfhsmCfMtvEczBSSdEdMxWMzEiKg3Dt7pTtfr44JcfTzaqs_X_rBiCZhLw1A4ZKWOraFLkcYW-bM3AYrQ",
-        },
-        body: JSON.stringify(bodys),
-        method: "POST",
-    });
-    const data = await response.json();
-    return data.text1
-};
+// const openTranslations = async (text, target) => {
+//     let bodys = {
+//         query: text,
+//         finalLang: target,
+//         type: 50,
+//         temperature: 50,
+//     };
+//     const response = await fetch("https://api.maila.ai/generate", {
+//         headers: {
+//             "authorization": "Bearer eyJraWQiOiJIcHE3SzZ4U3ZMNXpNZnlQSVRtbFZJYXJydHJ6K3ZNU2ZtVTV6QlZqcEpBPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiWU5vRFRFX0RQdXlKdERVNGt3b21VUSIsInN1YiI6IjA5ZThmYWZjLWVjNzUtNDE2Ni1hODcxLTgyZjA3ZjQzMmUxOCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9lVWtISklEUEUiLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiMDllOGZhZmMtZWM3NS00MTY2LWE4NzEtODJmMDdmNDMyZTE4Iiwib3JpZ2luX2p0aSI6ImY4ZjA5MzBhLThkNWUtNDc3NS1iOWQ1LWQxM2M4MjkyZGI3NCIsImF1ZCI6IjNnbGxpNzE3cDE1b24yMXZrOTQyMm5oOTFuIiwiaWRlbnRpdGllcyI6W3sidXNlcklkIjoiMTA0NTk2ODE3NTM0MDk2MzczMTQxIiwicHJvdmlkZXJOYW1lIjoiR29vZ2xlIiwicHJvdmlkZXJUeXBlIjoiR29vZ2xlIiwiaXNzdWVyIjpudWxsLCJwcmltYXJ5IjoiZmFsc2UiLCJkYXRlQ3JlYXRlZCI6IjE2NDQwNTI0Njg3MDcifV0sInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjUxMjQ1Mjk4LCJleHAiOjE2NTIzNzU1MzgsImlhdCI6MTY1MjM3MTkzOCwianRpIjoiZGIzNzlkYmUtYjg3MS00OWUxLTkwYjEtZjY2ZDM3NjAwYzExIiwiZW1haWwiOiJrZXZpbkBtYWlsYS5haSJ9.wr7n35OhH0GEbUEain92u3ew58rX1JBowo05P6K8ncu_p6QRRzmxv43r-Y2jhelaXhoUIIHSljfsutGOOiy5eWHtmyqwsPG-C_SNXRN0W1wIiM9NzKiVNu6tkbvUUSMQIVNKAgEAsX3n1di3AfO0gSRpjpL5G2pEISRh-tATBIGUqfajRmUWOsYyO714xrAsX_VCPwcaNtTPVrVt0gcJyYbtBXX3QkcuDTVIy5fVZ7jiJ5Gc6qhfTW5T9auY9WJYPZWMbSfhsmCfMtvEczBSSdEdMxWMzEiKg3Dt7pTtfr44JcfTzaqs_X_rBiCZhLw1A4ZKWOraFLkcYW-bM3AYrQ",
+//         },
+//         body: JSON.stringify(bodys),
+//         method: "POST",
+//     });
+//     const data = await response.json();
+//     return data.text1
+// };
 
 
 

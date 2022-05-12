@@ -11,7 +11,8 @@ path: /fi/blog/2022/05/how-to-change-the-style-of-a-passage-using-maila-ai
 lang: fi
 tags: ["Tekoälyn muodollinen kirjoittaminen", "Tekoälyn muodolliset sähköpostit", "Tekoälyn muodolliset kappaleet", "Tekoälyn muutos tyyli"]
 image: ../images/formatting-style.png
-imageStatus: false
+imageStatus: true
+imageAlt: "Kuvakaappaus maila.ai -kokoonpanosta, joka näyttää kuinka valita teksti- ja muotoilutyyli"
 ---
 
 
@@ -30,16 +31,14 @@ maila.ai käyttää tekoälyn voimaa muuttamaan tekstisi. viralliseen tyyliin. J
 maila.ai on työkalu, joka käyttää tekoälyä tekstien luomiseen, se voi kirjoittaa tiedotetun tekstin, se voi tiivistää tekstin, se voi muuttaa tekstin virallisesta tyylistä epäviralliseen tyyliin ja enemmän. 
 
 
+
+## Mikä on muodollinen tyyli?
+
+Muodollinen tyyli on kirjoitustyyli, jolle on ominaista selkeän ja ytimekkään kielen käyttö ja perinteisten kielioppisääntöjen noudattaminen. Muodollista kirjoittamista käytetään usein akateemisissa ja ammatillisissa yhteyksissä, ja se on tyypillisesti vähemmän henkilökohtaista kuin muut kirjoitustyylit.
+
 ## Mikä on epävirallinen tyyli?
 
-
-Epävirallinen tyyli on rento ja rento tyyli. tämä on tyyli, jota käytämme puhuessamme ystävien ja perheen kanssa. Tämä tyyli käyttää kontraktioita ja murresanoja, se ei noudata kielioppisääntöjä ja syntaksia.
-
-
-## Mikä on virallinen tyyli?
-Virallinen tyyli on akateeminen tyyli, kirjoittaminen tulisi olla tiivistä, lauseiden tulisi olla täydellisiä, kontraktioiden ja murresanojen välttämiseksi ja ilmaisun tulisi olla objektiivinen.
-
-
+Epävirallinen kirjoittaminen on kirjoittamista, jossa sinun tulisi paljastaa kykysi kirjoittaa epävirallisesti ja ilmaista oma näkemyksesi jostakin asiasta. Epäviralliseen kirjoittamiseen voi sisältyä slangia, kielikuvia, rikkonaista syntaksia, sivulauseet ja niin edelleen. Epävirallisessa kirjoituksessa on henkilökohtainen sävy, aivan kuin puhuisit suoraan yleisöllesi (lukijalle).
 
 
 

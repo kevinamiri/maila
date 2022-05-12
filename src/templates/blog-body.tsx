@@ -14,8 +14,11 @@ const BlogPost = (props) => {
         description={post.frontmatter.description}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
         date={post.frontmatter.date}
         lang={post.frontmatter.lang}
+        imageAlt={post.frontmatter.imageAlt}
+        imageStatus={post.frontmatter.imageStatus}
       />
     </Layout>
   );
@@ -49,6 +52,8 @@ export const pageQuery = graphql`
         date
         tags
         lang
+        imageAlt
+        imageStatus
       }
     }
   }

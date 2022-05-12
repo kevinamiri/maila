@@ -11,7 +11,8 @@ path: /da/blog/2022/05/how-to-change-the-style-of-a-passage-using-maila-ai
 lang: da
 tags: ["AI formelt skrivning","AI formelle e-mails","AI formelle afsnit","AI ændre stil"]
 image: ../images/formatting-style.png
-imageStatus: false
+imageStatus: true
+imageAlt: "Et skærmbillede af Maila.ai -dashboardet, der viser, hvordan man vælger tekst- og formateringsstil"
 ---
 
 ```toc
@@ -33,10 +34,11 @@ MAILA AI bruger den kunstige intelligens til at omdanne dine tekster. til en for
 maila.ai er et værktøj, der bruger kunstig intelligens til at generere tekster, det kan skrive en informeret tekst, det kan opsummere en tekst, det kan omdanne en tekst fra en formel stil til en uformel stil og meget mere. 
 
 
-## Hvad er den uformelle stil?
-
-Den uformelle stil er en stil, der er behagelig og afslappet. det er den stil, vi bruger, når vi taler med venner og familie. Denne stil bruger sammentrækninger og dagligdags ord, den følger ikke reglerne for grammatik og syntaks.
-
 
 ## Hvad er den formelle stil?
-Den formelle stil er en akademisk stil, der skal skrives kortfattet, sætningerne skal være fuldstændige, og man skal undgå sammentrækninger og mundrette ord, og tonen skal være objektiv.
+
+En formel stil er en skrivestil, der er kendetegnet ved at bruge et klart og kortfattet sprog og overholde traditionelle grammatiske konventioner. Formel skrivning bruges ofte i akademiske og professionelle sammenhænge og er typisk mindre personlig end andre skrivestile.
+
+## Hvad er den uformelle stil?
+
+Uformel skrivning er skrivning, hvor du skal afsløre din evne til at skrive uformelt og udtrykke dit eget synspunkt om et emne. Uformel skrivning kan omfatte slang, talemåder, brudt syntaks, sidebemærkninger og så videre. Uformel skrivning har en personlig tone, som om du taler direkte til dit publikum (læseren).

@@ -11,7 +11,9 @@ path: /no/blog/2022/05/how-to-change-the-style-of-a-passage-using-maila-ai
 lang: no
 tags: ["AI formell skriving","AI formelle e-poster","AI formelle avsnitt","AI endre stil"]
 image: ../images/formatting-style.png
-imageStatus: false
+imageStatus: true
+imageAlt: "Et skjermbilde av maila.ai -dashbordet som viser hvordan du velger tekst- og formateringsstil"
+
 ---
 
 ```toc
@@ -32,17 +34,13 @@ MAILA AI bruker kraften til kunstig intelligens til å transformere tekstene din
 maila.ai er et verktøy som bruker kunstig intelligens til å generere tekster, det kan skrive en informert tekst, det kan oppsummere en tekst, det kan transformere en tekst fra en formell stil til en uformell stil, og mer.
 
 
-## Hva er den uformelle stilen?
-
-Den uformelle stilen er en stil som er komfortabel og avslappet. dette er stilen vi bruker når vi snakker med venner og familie. Denne stilen bruker sammentrekninger og kollokvielle ord, den følger ikke reglene for grammatikk og syntaks.
-
-
 ## Hva er den formelle stilen?
-Den formelle stilen er en akademisk stil, skrivingen skal være konsis, setningene skal være fullstendige, unngå sammentrekninger og kollokvielle ord, og tonen skal være objektiv.
 
+En formell stil er en skrivemåte som kjennetegnes av at man bruker et klart og konsist språk og følger tradisjonelle grammatiske konvensjoner. Formelt skriving brukes ofte i akademiske og profesjonelle sammenhenger og er vanligvis mindre personlig enn andre skrivemåter.
 
+## Vad är den informella stilen?
 
-
+Informellt skrivande är skrivande där du ska visa din förmåga att skriva informellt och uttrycka din egen ståndpunkt i en fråga. Informellt skrivande kan innehålla slang, talesätt, bruten syntax, bisatser och så vidare. Informellt skrivande har en personlig ton som om du talade direkt till din publik (läsaren).
 
 
 

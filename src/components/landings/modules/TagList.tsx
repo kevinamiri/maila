@@ -16,6 +16,7 @@ const TagList = ({ tags, langKey }: tagListsProps) => {
       sx={{
         display: "flex",
         justifyContent: "flex-end",
+        flexWrap: "wrap",
       }}
     >
       {tags &&

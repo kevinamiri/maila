@@ -11,7 +11,8 @@ path: /en/blog/2022/05/how-to-change-the-style-of-a-passage-using-maila-ai
 lang: en
 tags: ["AI formal writing","AI formal emails","AI formal paragraphs","AI change style"]
 image: ../images/formatting-style.png
-imageStatus: false
+imageStatus: true
+imageAlt: "a screenshot of the maila.ai dashboard showing how to select text and formatting style"
 ---
 
 ```toc
@@ -33,10 +34,11 @@ MAILA AI uses the power of artificial intelligence to transform your texts. into
 maila.ai is a tool that uses artificial intelligence to generate texts, it can write an informed text, it can summarize a text, it can transform a text from a formal style to an informal style, and more. 
 
 
-## What is the informal style?
-
-The informal style is a style that is comfortable and relaxed. this is the style we use when talking with friends and family. This style uses contractions and colloquial words, it does not follow the rules of grammar and syntax.
-
 
 ## What is the formal style?
-The formal style is an academic style, the writing should be concise, the sentences should be complete, avoiding contractions and colloquial words, and the tone should be objective.
+
+A formal style is a style of writing that is characterized by its use of clear, concise language and its adherence to traditional grammatical conventions. Formal writing is often used in academic and professional contexts, and is typically less personal than other styles of writing.
+
+## What is the informal style?
+
+Informal writing is writing where you should reveal your ability to write informally and express your own point of view on an issue. Informal writing may include slang, figures of speech, broken syntax, asides and so on. Informal writing takes a personal tone as if you were speaking directly to your audience (the reader).

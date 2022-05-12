@@ -12,6 +12,7 @@ lang: sv
 tags: ["AI formal writing","AI formal emails","AI formal paragraphs","AI change style"]
 image: ../images/formatting-style.png
 imageStatus: true
+imageAlt: "en skärmdump av instrumentpanelen i maila.ai som visar hur man väljer text och formateringsstil"
 ---
 
 # Hur ändrar man stilen på texter med Maila AI?
@@ -29,11 +30,10 @@ maila.ai använder kraften i artificiell intelligens för att förvandla dina te
 maila.ai är ett verktyg som använder artificiell intelligens för att generera texter, det kan skriva en informerad text, det kan sammanfatta en text, det kan omvandla en text från en formell stil till en informell stil och mer. 
 
 
+## Vad är den formella stilen?
+
+En formell stil är en skrivstil som kännetecknas av att man använder ett klart och koncist språk och följer traditionella grammatiska konventioner. Formellt skrivande används ofta i akademiska och professionella sammanhang och är vanligtvis mindre personligt än andra skrivstilar.
+
 ## Vad är den informella stilen?
 
-
-Den informella stilen är en stil som är bekväm och avslappnad. detta är den stil vi använder när vi pratar med vänner och familj. Denna stil använder kontraktioner och kollokala ord, den följer inte reglerna för grammatik och syntax.
-
-
-## Vad är den formella stilen?
-Den formella stilen är en akademisk stil, skrivandet bör vara koncist, meningarna bör vara kompletta, undviker kontraktioner och kollokala ord, och tonen bör vara objektiv.
+Informellt skrivande är skrivande där du ska visa din förmåga att skriva informellt och uttrycka din egen ståndpunkt i en fråga. Informellt skrivande kan innehålla slang, talesätt, bruten syntax, bisatser och så vidare. Informellt skrivande har en personlig ton som om du talade direkt till din publik (läsaren).
