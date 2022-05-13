@@ -80,32 +80,28 @@ const SelectLanguage = (props) => {
         }}
       >
         <LanguageButton
-          aria-label={lang.langKey}
+          aria-label={"Switch" + "-" + lang.langKey}
           size='small'
           disabled={lang.selected}
         >
-          <Typography
-            variant='caption'
-            color={lang.selected ? "primary.main" : "text.primary"}
-          >
-            <Link
-              sx={{
+          <Link
+            sx={{
+              borderBottom: "none",
+              mr: 1,
+              cursor: lang.selected ? "default" : "pointer",
+              color: !lang.selected ? "primary.main" : "text.primary",
+              textDecoration: "none",
+              "&:hover": {
                 borderBottom: "none",
-                mr: 1,
-                cursor: lang.selected ? "default" : "pointer",
-                color: !lang.selected ? "primary.main" : "text.primary",
                 textDecoration: "none",
-                "&:hover": {
-                  borderBottom: "none",
-                  textDecoration: "none",
-                },
-              }}
-              to={lang.link}
-              alt={lang.langKey}
-            >
-              {languageTag[`${lang.langKey}`]}
-            </Link>
-          </Typography>
+              },
+            }}
+            to={lang.link}
+            rel='alternate'
+            hreflang={lang.langKey}
+          >
+            {languageTag[`${lang.langKey}`]}
+          </Link>
         </LanguageButton>
       </Box>
     );
