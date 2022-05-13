@@ -134,7 +134,7 @@ const RegisterAmplify = () => {
               />
               <Typography color='textSecondary' variant='body2'>
                 {intl.formatMessage({ id: "F43" })}{" "}
-                <Link color='primary' component='a' href={termLink}>
+                <Link color='primary' href={termLink}>
                   {intl.formatMessage({ id: "F41" })}
                 </Link>
               </Typography>

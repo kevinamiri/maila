@@ -46,6 +46,7 @@ const SEO = ({ frontmatter, postImage, isBlogPost, langKey }: SEOProps) => (
       const title = frontmatter.title || seo.title;
       const description = frontmatter.description || seo.description;
       const image = postImage ? `${seo.siteUrl}${postImage}` : seo.image;
+      console.log(description);
 
       const url = frontmatter.slug
         ? `${seo.siteUrl}/${frontmatter.slug}/`
@@ -66,19 +67,11 @@ const SEO = ({ frontmatter, postImage, isBlogPost, langKey }: SEOProps) => (
             <meta name='image' content={image} />
             <meta property='og:url' content={url} />
             {isBlogPost ? <meta property='og:type' content='article' /> : null}
-            <link rel='canonical' href={seo.siteUrl} />
             <meta property='og:title' content={title} />
             <meta property='og:description' content={description} />
             <meta property='og:site_name' content={title} />
             <meta property='og:image' content={image} />
             {image ? <meta property='og:image' content={image} /> : ""}
-            {/* Twitter Card tags */}
-            <meta name='twitter:card' content='summary_large_image' />
-            <meta name='twitter:site' content={seo.social.twitter} />
-            <meta name='twitter:creator' content={seo.social.twitter} />
-            <meta name='twitter:title' content={title} />
-            <meta name='twitter:description' content={description} />
-            <meta name='twitter:image' content={image} />
           </Helmet>
           <SchemaOrg
             isBlogPost={isBlogPost ? true : false}

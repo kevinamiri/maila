@@ -79,27 +79,34 @@ const SelectLanguage = (props) => {
           justifyContent: "center",
         }}
       >
-        <Link
-          sx={{
-            borderBottom: "none",
-            mr: 1,
-            cursor: lang.selected ? "default" : "pointer",
-            textDecoration: "none",
-            "&:hover": {
-              borderBottom: "none",
-              textDecoration: "none",
-            },
-          }}
-          to={lang.link}
-          alt={lang.langKey}
-          arialabel={lang.langKey}
+        <LanguageButton
+          aria-label={lang.langKey}
+          size='small'
+          disabled={lang.selected}
         >
-          <Typography>
-            <LanguageButton size='small' disabled={lang.selected}>
+          <Typography
+            variant='caption'
+            color={lang.selected ? "primary.main" : "text.primary"}
+          >
+            <Link
+              sx={{
+                borderBottom: "none",
+                mr: 1,
+                cursor: lang.selected ? "default" : "pointer",
+                color: !lang.selected ? "primary.main" : "text.primary",
+                textDecoration: "none",
+                "&:hover": {
+                  borderBottom: "none",
+                  textDecoration: "none",
+                },
+              }}
+              to={lang.link}
+              alt={lang.langKey}
+            >
               {languageTag[`${lang.langKey}`]}
-            </LanguageButton>
+            </Link>
           </Typography>
-        </Link>
+        </LanguageButton>
       </Box>
     );
   });

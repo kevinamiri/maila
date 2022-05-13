@@ -31,6 +31,7 @@ const TagList = ({ tags, langKey }: tagListsProps) => {
               },
             }}
             key={i}
+            component={"span"}
             to={`/${langKey}/tags/${kebabCase(tag)}/`}
           >
             <Chip

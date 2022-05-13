@@ -23,15 +23,17 @@ const SelectLanguageNav = (props) => {
   }
   const links = props.langs.map((lang, index) => {
     return (
-      <Link key={index}
-        to={lang.link}
-        alt={lang.langKey}
-      >
-        {lang.selected ? "" : <Button color="primary">
-          {languageTag[`${lang.langKey}`]}
+      <>
+
+        {!lang.selected && <Button color="primary">
+          <Link key={index}
+            to={lang.link}
+          >
+            {languageTag[`${lang.langKey}`]}
+          </Link>
         </Button>}
 
-      </Link>
+      </>
     );
   });
   return (
