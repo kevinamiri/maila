@@ -4,7 +4,7 @@ import SEO from "../SEO/SEO";
 import TopBar from "../TopBar";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
-import GlobalStyles from "../GlobalStyles";
+// import GlobalStyles from "../GlobalStyles";
 import { getSrc } from "gatsby-plugin-image";
 import useSettings from "../../hooks/useSettings";
 import TagList from "../landings/modules/TagList";
@@ -108,7 +108,7 @@ const Layout = (props) => {
                     backgroundColor: "background.paper",
                   }}
                 >
-                  <GlobalStyles />
+                  {/* <GlobalStyles /> */}
                   <TopBar title='maila.ai' icon='logo' />
                   <Container
                     sx={{

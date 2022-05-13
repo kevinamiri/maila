@@ -11,13 +11,10 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import CheckCircleIcon from "../../icons/check-circle-outlined";
-import { XCircle as XCircleIcon } from "../../icons/x-circle";
 import { useIntl } from "react-intl";
-import Link from "../../components/Link";
 import { navigate } from "gatsby";
 
 export const Pricing = ({ tables, plans }) => {
-  console.log(plans);
   const intl = useIntl();
   const locale = `/${intl.locale}/contact`;
   return (
@@ -27,6 +24,7 @@ export const Pricing = ({ tables, plans }) => {
         py: 6,
       }}
       component='section'
+      aria-label='pricing tables'
     >
       <Container
         maxWidth='lg'
@@ -182,6 +180,7 @@ export const Pricing = ({ tables, plans }) => {
           size='medium'
           sx={{ m: 1 }}
           variant='contained'
+          aria-label='contact-us button'
           onClick={() => navigate(locale)}
         >
           <Typography color='#fff' variant='subtitle2'>

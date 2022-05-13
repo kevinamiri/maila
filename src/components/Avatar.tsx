@@ -27,6 +27,7 @@ function UserAvatar({ handleClick }) {
           onClick={redirect}
           size='small'
           variant='contained'
+          aria-label='login'
         >
           <Typography
             variant='body2'

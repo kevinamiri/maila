@@ -65,6 +65,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
       ModalProps={{ sx: { zIndex: 2000 } }}
       PaperProps={{ sx: { width: 320 } }}
       {...other}
+      aria-label='right drawer'
     >
       <Box
         sx={{
@@ -159,6 +160,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           sx={{ mt: 3 }}
           size='small'
           variant='contained'
+          aria-label='save'
         >
           Save Setting
         </Button>

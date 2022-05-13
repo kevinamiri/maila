@@ -279,6 +279,7 @@ const AccountBillingSettings = (props) => {
             size='small'
             variant='contained'
             disabled
+            aria-label='cancel'
             sx={{
               m: 2,
             }}
@@ -293,6 +294,7 @@ const AccountBillingSettings = (props) => {
             sx={{
               m: 2,
             }}
+            aria-label='upgrade plan'
             disabled={
               progress[0] && progress[0].status === "active" ? true : false
             }

@@ -11,7 +11,6 @@ const BlogPostTemplate = (data) => {
   const image = getImage(data.image);
   const imageAlt = data.imageAlt && data.imageAlt;
   const imageStatus = data.imageStatus && data.imageStatus;
-  data.imageStatus && console.log(imageStatus);
   return (
     <>
       <Container

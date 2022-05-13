@@ -2,7 +2,7 @@ import React from "react";
 import { Auth } from "aws-amplify";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import SvgIcon from "@mui/material/SvgIcon";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
@@ -42,6 +42,7 @@ function SocialSignIn(props) {
           {...props}
           color='primary'
           startIcon={<FilledFcGoogle />}
+          aria-label='login with google'
         >
           Google
         </Button>

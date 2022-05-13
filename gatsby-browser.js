@@ -2,12 +2,12 @@
 import React from 'react';
 import { SettingsProvider } from "./src/contexts/SettingsContext";
 import useSettings from "./src/hooks/useSettings";
-import { THEMES } from "./src/constants";
+// import { THEMES } from "./src/constants";
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from "./src/theme";
-import GlobalStyles from "./src/components/GlobalStyles";
-import { CacheProvider } from "@emotion/react";
+// import GlobalStyles from "./src/components/GlobalStyles";
+// import { CacheProvider } from "@emotion/react";
 // import createCache from "@emotion/cache";
 import { SnackbarProvider } from "notistack";
 import { Provider as ReduxProvider } from 'react-redux';
@@ -37,7 +37,7 @@ function TopLayout(props) {
             <ReduxProvider store={store}>
                 <ThemeProvider theme={theme}>
                     <SnackbarProvider maxSnack={3}>
-                        <GlobalStyles />
+                        {/* <GlobalStyles /> */}
                         <CssBaseline />
                         {props.children}
                     </SnackbarProvider>
