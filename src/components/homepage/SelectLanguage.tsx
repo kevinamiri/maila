@@ -79,30 +79,30 @@ const SelectLanguage = (props) => {
           justifyContent: "center",
         }}
       >
-        <LanguageButton
-          aria-label={"Switch" + "-" + lang.langKey}
-          size='small'
-          disabled={lang.selected}
-        >
-          <Link
-            sx={{
+        <Link
+          sx={{
+            borderBottom: "none",
+            mr: 1,
+            cursor: lang.selected ? "default" : "pointer",
+            color: !lang.selected ? "primary.main" : "text.primary",
+            textDecoration: "none",
+            "&:hover": {
               borderBottom: "none",
-              mr: 1,
-              cursor: lang.selected ? "default" : "pointer",
-              color: !lang.selected ? "primary.main" : "text.primary",
               textDecoration: "none",
-              "&:hover": {
-                borderBottom: "none",
-                textDecoration: "none",
-              },
-            }}
-            to={lang.link}
-            rel='alternate'
-            hreflang={lang.langKey}
+            },
+          }}
+          to={lang.link}
+          rel='alternate'
+          hreflang={lang.langKey}
+        >
+          <LanguageButton
+            aria-label={"Switch" + "-" + lang.langKey}
+            size='small'
+            disabled={lang.selected}
           >
             {languageTag[`${lang.langKey}`]}
-          </Link>
-        </LanguageButton>
+          </LanguageButton>
+        </Link>
       </Box>
     );
   });
