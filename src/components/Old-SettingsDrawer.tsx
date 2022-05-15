@@ -86,7 +86,11 @@ const SettingsDrawer = () => {
           },
         }}
       >
-        <Typography color='textPrimary' variant='h6'>
+        <Typography
+          color='textPrimary'
+          sx={{ fontWeight: 600, fontSize: "1rem", lineHeight: 1.375 }}
+          variant='h1'
+        >
           Settings
         </Typography>
         <Box sx={{ mt: 3 }}>

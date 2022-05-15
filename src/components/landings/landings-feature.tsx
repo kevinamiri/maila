@@ -73,7 +73,7 @@ const LandingsFeature = ({
             </Typography>
             <Typography
               color='textPrimary'
-              variant='subtitle1'
+              variant='body1'
               sx={{
                 mb: 4,
                 mt: 1,
@@ -116,7 +116,7 @@ const LandingsFeature = ({
             </Typography>
             <Typography
               color='textPrimary'
-              variant='subtitle1'
+              variant='body1'
               sx={{
                 mb: 4,
                 mt: 1,

@@ -78,7 +78,11 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           py: 2,
         }}
       >
-        <Typography color='primary' variant='h6'>
+        <Typography
+          color='primary'
+          sx={{ fontWeight: 600, fontSize: "1rem", lineHeight: 1.375 }}
+          variant='h1'
+        >
           settings
         </Typography>
         <IconButton color='primary' onClick={onClose}>
