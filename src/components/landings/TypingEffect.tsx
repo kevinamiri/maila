@@ -83,6 +83,11 @@ John Doe`;
                   size='large'
                   variant='contained'
                   onClick={textHandler2}
+                  sx={{
+                    "&:focus": {
+                      border: 9,
+                    },
+                  }}
                 >
                   Compose
                 </Button>
