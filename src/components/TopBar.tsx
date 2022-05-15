@@ -82,7 +82,6 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
                 ml: 1,
                 mt: 1,
               }}
-              aria-label='version status'
               color='success'
             >
               beta
