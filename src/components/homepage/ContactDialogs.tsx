@@ -69,7 +69,7 @@ export default function ContactDialogs() {
         color='text.secondary'
         onClick={handleClickOpen}
       >
-        <Link style={{ cursor: "pointer" }}>
+        <Link component={"span"} style={{ cursor: "pointer" }}>
           {intl.formatMessage({ id: "F50" })}
         </Link>
       </Typography>
