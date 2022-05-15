@@ -33,13 +33,23 @@ export default function Footer(props) {
         <NewContainer>
           <Grid container spacing={4} justifyContent='space-evenly'>
             <Grid item xs={6} sm={3} key={"company"}>
-              <Typography sx={{ mb: 2 }} variant='subtitle2' gutterBottom>
+              <Typography
+                sx={{ mb: 2 }}
+                variant='subtitle2'
+                component={"p"}
+                gutterBottom
+              >
                 <FormattedMessage id='T04' />
               </Typography>
               <ContactDialogs />
             </Grid>
             <Grid item xs={6} sm={3} key={"explore"}>
-              <Typography sx={{ mb: 2 }} variant='subtitle2' gutterBottom>
+              <Typography
+                sx={{ mb: 2 }}
+                variant='subtitle2'
+                component={"p"}
+                gutterBottom
+              >
                 <FormattedMessage id='T05' />
               </Typography>
               <Typography sx={{ mb: 2 }} variant='body2'>
@@ -49,7 +59,7 @@ export default function Footer(props) {
               </Typography>
             </Grid>
             <Grid item xs={6} sm={3} key={"support"}>
-              <Typography variant='subtitle2' gutterBottom>
+              <Typography variant='subtitle2' component={"p"} gutterBottom>
                 <FormattedMessage id='S01' />
               </Typography>
               <Typography sx={{ mb: 2 }} variant='body2'>
@@ -59,7 +69,12 @@ export default function Footer(props) {
               </Typography>
             </Grid>
             <Grid item xs={6} sm={3} key={"terms"}>
-              <Typography variant='subtitle2' color='text.primary' gutterBottom>
+              <Typography
+                variant='subtitle2'
+                component={"p"}
+                color='text.primary'
+                gutterBottom
+              >
                 <FormattedMessage id='TAS025' />
               </Typography>
               <Typography sx={{ mb: 1 }} variant='body2' color='primary'>
