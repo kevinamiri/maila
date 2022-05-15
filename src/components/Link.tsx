@@ -11,6 +11,10 @@ const CustomLink = styled(MuiLink)(({ theme }) => ({
     borderBottom: `2px solid ${theme.palette.primary.main}`,
     textDecoration: "none",
   },
+  "&:focus": {
+    borderBottom: `2px solid ${theme.palette.primary.main}`,
+    textDecoration: "none",
+  },
 }));
 
 function Link(props, ref) {

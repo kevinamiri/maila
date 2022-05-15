@@ -32,13 +32,8 @@ export default function Footer(props) {
       <Container maxWidth='xl'>
         <NewContainer>
           <Grid container spacing={4} justifyContent='space-evenly'>
-            <Grid item xs={6} sm={3} key={"company"} component='ul'>
-              <Typography
-                sx={{ mb: 2 }}
-                component='li'
-                variant='subtitle2'
-                gutterBottom
-              >
+            <Grid item xs={6} sm={3} key={"company"}>
+              <Typography sx={{ mb: 2 }} variant='subtitle2' gutterBottom>
                 <FormattedMessage id='T04' />
               </Typography>
               <ContactDialogs />
@@ -48,7 +43,9 @@ export default function Footer(props) {
                 <FormattedMessage id='T05' />
               </Typography>
               <Typography sx={{ mb: 2 }} variant='body2'>
-                <Link to={`/${props.langKey}/blog`}>Blog</Link>
+                <Link tabIndex={0} to={`/${props.langKey}/blog`}>
+                  Blog
+                </Link>
               </Typography>
             </Grid>
             <Grid item xs={6} sm={3} key={"support"}>
@@ -60,7 +57,6 @@ export default function Footer(props) {
                   <FormattedMessage id='CA094' />
                 </Link>
               </Typography>
-              <Typography variant='subtitle2' color='text.primary'></Typography>
             </Grid>
             <Grid item xs={6} sm={3} key={"terms"}>
               <Typography variant='subtitle2' color='text.primary' gutterBottom>
@@ -76,12 +72,6 @@ export default function Footer(props) {
                   <FormattedMessage id='PP01' />
                 </Link>
               </Typography>
-              <Typography
-                sx={{ mb: 2 }}
-                variant='body2'
-                color='text.primary'
-              ></Typography>
-              <Typography variant='subtitle2' color='text.primary'></Typography>
             </Grid>
           </Grid>
           <Box mt={5}>

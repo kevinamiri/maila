@@ -94,7 +94,7 @@ export const Pricing = ({ tables, plans }) => {
                               sx: {
                                 color: "textSecondary",
                               },
-                              variant: "subtitle2",
+                              variant: "body2",
                             }}
                           />
                         </ListItem>
@@ -117,7 +117,7 @@ export const Pricing = ({ tables, plans }) => {
                               sx: {
                                 color: "textSecondary",
                               },
-                              variant: "subtitle2",
+                              variant: "body2",
                             }}
                           />
                         </ListItem>
@@ -140,7 +140,7 @@ export const Pricing = ({ tables, plans }) => {
                               sx: {
                                 color: "textSecondary",
                               },
-                              variant: "subtitle2",
+                              variant: "body2",
                             }}
                           />
                         </ListItem>
@@ -160,7 +160,7 @@ export const Pricing = ({ tables, plans }) => {
                       size='small'
                       target='_blank'
                     >
-                      <Typography variant='subtitle2' color='primary'>
+                      <Typography variant='body2' color='primary'>
                         {tables.button && tables.button}
                       </Typography>
                     </Button>
@@ -172,7 +172,7 @@ export const Pricing = ({ tables, plans }) => {
         <Typography sx={{ m: 1 }} color='success.main' variant='h3'>
           {tables.cta && tables.cta}
         </Typography>
-        <Typography sx={{ my: 1 }} color='textSecondary' variant='body1'>
+        <Typography sx={{ my: 1 }} color='textSecondary' variant='body2'>
           {tables.cta_caption && tables.cta_caption}
         </Typography>
         <Button
@@ -183,7 +183,7 @@ export const Pricing = ({ tables, plans }) => {
           aria-label='contact-us button'
           onClick={() => navigate(locale)}
         >
-          <Typography color='#fff' variant='subtitle2'>
+          <Typography color='#fff' variant='body2'>
             {tables.cta_button && tables.cta_button}
           </Typography>
         </Button>
