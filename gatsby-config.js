@@ -171,13 +171,13 @@ module.exports = {
         start_url: `/en/`,
         display: `standalone`,
         description: `AI Copywriting & Writing Assistant`,
-        icon: `src/img/logo.png`,
+        icon: `${__dirname}/src/img/logo.png`,
         localize: [
           {
             start_url: `/sv/`,
             lang: `sv`,
             name: `AI skrivassistent`,
-            short_name: `Copy tools`,
+            short_name: `Maila AI`,
             description: `A revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes`,
           },
         ],
