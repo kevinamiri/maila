@@ -25,7 +25,13 @@ const AccordionBlock = ({ questions }: QuestionListProps) => {
           }}
         >
           {QuestionLists.map((x, i) => (
-            <SimpleAccordion key={i + 90} title={x[0]} body={x[1]} />
+            <SimpleAccordion
+              ariaControls={"question" + i}
+              id={"header" + i}
+              key={i + 90}
+              title={x[0]}
+              body={x[1]}
+            />
           ))}
         </Box>
       </Grid>

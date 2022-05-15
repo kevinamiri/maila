@@ -65,8 +65,8 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
       }}
     >
       <Container maxWidth='xl'>
-        <Toolbar component='nav' aria-label='main navbar'>
-          <MenuIcon icontype={icon} aria-label='toggle menu icon' />
+        <Toolbar component='nav'>
+          <MenuIcon icontype={icon} aria-label='toggle menu' />
           <Box
             sx={{
               display: "flex",
@@ -82,6 +82,7 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
                 ml: 1,
                 mt: 1,
               }}
+              aria-label='version status'
               color='success'
             >
               beta

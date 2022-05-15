@@ -64,8 +64,8 @@ export default function ContactDialogs() {
   return (
     <div>
       <Typography
-        sx={{ mt: 1 }}
-        variant='subtitle2'
+        sx={{ mt: 3 }}
+        variant='body2'
         color='text.secondary'
         onClick={handleClickOpen}
       >

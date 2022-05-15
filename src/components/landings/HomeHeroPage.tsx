@@ -144,6 +144,8 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
             <svg
               width='100%'
               height='100%'
+              name='logo'
+              aria-label='logo'
               viewBox='0 0 3517 3075'
               version='1.1'
               xmlnsXlink='http://www.w3.org/1999/xlink'
