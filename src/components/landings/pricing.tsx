@@ -180,12 +180,10 @@ export const Pricing = ({ tables, plans }) => {
           size='medium'
           sx={{ m: 1 }}
           variant='contained'
-          aria-label='contact-us button'
+          aria-label='contact-us-button'
           onClick={() => navigate(locale)}
         >
-          <Typography color='#fff' variant='body2'>
-            {tables.cta_button && tables.cta_button}
-          </Typography>
+          {tables.cta_button && tables.cta_button}
         </Button>
       </Container>
     </Box>

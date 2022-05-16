@@ -27,7 +27,11 @@ export const baseThemeOptions: ThemeOptions = {
       styleOverrides: {
         root: {
           textTransform: "none",
+          ":focus": {
+            boxShadow: `#3FC79A 0 0 0 0.2rem`,
+          },
         },
+
         sizeSmall: {
           padding: "6px 16px",
         },
