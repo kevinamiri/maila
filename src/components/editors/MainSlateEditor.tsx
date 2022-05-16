@@ -39,6 +39,8 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 // @refresh reset
 import BorderColorRoundedIcon from "@mui/icons-material/BorderColorRounded";
+import useFetch2InsertSuffix from "hooks/useFetch2InsertSuffix";
+import { SeverityPill } from "components/severity-pill";
 
 const MainSlateEditor = (props) => {
   //hooks must be inside of the function
@@ -155,6 +157,25 @@ const MainSlateEditor = (props) => {
     });
   };
 
+  const handleSuffixCodeItself = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          useFetch2InsertSuffix(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "48",
+            fieldValues
+          );
+        });
+    });
+  };
+
   const handleGenerate = (e) => {
     e.preventDefault();
     window.grecaptcha.ready(() => {
@@ -221,8 +242,8 @@ const MainSlateEditor = (props) => {
         const isSellect = hotkey === "mod+a" ? true : false;
         hotkey === "alt+t" && handleTranslate(event);
         hotkey === "mod+g" && handleSuffix(event);
-        hotkey === "alt+enter" && handleSuffixCode(event);
-        hotkey === "alt+enter" && handleSuffixCode(event);
+        // hotkey === "alt+enter" && handleSuffixCode(event);
+        hotkey === "tab" && handleSuffixCodeItself(event);
         hotkey === "mod+enter" && handleGenerateButton(event);
         if (hotkey === "mod+a") {
           savedSelection.current = editor.selection;
@@ -493,6 +514,71 @@ const MarkButton = ({ format, children }) => {
   );
 };
 
+import type { FC, ReactNode } from "react";
+import PropTypes from "prop-types";
+import type { Theme } from "@mui/material";
+// import { styled } from "@mui/material/styles";
+import type { SxProps } from "@mui/system";
+
+export type SeverityPillColor =
+  | "primary"
+  | "secondary"
+  | "error"
+  | "info"
+  | "warning"
+  | "success";
+
+interface SeverityPillProps {
+  children?: ReactNode;
+  color?: SeverityPillColor;
+  style?: {};
+  sx?: SxProps<Theme>;
+}
+
+interface SeverityPillRootProps {
+  ownerState: {
+    color: SeverityPillColor;
+  };
+}
+
+const TabLabel = styled("kbd")<SeverityPillRootProps>(
+  ({ theme, ownerState }) => {
+    const backgroundColor = theme.palette[ownerState.color].main;
+    const color = theme.palette[ownerState.color].contrastText;
+
+    return {
+      alignItems: "center",
+      backgroundColor,
+      borderRadius: 6,
+      color,
+      display: "inline-flex",
+      flexGrow: 0,
+      flexShrink: 0,
+      fontFamily: theme.typography.fontFamily,
+      fontSize: theme.typography.pxToRem(10),
+      fontWeight: 600,
+      justifyContent: "center",
+      minWidth: 10,
+      paddingLeft: theme.spacing(0.5),
+      paddingRight: theme.spacing(0.5),
+      textTransform: "uppercase",
+      whiteSpace: "nowrap",
+    };
+  }
+);
+
+export const KBD: FC<SeverityPillProps> = (props) => {
+  const { color = "primary", children, ...other } = props;
+
+  const ownerState = { color };
+
+  return (
+    <TabLabel ownerState={ownerState} {...other}>
+      {children}
+    </TabLabel>
+  );
+};
+
 const MagicButton = ({ onClick }) => {
   const { progressValue } = useSelector((state) => state.progressValue);
   const loading = progressValue > 0 && progressValue < 100;
@@ -503,7 +589,7 @@ const MagicButton = ({ onClick }) => {
         m: 0.5,
       }}
     >
-      <Tooltip placement='top' title='Autocomplete(⌘G) at cursor position'>
+      <Tooltip placement='top' title='Autocomplete (TAB)'>
         <IconButton
           size='small'
           sx={{
@@ -514,7 +600,18 @@ const MagicButton = ({ onClick }) => {
           disabled={loading}
           onClick={onClick}
         >
-          <AutoFixHighRoundedIcon sx={{ fontSize: "1.1rem" }} />
+          <KBD
+            sx={{
+              alignSelf: "flex-end",
+              mr: 1,
+              ml: 1,
+              mt: 1,
+            }}
+            color='success'
+          >
+            <AutoFixHighRoundedIcon sx={{ fontSize: "1.1rem" }} />
+            {loading ? "Loading..." : "  TAB"}
+          </KBD>
         </IconButton>
       </Tooltip>
     </Box>

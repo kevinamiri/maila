@@ -7,6 +7,7 @@ export const HOTKEYS = {
   "mod+a": "selectAll",
   "mod+enter": "enter",
   "mod+g": "suffix",
+  tab: "autoComplete",
   "alt+t": "translate",
   "alt+enter": "code-suffix",
   "alt+h": "highlight",
