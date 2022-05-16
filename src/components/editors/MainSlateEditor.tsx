@@ -279,13 +279,13 @@ const MainSlateEditor = (props) => {
       >
         <StyledToggleButtonGroup
           sx={{
-            position: "absolute",
-            bottom: "45%",
+            position: "fixed",
+            bottom: "43%",
             left: "3%",
             zIndex: 1800,
           }}
         >
-          <MagicButton onClick={handleSuffix} />
+          <MagicButton onClick={handleSuffix} hasTab={false} />
         </StyledToggleButtonGroup>
         <Grid
           item
@@ -348,7 +348,7 @@ const MainSlateEditor = (props) => {
                 </BlockButton>
               </StyledToggleButtonGroup>
               <StyledToggleButtonGroup>
-                <MagicButton onClick={handleSuffix} />
+                <MagicButton onClick={handleSuffix} hasTab />
               </StyledToggleButtonGroup>
             </Box>
 
@@ -588,10 +588,10 @@ export const KBD: FC<SeverityPillProps> = (props) => {
   );
 };
 
-const MagicButton = ({ onClick }) => {
+const MagicButton = ({ onClick, hasTab }) => {
   const { progressValue } = useSelector((state) => state.progressValue);
   const loading = progressValue > 0 && progressValue < 100;
-
+  const tabIcon = hasTab ? "  TAB" : "";
   return (
     <Box
       sx={{
@@ -619,7 +619,7 @@ const MagicButton = ({ onClick }) => {
             color='success'
           >
             <AutoFixHighRoundedIcon sx={{ fontSize: "1.1rem" }} />
-            {loading ? "Loading..." : "  TAB"}
+            {loading ? "Loading..." : tabIcon}
           </KBD>
         </IconButton>
       </Tooltip>
