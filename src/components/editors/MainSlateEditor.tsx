@@ -277,6 +277,16 @@ const MainSlateEditor = (props) => {
           p: 1,
         }}
       >
+        <StyledToggleButtonGroup
+          sx={{
+            position: "absolute",
+            bottom: "45%",
+            left: "3%",
+            zIndex: 1800,
+          }}
+        >
+          <MagicButton onClick={handleSuffix} />
+        </StyledToggleButtonGroup>
         <Grid
           item
           sx={{
@@ -316,7 +326,6 @@ const MainSlateEditor = (props) => {
                   <BorderColorRoundedIcon sx={{ fontSize: "1.1rem" }} />
                 </MarkButton>
               </StyledToggleButtonGroup>
-
               <StyledToggleButtonGroup
                 size='small'
                 exclusive
@@ -359,7 +368,7 @@ const MainSlateEditor = (props) => {
               onFocus={onFocus}
               onBlur={onBlur}
               onKeyDown={handleKeyDown}
-              style={{ height: "250px", overflowY: "scroll" }}
+              style={{ height: "500px", overflowY: "scroll" }}
             />
           </Slate>
         </Grid>
