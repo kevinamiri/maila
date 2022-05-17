@@ -68,10 +68,14 @@ export default function App() {
   const location = useLocation();
 
   const redirectToList = () => {
-    location.pathname === "/app/" ||
-      (location.pathname === "/app" && navigate("/app/list"));
+    location.pathname === "/app" && navigate("/app/list");
+    location.pathname === "/app/" && navigate("/app/list");
   };
-  redirectToList();
+
+  console.log(location.pathname);
+  React.useEffect(() => {
+    redirectToList();
+  }, []);
 
   const { enqueueSnackbar } = useSnackbar();
   /**
