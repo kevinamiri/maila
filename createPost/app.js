@@ -19,7 +19,7 @@ const deeplTranslation = async (text, target) => {
             'Content-Type': 'application/x-www-form-urlencoded',
             'Content-Length': Buffer.byteLength(text)
         },
-        body: `auth_key=d6f7b394-b1ae-60f0-3937-3ab013c0faba:fx&text=${text}&target_lang=${target}`
+        body: `auth_key=838317c3-e303-25f8-8f0b-fa55c70014c5:fx&text=${text}&target_lang=${target}`
     };
     const response = await fetch(url, options);
     const data = await response.json();
