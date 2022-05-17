@@ -207,6 +207,7 @@ export default function App() {
                 flexGrow: 1,
                 height: "100vh",
                 overflow: "auto",
+                backgroundColor: "background.default",
               }}
               component='main'
             >
