@@ -72,4 +72,4 @@ In conclusion, using a rewriting AI can be a great way to create unique content 
 
 ## How to Use a Rewriting AI
 
-Once you've chosen a [rewriting AI platform]('/app/adjust-tone-rewriting'), the next step is to actually use it. The process will vary depending on the platform you choose, but the general idea is the same: you'll need to input some text, and the AI will output a rephrased version of that text.
+Once you've chosen a [rewriting AI platform](app/adjust-tone-rewriting), the next step is to actually use it. The process will vary depending on the platform you choose, but the general idea is the same: you'll need to input some text, and the AI will output a rephrased version of that text.
