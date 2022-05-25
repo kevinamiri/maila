@@ -66,17 +66,16 @@ T100:
   - "Merkevarebygging"
   - "Innholdsforsterker"
 B100: 
-- "Lag en unik beskrivelse som selger verdien av ditt produkt."
-- "De velprøvde formlene for å lage strukturerte uttalelser om ditt produkt."
-- "Generere salgskopier med kraftfulle ord og fraser for ditt produkt."
-- "Skrive kraftfulle og minneverdige slagord som blir hjertet av din merkevare."
-- "Definer din merkevarestemme og tilpass alle aspektene av merkevaren for å kommunisere dets styrker og verdier."
-- " Bruk disse kraftfulle ordene for å skape et sterkt fundament for ditt innholdslandingssider."
-H0121: "Maila.ai is an AI-powered Copywriting platform that makes it easy to produce high-quality content. From blogs and website copy to email newsletters. Our platform helps you to speed up your writing process."
-T0152: "Next Level AI-Powered Copywriting Platform"
-H01051: "Alle elsker unike og originale innhold. Og nå med AI som genererer originale innhold for nettstedet ditt, er det enklere å skille seg ut fra konkurrentene dine.."
-H01062:
-H01047: "AI-drevne kopieringsverktøy er designet for å hjelpe deg med å skrive mer interessante"
+  - "Lag en unik beskrivelse som markedsfører verdien av produktet ditt."
+  - "De beviste formlene for å lage strukturerte uttalelser om produktet ditt."
+  - "Generer salgskopie-e-post med kraftige ord og uttrykk for produktet ditt."
+  - "Effektive måter å bringe nye ideer inn i produktet ditt."
+  - "Omform dine merkevareuttalelser og tilpass hvert aspekt av merkevaren din for å kommunisere styrker og verdier."
+  - "Bruk kraftige verktøy til å lage en sterk stemme for innholdslandingssidene dine."
+H0121: "Maila.ai er en revolusjonerende AI-drevet kopierings- og skrivehjelpsplattform som lar deg lage profesjonell kvalitet innhold på noen få minutter."
+T0152: "AI Copywriting & Writing Assistant"
+H01051: "Start å skrive med din første 25,000 ord gratis prøveperiode og se om arbeidet ditt forbedrer seg."
+H01047: "Disse resultatene er forhåndsgenerert og fullt utstyrt av AI"
 H0118:
   A0117q:
   - Er kopien/innholdet original?
@@ -90,10 +89,10 @@ H0118:
   - Hvor lang tid tar det?
   - Vi genererer kopi i sanntid, så dine resultater er klare umiddelbart. Som vår kopigenerasjonsmaskin er helt automatisert, tillater det oss også å skalere vår utgave etter dine behov.
 H01194: 
-  - AI Copywriting Tool
-  - AI copywriting tool that can help you write better copy for your website or marketing campaign.
-  - AI Email Generation Tool
-  - Sales email emails are an important part of any sales process, but they can be difficult to write. An AI email tool could help you write sales email emails that are more effective and more likely to result in sales.
+  - AI-kopiverktøy
+  - AI-kopiverktøy som kan hjelpe deg med å skrive bedre kopi for nettstedet eller markedsføringskampanjen din.
+  - AI-e-postgenerator
+  - Salgs-e-poste-post er en viktig del av ethvert salgsprosess, men de kan være vanskelige å skrive. Et AI-e-postverktøy kan hjelpe deg med å skrive salgs-e-poste-post som er mer effektive og mer sannsynlig å føre til salg.
 L0401:
   - Starter
   - Login

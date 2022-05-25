@@ -27,13 +27,6 @@ const BlogPostTemplate = (data) => {
 
             <Typography
               variant='body1'
-              component='div'
-              sx={{
-                backgroundColor: "background.paper",
-                borderRadius: 8,
-                my: 4,
-                p: 5,
-              }}
               dangerouslySetInnerHTML={{ __html: data.content }}
             />
             {imageStatus && (
