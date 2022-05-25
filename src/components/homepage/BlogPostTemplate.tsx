@@ -25,8 +25,7 @@ const BlogPostTemplate = (data) => {
           <Grid item xs={12} sx={{ my: 4 }}>
             <Time date={data.date} />
 
-            <Typography
-              variant='body1'
+            <Box
               color='text.primary'
               dangerouslySetInnerHTML={{ __html: data.content }}
             />
