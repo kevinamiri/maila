@@ -29,7 +29,13 @@ export default function Footer(props) {
   const sel = select(props.langKey);
   return (
     <>
-      <Container maxWidth='xl'>
+      <Container
+        maxWidth='xl'
+        sx={{
+          paddingLeft: "0px !important",
+          paddingRight: "0px !important",
+        }}
+      >
         <NewContainer>
           <Grid container spacing={4} justifyContent='space-evenly'>
             <Grid item xs={6} sm={3} key={"company"}>
@@ -37,6 +43,7 @@ export default function Footer(props) {
                 sx={{ mb: 2 }}
                 variant='subtitle2'
                 component={"p"}
+                color='text.primary'
                 gutterBottom
               >
                 <FormattedMessage id='T04' />
@@ -48,6 +55,7 @@ export default function Footer(props) {
                 sx={{ mb: 2 }}
                 variant='subtitle2'
                 component={"p"}
+                color='text.primary'
                 gutterBottom
               >
                 <FormattedMessage id='T05' />
@@ -59,7 +67,12 @@ export default function Footer(props) {
               </Typography>
             </Grid>
             <Grid item xs={6} sm={3} key={"support"}>
-              <Typography variant='subtitle2' component={"p"} gutterBottom>
+              <Typography
+                variant='subtitle2'
+                component={"p"}
+                color='text.primary'
+                gutterBottom
+              >
                 <FormattedMessage id='S01' />
               </Typography>
               <Typography sx={{ mb: 2 }} variant='body2'>

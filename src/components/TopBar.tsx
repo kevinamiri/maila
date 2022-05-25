@@ -64,7 +64,15 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
         }),
       }}
     >
-      <Container maxWidth='xl'>
+      <Container
+        maxWidth='xl'
+        sx={{
+          paddingLeft: "0px !important",
+          paddingRight: "0px !important",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Toolbar component='nav'>
           <MenuIcon icontype={icon} aria-label='toggle menu' />
           <Box
