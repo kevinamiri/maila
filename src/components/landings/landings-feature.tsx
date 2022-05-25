@@ -32,7 +32,7 @@ const LandingsFeature = ({
         sx={{
           background: (theme) =>
             `linear-gradient(180deg, ${theme.palette.background.default} 50%, ${theme.palette.background.default} 50%)`,
-          borderRadius: "6px",
+          borderRadius: "1rem",
         }}
       >
         <Grid

@@ -15,6 +15,7 @@ const FWrapper = styled("section")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   flexDirection: "row",
+  borderRadius: "1rem",
   flexWrap: "wrap",
   paddingTop: "5rem",
   paddingBottom: "5rem",

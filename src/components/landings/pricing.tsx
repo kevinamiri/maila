@@ -22,6 +22,7 @@ export const Pricing = ({ tables, plans }) => {
       sx={{
         backgroundColor: "background.default",
         py: 6,
+        borderRadius: "1rem",
       }}
       component='section'
       aria-label='pricing tables'
