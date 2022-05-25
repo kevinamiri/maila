@@ -26,7 +26,13 @@ const HomePage = (props) => {
   ];
   return (
     <Layout data={props.data} jsonData={jsonData} location={props.location}>
-      <Container maxWidth='xl'>
+      <Container
+        maxWidth='xl'
+        sx={{
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <HomeHeroPage
           header={dataMarkdown.frontmatter.H0121}
           cta={dataMarkdown.frontmatter.H01051}
