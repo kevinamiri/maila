@@ -27,6 +27,7 @@ const BlogPostTemplate = (data) => {
 
             <Typography
               variant='body1'
+              color='text.primary'
               dangerouslySetInnerHTML={{ __html: data.content }}
             />
             {imageStatus && (
