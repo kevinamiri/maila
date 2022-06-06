@@ -38,7 +38,7 @@ plans:
         - Access to free templates
   - growth:
       name: "Growth"
-      price: "Unlimited"
+      price: "19$/month"
       features:
         - Ideal for start-ups & small businesses
         - Unlimited words/mo
@@ -46,7 +46,7 @@ plans:
         - 24/7 support
   - corporate:
       name: "Corporate"
-      price: "Unlimited"
+      price: "39$/month"
       features:
         - Ideal for large companies
         - Unlimited words/mo

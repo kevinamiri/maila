@@ -11,6 +11,7 @@ export default function MenuIcon({ icontype }) {
     <IconButton
       edge='start'
       color='primary'
+      aria-label='menu'
       onClick={toggleOpen}
       sx={{
         mb: 1,

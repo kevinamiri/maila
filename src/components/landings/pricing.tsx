@@ -40,6 +40,7 @@ export const Pricing = ({ tables, plans }) => {
           color='success.main'
           sx={{ mb: 5 }}
           variant='h2'
+          component='h2'
         >
           {tables.header && tables.header}
         </Typography>
@@ -66,6 +67,7 @@ export const Pricing = ({ tables, plans }) => {
                     color='primary.main'
                     sx={{ textAlign: "center" }}
                     variant='h4'
+                    component='h3'
                   >
                     {plan.free && plan.free.name}
                     {plan.growth && plan.growth.name}

@@ -34,7 +34,7 @@ const CardFeature: React.FC<CardFeatureProps> = ({
           )
         }
         subheader={
-          <Typography variant='h5' color='primary'>
+          <Typography variant='h5' component='h2' color='primary'>
             {title}
           </Typography>
         }
