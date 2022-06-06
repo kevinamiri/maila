@@ -41,7 +41,12 @@ export default function WithIllustrationFeatures({
       <Container maxWidth='lg' sx={{ py: 10 }}>
         <Grid container spacing={3} sx={{ justifyContent: "space-between" }}>
           <Grid item xs={12} md={7}>
-            <Typography sx={{ mb: 8 }} variant='h4'>
+            <Typography
+              sx={{ mb: 8 }}
+              component='h2'
+              variant='h4'
+              color='text.primary'
+            >
               {sectionlabel && sectionlabel}
             </Typography>
             {features.map((feature, i) => (
@@ -53,7 +58,9 @@ export default function WithIllustrationFeatures({
                   {featuresIcons[i].icon}
                 </Avatar>
                 <Box>
-                  <Typography variant='h6'>{feature.title}</Typography>
+                  <Typography component='h3' color='text.primary' variant='h6'>
+                    {feature.title}
+                  </Typography>
                   <Typography color='text.secondary'>
                     {feature.description}
                   </Typography>

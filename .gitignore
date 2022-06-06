@@ -32,3 +32,6 @@ amplifyxc.config
 # /src/aws-exports.js
 # configureAmplify.js
 # amplify/team-provider-info.json
+
+
+cognito.js
