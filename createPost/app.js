@@ -9,8 +9,6 @@ const kebabCase = str => str.match(/[A-Z]{2,}(?=[A-Z][a-z0-9]*|\b)|[A-Z]?[a-z0-9
     .map(x => x.toLowerCase())
     .join('-')
 
-
-
 const deeplTranslation = async (text, target) => {
     const url = `https://api-free.deepl.com/v2/translate`;
     const options = {
@@ -96,7 +94,7 @@ const translateLanguageCodex = async (
 ) => {
     const targetLang = targetLanguage.toUpperCase();
     const prompt = enSV(param, targetLang);
-    const maxTokens_ = param.length * 2;
+    const maxTokens_ = Math.floor(param.length * 1 / 2)
     let bodys = {
         prompt,
         top_p: 1,
@@ -120,6 +118,7 @@ const translateLanguageCodex = async (
             method: "POST",
         });
         const body = await response.json();
+        console.log(body)
         const data = body.choices[0].text;
         return data;
     } catch (error) {
@@ -240,10 +239,10 @@ ${post.passage}
 
 
 const createPost = async () => {
-    const postSubject = "How to change the style of a passage using maila.ai?"
-    const postMetaDescription = `We'll be discussing the importance of formatting your paragraphs in a formal style. maila.ai is a platform that allows you to easily write and send emails in a formal style.`
-    const tagStrs = `AI formal writing, AI formal emails, AI formal paragraphs, AI change style`
-    const imageNameString = "formatting-style.png"
+    const postSubject = "Advice strategies for getting people to reply to your emails"
+    const postMetaDescription = `Don’t send long e-mails to people you want to work with. Just put your point across as quickly as possible and keep it short.`
+    const tagStrs = `communication, writing, tips`
+    const imageNameString = "emails-hey.jpg"
     const NewDocument = fs.readFileSync('./newDoc.md', 'utf8');
     const postUrl = kebabCase(postSubject)
     const dateString = new Date().toISOString().slice(0, 10)
@@ -262,7 +261,7 @@ const createPost = async () => {
         const allpassages = []
         for (let index = 0; index < allpassage.length; index++) {
             const paragraph = allpassage[index];
-            const translatedP = await googleTranslate(paragraph, lang)
+            const translatedP = await translateLanguageCodex(paragraph, lang)
             allpassages.push(translatedP)
         }
         const passage = allpassages.join('\n\n')

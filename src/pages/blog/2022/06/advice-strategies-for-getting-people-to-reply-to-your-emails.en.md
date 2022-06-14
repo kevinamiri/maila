@@ -1,3 +1,18 @@
+---
+id: "26"
+title: "Advice strategies for getting people to reply to your emails"
+description: "Don’t send long e-mails to people you want to work with. Just put your point across as quickly as possible and keep it short."
+template: blog-body
+templateKey: blog-body
+author: 'Kevin Levin'
+date: "2022-06-14"
+slug: /en/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
+path: /en/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
+lang: en
+tags: [communication, writing, tips]
+image: ../images/emails-hey.jpg
+imageStatus: true
+---
 
 # Secret strategies for getting people to reply to your emails
 
@@ -22,4 +37,6 @@
 10. Wait a day or two before emailing them again (just one ‘follow up’ email seems best—too many is annoying) because chances are there was just something distracting them (like themselves). Or don't follow up at all, perhaps wait for another opportunity, sometimes the ball is in the other court and sometimes the ball has been swept from the court entirely on the windy black ice of time!
 
 11. Try this subject line for extra power: ‘Help: [name]’ —a subject line that also works via text message according to veteran journalist and screenwriter Paul Laverty whom I always text when he is travelling as I know he won't reply but he usually does when he gets home because everyone loves someone asking them for help (so long as they are not someone being annoying!) [/end of advice]
+
+
 
