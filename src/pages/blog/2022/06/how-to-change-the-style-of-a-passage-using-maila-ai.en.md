@@ -1,4 +1,18 @@
-
+---
+id: "24"
+title: "How to change the style of a passage using maila.ai?"
+description: "We'll be discussing the importance of formatting your paragraphs in a formal style. maila.ai is a platform that allows you to easily write and send emails in a formal style."
+template: blog-body
+templateKey: blog-body
+author: 'Kevin Levin'
+date: "2022-06-14"
+slug: /en/blog/2022/06/how-to-change-the-style-of-a-passage-using-maila-ai
+path: /en/blog/2022/06/how-to-change-the-style-of-a-passage-using-maila-ai
+lang: en
+tags: [AI formal writing, AI formal emails, AI formal paragraphs, AI change style]
+image: ../images/formatting-style.png
+imageStatus: true
+---
 # How to change the style of texts using maila.ai?
 
 
@@ -22,4 +36,3 @@ The informal style is a style that is comfortable and relaxed. this is the style
 
 ## What is the formal style?
 The formal style is an academic style, the writing should be concise, the sentences should be complete, avoiding contractions and colloquial words, and the tone should be objective.
-

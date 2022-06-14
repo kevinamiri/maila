@@ -26,6 +26,108 @@ const deeplTranslation = async (text, target) => {
     return data.translations[0].text
 };
 
+
+const googleTranslate = async (text, target) => {
+    let headersList = {
+        "Accept": "*/*",
+        "Content-Type": "application/json"
+    }
+
+    let bodyContent = JSON.stringify({
+        "query": text,
+        "finalLang": target,
+    });
+
+    const options = {
+        method: "POST",
+        body: bodyContent,
+        headers: headersList
+    }
+    const url = "https://yb7ei8rv0f.execute-api.us-east-2.amazonaws.com/prod/translation"
+    const response = await fetch(url, options);
+    const data = await response.json();
+    console.log('data', data)
+    return data
+}
+
+
+const enSV = function (enText, target) {
+    const prompt = `
+1. EN => SV
+---
+1. EN
+Settings
+---
+1. SV
+Inställningar
+---
+
+
+2. EN => SV
+---
+2. EN
+- The rose is an ancient symbol of love and beauty.
+---
+2. SV
+- Rosen är en gammal symbol för kärlek och skönhet.
+---
+
+
+3. EN => ${target}
+---
+3. EN
+${enText}
+---
+3. ${target}
+`;
+
+    return prompt;
+};
+
+/**
+ * 
+ * @param {String} param 
+ * @param {String} targetLanguage 
+ * @returns text in target language
+ */
+const translateLanguageCodex = async (
+    param,
+    targetLanguage
+) => {
+    const targetLang = targetLanguage.toUpperCase();
+    const prompt = enSV(param, targetLang);
+    const maxTokens_ = param.length * 2;
+    let bodys = {
+        prompt,
+        top_p: 1,
+        max_tokens: maxTokens_,
+        temperature: 0.5,
+        presence_penalty: 0.0,
+        frequency_penalty: 0.0,
+        n: 1,
+        stop: ["---"],
+    };
+    const url = `https://api.openai.com/v1/engines/code-davinci-002/completions`;
+    try {
+        let tokenOpenAi = "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";
+        // await delay(3000)
+        const response = await fetch(url, {
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${tokenOpenAi}`,
+            },
+            body: JSON.stringify(bodys),
+            method: "POST",
+        });
+        const body = await response.json();
+        const data = body.choices[0].text;
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+
 // const openTranslations = async (text, target) => {
 //     let bodys = {
 //         query: text,
@@ -47,23 +149,25 @@ const deeplTranslation = async (text, target) => {
 
 
 //list of all files in an array
-// const getAllFiles = (path) => {
-//     const files = [];
-//     const directories = getAllDirectory(path);
-//     directories.forEach((directory) => {
-//         const directoryFiles = fs.readdirSync(directory);
-//         directoryFiles.forEach((file) => {
-//             const filePath = directory + '/' + file;
-//             const stat = fs.statSync(filePath);
-//             if (stat.isFile()) {
-//                 files.push(filePath);
-//             }
-//         });
-//     });
-//     return files;
-// };
+const getAllFiles = (path) => {
+    const files = [];
+    const directories = getAllDirectory(path);
+    directories.forEach((directory) => {
+        const directoryFiles = fs.readdirSync(directory);
+        directoryFiles.forEach((file) => {
+            const filePath = directory + '/' + file;
+            const stat = fs.statSync(filePath);
+            if (stat.isFile()) {
+                files.push(filePath);
+            }
+        });
+    });
+    return files;
+};
 
 // const LanguageLists = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hu', 'it', 'ja', 'lt', 'lv', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'zh'];
+
+
 const LanguageLists = ['sv', 'en', 'fi', 'da', 'no'];
 
 const languageUrl = (url) => {
@@ -111,59 +215,72 @@ const writeTextToFile = (path, filename, text) => {
     fs.writeFileSync(path + `/${filename}`, text);
 }
 
-const addTemplate = async (title, description, folder, slug, lang, tags, date, passage, imageName, showImage = false) => {
+const addTemplate = async (post) => {
     const getArticles = await getJsonObject('../src/data/articles/articles.json')
     const lastId = getArticles.length + 1
-    const tagsr = tags.split(',').map(function (item) {
-        element = item.trim()
-        return `"${element}"`
-    })
     const stringdata = `---
 id: "${lastId}"
-title: "${title}"
-description: "${description}"
+title: "${post.title}"
+description: "${post.description}"
 template: blog-body
 templateKey: blog-body
 author: 'Kevin Levin'
-date: "${date}"
-slug: /${lang}/${folder}/${slug}
-path: /${lang}/${folder}/${slug}
-lang: ${lang}
-tags: [${tagsr}]
-image: ../images/${imageName}
-imageStatus: ${showImage}
+date: "${post.date}"
+slug: /${post.lang}/${post.folder}/${post.slug}
+path: /${post.lang}/${post.folder}/${post.slug}
+lang: ${post.lang}
+tags: [${post.tags.join(',')}]
+image: ../images/${post.imageName}
+imageStatus: ${post.showImage}
 ---
-${passage}
+${post.passage}
 `
-    return writeTextToFile(`../src/pages/${folder}/`, `${slug}.${lang}.md`, stringdata)
+    return writeTextToFile(`../src/pages/${post.folder}/`, `${post.slug}.${post.lang}.md`, stringdata)
 }
 
 
 const createPost = async () => {
-    const tagsList = ` AI formal writing, AI formal emails, AI formal paragraphs, AI change style`
-    const postTitleStr = `How to change the style of a passage using maila.ai?`
+    const postSubject = "How to change the style of a passage using maila.ai?"
+    const postMetaDescription = `We'll be discussing the importance of formatting your paragraphs in a formal style. maila.ai is a platform that allows you to easily write and send emails in a formal style.`
+    const tagStrs = `AI formal writing, AI formal emails, AI formal paragraphs, AI change style`
     const imageNameString = "formatting-style.png"
-    const postDescriptionStr = `We'll be discussing the importance of formatting your paragraphs in a formal style. maila.ai is a platform that allows you to easily write and send emails in a formal style.`
     const NewDocument = fs.readFileSync('./newDoc.md', 'utf8');
-    const postUrl = kebabCase(postTitleStr)
+    const postUrl = kebabCase(postSubject)
     const dateString = new Date().toISOString().slice(0, 10)
     const year = new Date().toISOString().slice(0, 4)
     const month = new Date().toISOString().slice(5, 7)
     const folderDir = `blog/${year}/${month}`
-    const allpassage = NewDocument.split('\n')
+    const allpassage = NewDocument.split('\n\n|\n\n\n|\n\n\n\n')
     for (let index = 0; index < LanguageLists.length; index++) {
         const lang = LanguageLists[index];
-        const postDescription = await openTranslations(postDescriptionStr, lang)
-        const postTitle = await openTranslations(postTitleStr, lang)
+        const postTitle = await googleTranslate(postSubject, lang)
+        console.log(postTitle)
+        const postDescription = await googleTranslate(postMetaDescription, lang)
+        const tagsList = await googleTranslate(tagStrs, lang)
+        const tags = tagsList.split(',')
+        console.log('postTitle', postTitle)
         const allpassages = []
         for (let index = 0; index < allpassage.length; index++) {
             const paragraph = allpassage[index];
-            const translatedP = await openTranslations(paragraph, lang)
+            const translatedP = await googleTranslate(paragraph, lang)
             allpassages.push(translatedP)
         }
-        const passage = allpassages.join('\n')
+        const passage = allpassages.join('\n\n')
 
-        await addTemplate(postTitle, postDescription, folderDir, postUrl, lang, tagsList, dateString, passage, imageNameString)
+        const post = {
+            title: postTitle,
+            description: postDescription,
+            folder: folderDir,
+            slug: postUrl,
+            lang: lang,
+            tags: tags,
+            date: dateString,
+            passage: passage,
+            imageName: imageNameString,
+            showImage: true
+        }
+
+        await addTemplate(post)
 
     }
     processing('../src/data/articles/articles.json', `${folderDir}/${postUrl}`)
