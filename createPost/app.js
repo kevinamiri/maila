@@ -239,10 +239,10 @@ ${post.passage}
 
 
 const createPost = async () => {
-    const postSubject = "Advice strategies for getting people to reply to your emails"
-    const postMetaDescription = `Don’t send long e-mails to people you want to work with. Just put your point across as quickly as possible and keep it short.`
-    const tagStrs = `communication, writing, tips`
-    const imageNameString = "emails-hey.jpg"
+    const postSubject = "46 headline examples and formulas to help you create better headlines"
+    const postMetaDescription = `46 headlines examples with headline writing formulas`
+    const tagStrs = `marketing, headlines, copywriting`
+    const imageNameString = "headlines-copywriting-formulas.png"
     const NewDocument = fs.readFileSync('./newDoc.md', 'utf8');
     const postUrl = kebabCase(postSubject)
     const dateString = new Date().toISOString().slice(0, 10)

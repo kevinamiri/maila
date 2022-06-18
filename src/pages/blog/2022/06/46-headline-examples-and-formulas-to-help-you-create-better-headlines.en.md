@@ -1,3 +1,18 @@
+---
+id: "27"
+title: "46 headline examples and formulas to help you create better headlines"
+description: "46 headlines examples with headline writing formulas"
+template: blog-body
+templateKey: blog-body
+author: 'Kevin Levin'
+date: "2022-06-18"
+slug: /en/blog/2022/06/46-headline-examples-and-formulas-to-help-you-create-better-headlines
+path: /en/blog/2022/06/46-headline-examples-and-formulas-to-help-you-create-better-headlines
+lang: en
+tags: [marketing, headlines, copywriting]
+image: ../images/headlines-copywriting-formulas.png
+imageStatus: true
+---
 # 46 Headlines copywriting formulas with Examples
 
 
@@ -272,3 +287,4 @@ Example:
 - 7 Steps to Less Customers
 - 5 Steps to More Customers
 - 3 Steps to More Sales
+
