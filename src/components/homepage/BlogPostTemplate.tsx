@@ -25,10 +25,6 @@ const BlogPostTemplate = (data) => {
           <Grid item xs={12} sx={{ my: 4 }}>
             <Time date={data.date} />
 
-            <Box
-              color='text.primary'
-              dangerouslySetInnerHTML={{ __html: data.content }}
-            />
             {imageStatus && (
               <Box
                 sx={{
@@ -48,6 +44,10 @@ const BlogPostTemplate = (data) => {
                 />
               </Box>
             )}
+            <Box
+              color='text.primary'
+              dangerouslySetInnerHTML={{ __html: data.content }}
+            />
           </Grid>
           <Box
             sx={{
