@@ -12,7 +12,7 @@ node_modules/
 yarn-error-log
 public/
 dist/
-createPost/
+createPost/*
 
 #amplify
 amplify/\#current-cloud-backend
