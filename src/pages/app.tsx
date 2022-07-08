@@ -583,11 +583,12 @@ export default function App() {
                         headerTitle={product.title}
                         description={product.usage}
                         example={product.placeholder}
+                        editorHeight={product.editor_height}
                         instructHelp={product.help_hint}
                         productType={product.product_type}
                         path={path}
+                        extraFields={product.extraFields}
                         toneTextField={product.tone}
-                        labelsLists={[]}
                       />
                     );
                   })}
