@@ -1,14 +1,14 @@
 ---
 id: "1127"
-title: "Fundraising email subject line"
-description: "Write three subject lines for a solicitation email"
-usage: "Write three subject lines for a solicitation email"
+title: "Email subject line"
+description: "Email subject lines"
+usage: "Write three subject lines"
 placeholder: "We are provide products or services that improve the quality of life for our customers and employees while making a positive impact on our communities and the environment."
-header: "Write three subject lines for a solicitation email"
+header: "Write three subject lines"
 help_hint: "Write your company's mission statement below."
 tags: ["Email", "Fundraising"]
 date: "2022-04-05"
-slug: /en/tools/email/Fundraising-email-subject-line
+slug: /en/tools/email/email-subject-line
 lang: en
 icon: "addEmail"
 hasCustomTemplate: true
@@ -46,9 +46,9 @@ tone: false
 templateKey: 'tools-body'
 jsonId: "1127"
 product_type: "0"
-url: /app/fund
+url: /app/email-subject-line
 ---
 
 # Fundraising email subject line
 
-Fundraising email subject line generator: Write three subject lines for a solicitation email.
+Fundraising email subject line generator: Write three subject lines.
