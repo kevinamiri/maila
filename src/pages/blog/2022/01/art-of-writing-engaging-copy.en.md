@@ -18,7 +18,6 @@ In this article, we'll cover the basics of writing engaging copy. Copywriting is
 
 
 
-
 ### Best practices Summary
 
 Here are some best practices to keep in mind:

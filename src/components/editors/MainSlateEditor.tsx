@@ -59,6 +59,7 @@ const MainSlateEditor = (props) => {
   const editor3 = props.editor3;
   const editor4 = props.editor4;
   const productType = props.productType;
+  const editorHeight = props.editorHeight;
   const editors = [editor, editor2, editor3, editor4];
   const storageKey =
     props.storageKey === undefined ? "document" : props.storageKey;
@@ -368,7 +369,10 @@ const MainSlateEditor = (props) => {
               onFocus={onFocus}
               onBlur={onBlur}
               onKeyDown={handleKeyDown}
-              style={{ height: "500px", overflowY: "scroll" }}
+              style={{
+                overflowY: "scroll",
+                height: editorHeight ? `${editorHeight}px` : "500px",
+              }}
             />
           </Slate>
         </Grid>

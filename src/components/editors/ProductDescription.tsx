@@ -42,6 +42,8 @@ export interface ProductGenerationProps {
   productUrl?: string;
   labelsLists?: placeholderLists;
   path: string;
+  extraFields?: any;
+  editorHeight?: number;
   label?: String | any;
   tunningOptions?: any;
   description?: String | any;
@@ -58,7 +60,9 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   productUrl = "generate",
   toneTextField,
   labelsLists,
+  extraFields,
   description,
+  editorHeight,
   instructHelp,
   example,
   tunningOptions,
@@ -157,9 +161,13 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                   engineId
                 />
               )}
-              {toneTextField ? (
-                <FormRedux toneTextField labelsLists={labelsLists} />
-              ) : null}
+              {extraFields && (
+                <FormRedux
+                  tonsOptions={toneTextField}
+                  labelsLists={labelsLists}
+                  extraFields={extraFields}
+                />
+              )}
               <Suspense fallback={<div>Loading...</div>}>
                 <FormHelperText sx={{ mb: 2 }}>{instructHelp}</FormHelperText>
                 <MainSlateEditor
@@ -168,6 +176,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                   limitChar={inputLimitation}
                   //main editor storage name for editor
                   storageKey={storageKey}
+                  editorHeight={editorHeight}
                   productType={productType}
                   editor2={editor2}
                   editor3={editor3}

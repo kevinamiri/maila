@@ -10,7 +10,12 @@ export interface typedFieldsValue {
   keywordValue?: string;
   audienceValue?: string;
   businessNameValue?: string;
+  formTypeValue?: boolean;
+  purposeValue?: string;
+  missionValue?: string;
+  companyValue?: string;
   featureValue?: string;
+  outputShape: string;
   defaultVoice?: any;
   language?: languageTyped;
   suffix?: string;
@@ -32,6 +37,10 @@ export const initialState: typedFieldsValue = {
   audienceValue: "",
   businessNameValue: "",
   featureValue: "",
+  outputShape: "questions",
+  purposeValue: "",
+  missionValue: "",
+  companyValue: "",
   defaultVoice: Voices.slice(1, 3),
   language: { code: "US", label: "English", LangCode: "en" },
 };

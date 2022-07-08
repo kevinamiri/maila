@@ -27,6 +27,39 @@ export const useToolsProducts = () => {
                 date
                 tone
                 hasCustomTemplate
+                hasCustomTextArea
+                editor_height
+                extraFields {
+                  company {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  purpose {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  mission {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  outputType {
+                    name
+                    id
+                    label
+                    type
+                    options
+                    placeholder
+                  }
+                }
                 slug
                 lang
                 product_type
@@ -57,9 +90,42 @@ export const useToolsProducts = () => {
                 help_hint
                 tags
                 date
-                slug
-                hasCustomTemplate
                 tone
+                hasCustomTemplate
+                hasCustomTextArea
+                editor_height
+                extraFields {
+                  company {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  purpose {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  mission {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  outputType {
+                    name
+                    id
+                    label
+                    type
+                    options
+                    placeholder
+                  }
+                }
+                slug
                 lang
                 product_type
                 url
@@ -89,9 +155,42 @@ export const useToolsProducts = () => {
                 help_hint
                 tags
                 date
-                slug
                 tone
                 hasCustomTemplate
+                hasCustomTextArea
+                editor_height
+                extraFields {
+                  company {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  purpose {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  mission {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  outputType {
+                    name
+                    id
+                    label
+                    type
+                    options
+                    placeholder
+                  }
+                }
+                slug
                 lang
                 product_type
                 url
@@ -121,9 +220,42 @@ export const useToolsProducts = () => {
                 help_hint
                 tags
                 date
-                slug
                 tone
                 hasCustomTemplate
+                hasCustomTextArea
+                editor_height
+                extraFields {
+                  company {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  purpose {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  mission {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  outputType {
+                    name
+                    id
+                    label
+                    type
+                    options
+                    placeholder
+                  }
+                }
+                slug
                 lang
                 product_type
                 url

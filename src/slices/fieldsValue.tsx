@@ -68,6 +68,37 @@ const slice = createSlice({
       };
       return updatedObject;
     },
+    updatePurposeValue: (
+      state: typedFieldsValue,
+      action: PayloadAction<string>
+    ) => {
+      const updatedObject = {
+        ...state,
+        purposeValue: action.payload,
+      };
+      return updatedObject;
+    },
+    updateMissionValue: (
+      state: typedFieldsValue,
+      action: PayloadAction<string>
+    ) => {
+      const updatedObject = {
+        ...state,
+        missionValue: action.payload,
+      };
+      return updatedObject;
+    },
+
+    updateFormValue: (
+      state: typedFieldsValue,
+      action: PayloadAction<string>
+    ) => {
+      const updatedObject = {
+        ...state,
+        formValue: action.payload,
+      };
+      return updatedObject;
+    },
 
     updateSuffix: (state: typedFieldsValue, action: PayloadAction<string>) => {
       const updatedObject = {
@@ -126,6 +157,16 @@ const slice = createSlice({
       };
       return updatedObject;
     },
+    updateOutputShape: (
+      state: typedFieldsValue,
+      action: PayloadAction<string>
+    ) => {
+      const updatedObject = {
+        ...state,
+        outputShape: action.payload,
+      };
+      return updatedObject;
+    },
   },
 });
 
@@ -151,6 +192,21 @@ export const updateFeatureValue =
   (x): AppThunk =>
   async (dispatch): Promise<void> => {
     dispatch(slice.actions.updateFeatureValue(x));
+  };
+export const updateFormValue =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateFormValue(x));
+  };
+export const updateMissionValue =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateMissionValue(x));
+  };
+export const updatePurposeValue =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updatePurposeValue(x));
   };
 
 export const updateToneOfVoiceValue =
@@ -199,4 +255,10 @@ export const updateEngineId =
   (x): AppThunk =>
   async (dispatch): Promise<void> => {
     dispatch(slice.actions.updateEngineId(x));
+  };
+
+export const updateOutputShape =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateOutputShape(x));
   };
