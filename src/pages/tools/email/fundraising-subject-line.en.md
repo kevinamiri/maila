@@ -11,7 +11,7 @@ date: "2022-04-05"
 slug: /en/tools/email/Fundraising-email-subject-line
 lang: en
 icon: "addEmail"
-hasCustomTemplate: false
+hasCustomTemplate: true
 hasCustomTextArea: true
 editor_height: 200
 extraFields:
