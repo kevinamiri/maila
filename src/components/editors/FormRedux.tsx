@@ -8,6 +8,8 @@ import ToggleButtonGroupOptions from "components/subcomponents/ToggleButtonGroup
 import {
   updateBusinessNameValue,
   updatePurposeValue,
+  updateFeatureValue,
+  updateKeywordValue,
 } from "slices/fieldsValue";
 // import TextAreaRedux from "./textAreaRedux";
 
@@ -22,6 +24,14 @@ const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
       id: 1,
       dispatcher: updatePurposeValue,
     },
+    {
+      id: 4,
+      dispatcher: updateKeywordValue,
+    },
+    {
+      id: 5,
+      dispatcher: updateFeatureValue,
+    },
   ];
 
   const dispatch = useDispatch();
@@ -32,7 +42,6 @@ const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
   const getValues = (obj) => Object.values(obj);
   const fields =
     extraFields && getValues(extraFields).filter((item) => item !== null);
-  console.log(fields);
   const dispatchersLists: any = dispatchers.map(
     (x) => getValues(x)[1]
   ); /* [ updateBusinessNameValue, updatePurposeValue] */
@@ -78,7 +87,6 @@ const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
           fields.length > 0 &&
           fields.map((field, index) => {
             const feildId = field.id;
-            console.log(field);
             return (
               <Grid
                 item
@@ -97,7 +105,11 @@ const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
                       e.preventDefault();
                       const content = JSON.stringify(e.target.value);
                       localStorage.setItem(`${field["name"]}`, content);
-                      dispatch(dispatchersLists[feildId](e.target.value));
+                      const dispatcher = dispatchers.find(
+                        (dispatcher) => dispatcher.id === feildId
+                      );
+                      console.log(dispatcher);
+                      dispatch(dispatcher.dispatcher(e.target.value));
                     }, 300)}
                     size='small'
                     variant='outlined'

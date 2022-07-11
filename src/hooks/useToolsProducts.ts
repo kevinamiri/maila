@@ -59,6 +59,20 @@ export const useToolsProducts = () => {
                     options
                     placeholder
                   }
+                  features {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  keywords {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
                 }
                 slug
                 lang
@@ -110,6 +124,20 @@ export const useToolsProducts = () => {
                     placeholder
                   }
                   mission {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  features {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  keywords {
                     name
                     id
                     label
@@ -175,6 +203,20 @@ export const useToolsProducts = () => {
                     placeholder
                   }
                   mission {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  features {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  keywords {
                     name
                     id
                     label
@@ -252,6 +294,20 @@ export const useToolsProducts = () => {
                     label
                     type
                     options
+                    placeholder
+                  }
+                  features {
+                    name
+                    id
+                    label
+                    type
+                    placeholder
+                  }
+                  keywords {
+                    name
+                    id
+                    label
+                    type
                     placeholder
                   }
                 }

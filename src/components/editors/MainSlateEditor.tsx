@@ -278,7 +278,7 @@ const MainSlateEditor = (props) => {
           p: 1,
         }}
       >
-        <StyledToggleButtonGroup
+        {/* <StyledToggleButtonGroup
           sx={{
             position: "fixed",
             bottom: "43%",
@@ -287,7 +287,7 @@ const MainSlateEditor = (props) => {
           }}
         >
           <MagicButton onClick={handleSuffix} hasTab={false} />
-        </StyledToggleButtonGroup>
+        </StyledToggleButtonGroup> */}
         <Grid
           item
           sx={{

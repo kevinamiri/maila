@@ -30,6 +30,12 @@ const useFetchAll = async (
     fieldValues.frequencyPenalty
       ? (params["frequencyPenalty"] = fieldValues.frequencyPenalty)
       : null;
+    fieldValues.featureValue
+      ? (params["feature"] = fieldValues.featureValue)
+      : null;
+    fieldValues.keywordValue
+      ? (params["keyword"] = fieldValues.keywordValue)
+      : null;
     selectedVoices ? (params["tone"] = selectedVoices) : null;
     urlType ? (params["type"] = urlType) : null;
     const data = JSON.stringify(params);

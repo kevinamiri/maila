@@ -11,8 +11,27 @@ slug: /en/tools/copywriting/product-description
 url: "/app/product-description"
 lang: en
 icon: "productDescriptionIcon"
-hasCustomTemplate: true
-tone: false
+hasCustomTemplate: false
+extraFields:
+  company:
+    name: "company"
+    id: 0
+    label: "Company name"
+    type: "text"
+    placeholder: "IKEA"
+  keywords:
+    name: "keywords"
+    id: 4
+    label: "Keywords"
+    type: "text"
+    placeholder: "reusable cup, eco-friendly"
+  features:
+    name: "features"
+    id: 5
+    label: "features"
+    type: "text"
+    placeholder: "Features of the product"
+tone: true
 templateKey: 'tools-body'
 product_type: "4"
 tags: ["Copywriting"]
