@@ -3,9 +3,28 @@ import { BaseEditor, Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
 import { HistoryEditor } from "slate-history";
-import { updateExpansion } from "slices/ui-states";
+import { updateExpansion, updateHighlghted } from "slices/ui-states";
 import useFetchAll from "./useFetchAll";
 import { serialize } from "./currentSelectEditor";
+
+/* Following function would send the text to main editor */
+const Content2Editor = (editor, content) => {
+  editor.selection &&
+    Transforms.insertText(editor, content, {
+      at: editor.selection,
+    });
+
+  if (!editor.selection) {
+    Transforms.insertText(editor, content, {
+      at: Editor.end(editor, []),
+    });
+
+    Transforms.select(
+      editor,
+      editor.selection ? editor.selection : Editor.end(editor, [])
+    );
+  }
+};
 
 //fetching the data from the api and then inserting it into the editor itself at the selection
 async function useFetchAllData(
@@ -27,14 +46,22 @@ async function useFetchAllData(
     if (data) {
       dispatch(updateProgressValue(50));
       let textOptions = Object.values(data);
+      let inx = 0;
       textOptions
         .filter((x: any) => x.search("Error 4043") != -1)
         .map((element: any) => enqueueSnackbar(element));
       textOptions
         .filter((x: any) => x.search("Error 4043") == -1)
-        .map((text: any, index) =>
-          Transforms.insertText(editors[index + 1], text, { at: [0] })
-        );
+        .map((text: string, index) => {
+          if (text.length > 3 && inx == 0) {
+            // inserting the first text into the main editor
+            Content2Editor(editors[0], text);
+            inx = 1;
+            // highlighting the first text in the main editor
+            dispatch(updateHighlghted(text));
+          }
+          Transforms.insertText(editors[index + 1], text, { at: [0] });
+        });
       dispatch(updateExpansion(true));
       dispatch(updateProgressValue(100));
       ReactEditor.focus(editors[0]);
