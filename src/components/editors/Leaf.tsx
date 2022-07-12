@@ -22,7 +22,7 @@ export const Leaf = ({ attributes, children, leaf }) => {
 
   if (leaf.highlight) {
     children = (
-      <mark style={{ backgroundColor: "rgb(20, 184, 166)" }}>{children}</mark>
+      <mark style={{ backgroundColor: "rgb(79, 217, 201)" }}>{children}</mark>
     );
   }
 

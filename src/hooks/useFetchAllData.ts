@@ -1,14 +1,13 @@
 import { updateProgressValue } from "../slices/progress";
 import { BaseEditor, Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
-import { Node as SlateNode } from "slate";
 import { HistoryEditor } from "slate-history";
 import { updateExpansion, updateHighlghted } from "slices/ui-states";
 import useFetchAll from "./useFetchAll";
 import { serialize } from "./currentSelectEditor";
 
 /* Following function would send the text to main editor 
-Transfering the text  => main 
+text => main editor
 */
 const Content2Editor = (
   editor: BaseEditor & ReactEditor & HistoryEditor,
