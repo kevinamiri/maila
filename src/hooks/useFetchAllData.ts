@@ -7,8 +7,13 @@ import { updateExpansion, updateHighlghted } from "slices/ui-states";
 import useFetchAll from "./useFetchAll";
 import { serialize } from "./currentSelectEditor";
 
-/* Following function would send the text to main editor */
-const Content2Editor = (editor, content) => {
+/* Following function would send the text to main editor 
+Transfering the text  => main 
+*/
+const Content2Editor = (
+  editor: BaseEditor & ReactEditor & HistoryEditor,
+  content: string
+) => {
   editor.selection &&
     Transforms.insertText(editor, content, {
       at: editor.selection,
