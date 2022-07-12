@@ -3,6 +3,7 @@ import isHotkey from "is-hotkey";
 import { Editable, useSlate, Slate, ReactEditor } from "editable-slate-react";
 import { Editor, Transforms, Element as SlateElement, Descendant } from "slate";
 import { Node as SlateNode } from "slate";
+import { Text as Textt } from "slate";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import ToggleButton from "@mui/material/ToggleButton";
@@ -47,6 +48,7 @@ const MainSlateEditor = (props) => {
   const dispatch = useDispatch();
   const { decorate } = usePrism();
   const fieldValues = useSelector((state) => state.fieldsValue);
+  const { highlightedText } = useSelector((state) => state.expandReducer);
   const { enqueueSnackbar } = useSnackbar();
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
@@ -54,6 +56,34 @@ const MainSlateEditor = (props) => {
     (props) => <FooterEditorBar {...props} />,
     []
   );
+
+  const decorateSearch = useCallback(
+    ([node, path]) => {
+      const ranges = [];
+
+      if (highlightedText && Textt.isText(node)) {
+        const { text } = node;
+        const parts = text.split(highlightedText);
+        let offset = 0;
+
+        parts.forEach((part, i) => {
+          if (i !== 0) {
+            ranges.push({
+              anchor: { path, offset: offset - highlightedText.length },
+              focus: { path, offset },
+              highlight: true,
+            });
+          }
+
+          offset = offset + part.length + highlightedText.length;
+        });
+      }
+
+      return ranges;
+    },
+    [highlightedText]
+  );
+
   const editor = props.editor;
   const editor2 = props.editor2;
   const editor3 = props.editor3;
@@ -362,7 +392,7 @@ const MainSlateEditor = (props) => {
             <Editable
               renderElement={renderElement}
               renderLeaf={renderLeaf}
-              decorate={decorate}
+              decorate={decorateSearch}
               placeholder={props.placeholder}
               spellCheck
               autoFocus
@@ -445,6 +475,16 @@ const Blockquote = styled("blockquote")(({ theme }) => ({
   borderLeft: `3px solid ${theme.palette.text.primary}`,
   fontStyle: "italic",
   paddingLeft: "0.8em",
+}));
+
+const PP = styled("p")(({ theme }) => ({
+  position: "relative",
+  "&:after": {
+    content: " Use '/' to create question",
+    color: theme.palette.text.secondary,
+    position: "absolute",
+    top: 0,
+  },
 }));
 
 const Element = ({ attributes, children, element }) => {

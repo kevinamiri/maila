@@ -4,11 +4,7 @@ import { BaseEditor, Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
 import { HistoryEditor } from "slate-history";
-import React from "react";
-import { updateExpansion } from "slices/ui-states";
-// import { selectedText, serialize } from "./currentSelectEditor";
-// import { setCurrentWordRange } from "slices/editorParams";
-// import { useDispatch } from "react-redux";
+import { updateExpansion, updateHighlghted } from "slices/ui-states";
 
 /* Following function would send the text to main editor */
 const Content2Editor = (editor, content) => {
@@ -29,7 +25,7 @@ const Content2Editor = (editor, content) => {
   }
 };
 
-//fetching the data from the api and then inserting it into the editor itself at the selection
+// fetching the data from the api and then inserting it into the editor itself at the selection
 async function useFetch2InsertSuffix(
   dispatch: (arg0: {
     (dispatch: any): Promise<void>;
@@ -57,6 +53,7 @@ async function useFetch2InsertSuffix(
   })
     .map((x) => SlateNode.string(x))
     .join("\n");
+  [];
 
   /** End: geting before selection and after selection */
 
@@ -70,16 +67,19 @@ async function useFetch2InsertSuffix(
     if (data) {
       dispatch(updateProgressValue(50));
       let textOptions: string[] = Object.values(data);
-      console.log(textOptions);
+      let inx = 0;
       textOptions
         .filter((x: any) => x.search("Error 4043") != -1)
         .map((element) => enqueueSnackbar(element));
       textOptions
         .filter((x: any) => x.search("Error 4043") == -1)
         .map((text: string, index) => {
-          // insert the text that has length greater than other text in the array
-          if (index == 0) {
+          if (text.length > 3 && inx == 0) {
+            // inserting the first text into the main editor
             Content2Editor(editors[0], text);
+            inx = 1;
+            // highlighting the first text in the main editor
+            dispatch(updateHighlghted(text));
           }
           Transforms.insertText(editors[index + 1], text, { at: [0] });
         });
