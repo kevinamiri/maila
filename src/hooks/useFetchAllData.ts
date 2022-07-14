@@ -57,13 +57,13 @@ async function useFetchAllData(
       textOptions
         .filter((x: any) => x.search("Error 4043") == -1)
         .map((text: string, index) => {
-          if (text.length > 3 && inx == 0) {
-            // inserting the first text into the main editor
-            Content2Editor(editors[0], text);
-            inx = 1;
-            // highlighting the first text in the main editor
-            dispatch(updateHighlghted(text));
-          }
+          // if (text.length > 3 && inx == 0) {
+          //   // inserting the first text into the main editor
+          //   Content2Editor(editors[0], text);
+          //   inx = 1;
+          //   // highlighting the first text in the main editor
+          //   dispatch(updateHighlghted(text));
+          // }
           Transforms.insertText(editors[index + 1], text, { at: [0] });
         });
       dispatch(updateExpansion(true));
