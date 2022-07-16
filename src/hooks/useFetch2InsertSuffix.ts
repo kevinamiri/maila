@@ -6,6 +6,12 @@ import { Node as SlateNode } from "slate";
 import { HistoryEditor } from "slate-history";
 import { updateExpansion, updateHighlghted } from "slices/ui-states";
 
+/**
+ * When user clicks on the tab, it will triger the api and
+ * the auto-generated text will be inserted into the main editor
+ *
+ */
+
 /* Following function would send the text to main editor */
 const Content2Editor = (editor, content) => {
   editor.selection &&
@@ -69,10 +75,10 @@ async function useFetch2InsertSuffix(
       let textOptions: string[] = Object.values(data);
       let inx = 0;
       textOptions
-        .filter((x: any) => x.search("Error 4043") != -1)
+        .filter((x: any) => x.search("404") != -1)
         .map((element) => enqueueSnackbar(element));
       textOptions
-        .filter((x: any) => x.search("Error 4043") == -1)
+        .filter((x: any) => x.search("404") == -1)
         .map((text: string, index) => {
           if (text.length > 3 && inx == 0) {
             // inserting the first text into the main editor

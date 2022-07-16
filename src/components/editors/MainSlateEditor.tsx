@@ -1,20 +1,20 @@
 import React, { useCallback, useState } from "react";
 import isHotkey from "is-hotkey";
-import { Editable, useSlate, Slate, ReactEditor } from "editable-slate-react";
-import { Editor, Transforms, Element as SlateElement, Descendant } from "slate";
+import { Editable, Slate, ReactEditor } from "editable-slate-react";
+import { Editor, Transforms, Descendant } from "slate";
 import { Node as SlateNode } from "slate";
 import { Text as Textt } from "slate";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import ToggleButton from "@mui/material/ToggleButton";
-import { styled, useTheme } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 import Leaf from "./Leaf";
+
 import {
   setCurrentWordRange,
   updateSelectedText,
 } from "../../slices/editorParams";
 import FooterEditorBar from "./FooterEditorBar";
-import usePrism from "../../hooks/usePrism";
+// import usePrism from "../../hooks/usePrism";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import FormatBoldRoundedIcon from "@mui/icons-material/FormatBold";
 import FormatItalicRoundedIcon from "@mui/icons-material/FormatItalic";
@@ -25,38 +25,30 @@ import LooksTwoRoundedIcon from "@mui/icons-material/LooksTwo";
 import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuote";
 import FormatListNumberedRoundedIcon from "@mui/icons-material/FormatListNumbered";
 import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBulleted";
-import IconButton from "@mui/material/IconButton";
 import { StyledToggleButtonGroup } from "./toggle-button-group";
-import Tooltip from "@mui/material/Tooltip";
 import UseCompletionSuffix from "hooks/UseCompletionSuffix";
 import { useSelector, useDispatch } from "react-redux";
 import { updateProgressValue } from "../../slices/progress";
 import { useSnackbar } from "notistack";
 import HoveringToolbar from "./HoveringToolbar";
-import AutoFixHighRoundedIcon from "@mui/icons-material/AutoFixHighRounded";
 import { HOTKEYS } from "./hotkeys";
 import useFetchAllData from "hooks/useFetchAllData";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-const LIST_TYPES = ["numbered-list", "bulleted-list"];
+
 // @refresh reset
 import BorderColorRoundedIcon from "@mui/icons-material/BorderColorRounded";
 import useFetch2InsertSuffix from "hooks/useFetch2InsertSuffix";
-import { SeverityPill } from "components/severity-pill";
+import { TabButton } from "./formats";
+import { toggleMark, BlockButton, MarkButton, Element } from "./formats";
 
 const MainSlateEditor = (props) => {
   //hooks must be inside of the function
   const dispatch = useDispatch();
-  const { decorate } = usePrism();
+  // const { decorate } = usePrism();
   const fieldValues = useSelector((state) => state.fieldsValue);
   const { highlightedText } = useSelector((state) => state.expandReducer);
   const { enqueueSnackbar } = useSnackbar();
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
-  const FooterEditorBarX = useCallback(
-    (props) => <FooterEditorBar {...props} />,
-    []
-  );
-
   const decorateSearch = useCallback(
     ([node, path]) => {
       const ranges = [];
@@ -78,7 +70,6 @@ const MainSlateEditor = (props) => {
           offset = offset + part.length + highlightedText.length;
         });
       }
-
       return ranges;
     },
     [highlightedText]
@@ -308,16 +299,6 @@ const MainSlateEditor = (props) => {
           p: 1,
         }}
       >
-        {/* <StyledToggleButtonGroup
-          sx={{
-            position: "fixed",
-            bottom: "43%",
-            left: "3%",
-            zIndex: 1800,
-          }}
-        >
-          <MagicButton onClick={handleSuffix} hasTab={false} />
-        </StyledToggleButtonGroup> */}
         <Grid
           item
           sx={{
@@ -379,7 +360,7 @@ const MainSlateEditor = (props) => {
                 </BlockButton>
               </StyledToggleButtonGroup>
               <StyledToggleButtonGroup>
-                <MagicButton onClick={handleSuffix} hasTab />
+                <TabButton onClick={handleSuffix} hasTab />
               </StyledToggleButtonGroup>
             </Box>
 
@@ -409,265 +390,6 @@ const MainSlateEditor = (props) => {
         <FooterEditorBar voice={true} disabled={true} editor={editor} />
       </Grid>
     </>
-  );
-};
-
-const toggleBlock = (editor, format) => {
-  const isActive = isBlockActive(editor, format);
-  const isList = LIST_TYPES.includes(format);
-
-  Transforms.unwrapNodes(editor, {
-    match: (n) =>
-      LIST_TYPES.includes(
-        !Editor.isEditor(n) && SlateElement.isElement(n) && n.type
-      ),
-    split: true,
-  });
-  const newProperties: Partial<SlateElement> = {
-    type: isActive ? "paragraph" : isList ? "list-item" : format,
-  };
-  Transforms.setNodes(editor, newProperties);
-
-  if (!isActive && isList) {
-    const block = { type: format, children: [] };
-    Transforms.wrapNodes(editor, block);
-  }
-};
-
-const toggleMark = (editor, format) => {
-  const isActive = isMarkActive(editor, format);
-
-  if (isActive) {
-    Editor.removeMark(editor, format);
-  } else {
-    Editor.addMark(editor, format, true);
-  }
-};
-
-const TransformsSelect = (editor) => {
-  Transforms.select(editor, {
-    anchor: Editor.start(editor, []),
-    focus: Editor.end(editor, []),
-  });
-};
-
-const isBlockActive = (editor, format) => {
-  const { selection } = editor;
-  if (!selection) return false;
-
-  const [match] = Array.from(
-    Editor.nodes(editor, {
-      at: Editor.unhangRange(editor, selection),
-      match: (n) =>
-        !Editor.isEditor(n) && SlateElement.isElement(n) && n.type === format,
-    })
-  );
-
-  return !!match;
-};
-
-const isMarkActive = (editor, format) => {
-  const marks = Editor.marks(editor);
-  return marks ? marks[format] === true : false;
-};
-
-const Blockquote = styled("blockquote")(({ theme }) => ({
-  borderLeft: `3px solid ${theme.palette.text.primary}`,
-  fontStyle: "italic",
-  paddingLeft: "0.8em",
-}));
-
-const PP = styled("p")(({ theme }) => ({
-  position: "relative",
-  "&:after": {
-    content: " Use '/' to create question",
-    color: theme.palette.text.secondary,
-    position: "absolute",
-    top: 0,
-  },
-}));
-
-const Element = ({ attributes, children, element }) => {
-  switch (element.type) {
-    case "block-quote":
-      return <Blockquote {...attributes}>{children}</Blockquote>;
-    case "bulleted-list":
-      return <ul {...attributes}>{children}</ul>;
-    case "heading-one":
-      return <h1 {...attributes}>{children}</h1>;
-    case "heading-two":
-      return <h2 {...attributes}>{children}</h2>;
-    case "list-item":
-      return <li {...attributes}>{children}</li>;
-    case "numbered-list":
-      return <ol {...attributes}>{children}</ol>;
-    default:
-      return (
-        <p
-          style={{ lineHeight: "1.4rem", backgroundColor: "f4f9f9" }}
-          {...attributes}
-        >
-          {children}
-        </p>
-      );
-  }
-};
-
-const BlockButton = ({ format, children }) => {
-  const editor = useSlate();
-  return (
-    <Box
-      sx={{
-        m: 0.5,
-      }}
-    >
-      <ToggleButton
-        value={format}
-        size='small'
-        sx={{
-          border: 0,
-          padding: "4px",
-        }}
-        selected={isBlockActive(editor, format)}
-        onMouseDown={(event) => {
-          event.preventDefault();
-          toggleBlock(editor, format);
-        }}
-      >
-        {children}
-      </ToggleButton>
-    </Box>
-  );
-};
-
-const MarkButton = ({ format, children }) => {
-  const editor = useSlate();
-  return (
-    <Box
-      sx={{
-        m: 0.5,
-      }}
-    >
-      <ToggleButton
-        size='small'
-        sx={{
-          border: 0,
-          padding: "4px",
-        }}
-        value={format}
-        selected={isMarkActive(editor, format)}
-        onMouseDown={(event) => {
-          event.preventDefault();
-          toggleMark(editor, format);
-        }}
-      >
-        {children}
-      </ToggleButton>
-    </Box>
-  );
-};
-
-import type { FC, ReactNode } from "react";
-import PropTypes from "prop-types";
-import type { Theme } from "@mui/material";
-// import { styled } from "@mui/material/styles";
-import type { SxProps } from "@mui/system";
-
-export type SeverityPillColor =
-  | "primary"
-  | "secondary"
-  | "error"
-  | "info"
-  | "warning"
-  | "success";
-
-interface SeverityPillProps {
-  children?: ReactNode;
-  color?: SeverityPillColor;
-  style?: {};
-  sx?: SxProps<Theme>;
-}
-
-interface SeverityPillRootProps {
-  ownerState: {
-    color: SeverityPillColor;
-  };
-}
-
-const TabLabel = styled("kbd")<SeverityPillRootProps>(
-  ({ theme, ownerState }) => {
-    const backgroundColor = theme.palette[ownerState.color].main;
-    const color = theme.palette[ownerState.color].contrastText;
-
-    return {
-      alignItems: "center",
-      backgroundColor,
-      borderRadius: 6,
-      color,
-      display: "inline-flex",
-      flexGrow: 0,
-      flexShrink: 0,
-      fontFamily: theme.typography.fontFamily,
-      fontSize: theme.typography.pxToRem(10),
-      fontWeight: 600,
-      justifyContent: "center",
-      minWidth: 10,
-      paddingLeft: theme.spacing(0.5),
-      paddingRight: theme.spacing(0.5),
-      textTransform: "uppercase",
-      whiteSpace: "nowrap",
-    };
-  }
-);
-
-export const KBD: FC<SeverityPillProps> = (props) => {
-  const { color = "primary", children, ...other } = props;
-
-  const ownerState = { color };
-
-  return (
-    <TabLabel ownerState={ownerState} {...other}>
-      {children}
-    </TabLabel>
-  );
-};
-
-const MagicButton = ({ onClick, hasTab }) => {
-  const { progressValue } = useSelector((state) => state.progressValue);
-  const loading = progressValue > 0 && progressValue < 100;
-  const tabIcon = hasTab ? "  TAB" : "";
-  return (
-    <Box
-      sx={{
-        m: 0.5,
-      }}
-    >
-      <Tooltip placement='top' title='Autocomplete (TAB)'>
-        <IconButton
-          size='small'
-          sx={{
-            border: 0,
-            padding: "2px",
-            borderRadius: 1,
-          }}
-          disabled={loading}
-          onClick={onClick}
-        >
-          <KBD
-            sx={{
-              alignSelf: "flex-end",
-              mr: 1,
-              ml: 1,
-              mt: 1,
-            }}
-            color='success'
-          >
-            <AutoFixHighRoundedIcon sx={{ fontSize: "1.1rem" }} />
-            {loading ? "Loading..." : tabIcon}
-          </KBD>
-        </IconButton>
-      </Tooltip>
-    </Box>
   );
 };
 
