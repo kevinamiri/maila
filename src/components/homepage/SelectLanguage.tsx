@@ -79,6 +79,7 @@ const SelectLanguage = (props) => {
           justifyContent: "center",
         }}
       >
+        {/* The Text should always be white */}
         <Link
           sx={{
             borderBottom: "none",
