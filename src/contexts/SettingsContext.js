@@ -1,9 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { THEMES } from '../constants';
+// import { THEMES } from '../constants';
 
 const initialSettings = JSON.parse(typeof window !== "undefined" && localStorage.getItem("settings")) || {
-  compact: true,
   direction: 'ltr',
   responsiveFontSizes: true,
   lang: "en",
@@ -34,9 +33,7 @@ export const restoreSettings = () => {
         direction: 'ltr',
         responsiveFontSizes: true,
         lang: "en",
-        theme: window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light'
+        theme: 'light'
       };
     }
   } catch (err) {
