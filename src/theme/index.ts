@@ -34,6 +34,7 @@ interface ThemeConfig {
   direction?: Direction;
   responsiveFontSizes?: boolean;
   theme: "light" | "dark";
+  lang: string;
 }
 
 export const createTheme = (config: ThemeConfig): Theme => {
