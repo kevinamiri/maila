@@ -92,7 +92,7 @@ const SelectLanguage = (props) => {
             "&:hover": {
               textDecoration: "none",
               borderBottom: "none",
-              color: lang.selected ? "text.disabled" : "text.primary",
+              color: lang.selected ? "text.disabled" : "#FFFFFF",
               backgroundColor: !lang.selected ? "primary.main" : "transparent",
             },
           }}
