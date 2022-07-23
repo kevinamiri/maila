@@ -48,6 +48,7 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
       sx={{
         zIndex: (theme) => theme.zIndex.drawer + 1,
         borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
+        backgroundColor: (theme) => theme.palette.background.default,
         transition: (theme) =>
           theme.transitions.create(["width", "margin"], {
             easing: theme.transitions.easing.sharp,

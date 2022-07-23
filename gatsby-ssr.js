@@ -23,7 +23,6 @@ function TopLayout(props) {
     const theme = createTheme({
         direction: settings.direction,
         responsiveFontSizes: settings.responsiveFontSizes,
-        roundedCorners: settings.roundedCorners,
         theme: settings.theme,
         lang: settings.lang,
     });

@@ -86,7 +86,7 @@ const StaticPageLayout = (props) => {
       >
         <Box
           sx={{
-            backgroundColor: "background.default",
+            backgroundColor: (theme) => theme.palette.background.default,
           }}
         >
           <TopBar title={`maila.ai`} icon={`maila.ai`} />

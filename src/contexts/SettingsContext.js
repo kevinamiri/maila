@@ -6,7 +6,6 @@ const initialSettings = JSON.parse(typeof window !== "undefined" && localStorage
   compact: true,
   direction: 'ltr',
   responsiveFontSizes: true,
-  roundedCorners: false,
   lang: "en",
   theme: 'light'
 };
@@ -14,10 +13,8 @@ const initialSettings = JSON.parse(typeof window !== "undefined" && localStorage
 const defaultSettings = () => {
   return (
     JSON.parse(typeof window !== "undefined" && localStorage.getItem("settings")) || {
-      compact: true,
       direction: "ltr",
       responsiveFontSizes: true,
-      roundedCorners: false,
       lang: "en",
       theme: 'light',
     }
@@ -34,10 +31,8 @@ export const restoreSettings = () => {
       settings = JSON.parse(storedData);
     } else {
       settings = {
-        compact: true,
         direction: 'ltr',
         responsiveFontSizes: true,
-        roundedCorners: false,
         lang: "en",
         theme: window.matchMedia('(prefers-color-scheme: dark)').matches
           ? 'dark'

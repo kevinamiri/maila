@@ -65,7 +65,7 @@ const Layout = (props) => {
       >
         <Box
           sx={{
-            backgroundColor: "background.paper",
+            backgroundColor: (theme) => theme.palette.background.default,
           }}
         >
           <TopBar title='maila.ai' icon='logo' />

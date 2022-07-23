@@ -14,7 +14,6 @@ import SettingsIcon from "@mui/icons-material/Settings";
 const getValues = (settings) => ({
   direction: settings.direction,
   responsiveFontSizes: settings.responsiveFontSizes,
-  roundedCorners: settings.roundedCorners,
   theme: settings.theme,
   lang: settings.lang,
 });
@@ -22,7 +21,6 @@ const getValues = (settings) => ({
 interface settings {
   direction: string;
   responsiveFontSizes: any;
-  roundedCorners: any;
   theme: string;
   lang: string;
 }
