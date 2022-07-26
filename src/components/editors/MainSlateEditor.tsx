@@ -7,7 +7,7 @@ import { Text as Textt } from "slate";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
-import Leaf from "./Leaf";
+import { Leaf } from "./Leaf";
 
 import {
   setCurrentWordRange,

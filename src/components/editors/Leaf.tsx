@@ -66,47 +66,38 @@ const Code = ({ attributes, children, leaf }) => {
 };
 
 export const Leaf = ({ attributes, children, leaf }) => {
-  // using switch
-  switch (true) {
-    case leaf.bold:
-      children = <strong>{children}</strong>;
-      break;
-    case leaf.highlight:
-      children = (
-        <mark style={{ backgroundColor: "rgb(79, 217, 201)" }}>{children}</mark>
-      );
-      break;
-    case leaf.code:
-      children = (
-        <Code {...attributes} leaf={leaf}>
-          {children}
-        </Code>
-      );
-      break;
-    case leaf.selecthighlight:
-      children = (
-        <span
-          className={css`
-            color: #6b778c;
-            background-color: yellow;
-          `}
-        >
-          {children}
-        </span>
-      );
-      break;
-    case leaf.italic:
-      children = <em>{children}</em>;
-      break;
-    case leaf.underline:
-      children = <u>{children}</u>;
-      break;
-    case leaf.strikethrough:
-      children = <Del>{children}</Del>;
-      break;
-    default:
-      return <PrimarySpan {...attributes}>{children}</PrimarySpan>;
+  if (leaf.bold) {
+    children = <strong>{children}</strong>;
+  } else if (leaf.highlight) {
+    children = (
+      <mark style={{ backgroundColor: "rgb(79, 217, 201)" }}>{children}</mark>
+    );
+  } else if (leaf.code) {
+    children = (
+      <Code {...attributes} leaf={leaf}>
+        {children}
+      </Code>
+    );
+  } else if (leaf.selecthighlight) {
+    children = (
+      <span
+        className={css`
+          color: #6b778c;
+          background-color: yellow;
+        `}
+      >
+        {children}
+      </span>
+    );
+  } else if (leaf.italic) {
+    children = <em>{children}</em>;
+  } else if (leaf.underline) {
+    children = <u>{children}</u>;
+  } else if (leaf.strikethrough) {
+    children = <Del>{children}</Del>;
+  } else {
+    return <PrimarySpan {...attributes}>{children}</PrimarySpan>;
   }
-};
 
-export default Leaf;
+  return <PrimarySpan {...attributes}>{children}</PrimarySpan>;
+};
