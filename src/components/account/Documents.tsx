@@ -1,6 +1,5 @@
 import type { FC } from "react";
-import React, { useState, useEffect } from "react";
-import { formatDistanceToNowStrict, subHours, subMinutes } from "date-fns";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -37,7 +36,6 @@ const Documents: FC = () => {
     });
     const data = await response.json();
     const values = Object.values(data).filter((x) => {
-      // if x.userData  exists, then it is a post
       return x.userData !== undefined;
     });
     console.log(values);

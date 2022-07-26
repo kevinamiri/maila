@@ -136,7 +136,6 @@ const VerifyCodeAmplify = () => {
                   )}
                   fullWidth
                   inputRef={(el) => (itemsRef.current[i] = el)}
-                  // eslint-disable-next-line react/no-array-index-key
                   key={`code-${i}`}
                   name={`code[${i}]`}
                   onBlur={handleBlur}

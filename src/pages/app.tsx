@@ -4,16 +4,10 @@ import { navigate } from "gatsby";
 import { Helmet } from "react-helmet";
 import { FormattedMessage, IntlProvider } from "react-intl";
 import "../../configureAmplify";
-import {
-  ProductDescriptionTool,
-  ProductTaglineTool,
-  AdsGoogleTool,
-} from "../components/ProductTools";
 import AppContext from "../contexts/AppContext";
 import SignIn from "../components/SignIn";
 import TopBar from "../components/TopBar";
 import DrawerSideBar from "../components/DrawerSideBar";
-import Container from "@mui/material/Container";
 import PrivateRoute from "../components/layout/PrivateRoute";
 import ProductDescription from "../components/editors/ProductDescription";
 import AccountManage from "../components/AccountManage";
@@ -25,8 +19,6 @@ import Box from "@mui/material/Box";
 import SearchBox from "../components/subcomponents/searchBox";
 import useSettings from "../hooks/useSettings";
 import { useSnackbar } from "notistack";
-// import CssBaseline from "@mui/material/CssBaseline";
-// import { QuickStats } from "../components/QuickStats";
 import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
 import EditorManage from "../components/editor-manage";
 import useToolsProducts from "../hooks/useToolsProducts";
@@ -168,7 +160,6 @@ export default function App() {
     checkUser: checkUser,
     logout: logout,
   };
-  // ################### Handling User auth contexts #########
 
   if (!user || user == null || user === "The user is not authenticated") {
     return (

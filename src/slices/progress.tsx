@@ -16,17 +16,6 @@ const slice = createSlice({
       };
       return updatedObject;
     },
-
-    // bugResolved: (bugs, action) => {
-    //   const index = bugs.findIndex((bug) => bug.id === action.payload.id);
-    //   bugs[index].resolved = true;
-    // },
-
-    // bugRemoved: (bugs, action) => {
-    //   const temp = bugs.filter((bug) => bug.id !== action.payload.id);
-    //   console.log(temp);
-    //   return temp;
-    // },
   },
 });
 

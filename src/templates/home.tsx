@@ -1,18 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
-import SEO from "../components/SEO/SEO";
 import CardFeatureBlock from "../components/landings/CardFeatureBlock";
-// import HomeBlock03 from "../components/landings/HomeBlock03";
 import AccordionBlock from "../components/landings/AccordionBlock";
 import HomeHeroPage from "../components/landings/HomeHeroPage";
 import _ from "lodash";
 import LandingsFeature from "../components/landings/landings-feature";
 import Container from "@mui/material/Container";
-// import HeroTwoColumn from "../components/landings/HeroTwoColumn";
 import WithIllustrationFeatures from "../components/landings/WithIllustrationFeatures";
 import { Pricing } from "../components/landings/pricing";
-// import SimpleCta from "../components/landings/cta";
 
 const HomePage = (props) => {
   const data = props.data;
@@ -55,11 +51,6 @@ const HomePage = (props) => {
           features={features}
           sectionlabel={dataMarkdown.frontmatter.sectionlabel}
         />
-        {/* <SimpleCta /> */}
-        {/* <HomeBlock03
-          langKey={langKey}
-          list={_.chunk(dataMarkdown.frontmatter.F100, 2)}
-        /> */}
         <Pricing
           tables={dataMarkdown.frontmatter.tables}
           plans={dataMarkdown.frontmatter.plans}

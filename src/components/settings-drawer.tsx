@@ -10,8 +10,6 @@ import useSettings from "../hooks/useSettings";
 import { X as XIcon } from "../icons/x";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-// import SelectLanguage from "./homepage/SelectLanguage";
-// import { THEMES } from "../constants";
 
 interface SettingsDrawerProps {
   onClose?: () => void;

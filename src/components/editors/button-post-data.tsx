@@ -8,11 +8,8 @@ const ButtonPostData = (editor) => {
 
   const PostData = async (e) => {
     e.preventDefault();
-    // disable button
     setIsLoading(true);
     await useSaveComplitions(editor);
-    // enable button
-    // It should be ont he redux and trigger by the handleChange on the editro
   };
 
   return (

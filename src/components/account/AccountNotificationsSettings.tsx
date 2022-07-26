@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { useSnackbar } from "notistack";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -17,8 +16,6 @@ const AccountNotificationsSettings = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // NOTE: Make API request
-
     enqueueSnackbar("Changes saved", {
       anchorOrigin: {
         horizontal: "right",

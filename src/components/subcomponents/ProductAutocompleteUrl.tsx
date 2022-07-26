@@ -4,7 +4,6 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import { navigate } from "gatsby";
 import Autocomplete from "@mui/material/Autocomplete";
-// import productPath from "../account/productPath";
 import useToolsPathes from "../../hooks/useToolsPathes";
 
 /**
@@ -50,7 +49,6 @@ export default function ProductAutocompleteUrl({
             variant='outlined'
             inputProps={{
               ...params.inputProps,
-              // disable autocomplete and autofill
               type: "search",
               autoComplete: "new-password",
             }}

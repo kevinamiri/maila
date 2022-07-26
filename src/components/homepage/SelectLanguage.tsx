@@ -54,20 +54,6 @@ const SelectLanguage = (props) => {
     da: "DA-Danish",
     sv: "SV-Swedish",
     no: "NO-Norwegian",
-    // fr: "FR-French",
-    // de: "DE-German",
-    // es: "ES-Spanish",
-    // it: "IT-Italian",
-    // pt: "PT-Portuguese",
-    // nl: "NL-Dutch",
-    // ru: "RU-Russian",
-    // ro: "RO-Romanian",
-    // pl: "PL-Polish",
-    // ja: "JA-Japanese",
-    // zh: "ZH-Chinese",
-    // cs: "CS-Czech",
-    // hu: "HU-Hungarian",
-    // id: "ID-Indonesian",
   };
   const linksOf = props.langs.map((lang, index) => {
     return (
@@ -79,7 +65,6 @@ const SelectLanguage = (props) => {
           justifyContent: "center",
         }}
       >
-        {/* The Text should always be white */}
         <Link
           sx={{
             borderBottom: "none",
@@ -124,8 +109,3 @@ SelectLanguage.propTypes = {
 };
 
 export default SelectLanguage;
-
-//mui v4 => v5
-declare module "@mui/styles/defaultTheme" {
-  interface DefaultTheme extends Theme {}
-}

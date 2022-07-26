@@ -28,7 +28,6 @@ const States: FC = () => {
   const [productLists, setProductLists] = React.useState(products);
   const uTag = unique(products.map((item) => item.slug.split("/")[3]));
   console.log(uTag);
-  // const uTag = unique(tags);
   return (
     <Box
       sx={{

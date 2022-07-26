@@ -47,23 +47,6 @@ const planOptions = [
     value: "Premium Beta",
     status: true,
   },
-  // {
-  //   id: "3",
-  //   description: "Unlimited words",
-  //   label: "Premium",
-  //   priceOptions: [
-  //     {
-  //       chargeType: "monthly",
-  //       amount: "29 Euro",
-  //     },
-  //     {
-  //       chargeType: "yearly",
-  //       amount: "290 Euro",
-  //     },
-  //   ],
-  //   value: "Premium",
-  //   status: false,
-  // },
 ];
 
 export const BillingPlanCardContent = () => {
@@ -115,7 +98,6 @@ export const BillingPlanCardContent = () => {
           value={chargeType}
         >
           <ToggleButton value='monthly'>Monthly</ToggleButton>
-          {/* <ToggleButton value='yearly'>Yearly</ToggleButton> */}
         </ToggleButtonGroup>
       </Box>
       <Divider />

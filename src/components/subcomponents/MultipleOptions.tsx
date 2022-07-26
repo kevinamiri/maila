@@ -48,7 +48,6 @@ export default function CheckboxesTags() {
         const filtered = filter(options, params);
 
         const { inputValue } = params;
-        // Suggest the creation of a new value
         const isExisting = options.some((option) => inputValue === option.tone);
         if (inputValue !== "" && !isExisting) {
           filtered.push({

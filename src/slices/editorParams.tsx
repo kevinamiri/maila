@@ -10,21 +10,6 @@ export interface typedEditorParams {
   commandCompatiblePointWords: any;
 }
 
-// interface BasePoint {
-//   path: Path;
-//   offset: number;
-// }
-
-// const start:BasePoint = {
-//   path: [0,0],
-//   offset: 0
-// }
-
-// interface Range {
-//   anchor: BasePoint
-//   focus: BasePoint
-// }
-
 const initialState: typedEditorParams = {
   selectedTextValue: "",
   selectedRange: null,
@@ -88,17 +73,6 @@ const slice = createSlice({
       };
       return updatedObject;
     },
-
-    // bugResolved: (bugs, action) => {
-    //   const index = bugs.findIndex((bug) => bug.id === action.payload.id);
-    //   bugs[index].resolved = true;
-    // },
-
-    // bugRemoved: (bugs, action) => {
-    //   const temp = bugs.filter((bug) => bug.id !== action.payload.id);
-    //
-    //   return temp;
-    // },
   },
 });
 
