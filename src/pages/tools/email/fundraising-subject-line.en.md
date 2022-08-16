@@ -45,7 +45,7 @@ extraFields:
 tone: false
 templateKey: 'tools-body'
 jsonId: "1127"
-product_type: "0"
+product_type: "30"
 url: /app/email-subject-line
 ---
 
