@@ -42,9 +42,9 @@ const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
   const getValues = (obj) => Object.values(obj);
   const fields =
     extraFields && getValues(extraFields).filter((item) => item !== null);
-  const dispatchersLists: any = dispatchers.map(
-    (x) => getValues(x)[1]
-  ); /* [ updateBusinessNameValue, updatePurposeValue] */
+  const dispatchersLists: any = dispatchers.map((x) => getValues(x)[1]);
+
+  /* [ updateBusinessNameValue, updatePurposeValue] */
 
   const filteredFields =
     fields &&
@@ -108,7 +108,6 @@ const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
                       const dispatcher = dispatchers.find(
                         (dispatcher) => dispatcher.id === feildId
                       );
-                      console.log(dispatcher);
                       dispatch(dispatcher.dispatcher(e.target.value));
                     }, 300)}
                     size='small'
