@@ -85,12 +85,12 @@ export default function App() {
     (item) => item.hasCustomTemplate == false
   );
 
-  const productDescription = allProducts.filter(
-    (item) => item.slug.split("/")[4] === "product-description"
-  )[0];
-  const tagline = allProducts.filter(
-    (item) => item.slug.split("/")[4] === "product-description"
-  )[0];
+  // const productDescription = allProducts.filter(
+  //   (item) => item.slug.split("/")[4] === "product-description"
+  // )[0];
+  // const tagline = allProducts.filter(
+  //   (item) => item.slug.split("/")[4] === "product-description"
+  // )[0];
 
   const handleChange = (field: any, value: any): void => {
     setValues({

@@ -16,7 +16,7 @@ extraFields:
   company:
     name: "company"
     id: 0
-    label: "Company name"
+    label: "Product name"
     type: "text"
     placeholder: "IKEA"
   keywords:

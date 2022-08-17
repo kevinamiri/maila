@@ -103,6 +103,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   };
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
+  console.log(extraFields);
 
   return (
     <>

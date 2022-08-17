@@ -36,6 +36,10 @@ const useFetchAll = async (
     fieldValues.keywordValue
       ? (params["keyword"] = fieldValues.keywordValue)
       : null;
+    fieldValues.keywordValue
+      ? (params["company"] = fieldValues.keywordValue) ||
+        (params["company"] = fieldValues.businessNameValue)
+      : null;
     selectedVoices ? (params["tone"] = selectedVoices) : null;
     urlType ? (params["type"] = urlType) : null;
     const data = JSON.stringify(params);
