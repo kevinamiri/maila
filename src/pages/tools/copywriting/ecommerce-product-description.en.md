@@ -6,7 +6,7 @@ header: "Create a unique description that markets the value of your product."
 usage: "This can be used to create a product description for e-commerce, e.g. online food deliveries, clothing, etc."
 placeholder: "reusable cup, eco-friendly"
 help_hint: "Write a few keywords about your product; then we'll create a Product Description for the given text."
-tags: ["Copywriting"]
+tags: ["copywriting", "product description"]
 date: 2022-02-22
 slug: /en/tools/copywriting/product-description-ecommerce
 url: "/app/product-description-ecommerce"
@@ -37,6 +37,7 @@ product_type: "5"
 lang: en
 jsonId: "4"
 ---
+
 ```toc
 ```
 
@@ -78,7 +79,6 @@ To generate the best possible product descriptions using our platform:
 - From there, you will be given a prompt to input your product name, keywords, and features.
 - Once you are satisfied with your inputs, click "submit" button and let AI do it's magic!
 
-![](../copywriting/images/ai-product-description-platform.png)
 
 
 ### Example:
