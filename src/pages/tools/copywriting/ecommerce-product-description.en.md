@@ -74,7 +74,6 @@ We offer a AI product description generator,  which generates a description of a
 
 To generate the best possible product descriptions using our platform:
 
-
 - First, you need to log in into [MAILA AI APP](https://maila.ai/app/list) select the "product description for eCommerces" template from the templates page.
 - From there, you will be given a prompt to input your product name, keywords, and features.
 - Once you are satisfied with your inputs, click "submit" button and let AI do it's magic!
