@@ -43,8 +43,6 @@ To generate the best possible follow-up email copy using our platform:
 - You will be given a copy of the generated email.
 
 
-
-
 ### Example:
 
 

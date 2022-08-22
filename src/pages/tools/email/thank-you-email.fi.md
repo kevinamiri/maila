@@ -17,3 +17,30 @@ templateKey: 'tools-body'
 product_type: "22"
 url: "/app/thank-you-email"
 ---
+
+
+# AI kiitosviestigeneraattori
+
+Tarjoamme tekoälyyn perustuvan kiitosviestigeneraattorin, joka tuottaa sinulle kiitosviestejä, vaikka et olisi palveluntarjoaja, kaikki tulosteet mallimme pystyvät tuottamaan ainutlaatuista sisältöä yrityksellesi.
+
+Voit luoda parhaat mahdolliset kiitosviestit käyttämällä alustamme:
+
+- Valitse "Kiitosviestigeneraattori" -malli mallisivulta.
+- Sieltä saat kehotteen syöttää henkilön/yrityksen nimen, sähköpostin ja puhelinnumeron.
+- Kun olet tyytyväinen syötteisiisi, napsauta "lähetä" -painiketta ja anna AI:n tehdä taikansa!
+
+## Esimerkki:
+
+Seuraavassa on esimerkki AI:n kiitosviestigeneraattorin tuotoksesta:
+
+---
+
+Rakas Kenneth,
+
+Kiitos äskettäisestä tilauksestasi. Arvostamme tukeasi! On hienoa kuulla, että olet innostunut tuotteen käytöstä, ja olet varmasti iloinen kuullessasi, että käynnistimme juuri uuden ominaisuuden verkkosivustollamme, jonka avulla voit ladata kuvia tuotteistasi heti. Verkkosivustoa on myös päivitetty, ja siinä on enemmän yksityiskohtia ja parempi navigointi. Toivottavasti nautit muutoksista! Kerro meille, jos sinulla on kysyttävää tai palautetta uudesta verkkosivustosta.
+
+Kiitos vielä kerran tilauksestasi. Odotamme innolla, että saamme palvella sinua pian uudelleen.
+
+Ystävällisin terveisin,
+
+John Doe
