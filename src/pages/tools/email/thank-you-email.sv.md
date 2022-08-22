@@ -25,8 +25,8 @@ Vi erbjuder en AI-baserad generator för tackmeddelanden som genererar tackmedde
 
 För att generera bästa möjliga tackmeddelanden med hjälp av vår plattform:
 
-- Först måste du logga in på MAILA AI APP och välja mallen "Thank you Message Generator" på sidan för mallar.
-- Därefter får du en uppmaning att ange personens/företagets namn, e-postadress och telefonnummer.
+- Först måste du logga in på MAILA AI APP och välja mallen "E-postadress för tack" på sidan för mallar.
+- Därefter får du en uppmaning att skriva in några nyckelord om meddelandet.
 - När du är nöjd med dina inmatningar klickar du på knappen "skicka" och låter AI göra sin magi!
 
 ## Exempel:

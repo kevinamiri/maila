@@ -25,8 +25,8 @@ We offer an AI-based thank you message generator which generates you thank you m
 
 To generate the best possible thank you messages using our platform:
 
-- First, you need to log in into MAILA AI APP select the "Thank you Message Generator" template from the templates page.
-- From there, you will be given a prompt to input your Name of the person/company, email, and phone number.
+- First, you need to log in into MAILA AI APP select the "Thank You Email" template from the templates page.
+- From there, you will be given a prompt to input some keywords about the message.
 - Once you are satisfied with your inputs, click "submit" button and let AI do it's magic!
 
 ## Example:

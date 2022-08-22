@@ -24,9 +24,9 @@ Vi tilbyder en AI-baseret generator til generering af takbeskeder, som genererer
 
 For at generere de bedst mulige takkebeskeder ved hjælp af vores platform:
 
-- Først skal du logge ind på MAILA AI APP og vælge skabelonen "Thank you Message Generator" fra siden med skabeloner.
-- Derfra vil du få en prompt til at indtaste personens/virksomhedens navn, e-mail og telefonnummer.
-- Når du er tilfreds med dine indtastninger, skal du klikke på "send"-knappen og lade AI gøre sit magiske arbejde!
+- Først skal du logge ind på MAILA AI APP og vælge skabelonen "Thank You Email" fra siden med skabeloner.
+- Derfra vil du få en prompt til at indtaste nogle nøgleord om beskeden.
+- Når du er tilfreds med dine input, skal du klikke på "send"-knappen og lade AI gøre sit magiske arbejde!
 
 ## Eksempel:
 

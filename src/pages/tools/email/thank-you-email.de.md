@@ -25,9 +25,9 @@ Wir bieten einen KI-basierten Danksagungsgenerator, der Danksagungen für Sie er
 
 Um die bestmöglichen Danksagungen über unsere Plattform zu generieren:
 
-- Loggen Sie sich zunächst in die MAILA AI APP ein und wählen Sie das Template "Thank you Message Generator" auf der Templates-Seite aus.
-- Von dort aus werden Sie aufgefordert, den Namen der Person/des Unternehmens, die E-Mail und die Telefonnummer einzugeben.
-- Wenn Sie mit Ihren Eingaben zufrieden sind, klicken Sie auf die Schaltfläche "Senden" und lassen Sie AI seine Magie wirken!
+- Zunächst müssen Sie sich bei MAILA AI APP anmelden und die Vorlage "Dankes-E-Mail" auf der Seite mit den Vorlagen auswählen.
+- Dort werden Sie aufgefordert, einige Schlüsselwörter für die Nachricht einzugeben.
+- Sobald Sie mit Ihren Eingaben zufrieden sind, klicken Sie auf die Schaltfläche "Senden" und lassen Sie AI seine Magie wirken!
 
 ## Beispiel:
 
