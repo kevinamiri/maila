@@ -34,7 +34,7 @@ extraFields:
 tone: true
 templateKey: 'tools-body'
 product_type: "4"
-tags: ["Copywriting"]
+tags: ["Copywriting", "product description ai free", "ai product description generator"]
 jsonId: "4"
 ---
 
