@@ -4,8 +4,8 @@ title: "Email subject line"
 description: "Email subject lines"
 usage: "Brainstorm subject lines for your email campaign"
 placeholder: "weight loss, diet, keto"
-header: ""
-help_hint: "Write your company's mission statement below."
+header: "create a catchy subject line for your campaign"
+help_hint: "Any other information, such as keywords or more details about your campaign."
 tags: ["Email", "Email subject line"]
 date: "2022-08-24"
 slug: /en/tools/email/email-subject-line
