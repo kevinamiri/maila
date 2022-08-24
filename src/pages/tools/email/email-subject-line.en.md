@@ -1,9 +1,9 @@
 ---
 id: "1197"
 title: "Email subject line"
-description: "Email subject lines"
+description: "With AI Email Subject Line Generator, you can quickly and easily create great looking email subject lines for your business or personal use."
 usage: "Brainstorm subject lines for your email campaign"
-placeholder: "weight loss, diet, keto"
+placeholder: "reusable cup, eco-friendly"
 header: "create a catchy subject line for your campaign"
 help_hint: "Any other information, such as keywords or more details about your campaign."
 tags: ["Email", "Email subject line"]
@@ -26,7 +26,7 @@ extraFields:
     id: 1
     label: "Goal or intent"
     type: "text"
-    placeholder: "Ask for a donation before December 31st."
+    placeholder: "Introducing new feature of a product"
   mission:
     name: "mission"
     id: 2
