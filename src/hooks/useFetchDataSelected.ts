@@ -29,6 +29,24 @@ const useFetchDataSelected = async (
     fieldValues.frequencyPenalty
       ? (params["frequencyPenalty"] = fieldValues.frequencyPenalty)
       : null;
+    fieldValues.company
+      ? (params["company"] = fieldValues.businessNameValue)
+      : null;
+    fieldValues.keywordValue
+      ? (params["keyword"] = fieldValues.keywordValue)
+      : null;
+    fieldValues.outputShape
+      ? (params["outputType"] = fieldValues.outputShape) ||
+        (params["outputType"] = fieldValues.formValue)
+      : null;
+    fieldValues.missionValue
+      ? (params["intent"] = fieldValues.missionValue) ||
+        (params["intent"] = fieldValues.purposeValue)
+      : null;
+    fieldValues.purposeValue
+      ? (params["mission"] = fieldValues.purposeValue) ||
+        (params["mission"] = fieldValues.missionValue)
+      : null;
     selectedVoices ? (params["tone"] = selectedVoices) : null;
     urlType ? (params["type"] = urlType) : null;
     const data = JSON.stringify(params);

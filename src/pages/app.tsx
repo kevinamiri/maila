@@ -81,10 +81,7 @@ export default function App() {
     (item) => item.node.frontmatter
   );
 
-  const products = allProducts.filter(
-    (item) => item.hasCustomTemplate == false
-  );
-
+  const products = allProducts;
   // const productDescription = allProducts.filter(
   //   (item) => item.slug.split("/")[4] === "product-description"
   // )[0];

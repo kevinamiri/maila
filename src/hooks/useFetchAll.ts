@@ -36,9 +36,23 @@ const useFetchAll = async (
     fieldValues.keywordValue
       ? (params["keyword"] = fieldValues.keywordValue)
       : null;
+    fieldValues.company
+      ? (params["company"] = fieldValues.businessNameValue)
+      : null;
     fieldValues.keywordValue
-      ? (params["company"] = fieldValues.keywordValue) ||
-        (params["company"] = fieldValues.businessNameValue)
+      ? (params["keyword"] = fieldValues.keywordValue)
+      : null;
+    fieldValues.outputShape
+      ? (params["outputType"] = fieldValues.outputShape) ||
+        (params["outputType"] = fieldValues.formValue)
+      : null;
+    fieldValues.missionValue
+      ? (params["intent"] = fieldValues.missionValue) ||
+        (params["intent"] = fieldValues.purposeValue)
+      : null;
+    fieldValues.purposeValue
+      ? (params["mission"] = fieldValues.purposeValue) ||
+        (params["mission"] = fieldValues.missionValue)
       : null;
     selectedVoices ? (params["tone"] = selectedVoices) : null;
     urlType ? (params["type"] = urlType) : null;
