@@ -1,13 +1,13 @@
 ---
 id: "1127"
-title: "Informal Business Email"
-description: "An informal business email is a email between two colleagues or business partners that is not overly formal. It is a way to build rapport and establish a relationship with the person you are emailing."
+title: "Email Generator"
+description: "Email generator allows you to save time when it comes to coming with new email subject lines and email copies, we simply use our highly sophisticated algorithm that uses NLP to replicate a human writing experience. Improve your emails and It helps you save time when writing emails by brainstorming emails ideas"
 usage: "Informal business emails can be used to introduce yourself to a new colleague or business partner. They can also be used to build rapport with someone you have already met."
 placeholder: "New feature in the app is rolling out soon."
 header: "Generate an Informal Business Email to a colleague or business partner."
-help_hint: "What would you like to say to your colleague? Write it down and we'll turn it into an Informal Business Email."
+help_hint: "What would you like to say, write it down and we'll turn it into an Informal Business Email."
 tags: ["Writing Aid", "Email"]
-date: "2022-04-05"
+date: "2022-08-24"
 slug: /en/tools/email/informal-email
 lang: en
 icon: "addEmail"
@@ -19,8 +19,23 @@ product_type: "41"
 url: /app/informal-email
 ---
 
-# Friendly Email
+# AI Email Generator : Informal Business Email
 
-## Introduction:
 
-Email is ubiquitous in our lives - at work and at home. We utilize it to stay in touch with friends and family, coordinate with colleagues, and handle a variety of tasks big and small. But for all its usefulness, writing a good email can be tough. It can be hard to know how to open an email, what to include in the body, or how to sign off. Plus, it can be tricky to find the right tone and keep the email friendly. With so many potential pitfalls, it's no wonder that so many of us find email to be a daunting task. The good news is that there is a solution. With our Friendly Email Generator, you can write a perfect email in seconds. Whether you're sending a casual message to a buddy or a more formal email to a business associate, our generator can help you get the job done quickly and easily. Just enter the recipient's email address, choose a template, and fill in the blanks. In no time at all, you'll have a friendly email that is sure to impress.
+Email is the most effective channel for B2B marketing, but writing the perfect email can be tough. With Maila.ai, you can quickly write an engaging, personalized email that doesn’t sound like it was written by a robot.
+
+By using our platform, you’re helping us train one of the most powerful, accurate AI’s for text generation today. We’re using machine learning techniques to train our system to learn the best writing style for any given topic. You just need to tell us who you want to talk to and what you need to say: We’ll write down the rest.
+
+## What can I use this tool to achieve?
+1. Generate emails that sound natural and personalized, rather than robotic and generic
+2. Save time while reaching out to potential customers or keeping in touch with existing customers via email
+3. Write engaging and personalized emails with ease
+
+## Features
+
+The AI email generator is an easy way to generate emails based on keywords related to your business or product. The tool helps businesses write more appealing emails by leveraging AI technology to generate a personalized email within 60 seconds.
+
+- Generate emails based on keywords and intention
+- Generate emails based on the level of formality and the tone and style of the email.
+- The AI email generator will provide you with 3 email variations from which you can pick one, customize further and send.
+- The platform provides you with the option to generate emails manually by providing keywords and the intention of the email or select an email template and provide just the relevant keywords.

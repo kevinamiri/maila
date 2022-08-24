@@ -1,25 +1,41 @@
 ---
 id: "1127"
-title: "Epäviralliset keskustelut Sähköposti"
-description: "Epävirallinen liikesähköposti on kahden työtoverin tai liikekumppanin välinen sähköpostiviesti, joka ei ole liian virallinen. Se on tapa rakentaa suhdetta ja luoda suhde sähköpostiviestin vastaanottajaan."
-header: "Luo epävirallinen liikesähköposti kollegalle tai liikekumppanille."
-placeholder: "Sovelluksen uusi ominaisuus otetaan käyttöön pian."
-usage: "Epävirallisia liikesähköpostiviestejä voidaan käyttää esittäytymiseen uudelle kollegalle tai liikekumppanille. Niitä voidaan käyttää myös rakentamaan suhdetta jo tapaamasi henkilön kanssa."
-help_hint: "Mitä haluaisit sanoa kollegallesi? Kirjoita se ylös, niin teemme siitä epävirallisen liikesähköpostin."
-tags: ["Writing Aid"]
-date: "2022-04-05"
-slug: "/fi/tools/email/informal-email"
-lang: "fi"
+title: "Sähköpostin luominen"
+description: "Sähköpostin luominen auttaa säästämään aikaa uusien sähköpostin aiheiden ja sähköpostin kopioiden keksimisessä. Käytämme korkeateknologista algoritmia, joka käyttää NLP:tä (luonnollista kielenkäsittelyä) ihmisen kirjoittamisen kopioimiseen. Paranna sähköpostejasi ja säästä aikaa keksimällä sähköposteja."
+usage: "Epäviralliset sähköpostit voivat olla hyvä tapa esitellä itsesi uudelle työtovereille tai liikekumppaneille. Ne voivat myös auttaa luomaan yhteyttä jo aiemmin tapaamiisi ihmisiin."
+placeholder: "Uusi ominaisuus on tulossa pian."
+header: "Luo epävirallinen sähköposti työtovereille tai liikekumppaneille."
+help_hint: "Kirjoita, mitä haluat sanoa, ja muutamme sen epäviralliseksi sähköpostiksi."
+tags: ["Writing Aid", "Email"]
+date: "2022-08-24"
+slug: /en/tools/email/informal-email
+lang: en
 icon: "addEmail"
 hasCustomTemplate: false
 tone: true
 templateKey: 'tools-body'
+jsonId: "1127"
 product_type: "41"
-url: "/app/informal-email"
+url: /app/informal-email
 ---
 
-# Ystävällinen sähköposti
 
-## Johdanto:
+# AI Email Generator : Epävirallinen liikesähköposti
 
-Sähköposti on kaikkialla läsnä elämässämme - töissä ja kotona. Hyödynnämme sitä pitämään yhteyttä ystäviin ja perheeseen, koordinoimaan työtovereiden kanssa ja hoitamaan monenlaisia pieniä ja suuria tehtäviä. Mutta vaikka sähköpostista on paljon hyötyä, hyvän sähköpostin kirjoittaminen voi olla vaikeaa. Voi olla vaikea tietää, miten sähköpostiviesti pitäisi avata, mitä siihen pitäisi sisällyttää tai miten se pitäisi allekirjoittaa. Lisäksi voi olla hankalaa löytää oikea sävy ja pitää sähköposti ystävällisenä. Kun mahdollisia sudenkuoppia on niin paljon, ei ole ihme, että monet meistä pitävät sähköpostia pelottavana tehtävänä. Hyvä uutinen on, että siihen on ratkaisu. Ystävällisen sähköpostigeneraattorimme avulla voit kirjoittaa täydellisen sähköpostin sekunneissa. Lähetitpä sitten rennon viestin kaverille tai virallisemman sähköpostiviestin liikekumppanille, generaattorimme auttaa sinua tekemään työn nopeasti ja helposti. Syötä vain vastaanottajan sähköpostiosoite, valitse malli ja täytä tyhjät kohdat. Saat hetkessä ystävällisen sähköpostiviestin, joka tekee varmasti vaikutuksen.
+Sähköposti on tehokkain kanava B2B-markkinoinnissa, mutta täydellisen sähköpostin kirjoittaminen voi olla vaikeaa. Maila.ai:n avulla voit kirjoittaa nopeasti mukaansatempaavan, henkilökohtaisen sähköpostin, joka ei kuulosta robotin kirjoittamalta.
+
+Käyttämällä alustaa autat meitä kouluttamaan yhden nykypäivän tehokkaimmista ja tarkimmista tekoälyistä tekstin tuottamiseen. Käytämme koneoppimistekniikoita kouluttaaksemme järjestelmäämme oppimaan parhaan kirjoitustyylin mihin tahansa aiheeseen. Sinun tarvitsee vain kertoa meille, kenelle haluat puhua ja mitä haluat sanoa: Me kirjoitamme loput.
+
+## Mihin voin käyttää tätä työkalua?
+1. Luoda sähköpostiviestejä, jotka kuulostavat luonnollisilta ja yksilöllisiltä, eivätkä robottimaisilta ja geneerisiltä
+2. Säästää aikaa, kun tavoittaa potentiaalisia asiakkaita tai pitää yhteyttä olemassa oleviin asiakkaisiin sähköpostitse
+3. Kirjoita helposti mukaansatempaavia ja yksilöllisiä sähköposteja.
+
+## Ominaisuudet
+
+AI-sähköpostigeneraattori on helppo tapa luoda sähköposteja yritykseesi tai tuotteeseesi liittyvien avainsanojen perusteella. Työkalu auttaa yrityksiä kirjoittamaan houkuttelevampia sähköpostiviestejä hyödyntämällä tekoälyteknologiaa, joka luo personoidun sähköpostin 60 sekunnissa.
+
+- Luo sähköposteja avainsanojen ja aikomuksen perusteella
+- Luo sähköposteja muodollisuustasoon sekä sähköpostin sävyyn ja tyyliin perustuen.
+- AI-sähköpostigeneraattori tarjoaa sinulle 3 sähköpostivariaatiota, joista voit valita yhden, muokata edelleen ja lähettää.
+- Alusta tarjoaa sinulle mahdollisuuden luoda sähköposteja manuaalisesti antamalla avainsanat ja sähköpostin tarkoituksen tai valita sähköpostimalli ja antaa vain asiaankuuluvat avainsanat.

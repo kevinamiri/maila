@@ -80,7 +80,7 @@ User input: "customer insights"
 2. "Your customers, insights and what they mean for your business"
 3. "How to use customer insights to improve your business"
 
-![screen shot of maila AI's app!](../../blog/2022/images/maila-email-subject.png)
+![](../../blog/2022/images/maila-email-subject.png)
 
 
 ## What can I use this tool to achieve?

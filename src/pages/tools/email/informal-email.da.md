@@ -1,25 +1,41 @@
 ---
 id: "1127"
-title: "Uformelle busser E-mail"
-description: "En uformel forretningsmail er en mail mellem to kolleger eller forretningspartnere, som ikke er alt for formel. Det er en måde at opbygge et forhold og etablere en relation med den person, du sender en mail til."
-header: "Generer en uformel forretningsmail til en kollega eller forretningspartner."
-placeholder: "En ny funktion i appen vil snart blive lanceret."
-usage: "Uformelle forretningsmails kan bruges til at præsentere dig selv for en ny kollega eller forretningspartner, og de kan også bruges til at opbygge et forhold til en person, du allerede har mødt."
-help_hint: "Hvad vil du gerne sige til din kollega? Skriv det ned, så laver vi det om til en uformel forretningsmail."
-tags: ["Writing Aid"]
-date: "2022-04-05"
-slug: "/da/tools/email/informal-email"
-lang: "da"
+title: "E-mail Generator"
+description: "E-mail generator giver dig mulighed for at spare tid, når det kommer til at komme med nye emne linjer og e-mail kopier, vi bruger simpelthen vores meget sofistikerede algoritme, der bruger NLP til at replikere en menneskelig skriveoplevelse. Forbedre dine e-mails og det hjælper dig med at spare tid, når du skriver e-mails ved at brainstorme e-mails ideer"
+usage: "Uformelle forretnings e-mails kan bruges til at introducere dig selv for en ny kollega eller forretningspartner. De kan også bruges til at opbygge rapport med nogen, du allerede har mødt."
+placeholder: "Ny funktion i appen rulles snart ud."
+header: "Generer en uformel forretnings e-mail til en kollega eller forretningspartner."
+help_hint: "Hvad vil du sige, skriv det ned, og vi vil omdanne det til en uformel forretnings e-mail."
+tags: ["Writing Aid", "Email"]
+date: "2022-08-24"
+slug: /en/tools/email/informal-email
+lang: en
 icon: "addEmail"
 hasCustomTemplate: false
 tone: true
 templateKey: 'tools-body'
+jsonId: "1127"
 product_type: "41"
-url: "/app/informal-email"
+url: /app/informal-email
 ---
 
-# Venlig e-mail
 
-## Introduktion:
+# AI Email Generator: Uformel forretningsmail
 
-E-mail er allestedsnærværende i vores liv - på arbejdet og i hjemmet. Vi bruger den til at holde kontakten med venner og familie, koordinere med kolleger og håndtere en lang række store og små opgaver. Men selv om det er så nyttigt, kan det være svært at skrive en god e-mail. Det kan være svært at vide, hvordan man skal åbne en e-mail, hvad man skal skrive i brødteksten, eller hvordan man skal afmelde sig. Desuden kan det være svært at finde den rette tone og holde e-mailen venlig. Med så mange potentielle faldgruber er det ikke underligt, at så mange af os synes, at e-mail er en skræmmende opgave. Den gode nyhed er, at der findes en løsning. Med vores Friendly Email Generator kan du skrive en perfekt e-mail på få sekunder. Uanset om du skal sende en afslappet besked til en kammerat eller en mere formel e-mail til en forretningsforbindelse, kan vores generator hjælpe dig med at få arbejdet gjort hurtigt og nemt. Du skal blot indtaste modtagerens e-mailadresse, vælge en skabelon og udfylde de tomme felter. På ingen tid har du en venlig e-mail, der helt sikkert vil imponere.
+E-mail er den mest effektive kanal til B2B-markedsføring, men det kan være svært at skrive den perfekte e-mail. Med Maila.ai kan du hurtigt skrive en engagerende, personlig e-mail, der ikke lyder som om den er skrevet af en robot.
+
+Ved at bruge vores platform hjælper du os med at træne en af de mest kraftfulde og præcise AI'er til tekstgenerering i dag. Vi bruger maskinlæringsteknikker til at træne vores system til at lære den bedste skrivestil til et givent emne. Du skal blot fortælle os, hvem du vil tale med, og hvad du skal sige: Vi skriver resten ned.
+
+## Hvad kan jeg bruge dette værktøj til at opnå?
+1. Generere e-mails, der lyder naturlige og personlige, snarere end robotagtige og generiske
+2. Spar tid, når du når ud til potentielle kunder eller holder kontakten med eksisterende kunder via e-mail
+3. Skriv engagerende og personlige e-mails med lethed
+
+## Funktioner
+
+AI e-mailgeneratoren er en nem måde at generere e-mails baseret på nøgleord relateret til din virksomhed eller dit produkt. Værktøjet hjælper virksomheder med at skrive mere tiltalende e-mails ved at udnytte AI-teknologi til at generere en personlig e-mail inden for 60 sekunder.
+
+- Generer e-mails baseret på nøgleord og hensigt
+- Generer e-mails baseret på niveauet af formalitet og tonen og stilen i e-mailen.
+- AI-emailgeneratoren giver dig 3 e-mail-variationer, som du kan vælge en af, tilpasse yderligere og sende.
+- Platformen giver dig mulighed for at generere e-mails manuelt ved at angive nøgleord og hensigten med e-mailen eller vælge en e-mailskabelon og angive kun de relevante nøgleord.

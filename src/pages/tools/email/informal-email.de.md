@@ -1,25 +1,41 @@
 ---
 id: "1127"
-title: "Informelle Bussines E-Mail"
-description: "Eine informelle Geschäfts-E-Mail ist eine E-Mail zwischen zwei Kollegen oder Geschäftspartnern, die nicht allzu förmlich ist, sondern dazu dient, eine Beziehung zu der Person aufzubauen, an die die E-Mail gerichtet ist."
-header: "Erstellen Sie eine informelle Geschäfts-E-Mail an einen Kollegen oder Geschäftspartner."
-placeholder: "Die neue Funktion in der App wird bald eingeführt."
-usage: "Informelle geschäftliche E-Mails können verwendet werden, um sich einem neuen Kollegen oder Geschäftspartner vorzustellen oder um eine Beziehung zu jemandem aufzubauen, den Sie bereits kennen."
-help_hint: "Was möchten Sie Ihrem Kollegen oder Ihrer Kollegin sagen? Schreiben Sie es auf, und wir verwandeln es in eine informelle Geschäfts-E-Mail."
-tags: ["Writing Aid"]
-date: "2022-04-05"
-slug: "/de/tools/email/informal-email"
-lang: "de"
+title: "E-Mail-Generator"
+description: "Der E-Mail-Generator ermöglicht es Ihnen, Zeit zu sparen, wenn es darum geht, mit neuen E-Mail-Betreffzeilen und E-Mail-Kopien zu kommen, wir verwenden einfach unseren hochmodernen Algorithmus, der NLP verwendet, um eine menschliche Schreiberfahrung zu replizieren. Verbessern Sie Ihre E-Mails und es hilft Ihnen, Zeit zu sparen, wenn Sie E-Mails schreiben, indem Sie E-Mails-Ideen brainstormen"
+usage: "Informelle Geschäftse-Mails können verwendet werden, um sich einem neuen Kollegen oder Geschäftspartner vorzustellen. Sie können auch verwendet werden, um eine Beziehung zu jemandem aufzubauen, den Sie bereits getroffen haben."
+placeholder: "Die neue Funktion in der App wird bald ausgerollt."
+header: "Generieren Sie eine informelle Geschäftse-Mail an einen Kollegen oder Geschäftspartner."
+help_hint: "Was möchten Sie sagen, schreiben Sie es auf und wir werden es in eine informelle Geschäftse-Mail verwandeln."
+tags: ["Writing Aid", "Email"]
+date: "2022-08-24"
+slug: /de/tools/email/informal-email
+lang: de
 icon: "addEmail"
 hasCustomTemplate: false
 tone: true
 templateKey: 'tools-body'
+jsonId: "1127"
 product_type: "41"
-url: "/app/informal-email"
+url: /app/informal-email
 ---
 
-# Freundliche E-Mail
 
-## Einführung:
+# AI Email Generator : Informelle Geschäfts-E-Mail
 
-E-Mail ist in unserem Leben allgegenwärtig - bei der Arbeit und zu Hause. Wir nutzen sie, um mit Freunden und Familie in Kontakt zu bleiben, uns mit Kollegen abzustimmen und eine Vielzahl von großen und kleinen Aufgaben zu erledigen. Doch so nützlich sie auch sein mag, das Schreiben einer guten E-Mail kann schwierig sein. Es kann schwierig sein, zu wissen, wie man eine E-Mail öffnet, was man in den Text schreibt oder wie man sich abmeldet. Außerdem kann es schwierig sein, den richtigen Ton zu finden und die E-Mail freundlich zu gestalten. Bei so vielen potenziellen Fallstricken ist es kein Wunder, dass viele von uns E-Mails als eine entmutigende Aufgabe empfinden. Die gute Nachricht ist, dass es eine Lösung gibt. Mit unserem Freundliche-E-Mail-Generator können Sie in Sekundenschnelle eine perfekte E-Mail schreiben. Ganz gleich, ob Sie eine lockere Nachricht an einen Freund oder eine formellere E-Mail an einen Geschäftspartner senden, unser Generator hilft Ihnen, die Aufgabe schnell und einfach zu erledigen. Geben Sie einfach die E-Mail-Adresse des Empfängers ein, wählen Sie eine Vorlage aus, und füllen Sie die Felder aus. Im Handumdrehen haben Sie eine freundliche E-Mail, die Sie sicher beeindrucken wird.
+E-Mail ist der effektivste Kanal für B2B-Marketing, aber die perfekte E-Mail zu schreiben, kann schwierig sein. Mit Maila.ai können Sie im Handumdrehen eine ansprechende, personalisierte E-Mail schreiben, die nicht so klingt, als wäre sie von einem Roboter geschrieben worden.
+
+Durch die Nutzung unserer Plattform helfen Sie uns, eine der leistungsstärksten und präzisesten KIs für die Texterstellung zu trainieren. Wir verwenden maschinelle Lerntechniken, um unser System so zu trainieren, dass es den besten Schreibstil für ein bestimmtes Thema lernt. Sie brauchen uns nur zu sagen, mit wem Sie sprechen möchten und was Sie zu sagen haben: Den Rest schreiben wir auf.
+
+## Was kann ich mit diesem Tool erreichen?
+1. E-Mails generieren, die natürlich und persönlich klingen, statt roboterhaft und generisch
+2. Zeitersparnis bei der Ansprache potenzieller Kunden oder der Kontaktpflege mit bestehenden Kunden per E-Mail
+3. Schreiben Sie mit Leichtigkeit ansprechende und personalisierte E-Mails
+
+## Eigenschaften
+
+Mit dem KI-E-Mail-Generator können Sie auf einfache Weise E-Mails auf der Grundlage von Schlüsselwörtern zu Ihrem Unternehmen oder Produkt erstellen. Das Tool hilft Unternehmen beim Verfassen ansprechenderer E-Mails, indem es KI-Technologie einsetzt, um innerhalb von 60 Sekunden eine personalisierte E-Mail zu erstellen.
+
+- Generieren Sie E-Mails auf der Grundlage von Schlüsselwörtern und Absichten
+- Generieren Sie E-Mails auf der Grundlage des Formalitätsgrads sowie des Tons und des Stils der E-Mail.
+- Der KI-E-Mail-Generator bietet Ihnen 3 E-Mail-Varianten, von denen Sie eine auswählen, weiter anpassen und versenden können.
+- Die Plattform bietet Ihnen die Möglichkeit, E-Mails manuell zu generieren, indem Sie Schlüsselwörter und die Absicht der E-Mail angeben oder eine E-Mail-Vorlage auswählen und nur die relevanten Schlüsselwörter angeben.
