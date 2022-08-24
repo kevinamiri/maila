@@ -59,32 +59,31 @@ An email subject line is a short line of text that’s displayed in an email’s
 Since you're writing an email, the subject line needs to be compelling to grab the reader's attention, but the subject should also be relevant to what you're writing about. You want to let people know what you're talking about without giving too much away, and spending a lot of time coming up with a creative clickbait subject line we address this problem with an email subject line generator as a service so you can brainstorm many subject lines for your campaign.
 
 ## Maila AI Email subject line generator
+The Email subject line generator is an easy way to generate subject lines based on keywords related to your business or product. The tool helps businesses write more appealing subject lines by leveraging AI technology to generate a catchy subject line within 60 seconds.
 
-The subject line generator is an easy way to generate catchy subject lines based on keywords related to your business or industry. This tool will help businesses to write more appealing email subject lines within 60 seconds.
-
-
-### How it works:
-
+## How it works:
 
 **To generate the best possible subject line using our platform:**
 
-
-1. First, you need to log in into [MAILA AI APP](https://maila.ai/app/list) select the "Email subject Line generator" template from the templates page.
+1. First, you need to log in into [MAILA AI APP](https://maila.ai/app/email-subject-line) select the "Email subject Line generator" template from the templates page.
 2. From there, you will be given a prompt to input some keywords about your business, once done, click "Compose" button at the end of the editor.
-
-
 3. You will be given a copy of the generated subject line.
 
 
 **Example:**
 
-
-user input: "customer insights"
-
+User input: "customer insights"
 
 **Generated subject line:**
-
 
 1. "What your customers are saying about you"
 2. "Your customers, insights and what they mean for your business"
 3. "How to use customer insights to improve your business"
+
+[](../../blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content.lt.md)
+
+
+## What can I use this tool to achieve?
+
+1. Improve your email subject lines
+2. It helps you save time when writing subject lines by brainstorming subject line ideas.
