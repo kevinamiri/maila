@@ -6,10 +6,10 @@ usage: "Uformelle forretnings e-mails kan bruges til at introducere dig selv for
 placeholder: "Ny funktion i appen rulles snart ud."
 header: "Generer en uformel forretnings e-mail til en kollega eller forretningspartner."
 help_hint: "Hvad vil du sige, skriv det ned, og vi vil omdanne det til en uformel forretnings e-mail."
-tags: ["Writing Aid", "Email"]
+tags: ["Email"]
 date: "2022-08-24"
-slug: /en/tools/email/informal-email
-lang: en
+slug: /da/tools/email/informal-email
+lang: da
 icon: "addEmail"
 hasCustomTemplate: false
 tone: true

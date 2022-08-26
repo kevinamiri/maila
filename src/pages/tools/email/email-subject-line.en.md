@@ -48,8 +48,6 @@ jsonId: "1197"
 product_type: "30"
 url: /app/email-subject-line
 ---
-```toc
-```
 
 # Email subject line generator
 

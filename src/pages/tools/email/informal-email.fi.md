@@ -6,10 +6,10 @@ usage: "Epäviralliset sähköpostit voivat olla hyvä tapa esitellä itsesi uud
 placeholder: "Uusi ominaisuus on tulossa pian."
 header: "Luo epävirallinen sähköposti työtovereille tai liikekumppaneille."
 help_hint: "Kirjoita, mitä haluat sanoa, ja muutamme sen epäviralliseksi sähköpostiksi."
-tags: ["Writing Aid", "Email"]
+tags: ["Email"]
 date: "2022-08-24"
-slug: /en/tools/email/informal-email
-lang: en
+slug: /fi/tools/email/informal-email
+lang: fi
 icon: "addEmail"
 hasCustomTemplate: false
 tone: true

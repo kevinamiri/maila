@@ -7,7 +7,7 @@ usage: "Thank you emails can be used after a customer has made a purchase, signe
 placeholder: "Thank you for your purchase!"
 help_hint: "What would you like to say in your thank you email? Write it down and we'll help you create a stylistic email."
 tags: ["Email", "Email Template"]
-date: "2022-03-28"
+date: "2022-04-24"
 slug: /en/tools/email/thank-you-email
 lang: en
 icon: "thankyou"

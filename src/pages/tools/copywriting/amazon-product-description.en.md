@@ -53,11 +53,14 @@ The best way to do this is by taking advantage of artificial intelligence (AI) t
 
 We offer an AI product description generator, that generates a description of a product based on the name of the product, keywords, and features you supply. Even if you are not a provider all inputs our models will be able to generate unique content for your product.
 
-To generate the best possible product descriptions and Amazon product descriptions with our platform:
+### How it works
 
-- First, you need to log in into [MAILA AI APP](https://maila.ai/app/list) select the "product description for Amazon" template from the templates page.
-- From there, you will be given a prompt to input your product name, keywords, and features.
-- Once you are satisfied with your inputs, click "submit" button and let AI do it's magic!
+It takes just a few clicks to get started with  - no coding required! Create new descriptions in seconds:
+
+  1. Enter keywords or keyphrases (e.g. “men's shoes”)
+  2. From there, you will be given a prompt to input your product name, keywords, and features.
+  3. Once you are satisfied with your inputs, click "submit" button and let AI do it's magic!
+  4. Copy and paste description paragraphs into your store
 
 ### Example:
 

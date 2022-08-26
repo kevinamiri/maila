@@ -6,9 +6,9 @@ usage: "Informella företagse-postmeddelanden kan användas för att presentera 
 placeholder: "Ny funktion i appen lanseras snart."
 header: "Generera ett informellt företagse-postmeddelande till en kollega eller affärspartner."
 help_hint: "Vad vill du säga, skriv det ner och vi kommer att göra det till ett informellt företagse-postmeddelande."
-tags: ["Writing Aid", "Email"]
+tags: ["Email"]
 date: "2022-08-24"
-slug: /en/tools/email/informal-email
+slug: /sv/tools/email/informal-email
 lang: sv
 icon: "addEmail"
 hasCustomTemplate: false

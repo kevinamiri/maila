@@ -6,7 +6,7 @@ usage: "Informelle Geschäftse-Mails können verwendet werden, um sich einem neu
 placeholder: "Die neue Funktion in der App wird bald ausgerollt."
 header: "Generieren Sie eine informelle Geschäftse-Mail an einen Kollegen oder Geschäftspartner."
 help_hint: "Was möchten Sie sagen, schreiben Sie es auf und wir werden es in eine informelle Geschäftse-Mail verwandeln."
-tags: ["Writing Aid", "Email"]
+tags: ["Email"]
 date: "2022-08-24"
 slug: /de/tools/email/informal-email
 lang: de

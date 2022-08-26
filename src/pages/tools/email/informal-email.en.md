@@ -6,7 +6,7 @@ usage: "Informal business emails can be used to introduce yourself to a new coll
 placeholder: "New feature in the app is rolling out soon."
 header: "Generate an Informal Business Email to a colleague or business partner."
 help_hint: "What would you like to say, write it down and we'll turn it into an Informal Business Email."
-tags: ["Writing Aid", "Email"]
+tags: ["Email"]
 date: "2022-08-24"
 slug: /en/tools/email/informal-email
 lang: en
