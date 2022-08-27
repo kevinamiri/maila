@@ -7,10 +7,10 @@ usage: "This can be used to outline a text, or to create outline of existing con
 placeholder: "The quick brown fox jumps over the lazy dog."
 help_hint: "Type or paste in some text, and we'll outline it for you."
 tags: ["Writing Aid", "Editing"]
-date: "2022-03-28"
+date: "2022-08-27"
 slug: /en/tools/writing/outline-generator
 lang: en
-icon: "outline"
+icon: "outlineDoc"
 hasCustomTemplate: false
 tone: true
 templateKey: 'tools-body'
@@ -31,18 +31,15 @@ The AI-powered Outline Generator can save you time by automatically creating an 
 
 
 - Uses artificial intelligence to generate outlines 
-
 - More accurate than traditional outlining methods 
-
 - Helps users organize their thoughts more effectively 
-
 - Saves time by automatically creating an outline 
 
 ## How product works: 
 
-Step 1: The user enters the text of their text into the app and the AI Outliner automatically generates an outline.
-Step 2: The generator analyzes the text and creates an outline based on it. Then user will be able to edit the outline and add more details.
-Step 3: The user can then use the outline to guide them when writing their blog or article.
+- Step 1: The user enters the text of their text into the app and the AI Outliner automatically generates an outline.
+- Step 2: The generator analyzes the text and creates an outline based on it. Then user will be able to edit the outline and add more details.
+- Step 3: The user can then use the outline to guide them when writing their blog or article.
 
 Get started with free ai article outline generator today!
 

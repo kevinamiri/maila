@@ -10,7 +10,7 @@ tags: ["Writing Aid", "Editing"]
 date: "2022-03-28"
 slug: /en/tools/writing/review-generator
 lang: en
-icon: "review"
+icon: "metaDescription"
 hasCustomTemplate: false
 tone: true
 templateKey: 'tools-body'
@@ -38,14 +38,13 @@ Once you have generated a review, you will be able to copy and past it directly 
 
 ### Example:
 
-```
-The Cheesecake Factory
-keywords: great service, wonderful food, tasty cheesecake, positive review
-```
+
+#### User inputs:
+> The Cheesecake Factory
+> keywords: great service, wonderful food, tasty cheesecake, positive review
 
 
-Review:
 
-```
+#### Review outputs: 
+
 The Cheesecake Factory is a great place to go for a meal. The service is wonderful and the food is tasty. I especially enjoyed the cheesecake. It was very creamy and delicious. I would definitely recommend this restaurant to others.
-```

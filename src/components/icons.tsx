@@ -53,6 +53,8 @@ import {
   BlogPostConclusionIcon,
   BlogPostAidaIcon,
   LanguageTranslation,
+  SimpleSquare,
+  OutlineDoc,
 } from "../icons/Icons";
 
 interface IconProps {
@@ -525,6 +527,26 @@ const IconsList = (props) => {
     case "languageTranslation":
       return (
         <LanguageTranslation
+          viewBox='0 0 24 24'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+    case "simpleSquare":
+      return (
+        <SimpleSquare
+          viewBox='0 0 24 24'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+    case "outlineDoc":
+      return (
+        <OutlineDoc
           viewBox='0 0 24 24'
           height='24'
           width='24'
