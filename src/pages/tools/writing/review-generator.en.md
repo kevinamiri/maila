@@ -12,6 +12,8 @@ slug: /en/tools/writing/review-generator
 lang: en
 icon: "metaDescription"
 hasCustomTemplate: false
+hasCustomTextArea: true
+editor_height: 200
 tone: true
 templateKey: 'tools-body'
 jsonId: "611"

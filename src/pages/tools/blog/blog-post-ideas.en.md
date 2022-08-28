@@ -7,11 +7,13 @@ usage: "This tool can be used to generate a list of potential headlines for your
 placeholder: "How to make the perfect scrambled eggs"
 help_hint: "What's the topic of your blog post? Write it down and we'll provide you with a list of headlines to choose from."
 tags: ["Blog", "Brainstorming", "Headline"]
-date: "2022-03-28"
+date: "2022-03-29"
 slug: /en/tools/blog/blog-post-headline
 lang: en
 icon: "blogPostHeaderIcon"
 hasCustomTemplate: false
+hasCustomTextArea: true
+editor_height: 200
 tone: false
 templateKey: 'tools-body'
 url: /app/blog-post-ideas

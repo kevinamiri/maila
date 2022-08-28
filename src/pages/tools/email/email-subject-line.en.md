@@ -7,7 +7,7 @@ placeholder: "reusable cup, eco-friendly"
 header: "create a catchy subject line for your campaign"
 help_hint: "Any other information, such as keywords or more details about your campaign."
 tags: ["Email", "Email subject line"]
-date: "2022-08-24"
+date: "2022-08-29"
 slug: /en/tools/email/email-subject-line
 lang: en
 icon: "addEmail"
@@ -46,6 +46,7 @@ tone: false
 templateKey: 'tools-body'
 jsonId: "1197"
 product_type: "30"
+image: ../../blog/2022/images/maila-email-subject.png
 url: /app/email-subject-line
 ---
 
@@ -78,8 +79,7 @@ User input: "customer insights"
 2. "Your customers, insights and what they mean for your business"
 3. "How to use customer insights to improve your business"
 
-![](../../blog/2022/images/maila-email-subject.png)
-
+<img src="/images/maila-email-subject.png" alt="maila platform email subject line" width="1024"/>
 
 ## What can I use this tool to achieve?
 

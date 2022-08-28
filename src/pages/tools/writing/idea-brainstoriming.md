@@ -5,17 +5,20 @@ description: "The AI Idea Generator is a tool that helps you generate new ideas 
 header: "Create Ideas based on keyowrds"
 usage: "AI Idea Generator uses artificial intelligence to help you generate ideas faster and more efficiently. It can be used by writers, innovators, entrepreneurs and anyone who needs inspiration."
 placeholder: "food, catering, AI, company"
-help_hint: "Enter a keyword to generate a Idea"
+help_hint: "Enter a keyword to generate a Idea; separated by commas"
 tags: ["Writing Aid", "Editing"]
 date: "2022-03-28"
 slug: /en/tools/writing/brainstorming
 lang: en
 icon: "ideasBrainstorm"
 hasCustomTemplate: false
+hasCustomTextArea: true
+editor_height: 150
 tone: true
 templateKey: 'tools-body'
 jsonId: "6121"
 product_type: "53"
+image: ../../blog/2022/images/idea-generation.png
 url: /app/brainstorming
 ---
 # AI Idea Generator

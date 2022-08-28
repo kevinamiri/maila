@@ -46,6 +46,7 @@ tone: false
 templateKey: 'tools-body'
 jsonId: "1197"
 product_type: "30"
+image: ../../blog/2022/images/maila-email-subject.png
 url: /app/email-subject-line
 ---
 
@@ -63,7 +64,7 @@ Generatorn för e-postämnesrader är ett enkelt sätt att generera ämnesrader 
 
 **För att generera den bästa möjliga ämnesraden med hjälp av vår plattform:**
 
-1. Först måste du logga in på [MAILA AI APP] (https://maila.ai/app/email-subject-line) och välja mallen "Email subject Line generator" från sidan med mallar.
+1. Först måste du logga in på [MAILA AI APP](https://maila.ai/app/email-subject-line) och välja mallen "Email subject Line generator" från sidan med mallar.
 2. Därifrån kommer du att få en uppmaning att mata in några nyckelord om ditt företag, när du är klar klickar du på "Compose"-knappen i slutet av redigeraren.
 3. Du kommer att få en kopia av den genererade ämnesraden.
 
@@ -77,8 +78,6 @@ Användarinmatning: "Customer Insights"
 1. "Vad dina kunder säger om dig"
 2. "Dina kunder, insikter och vad de betyder för ditt företag"
 3. "Hur du använder kundinsikter för att förbättra din verksamhet".
-
-![](../../blog/2022/images/maila-email-subject.png)
 
 
 ## Vad kan jag uppnå med det här verktyget?

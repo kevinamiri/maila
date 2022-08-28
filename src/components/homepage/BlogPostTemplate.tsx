@@ -2,7 +2,6 @@ import React from "react";
 import TagList from "../landings/modules/TagList";
 import Time from "./Time";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -10,7 +9,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const BlogPostTemplate = (data) => {
   const image = getImage(data.image);
   const imageAlt = data.imageAlt && data.imageAlt;
-  const imageStatus = data.imageStatus && data.imageStatus;
   return (
     <>
       <Container
@@ -25,7 +23,7 @@ const BlogPostTemplate = (data) => {
           <Grid item xs={12} sx={{ my: 4 }}>
             <Time date={data.date} />
 
-            {imageStatus && (
+            {image && (
               <Box
                 sx={{
                   display: "flex",
