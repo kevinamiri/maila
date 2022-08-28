@@ -55,6 +55,7 @@ import {
   LanguageTranslation,
   SimpleSquare,
   OutlineDoc,
+  IdeasBrainstorm,
 } from "../icons/Icons";
 
 interface IconProps {
@@ -547,6 +548,16 @@ const IconsList = (props) => {
     case "outlineDoc":
       return (
         <OutlineDoc
+          viewBox='0 0 24 24'
+          height='24'
+          width='24'
+          fontSize='small'
+          {...props}
+        />
+      );
+    case "ideasBrainstorm":
+      return (
+        <IdeasBrainstorm
           viewBox='0 0 24 24'
           height='24'
           width='24'
