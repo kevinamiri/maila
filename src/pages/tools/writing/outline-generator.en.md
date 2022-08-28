@@ -15,7 +15,7 @@ hasCustomTemplate: false
 tone: true
 templateKey: 'tools-body'
 jsonId: "611"
-product_type: "55"
+product_type: "53"
 url: /app/outline
 ---
 

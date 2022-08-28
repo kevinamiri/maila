@@ -15,7 +15,7 @@ hasCustomTemplate: false
 tone: true
 templateKey: 'tools-body'
 jsonId: "611"
-product_type: "57"
+product_type: "42"
 url: /app/review
 ---
 
