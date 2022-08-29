@@ -12,6 +12,8 @@ slug: /en/tools/writing/keyword-generator
 lang: en
 icon: "searchKeyword"
 hasCustomTemplate: false
+hasCustomTextArea: true
+editor_height: 200
 tone: false
 templateKey: 'tools-body'
 jsonId: "2317"
