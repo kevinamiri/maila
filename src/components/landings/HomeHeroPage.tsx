@@ -85,9 +85,14 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
                 >
                   <Typography color='primary' variant='h1'>
                     {firstTwoWords(title) + " "}
-                  </Typography>
-                  <Typography color='success.main' variant='h1'>
-                    {` ${afterTwo(title)}`}
+
+                    <Typography
+                      color='success.main'
+                      variant='h1'
+                      component={"span"}
+                    >
+                      {` ${afterTwo(title)}`}
+                    </Typography>
                   </Typography>
                 </Box>
 

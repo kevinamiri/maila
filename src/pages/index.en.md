@@ -1,6 +1,6 @@
 ---
 id: "01"
-title: "AI writing assistant and copywriting tools"
+title: "AI Copywriting & AI Writing Assistant"
 description: "AI-powered copywriting tools are designed to help you quickly write content for your brand."
 templateKey: home
 tags:
