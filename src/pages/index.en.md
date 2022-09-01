@@ -73,8 +73,8 @@ B100:
   - "Effective ways to bring new ideas into your Product."
   - "Reshape your brand statements and tailor every aspect of your brand to communicate its strengths and values."
   - "Use powerful tools to create a strong voice for your content landing pages."
-H0121: "Maila.ai is a revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
-T0152: "AI Copywriting & Writing Assistant"
+H0121: "Maila.AI is an AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
+T0152: "AI Copywriting & AI Writing Assistant"
 H01051: "Start writing with your first 25,000 words free trial and see if your work improves."
 H01047: "These results are pre-generated and fully empowered by AI"
 H0118:
@@ -92,9 +92,9 @@ H0118:
     - Can I create content in other languages?
     - Yes, we support languages other than English. The best quality translations are currently available in English.
 H01194: 
-  - AI Copywriting Tool
+  - AI Copy Generator
   - Use advanced artificial intelligence to generate content for your website, blog or marketing materials.
-  - AI Writing Assistance
+  - AI-powered Writing Tools
   - Use advanced artificial intelligence to improve the quality of your content by fixing style and grammar errors.
 L0401:
   - Sign up
