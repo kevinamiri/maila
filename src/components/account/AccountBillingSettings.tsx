@@ -152,6 +152,11 @@ const AccountBillingSettings = (props) => {
 
   return (
     <Card {...props}>
+      <CardHeader title='Redeem a Discount Voucher' />
+      <Divider />
+      <CardContent>
+        <Redeemer />
+      </CardContent>
       <CardHeader title='Manage your plan' />
       <Divider />
       <CardContent>
@@ -307,10 +312,6 @@ const AccountBillingSettings = (props) => {
         </Box>
       </CardContent>
       <Divider />
-      <CardHeader title='Redeem Voucher' /> <Divider />
-      <CardContent>
-        <Redeemer />
-      </CardContent>
     </Card>
   );
 };

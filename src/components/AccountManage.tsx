@@ -58,6 +58,9 @@ const AccountManage: React.FC<AccountManageProps> = () => {
                 <Typography color='textSecondary' variant='subtitle2'>
                   Profile
                 </Typography>
+                <Typography color='textPrimary' variant='subtitle2'>
+                  {currentTab}
+                </Typography>
               </Breadcrumbs>
             </Grid>
           </Grid>

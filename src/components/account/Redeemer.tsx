@@ -95,7 +95,7 @@ const Redeemer = (props) => {
                   helperText={touched.voucher && errors.voucher}
                   name='voucher'
                   placeholder='Discount Code'
-                  size='small'
+                  size='medium'
                   sx={{ mt: 2 }}
                   InputLabelProps={{ shrink: true }}
                   onBlur={handleBlur}
