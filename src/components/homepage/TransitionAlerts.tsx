@@ -5,12 +5,22 @@ import IconButton from "@mui/material/IconButton";
 import Collapse from "@mui/material/Collapse";
 import CloseIcon from "@mui/icons-material/Close";
 
-export default function TransitionAlerts({ message, state }) {
+interface TransitionAlertsProps {
+  message: any;
+  state: any;
+  color?: any;
+}
+export default function TransitionAlerts({
+  message,
+  state,
+  color = "success",
+}: TransitionAlertsProps) {
   const [open, setOpen] = state;
   return (
     <Box sx={{ width: "100%" }}>
       <Collapse in={open}>
         <Alert
+          color={color}
           action={
             <IconButton
               aria-label='close'

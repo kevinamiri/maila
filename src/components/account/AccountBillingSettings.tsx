@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
@@ -10,6 +11,9 @@ import Typography from "@mui/material/Typography";
 import Label from "../subcomponents/Label";
 import usePayInfo from "../../hooks/usePayInfo";
 import BillingPlanCardContent from "./BillingPlanCardContent";
+import * as Yup from "yup";
+import { Formik } from "formik";
+import Redeemer from "./Redeemer";
 
 const plans = [
   {
@@ -301,6 +305,11 @@ const AccountBillingSettings = (props) => {
             Upgrade Plan
           </Button>
         </Box>
+      </CardContent>
+      <Divider />
+      <CardHeader title='Redeem Voucher' /> <Divider />
+      <CardContent>
+        <Redeemer />
       </CardContent>
     </Card>
   );
