@@ -28,74 +28,31 @@ const AccountNotificationsSettings = (props) => {
   return (
     <form onSubmit={handleSubmit} {...props}>
       <Card>
-        <CardHeader title='Notifications' />
+        <CardHeader title='System notifications' />
         <CardContent>
           <Grid container spacing={6} wrap='wrap'>
             <Grid item md={4} sm={6} xs={12}>
-              <Typography color='textPrimary' gutterBottom variant='subtitle2'>
-                System
-              </Typography>
-              <Typography color='textSecondary' gutterBottom variant='body2'>
-                What settings do I choose for UI? UI is what appears on your
-                screen.
-              </Typography>
+              <Typography
+                color='textSecondary'
+                gutterBottom
+                variant='body2'
+              ></Typography>
               <div>
                 <FormControlLabel
                   control={<Checkbox color='primary' defaultChecked />}
-                  label='Dark theme'
-                />
-              </div>
-              <div>
-                <FormControlLabel
-                  control={<Checkbox color='primary' />}
-                  label='Push Notifications'
+                  label='Update in Terms and conditions'
                 />
               </div>
               <div>
                 <FormControlLabel
                   control={<Checkbox color='primary' defaultChecked />}
-                  label='Text message'
+                  label='Change in product features'
                 />
               </div>
               <div>
                 <FormControlLabel
                   control={<Checkbox color='primary' defaultChecked />}
-                  label={
-                    <>
-                      <Typography color='textPrimary' variant='body1'>
-                        Phone calls
-                      </Typography>
-                      <Typography color='textSecondary' variant='caption'>
-                        Short voice phone updating you
-                      </Typography>
-                    </>
-                  }
-                />
-              </div>
-            </Grid>
-            <Grid item md={4} sm={6} xs={12}>
-              <Typography color='textPrimary' gutterBottom variant='subtitle2'>
-                System notifications
-              </Typography>
-              <Typography color='textSecondary' gutterBottom variant='body2'>
-                Figure out what information you want to get alerts about
-              </Typography>
-              <div>
-                <FormControlLabel
-                  control={<Checkbox color='primary' defaultChecked />}
-                  label='Terms and conditions'
-                />
-              </div>
-              <div>
-                <FormControlLabel
-                  control={<Checkbox color='primary' defaultChecked />}
-                  label='Changes in your account'
-                />
-              </div>
-              <div>
-                <FormControlLabel
-                  control={<Checkbox color='primary' defaultChecked />}
-                  label='Changes in our platform'
+                  label='Discounts and offers'
                 />
               </div>
             </Grid>
