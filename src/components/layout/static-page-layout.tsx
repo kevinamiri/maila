@@ -69,11 +69,7 @@ const StaticPageLayout = (props) => {
 
   return (
     <>
-      <Helmet
-        key='app-head'
-        defaultTitle={title}
-        titleTemplate={`%s | QuoteWikia`}
-      >
+      <Helmet key='app-head' defaultTitle={title} titleTemplate={`%s | Maila`}>
         {/* General tags */}
         <title>{title}</title>
         <meta name='description' content={description} />

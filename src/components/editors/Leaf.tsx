@@ -11,6 +11,11 @@ const PrimarySpan = styled("span")(({ theme }) => ({
   color: theme.palette.text.primary,
 }));
 
+const IncorrectParagraph = styled("span")(({ theme }) => ({
+  color: theme.palette.text.primary,
+  borderBottom: "2px solid #f03000",
+}));
+
 const Code = ({ attributes, children, leaf }) => {
   return (
     <span
@@ -93,6 +98,8 @@ export const Leaf = ({ attributes, children, leaf }) => {
     children = <em>{children}</em>;
   } else if (leaf.underline) {
     children = <u>{children}</u>;
+  } else if (leaf.incorrectparagraph) {
+    children = <IncorrectParagraph>{children}</IncorrectParagraph>;
   } else if (leaf.strikethrough) {
     children = <Del>{children}</Del>;
   } else {

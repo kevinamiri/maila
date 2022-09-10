@@ -4,7 +4,7 @@ title: "Kunsten at skrive engagerende kopi"
 description: "I denne artikel deler vi nogle tips til at skrive effektiv kopi, der engagerer dit publikum og skaber resultater."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin, oversat af Martin'
+author: 'Kevin Levin'
 date: "2022-01-16"
 slug: /da/blog/2022/01/art-of-writing-engaging-copy
 path: /da/blog/2022/01/art-of-writing-engaging-copy
@@ -15,8 +15,6 @@ imageStatus: false
 ---
 
 I denne artikel vil vi gennemgå det grundlæggende i at skrive engagerende tekster. Copywriting er en kunst og en videnskab, og det kan være forskellen mellem en vellykket kampagne og en mislykket kampagne.
-
-
 
 
 #### Bedste praksis Resumé
