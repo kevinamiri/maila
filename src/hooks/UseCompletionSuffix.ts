@@ -7,6 +7,16 @@ import { HistoryEditor } from "slate-history";
 import React from "react";
 import { updateExpansion } from "slices/ui-states";
 
+const extractText = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("text")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray;
+};
+
 //fetching the data from the api and then inserting it into the editor itself at the selection
 async function UseCompletionSuffix(
   dispatch: (arg0: {
@@ -47,7 +57,7 @@ async function UseCompletionSuffix(
   ).then((data) => {
     if (data) {
       dispatch(updateProgressValue(50));
-      let textOptions = Object.values(data);
+      let textOptions = extractText(data);
       console.log(textOptions);
       textOptions
         .filter((x: any) => x.search("Error 4043") != -1)

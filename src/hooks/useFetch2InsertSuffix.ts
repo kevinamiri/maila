@@ -6,6 +6,15 @@ import { Node as SlateNode } from "slate";
 import { HistoryEditor } from "slate-history";
 import { updateExpansion, updateHighlghted } from "slices/ui-states";
 
+const extractText = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("text")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray;
+};
 /**
  * When user clicks on the tab, it will triger the api and
  * the auto-generated text will be inserted into the main editor
@@ -72,7 +81,7 @@ async function useFetch2InsertSuffix(
   ).then((data) => {
     if (data) {
       dispatch(updateProgressValue(50));
-      let textOptions: string[] = Object.values(data);
+      let textOptions = extractText(data);
       let inx = 0;
       textOptions
         .filter((x: any) => x.search("404") != -1)

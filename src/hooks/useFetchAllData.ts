@@ -6,6 +6,16 @@ import { updateExpansion, updateHighlghted } from "slices/ui-states";
 import useFetchAll from "./useFetchAll";
 import { serialize } from "./currentSelectEditor";
 
+const extractText = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("text")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray;
+};
+
 /* Following function would send the text to main editor 
 text => main editor
 */
@@ -49,7 +59,7 @@ async function useFetchAllData(
   await useFetchAll(editorContents, gtoken, url, fieldValues).then((data) => {
     if (data) {
       dispatch(updateProgressValue(50));
-      let textOptions = Object.values(data);
+      let textOptions = extractText(data);
       let inx = 0;
       textOptions
         .filter((x: any) => x.search("Error 4043") != -1)
