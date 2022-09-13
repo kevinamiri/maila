@@ -59,19 +59,19 @@ F100:
 - Inkluderer maskinlæring i dine innhold
 - Hvis du vil øke inntektene dine, er det viktig å bruke mindre tid på å oppdage og brainstorme, og mer tid på å produsere resultater. Maskinlæring kan hjelpe å forbedre kvaliteten og nøyaktigheten av ditt innhold. Ved å inkludere maskinlæringsalgoritmer i din redaksjonsprosess, kan du være trygg på at innholdet ditt er konsekvent med merkevaren din.
 T100:
-  - "Produktbeskrivelse"
-  - "Kopierwriting Formulas"
-  - "Salgskopi Email"
-  - "Taglines"
-  - "Merkevarebygging"
-  - "Innholdsforsterker"
-B100: 
-  - "Lag en unik beskrivelse som markedsfører verdien av produktet ditt."
-  - "De beviste formlene for å lage strukturerte uttalelser om produktet ditt."
-  - "Generer salgskopie-e-post med kraftige ord og uttrykk for produktet ditt."
+  - "Copywriting"
+  - "E-postgenerator"
+  - "Brainstorming"
+  - "Sammendragsgenerator"
+  - "SEO-sjekker"
+  - "Omformulering"
+B100:
+  - "De beviste formlene for å lage strukturerte utsagn om produktet ditt."
+  - "Generer salgsfremmende e-poster med kraftige ord og uttrykk for produktet ditt."
   - "Effektive måter å bringe nye ideer inn i produktet ditt."
-  - "Omform dine merkevareuttalelser og tilpass hvert aspekt av merkevaren din for å kommunisere styrker og verdier."
-  - "Bruk kraftige verktøy til å lage en sterk stemme for innholdslandingssidene dine."
+  - "Forkort dokumenter til sammendrag. Få en forståelse av hva folk sier om forskjellige emner uten å bli overveldet."
+  - "Analyserer og ranger innholdet ditt med vår SEO-sjekker drevet av AI"
+  - "Bruk kraftige verktøy til å skape en sterk stemme for innholdslandingssiden din."
 H0121: "Maila.ai er en revolusjonerende AI-drevet kopierings- og skrivehjelpsplattform som lar deg lage profesjonell kvalitet innhold på noen få minutter."
 T0152: "AI Copywriting & Writing Assistant"
 H01051: "Start å skrive med din første 25,000 ord gratis prøveperiode og se om arbeidet ditt forbedrer seg."

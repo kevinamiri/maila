@@ -59,19 +59,19 @@ F100:
   - Integroi tekoäly toimitukselliseen prosessiin
   - On tärkeää käyttää vähemmän aikaa löytämiseen ja ideointiin ja enemmän aikaa todellisten tulosten tuottamiseen. Sisällyttämällä tekoälyalgoritmit toimitukselliseen prosessiin voit tuoda uusia ideoita liiketoimintaasi. olipa sinun sitten kirjoitettava blogikirjoitus, luotava sisältöä verkkosivustolle tai luotava markkinointisähköposti, alustamme voi auttaa sinua nopeuttamaan kirjoittamisprosessia.
 T100:
-  - "Tuotteen kuvaus"
-  - "Copywriting Formulas"
-  - "Myyntikopio sähköposti"
-  - "Aivoriihi"
-  - "Brändäys"
-  - "Content Enhancer"
-B100: 
-  - "Luo ainutlaatuinen kuvaus, joka markkinoi tuotteesi arvoa."
-  - "Todistetut kaavat jäsenneltyjen lausumien luomiseen tuotteestasi."
-  - "Luo myyntikopiosähköposteja, joissa on tehokkaita sanoja ja lauseita tuotteellesi."
-  - "Tehokkaat tavat tuoda uusia ideoita tuotteeseesi."
-  - "Muotoile uudelleen brändisi lausumia ja räätälöi brändisi jokainen osa-alue viestimään sen vahvuuksista ja arvoista."
-  - "Käytä tehokkaita työkaluja luodaksesi vahvan äänen sisällön laskeutumissivuillesi."
+  - "Kirjoittaminen liiketoimintaa varten"
+  - "Markkinointisähköpostin luonti"
+  - "Ideoiminen"
+  - "Yhteenvetoratkaisu"
+  - "SEO-tarkistus"
+  - "Tekstin muotoilu"
+B100:
+  - "Testattuja kaavoja tuotteesi rakentavien lausuntojen luomiseen."
+  - "Luo myynninedistäviä sähköposteja voimakkaiden sanojen ja ilmaisujen avulla."
+  - "Tehokkaita tapoja tuoda uusia ideoita tuotteeseesi."
+  - "Lyhennä asiakirjoja yhteenvetoihin. Saat käsityksen siitä, mitä ihmiset sanovat eri aiheista ilman, että heidät ylikuormittaisi."
+  - "Analysoi ja arvostele sisältöä tehokkaalla SEO-tarkistuksellamme, joka on tietokoneavusteinen."
+  - "Luo vahva ääni sisältösi aloitussivuille tehokkaiden työkalujen avulla."
 H0121: "Maila.ai on vallankumouksellinen tekoälyllä toimiva copywriting- ja kirjoitusapualusta, jonka avulla voit tuottaa ammattilaistason sisältöä muutamassa minuutissa."
 T0152: "Seuraavan tason tekoälykäyttöinen copywriting-alusta"
 H01051: "Aloita kirjoittaminen ensimmäisellä 25 000 sanan ilmaisella kokeilukerralla ja katso, paraneeko työsi."

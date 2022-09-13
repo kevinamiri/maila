@@ -59,19 +59,19 @@ F100:
   - Integrera AI i din redaktionella process
   - Det är viktigt att spendera mindre tid på att upptäcka och brainstorma och mer tid på att faktiskt producera resultat. Genom att integrera AI-algoritmer i din redaktionella process kan du få in nya idéer i din verksamhet. oavsett om du behöver skriva ett blogginlägg, skapa innehåll för en webbplats eller skapa ett marknadsföringsmejl kan vår plattform hjälpa dig att påskynda din skrivprocess.
 T100:
-  - "Produktbeskrivning"
-  - "Formler för copywriting"
-  - "Försäljningskopia e-post"
-  - "Brainstorming"
-  - "Branding"
-  - "Innehållsförstärkare"
+  - "Copywriting"
+  - "Marknadsförings e-postgenerator"
+  - "Idéutveckling"
+  - "Sammanfattningsgenerator"
+  - "SEO-kontroll"
+  - "Parafrasera"
 B100: 
-  - "Skapa en unik beskrivning som marknadsför värdet av din produkt."
-  - "De beprövade formlerna för att skapa strukturerade uttalanden om din produkt."
-  - "Generera e-postmeddelanden med försäljningstexter med kraftfulla ord och fraser för din produkt."
-  - "Effektiva sätt att få in nya idéer i din produkt."
-  - "Omforma dina varumärkesuttalanden och skräddarsy varje aspekt av ditt varumärke för att kommunicera dess styrkor och värden."
-  - "Använd kraftfulla verktyg för att skapa en stark röst för dina innehållslandningssidor."
+  - "De beprövade formlerna för att skapa strukturerade uttalanden om ditt produkt."
+  - "Generera försäljningskopieremails med kraftfulla ord och fraser för ditt produkt."
+  - "Effektiva sätt att ta nya idéer i ditt produkt."
+  - "Förkorta dokument till sammanfattningar. Få en känsla av vad människor säger om olika ämnen utan att bli överväldigad."
+  - "Analysera och betygsätt ditt innehåll med vår AI-drivna SEO-kontroll"
+  - "Använd kraftfulla verktyg för att skapa en stark röst för ditt innehåll landningssidor."
 H0121: "Maila.ai är en revolutionerande AI-driven plattform för copywriting och skrivhjälp som gör det möjligt för dig att producera professionellt innehåll på några minuter."
 T0152: "AI-driven assistent för att skriva mejl"
 H01051: "Börja skriva med din första kostnadsfria provperiod på 25 000 ord och se om ditt arbete förbättras."
@@ -81,15 +81,15 @@ H0118:
     - Är AI-skapat innehåll fritt från plagiat? 
     - Vårt AI-genererade innehåll är plagiatfritt och korrekt.
     - Hur kan AI-drivna texter användas i ett företag?
-    - AI-driven copywriting är idén om att använda artificiell intelligens för att skriva innehåll för ditt företag. Denna typ av copy-writing kan användas för ett antal olika aspekter av ditt företag, till exempel dina produktbeskrivningar, uppdateringar i sociala medier, e-postmeddelanden och mycket mer.
+    - AI-baserad innehållsgenerering kan användas för en mängd olika ändamål i företag. Den här typen av innehåll kan hjälpa till med produktbeskrivningar, uppdateringar i sociala medier, ämnesrader för e-post och mycket mer. Att ha en AI-skrivarassistent kan hjälpa till att spara tid och förbättra kvaliteten på det producerade innehållet.
     - Hur mycket kostar det?
     - Vi erbjuder en gratis provperiod så att du kan se om vår AI kan hjälpa dig att producera bra innehåll.
-    - Varför skulle jag använda detta istället för att skapa mitt eget innehåll?
-    - AI-driven copy-writing kan vara ett bra sätt att spara tid, särskilt om du har ont om personal. Automatiserat skrivande kan producera innehåll snabbare än om en mänsklig skribent gör det.
+    - Varför skulle jag använda detta i stället för att skapa mitt eget innehåll?
+    - AI-genererade texter kan vara ett bra sätt att spara tid, särskilt om du har ont om personal. AI-driven copywriting kan producera innehåll snabbare än en mänsklig skribent.
     - Hur lång tid tar det?
-    - Vi genererar innehåll i realtid, så dina resultat är klara omedelbart. Eftersom vår motor för kopieringsgenerering är helt automatiserad gör det också att vi kan skala vår produktion för att matcha dina behov.
+    - Vi genererar innehåll i realtid, så dina resultat är klara omedelbart. Det kan ta lite tid att vänja sig vid att använda en AI-skrivarassistent, men när du väl har fått grepp om det kan det spara dig mycket tid.
     - Kan jag skapa innehåll på andra språk?
-    - Ja, vi stöder andra språk än engelska. Översättningar av bästa kvalitet finns för närvarande tillgängliga på engelska.
+    - Ja, vi har stöd för andra språk än engelska. Översättningar av bästa kvalitet finns för närvarande tillgängliga på engelska.
 H01194: 
   - AI-skrivassistent
   - AI-verktyg för copywriting som kan hjälpa dig att skriva bättre texter till din webbplats eller marknadsföringskampanj genom att tillhandahålla ett verktyg som är lätt att använda och gör copywritingprocessen effektivare.

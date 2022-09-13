@@ -59,19 +59,20 @@ F100:
   - Integrer AI i din redaktionelle proces
   - Det er vigtigt at bruge mindre tid på at opdage og brainstorme og mere tid på rent faktisk at producere resultater. Ved at integrere AI-algoritmer i din redaktionelle proces kan du få nye idéer ind i din virksomhed. uanset om du skal skrive et blogindlæg, skabe indhold til et websted eller oprette en markedsføringsmail, kan vores platform hjælpe dig med at fremskynde din skriveproces.
 T100:
-  - "Produktbeskrivelse"
-  - "Copywriting-formler"
-  - "Salgskopi e-mail"
-  - "Taglines"
-  - "Branding"
-  - "Indholdsforstærker"
-B100: 
-  - "Lav en unik beskrivelse, der markedsfører værdien af dit produkt."
-  - "De gennemprøvede formler til at skabe strukturerede udsagn om dit produkt."
-  - "Generer salgstekst-e-mails med stærke ord og sætninger for dit produkt."
-  - "Effektive måder at bringe nye idéer ind i dit produkt på."
-  - "Omform dine brand statements og skræddersy alle aspekter af dit brand til at kommunikere dets styrker og værdier."
-  - "Brug kraftfulde værktøjer til at skabe en stærk stemme til dine landingssider med indhold."
+  - "Copywriting"
+  - "E-postgenerator"
+  - "Brainstorming"
+  - "Sammendragsgenerator"
+  - "SEO-sjekker"
+  - "Omformulering"
+B100:
+
+  - "De beviste formlene for å lage strukturerte utsagn om produktet ditt."
+  - "Generer salgsfremmende e-poster med kraftige ord og uttrykk for produktet ditt."
+  - "Effektive måter å bringe nye ideer inn i produktet ditt."
+  - "Forkort dokumenter til sammendrag. Få en forståelse av hva folk sier om forskjellige emner uten å bli overveldet."
+  - "Analyser og ranger innholdet ditt med vår SEO-sjekker drevet av AI"
+  - "Bruk kraftige verktøy til å skape en sterk stemme for innholdslandingssiden din."
 H0121: "Maila.ai er en revolutionerende AI-drevet platform til tekstforfatning og skriveassistance, der gør det muligt at producere professionelt indhold på få minutter."
 T0152: "AI-drevet assistent til at skrive e-mails!"
 H01051: "Begynd at skrive med din første gratis prøveperiode på 25.000 ord, og se, om dit arbejde bliver bedre."
