@@ -12,6 +12,7 @@ slug: /en/tools/copywriting/creative-blog-post
 lang: en
 icon: "rewriter"
 hasCustomTemplate: false
+editor_height: 500
 tone: false
 templateKey: 'tools-body'
 jsonId: "1020"

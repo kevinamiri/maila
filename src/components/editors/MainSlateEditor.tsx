@@ -138,6 +138,7 @@ const MainSlateEditor = (props) => {
     // const selectedText = Editor.string(editor, editor.selection);
     const fragment = SlateNode.fragment(editor, editor.selection);
     const fragmentsText = fragment.map((x) => SlateNode.string(x)).join("\n");
+
     dispatch(updateSelectedText(fragmentsText));
   };
 
@@ -281,6 +282,17 @@ const MainSlateEditor = (props) => {
     }
   };
 
+  const serialize = (editorname: Editor) => {
+    return editorname.children.map((x) => SlateNode.string(x)).join("\n");
+  };
+  // number of new lines \n in the editor
+  const editorCountNewLines = (editorname: Editor) => {
+    return editorname.children
+      .map((x) => SlateNode.string(x))
+      .join("\n")
+      .split("\n").length;
+  };
+
   return (
     <>
       <Grid
@@ -382,7 +394,12 @@ const MainSlateEditor = (props) => {
               onKeyDown={handleKeyDown}
               style={{
                 overflowY: "scroll",
-                height: editorHeight ? `${editorHeight}px` : "500px",
+                height: editorHeight
+                  ? `${editorHeight}px`
+                  : serialize(editor).length > 600 ||
+                    editorCountNewLines(editor) > 4
+                  ? "500px"
+                  : "400px",
               }}
             />
           </Slate>
