@@ -23,11 +23,11 @@ const CardFeature: React.FC<CardFeatureProps> = ({
         action={
           badgeLabel && (
             <Chip
-              label={"NEW"}
+              label={"Coming soon"}
               sx={{
-                fontWeight: 600,
+                fontWeight: 500,
                 borderRadius: "4px",
-                padding: "4px",
+                padding: "0px",
               }}
               size='small'
             />

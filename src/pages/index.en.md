@@ -60,18 +60,18 @@ F100:
   - Integrate AI into your editorial process
   - It's important to spend less time discovering and brainstorming and more time actually producing results. By incorporating AI algorithms into your editorial process, you can bring new ideas into your business. no matter if you need to write a blog post, create content for a website or create a marketing email, our platform can help you speed up your writing process.
 T100:
-  - "Product description"
-  - "Copywriting Formulas"
-  - "Sales Copy Email"
+  - "Copywriting"
+  - "Marketing Email Generator"
   - "Brainstorming"
-  - "Branding"
-  - "Content Enhancer"
+  - "Summary Generator"
+  - "SEO Checker"
+  - "Paraphrasing"
 B100: 
-  - "Create a unique description that markets the value of your product."
   - "The proven formulas for creating structured statements about your product."
   - "Generate sales copy emails with powerful words and phrases for your product."
   - "Effective ways to bring new ideas into your Product."
-  - "Reshape your brand statements and tailor every aspect of your brand to communicate its strengths and values."
+  - "Shorten documents to summaries. Get a sense of what people are saying about different topics without being overwhelmed."
+  - "Analyze and grade your content with our AI-powered SEO checker"
   - "Use powerful tools to create a strong voice for your content landing pages."
 H0121: "Maila.AI is an AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
 T0152: "AI Copywriting & AI Writing Assistant"

@@ -42,7 +42,7 @@ const CardFeatureBlock = ({
           key={i}
           title={x}
           body={bodys[i]}
-          badgeLabel={i == 4 && "NEW"} // determine which card should have the NEW badge
+          badgeLabel={i == 4 && "Coming soon"} // determine which card should have the NEW badge
         />
       ))}
     </FWrapper>
