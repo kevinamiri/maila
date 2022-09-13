@@ -397,9 +397,20 @@ const dBetweenFirstAndLastDividedByPoints = dBetweenFirstAndLast / points.length
 const furthestPoint = cal[cal.length - 1].d;
 
 
+/* function that get the url from user and return the valid url if the url do not have http or https */
+
+const getUrl = (url) => {
+  // lowercased url
+  const lowerCasedUrl = url.toLowerCase();
+  if (lowerCasedUrl.indexOf('http://') === -1 && lowerCasedUrl.indexOf('https://') === -1) {
+    return `http://${lowerCasedUrl}`;
+  }
+  return url;
+};
+
 (async function () {
 
-  console.log(furthestPoint)
+  console.log(getUrl("maila.ai"))
   // const tasks = async () => {
   //   const data = await fetch('https://jsonplaceholder.typicode.com/todos/1').then(response => response.json());
   //   console.log(data, new Date())
@@ -431,7 +442,62 @@ const furthestPoint = cal[cal.length - 1].d;
 
 
 
-
-
 }
 )();
+
+/**
+
+Blog title: How to start a personal blog 
+
+Blog sections:
+
+1. Pick a personal blog template
+2. Develop your brand
+3. Choose a hosting plan and domain name
+4. Create a content calendar 
+5. Optimize your content for SEO
+6. Build an email list
+7. Get the word out
+---
+Blog title: A real-world example on Improving JavaScript performance
+
+Blog sections:
+
+1. Why I needed to Improve my JavaScript performance
+2. Three common ways to find performance issues in Javascript
+3. How I found the JavaScript performance issue using console.time
+4. How does lodash cloneDeep work?
+5. What is the alternative to lodash cloneDeep?
+6. Conclusion
+
+---
+
+Blog title: Is a Happy Life Different from a Meaningful One?
+
+Blog sections:
+1. Five differences between a happy life and a meaningful one
+2. What is happiness, anyway?
+3. Is the happiness without pleasure?
+4. Can you have it all?
+
+---
+Blog title: 5 Strategies to overcome writer's block
+
+Blog Sections:
+
+1. Understand the root of your writer's block
+2. Get organized
+3. Set realistic writing goals
+4. Take a break
+5. Reward yourself
+
+ */
+
+
+
+const data = {
+  text: "something has gone away ther",
+  numResults: 3,
+  tone: "formal",
+
+}
