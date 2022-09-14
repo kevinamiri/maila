@@ -12,7 +12,7 @@ slug: "/sv/tools/writing/paraphrase"
 lang: "sv"
 icon: "paraphrase"
 hasCustomTemplate: false
-tone: true
+tone: false
 templateKey: 'tools-body'
 product_type: "17"
 url: "/app/paraphrase"

@@ -60,15 +60,15 @@ F100:
   - Integrate AI into your editorial process
   - It's important to spend less time discovering and brainstorming and more time actually producing results. By incorporating AI algorithms into your editorial process, you can bring new ideas into your business. no matter if you need to write a blog post, create content for a website or create a marketing email, our platform can help you speed up your writing process.
 T100:
-  - "Copywriting"
-  - "Marketing Email Generator"
+  - "Content Copywriting"
+  - "Email Copywriting"
   - "Brainstorming"
   - "Summary Generator"
   - "SEO Checker"
   - "Paraphrasing"
 B100: 
   - "The proven formulas for creating structured statements about your product."
-  - "Generate sales copy emails with powerful words and phrases for your product."
+  - "Generate sales emails copy with powerful words and phrases for your product."
   - "Effective ways to bring new ideas into your Product."
   - "Shorten documents to summaries. Get a sense of what people are saying about different topics without being overwhelmed."
   - "Analyze and grade your content with our AI-powered SEO checker"

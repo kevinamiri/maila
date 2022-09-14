@@ -12,7 +12,7 @@ slug: /en/tools/writing/paraphrase
 lang: en
 icon: "paraphrase"
 hasCustomTemplate: false
-tone: true
+tone: false
 templateKey: 'tools-body'
 jsonId: "611"
 product_type: "17"
@@ -20,7 +20,5 @@ url: /app/paraphrase
 ---
 
 # AI Paraphraser
-
-## Introduction
 
 The Rephrase Generator is an excellent tool for rewriting sentences while preserving their original meaning. It employs an advanced algorithm to rearrange the words in a sentence, thereby providing different ways to say the same thing. This is especially useful for individuals who want to come up with different ways to say things. The tool is also helpful for people who want to avoid plagiarism. By using the Rephrase Generator, you can be confident that your writing is entirely original.
