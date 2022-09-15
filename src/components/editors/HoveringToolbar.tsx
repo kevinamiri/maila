@@ -31,14 +31,14 @@ export default function HoveringToolbar(props) {
             <Box
               sx={{
                 position: "fixed",
-                width: 210,
+                width: 220,
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
                 border: (theme) => `1px solid ${theme.palette.divider}`,
                 transition: "opacity 0.75s",
                 borderRadius: 1,
-                p: 0.5,
+                p: 0.25,
                 bgcolor: "background.paper",
               }}
             >

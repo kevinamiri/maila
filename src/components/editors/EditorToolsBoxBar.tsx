@@ -1,24 +1,24 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import RestorePageIcon from "@mui/icons-material/RestorePage";
-import TextRotationAngleupIcon from "@mui/icons-material/TextRotationAngleup";
 import ShortTextIcon from "@mui/icons-material/ShortText";
 import BarToggleButton from "components/editors/BarToggleButton";
 import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
-import Stars from "../../icons/stars";
+import BallotOutlinedIcon from "@mui/icons-material/BallotOutlined";
+import LiveHelpOutlinedIcon from "@mui/icons-material/LiveHelpOutlined";
 // import LongMenu from "./LongMenu";
 import SpellcheckIcon from "@mui/icons-material/Spellcheck";
-// import SaveIcon from "@mui/icons-material/Save";
-import { useSelector } from "react-redux";
+import { FormalStyle, RephraseParaphrase, SummaryRephrase } from "icons/Icons";
 // import CircularProgress from "@mui/material/CircularProgress";
 // import LoadingButton from "@mui/lab/LoadingButton";
 // import Play from "components/subcomponents/Play";
 const EditorToolsBoxBar = ({
-  handleClarify,
-  handleSimplify,
-  handleAdvancify,
   handleSpellcheck,
+  handleAdvancify,
+  handleSimplify,
+  handleRephrase,
+  handleKeyPoints,
   handleElegantify,
+  handleQuestions,
 }) => {
   return (
     <>
@@ -27,14 +27,15 @@ const EditorToolsBoxBar = ({
           marginLeft: "auto",
           display: "flex",
           flexWrap: "wrap",
+          flexDirection: "row",
           boxSizing: "border-box",
           justifyContent: "start",
         }}
       >
         <BarToggleButton
-          format='Clarifying'
-          icon={<RestorePageIcon fontSize='small' />}
-          handleClick={handleClarify}
+          format='Turining into Key Points'
+          icon={<BallotOutlinedIcon fontSize='small' />}
+          handleClick={handleKeyPoints}
         />
         <BarToggleButton
           format='Simplifying'
@@ -43,7 +44,14 @@ const EditorToolsBoxBar = ({
         />
         <BarToggleButton
           format='To Formal Style'
-          icon={<TextRotationAngleupIcon fontSize='small' />}
+          icon={
+            <FormalStyle
+              viewBox='0 0 64 64'
+              height='24'
+              width='24'
+              fontSize='small'
+            />
+          }
           handleClick={handleAdvancify}
         />
         <BarToggleButton
@@ -52,7 +60,24 @@ const EditorToolsBoxBar = ({
           handleClick={handleElegantify}
         />
         <BarToggleButton
-          format='Grammar Checking'
+          format='Rephrase'
+          icon={
+            <RephraseParaphrase
+              viewBox='0 0 24 24'
+              height='24'
+              width='24'
+              fontSize='small'
+            />
+          }
+          handleClick={handleRephrase}
+        />
+        <BarToggleButton
+          format='Turning into Questions'
+          icon={<LiveHelpOutlinedIcon fontSize='small' />}
+          handleClick={handleQuestions}
+        />
+        <BarToggleButton
+          format='Grammar Check'
           icon={<SpellcheckIcon fontSize='small' />}
           handleClick={handleSpellcheck}
         />

@@ -149,14 +149,76 @@ const SelectionTransformerBar: React.FC<selectionTransformerProps> = ({
     });
   };
 
+  const handleKeyPoints = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          useFetchInsert(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "0",
+            fieldValues,
+            selectedTextValue
+          );
+        });
+    });
+  };
+
+  const handleRephrase = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          useFetchInsert(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "17",
+            fieldValues,
+            selectedTextValue
+          );
+        });
+    });
+  };
+
+  const handleQuestions = (e) => {
+    e.preventDefault();
+    window.grecaptcha.ready(() => {
+      window.grecaptcha
+        .execute(SITE_KEY, { action: "submit" })
+        .then((gtoken) => {
+          dispatch(updateProgressValue(15));
+          useFetchInsert(
+            dispatch,
+            enqueueSnackbar,
+            editors,
+            gtoken,
+            "57",
+            fieldValues,
+            selectedTextValue
+          );
+        });
+    });
+  };
+
   return (
     <>
       <EditorToolsBoxBar
         handleSpellcheck={HandleSpellcheck}
         handleAdvancify={handleAdvancify}
         handleSimplify={handleSimplify}
-        handleClarify={handleClarify}
+        handleRephrase={handleRephrase}
+        handleKeyPoints={handleKeyPoints}
         handleElegantify={handleElegantify}
+        handleQuestions={handleQuestions}
       />
     </>
   );
