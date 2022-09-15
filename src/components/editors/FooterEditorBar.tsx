@@ -71,7 +71,7 @@ export const FooterEditorBar = ({
       <Box
         sx={{
           display: "flex",
-          marginTop: "0.4rem",
+          marginTop: "0.15rem",
         }}
       >
         <Box sx={{ flexGrow: 1 }}>
