@@ -2,6 +2,7 @@ import React from "react";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import { useSelector } from "react-redux";
+import ToggleButtonList from "components/subcomponents/ToggleButtonList";
 
 export default function BarToggleButton({ format, icon, handleClick }) {
   const { selectedTextValue } = useSelector((state) => state.editorParams);
@@ -15,25 +16,11 @@ export default function BarToggleButton({ format, icon, handleClick }) {
       : true;
 
   return (
-    <IconButton
-      size='small'
-      color='primary'
-      sx={{
-        border: 0,
-        p: 0.5,
-        mr: 0.5,
-        "&.Mui-disabled": {
-          border: 0,
-          mr: 0.5,
-        },
-      }}
-      component='span'
-      disabled={selectionStatus || loading}
+    <ToggleButtonList
+      title={format}
+      icon={icon}
       onClick={handleClick}
-    >
-      <Tooltip title={format} arrow>
-        {icon}
-      </Tooltip>
-    </IconButton>
+      disabled={selectionStatus || loading}
+    />
   );
 }

@@ -28,7 +28,7 @@ Whether your goal is to become a better writer or start a business, you will nee
 
 ## Benefits and Features:
 
-- Saves time by automating idea generation, Generates ideas instantly
+- Saves time by automating idea generation, Generates ideas less than one minute.
 - Can be used by anyone who needs inspiration, including writers, innovators and entrepreneurs
 - More creative and effective than traditional brainstorming techniques 
 - Helps users come up with new ideas 

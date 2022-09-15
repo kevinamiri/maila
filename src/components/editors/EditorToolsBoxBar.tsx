@@ -33,27 +33,27 @@ const EditorToolsBoxBar = ({
       >
         <BarToggleButton
           format='Clarifying'
-          icon={<RestorePageIcon />}
+          icon={<RestorePageIcon fontSize='small' />}
           handleClick={handleClarify}
         />
         <BarToggleButton
           format='Simplifying'
-          icon={<ShortTextIcon />}
+          icon={<ShortTextIcon fontSize='small' />}
           handleClick={handleSimplify}
         />
         <BarToggleButton
           format='To Formal Style'
-          icon={<TextRotationAngleupIcon />}
+          icon={<TextRotationAngleupIcon fontSize='small' />}
           handleClick={handleAdvancify}
         />
         <BarToggleButton
           format='Enhancing'
-          icon={<AutoAwesomeRoundedIcon />}
+          icon={<AutoAwesomeRoundedIcon fontSize='small' />}
           handleClick={handleElegantify}
         />
         <BarToggleButton
           format='Grammar Checking'
-          icon={<SpellcheckIcon />}
+          icon={<SpellcheckIcon fontSize='small' />}
           handleClick={handleSpellcheck}
         />
       </Box>

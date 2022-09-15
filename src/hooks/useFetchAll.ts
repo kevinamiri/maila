@@ -36,8 +36,13 @@ const useFetchAll = async (
     fieldValues.keywordValue
       ? (params["keyword"] = fieldValues.keywordValue)
       : null;
-    fieldValues.company
-      ? (params["company"] = fieldValues.businessNameValue)
+    fieldValues.businessNameValue
+      ? (params["company"] = fieldValues.businessNameValue) ||
+        (params["company"] = fieldValues.companyValue)
+      : null;
+    fieldValues.companyValue
+      ? (params["company"] = fieldValues.businessNameValue) ||
+        (params["company"] = fieldValues.companyValue)
       : null;
     fieldValues.keywordValue
       ? (params["keyword"] = fieldValues.keywordValue)

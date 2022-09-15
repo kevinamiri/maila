@@ -295,28 +295,25 @@ const MainSlateEditor = (props) => {
 
   return (
     <>
-      <Grid
-        container
+      <Box
         ref={divRef}
-        item
-        xs={12}
-        direction='row'
-        justifyContent='center'
-        alignItems='flex-end'
         sx={{
           boxSizing: "border-box",
           boxShadow: (theme) => `0 0 0 2px ${theme.palette.divider}`,
           borderRadius: (theme) => `calc(1px * ${theme.shape.borderRadius})`,
           lineHeight: "1.4rem",
-          p: 1,
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
+          pb: 0.5,
+          pt: 1,
+          px: 1,
         }}
       >
-        <Grid
-          item
+        <Box
           sx={{
             color: (theme) => theme.palette.text.secondary,
           }}
-          xs={12}
         >
           <Slate
             editor={editor}
@@ -403,9 +400,9 @@ const MainSlateEditor = (props) => {
               }}
             />
           </Slate>
-        </Grid>
+        </Box>
         <FooterEditorBar voice={true} disabled={true} editor={editor} />
-      </Grid>
+      </Box>
     </>
   );
 };

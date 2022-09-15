@@ -32,10 +32,8 @@ const ToggleButtonList = React.forwardRef(
           sx={{
             margin: "1px",
             textTransform: "none",
-            lineHeight: "1.65",
-            borderRadius: "3px",
-            marginTop: "1.5px",
-            marginBottom: "-6px",
+            border: 0,
+            borderRadius: "4px",
           }}
           onClick={onClick}
           color='primary'

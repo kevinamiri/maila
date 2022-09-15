@@ -1,7 +1,7 @@
 ---
 id: "6211"
 title: "Summary Generator"
-description: "AI Summary Generator is the perfect tool for busy students and professionals who need to quickly generate summaries for their papers and presentations. This AI-powered tool uses natural language processing to automatically generate summaries based on your input text. Simply enter your text and the AI Summary Generator will do the rest, creating a well-organized, easy-to-follow summary that will help you get your thoughts down on paper quickly and efficiently."
+description: "An AI summary is a quick and easy way to understand the main points of a text. They are usually written in a way that is easy to read, and they focus on the key points that are most important. This makes it easy to stay informed without compromising your time."
 header: "easy summarize your content"
 usage: "This can be used to summarize a text, or to create summary of existing content."
 placeholder: "Type or paste text here..."

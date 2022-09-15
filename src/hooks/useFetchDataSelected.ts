@@ -30,7 +30,8 @@ const useFetchDataSelected = async (
       ? (params["frequencyPenalty"] = fieldValues.frequencyPenalty)
       : null;
     fieldValues.company
-      ? (params["company"] = fieldValues.businessNameValue)
+      ? (params["company"] = fieldValues.businessNameValue) ||
+        (params["company"] = fieldValues.companyValue)
       : null;
     fieldValues.keywordValue
       ? (params["keyword"] = fieldValues.keywordValue)

@@ -9,6 +9,7 @@ import FooterEditorBar from "./FooterEditorBar";
 import { selectedText, serialize } from "hooks/currentSelectEditor";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentWordRange } from "slices/editorParams";
+import Box from "@mui/material/Box";
 
 const HOTKEYS = {
   "mod+b": "bold",
@@ -130,57 +131,53 @@ const ChildText = (props) => {
   // );
 
   return (
-    <>
-      <CardContent>
-        <Grid
-          sx={{
-            boxSizing: "border-box",
-            fontSize: "1em",
-            padding: "0.5em",
-            lineHeight: "1.5rem",
-            marginLeft: "0.1rem",
-            marginRight: "0.1rem",
-            marginBottom: "0.2rem",
-            border: (theme) => `2px solid ${theme.palette.divider}`,
-            borderRadius: (theme) => `calc(1px * ${theme.shape.borderRadius})`,
-            background: (theme) => theme.palette.background.default,
-          }}
-          container
-          direction='row'
-          justifyContent='center'
-          alignItems='flex-end'
-        >
-          <Grid item xs={12}>
-            <Slate
-              editor={editor2}
-              value={value2}
-              onChange={(value) => Editor2HandleValue(value)}
-            >
-              <Editable
-                spellCheck
-                onKeyDown={(event) => {
-                  for (const hotkey in HOTKEYS) {
-                    if (isHotkey(hotkey, event as any)) {
-                      event.preventDefault();
-                      if (hotkey === "mod+a") {
-                        Transforms.select(editor2, {
-                          anchor: Editor.start(editor2, []),
-                          focus: Editor.end(editor2, []),
-                        });
-                      }
+    <CardContent>
+      <Box
+        sx={{
+          boxSizing: "border-box",
+          fontSize: "1em",
+          lineHeight: "1.5rem",
+          boxShadow: (theme) => `0 0 0 2px ${theme.palette.divider}`,
+          borderRadius: (theme) => `calc(1px * ${theme.shape.borderRadius})`,
+          background: (theme) => theme.palette.background.default,
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
+          pb: 0.5,
+          pt: 1,
+          px: 1,
+        }}
+      >
+        <Box>
+          <Slate
+            editor={editor2}
+            value={value2}
+            onChange={(value) => Editor2HandleValue(value)}
+          >
+            <Editable
+              spellCheck
+              onKeyDown={(event) => {
+                for (const hotkey in HOTKEYS) {
+                  if (isHotkey(hotkey, event as any)) {
+                    event.preventDefault();
+                    if (hotkey === "mod+a") {
+                      Transforms.select(editor2, {
+                        anchor: Editor.start(editor2, []),
+                        focus: Editor.end(editor2, []),
+                      });
                     }
                   }
-                }}
-              />
-            </Slate>
-          </Grid>
-          <FooterEditorBar
-            editor={editor2}
-            handleTranser={TransferingToMainEditor}
-          />
-        </Grid>
-      </CardContent>
-    </>
+                }
+              }}
+            />
+          </Slate>
+        </Box>
+        <FooterEditorBar
+          editor={editor2}
+          handleTranser={TransferingToMainEditor}
+        />
+      </Box>
+    </CardContent>
   );
 };
 

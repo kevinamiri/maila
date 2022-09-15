@@ -12,6 +12,7 @@ import CopyToClipboard from "../subcomponents/CopyToClipboard";
 import { serialize } from "../../hooks/currentSelectEditor";
 import Play from "components/subcomponents/Play";
 import ButtonPostData from "./button-post-data";
+import Box from "@mui/material/Box";
 // @refresh reset
 
 const TotalCharacters = styled("div")(({ theme }) => ({
@@ -51,7 +52,13 @@ export const FooterEditorBar = ({
     serialize(editor).length > 15000 ? TotalCharactersWarning : TotalCharacters;
 
   return (
-    <>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+      }}
+    >
       <Divider
         orientation='horizontal'
         component='hr'
@@ -61,56 +68,60 @@ export const FooterEditorBar = ({
           marginTop: "1.5rem",
         }}
       />
-      <Grid item xs={11} container direction='row' alignItems='flex-end'>
-        {disabled ? "" : <PlusButton onClick={handleTranser} />}
-        <CopyToClipboard editor={editor} />
-        <ButtonPostData editor={editor} />
-        {voice ? <Play /> : ""}
-      </Grid>
-      <Grid
-        item
+      <Box
         sx={{
           display: "flex",
-          justifyContent: "flex-end",
-          maxHeight: "20px",
+          marginTop: "0.4rem",
         }}
-        xs={1}
       >
-        <ToggleButtonList
-          title='Undo'
-          icon={<UndoIcon fontSize='inherit' />}
-          onClick={(event) => {
-            // event.preventDefault();
-            editor.undo();
+        <Box sx={{ flexGrow: 1 }}>
+          {disabled ? "" : <PlusButton onClick={handleTranser} />}
+          <CopyToClipboard editor={editor} />
+          <ButtonPostData editor={editor} />
+          {voice ? <Play /> : ""}
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
           }}
-          disabled={editor.history.undos.length == 0}
-        />
-        <ToggleButtonList
-          title='Redo'
-          icon={<RedoIcon fontSize='inherit' />}
-          onClick={(event) => {
-            event.preventDefault();
-            editor.redo();
-          }}
-          disabled={editor.history.redos.length == 0}
-        />
-        <ToggleButtonList
-          title='Number of Characters'
-          icon={
-            <Typography
-              sx={{
-                mb: 0,
-              }}
-              variant='caption'
-              display='block'
-              gutterBottom
-            >
-              <CharCount>{serialize(editor).length}</CharCount>
-            </Typography>
-          }
-        />
-      </Grid>
-    </>
+        >
+          <ToggleButtonList
+            title='Undo'
+            icon={<UndoIcon fontSize='inherit' />}
+            onClick={(event) => {
+              // event.preventDefault();
+              editor.undo();
+            }}
+            disabled={editor.history.undos.length == 0}
+          />
+          <ToggleButtonList
+            title='Redo'
+            icon={<RedoIcon fontSize='inherit' />}
+            onClick={(event) => {
+              event.preventDefault();
+              editor.redo();
+            }}
+            disabled={editor.history.redos.length == 0}
+          />
+          <ToggleButtonList
+            title='Number of Characters'
+            icon={
+              <Typography
+                sx={{
+                  mb: 0,
+                }}
+                variant='caption'
+                display='block'
+                gutterBottom
+              >
+                <CharCount>{serialize(editor).length}</CharCount>
+              </Typography>
+            }
+          />
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
