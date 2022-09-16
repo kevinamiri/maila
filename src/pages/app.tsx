@@ -67,7 +67,7 @@ export default function App() {
   console.log(location.pathname);
   React.useEffect(() => {
     redirectToList();
-  }, []);
+  }, [location.pathname]);
 
   const { enqueueSnackbar } = useSnackbar();
   /**
