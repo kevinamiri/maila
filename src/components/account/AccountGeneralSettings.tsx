@@ -33,6 +33,7 @@ interface userinfo {
   userType: number;
   characters: any;
   useremail: string;
+  tokenUsage: any;
   permission: string;
   accesscode: string;
   loading: boolean;
@@ -43,6 +44,7 @@ const AccountGeneralSettings = () => {
     points: 1,
     userType: 1,
     characters: 0,
+    tokenUsage: 0,
     useremail: "",
     permission: "Free",
     accesscode: "",
@@ -80,6 +82,8 @@ const AccountGeneralSettings = () => {
             <SimpleState
               label='Characters usage'
               number={!progress.loading ? progress.characters : "Loading..."}
+              label2='Token usage'
+              number2={!progress.loading ? progress.tokenUsage : "Loading..."}
             />
           </CardContent>
         </Card>
