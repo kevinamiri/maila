@@ -80,15 +80,19 @@ const UserCardDetailsList = (props) => {
           </TableRow>
         </TableBody>
       </Table>
-      <Box
-        sx={{
-          alignItems: "flex-start",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        {upgradeLabel && <CheckoutButton buttonTextLabel={upgradeLabel} />}
-      </Box>
+
+      {upgradeLabel && (
+        <Box
+          sx={{
+            alignItems: "flex-start",
+            display: "flex",
+            flexDirection: "column",
+            p: 2,
+          }}
+        >
+          <CheckoutButton buttonTextLabel={upgradeLabel} />
+        </Box>
+      )}
     </Card>
   );
 };

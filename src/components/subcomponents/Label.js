@@ -37,6 +37,7 @@ const Label = (props) => {
 
   return (
     <LabelRoot
+      component="span"
       styleProps={styleProps}
       {...other}
     >

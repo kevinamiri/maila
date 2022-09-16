@@ -126,7 +126,6 @@ const Redeemer = (props) => {
           <Collapse in={!open}>
             <FormHelperText>{message}</FormHelperText>
           </Collapse>
-          <Divider sx={{ my: 2 }} />
           <TransitionAlerts
             state={[open, setOpen]}
             color={data["data"] ? "success" : "warning"}

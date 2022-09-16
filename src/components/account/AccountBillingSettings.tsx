@@ -151,168 +151,175 @@ const AccountBillingSettings = (props) => {
   let ingo = progress.map((items) => items.current_period_start);
 
   return (
-    <Card {...props}>
-      <CardHeader title='Redeem a Discount Voucher' />
-      <Divider />
-      <CardContent>
-        <Redeemer />
-      </CardContent>
-      <CardHeader title='Manage your plan' />
-      <Divider />
-      <CardContent>
-        {progress[0] && progress[0].status ? (
-          progress.map((items, inx) => (
-            <Paper key={inx} variant='outlined' sx={{ mb: 2 }}>
-              <Box
-                sx={{
-                  alignItems: {
-                    lg: "center",
-                    xs: "flex-start",
-                  },
-                  display: "flex",
-                  flexWrap: "wrap",
-                  justifyContent: "space-between",
-                  flexDirection: {
-                    lf: "row",
-                    xs: "column-reverse",
-                  },
-                  p: 3,
-                  m: 2,
-                }}
-              >
-                <div>
-                  <Typography color='textPrimary' display='inline' variant='h4'>
-                    {items.plan.amount && items.plan.amount / 100}{" "}
-                    {items.plan.amount && items.plan.currency}
-                  </Typography>
-                  <Typography
-                    color='textPrimary'
-                    display='inline'
-                    variant='subtitle1'
-                  ></Typography>
-                </div>
+    <>
+      <Card {...props}>
+        <CardHeader title='Redeem a Discount Voucher' />
+        <Divider />
+        <CardContent>
+          <Redeemer />
+        </CardContent>
+      </Card>
+      <Card sx={{ mt: 2 }}>
+        <CardHeader title='Manage your plan' />
+        <Divider />
+        <CardContent>
+          {progress[0] && progress[0].status ? (
+            progress.map((items, inx) => (
+              <Paper key={inx} variant='outlined' sx={{ mb: 2 }}>
                 <Box
                   sx={{
-                    alignItems: "center",
+                    alignItems: {
+                      lg: "center",
+                      xs: "flex-start",
+                    },
                     display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "space-between",
+                    flexDirection: {
+                      lf: "row",
+                      xs: "column-reverse",
+                    },
+                    p: 3,
+                    m: 2,
                   }}
                 >
-                  <Typography
-                    color='textSecondary'
-                    sx={{ ml: 1 }}
-                    variant='overline'
-                  >
-                    {items.plan.object && items.plan.object}
-                  </Typography>
-                </Box>
-              </Box>
-              <Divider />
-              <Box
-                sx={{
-                  alignItems: {
-                    lg: "center",
-                    xs: "flex-start",
-                  },
-                  display: "flex",
-                  flexWrap: "wrap",
-                  justifyContent: "space-between",
-                  flexDirection: {
-                    lg: "row",
-                    xs: "column-reverse",
-                  },
-                  p: 3,
-                }}
-              >
-                <div>
-                  <Typography color='textPrimary' variant='body2'>
-                    Start :{" "}
-                    {(new Date(items.current_period_start * 1000) + "").slice(
-                      0,
-                      24
-                    )}
-                  </Typography>
-                  <Typography color='textPrimary' variant='body2'>
-                    End :{" "}
-                    {(new Date(items.current_period_end * 1000) + "").slice(
-                      0,
-                      24
-                    )}
-                  </Typography>
-                </div>
-                <div>
-                  <Typography color='textPrimary' variant='body2'>
-                    Status :{" "}
-                    {items.status === "active" ? (
-                      <Label color='success'> Active</Label>
-                    ) : (
-                      items.status
-                    )}
-                  </Typography>
-                  <Typography color='textPrimary' variant='body2'>
-                    {
-                      <Typography color='textPrimary' variant='body2'>
-                        {items.canceled_at
-                          ? "canceled_at: " +
-                            (new Date(items.canceled_at * 1000) + "").slice(
-                              0,
-                              24
-                            )
-                          : ""}
-                      </Typography>
-                    }
-                  </Typography>
-                </div>
-                <div>
-                  {items.plan.canceled_at && (
-                    <Typography color='textPrimary' variant='body2'>
-                      canceled_at
+                  <div>
+                    <Typography
+                      color='textPrimary'
+                      display='inline'
+                      variant='h4'
+                    >
+                      {items.plan.amount && items.plan.amount / 100}{" "}
+                      {items.plan.amount && items.plan.currency}
                     </Typography>
-                  )}
-                </div>
-              </Box>
-            </Paper>
-          ))
-        ) : (
-          <BillingPlanCardContent />
-        )}
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "flex-end",
-            m: 1,
-          }}
-        >
-          <Button
-            color='secondary'
-            size='small'
-            variant='contained'
-            disabled
-            aria-label='cancel'
+                    <Typography
+                      color='textPrimary'
+                      display='inline'
+                      variant='subtitle1'
+                    ></Typography>
+                  </div>
+                  <Box
+                    sx={{
+                      alignItems: "center",
+                      display: "flex",
+                    }}
+                  >
+                    <Typography
+                      color='textSecondary'
+                      sx={{ ml: 1 }}
+                      variant='overline'
+                    >
+                      {items.plan.object && items.plan.object}
+                    </Typography>
+                  </Box>
+                </Box>
+                <Divider />
+                <Box
+                  sx={{
+                    alignItems: {
+                      lg: "center",
+                      xs: "flex-start",
+                    },
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "space-between",
+                    flexDirection: {
+                      lg: "row",
+                      xs: "column-reverse",
+                    },
+                    p: 3,
+                  }}
+                >
+                  <div>
+                    <Typography color='textPrimary' variant='body2'>
+                      Start :{" "}
+                      {(new Date(items.current_period_start * 1000) + "").slice(
+                        0,
+                        24
+                      )}
+                    </Typography>
+                    <Typography color='textPrimary' variant='body2'>
+                      End :{" "}
+                      {(new Date(items.current_period_end * 1000) + "").slice(
+                        0,
+                        24
+                      )}
+                    </Typography>
+                  </div>
+                  <div>
+                    <Typography color='textPrimary' variant='body2'>
+                      Status :{" "}
+                      {items.status === "active" ? (
+                        <Label color='success'> Active</Label>
+                      ) : (
+                        items.status
+                      )}
+                    </Typography>
+                    <Typography color='textPrimary' variant='body2'>
+                      {
+                        <Typography color='textPrimary' variant='body2'>
+                          {items.canceled_at
+                            ? "canceled_at: " +
+                              (new Date(items.canceled_at * 1000) + "").slice(
+                                0,
+                                24
+                              )
+                            : ""}
+                        </Typography>
+                      }
+                    </Typography>
+                  </div>
+                  <div>
+                    {items.plan.canceled_at && (
+                      <Typography color='textPrimary' variant='body2'>
+                        canceled_at
+                      </Typography>
+                    )}
+                  </div>
+                </Box>
+              </Paper>
+            ))
+          ) : (
+            <BillingPlanCardContent />
+          )}
+          <Box
             sx={{
-              m: 2,
+              display: "flex",
+              justifyContent: "flex-end",
+              m: 1,
             }}
           >
-            Cancel
-          </Button>
-          <Button
-            color='primary'
-            size='small'
-            variant='contained'
-            href={"https://buy.stripe.com/5kA7sP6x5fJdeAgfYY"}
-            sx={{
-              m: 2,
-            }}
-            aria-label='upgrade plan'
-            disabled={
-              progress[0] && progress[0].status === "active" ? true : false
-            }
-          >
-            Upgrade Plan
-          </Button>
-        </Box>
-      </CardContent>
-      <Divider />
-    </Card>
+            <Button
+              color='secondary'
+              size='small'
+              variant='contained'
+              disabled
+              aria-label='cancel'
+              sx={{
+                m: 2,
+              }}
+            >
+              Cancel
+            </Button>
+            <Button
+              color='primary'
+              size='small'
+              variant='contained'
+              href={"https://buy.stripe.com/5kA7sP6x5fJdeAgfYY"}
+              sx={{
+                m: 2,
+              }}
+              aria-label='upgrade plan'
+              disabled={
+                progress[0] && progress[0].status === "active" ? true : false
+              }
+            >
+              Upgrade Plan
+            </Button>
+          </Box>
+        </CardContent>
+      </Card>
+    </>
   );
 };
 
