@@ -1,74 +1,43 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import Chip from "@mui/material/Chip";
+import CardHeader from "@mui/material/CardHeader";
+import Divider from "@mui/material/Divider";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableRow from "@mui/material/TableRow";
 
 interface StatesProps {
   label?: string;
-  number?: Number;
-  precent?: Number;
+  number?: string;
 }
 
 const SimpleState: React.FC<StatesProps> = ({
   label = "Totall number of token usage",
-  number = 1,
-  precent = 1,
+  number = "0",
 }: StatesProps) => (
-  <Box
-    sx={{
-      backgroundColor: "background.default",
-      m: 2,
-      borderRadius: (theme) => theme.shape.borderRadius,
-    }}
-  >
+  <Box>
     <Card>
-      <Grid alignItems='center' container justifyContent='space-between'>
-        <Grid item xs={12}>
-          <Typography
-            color='textSecondary'
-            component='h2'
-            gutterBottom
-            variant='overline'
-          >
-            {label}
-          </Typography>
-        </Grid>
-        <Grid
-          item
-          sx={{
-            pr: 3,
-            pb: 3,
-            pl: 1,
-            pt: 1,
-          }}
-          xs={8}
-        >
-          <Typography color='textPrimary' variant='h5'>
-            {`${number}`}
-          </Typography>
-        </Grid>
-        <Grid
-          sx={{
-            pr: 3,
-            pb: 3,
-            pl: 1,
-            pt: 1,
-          }}
-          item
-          xs={4}
-        >
-          <Chip
-            sx={{
-              borderRadius: 4,
-            }}
-            label={precent + "%"}
-            color='primary'
-            size='small'
-          />
-        </Grid>
-      </Grid>
+      <CardHeader title={"Usage"} />
+      <Divider />
+      <Table>
+        <TableBody>
+          <TableRow>
+            <TableCell>
+              <Typography color='textPrimary' variant='subtitle2'>
+                {label}
+              </Typography>
+            </TableCell>
+            <TableCell>
+              <Typography color='textSecondary' variant='body2'>
+                {`${number}`}
+              </Typography>
+            </TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
     </Card>
   </Box>
 );
