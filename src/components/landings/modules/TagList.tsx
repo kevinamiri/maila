@@ -2,7 +2,7 @@ import React from "react";
 import { kebabCase } from "lodash";
 import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
-import Link from "../../Link";
+import AccessibleLink from "../../Link";
 import TagIcon from "@mui/icons-material/Tag";
 
 interface tagListsProps {
@@ -21,7 +21,7 @@ const TagList = ({ tags, langKey }: tagListsProps) => {
     >
       {tags &&
         tags.map((tag, i) => (
-          <Link
+          <AccessibleLink
             sx={{
               borderBottom: "none",
               textDecoration: "none",
@@ -31,7 +31,6 @@ const TagList = ({ tags, langKey }: tagListsProps) => {
               },
             }}
             key={i}
-            component={"span"}
             to={`/${langKey}/tags/${kebabCase(tag)}/`}
           >
             <Chip
@@ -44,7 +43,7 @@ const TagList = ({ tags, langKey }: tagListsProps) => {
               size='small'
               clickable
             />
-          </Link>
+          </AccessibleLink>
         ))}
     </Box>
   );

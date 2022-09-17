@@ -12,19 +12,18 @@ const PostListItem = ({ post }) => {
     <Box sx={{ maxWidth: 450, m: 1 }}>
       <Card>
         <CardContent>
-          <Time date={post.frontmatter.date} />
+          <Time date={post?.frontmatter?.date && post.frontmatter.date} />
           <Typography gutterBottom variant='h2'>
             <Link
-              component='a'
-              href={post.fields.slug}
+              href={post?.fields?.slug && post.fields.slug}
               sx={{ fontSize: "16px" }}
               size='small'
             >
-              {post.frontmatter.title}
+              {post?.frontmatter?.title && post.frontmatter.title}
             </Link>
           </Typography>
           <Typography variant='body1' color='textSecondary'>
-            {post.excerpt}
+            {post?.excerpt && post.excerpt}
           </Typography>
         </CardContent>
       </Card>
