@@ -33,11 +33,21 @@ section7:
 section8:
     title: "Clustering content"
     description: "Cluster documents into groups easily and identify similar content."
+
+section10:
+  caption:  It’s as easy as selecting a template, and letting us know the name of your product and what you do.
+  step1: 1 - Pick a template
+  describe1: Select a type of copy from a range of options including headlines, blog intros, product descriptions, and many more
+  step2: 2 - Enter your details
+  describe2: Enter the name of your product and what you do, and we’ll generate copy for you based on your input
+  step3: 3 - Get your results
+  describe3: Get your results in seconds, you can also edit it and run the same query as many times as you want.
+
 tables:
   button: "Sign up"
   link: "/app"
-  header: "Pricing"
-  caption: "Plans"
+  header: "An affordable, yet powerful AI copywriting platform"
+  caption: "Maila offers a cost-effective plan that allows its users to generate up to 100K characters (~ 25,000 words) per month free of cost, across various domains and contexts. In case the monthly usage exceeds 100K characters, users can opt for the monthly premium plan to continue generating content as per their needs."
   cta: "Do you have a special case?"
   cta_link: "/contact"
   cta_button: "Contact us"
@@ -52,16 +62,16 @@ plans:
         - 25,000 words per month
         - Access to free templates
   - growth:
-      name: "Growth"
-      price: "19$/month"
+      name: "Premium"
+      price: "9.8$/month"
       features:
         - Ideal for start-ups & small businesses
         - Unlimited words/mo
         - Access all templates
         - 24/7 support
   - corporate:
-      name: "Corporate"
-      price: "39$/month"
+      name: "Enterprise"
+      price: "19$/month"
       features:
         - Ideal for large companies
         - Unlimited words/mo

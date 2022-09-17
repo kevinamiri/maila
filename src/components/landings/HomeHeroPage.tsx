@@ -103,6 +103,7 @@ const HomeHeroPage: React.FC<HomeHeroPageProps> = ({
                   sx={{ mt: 1 }}
                   color='text.secondary'
                   variant='body2'
+                  component='h2'
                 >
                   {cta}
                 </Typography>

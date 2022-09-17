@@ -38,11 +38,20 @@ export const Pricing = ({ tables, plans }) => {
         <Typography
           align='center'
           color='success.main'
-          sx={{ mb: 5 }}
-          variant='h2'
-          component='h2'
+          sx={{ mb: 3 }}
+          variant='h3'
+          component='h3'
         >
           {tables.header && tables.header}
+        </Typography>
+        <Typography
+          align='center'
+          color='textSecondary'
+          sx={{ mb: 5 }}
+          variant='body1'
+          component='p'
+        >
+          {tables.caption && tables.caption}
         </Typography>
         <Grid container spacing={2} sx={{ mb: 5 }}>
           {plans &&
