@@ -13,11 +13,26 @@ section1:
     title: "Simplifying content"
     description: "Simplify your articles, essays and reports with advanced artificial intelligence."
 section2:
-    title: " Translating content"
-    description: "Translate your articles, essays and reports from one language to another."
+    title: "Translating content"
+    description: "Translate your documents into another language with high accuracy, built on top of advanced language models like GPT-3"
 section3:
-    title: " Fixing errors"
-    description: "Improve the quality of your content by fixing grammar errors, spelling mistakes and stylistic errors."
+    title: "Summarizing content"
+    description: "Summarize your documents and extract the key points with built in intelligence."
+section4:
+    title: "Revising content"
+    description: "Review and refine your documents with AI powered suggestions."
+section5:
+    title: "Generating content"
+    description: "Generate content for your brand with AI powered tools."
+section6:
+    title: "Classifying content"
+    description: "Classify your documents into categories with built in intelligence."
+section7:
+    title: "Analyzing content"
+    description: "Analyze your documents and extract key insights with built in intelligence."
+section8:
+    title: "Clustering content"
+    description: "Cluster documents into groups easily and identify similar content."
 tables:
   button: "Sign up"
   link: "/app"
