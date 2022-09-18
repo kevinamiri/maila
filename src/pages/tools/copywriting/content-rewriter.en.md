@@ -12,7 +12,7 @@ slug: /en/tools/copywriting/content-rewriter
 lang: en
 icon: "rewriter"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "1020"
 product_type: "19"

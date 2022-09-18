@@ -12,7 +12,7 @@ slug: "/sv/tools/copywriting/content-rewriter"
 lang: "sv"
 icon: "rewriter"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 product_type: "19"
 url: "/app/content-rewriter"
