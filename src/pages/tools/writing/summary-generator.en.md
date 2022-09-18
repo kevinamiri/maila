@@ -12,10 +12,10 @@ slug: /en/tools/writing/summary-generator
 lang: en
 icon: "outlineDoc"
 hasCustomTemplate: false
-tone: true
+tone: false
 templateKey: 'tools-body'
 jsonId: "261"
-product_type: "53"
+product_type: "26"
 url: /app/summary
 ---
 

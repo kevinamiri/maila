@@ -1,19 +1,19 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
+// import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import Label from "../subcomponents/Label";
 import usePayInfo from "../../hooks/usePayInfo";
 import BillingPlanCardContent from "./BillingPlanCardContent";
 import * as Yup from "yup";
 import { Formik } from "formik";
 import Redeemer from "./Redeemer";
+import { SeverityPill } from "components/severity-pill";
 
 const plans = [
   {
@@ -250,7 +250,7 @@ const AccountBillingSettings = (props) => {
                     <Typography color='textPrimary' variant='body2'>
                       Status :{" "}
                       {items.status === "active" ? (
-                        <Label color='success'> Active</Label>
+                        <SeverityPill color='success'> Active</SeverityPill>
                       ) : (
                         items.status
                       )}

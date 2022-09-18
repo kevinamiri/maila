@@ -5,11 +5,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import { Auth } from "aws-amplify";
-import Label from "../subcomponents/Label";
 import UserCardDetailsList from "./UserCardDetailsList";
 import SimpleState from "../subcomponents/SimpleState";
 import Typography from "@mui/material/Typography";
 import LinearProgress from "@mui/material/LinearProgress";
+import { SeverityPill } from "components/severity-pill";
 
 export function LinearProgressBalance(props) {
   return (
@@ -103,12 +103,15 @@ const AccountGeneralSettings = () => {
               progress.loading ? (
                 "Loading..."
               ) : progress.userType === 3 ? (
-                <Label color='success'> Premium</Label>
+                <SeverityPill color='success'> Premium</SeverityPill>
               ) : progress.userType === 2 ? (
-                <Label color='primary'> Premium subscription</Label>
+                <SeverityPill color='primary'>
+                  {" "}
+                  Premium subscription
+                </SeverityPill>
               ) : progress.userType === 1 ? (
                 <>
-                  <Label color='warning'> Free Trial</Label>
+                  <SeverityPill color='warning'> Free Trial</SeverityPill>
                   <LinearProgressBalance
                     linearValue={(Number(progress.characters) * 100) / 50000}
                     description={descr}
