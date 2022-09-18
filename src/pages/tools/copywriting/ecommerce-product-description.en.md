@@ -1,8 +1,7 @@
 ---
 id: "4083"
 title: "E-commerce Product Description"
-description: "The product descriptions are brief overviews of each product, highlighting key features and benefits. For e-commerce and retail, it's important to think about using clear language, keeping it short and focusing more on optimised SEO keywords. But for other types of businesses, such as lawyers, the important factors to consider are professionalism and customer service. We will help you use AI to generate product descriptions that are tailored to your specific keywords and best suited to your brand."
-header: "Create a unique description that markets the value of your product."
+description: "The product descriptions are brief overviews of each product, highlighting key features and benefits. For e-commerce and retail, it's important to think about using clear language, keeping it short and focusing more on optimized SEO keywords."
 usage: "This can be used to create a product description for e-commerce, e.g. online food deliveries, clothing, etc."
 placeholder: "reusable cup, eco-friendly"
 help_hint: "Write a few keywords about your product; then we'll create a Product Description for the given text."

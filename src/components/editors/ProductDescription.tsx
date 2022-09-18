@@ -162,13 +162,14 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                   engineId
                 />
               )}
-              {extraFields && (
-                <FormRedux
-                  tonsOptions={toneTextField}
-                  labelsLists={labelsLists}
-                  extraFields={extraFields}
-                />
-              )}
+              {extraFields ||
+                (toneTextField && (
+                  <FormRedux
+                    tonsOptions={toneTextField}
+                    labelsLists={labelsLists}
+                    extraFields={extraFields}
+                  />
+                ))}
               <Suspense fallback={<div>Loading...</div>}>
                 <FormHelperText sx={{ mb: 2 }}>{instructHelp}</FormHelperText>
                 <MainSlateEditor

@@ -14,7 +14,7 @@ icon: "ideasBrainstorm"
 hasCustomTemplate: false
 hasCustomTextArea: true
 editor_height: 150
-tone: true
+tone: false
 templateKey: 'tools-body'
 jsonId: "6121"
 product_type: "53"
