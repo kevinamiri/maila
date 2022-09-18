@@ -3,10 +3,10 @@ module.exports = {
   P1AN: [
     {
       name: "Free",
-      price: "25,000",
+      price: "10,000",
       features: [
         "Ideal for individuals",
-        "25,000 words per month",
+        "10,000 words per month",
         "Access to free templates",
       ],
     },

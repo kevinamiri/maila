@@ -47,7 +47,7 @@ tables:
   button: "Sign up"
   link: "/app"
   header: "An affordable, yet powerful AI copywriting platform"
-  caption: "Maila offers a cost-effective plan that allows its users to generate up to 100K characters (~ 25,000 words) per month free of cost, across various domains and contexts. In case the monthly usage exceeds 100K characters, users can opt for the monthly premium plan to continue generating content as per their needs."
+  caption: "Maila offers a cost-effective plan that allows its users to generate up to 50K characters (~ 10,000 words) per month free of cost, across various domains and contexts. In case the monthly usage exceeds 50K characters, users can opt for the monthly premium plan to continue generating content as per their needs."
   cta: "Do you have a special case?"
   cta_link: "/contact"
   cta_button: "Contact us"
@@ -59,7 +59,7 @@ plans:
       price: "Free"
       features:
         - Ideal for individuals
-        - 25,000 words per month
+        - 10K words per month
         - Access to free templates
   - growth:
       name: "Premium"
@@ -100,7 +100,7 @@ B100:
   - "Use powerful tools to create a strong voice for your content landing pages."
 H0121: "Maila.AI is an AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
 T0152: "AI Copywriting & AI Writing Assistant"
-H01051: "Start writing with your first 25,000 words free trial and see if your work improves."
+H01051: "Start writing with your first 10,000 words free trial and see if your work improves."
 H01047: "These results are pre-generated and fully empowered by AI"
 H0118:
   A0117q:

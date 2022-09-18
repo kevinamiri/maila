@@ -2,7 +2,7 @@ module.exports = {
   P1AN: [
     {
       nome: "Individual",
-      preço: "25,000",
+      preço: "10,000",
       características: [
         "7 dias de uso livre (10.000 palavras)",
         "Acesse todos os idiomas",

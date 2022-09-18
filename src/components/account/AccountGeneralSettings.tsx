@@ -72,7 +72,7 @@ const AccountGeneralSettings = () => {
     datasource().then(setProgress);
   }, []);
 
-  const descr = `${Math.round(Number(progress.characters) / 4)} of 25000 words`;
+  const descr = `${Math.round(Number(progress.characters) / 4)} of 10000 words`;
 
   return (
     <Grid container spacing={2}>
@@ -110,7 +110,7 @@ const AccountGeneralSettings = () => {
                 <>
                   <Label color='warning'> Free Trial</Label>
                   <LinearProgressBalance
-                    linearValue={(Number(progress.characters) * 100) / 100000}
+                    linearValue={(Number(progress.characters) * 100) / 50000}
                     description={descr}
                   />
                 </>

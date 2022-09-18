@@ -2,10 +2,10 @@ module.exports = {
   P1AN: [
     {
       name: "Vapaa",
-      price: "25,000",
+      price: "10,000",
       features: [
         "Sopii yksittäisille käyttäjille",
-        "25,000 sanaa/kk",
+        "10,000 sanaa/kk",
         "Pääsy ilmaisiin malleihin",
       ],
     },

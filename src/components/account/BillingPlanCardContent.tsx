@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 const planOptions = [
   {
     id: "1",
-    description: "free 25,000 words",
+    description: "Free 10,000 word per month",
     label: "Free",
     priceOptions: [
       {
@@ -37,11 +37,11 @@ const planOptions = [
     priceOptions: [
       {
         chargeType: "monthly",
-        amount: "19 Euro",
+        amount: "9.8 USD",
       },
       {
         chargeType: "yearly",
-        amount: "190 Euro",
+        amount: "98 USD",
       },
     ],
     value: "Premium Beta",

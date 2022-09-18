@@ -2,10 +2,10 @@ module.exports = {
   P1AN: [
     {
       name: "Gratis",
-      price: "25,000",
+      price: "10,000",
       features: [
         "Perfekt for enkeltpersonforetak",
-        "25,000 ord per måned",
+        "10,000 ord per måned",
         "Tilgang til gratis maler",
       ],
     },
