@@ -17,7 +17,7 @@ editor_height: 200
 tone: true
 templateKey: 'tools-body'
 jsonId: "611"
-product_type: "42"
+product_type: "52"
 url: /app/review
 ---
 
