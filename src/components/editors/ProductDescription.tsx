@@ -23,6 +23,8 @@ import OpenInFullRoundedIcon from "@mui/icons-material/OpenInFullRounded";
 import { useDispatch, useSelector } from "react-redux";
 import { updateExpansion } from "../../slices/ui-states";
 import LanguageOutputsModal from "../../components/subcomponents/language-outputs-modal";
+import Grid from "@mui/material/Grid";
+import MultipleOptions from "components/subcomponents/MultipleOptions";
 
 interface placeholdersList {
   label: string;
@@ -103,7 +105,6 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   };
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
-  console.log(extraFields);
 
   return (
     <>
@@ -162,14 +163,17 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                   engineId
                 />
               )}
-              {extraFields ||
-                (toneTextField && (
-                  <FormRedux
-                    tonsOptions={toneTextField}
-                    labelsLists={labelsLists}
-                    extraFields={extraFields}
-                  />
-                ))}
+              {extraFields && (
+                <FormRedux
+                  labelsLists={labelsLists}
+                  extraFields={extraFields}
+                />
+              )}
+              {toneTextField && (
+                <Box sx={{ mt: 2 }}>
+                  <MultipleOptions />
+                </Box>
+              )}
               <Suspense fallback={<div>Loading...</div>}>
                 <FormHelperText sx={{ mb: 2 }}>{instructHelp}</FormHelperText>
                 <MainSlateEditor

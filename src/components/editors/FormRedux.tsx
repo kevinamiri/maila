@@ -13,7 +13,7 @@ import {
 } from "slices/fieldsValue";
 // import TextAreaRedux from "./textAreaRedux";
 
-const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
+const FormRedux = ({ labelsLists, extraFields }) => {
   // order of this dispatchers are important and we had defined them before in the mardown file
   const dispatchers = [
     {
@@ -80,7 +80,7 @@ const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
         container
         spacing={2}
         direction='row'
-        justifyContent='center'
+        justifyContent='flex-start'
         alignItems='center'
       >
         {fields &&
@@ -130,16 +130,6 @@ const FormRedux = ({ tonsOptions, labelsLists, extraFields }) => {
               </Grid>
             );
           })}
-
-        <Grid
-          item
-          sx={{
-            mb: 2,
-          }}
-          xs={12}
-        >
-          {tonsOptions && <MultipleOptions />}
-        </Grid>
       </Grid>
     </>
   );

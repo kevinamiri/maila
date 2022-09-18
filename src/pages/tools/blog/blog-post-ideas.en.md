@@ -14,11 +14,23 @@ icon: "blogPostHeaderIcon"
 hasCustomTemplate: false
 hasCustomTextArea: true
 editor_height: 200
-tone: false
+extraFields:
+  outputType:
+    name: "outputType"
+    id: 3
+    label: "Type of Subject Line"
+    type: "toggleButtons"
+    options:
+      - "questions"
+      - "clickbait"
+    placeholder: "questions"
+tone: true
 templateKey: 'tools-body'
 url: /app/blog-post-ideas
 jsonId: "4409"
 product_type: "28"
+image: ../../blog/2022/images/maila-email-subject.png
+
 ---
 # AI Blog Post ideas Generator
 
