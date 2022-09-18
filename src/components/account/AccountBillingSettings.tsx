@@ -305,7 +305,7 @@ const AccountBillingSettings = (props) => {
               color='primary'
               size='small'
               variant='contained'
-              href={"https://buy.stripe.com/5kA7sP6x5fJdeAgfYY"}
+              href={"https://buy.stripe.com/cN27sP08H1Sn1Nu9AC"}
               sx={{
                 m: 2,
               }}

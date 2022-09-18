@@ -12,7 +12,7 @@ const CheckoutButton = ({ buttonTextLabel }: CheckoutButtonProps) => {
       color='primary'
       startIcon={<UpgradeIcon fontSize='small' />}
       variant='text'
-      href={"https://buy.stripe.com/5kA7sP6x5fJdeAgfYY"}
+      href={"https://buy.stripe.com/cN27sP08H1Sn1Nu9AC"}
     >
       {buttonTextLabel}
     </Button>
