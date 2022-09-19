@@ -157,6 +157,16 @@ const slice = createSlice({
       };
       return updatedObject;
     },
+    updateLoadFromUrl: (
+      state: typedFieldsValue,
+      action: PayloadAction<number>
+    ) => {
+      const updatedObject = {
+        ...state,
+        loadFromUrl: action.payload,
+      };
+      return updatedObject;
+    },
     updateOutputShape: (
       state: typedFieldsValue,
       action: PayloadAction<string>
@@ -261,4 +271,9 @@ export const updateOutputShape =
   (x): AppThunk =>
   async (dispatch): Promise<void> => {
     dispatch(slice.actions.updateOutputShape(x));
+  };
+export const updateLoadFromUrl =
+  (x): AppThunk =>
+  async (dispatch): Promise<void> => {
+    dispatch(slice.actions.updateLoadFromUrl(x));
   };

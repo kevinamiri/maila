@@ -13,7 +13,8 @@ lang: en
 icon: "searchKeyword"
 hasCustomTemplate: false
 hasCustomTextArea: true
-editor_height: 100
+editor_height: 500
+loadFromUrl: true
 extraFields:
   company:
     name: "url"

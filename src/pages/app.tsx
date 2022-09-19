@@ -226,6 +226,7 @@ export default function App() {
                         path={path}
                         extraFields={product.extraFields}
                         toneTextField={product.tone}
+                        loadFromUrl={product.loadFromUrl}
                       />
                     );
                   })}

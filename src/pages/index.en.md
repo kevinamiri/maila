@@ -66,7 +66,7 @@ plans:
       price: "9.8$/month"
       features:
         - Ideal for start-ups & small businesses
-        - Unlimited words/mo
+        - 1M words/mo
         - Access all templates
         - 24/7 support
   - corporate:

@@ -24,6 +24,7 @@ export interface typedFieldsValue {
   presencePenalty?: number | null;
   frequencyPenalty?: number | null;
   engineId?: number | null;
+  loadFromUrl?: any;
 }
 
 export const initialState: typedFieldsValue = {
@@ -34,6 +35,7 @@ export const initialState: typedFieldsValue = {
   temperature: null,
   presencePenalty: null,
   frequencyPenalty: null,
+  loadFromUrl: "",
   audienceValue: "",
   businessNameValue: "",
   featureValue: "",

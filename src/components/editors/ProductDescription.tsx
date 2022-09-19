@@ -23,8 +23,8 @@ import OpenInFullRoundedIcon from "@mui/icons-material/OpenInFullRounded";
 import { useDispatch, useSelector } from "react-redux";
 import { updateExpansion } from "../../slices/ui-states";
 import LanguageOutputsModal from "../../components/subcomponents/language-outputs-modal";
-import Grid from "@mui/material/Grid";
 import MultipleOptions from "components/subcomponents/MultipleOptions";
+import { LoadFromUrl } from "./loadFromUrl";
 
 interface placeholdersList {
   label: string;
@@ -53,6 +53,7 @@ export interface ProductGenerationProps {
   instructHelp?: String | any;
   component?: React.ComponentType<{}>;
   editorType?: "document" | "draft";
+  loadFromUrl?: boolean;
 }
 
 const ProductDescription: React.FC<ProductGenerationProps> = ({
@@ -69,6 +70,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   example,
   tunningOptions,
   editorType = "document",
+  loadFromUrl,
 }: ProductGenerationProps) => {
   // const editor = useMemo(() => withHistory(withReact(createEditor())), []);
   const editors = useEditors();
@@ -173,6 +175,14 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
                 <Box sx={{ mt: 2 }}>
                   <MultipleOptions />
                 </Box>
+              )}
+              {loadFromUrl && (
+                <LoadFromUrl
+                  editor={editor}
+                  editor2={editor2}
+                  editor3={editor3}
+                  editor4={editor4}
+                />
               )}
               <Suspense fallback={<div>Loading...</div>}>
                 <FormHelperText sx={{ mb: 2 }}>{instructHelp}</FormHelperText>
