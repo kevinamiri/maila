@@ -2,7 +2,7 @@
 id: "6211"
 title: "Summary Generator"
 description: "An AI summary is a quick and easy way to understand the main points of a text. They are usually written in a way that is easy to read, and they focus on the key points that are most important. This makes it easy to stay informed without compromising your time."
-header: "easy summarize your content"
+header: "Quickly summarize a text in a few sentences"
 usage: "This can be used to summarize a text, or to create summary of existing content."
 placeholder: "Type or paste text here..."
 help_hint: "Type or paste in some text, and we'll summarize it for you."

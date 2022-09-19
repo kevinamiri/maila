@@ -2,7 +2,7 @@
 id: "1314"
 title: "Promotional Email"
 description: "An email promotion is a type of email marketing that is used to promote products or services. Email promotions are often sent to a list of subscribers, and they can be used to promote sales, events, or new products. Email promotions can also be used to build relationships with customers or to cultivate loyalty."
-header: "Generate a promotional email that sells your products or services."
+header: "Generate a promotional email that is tailored to your brand."
 usage: "Email promotions are a type of email marketing that can be used to promote sales, events, or new products. The following generator can help you design and brainstrom a promotional email that is closely aligned with your brand."
 placeholder: "reusable cup of coffee, eco-friendly, 20% discount, free shipping"
 help_hint: "Write a few keywords about your email and we'll turn it into a campaign message."

@@ -2,9 +2,9 @@
 id: "1127"
 title: "Email Generator"
 description: "Email generator allows you to save time when it comes to coming with new email subject lines and email copies, we simply use our highly sophisticated algorithm that uses NLP to replicate a human writing experience. Improve your emails and It helps you save time when writing emails by brainstorming emails ideas"
+header: "Write the first draft of your sales emails and then edit with your own voice."
 usage: "Informal business emails can be used to introduce yourself to a new colleague or business partner. They can also be used to build rapport with someone you have already met."
 placeholder: "New feature in the app is rolling out soon."
-header: "Generate an Informal Business Email to a colleague or business partner."
 help_hint: "What would you like to say, write it down and we'll turn it into an Informal Business Email."
 tags: ["Email"]
 date: "2022-08-24"

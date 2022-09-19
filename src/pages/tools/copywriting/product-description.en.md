@@ -1,8 +1,8 @@
 ---
 id: "198"
 title: "Product Description"
-header: " Create a unique description that markets the value of your product."
 description: "Are you looking for a way to create unique and optimized product descriptions? If so, you may want to consider using AI-powered copywriting. This tool uses AI to generate product descriptions that are tailored to your specific keywords."
+header: "Create a unique description that will help your product stand out"
 placeholder: "reusable cup, eco-friendly"
 usage: "It can be used to create a well-written and informative product description for clothings"
 help_hint: "Write a few paragraphs; then we'll create a Product Description for the given text."

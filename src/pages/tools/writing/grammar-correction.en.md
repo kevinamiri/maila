@@ -1,8 +1,8 @@
 ---
 id: "164"
-title: "Grammar Correction"
+title: "Grammar Checker"
 description: "Grammar correction is the process of identifying and correcting errors in grammar, spelling, and punctuation. This can be done manually or with the help of AI-powered software. AI-powered grammar correction software is able to identify errors in grammar, spelling, and punctuation with the help of Natural Language Processing (NLP). This technology can be used to help improve the quality of writing, whether it be for a website, blog, or even a book."
-header: "Identify and correct errors in grammar, spelling, and punctuation."
+header: "Make your writing error-free"
 usage: "This can be used to improve the quality of writing for a website, blog, or even a book."
 placeholder: "Grammar correction"
 help_hint: "What text do you want to check for errors? We'll use AI to help improve the quality of your writing."

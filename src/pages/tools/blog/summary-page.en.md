@@ -4,7 +4,7 @@ title: "SEO Page Summary (beta)"
 description: "This tool will help you summarize a page or article in a few sentences."
 usage: "Simply enter the URL of the page you want to summarize and Maila will do the rest!"
 placeholder: "https://www.example.com/..."
-header: "https://www.example.com"
+header: "Summarize a page in a few sentences"
 help_hint: "No need to write below, just enter the URL"
 tags: ["Email", "SEO"]
 date: "2022-08-29"

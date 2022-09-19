@@ -2,7 +2,7 @@
 id: "6101"
 title: "Review Generator"
 description: "The AI-Powered Review maker is a tool that uses artificial intelligence to help speed up the review process. It is based on keyword input and can automatically generate reviews for products. This makes it a great tool for reviewers who are busy and need to get their reviews done quickly."
-header: "create a review based on keyowrds"
+header: "quickly generate reviews for based on keywords"
 usage: "It offers a hassle-free way to create product reviews, and provides users with a quick and easy way to generate reviews"
 placeholder: "great service, wonderful food, tasty cheesecake, positive review"
 help_hint: "Enter a keyword to generate a review"

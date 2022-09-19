@@ -2,9 +2,9 @@
 id: "100"
 title: "Tagline Suggestion"
 description: "A tagline is a short, catchy phrase that summarises the key benefit of a product or service. It is often used in advertising and marketing, and it should be able to capture the essence of the company in a few words."
-header: "Use AI to generate a short, catchy phrase that summarises the key benefit of your product or service."
+header: "Use this tool to come up with taglines and strap lines that spark excitement."
 usage: "Use this to create a tagline for your company."
-placeholder: "e.g. The best way to manage your company"
+placeholder: "Enter what your company does, or what you want to sell"
 help_hint: "What is the key benefit of your product or service? Write it down and we'll turn it into a Tagline."
 tags: ["Copywriting", "Brand"]
 date: "2022-03-28"

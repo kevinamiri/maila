@@ -2,7 +2,7 @@
 id: "6101"
 title: "Outline Generator"
 description: "AI Outline Generator is the perfect tool for busy students and professionals who need to quickly generate outlines for their papers and presentations. This AI-powered tool uses natural language processing to automatically generate outline templates based on your input text. Simply enter your text and the AI Outline Generator will do the rest, creating a well-organized, easy-to-follow outline that will help you get your thoughts down on paper quickly and efficiently."
-header: "easy outline your content"
+header: "Write a well-organized outline for your marketing and sales collateral in minutes"
 usage: "This can be used to outline a text, or to create outline of existing content."
 placeholder: "The quick brown fox jumps over the lazy dog."
 help_hint: "Type or paste in some text, and we'll outline it for you."

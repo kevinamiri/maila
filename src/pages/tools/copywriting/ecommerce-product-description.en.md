@@ -2,6 +2,7 @@
 id: "4083"
 title: "E-commerce Product Description"
 description: "The product descriptions are brief overviews of each product, highlighting key features and benefits. For e-commerce and retail, it's important to think about using clear language, keeping it short and focusing more on optimized SEO keywords."
+header: "Write a product description for your e-commerce store"
 usage: "This can be used to create a product description for e-commerce, e.g. online food deliveries, clothing, etc."
 placeholder: "reusable cup, eco-friendly"
 help_hint: "Write a few keywords about your product; then we'll create a Product Description for the given text."

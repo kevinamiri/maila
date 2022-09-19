@@ -24,7 +24,6 @@ const States: FC = () => {
   const writing = products.filter(
     (item) => item.slug.split("/")[3] === "writing"
   );
-  console.log(products);
   const [productLists, setProductLists] = React.useState(products);
   const uTag = unique(products.map((item) => item.slug.split("/")[3]));
   console.log(uTag);
@@ -103,7 +102,7 @@ const States: FC = () => {
                 sx={{ mt: 1 }}
                 variant='caption'
               >
-                {product.description}
+                {product.header}
               </Typography>
             </Box>
           </Grid>

@@ -4,7 +4,7 @@ title: "Email subject line"
 description: "With AI Email Subject Line Generator, you can quickly and easily create great looking email subject lines for your business or personal use."
 usage: "Brainstorm subject lines for your email campaign"
 placeholder: "reusable cup, eco-friendly"
-header: "create a catchy subject line for your campaign"
+header: "create a catchy subject line for your campaign in seconds"
 help_hint: "Any other information, such as keywords or more details about your campaign."
 tags: ["Email", "Email subject line"]
 date: "2022-08-29"

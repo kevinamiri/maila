@@ -2,7 +2,7 @@
 id: "1020"
 title: "Content Rewriter"
 description: "The Content Rewriter is a tool that helps you rewrite and paraphrase your content. It is often used to improve the clarity of your writing, or to make your writing more unique. The Content Rewriter can also help you improve your SEO by rewriting your content to include your target keywords."
-header: "Rewrite and paraphrase your content."
+header: "Rephrase your content in different styles and tones to fit your brand and audience"
 usage: "The Content Rewriter can be used to improve the clarity of your writing, or to make your writing more unique. It can also help you improve your SEO by rewriting your content to include your target keywords."
 placeholder: "Original content goes here."
 help_hint: "Write or paste your content into the text box"

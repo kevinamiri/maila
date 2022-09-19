@@ -2,7 +2,7 @@
 id: "4409"
 title: "Blog Post Ideas"
 description: "Brainstorming a catchy headline for your blog post can be tough. This tool will help you come up with a list of potential headlines for your blog post, based on the topic you provide."
-header: "Generate a list of potential headlines for your blog post."
+header: "Brainstorm a list of potential blog post ideas."
 usage: "This tool can be used to generate a list of potential headlines for your blog post. Simply enter a topic and we'll provide you with a list of headlines to choose from."
 placeholder: "How to make the perfect scrambled eggs"
 help_hint: "What's the topic of your blog post? Write it down and we'll provide you with a list of headlines to choose from."

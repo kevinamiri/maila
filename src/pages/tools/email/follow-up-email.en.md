@@ -2,7 +2,7 @@
 id: "1222"
 title: "Follow-up emails"
 description: "A follow-up email is an email that you send after someone has taken an action, such as subscribing to your newsletter, downloading a piece of content, or making a purchase. The purpose of a follow-up email is to build a relationship with the person who took the action, and to get them to take another action, such as visiting your website, attending an event, or making another purchase."
-header: "An email that you send after someone has taken an action."
+header: "Write emails to follow up on sales and communication with customers."
 usage: "The following generator can help you create a follow-up email that is tailored to your brand."
 placeholder: "the email you sent yesterday"
 help_hint: "What action did the person take? Write it down and we'll turn it into a Follow-up Email."

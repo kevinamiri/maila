@@ -1,8 +1,8 @@
 ---
 id: "2816"
-title: "Blog Post PAS"
+title: "PAS Framework"
 description: "The PAS formula is a copywriting technique that is used to sell a product or service by first highlighting the customer's pain points, then agitating them, and finally offering a solution. This generator can help you create a PAS-formatted blog post that is aligned with your brand."
-header: "Use the PAS method to write a blog post that will get the reader to take action."
+header: "Use the PAS method to write a blog post that will get your audience's attention and keep them engaged."
 usage: "PAS-formatted blog posts are often used in marketing and sales to sell a product or service. The following generator can help you create a PAS-formatted blog post that is closely aligned with your brand."
 placeholder: "lose weight, get in shape, improve health"
 help_hint: "What is your topic? What are the pain points and problems that your customers face? And what is the solution that you offer?"

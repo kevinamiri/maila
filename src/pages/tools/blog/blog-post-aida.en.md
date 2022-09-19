@@ -1,9 +1,9 @@
 ---
 id: "26"
-title: "Blog Post AIDA"
-description: "AIDA is an acronym that stands for Attention, Interest, Desire, and Action. It is a model that is often used in marketing and advertising to create effective and impactful copy. The AIDA model can be used to write blog posts that are more likely to capture the attention of readers and encourage them to take action."
-header: "Write a blog post using the AIDA model to capture attention and encourage action."
-usage: "This can be used to write blog posts that are more likely to get attention and encourage readers to take action."
+title: "AIDA Framework"
+description: "This framework helps you to create a compelling message that will get your audience's attention and keep them engaged. It is based on the AIDA model, which stands for Attention, Interest, Desire, and Action."
+header: "Write attention-grabbing copy by following the 4 steps of the AIDA framework."
+usage: "This can be used to write copy using the AIDA copywriting framework."
 placeholder: "How to make the perfect cup of coffee"
 help_hint: "What is your blog post about? Write a few keywords and we'll generate a blog post using the AIDA model."
 tags: ["Copywriting", "Blog"]

@@ -2,7 +2,7 @@
 id: "71"
 title: "Mission Statement"
 description: "Mission statements are brief, clear statements that outline a company's purpose, what it does, and why it exists. They are often used to communicate a company's values and goals, and they can be used as a way to differentiate one company from another."
-header: "Generate a statement that outlines the company's purpose."
+header: "Generate a statement that defines your company's purpose"
 usage: "Mission statements are often used in marketing and sales to communicate what a company does and why it is different. The following generator can help you design and brainstrom a stylistic mission statement that is closely aligned with your brand."
 placeholder: "To provide the best possible products and services to our customers."
 help_hint: "What is your company's purpose? Write it down and we'll turn it into a Mission Statement."
