@@ -1,11 +1,21 @@
 import useFetchSuffix from "./useFetchSuffix";
-import { updateProgressValue } from "../slices/progress";
+import { updateLastId, updateProgressValue } from "../slices/progress";
 import { BaseEditor, Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
 import { HistoryEditor } from "slate-history";
 import React from "react";
 import { updateExpansion } from "slices/ui-states";
+
+const extractId = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("Id")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray[0];
+};
 
 const extractText = (object: any) => {
   const newArray = [];
@@ -57,6 +67,7 @@ async function UseCompletionSuffix(
   ).then((data) => {
     if (data) {
       dispatch(updateProgressValue(50));
+      dispatch(updateLastId(extractId(data)));
       let textOptions = extractText(data);
       console.log(textOptions);
       textOptions

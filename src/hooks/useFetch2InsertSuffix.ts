@@ -1,5 +1,5 @@
 import useFetchSuffix from "./useFetchSuffix";
-import { updateProgressValue } from "../slices/progress";
+import { updateLastId, updateProgressValue } from "../slices/progress";
 import { BaseEditor, Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
@@ -15,6 +15,17 @@ const extractText = (object: any) => {
   }
   return newArray;
 };
+
+const extractId = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("Id")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray[0];
+};
+
 /**
  * When user clicks on the tab, it will triger the api and
  * the auto-generated text will be inserted into the main editor
@@ -82,6 +93,7 @@ async function useFetch2InsertSuffix(
     if (data) {
       dispatch(updateProgressValue(50));
       let textOptions = extractText(data);
+      dispatch(updateLastId(extractId(data)));
       let inx = 0;
       textOptions
         .filter((x: any) => x.search("404") != -1)

@@ -1,4 +1,4 @@
-import { updateProgressValue } from "../slices/progress";
+import { updateLastId, updateProgressValue } from "../slices/progress";
 import { BaseEditor, Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { HistoryEditor } from "slate-history";
@@ -13,6 +13,17 @@ const extractText = (object: any) => {
   }
   return newArray;
 };
+
+const extractId = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("Id")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray[0];
+};
+
 /**
  * When user clicks on the tab, it will triger the api and
  * the auto-generated text will be inserted into the main editor
@@ -53,6 +64,7 @@ async function useFetchUrl2Insert(
   await useFetchFromUrl(url, fieldValues).then((data) => {
     if (data) {
       dispatch(updateProgressValue(50));
+      dispatch(updateLastId(extractId(data)));
       let textOptions = extractText(data);
       let inx = 0;
       textOptions

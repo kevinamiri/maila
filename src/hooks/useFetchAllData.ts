@@ -68,7 +68,7 @@ async function useFetchAllData(
   await useFetchAll(editorContents, gtoken, url, fieldValues).then((data) => {
     if (data) {
       dispatch(updateProgressValue(50));
-      // dispatch(updateLastId(extractId(data)));
+      dispatch(updateLastId(extractId(data)));
       let textOptions = extractText(data);
       let inx = 0;
       textOptions
