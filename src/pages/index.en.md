@@ -51,7 +51,7 @@ tables:
   cta: "Do you want to generate more content?"
   cta_link: "/contact"
   cta_button: "Contact us"
-  cta_caption: "* To mitigate the risk of misuse, a limit of 4 generations per minute and 50 generations per hour was applied to all plans."
+  cta_caption: "* To mitigate the risk of misuse, a limitation of 4 generations per minute was put in place. This effect is not noticeable to a normal user, but it prevents bots, automated systems from generating content at a high rate."
 
 plans:
   - free:

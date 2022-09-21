@@ -5,6 +5,49 @@ import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
 import { updateExpansion } from "../slices/ui-states";
 
+const extractText = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("text")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray;
+};
+
+const extractId = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("Id")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray[0];
+};
+/* Following function would send the text to main editor 
+text => main editor
+*/
+const Content2Editor = (
+  editor: BaseEditor & ReactEditor & HistoryEditor,
+  content: string
+) => {
+  editor.selection &&
+    Transforms.insertText(editor, content, {
+      at: editor.selection,
+    });
+
+  if (!editor.selection) {
+    Transforms.insertText(editor, content, {
+      at: Editor.end(editor, []),
+    });
+
+    Transforms.select(
+      editor,
+      editor.selection ? editor.selection : Editor.end(editor, [])
+    );
+  }
+};
+
 // fetching the data from the api and then inserting it into the different editors
 async function useFetchInsert(
   dispatch,
@@ -26,11 +69,11 @@ async function useFetchInsert(
     (data) => {
       if (data) {
         dispatch(updateProgressValue(50));
-        let options = Object.values(data);
-        options
+        let textOptions = extractText(data);
+        textOptions
           .filter((x: any) => x.search("Error 404") != -1)
           .map((element) => enqueueSnackbar(element));
-        options
+        textOptions
           .filter((x: any) => x.search("Error 404") == -1)
           .map((text: string, index) =>
             Transforms.insertText(editors[index + 1], text, { at: [0] })

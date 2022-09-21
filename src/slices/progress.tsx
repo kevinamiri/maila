@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   progressValue: 0,
   status: 0,
+  lastId: "none",
 };
 
 const slice = createSlice({
@@ -16,6 +17,13 @@ const slice = createSlice({
       };
       return updatedObject;
     },
+    updateLastId: (state, action) => {
+      const updatedObject = {
+        ...state,
+        lastId: action.payload,
+      };
+      return updatedObject;
+    },
   },
 });
 
@@ -23,6 +31,10 @@ export const { reducer } = slice;
 
 export const updateProgressValue = (x) => async (dispatch) => {
   dispatch(slice.actions.updateProgressValue(x));
+};
+
+export const updateLastId = (x) => async (dispatch) => {
+  dispatch(slice.actions.updateLastId(x));
 };
 
 export default slice;

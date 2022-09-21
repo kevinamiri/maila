@@ -1,4 +1,4 @@
-import { updateProgressValue } from "../slices/progress";
+import { updateLastId, updateProgressValue } from "../slices/progress";
 import { BaseEditor, Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { HistoryEditor } from "slate-history";
@@ -16,6 +16,15 @@ const extractText = (object: any) => {
   return newArray;
 };
 
+const extractId = (object: any) => {
+  const newArray = [];
+  for (let key in object) {
+    if (key.includes("Id")) {
+      newArray.push(object[key]);
+    }
+  }
+  return newArray[0];
+};
 /* Following function would send the text to main editor 
 text => main editor
 */
@@ -59,6 +68,7 @@ async function useFetchAllData(
   await useFetchAll(editorContents, gtoken, url, fieldValues).then((data) => {
     if (data) {
       dispatch(updateProgressValue(50));
+      // dispatch(updateLastId(extractId(data)));
       let textOptions = extractText(data);
       let inx = 0;
       textOptions
