@@ -32,7 +32,7 @@ const planOptions = [
   },
   {
     id: "2",
-    description: "Unlimited word in the beta feature",
+    description: "1M word/month",
     label: "Premium beta",
     priceOptions: [
       {

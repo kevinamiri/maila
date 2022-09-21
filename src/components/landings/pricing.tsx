@@ -181,11 +181,17 @@ export const Pricing = ({ tables, plans }) => {
               </Grid>
             ))}
         </Grid>
+      </Container>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <Typography sx={{ m: 1 }} color='success.main' variant='h3'>
           {tables.cta && tables.cta}
-        </Typography>
-        <Typography sx={{ my: 1 }} color='textSecondary' variant='body2'>
-          {tables.cta_caption && tables.cta_caption}
         </Typography>
         <Button
           color='primary'
@@ -197,7 +203,18 @@ export const Pricing = ({ tables, plans }) => {
         >
           {tables.cta_button && tables.cta_button}
         </Button>
-      </Container>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
+        }}
+      >
+        <Typography sx={{ my: 1 }} color='textSecondary' variant='body2'>
+          {tables.cta_caption && tables.cta_caption}
+        </Typography>
+      </Box>
     </Box>
   );
 };

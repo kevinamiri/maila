@@ -48,10 +48,10 @@ tables:
   link: "/app"
   header: "An affordable, yet powerful AI copywriting platform"
   caption: "Maila offers a cost-effective plan that allows its users to generate up to 50K characters (~ 10,000 words) per month free of cost, across various domains and contexts. In case the monthly usage exceeds 50K characters, users can opt for the monthly premium plan to continue generating content as per their needs."
-  cta: "Do you have a special case?"
+  cta: "Do you want to generate more content?"
   cta_link: "/contact"
   cta_button: "Contact us"
-  cta_caption: "Let’s talk about your specific requirements and see how we can help you."
+  cta_caption: "* To mitigate the risk of misuse, a limit of 4 generations per minute and 50 generations per hour was applied to all plans."
 
 plans:
   - free:
@@ -59,22 +59,22 @@ plans:
       price: "Free"
       features:
         - Ideal for individuals
-        - 10K words per month
+        - 10K words/month *
         - Access to free templates
   - growth:
-      name: "Premium"
+      name: "Basic Premium"
       price: "9.8$/month"
       features:
-        - Ideal for start-ups & small businesses
-        - 1M words/mo
+        - Ideal for copywriters and content creators
+        - 500K words/month *
         - Access all templates
         - 24/7 support
   - corporate:
-      name: "Enterprise"
+      name: "Unlimited Premium"
       price: "19$/month"
       features:
-        - Ideal for large companies
-        - Unlimited words/mo
+        - Ideal for start-ups & businesses
+        - Unlimited words/month *
         - Access all templates
         - Customized models
         - 24/7 support
@@ -108,14 +108,12 @@ H0118:
     - Our AI-generated content is plagiarism-free and accurate.
     - How can AI-powered copywriting be used in a business?
     - AI based content generation can be used for a variety of purposes in businesses. This type of content can help with product descriptions, social media updates, email subject lines and much more. Having an AI writing assistant can help save time and improve the quality of the content produced.
-    - How much does it cost?
-    - We offer a free trial so you can see if our AI can help you produce great content.
     - Why would I use this instead of creating my own content?
     - AI-generated copy can be a great way to save time, especially if you're short-staffed. AI powered copywriting can produce content faster than a human writer.
-    - How long does it take?
-    - We generate contents in real-time, so your results are ready immediately. It may take a bit of time to get used to using an AI writing assistant, but once you have the hang of it, it can save you a lot of time.
     - Can I create content in other languages?
     - Yes, we support languages other than English. The best quality translations are currently available in English.
+    - Can I customize this tools to meet my needs?
+    - Yes, we offer custom solutions to our clients. Please contact us for more information.
 H01194: 
   - AI Copy Generator
   - Use advanced artificial intelligence to generate content for your website, blog or marketing materials.
