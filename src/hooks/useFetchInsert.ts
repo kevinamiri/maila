@@ -1,9 +1,10 @@
 import useFetchDataSelected from "./useFetchDataSelected";
-import { updateProgressValue } from "../slices/progress";
-import { Editor, Transforms } from "slate";
+import { updateLastId, updateProgressValue } from "../slices/progress";
+import { BaseEditor, Editor, Transforms } from "slate";
 import { ReactEditor } from "editable-slate-react";
 import { Node as SlateNode } from "slate";
 import { updateExpansion } from "../slices/ui-states";
+import { HistoryEditor } from "slate-history";
 
 const extractText = (object: any) => {
   const newArray = [];
@@ -69,6 +70,7 @@ async function useFetchInsert(
     (data) => {
       if (data) {
         dispatch(updateProgressValue(50));
+        dispatch(updateLastId(extractId(data)));
         let textOptions = extractText(data);
         textOptions
           .filter((x: any) => x.search("Error 404") != -1)
