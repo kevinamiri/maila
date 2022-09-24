@@ -7615,10 +7615,10 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-editable-slate-react@^0.6.69:
-  version "0.6.69"
-  resolved "https://registry.yarnpkg.com/editable-slate-react/-/editable-slate-react-0.6.69.tgz#67492ecb2c81ce44867b2840dd97462ecff98529"
-  integrity sha512-agDqVqTuhzWiOBvH6Vfb05n/aM5zeVbdvfJPhfxmibWU4+m72rxmkSEogsC96Bl+Ndr8d+8x20bUKmZiZ/pGfQ==
+editable-slate-react@^0.83.0:
+  version "0.83.0"
+  resolved "https://registry.yarnpkg.com/editable-slate-react/-/editable-slate-react-0.83.0.tgz#995123f489820ea375563880fa38a4640a034571"
+  integrity sha512-yO4A1NFpXwoBJ7ztO4Tvjd0BrSsAm9ZYn63hNn+D6kbzlgTsW0rBzjEMLm8ETf49XOaQgAnphZooF/rlRn8rrQ==
   dependencies:
     "@types/is-hotkey" "^0.1.1"
     "@types/lodash" "^4.14.149"

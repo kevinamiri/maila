@@ -196,7 +196,7 @@ const TEXT_ALIGN_TYPES = ["left", "center", "right", "justify"];
 
 import { useState } from "react";
 import { BaseEditor } from "slate";
-import { ReactEditor } from "slate-react";
+import { ReactEditor } from "editable-slate-react";
 import { HistoryEditor } from "slate-history";
 const RichTextExample = () => {
   const renderElement = useCallback((props) => <Element {...props} />, []);

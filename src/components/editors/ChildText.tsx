@@ -128,11 +128,14 @@ const ChildText = (props) => {
   // Add the initial value when setting up our state.
   const handleChanges = (newValue) => {
     setValue(newValue);
+    saveContextText.current = selectedSentence(newValue);
     let content = JSON.stringify(newValue);
     localStorage.setItem(props.storageName, content);
   };
 
   console.log("rendering child text");
+
+  console.log(editor2.children);
 
   // const savedSelectedPosition = React.useRef(editor2.selection);
 
@@ -267,7 +270,7 @@ const ChildText = (props) => {
         <Box>
           <Slate
             editor={editor2}
-            value={editor2.children}
+            value={value}
             onChange={(value) => handleChanges(value)}
           >
             <Editable
@@ -276,11 +279,9 @@ const ChildText = (props) => {
               spellCheck={true}
               style={{ overflow: "auto" }}
               onKeyDown={(event) => {
-                console.log("key down");
                 for (const hotkey in HOTKEYS) {
                   if (isHotkey(hotkey, event as any)) {
                     event.preventDefault();
-
                     const isSellect = hotkey === "mod+a" ? true : false;
                     if (hotkey === "mod+a") {
                       Transforms.select(editor2, {
@@ -419,7 +420,7 @@ const Element = ({ attributes, children, element }) => {
 
     default:
       return (
-        <p spellCheck='true' style={style} {...attributes}>
+        <p style={style} {...attributes}>
           {children}
         </p>
       );

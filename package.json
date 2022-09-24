@@ -29,7 +29,7 @@
     "aws-amplify": "^4.3.20",
     "axios-mock-adapter": "^1.20.0",
     "deepmerge": "^4.2.2",
-    "editable-slate-react": "^0.6.69",
+    "editable-slate-react": "^0.83.0",
     "formik": "^2.2.9",
     "fs-extra": "^10.0.0",
     "gatsby": "^4.12.1",
