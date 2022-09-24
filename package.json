@@ -75,9 +75,9 @@
     "redux": "^4.1.1",
     "redux-thunk": "^2.3.0",
     "sharp": "^0.30.3",
-    "slate": "^0.66.5",
+    "slate": "^0.82.1",
     "slate-history": "^0.66.0",
-    "slate-react": "^0.66.7",
+    "slate-react": "^0.83.0",
     "slug": "^5.1.0",
     "yup": "^0.32.9"
   },

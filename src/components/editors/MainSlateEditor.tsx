@@ -261,7 +261,6 @@ const MainSlateEditor = (props) => {
     for (const hotkey in HOTKEYS) {
       if (isHotkey(hotkey, event as any)) {
         event.preventDefault();
-
         const isSellect = hotkey === "mod+a" ? true : false;
         hotkey === "alt+t" && handleTranslate(event);
         hotkey === "mod+g" && handleSuffix(event);
@@ -384,8 +383,6 @@ const MainSlateEditor = (props) => {
               renderLeaf={renderLeaf}
               decorate={decorateSearch}
               placeholder={props.placeholder}
-              spellCheck
-              autoFocus
               onFocus={onFocus}
               onBlur={onBlur}
               onKeyDown={handleKeyDown}

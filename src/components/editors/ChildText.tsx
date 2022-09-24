@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import { Editable, Slate } from "editable-slate-react";
-import { Editor, Transforms } from "slate";
-import { Node as SlateNode } from "slate";
+import { Editable, Slate, useSlate } from "editable-slate-react";
+import {
+  Editor,
+  Transforms,
+  Node as SlateNode,
+  Descendant,
+  Element as SlateElement,
+} from "slate";
+import { Text as Textt } from "slate";
 import CardContent from "@mui/material/CardContent";
 import isHotkey from "is-hotkey";
 import FooterEditorBar from "./FooterEditorBar";
@@ -9,6 +15,18 @@ import { selectedText, serialize } from "hooks/currentSelectEditor";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentWordRange } from "slices/editorParams";
 import Box from "@mui/material/Box";
+import BorderColorRoundedIcon from "@mui/icons-material/BorderColorRounded";
+const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
+import FormatBoldRoundedIcon from "@mui/icons-material/FormatBold";
+import FormatItalicRoundedIcon from "@mui/icons-material/FormatItalic";
+import FormatUnderlinedRoundedIcon from "@mui/icons-material/FormatUnderlined";
+import CodeRoundedIcon from "@mui/icons-material/Code";
+import LooksOneRoundedIcon from "@mui/icons-material/LooksOne";
+import LooksTwoRoundedIcon from "@mui/icons-material/LooksTwo";
+import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuote";
+import FormatListNumberedRoundedIcon from "@mui/icons-material/FormatListNumbered";
+import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBulleted";
+import { StyledToggleButtonGroup } from "./toggle-button-group";
 
 const HOTKEYS = {
   "mod+b": "bold",
@@ -16,12 +34,24 @@ const HOTKEYS = {
   "mod+u": "underline",
   "mod+`": "code",
   "mod+a": "selectAll",
+  "alt+l": "lightText",
+  "alt+d": "strikethrough",
 };
+
+import ToggleButton from "@mui/material/ToggleButton";
+
+const LIST_TYPES = ["numbered-list", "bulleted-list"];
+const TEXT_ALIGN_TYPES = ["left", "center", "right", "justify"];
 
 const ChildText = (props) => {
   const editor = props.mainEditor;
   const editor2 = props.correspondedEditor;
   const dispatch = useDispatch();
+  const renderElement = React.useCallback(
+    (props) => <Element {...props} />,
+    []
+  );
+  const renderLeaf = React.useCallback((props) => <Leaf {...props} />, []);
   const { currentWordRange } = useSelector((state) => state.editorParams);
   const defaultValue = () => {
     return (
@@ -38,7 +68,7 @@ const ChildText = (props) => {
   };
   const isDeleteHotkey = isHotkey("backspace");
 
-  const [value2, setValue2] = useState<SlateNode[]>(defaultValue);
+  const [value, setValue] = useState<Descendant[]>(defaultValue);
 
   /**
    * Following function would send the value of the editor to main editor
@@ -94,13 +124,15 @@ const ChildText = (props) => {
     //   });
   };
 
+  const saveContextText = React.useRef(defaultValue);
   // Add the initial value when setting up our state.
-  const Editor2HandleValue = (value: SlateNode[]) => {
-    // updateCurrentWord();
-    setValue2(value);
-    let content = JSON.stringify(value);
+  const handleChanges = (newValue) => {
+    setValue(newValue);
+    let content = JSON.stringify(newValue);
     localStorage.setItem(props.storageName, content);
   };
+
+  console.log("rendering child text");
 
   // const savedSelectedPosition = React.useRef(editor2.selection);
 
@@ -116,7 +148,7 @@ const ChildText = (props) => {
   // }, [editor2]);
 
   // const onBlur = React.useCallback(() => {
-  //   savedSelectedPosition.current = editor2.selection;
+  //   savedSelectedPosition.current = editor2.children
   // }, []);
 
   // const focusEditor = React.useCallback(
@@ -128,6 +160,91 @@ const ChildText = (props) => {
   //   },
   //   [editor2]
   // );
+
+  const selectedSentence = (editor: Editor) => {
+    if (!editor.selection) return;
+    let [node]: any = Editor.node(editor, editor.selection);
+    if (!node.text) return;
+    // all sentences in the node
+    const allSentences = node.text.split(/(?<=[.?!\n\:])\s/);
+    // current sentence based on the the text cursor's selection
+    let currentSentence = "";
+    // 1. get the selection
+    const selection = editor.selection;
+    // 2. get the current cursor position
+    const cursorPosition = selection.anchor.offset;
+    // 5. get the current sentence
+    let currentSentenceStart = 0;
+    let currentSentenceEnd = 0;
+    let currentSentenceIndex = 0;
+    for (let i = 0; i < allSentences.length; i++) {
+      currentSentenceEnd += allSentences[i].length + 1;
+      if (currentSentenceEnd > cursorPosition) {
+        currentSentence = allSentences[i];
+        currentSentenceStart = currentSentenceEnd - currentSentence.length - 1;
+        currentSentenceIndex = i;
+        break;
+      }
+    }
+    const fragmentText =
+      editor.selection &&
+      SlateNode.fragment(editor, editor.selection)
+        .map((x) => SlateNode.string(x))
+        .join("\n");
+    // 6. if selected string text fragmentText.length > currentSentence.length then
+    // return allSentences that contains the selected text
+    if (fragmentText.length > currentSentence.length) {
+      const selectedSentences = allSentences.filter((sentence, index) => {
+        return (
+          (index >= currentSentenceIndex &&
+            index <=
+              currentSentenceIndex +
+                fragmentText.split(/(?<=[.?!\n\:])\s/).length -
+                1) ||
+          currentSentenceIndex +
+            fragmentText.split(/(?<=[.?!\n\:])\s/).length +
+            1
+        );
+      });
+      return selectedSentences.join(" ");
+    }
+
+    return currentSentence;
+  };
+
+  const [highlightedText, setHighlightedText] = useState("");
+  const lightingText = React.useRef("");
+
+  // const decorate = React.useCallback(([node, path]) => {
+  //   const ranges = [];
+
+  //   if (lightingText.current && Textt.isText(node)) {
+  //     const { text } = node;
+  //     const parts = text.split(lightingText.current);
+  //     let offset = 0;
+
+  //     parts.forEach((part, i) => {
+  //       if (i !== 0) {
+  //         ranges.push({
+  //           anchor: { path, offset: offset - lightingText.current.length },
+  //           focus: { path, offset },
+  //           lightText: true,
+  //         });
+  //       }
+
+  //       offset = offset + part.length + lightingText.current.length;
+  //     });
+  //   }
+  //   return ranges;
+  // }, []);
+
+  // if (isTextBlurred) {
+  //   Editor.removeMark(editor2, "lightText");
+  // }
+
+  // if (isTextBlurred && previousEditorSelectedText.current) {
+  //   Editor.addMark(editor2, "lightText", true);
+  // }
 
   return (
     <CardContent>
@@ -150,21 +267,29 @@ const ChildText = (props) => {
         <Box>
           <Slate
             editor={editor2}
-            value={value2}
-            onChange={(value) => Editor2HandleValue(value)}
+            value={editor2.children}
+            onChange={(value) => handleChanges(value)}
           >
             <Editable
-              spellCheck
+              renderElement={renderElement}
+              renderLeaf={renderLeaf}
+              spellCheck={true}
+              style={{ overflow: "auto" }}
               onKeyDown={(event) => {
+                console.log("key down");
                 for (const hotkey in HOTKEYS) {
                   if (isHotkey(hotkey, event as any)) {
                     event.preventDefault();
+
+                    const isSellect = hotkey === "mod+a" ? true : false;
                     if (hotkey === "mod+a") {
                       Transforms.select(editor2, {
                         anchor: Editor.start(editor2, []),
                         focus: Editor.end(editor2, []),
                       });
                     }
+                    const mark = HOTKEYS[hotkey];
+                    !isSellect && toggleMark(editor2, mark);
                   }
                 }
               }}
@@ -177,6 +302,239 @@ const ChildText = (props) => {
         />
       </Box>
     </CardContent>
+  );
+};
+
+const toggleBlock = (editor, format) => {
+  const isActive = isBlockActive(
+    editor,
+    format,
+    TEXT_ALIGN_TYPES.includes(format) ? "align" : "type"
+  );
+  const isList = LIST_TYPES.includes(format);
+
+  Transforms.unwrapNodes(editor, {
+    match: (n) =>
+      !Editor.isEditor(n) &&
+      SlateElement.isElement(n) &&
+      LIST_TYPES.includes(n.type) &&
+      !TEXT_ALIGN_TYPES.includes(format),
+    split: true,
+  });
+  let newProperties: Partial<SlateElement>;
+  if (TEXT_ALIGN_TYPES.includes(format)) {
+    newProperties = {
+      align: isActive ? undefined : format,
+    };
+  } else {
+    newProperties = {
+      type: isActive ? "paragraph" : isList ? "list-item" : format,
+    };
+  }
+  Transforms.setNodes<SlateElement>(editor, newProperties);
+
+  if (!isActive && isList) {
+    const block = { type: format, children: [] };
+    Transforms.wrapNodes(editor, block);
+  }
+};
+
+const toggleMark = (editor, format) => {
+  const isActive = isMarkActive(editor, format);
+
+  if (isActive) {
+    Editor.removeMark(editor, format);
+  } else {
+    Editor.addMark(editor, format, true);
+  }
+};
+
+const isBlockActive = (editor, format, blockType = "type") => {
+  const { selection } = editor;
+  if (!selection) return false;
+
+  const [match] = Array.from(
+    Editor.nodes(editor, {
+      at: Editor.unhangRange(editor, selection),
+      match: (n) =>
+        !Editor.isEditor(n) &&
+        SlateElement.isElement(n) &&
+        n[blockType] === format,
+    })
+  );
+
+  return !!match;
+};
+
+const isMarkActive = (editor, format) => {
+  const marks = Editor.marks(editor);
+  return marks ? marks[format] === true : false;
+};
+
+const Element = ({ attributes, children, element }) => {
+  const style = { textAlign: element.align };
+  switch (element.type) {
+    case "block-quote":
+      return (
+        <blockquote style={style} {...attributes}>
+          {children}
+        </blockquote>
+      );
+    case "bulleted-list":
+      return (
+        <ul style={style} {...attributes}>
+          {children}
+        </ul>
+      );
+    case "heading-one":
+      return (
+        <h1 style={style} {...attributes}>
+          {children}
+        </h1>
+      );
+    case "heading-two":
+      return (
+        <h2 style={style} {...attributes}>
+          {children}
+        </h2>
+      );
+    case "heading-three":
+      return (
+        <h3 style={style} {...attributes}>
+          {children}
+        </h3>
+      );
+    case "list-item":
+      return (
+        <li style={style} {...attributes}>
+          {children}
+        </li>
+      );
+    case "numbered-list":
+      return (
+        <ol style={style} {...attributes}>
+          {children}
+        </ol>
+      );
+
+    default:
+      return (
+        <p spellCheck='true' style={style} {...attributes}>
+          {children}
+        </p>
+      );
+  }
+};
+
+import { styled } from "@mui/material/styles";
+import { SkipPreviousRounded } from "@mui/icons-material";
+import { Button } from "@mui/material";
+
+const Del = styled("del")(({ theme }) => ({
+  color: theme.palette.text.secondary,
+  backgroundColor: theme.palette.background.default,
+}));
+
+const PrimarySpan = styled("span")(({ theme }) => ({
+  color: theme.palette.text.primary,
+}));
+
+const IncorrectParagraph = styled("span")(({ theme }) => ({
+  color: theme.palette.text.primary,
+  borderBottom: "2px solid #f03000",
+}));
+
+const HighlightSpan = styled("span")(({ theme }) => ({
+  color: theme.palette.text.secondary,
+}));
+
+const Leaf = ({ attributes, children, leaf }) => {
+  if (leaf.bold) {
+    children = <strong>{children}</strong>;
+  }
+
+  if (leaf.code) {
+    children = <code>{children}</code>;
+  }
+
+  if (leaf.italic) {
+    children = <em>{children}</em>;
+  }
+
+  if (leaf.underline) {
+    children = <u>{children}</u>;
+  }
+  if (leaf.highlight) {
+    children = <mark>{children}</mark>;
+  }
+  if (leaf.strikethrough) {
+    children = <Del>{children}</Del>;
+  }
+  if (leaf.superscript) {
+    children = <sup>{children}</sup>;
+  }
+  if (leaf.lightText) {
+    children = <HighlightSpan>{children}</HighlightSpan>;
+  }
+
+  return <span {...attributes}>{children}</span>;
+};
+
+export const BlockButton = ({ format, children }) => {
+  const editor = useSlate();
+  return (
+    <Box
+      sx={{
+        m: 0.5,
+      }}
+    >
+      <ToggleButton
+        value={format}
+        size='small'
+        sx={{
+          border: 0,
+          padding: "4px",
+        }}
+        selected={isBlockActive(
+          editor,
+          format,
+          TEXT_ALIGN_TYPES.includes(format) ? "align" : "type"
+        )}
+        onMouseDown={(event) => {
+          event.preventDefault();
+          toggleBlock(editor, format);
+        }}
+      >
+        {children}
+      </ToggleButton>
+    </Box>
+  );
+};
+
+export const MarkButton = ({ format, children }) => {
+  const editor = useSlate();
+  return (
+    <Box
+      sx={{
+        m: 0.5,
+      }}
+    >
+      <ToggleButton
+        size='small'
+        sx={{
+          border: 0,
+          padding: "4px",
+        }}
+        value={format}
+        selected={isMarkActive(editor, format)}
+        onMouseDown={(event) => {
+          event.preventDefault();
+          toggleMark(editor, format);
+        }}
+      >
+        {children}
+      </ToggleButton>
+    </Box>
   );
 };
 
