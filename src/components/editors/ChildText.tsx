@@ -7,6 +7,7 @@ import {
   Descendant,
   Element as SlateElement,
 } from "slate";
+import { styled } from "@mui/material/styles";
 import { Text as Textt } from "slate";
 import CardContent from "@mui/material/CardContent";
 import isHotkey from "is-hotkey";
@@ -128,14 +129,9 @@ const ChildText = (props) => {
   // Add the initial value when setting up our state.
   const handleChanges = (newValue) => {
     setValue(newValue);
-    saveContextText.current = selectedSentence(newValue);
     let content = JSON.stringify(newValue);
     localStorage.setItem(props.storageName, content);
   };
-
-  console.log("rendering child text");
-
-  console.log(editor2.children);
 
   // const savedSelectedPosition = React.useRef(editor2.selection);
 
@@ -215,7 +211,6 @@ const ChildText = (props) => {
     return currentSentence;
   };
 
-  const [highlightedText, setHighlightedText] = useState("");
   const lightingText = React.useRef("");
 
   // const decorate = React.useCallback(([node, path]) => {
@@ -426,10 +421,6 @@ const Element = ({ attributes, children, element }) => {
       );
   }
 };
-
-import { styled } from "@mui/material/styles";
-import { SkipPreviousRounded } from "@mui/icons-material";
-import { Button } from "@mui/material";
 
 const Del = styled("del")(({ theme }) => ({
   color: theme.palette.text.secondary,
