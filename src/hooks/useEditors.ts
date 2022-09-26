@@ -9,7 +9,14 @@ export const useEditors = () => {
   const editor3 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor4 = useMemo(() => withHistory(withReact(createEditor())), []);
   const editor5 = useMemo(() => withHistory(withReact(createEditor())), []);
-  const editors = [editor1, editor2, editor3, editor4, editor5];
+  const editors = {
+    editor1,
+    editor2,
+    editor3,
+    editor4,
+    editor5,
+  };
+
   return editors;
 };
 

@@ -9,14 +9,27 @@ import Typography from "@mui/material/Typography";
 import useSettings from "../hooks/useSettings";
 import ChevronRight from "@mui/icons-material/ChevronRight";
 import Documents from "../components/account/Documents";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import History from "../components/account/History";
 
 interface DocumentsPageProps {
   path: string;
   component?: React.ComponentType<{}>;
 }
 
+const tabs = [
+  { label: "History", value: "History" },
+  { label: "Saved", value: "Saved" },
+];
+
 const DocumentsPage: React.FC<DocumentsPageProps> = () => {
   const { settings } = useSettings();
+  const [currentTab, setCurrentTab] = useState("History");
+
+  const handleTabsChange = (event, value) => {
+    setCurrentTab(value);
+  };
 
   return (
     <>
@@ -39,13 +52,31 @@ const DocumentsPage: React.FC<DocumentsPageProps> = () => {
                 <Typography color='textSecondary' variant='subtitle2'>
                   Documents
                 </Typography>
+                <Typography color='textPrimary' variant='subtitle2'>
+                  {currentTab}
+                </Typography>
               </Breadcrumbs>
             </Grid>
           </Grid>
           <Box sx={{ mt: 3 }}>
-            <Documents />
+            <Tabs
+              indicatorColor='primary'
+              onChange={handleTabsChange}
+              scrollButtons='auto'
+              textColor='primary'
+              value={currentTab}
+              variant='scrollable'
+            >
+              {tabs.map((tab) => (
+                <Tab key={tab.value} label={tab.label} value={tab.value} />
+              ))}
+            </Tabs>
           </Box>
           <Divider />
+          <Box sx={{ mt: 3 }}>
+            {currentTab === "History" && <History />}
+            {currentTab === "Saved" && <Documents />}
+          </Box>
         </Container>
       </Box>
     </>

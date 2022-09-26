@@ -74,7 +74,7 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
 }: ProductGenerationProps) => {
   // const editor = useMemo(() => withHistory(withReact(createEditor())), []);
   const editors = useEditors();
-  const [editor1, editor2, editor3, editor4, editor5] = editors;
+  const { editor1, editor2, editor3, editor4, editor5 } = editors;
 
   // const editors = [editor, editor2, editor3, editor4, editor5];
   const dispatch = useDispatch();

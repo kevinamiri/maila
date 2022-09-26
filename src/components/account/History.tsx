@@ -12,18 +12,19 @@ import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import { Auth } from "aws-amplify";
 import { Node as SlateNode } from "slate";
-import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
+import Alert from "@mui/material/Alert";
+import LinearProgress from "@mui/material/LinearProgress";
 
-export const serialize = (children) => {
-  return children.map((x) => SlateNode.string(x)).join("\n");
-};
+// export const serialize = (children) => {
+//   return children.map((x) => SlateNode.string(x)).join("\n");
+// };
 
-const Documents: FC = () => {
+const History: FC = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const fetchData = async () => {
-    const theUrl = `https://api.maila.ai/get-saved-data`;
+    const theUrl = `https://api.maila.ai/history-data`;
     const user = await Auth.currentAuthenticatedUser();
     let params = {};
     params["username"] = user.username;
@@ -37,17 +38,24 @@ const Documents: FC = () => {
       body: JSON.stringify(params),
     });
     const data = await response.json();
-    const values = Object.values(data).filter((x) => {
-      return x.userData !== undefined;
-    });
-    // console.log(values);
-    return values;
+    // console.log(data);
+    return data;
   };
 
   React.useEffect(() => {
     fetchData().then(setPosts);
     setLoading(false);
   }, []);
+
+  function getValues(obj) {
+    var arr = [];
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        arr.push(obj[key]["S"]);
+      }
+    }
+    return arr;
+  }
 
   return (
     <Box
@@ -65,38 +73,45 @@ const Documents: FC = () => {
       </Stack>
       <Card>
         <CardHeader title='Saved Outputs' />
+        {loading ? (
+          <Box sx={{ width: "100%" }}>
+            <LinearProgress />
+          </Box>
+        ) : null}
         <Divider />
         <Table>
           <TableBody>
-            <Typography
-              sx={{ mb: 4 }}
-              color='primary'
-              gutterBottom
-              variant='body1'
-            >
-              {loading ? "Loading..." : ""}
-            </Typography>
-            {posts.map((post) => (
-              <TableRow
-                key={post.generatedAt}
-                sx={{
-                  "&:last-child td": {
-                    border: 0,
-                  },
-                }}
-              >
-                <TableCell>
-                  <Typography sx={{ cursor: "pointer" }} variant='caption'>
-                    {post.generatedAt}
-                  </Typography>
-                </TableCell>
-                <TableCell>
-                  <Typography color='textSecondary' variant='body1'>
-                    {serialize(post.userData)}{" "}
-                  </Typography>
-                </TableCell>
-              </TableRow>
-            ))}
+            {posts &&
+              posts.map((post, inx) => {
+                const bb = getValues(JSON.parse(post.allUserPost));
+                console.log(bb);
+                return (
+                  <TableRow
+                    key={post.id + inx}
+                    sx={{
+                      "&:last-child td": {
+                        border: 0,
+                      },
+                    }}
+                  >
+                    <TableCell>
+                      <Typography color='textSecondary' variant='body1'>
+                        {post.userQuery}
+                      </Typography>
+                    </TableCell>
+
+                    {bb.map((x) => {
+                      return (
+                        <TableCell>
+                          <Typography color='textSecondary' variant='body1'>
+                            {x}
+                          </Typography>
+                        </TableCell>
+                      );
+                    })}
+                  </TableRow>
+                );
+              })}
           </TableBody>
         </Table>
       </Card>
@@ -104,4 +119,4 @@ const Documents: FC = () => {
   );
 };
 
-export default Documents;
+export default History;
