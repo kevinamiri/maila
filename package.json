@@ -6,7 +6,7 @@
   "author": "Kevin Levin",
   "packageManager": "yarn@3.2.4",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "19.1.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.9",
