@@ -31,12 +31,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-mui-emotion`,
     {
-      resolve: `gatsby-plugin-s3`,
-      options: {
-        bucketName: "NeuralWord",
-      },
-    },
-    {
       resolve: "gatsby-plugin-i18n",
       options: {
         langKeyForNull: "any",
