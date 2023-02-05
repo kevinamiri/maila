@@ -10,8 +10,6 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import usePayInfo from "../../hooks/usePayInfo";
 import BillingPlanCardContent from "./BillingPlanCardContent";
-import * as Yup from "yup";
-import { Formik } from "formik";
 import Redeemer from "./Redeemer";
 import { SeverityPill } from "components/severity-pill";
 
