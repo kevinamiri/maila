@@ -3,27 +3,27 @@ import { Auth } from "aws-amplify";
 import { navigate } from "gatsby";
 import { Helmet } from "react-helmet";
 import { FormattedMessage, IntlProvider } from "react-intl";
-import "../../configureAmplify";
-import AppContext from "../contexts/AppContext";
-import SignIn from "../components/SignIn";
-import TopBar from "../components/TopBar";
-import DrawerSideBar from "../components/DrawerSideBar";
-import PrivateRoute from "../components/layout/PrivateRoute";
-import ProductDescription from "../components/editors/ProductDescription";
-import AccountManage from "../components/AccountManage";
+import "../../../configureAmplify";
+import AppContext from "../../contexts/AppContext";
+import SignIn from "../../components/SignIn";
+import TopBar from "../../components/TopBar";
+import DrawerSideBar from "../../components/DrawerSideBar";
+import PrivateRoute from "../../components/layout/PrivateRoute";
+import ProductDescription from "../../components/editors/ProductDescription";
+import AccountManage from "../../components/AccountManage";
 import { styled } from "@mui/material/styles";
 // @refresh reset
 import { Router } from "@reach/router";
 import { useLocation } from "@reach/router";
 import Box from "@mui/material/Box";
-import SearchBox from "../components/subcomponents/searchBox";
-import useSettings from "../hooks/useSettings";
+import SearchBox from "../../components/subcomponents/searchBox";
+import useSettings from "../../hooks/useSettings";
 import { useSnackbar } from "notistack";
-import LangSettingsDials from "../components/subcomponents/LangSettingsDials";
-import EditorManage from "../components/editor-manage";
-import useToolsProducts from "../hooks/useToolsProducts";
-import DocumentsPage from "../components/documents-page";
-import States from "../components/app-components/states";
+import LangSettingsDials from "../../components/subcomponents/LangSettingsDials";
+import EditorManage from "../../components/editor-manage";
+import useToolsProducts from "../../hooks/useToolsProducts";
+import DocumentsPage from "../../components/documents-page";
+import States from "../../components/app-components/states";
 
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
@@ -74,7 +74,7 @@ export default function App() {
    * why state? When the component receives updates, the result is displayed immediately, otherwise we can use ref.
    */
   const [values, setValues] = React.useState(getValues(settings));
-  const i18nMessages = require(`../data/messages/${values.lang}`);
+  const i18nMessages = require(`../../data/messages/${values.lang}`);
 
   // because product description uses the ProductDescriptionTool template, I filter out the product description
   const allProducts = useTools[`${values.lang}`].edges.map(

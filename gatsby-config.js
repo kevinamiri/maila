@@ -28,7 +28,6 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-mui-emotion`,
     {
       resolve: "gatsby-plugin-i18n",
@@ -178,9 +177,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/home/*`, `/app/*`] },
-    },
   ],
 };
