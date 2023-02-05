@@ -68,7 +68,6 @@
     "path": "^0.12.7",
     "prismjs": "^1.29.0",
     "prop-types": "^15.8.1",
-    "ptz-i18n": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",

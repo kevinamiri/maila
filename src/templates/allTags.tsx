@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
-import { getCurrentLangKey } from "ptz-i18n";
+import { getCurrentLangKey } from "../langfile";
 import LayoutTag from "../components/layout/LayoutTag";
 import AllTagsPageTemplate from "../components/homepage/AllTagsPageTemplate";
 import { Box } from "@mui/material";
