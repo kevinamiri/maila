@@ -55,12 +55,8 @@ We offer an AI product description generator, that generates a description of a 
 
 ### How it works
 
-It takes just a few clicks to get started with  - no coding required! Create new descriptions in seconds:
-
-  1. Enter keywords or keyphrases (e.g. “men's shoes”)
-  2. From there, you will be given a prompt to input your product name, keywords, and features.
-  3. Once you are satisfied with your inputs, click "submit" button and let AI do it's magic!
-  4. Copy and paste description paragraphs into your store
+It takes just a few clicks to get started with  - no coding required! Create new descriptions in seconds: Enter some keywords about your product, and our AI will generate a unique description for you. You can then copy and paste the description into your product listing.
+1. From there, you will be given a prompt to input your details about the product, keywords, ...; 2. Once you are satisfied with your inputs, click "compose" button and let AI write content based on your input!; Copy and paste AI-generated content into your csm or ecommerce platform.
 
 ### Example:
 
