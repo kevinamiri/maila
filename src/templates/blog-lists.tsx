@@ -27,7 +27,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: { date: DESC } }
       filter: {
         frontmatter: { templateKey: { eq: "blog-body" } }
         fields: { langKey: { eq: $lang } }

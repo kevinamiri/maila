@@ -3,7 +3,12 @@ import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
-import countries from "../account/countries";
+// import countries from "../account/countries";
+
+const locations = [
+  { code: "US", label: "English", LangCode: "en" },
+  { code: "SV", label: "Swedish", LangCode: "sv" },
+];
 
 interface CountryType {
   code: string;
@@ -23,14 +28,14 @@ export default function LanguageAutocompleteApp({ handleChange }) {
         onInputChange={(event, newInputValue) => {
           setInputValue(newInputValue);
         }}
-        options={countries as CountryType[]}
+        options={locations as CountryType[]}
         autoHighlight
         getOptionLabel={(option) =>
-          option.LangCode.toUpperCase() + " - " + option.label
+          option && option?.LangCode.toUpperCase() + " - " + option.label
         }
         renderOption={(props, option) => (
           <li {...props}>
-            {option.LangCode.toUpperCase() + " - " + option.label}
+            {option && option?.LangCode.toUpperCase() + " - " + option.label}
           </li>
         )}
         renderInput={(params) => (

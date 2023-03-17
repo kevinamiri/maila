@@ -5,6 +5,7 @@ import { HistoryEditor } from "slate-history";
 import { updateExpansion, updateHighlghted } from "slices/ui-states";
 import useFetchAll from "./useFetchAll";
 import { serialize } from "./currentSelectEditor";
+import { Node as SlateNode } from "slate";
 
 const extractText = (object: any) => {
   const newArray = [];
@@ -62,10 +63,18 @@ async function useFetchAllData(
   fieldValues
 ) {
   /** Get The whole text of the editor */
-  const editorContents = serialize(editors[0]).substring(0, 15000);
+  const editorContents = serialize(editors[0]).substring(0, 25000);
 
+  // selected text from the editor
+  const selectedTextValueOfTheEditor =
+    (editors[0].selection &&
+      SlateNode.fragment(editors[0], editors[0].selection)
+        .map((x) => SlateNode.string(x))
+        .join("\n")) || editorContents
+
+  console.log(selectedTextValueOfTheEditor)
   /** End: geting before selection and after selection */
-  await useFetchAll(editorContents, gtoken, url, fieldValues).then((data) => {
+  await useFetchAll(selectedTextValueOfTheEditor, gtoken, url, fieldValues).then((data) => {
     if (data) {
       dispatch(updateProgressValue(50));
       dispatch(updateLastId(extractId(data)));
