@@ -4,7 +4,7 @@ title: "AI blog post"
 description: "AI Blog Generator is an innovative tool that utilizes artificial intelligence to create engaging and high-quality blog posts for your website. This tool not only saves you time and effort but also ensures that your content is SEO-friendly and relevant to your audience."
 header: "Create engaging and high-quality blog posts with the help of AI."
 usage: "To use the AI Blog Generator, input your desired topic, keywords, and word count. The AI will then analyze your input and generate a well-structured, unique, and informative blog post tailored to your requirements."
-placeholder: "sustainable fashion, eco-friendly clothing"
+placeholder: "Write all the important points you want to make in the blog post, for instance:\n\n1. Technology has changed the way we live and work\n2. Advancements in technology have led to increased efficiency and productivity\n3. The impact of technology on society and the economy"
 help_hint: "What topic would you like the AI to write a blog post about? Provide some keywords and a word count."
 tags: ["Blog", "AI blog post"]
 date: "2022-03-28"
