@@ -18,7 +18,7 @@ export type RootState = ReturnType<typeof store.getState>;
 
 export type AppDispatch = typeof store.dispatch;
 
-export type AppThunk = ThunkAction<void, RootState, any, Action<string>>;
+export type AppThunk = ThunkAction<void, RootState, null, Action<string>>;
 
 // export type AppThunk = ThunkAction<any, RootState, unknown, Action<any>>;
 
