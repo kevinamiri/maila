@@ -184,96 +184,96 @@ export const { reducer } = slice;
 
 export const updateKeywordValue =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateKeywordValue(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateKeywordValue(x));
+    };
 
 export const updateAudienceValue =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateAudienceValue(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateAudienceValue(x));
+    };
 export const updateBusinessNameValue =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateBusinessNameValue(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateBusinessNameValue(x));
+    };
 export const updateFeatureValue =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateFeatureValue(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateFeatureValue(x));
+    };
 export const updateFormValue =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateFormValue(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateFormValue(x));
+    };
 export const updateMissionValue =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateMissionValue(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateMissionValue(x));
+    };
 export const updatePurposeValue =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updatePurposeValue(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updatePurposeValue(x));
+    };
 
 export const updateToneOfVoiceValue =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateToneOfVoiceValue(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateToneOfVoiceValue(x));
+    };
 
 export const updateDefaultLanguage =
-  (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateDefaultLanguage(x));
-  };
+  (x: string): AppThunk =>
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateDefaultLanguage(x));
+    };
 
 export const updateSuffix =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateSuffix(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateSuffix(x));
+    };
 
 export const updateMaxTokens =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateMaxTokens(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateMaxTokens(x));
+    };
 
 export const updateTemperature =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateTemperature(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateTemperature(x));
+    };
 
 export const updatePresencePenalty =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updatePresencePenalty(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updatePresencePenalty(x));
+    };
 
 export const updateFrequencyPenalty =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateFrequencyPenalty(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateFrequencyPenalty(x));
+    };
 
 export const updateEngineId =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateEngineId(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateEngineId(x));
+    };
 
 export const updateOutputShape =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateOutputShape(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateOutputShape(x));
+    };
 export const updateLoadFromUrl =
   (x): AppThunk =>
-  async (dispatch): Promise<void> => {
-    dispatch(slice.actions.updateLoadFromUrl(x));
-  };
+    async (dispatch): Promise<void> => {
+      dispatch(slice.actions.updateLoadFromUrl(x));
+    };

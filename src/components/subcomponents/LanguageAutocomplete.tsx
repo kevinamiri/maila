@@ -17,11 +17,14 @@ export default function LanguageAutocomplete() {
   const [inputValue, setInputValue] = React.useState("");
   const dispatch = useDispatch();
 
+  console.log("countries", countries);
+
   return (
     <Stack spacing={2} sx={{ width: 200 }}>
       <Autocomplete
         size='small'
         onChange={(event: any, newValue: any) => {
+          console.log("countries", countries);
           dispatch(updateDefaultLanguage(newValue));
         }}
         inputValue={inputValue}
@@ -31,11 +34,11 @@ export default function LanguageAutocomplete() {
         options={countries as CountryType[]}
         autoHighlight
         getOptionLabel={(option) =>
-          option.LangCode.toUpperCase() + " - " + option.label
+          option && option?.LangCode.toUpperCase() + " - " + option.label
         }
         renderOption={(props, option) => (
           <li {...props}>
-            {option.LangCode.toUpperCase() + " - " + option.label}
+            {option && option?.LangCode.toUpperCase() + " - " + option.label}
           </li>
         )}
         renderInput={(params) => (

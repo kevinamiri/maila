@@ -40,11 +40,12 @@ const FormRedux = ({ labelsLists, extraFields }) => {
   //function that takes two array of fieldLists and extraFields and return the merging object when 'name' is share key
   //function that get an object and return an array of objects values
   const getValues = (obj) => Object.values(obj);
-  const fields =
+  const fields: any =
     extraFields && getValues(extraFields).filter((item) => item !== null);
   const dispatchersLists: any = dispatchers.map((x) => getValues(x)[1]);
 
   /* [ updateBusinessNameValue, updatePurposeValue] */
+  console.log(fields, "fields");
 
   const filteredFields =
     fields &&
@@ -55,6 +56,7 @@ const FormRedux = ({ labelsLists, extraFields }) => {
         dispatchers.find((dispatcher) => dispatcher.id === field.id)
     );
 
+  console.log(filteredFields);
   /**
    * This making sure that when the component rendered for the first time,
    * and redux state is empty, we fill the redux state with the values from browser local storage
@@ -63,7 +65,7 @@ const FormRedux = ({ labelsLists, extraFields }) => {
     filteredFields &&
       filteredFields.length > 0 &&
       filteredFields.map((field, i) => {
-        dispatch(
+        return dispatch(
           dispatchers[i].dispatcher(
             JSON.parse(
               typeof window !== "undefined" &&
