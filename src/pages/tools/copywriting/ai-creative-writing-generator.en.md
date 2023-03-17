@@ -1,12 +1,12 @@
 ---
 id: "2090"
-title: "Creative Blog"
-description: "This template will help you generate blog posts based on your input."
-header: "Generate quality and original content in a matter of seconds with our automatic blog post generator."
-usage: "You're a writer looking to create powerful and engaging blog posts. With Maila AI Creative Blog, you'll be able to use AI to help you write content that is both interesting and informative. Simply input your ideas into the system and let the software take care of the rest!"
-placeholder: "1. key points of the article \n 2. key points of the article \n 3. key points of the article \n 4. key points of the article \n 5. key points of the article"
-help_hint: "Write the key points of the blog post; The main points you want to cover."
-tags: ["Copywriting", "Writing", "Blog"]
+title: "AI Creative Blog"
+description: "AI Creative Blog is a cutting-edge platform that leverages artificial intelligence to produce captivating and high-quality blog content for your website. This user-friendly tool not only streamlines your content creation process but also guarantees SEO-optimized and audience-targeted content."
+header: "Enhance your blog with AI-powered creativity."
+usage: "To utilize the AI Creative Blog, simply input your desired topic, relevant keywords, and preferred word count. The AI will promptly analyze your input and generate a well-organized, unique, and insightful blog post that meets your specifications."
+placeholder: "List the essential points you'd like to cover in the blog post, for example:\n\n Key Points:\n \n1. The rise of AI in creative industries\n2. How AI is transforming the creative process\n3. The potential benefits and challenges of AI in creativity\n\n keywords: AI, creativity\n\n"
+help_hint: "Which topic would you like the AI to craft a blog post on? Please provide some keywords and a word count."
+tags: ["Blog", "AI Creative Blog"]
 date: "2022-08-22"
 slug: /en/tools/copywriting/creative-blog
 lang: en

@@ -29,7 +29,7 @@ export const useToolsProducts = () => {
                 hasCustomTemplate
                 hasCustomTextArea
                 editor_height
-                loadFromUrl
+               
                 extraFields {
                   company {
                     name
@@ -109,7 +109,7 @@ export const useToolsProducts = () => {
                 hasCustomTemplate
                 hasCustomTextArea
                 editor_height
-                loadFromUrl
+               
                 extraFields {
                   company {
                     name
@@ -189,7 +189,7 @@ export const useToolsProducts = () => {
                 hasCustomTemplate
                 hasCustomTextArea
                 editor_height
-                loadFromUrl
+                
                 extraFields {
                   company {
                     name
@@ -269,7 +269,6 @@ export const useToolsProducts = () => {
                 hasCustomTemplate
                 hasCustomTextArea
                 editor_height
-                loadFromUrl
                 extraFields {
                   company {
                     name
