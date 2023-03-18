@@ -12,7 +12,7 @@ slug: /en/tools/writing/paraphrase
 lang: en
 icon: "paraphrase"
 hasCustomTemplate: false
-tone: false
+tone: true
 templateKey: 'tools-body'
 jsonId: "611"
 product_type: "17"
