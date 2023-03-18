@@ -78,7 +78,6 @@ plans:
         - Access all templates
         - Customized models
         - 24/7 support
-
 F100:
   - AI-powered email generation tools
   - With AI-powered email generator, you can create sales-oriented emails that will motivate your audience to take action. Simply enter some product information, and our advanced engine will generate a marketing message that takes your product to the next level.
@@ -114,6 +113,8 @@ H0118:
     - Yes, we support languages other than English. The best quality translations are currently available in English.
     - Can I customize this tools to meet my needs?
     - Yes, we offer custom solutions to our clients. Please contact us for more information.
+    - How is Maila AI-generated content different from other forms of content?
+    - Our AI-powered copywriting tools are designed to produce content that is indistinguishable from human-written content.
 H01194: 
   - AI Copy Generator
   - Use advanced artificial intelligence to generate content for your website, blog or marketing materials.
