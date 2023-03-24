@@ -22,7 +22,7 @@ const Badge = styled.span`
 `;
 
 export const Email = ({
-  title = "AI-powered customer support",
+  title = "AI-Powered Customer Support",
   subheader = "Revolutionizing Customer Support: AI-Powered App Streamlines Communication Through Email",
   labelbutton = "Comming soon",
   description = "Say goodbye to long wait times and hello to instant support! Our AI-powered customer support app handles all inquiries through email, providing efficient and personalized solutions for each customer. Experience the future of customer support today.",
@@ -35,14 +35,19 @@ export const Email = ({
     component='header'
   >
     <Container maxWidth='md'>
-      <Typography align='center' color='primary.main' variant='h2'>
+      <Typography
+        align='center'
+        color='primary.main'
+        variant='h1'
+        component={"h2"}
+      >
         <Badge>{` ${afterTwo(title)}`}</Badge>
       </Typography>
       <Typography
         align='center'
         color='textSecondary'
         sx={{
-          fontSize: 22,
+          fontSize: 20,
           mb: 10,
           mt: 10,
         }}
