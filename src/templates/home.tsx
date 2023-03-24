@@ -9,6 +9,7 @@ import LandingsFeature from "../components/landings/landings-feature";
 import Container from "@mui/material/Container";
 import WithIllustrationFeatures from "../components/landings/WithIllustrationFeatures";
 import { Pricing } from "../components/landings/pricing";
+import Email from "components/landings/email";
 
 const HomePage = (props) => {
   const data = props.data;
@@ -36,6 +37,7 @@ const HomePage = (props) => {
           labelbutton={dataMarkdown.frontmatter.L0401[0]}
           helpernotice={dataMarkdown.frontmatter.H01047}
         />
+        <Email />
         <LandingsFeature
           headerRight={dataMarkdown.frontmatter.H01194[0]}
           descriptionRight={dataMarkdown.frontmatter.H01194[1]}

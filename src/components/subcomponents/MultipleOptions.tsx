@@ -19,7 +19,7 @@ const checkedIcon = <CheckBoxIcon fontSize='small' />;
 const filter = createFilterOptions<VoiceOptionType>();
 export default function CheckboxesTags() {
   const dispatch = useDispatch();
-  const { defaultVoice } = useSelector((state) => state.fieldsValue);
+  const { defaultVoice } = useSelector((state: any) => state.fieldsValue);
   const [inputValue, setInputValue] = React.useState("");
 
   return (
@@ -76,7 +76,7 @@ export default function CheckboxesTags() {
           error={defaultVoice.length < 1 ? true : false}
           {...params}
           variant='outlined'
-          label='Tone and Voice'
+          label='Style and tone'
           placeholder='You may select one or more tone'
         />
       )}

@@ -31,7 +31,7 @@ const LandingsFeature = ({
         elevation={0}
         sx={{
           background: (theme) =>
-            `linear-gradient(180deg, ${theme.palette.background.default} 50%, ${theme.palette.background.default} 50%)`,
+            `linear-gradient(270deg, ${theme.palette.background.paper} 50%, ${theme.palette.background.paper} 50%)`,
           borderRadius: "1rem",
         }}
       >
