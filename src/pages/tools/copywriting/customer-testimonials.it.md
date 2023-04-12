@@ -5,9 +5,9 @@ description: "Il generatore di testimonianze dei clienti AI è un potente strume
 url: "/app/customer-testimonials"
 header: "Aumenta la credibilità del tuo marchio con le testimonianze dei clienti generate dall'IA."
 usage: "Per utilizzare questo modello, basta inserire il nome del tuo prodotto o servizio, le parole chiave o le caratteristiche principali, insieme a qualsiasi nome o posizione del cliente che desideri includere. Questo strumento genererà quindi una testimonianza convincente e coinvolgente basata sui tuoi input."
-placeholder: "Fornire dettagli essenziali o parole chiave sul prodotto o servizio, ad esempio il nome del prodotto come "tappetino yoga", le caratteristiche principali come "antiscivolo", "ecologico", o nomi di clienti e località (opzionale)."
+placeholder: "Fornire dettagli essenziali o parole chiave sul prodotto o servizio, ad esempio il nome del prodotto come 'tappetino yoga', le caratteristiche principali come 'antiscivolo', 'ecologico', o nomi di clienti e località (opzionale)."
 help_hint: "Inserisci alcune parole chiave o dettagli sul tuo prodotto o servizio e creeremo una testimonianza avvincente in base al tuo input.  Facoltativamente, è anche possibile fornire nomi e posizioni dei clienti."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
