@@ -2,10 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { styled } from "@mui/styles";
 import Link from "../Link";
 // it could be your App.tsx file or theme file that is included in your tsconfig.json
-import { Theme } from "@mui/material/styles";
+import { Theme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 
 const LangButton = styled(Button)(({ theme }) => ({
