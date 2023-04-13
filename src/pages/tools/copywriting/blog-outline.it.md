@@ -22,7 +22,7 @@ Keywords/key points:
 11. Conclusion and final thoughts
 
 Thank you!"
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

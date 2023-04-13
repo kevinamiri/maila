@@ -7,7 +7,7 @@ header: "Oplev kraftfulde nøgleord for at øge dit indholds ydelse."
 usage: "For at bruge denne skabelon skal du blot indtaste dit indholds emne eller et par relaterede nøgleord.  AI-nøgleordsgeneratoren genererer derefter en liste over relevante og højtydende nøgleord for at optimere dit indhold for bedre synlighed og engagement."
 placeholder: "Indtast et emne eller et par nøgleord relateret til dit indhold, f.eks. Digital marketing, rejseblogging eller fitness -tip."
 help_hint: "Hvad er emnet eller hovedfokus for dit indhold?  Giv et par relaterede nøgleord, og vi genererer en liste over kraftfulde nøgleord for at forbedre dit indholds ydelse."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

@@ -7,7 +7,7 @@ header: "Luo ajatuksia herättäviä kysymyksiä yleisön kiinnittämiseksi."
 usage: "Voit käyttää tätä työkalua syöttämällä haluamasi aihe, avainsanat tai avainpisteet.  AI tuottaa sitten sarjan hyvin muotoiltuja, asiaankuuluvia ja kiinnostavia kysymyksiä panoksesi perusteella."
 placeholder: "Syötä haluamasi aihe, avainsanat tai avainkohdat, esimerkiksi: \ n \ ntopic: Sosiaalisen median markkinointi \ nywords: Facebook, Instagram, Twitter, LinkedIn \ n \ n"
 help_hint: "I would like to generate questions related to the topic of sustainable fashion."
-tags: [Copywriting,FAQ,AI-generated questions]
+tags: [Copywriting, FAQ, AI-generated questions]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

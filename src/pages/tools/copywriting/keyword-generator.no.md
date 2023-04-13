@@ -7,7 +7,7 @@ header: "Oppdag kraftige nøkkelord for å øke innholdets ytelse."
 usage: "For å bruke denne malen, skriv bare inn innholdets emne eller noen få relaterte søkeord.  AI-nøkkelordgeneratoren vil deretter generere en liste over relevante og høypresterende nøkkelord for å optimalisere innholdet ditt for bedre synlighet og engasjement."
 placeholder: "Skriv inn et emne eller noen få nøkkelord relatert til innholdet ditt, for eksempel digital markedsføring, reiseblogging eller treningstips."
 help_hint: "Hva er temaet eller hovedfokuset for innholdet ditt?  Gi noen få relaterte søkeord, så genererer vi en liste over kraftige nøkkelord for å forbedre innholdets ytelse."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

@@ -7,7 +7,7 @@ header: "Lad AI hjælpe dig med at oprette den perfekte elevatorhøjde til din v
 usage: "For at bruge dette værktøj skal du bare indtaste dit virksomhedsnavn, nøglefunktioner og målgruppe.  Denne AI-generator vil derefter oprette en veludviklet, kortfattet og overbevisende elevatorbane, der fremhæver de unikke salgssteder for din virksomhed eller produkt."
 placeholder: "Indtast de væsentlige detaljer om din virksomhed eller produkt, fx forretningsnavn, nøglefunktioner, målgruppe osv."
 help_hint: "Hvad er de vigtigste aspekter af din virksomhed eller produkt, som du vil fokusere på?  Indtast nogle nøgleord relateret til disse aspekter, og vores AI vil skabe en engagerende elevatorhøjde baseret på dit input."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

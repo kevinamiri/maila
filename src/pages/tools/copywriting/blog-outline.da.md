@@ -7,7 +7,7 @@ header: "Streamline din indholdsoprettelsesproces med AI-genererede blogkonturer
 usage: "For at bruge dette værktøj skal du blot indtaste det ønskede emne, nøgleord eller nøglepunkter.  Denne AI-drevne generator opretter derefter en omfattende og velstruktureret blogoversigt baseret på dit input."
 placeholder: "Indtast dit emne og vigtige punkter eller nøgleord, du vil medtage i konturen, for eksempel: \ n \ n Emne: Fordelene ved yoga \ n \ n nøglepunkter: \ n \ n1.  Forbedrer fleksibilitet \ n2.  Forbedrer mentalt fokus \ n3.  Reducerer stress \ n \ n nøgleord: yoga, fleksibilitet, mental fokus, stressreduktion"
 help_hint: "Hvilket emne vil du oprette en blogoversigt til?  Giv nogle nøgleord eller nøglepunkter relateret til emnet, og vores AI genererer en velstruktureret blogoversigt baseret på dit input.  Det anbefales at liste de vigtigste punkter, du vil dække i blogindlægget."
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

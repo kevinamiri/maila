@@ -7,7 +7,7 @@ header: "Øg dit brands troværdighed med AI-genererede kundeudtalelser."
 usage: "For at bruge denne skabelon skal du blot indtaste dit produkt- eller servicenavn, nøgleord eller nøglefunktioner sammen med eventuelle kundernavne eller placeringer, du gerne vil medtage.  Dette værktøj genererer derefter en overbevisende og engagerende kundeudtalelse baseret på dit input."
 placeholder: "Giv vigtige detaljer eller nøgleord om produktet eller tjenesten, f.eks.  Produktnavn som 'Yoga Mat', nøglefunktioner såsom 'ikke-slip', 'miljøvenlig' eller kundenavne og placeringer (valgfrit)."
 help_hint: "Indtast et par nøgleord eller detaljer om dit produkt eller din tjeneste, og vi opretter en overbevisende kundevurdering baseret på dit input.  Valgfrit kan du også give kundenavne og placeringer."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

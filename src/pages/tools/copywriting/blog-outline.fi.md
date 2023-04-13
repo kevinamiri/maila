@@ -7,7 +7,7 @@ header: "Virtaviivaistaa sisällön luomisprosessia AI-Generated Blog -sarjalla.
 usage: "Voit käyttää tätä työkalua yksinkertaisesti syöttämällä haluamasi aihe, avainsanat tai avainkohdat.  Tämä AI-käyttöinen generaattori luo sitten kattavan ja hyvin jäsennellyn blogin ääriviivat panoksesi perusteella."
 placeholder: "Kirjoita aihe ja tärkeät kohdat tai avainsanat, jotka haluat sisällyttää ääriviivaan, esimerkiksi: \ n \ n Aihe: Jooga \ n \ n avainkohdat: \ n \ n1.  Parantaa joustavuutta \ n2.  Parantaa henkistä keskittymistä \ n3.  Vähentää stressiä \ n \ n avainsanat: jooga, joustavuus, henkinen tarkennus, stressin vähentäminen"
 help_hint: "Mihin aiheeseen haluaisit luoda blogin ääriviivat?  Tarjoa joitain aiheeseen liittyviä avainsanoja tai avainkohtia ja AI tuottaa hyvin jäsennellyn blogin ääriviivat panoksesi perusteella.  On suositeltavaa luetella avainkohtia, jotka haluat kattaa blogiviestissä."
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

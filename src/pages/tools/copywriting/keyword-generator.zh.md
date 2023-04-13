@@ -7,7 +7,7 @@ header: "发现强大的关键字以提高内容的性能。"
 usage: "要使用此模板，只需输入内容的主题或一些相关的关键字即可。 然后，AI关键字生成器将生成相关且高性能的关键字列表，以优化您的内容以更好地可见性和参与度。"
 placeholder: "输入与您的内容有关的主题或一些关键字，例如数字营销，旅行博客或健身技巧。"
 help_hint: "您的内容的主题或主要重点是什么？ 提供一些相关的关键字，我们将生成一个强大的关键字列表，以增强您的内容的性能。"
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

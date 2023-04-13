@@ -7,7 +7,7 @@ header: "Øg dit online omdømme med AI-genererede anmeldelser."
 usage: "For at bruge dette værktøj skal du blot indtaste det ønskede emne, nøgleord og nøglefunktioner i produktet eller tjenesten.  AI-gennemgangsgeneratoren opretter derefter en velstruktureret, unik og overbevisende gennemgang baseret på dit input."
 placeholder: "Skriv alle de væsentlige detaljer, du vil fremhæve i gennemgangen, for eksempel: \ n \ n nøglepunkter: \ n \ n1.  Fremragende kundeservice \ n2.  Produkt af høj kvalitet \ n3.  Hurtig forsendelse \ n \ n nøgleord: kundeservice, produktkvalitet, forsendelse \ n \ n"
 help_hint: "Hvilket produkt eller service vil du generere en gennemgang til?  Indtast nogle nøgleord relateret til emnet, og vi opretter en overbevisende gennemgang baseret på dit input.  Det anbefales at liste de vigtigste punkter, du vil fremhæve i gennemgangen."
-tags: [Copywriting,review generator ai,ai review generator]
+tags: [Copywriting, review generator ai, ai review generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

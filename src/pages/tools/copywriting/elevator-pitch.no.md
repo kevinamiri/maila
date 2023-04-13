@@ -7,7 +7,7 @@ header: "La AI hjelpe deg med å lage den perfekte heisbanen for din virksomhet 
 usage: "For å bruke dette verktøyet, er det bare å legge inn forretningsnavnet, nøkkelfunksjonene og målgruppen.  Denne AI-generatoren vil da lage en godt laget, konsis og overbevisende heisbane som fremhever de unike salgspunktene i din virksomhet eller produkt."
 placeholder: "Vennligst oppgi de viktigste detaljene om din bedrift eller produkt, for eksempel bedriftens navn, nøkkelegenskaper, målgruppe osv."
 help_hint: "Hva er de viktigste aspektene ved virksomheten eller produktet du vil fokusere på?  Skriv inn noen nøkkelord relatert til disse aspektene, og vår AI vil lage en engasjerende heis tonehøyde basert på innspillene dine."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

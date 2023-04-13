@@ -7,7 +7,7 @@ header: "Öka ditt varumärkes trovärdighet med AI-genererade kundtillbehör."
 usage: "För att använda den här mallen, ange bara ditt produkt- eller servicenamn, nyckelord eller nyckelfunktioner, tillsammans med alla kundnamn eller platser du vill inkludera.  Detta verktyg kommer sedan att generera ett övertygande och engagerande kundtvetande baserat på din input."
 placeholder: "Ge viktiga detaljer eller nyckelord om produkten eller tjänsten, t.ex.  Produktnamn som "yogamat", nyckelfunktioner som "icke-halk", "miljövänlig" eller kundnamn och platser (valfritt)."
 help_hint: "Ange några nyckelord eller detaljer om din produkt eller tjänst, så skapar vi ett tvingande kundtvetande baserat på din input. Valfritt kan du också ange kundnamn och platser."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

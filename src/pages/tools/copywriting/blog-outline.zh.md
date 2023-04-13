@@ -7,7 +7,7 @@ header: "用AI生成的博客大纲简化您的内容创建过程。"
 usage: "要使用此工具，只需输入您所需的主题，关键字或关键点即可。 然后，该AI驱动的发电机将根据您的输入创建一个全面且结构良好的博客大纲。"
 placeholder: "输入要在大纲中包含的主题以及要点或关键字，例如：\ n \ n主题：瑜伽\ n \ n关键点的好处：\ n \ n1。 提高灵活性\ n2。 增强心理重点\ n3。 减轻压力\ n \ n关键字：瑜伽，灵活性，心理重点，减轻压力"
 help_hint: "您想为哪个主题创建博客大纲？ 提供一些与该主题相关的关键字或关键点，我们的AI将根据您的输入生成结构良好的博客大纲。 建议在博客文章中列出您要涵盖的要点。"
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

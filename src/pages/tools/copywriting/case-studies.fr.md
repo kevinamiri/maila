@@ -7,7 +7,7 @@ header: "Transformez vos données en études de cas perspicaces avec l'aide de l
 usage: "Pour utiliser ce modèle, entrez simplement le sujet principal de votre étude de cas, les points clés et toutes les données ou statistiques pertinentes.  Cet outil générera ensuite une étude de cas bien structurée, captivante et informative basée sur votre entrée."
 placeholder: "Entrez le sujet ou le problème principal, ainsi que des points clés et des données que vous souhaitez inclure dans votre étude de cas, par exemple: \ n \ nmain Sujet: Amélioration de la satisfaction du client dans un magasin de détail \ n \ nkey Points: \ n \ n1.  Identification des points de douleur des clients \ n2.  Implémentation de solutions efficaces \ n3.  Évaluation de l'impact des modifications \ n \ ndata: augmentation de la cote de satisfaction moyenne du client de 3,5 à 4,2 \ n \ nkeywords: vente au détail, satisfaction du client, amélioration"
 help_hint: "Quel est le sujet ou le problème principal de votre étude de cas?  Fournissez des points clés, des données ou des statistiques que vous souhaitez inclure, et nous créerons une étude de cas complète basée sur votre entrée."
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

@@ -7,7 +7,7 @@ header: "Uudista sisältösi uudella kosketuksella käyttämällä AI-käyttöä
 usage: "Voit käyttää sisällön uudelleenkirjoittajaa syöttämällä teksti, jonka haluat kirjoittaa uudelleen.  Tämä työkalu tuottaa sitten ainutlaatuisen, hyvin jäsennellyn ja kiinnostavan version alkuperäisestä sisällöstäsi ylläpitäen sen kontekstia ja keskeisiä ideoita."
 placeholder: "Liitä alkuperäinen teksti tai sisältö tähän, ja mallimme kirjoittavat sen uudelleen luodaksesi ainutlaatuisen, kiinnostavan ja houkuttelevan version."
 help_hint: "Kirjoita teksti, jonka haluat kirjoittaa uudelleen, ja luomme uuden, ainutlaatuisen version säilyttämällä alkuperäisen merkityksen ja kontekstin.  Ihanteellinen sisällön laadun parantamiseksi ja plagiointikysymysten välttämiseksi."
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

@@ -7,7 +7,7 @@ header: "Remanicez votre contenu avec une nouvelle touche en utilisant une réé
 usage: "Pour utiliser le réécriture de contenu, saisissez simplement votre texte que vous souhaitez réécrire.  Cet outil générera ensuite une version unique, bien structurée et engageante de votre contenu d'origine, en maintenant son contexte et ses idées clés."
 placeholder: "Collez ici votre texte ou votre contenu d'origine, et nos modèles le réécrivent pour créer une version unique, attrayante et attrayante."
 help_hint: "Entrez le texte que vous souhaitez réécrire et nous générerons une nouvelle version unique tout en préservant la signification et le contexte d'origine.  Idéal pour améliorer la qualité du contenu et éviter les problèmes de plagiat."
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

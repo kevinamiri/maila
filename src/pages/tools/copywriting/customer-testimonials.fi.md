@@ -7,7 +7,7 @@ header: "Lisää tuotemerkkisi uskottavuutta AI: n luomilla asiakkaiden suosituk
 usage: "Voit käyttää tätä mallia syöttämällä tuotteesi tai palvelun nimi, avainsanat tai avainominaisuudet, samoin kuin kaikki asiakasnimet tai sijainnit, jotka haluat sisällyttää.  Tämä työkalu tuottaa sitten vakuuttavan ja kiinnostavan asiakkaan suosituksen panoksesi perusteella."
 placeholder: "Tarjoa tärkeitä tietoja tai avainsanoja tuotteesta tai palvelusta, esim.  Tuotteen nimi, kuten 'joogamatto', avainominaisuudet, kuten 'ei liuku', 'ympäristöystävällinen' tai asiakasnimet ja sijainnit (valinnainen)."
 help_hint: "Kirjoita muutama avainsanat tai yksityiskohdat tuotteestasi tai palvelustasi, ja luomme houkuttelevan asiakkaan suosituksen panoksesi perusteella.  Valinnaisesti voit myös tarjota asiakkaiden nimiä ja sijainteja."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

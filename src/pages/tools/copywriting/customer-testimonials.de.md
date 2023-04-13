@@ -7,7 +7,7 @@ header: "Steigern Sie die Glaubwürdigkeit Ihrer Marke mit AI-generierten Kunden
 usage: "Um diese Vorlage zu verwenden, geben Sie einfach Ihren Produkt- oder Servicenamen, Schlüsselwörter oder Schlüsselfunktionen zusammen mit Kundennamen oder Standorten ein, die Sie einschließen möchten.  Dieses Tool generiert dann eine überzeugende und ansprechende Kundenaussage, die auf Ihren Eingaben basiert."
 placeholder: "Geben Sie wesentliche Details oder Schlüsselwörter über das Produkt oder die Dienstleistung an, z.  Produktname wie "Yoga-Matte", wichtige Funktionen wie "Nicht-Schlupf", "umweltfreundlich" oder Kundennamen und Standorte (optional)."
 help_hint: "Geben Sie ein paar Schlüsselwörter oder Details zu Ihrem Produkt oder Ihrer Dienstleistung ein und wir erstellen basierend auf Ihrer Eingabe ein überzeugendes Kundendestimonial.  Optional können Sie auch Kundennamen und Standorte angeben."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

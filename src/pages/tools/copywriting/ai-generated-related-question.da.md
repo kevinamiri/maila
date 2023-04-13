@@ -6,8 +6,8 @@ url: "/app/ai-generated-related-question"
 header: "Generer tankevækkende spørgsmål for at engagere dit publikum."
 usage: "For at bruge dette værktøj skal du blot indtaste det ønskede emne, nøgleord eller nøglepunkter.  Vores AI genererer derefter et sæt veludviklede, relevante og engagerende spørgsmål baseret på dit input."
 placeholder: "Indtast dit ønskede emne, nøgleord eller nøglepunkter, for eksempel: \ n \ ntopic: Social Media Marketing \ Nkeywords: Facebook, Instagram, Twitter, LinkedIn \ N \ n"
-help_hint: "Hvilket emne vil du generere relaterede spørgsmål til?  Indtast nogle nøgleord relateret til emnet, og vi opretter en liste over engagerende spørgsmål baseret på dit input.  Det anbefales at give et specifikt fokus eller aspekt, du vil have, at de spørgsmål skal adresseres."
-tags: [Copywriting,FAQ,AI-generated questions]
+help_hint: "Hvilket emne vil du generere relaterede spørgsmål til?  Indtast nogle nøgleord relateret til emnet, og vi opretter en liste over engagerende spørgsmål baseret på dit input.  Det anbefales at give et specifikt fokus eller aspekt, du vil have, at de spørgsmål skal adresseres." 
+tags: [Copywriting, FAQ, AI-generated questions]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

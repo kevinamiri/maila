@@ -1,6 +1,6 @@
 ---
 id: "38"
-title: "AI-generated related question"
+title: "Related question"
 description: "AI-generated related question is a tool that utilizes artificial intelligence to automatically create relevant and engaging questions based on a given topic or keywords. This tool is perfect for generating FAQ sections, discussion forums, social media content, and more, ensuring that you address the most important concerns of your target audience."
 url: "/app/ai-generated-related-question"
 header: "Generate thought-provoking questions to engage your audience."

@@ -7,7 +7,7 @@ header: "通过AI帮助将您的数据转换为有见地的案例研究。"
 usage: "要使用此模板，只需输入案例研究的主要主题，要点和任何相关数据或统计信息即可。 然后，该工具将根据您的意见生成结构良好，迷人且内容丰富的案例研究。"
 placeholder: "输入主要主题或问题，以及要在案例研究中包含的要点和数据，例如：\ n \ nmain主题：提高零售商店中的客户满意度\ n \ nkey点：\ n \ n1。 确定客户痛点\ n2。 实施有效的解决方案\ n3。 评估更改的影响\ n \ ndata：平均客户满意度从3.5提高到4.2 \ n \ nkeywords：零售，客户满意度，改进"
 help_hint: "您的案例研究的主要主题或问题是什么？ 提供您要包含的要点，数据或统计信息，我们将根据您的输入创建全面的案例研究。"
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

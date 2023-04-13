@@ -7,7 +7,7 @@ header: "Lisää online-mainettasi AI-tuotetuilla arvosteluilla."
 usage: "Voit käyttää tätä työkalua syöttämällä vain haluamasi aihe, avainsanat ja tuotteen tai palvelun keskeiset ominaisuudet.  AI-arvostelugeneraattori luo sitten hyvin jäsennellyn, ainutlaatuisen ja vakuuttavan arvostelun panoksesi perusteella."
 placeholder: "Kirjoita kaikki olennaiset yksityiskohdat, jotka haluat korostaa arvosteluun, esimerkiksi: \ n \ n avainpisteet: \ n \ n1.  Erinomainen asiakaspalvelu \ N2.  Korkealaatuinen tuote \ n3.  Nopea toimitus \ n \ n avainsanat: asiakaspalvelu, tuotteen laatu, toimitus \ n \ n"
 help_hint: "Mille tuotelle tai palvelusta haluaisit luoda arvostelu?  Kirjoita joitain aiheeseen liittyviä avainsanoja ja luomme pakottavan arvostelun panoksesi perusteella.  On suositeltavaa luetella avainkohtia, jotka haluat korostaa arvostelussa."
-tags: [Copywriting,review generator ai,ai review generator]
+tags: [Copywriting, review generator ai, ai review generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

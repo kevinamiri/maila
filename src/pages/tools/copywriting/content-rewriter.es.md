@@ -7,7 +7,7 @@ header: "Renova su contenido con un toque nuevo utilizando una reescritura con A
 usage: "Para usar el reescritor de contenido, simplemente ingrese su texto que desea reescribir.  Esta herramienta generará una versión única, bien estructurada y atractiva de su contenido original, manteniendo su contexto e ideas clave."
 placeholder: "Pegue su texto o contenido original aquí, y nuestros modelos lo reescribirán para crear una versión única, atractiva y atractiva."
 help_hint: "Ingrese el texto que desea reescribir, y generaremos una versión nueva y única al tiempo que preservaremos el significado y el contexto originales.  Ideal para mejorar la calidad del contenido y evitar problemas de plagio."
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

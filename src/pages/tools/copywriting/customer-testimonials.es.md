@@ -7,7 +7,7 @@ header: "Aumente la credibilidad de su marca con testimonios de clientes generad
 usage: "Para usar esta plantilla, simplemente ingrese el nombre de su producto o servicio, palabras clave o características clave, junto con cualquier nombre o ubicación de clientes que desee incluir.  Esta herramienta generará un testimonio de clientes convincente y atractivo en función de su aporte."
 placeholder: "Proporcione detalles esenciales o palabras clave sobre el producto o servicio, p.  Nombre del producto como 'Mat de yoga', características clave como 'no deslizamiento', 'ecológico' o nombres y ubicaciones de clientes (opcional)."
 help_hint: "Ingrese algunas palabras clave o detalles sobre su producto o servicio, y crearemos un testimonio de clientes convincente en función de su entrada.  Opcionalmente, también puede proporcionar nombres y ubicaciones de clientes."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

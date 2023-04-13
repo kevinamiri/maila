@@ -7,7 +7,7 @@ header: "Omdann dine data til indsigtsfulde casestudier med AI -hjælp."
 usage: "For at bruge denne skabelon skal du blot indtaste din casestudies hovedemne, nøglepunkter og eventuelle relevante data eller statistikker.  Dette værktøj genererer derefter en velstruktureret, fængslende og informativ casestudie baseret på dit input."
 placeholder: "Indtast hovedemnet eller problemet sammen med nøglepunkter og data, du vil inkludere i din casestudie, for eksempel: \ n \ nmain Emne: Forbedring af kundetilfredshed i en detailbutik \ n \ nkey point: \ n \ n1.  Identificering af kundesmerter \ n2.  Implementering af effektive løsninger \ n3.  Evaluering af virkningen af ​​ændringerne \ n \ ndata: stigning i gennemsnitlig kundetilfredshedsvurdering fra 3,5 til 4,2 \ n \ nkeywords: detail, kundetilfredshed, forbedring"
 help_hint: "Hvad er hovedemnet eller problemet for din casestudie?  Giv nøglepunkter, data eller statistik, du vil medtage, og vi opretter en omfattende casestudie baseret på dit input."
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

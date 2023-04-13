@@ -7,7 +7,7 @@ header: "Discover powerful keywords to boost your content's performance."
 usage: "To use this template, simply input your content's topic or a few related keywords. The AI Keyword Generator will then generate a list of relevant and high-performing keywords to optimize your content for better visibility and engagement."
 placeholder: "Enter a topic or a few keywords related to your content, e.g., digital marketing, travel blogging, or fitness tips."
 help_hint: "What is the topic or main focus of your content? Provide a few related keywords, and we will generate a list of powerful keywords to enhance your content's performance."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

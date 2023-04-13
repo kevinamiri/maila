@@ -7,7 +7,7 @@ header: "Transformer dataene dine til innsiktsfulle casestudier med AI -assistan
 usage: "For å bruke denne malen, skriv bare inn casestudiens hovedfag, nøkkelpunkter og eventuelle relevante data eller statistikk.  Dette verktøyet vil deretter generere en godt strukturert, fengslende og informativ casestudie basert på dine innspill."
 placeholder: "Skriv inn hovedemnet eller problemet, sammen med viktige punkter og data du vil ta med i casestudien din, for eksempel: \ n \ nmain Emne: Forbedring av kundetilfredshet i en butikk \ n \ nkey Poeng: \ n \ n1.  Identifisere kundesmerter \ n2.  Implementering av effektive løsninger \ n3.  Evaluering av virkningen av endringene \ n \ ndata: Økning i gjennomsnittlig kundetilfredshetsvurdering fra 3,5 til 4,2 \ n \ nkeywords: detaljhandel, kundetilfredshet, forbedring"
 help_hint: "Hva er hovedfaget eller problemet for casestudien din?  Gi viktige punkter, data eller statistikk du vil inkludere, og vi vil lage en omfattende casestudie basert på innspillene dine."
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

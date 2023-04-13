@@ -7,7 +7,7 @@ header: "Stürzen Sie Ihren Inhaltserstellungsprozess mit AI-generierten Blog-Um
 usage: "Um dieses Tool zu verwenden, geben Sie einfach Ihr gewünschtes Thema, Schlüsselwörter oder Schlüsselpunkte ein.  Dieser KI-angetriebene Generator erstellt dann eine umfassende und gut strukturierte Blog-Überlinie, die auf Ihrer Eingabe basiert."
 placeholder: "Geben Sie Ihr Thema und wichtige Punkte oder Schlüsselwörter ein, die Sie in den Umriss einbeziehen möchten, z.  Verbessert die Flexibilität \ n2.  Verstärkt den mentalen Fokus \ n3.  Reduziert Stress \ n \ n Schlüsselwörter: Yoga, Flexibilität, mentale Fokus, Stressreduzierung"
 help_hint: "Für welches Thema möchten Sie eine Blog -Überstiegslinie erstellen?  Geben Sie einige Schlüsselwörter oder Schlüsselpunkte im Zusammenhang mit dem Thema an, und unsere KI generiert eine gut strukturierte Blog-Überlinie auf der Grundlage Ihrer Eingabe.  Es wird empfohlen, die wichtigsten Punkte aufzulisten, die Sie im Blog -Beitrag behandeln möchten."
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

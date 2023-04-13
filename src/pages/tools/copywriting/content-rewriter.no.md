@@ -7,7 +7,7 @@ header: "Forny innholdet ditt med et nytt preg ved hjelp av AI-drevet omskriving
 usage: "For å bruke innholdsreverandøren, skriver du bare inn teksten du vil omskrive.  Dette verktøyet vil da generere en unik, godt strukturert og engasjerende versjon av det originale innholdet, og opprettholde konteksten og viktige ideer."
 placeholder: "Lim inn originaltekst eller innhold her, og modellene våre vil omskrive den for å skape en unik, engasjerende og tiltalende versjon."
 help_hint: "Skriv inn teksten du vil omskrive, så genererer vi en ny, unik versjon mens vi bevarer den opprinnelige betydningen og konteksten.  Ideell for å forbedre innholdskvaliteten og unngå plagieringsproblemer."
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

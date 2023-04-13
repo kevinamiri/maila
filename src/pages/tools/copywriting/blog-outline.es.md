@@ -7,7 +7,7 @@ header: "Agilice su proceso de creación de contenido con esquemas de blog gener
 usage: "Para usar esta herramienta, simplemente ingrese su tema deseado, palabras clave o puntos clave.  Este generador con AI creará un esquema de blog integral y bien estructurado basado en su entrada."
 placeholder: "Ingrese su tema y puntos o palabras clave importantes que desea incluir en el esquema, por ejemplo: \ n \ n Tema: Los beneficios de Yoga \ n \ n Puntos clave: \ n \ n1.  Mejora la flexibilidad \ n2.  Mejora el enfoque mental \ n3.  Reduce las palabras clave de estrés \ n \ n: yoga, flexibilidad, enfoque mental, reducción del estrés"
 help_hint: "¿Para qué tema le gustaría crear un esquema de blog?  Proporcione algunas palabras clave o puntos clave relacionados con el tema y nuestra IA generará un esquema de blog bien estructurado en función de su entrada.  Se recomienda enumerar los puntos clave que desea cubrir en la publicación del blog."
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

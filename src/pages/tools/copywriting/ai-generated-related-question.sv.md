@@ -7,7 +7,7 @@ header: "Generera tankeväckande frågor för att engagera din publik."
 usage: "För att använda det här verktyget, ange bara önskat ämne, nyckelord eller nyckelpunkter.  Vår AI kommer sedan att generera en uppsättning välgjorda, relevanta och engagerande frågor baserade på dina inlägg."
 placeholder: "Ange önskat ämne, nyckelord eller nyckelpunkter, till exempel: \ n \ ntopic: Social Media Marketing \ NKEYWORDS: Facebook, Instagram, Twitter, LinkedIn \ N \ n"
 help_hint: "Vilket ämne vill du generera relaterade frågor för?  Ange några nyckelord relaterade till ämnet så skapar vi en lista över engagerande frågor baserat på din input.  Det rekommenderas att tillhandahålla ett specifikt fokus eller aspekt du vill att frågorna ska ta itu med."
-tags: [Copywriting,FAQ,AI-generated questions]
+tags: [Copywriting, FAQ, AI-generated questions]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

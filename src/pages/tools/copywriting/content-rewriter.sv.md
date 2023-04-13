@@ -7,7 +7,7 @@ header: "Förbättra ditt innehåll med en ny touch med AI-driven omskrivning."
 usage: "För att använda innehållsuppmanaren, ange bara din text som du vill skriva om.  Detta verktyg kommer sedan att generera en unik, välstrukturerad och engagerande version av ditt ursprungliga innehåll och upprätthålla dess sammanhang och nyckelidéer."
 placeholder: "Klistra in din ursprungliga text eller innehåll här, och våra modeller kommer att skriva om den för att skapa en unik, engagerande och tilltalande version."
 help_hint: "Ange texten du vill skriva om, så skapar vi en ny, unik version samtidigt som du bevarar den ursprungliga betydelsen och sammanhanget.  Perfekt för att förbättra innehållskvaliteten och undvika problem med plagiering."
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

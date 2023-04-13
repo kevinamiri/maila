@@ -7,7 +7,7 @@ header: "Deje que AI lo ayude a crear el tono de elevador perfecto para su negoc
 usage: "Para usar esta herramienta, solo ingrese el nombre de su negocio, las características clave y el público objetivo.  Este generador de IA creará un tono de ascensor bien elaborado, conciso y persuasivo que resalta los puntos de venta únicos de su negocio o producto."
 placeholder: "Ingrese los detalles esenciales sobre su negocio o producto, por ejemplo, nombre comercial, características clave, público objetivo, etc."
 help_hint: "¿Cuáles son los aspectos clave de su negocio o producto en los que desea centrarse?  Ingrese algunas palabras clave relacionadas con estos aspectos, y nuestra IA creará un pitch de elevador atractivo basado en su entrada."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

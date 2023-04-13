@@ -7,7 +7,7 @@ header: "Lassen Sie sich von AI helfen, die perfekte Aufzugsaugung für Ihr Unte
 usage: "Um dieses Tool zu verwenden, geben Sie einfach Ihren Firmennamen, Ihre Schlüsselfunktionen und die Zielgruppe ein.  Dieser KI-Generator erstellt dann einen gut gefertigten, prägnanten und überzeugenden Aufzugsaufzug, der die Alleinstellungsmerkmale Ihres Unternehmens oder Produkts hervorhebt."
 placeholder: "Geben Sie die wesentlichen Details zu Ihrem Unternehmen oder Produkt ein, z. B. Firmenname, Schlüsselfunktionen, Zielgruppen usw."
 help_hint: "Was sind die wichtigsten Aspekte Ihres Unternehmens oder Produkts, auf die Sie sich konzentrieren möchten?  Geben Sie einige Keywords in Bezug auf diese Aspekte ein, und unsere KI erstellt basierend auf Ihrer Eingabe eine ansprechende Aufzugsaugung."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

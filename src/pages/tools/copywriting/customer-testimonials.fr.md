@@ -7,7 +7,7 @@ header: "Stimulez la crédibilité de votre marque avec les témoignages clients
 usage: "Pour utiliser ce modèle, entrez simplement votre nom de produit ou de service, des mots clés ou des fonctionnalités clés, ainsi que les noms ou emplacements des clients que vous souhaitez inclure.  Cet outil générera ensuite un témoignage client convaincant et engageant en fonction de votre entrée."
 placeholder: "Fournir des détails ou des mots clés essentiels sur le produit ou le service, par exemple  Nom du produit tel que «Yoga Mat», des fonctionnalités clés telles que «non-glissade», «respectueuse de l'environnement» ou des noms et emplacements de clients (facultatifs)."
 help_hint: "Entrez quelques mots clés ou détails sur votre produit ou service, et nous créerons un témoignage client convaincant en fonction de votre contribution.  Facultativement, vous pouvez également fournir des noms et des emplacements de clients."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

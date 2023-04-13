@@ -7,7 +7,7 @@ header: "产生发人深省的问题以吸引观众。"
 usage: "要使用此工具，只需输入您所需的主题，关键字或关键点即可。 然后，我们的AI将根据您的意见产生一组精心设计，相关和引人入胜的问题。"
 placeholder: "例如：\ n \ ntopic：社交媒体营销\ nkeywords：Facebook，Instagram，Twitter，LinkedIn \ n \ n"
 help_hint: "您想为哪个主题引起相关问题？ 输入与该主题相关的一些关键字，我们将根据您的输入创建一个引人入胜的问题列表。 建议提供特定的重点或您想要问题的方面。"
-tags: [Copywriting,FAQ,AI-generated questions]
+tags: [Copywriting, FAQ, AI-generated questions]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

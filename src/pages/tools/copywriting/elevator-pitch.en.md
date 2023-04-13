@@ -7,7 +7,7 @@ header: "Let AI help you create the perfect elevator pitch for your business or 
 usage: "To use this tool, just input your business name, key features, and target audience. This AI generator will then create a well-crafted, concise, and persuasive elevator pitch that highlights the unique selling points of your business or product."
 placeholder: "Input the essential details about your business or product, e.g., business name, key features, target audience, etc."
 help_hint: "What are the key aspects of your business or product that you want to focus on? Enter some keywords related to these aspects, and our AI will create an engaging elevator pitch based on your input."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

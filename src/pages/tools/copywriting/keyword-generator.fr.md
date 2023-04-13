@@ -7,7 +7,7 @@ header: "Découvrez des mots clés puissants pour augmenter les performances de 
 usage: "Pour utiliser ce modèle, entrez simplement le sujet de votre contenu ou quelques mots clés connexes.  Le générateur de mots-clés AI générera ensuite une liste de mots clés pertinents et hautement performants pour optimiser votre contenu pour une meilleure visibilité et engagement."
 placeholder: "Entrez un sujet ou quelques mots clés liés à votre contenu, par exemple, marketing numérique, blogs de voyage ou conseils de fitness."
 help_hint: "Quel est le sujet ou le principal objectif de votre contenu?  Fournissez quelques mots clés connexes et nous générerons une liste de mots clés puissants pour améliorer les performances de votre contenu."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

@@ -7,7 +7,7 @@ header: "通过AI生成的客户推荐提高品牌的信誉。"
 usage: "要使用此模板，只需输入您的产品或服务名称，关键字或关键功能，以及您要包含的任何客户名称或位置。 然后，该工具将根据您的意见产生令人信服且引人入胜的客户推荐。"
 placeholder: "提供有关产品或服务的基本细节或关键字，例如 产品名称，例如“瑜伽垫”，关键功能，例如“非滑动”，“环保”或客户名称和位置（可选）。"
 help_hint: "输入一些有关您的产品或服务的关键字或详细信息，我们将根据您的输入创建引人注目的客户推荐。 可选的是，您还可以提供客户名称和位置。"
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

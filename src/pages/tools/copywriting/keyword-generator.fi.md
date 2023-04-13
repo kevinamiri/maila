@@ -7,7 +7,7 @@ header: "Löydä tehokkaita avainsanoja sisällön suorituskyvyn parantamiseksi.
 usage: "Voit käyttää tätä mallia syöttämällä sisältösi aihe tai muutama siihen liittyvä avainsanat.  AI-avainsanageneraattori luo sitten luettelon asiaankuuluvista ja korkean suorituskyvyn avainsanoista, jotta sisältöäsi voidaan optimoida paremman näkyvyyden ja sitoutumisen saavuttamiseksi."
 placeholder: "Kirjoita aihe tai muutama sisältöön liittyvä avainsanat, esim. Digitaalinen markkinointi, matkablogi- tai kuntovinkit."
 help_hint: "Mikä on sisällön aihe tai pääpaino?  Tarjoa muutama asiaan liittyvä avainsanat, ja luomme luettelon tehokkaista avainsanoista sisällön suorituskyvyn parantamiseksi."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

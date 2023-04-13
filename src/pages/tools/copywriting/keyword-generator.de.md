@@ -7,7 +7,7 @@ header: "Entdecken Sie leistungsstarke Schlüsselwörter, um die Leistung Ihres 
 usage: "Um diese Vorlage zu verwenden, geben Sie einfach das Thema Ihres Inhalts oder einige verwandte Schlüsselwörter ein.  Der KI-Schlüsselwortgenerator generiert dann eine Liste relevanter und leistungsstarker Schlüsselwörter, um Ihre Inhalte für eine bessere Sichtbarkeit und das Engagement zu optimieren."
 placeholder: "Geben Sie ein Thema oder einige Schlüsselwörter in Bezug auf Ihre Inhalte ein, z. B. digitales Marketing, Reisebloggen oder Fitness -Tipps."
 help_hint: "Was ist das Thema oder das Hauptaugenmerk Ihrer Inhalte?  Geben Sie ein paar verwandte Schlüsselwörter an, und wir generieren eine Liste leistungsstarker Schlüsselwörter, um die Leistung Ihres Inhalts zu verbessern."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

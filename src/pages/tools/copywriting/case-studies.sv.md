@@ -7,7 +7,7 @@ header: "Förvandla dina data till insiktsfulla fallstudier med AI -hjälp."
 usage: "För att använda den här mallen, ange bara din fallstudiets huvudämne, nyckelpunkter och all relevant data eller statistik.  Detta verktyg kommer sedan att generera en välstrukturerad, fängslande och informativ fallstudie baserad på din input."
 placeholder: "Ange huvudämne eller problem, tillsammans med viktiga punkter och data du vill inkludera i din fallstudie, till exempel: \ n \ nmain Ämne: Förbättra kundtillfredsställelse i en butik \ n \ nkey -poäng: \ n \ n1.  Identifiera kundsmärtpunkter \ n2.  Implementering av effektiva lösningar \ n3.  Utvärdering av effekterna av förändringarna \ n \ ndata: Ökning i genomsnittlig kundnöjdhetsgradering från 3,5 till 4,2 \ n \ nkeywords: detaljhandel, kundnöjdhet, förbättring"
 help_hint: "Vad är huvudämnet eller problemet för din fallstudie?  Ge viktiga punkter, data eller statistik du vill inkludera, och vi kommer att skapa en omfattande fallstudie baserad på din input."
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

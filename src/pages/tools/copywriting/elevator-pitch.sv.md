@@ -7,7 +7,7 @@ header: "Låt AI hjälpa dig att skapa den perfekta hissplanen för ditt företa
 usage: "För att använda det här verktyget, ange bara ditt företagsnamn, nyckelfunktioner och målgrupp.  Denna AI-generator kommer då att skapa en välgjord, kortfattad och övertygande hissplan som belyser de unika försäljningsställena för ditt företag eller produkt."
 placeholder: "Ange de väsentliga detaljerna om ditt företag eller produkt, t.ex. företagsnamn, nyckelfunktioner, målgrupp, etc."
 help_hint: "Vilka är de viktigaste aspekterna av ditt företag eller produkt som du vill fokusera på?  Ange några nyckelord relaterade till dessa aspekter, och vår AI kommer att skapa en engagerande hissplan baserad på din input."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

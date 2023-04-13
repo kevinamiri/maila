@@ -7,7 +7,7 @@ header: "Muuta tietosi oivaltaviksi tapaustutkimuksiksi AI -apulla."
 usage: "Voit käyttää tätä mallia yksinkertaisesti syöttämällä tapaustutkimuksen pääaihe, avainkohdat ja kaikki asiaankuuluvat tiedot tai tilastot.  Tämä työkalu tuottaa sitten hyvin jäsennellyn, kiehtovan ja informatiivisen tapaustutkimuksen panoksesi perusteella."
 placeholder: "Kirjoita pääaihe tai ongelma sekä avainkohdat ja tiedot, jotka haluat sisällyttää tapaustutkimukseen, esimerkiksi: \ n \ nmain Aihe: Asiakastyytyväisyyden parantaminen vähittäiskaupassa \ n \ nkey -pisteet: \ n \ n1.  Asiakkaiden kipupisteiden tunnistaminen \ N2.  Tehokkaiden ratkaisujen toteuttaminen \ N3.  Muutosten vaikutuksen arviointi \ n \ ndata: keskimääräisen asiakastyytyväisyysluokituksen nousu 3,5: een 4,2 \ n \ nkeywords: vähittäiskauppa, asiakastyytyväisyys, parannus"
 help_hint: "Mikä on tapaustutkimuksesi pääaihe tai ongelma?  Tarjoa avainkohdat, tiedot tai tilastot, jotka haluat sisällyttää, ja luomme kattavan tapaustutkimuksen panoksesi perusteella."
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

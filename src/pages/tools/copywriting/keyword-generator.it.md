@@ -7,7 +7,7 @@ header: "Scopri potenti parole chiave per aumentare le prestazioni dei tuoi cont
 usage: "Per utilizzare questo modello, inserisci semplicemente l'argomento del contenuto o alcune parole chiave correlate.  Il generatore di parole chiave AI genererà quindi un elenco di parole chiave pertinenti e ad alte prestazioni per ottimizzare i contenuti per una migliore visibilità e coinvolgimento."
 placeholder: "Inserisci un argomento o alcune parole chiave relative al tuo contenuto, ad esempio marketing digitale, travel blogging o consigli di fitness."
 help_hint: "Qual è l'argomento o il focus principale dei tuoi contenuti?  Fornire alcune parole chiave correlate e genereremo un elenco di potenti parole chiave per migliorare le prestazioni dei tuoi contenuti."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

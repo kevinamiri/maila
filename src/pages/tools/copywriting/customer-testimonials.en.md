@@ -7,7 +7,7 @@ header: "Boost your brand's credibility with AI-generated customer testimonials.
 usage: "To use this template, simply input your product or service name, keywords, or key features, along with any customer names or locations you'd like to include. This tool will then generate a convincing and engaging customer testimonial based on your input."
 placeholder: "Provide essential details or keywords about the product or service, e.g. product name such as 'yoga mat', key features such as 'non-slip', 'eco-friendly', or customer names and locations (optional)."
 help_hint: "Enter a few keywords or details about your product or service, and we'll create a compelling customer testimonial based on your input. Optionally, you may also provide customer names and locations."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

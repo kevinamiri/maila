@@ -7,7 +7,7 @@ header: "Rinnova i tuoi contenuti con un nuovo tocco usando la riscrittura alime
 usage: "Per utilizzare il riscrittura del contenuto, inserisci semplicemente il tuo testo che si desidera riscrivere.  Questo strumento genererà quindi una versione unica, ben strutturata e coinvolgente del contenuto originale, mantenendo il suo contesto e le idee chiave."
 placeholder: "Incolla qui il tuo testo o contenuto originale e i nostri modelli lo riscriveranno per creare una versione unica, coinvolgente e accattivante."
 help_hint: "Inserisci il testo che desideri riscrivere e genereremo una nuova versione unica preservando il significato e il contesto originali.  Ideale per migliorare la qualità dei contenuti ed evitare problemi di plagio."
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

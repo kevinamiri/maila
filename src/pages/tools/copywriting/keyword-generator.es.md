@@ -7,7 +7,7 @@ header: "Descubra palabras clave poderosas para aumentar el rendimiento de su co
 usage: "Para usar esta plantilla, simplemente ingrese el tema de su contenido o algunas palabras clave relacionadas.  El generador de palabras clave AI generará una lista de palabras clave relevantes y de alto rendimiento para optimizar su contenido para una mejor visibilidad y compromiso."
 placeholder: "Ingrese un tema o algunas palabras clave relacionadas con su contenido, por ejemplo, marketing digital, blogs de viajes o consejos de acondicionamiento físico."
 help_hint: "¿Cuál es el tema o el enfoque principal de su contenido?  Proporcione algunas palabras clave relacionadas, y generaremos una lista de poderosas palabras clave para mejorar el rendimiento de su contenido."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

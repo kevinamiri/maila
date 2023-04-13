@@ -7,7 +7,7 @@ header: "使用AI驱动的重写，用新的触摸来修改您的内容。"
 usage: "要使用内容重写器，只需输入要重写的文本即可。 然后，该工具将生成您原始内容的独特，结构良好且引人入胜的版本，并保持其上下文和关键想法。"
 placeholder: "在此处粘贴您的原始文本或内容，我们的模型将重写它以创建一个独特，引人入胜且吸引人的版本。"
 help_hint: "输入您要重写的文本，我们将在保留原始含义和上下文的同时生成一个新的独特版本。 提高内容质量和避免窃问题的理想选择。"
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

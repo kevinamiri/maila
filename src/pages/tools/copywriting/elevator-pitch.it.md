@@ -7,7 +7,7 @@ header: "Lascia che AI ​​ti aiuti a creare il passo per l'ascensore perfetto
 usage: "Per utilizzare questo strumento, basta inserire il nome del tuo business, le caratteristiche chiave e il pubblico di destinazione.  Questo generatore di intelligenza artificiale creerà quindi un tono di ascensore ben realizzato, conciso e persuasivo che evidenzia i punti di forza unici della tua attività o del tuo prodotto."
 placeholder: "Inserisci i dettagli essenziali sulla tua attività o prodotto, ad es. Nome aziendale, caratteristiche chiave, pubblico di destinazione, ecc."
 help_hint: "Quali sono gli aspetti chiave della tua attività o del tuo prodotto su cui vuoi concentrarti?  Inserisci alcune parole chiave relative a questi aspetti e la nostra intelligenza artificiale creerà un tono di ascensore coinvolgente in base al tuo input."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

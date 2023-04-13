@@ -7,7 +7,7 @@ header: "Øk ditt online rykte med AI-genererte anmeldelser."
 usage: "For å bruke dette verktøyet, kan du bare legge inn ønsket emne, nøkkelord og nøkkelfunksjoner i produktet eller tjenesten.  AI-gjennomgangsgeneratoren vil da lage en godt strukturert, unik og overbevisende gjennomgang basert på dine innspill."
 placeholder: "Skriv alle viktige detaljer du vil fremheve i gjennomgangen, for eksempel: \ n \ n Nøkkelpunkter: \ n \ n1.  Utmerket kundeservice \ n2.  Produkt av høy kvalitet \ n3.  Rask frakt \ n \ n Nøkkelord: Kundeservice, produktkvalitet, frakt \ n \ n"
 help_hint: "Hvilket produkt eller tjeneste vil du generere en gjennomgang for?  Skriv inn noen nøkkelord relatert til emnet, og vi vil opprette en overbevisende gjennomgang basert på innspillene dine.  Det anbefales å liste opp nøkkelpunktene du vil trekke frem i gjennomgangen."
-tags: [Copywriting,review generator ai,ai review generator]
+tags: [Copywriting, review generator ai, ai review generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

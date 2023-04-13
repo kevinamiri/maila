@@ -7,7 +7,7 @@ header: "Effektiviserer innholdsopprettingsprosessen din med AI-genererte bloggo
 usage: "For å bruke dette verktøyet, skriv inn ønsket emne, nøkkelord eller hovedpunkter. Hvis teksten er mindre enn tre tegn lang, returneres teksten uendret. Denne AI-drevne generatoren vil deretter skape en omfattende og godt strukturert bloggoversikt basert på inndataene dine."
 placeholder: "Skriv inn emnet ditt og viktige punkter eller nøkkelord du vil ta med i omrisset, for eksempel: \ n \ n emne: Fordelene med yoga \ n \ n Nøkkelpunkter: \ n \ n1.  Forbedrer fleksibiliteten \ n2.  Forbedrer mentalt fokus \ n3.  Reduserer stress \ n \ n nøkkelord: yoga, fleksibilitet, mental fokus, stressreduksjon"
 help_hint: "Hvilket emne vil du lage en bloggoversikt for?  Gi noen nøkkelord eller nøkkelpunkter relatert til emnet, og vår AI vil generere en godt strukturert bloggoversikt basert på innspillene dine.  Det anbefales å liste opp nøkkelpunktene du vil dekke i blogginnlegget."
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

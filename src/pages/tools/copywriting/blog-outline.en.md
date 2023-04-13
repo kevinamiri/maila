@@ -7,7 +7,7 @@ header: "Streamline your content creation process with AI-generated blog outline
 usage: "To use this tool, simply input your desired topic, keywords, or key points. This AI-powered generator will then create a comprehensive and well-structured blog outline based on your input."
 placeholder: "Enter your topic and important points or keywords you want to include in the outline, for example:\n\n Topic: The Benefits of Yoga\n\n Key Points:\n\n1. Improves flexibility\n2. Enhances mental focus\n3. Reduces stress\n\n Keywords: yoga, flexibility, mental focus, stress reduction"
 help_hint: "What topic would you like to create a blog outline for? Provide some keywords or key points related to the topic and our AI will generate a well-structured blog outline based on your input. It is recommended to list the key points you want to cover in the blog post."
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

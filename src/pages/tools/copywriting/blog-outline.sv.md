@@ -7,7 +7,7 @@ header: "Strömlinjeforma din innehållsskapande process med AI-genererade blogg
 usage: "För att använda det här verktyget, ange bara önskat ämne, nyckelord eller nyckelpunkter.  Denna AI-drivna generator skapar sedan en omfattande och välstrukturerad bloggkontor baserad på dina inlägg."
 placeholder: "Ange ditt ämne och viktiga punkter eller nyckelord du vill inkludera i dispositionen, till exempel: \ n \ n Ämne: Fördelarna med yoga \ n \ n nyckelpunkter: \ n \ n1.  Förbättrar flexibilitet \ n2.  Förbättrar mentalt fokus \ n3.  Minskar stress \ n Nyckelord: yoga, flexibilitet, mental fokus, stressminskning"
 help_hint: "Vilket ämne vill du skapa en bloggöversikt för?  Ange några nyckelord eller nyckelpunkter relaterade till ämnet och vår AI kommer att generera en välstrukturerad bloggöversikt baserad på dina inlägg.  Det rekommenderas att lista de viktigaste punkterna du vill täcka i blogginlägget."
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

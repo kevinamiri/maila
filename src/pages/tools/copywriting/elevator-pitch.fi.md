@@ -7,7 +7,7 @@ header: "Anna antaa sinulle vinkkejä, miten voit luoda täydellisen hissipuheen
 usage: "Jotta voit käyttää tätä työkalua, syötä vain yrityksesi nimi, tärkeimmät ominaisuudet ja kohdeyleisö. Tämä tekoälygeneraattori luo sitten hyvin laaditun, tiiviin ja vakuuttavan esittelyn, joka korostaa yrityksesi tai tuotteesi ainutlaatuisia myyntipisteitä."
 placeholder: "Syötä yrityksesi tai tuotteen olennaiset tiedot, esim. Yrityksen nimi, keskeiset ominaisuudet, kohdeyleisöt jne."
 help_hint: "Mitkä ovat yrityksesi tai tuotteen keskeiset näkökohdat, joihin haluat keskittyä?  Syötä joitain näihin näkökohtiin liittyviä avainsanoja, ja AI luo houkuttelevan hissin sävelkorkeuden panoksesi perusteella."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

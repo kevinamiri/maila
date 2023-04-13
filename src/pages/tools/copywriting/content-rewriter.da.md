@@ -7,7 +7,7 @@ header: "Gennemgå dit indhold med et nyt touch ved hjælp af AI-drevet omskrivn
 usage: "Hvis du vil bruge indholdskriveren, skal du blot indtaste din tekst, som du vil omskrive.  Dette værktøj genererer derefter en unik, velstruktureret og engagerende version af dit originale indhold, der opretholder dens kontekst og nøgleideer."
 placeholder: "Indsæt din originale tekst eller indhold her, og vores modeller omskriver den for at skabe en unik, engagerende og tiltalende version."
 help_hint: "Gå ind i den tekst, du vil omskrive, og vi genererer en ny, unik version, mens vi bevarer den originale betydning og kontekst.  Ideel til at forbedre indholdskvaliteten og undgå problemer med plagiering."
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

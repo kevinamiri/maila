@@ -7,7 +7,7 @@ header: "Transforme sus datos en estudios de casos perspicaces con asistencia de
 usage: "Para usar esta plantilla, simplemente ingrese el tema principal de su estudio de caso, los puntos clave y cualquier datos o estadísticas relevantes.  Esta herramienta generará un estudio de caso bien estructurado, cautivador e informativo basado en su aporte."
 placeholder: "Ingrese el tema o el problema principal, junto con los puntos clave y los datos que desea incluir en su estudio de caso, por ejemplo: \ n \ nmain Asunto: Mejora de la satisfacción del cliente en una tienda minorista \ n \ nkey Puntos: \ n \ n1.  Identificación de puntos de dolor del cliente \ N2.  Implementación de soluciones efectivas \ n3.  Evaluación del impacto de los cambios \ n \ ndata: aumento en la calificación promedio de satisfacción del cliente de 3.5 a 4.2 \ n \ nkeywords: minorista, satisfacción del cliente, mejora"
 help_hint: "¿Cuál es el tema o problema principal para su estudio de caso?  Proporcione puntos clave, datos o estadísticas que desee incluir, y crearemos un estudio de caso integral basado en su aporte."
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

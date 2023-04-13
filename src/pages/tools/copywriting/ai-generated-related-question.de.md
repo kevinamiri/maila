@@ -7,7 +7,7 @@ header: "Erstellen Sie Fragen zum Nachdenken an, um Ihr Publikum zu engagieren."
 usage: "Um dieses Tool zu verwenden, geben Sie einfach Ihr gewünschtes Thema, Schlüsselwörter oder Schlüsselpunkte ein.  Unsere KI generiert dann eine Reihe von gut gefertigten, relevanten und ansprechenden Fragen, die auf Ihrer Eingabe basieren."
 placeholder: "Geben Sie beispielsweise Ihr gewünschtes Thema, Ihre Schlüsselwörter oder Schlüsselpunkte ein: \ n \ ntopic: Social Media Marketing \ Nkeywords: Facebook, Instagram, Twitter, LinkedIn \ n \ n"
 help_hint: "Für welches Thema möchten Sie verwandte Fragen generieren?  Geben Sie einige Keywords in Bezug auf das Thema ein und wir erstellen eine Liste mit ansprechenden Fragen, die auf Ihren Eingaben basieren.  Es wird empfohlen, einen bestimmten Fokus oder Aspekt bereitzustellen, den die Fragen beantworten möchten."
-tags: [Copywriting,FAQ,AI-generated questions]
+tags: [Copywriting, FAQ, AI-generated questions]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

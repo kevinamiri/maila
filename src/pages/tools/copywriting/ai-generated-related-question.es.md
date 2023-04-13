@@ -7,7 +7,7 @@ header: "Genere preguntas estimulantes para involucrar a su audiencia."
 usage: "Para usar esta herramienta, simplemente ingrese su tema deseado, palabras clave o puntos clave. Nuestra IA generará un conjunto de preguntas bien elaboradas, relevantes y atractivas en función de su entrada. Si la longitud del texto dado es menor a 3 caracteres, devuelva el texto tal cual."
 placeholder: "Ingrese su tema deseado, palabras clave o puntos clave, por ejemplo: \ n \ ntopic: Social Media Marketing \ Nkeywords: Facebook, Instagram, Twitter, LinkedIn \ n \ n"
 help_hint: "¿Para qué tema le gustaría generar preguntas relacionadas?  Ingrese algunas palabras clave relacionadas con el tema y crearemos una lista de preguntas atractivas basadas en su aporte.  Se recomienda proporcionar un enfoque o aspecto específico que desee que las preguntas aborden."
-tags: [Copywriting,FAQ,AI-generated questions]
+tags: [Copywriting, FAQ, AI-generated questions]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

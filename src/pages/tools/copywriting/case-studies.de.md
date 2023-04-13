@@ -7,7 +7,7 @@ header: "Verwandeln Sie Ihre Daten mit AI -Unterstützung in aufschlussreiche Fa
 usage: "Um diese Vorlage zu verwenden, geben Sie einfach das Hauptthema Ihrer Fallstudie, die wichtigsten Punkte und alle relevanten Daten oder Statistiken ein.  Dieses Tool generiert dann eine gut strukturierte, faszinierende und informative Fallstudie, die auf Ihren Eingaben basiert."
 placeholder: "Geben Sie zusammen mit den wichtigsten Punkten und Daten, die Sie in Ihre Fallstudie einbeziehen möchten, zusammen mit den wichtigsten Punkten ein: \ n \ nmain Betreff: Verbesserung der Kundenzufriedenheit in einem Einzelhandelsgeschäft \ n \ nkey points: \ n \ n1.  Identifizierung von Kundenschmerzpunkten \ n2.  Implementierung effektiver Lösungen \ n3.  Bewertung der Auswirkungen der Änderungen \ n \ ndata: Erhöhung der durchschnittlichen Kundenzufriedenheit von 3,5 auf 4,2 \ n \ nKeywords: Einzelhandel, Kundenzufriedenheit, Verbesserung"
 help_hint: "Was ist das Hauptthema oder Problem für Ihre Fallstudie?  Geben Sie wichtige Punkte, Daten oder Statistiken an, die Sie einbeziehen möchten, und wir werden eine umfassende Fallstudie erstellen, die auf Ihren Eingaben basiert."
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

@@ -7,7 +7,7 @@ header: "让AI帮助您为您的业务或产品创建完美的电梯音高。"
 usage: "要使用此工具，只需输入您的业务名称，关键功能和目标受众即可。 然后，该AI发电机将创建一个精心制作，简洁和有说服力的电梯音高，突出了您的业务或产品的独特销售点。"
 placeholder: "输入有关您的业务或产品的基本细节，例如企业名称，关键功能，目标受众，等。"
 help_hint: "您要关注的业务或产品的关键方面是什么？ 输入与这些方面相关的一些关键字，我们的AI将根据您的输入创建引人入胜的电梯音高。"
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

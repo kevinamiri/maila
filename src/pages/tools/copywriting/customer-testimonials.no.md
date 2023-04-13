@@ -7,7 +7,7 @@ header: "Øk merkevarens troverdighet med AI-genererte kundevurderinger."
 usage: "Hvis du vil bruke denne malen, kan du bare legge inn produkt- eller tjenestenavn, nøkkelord eller nøkkelfunksjoner, sammen med alle kundenavn eller steder du vil ta med.  Dette verktøyet vil deretter generere en overbevisende og engasjerende kundeavtale basert på innspillene dine."
 placeholder: "Gi viktige detaljer eller nøkkelord om produktet eller tjenesten, f.eks.  Produktnavn som 'Yoga Mat', nøkkelfunksjoner som 'sklisikker', 'miljøvennlig', eller kundenavn og lokasjoner (valgfritt)."
 help_hint: "Skriv inn noen få nøkkelord eller detaljer om produktet eller tjenesten din, så oppretter vi en overbevisende kundeavtale basert på innspillene dine.  Eventuelt kan du også oppgi kundenavn og lokasjoner."
-tags: [Copywriting,customer testimonials,AI testimonial generator]
+tags: [Copywriting, customer testimonials, AI testimonial generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

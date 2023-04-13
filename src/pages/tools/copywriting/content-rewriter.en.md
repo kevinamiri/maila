@@ -7,7 +7,7 @@ header: "Revamp your content with a fresh touch using AI-powered rewriting."
 usage: "To use the Content Rewriter, simply input your text that you want to rewrite. This tool will then generate a unique, well-structured, and engaging version of your original content, maintaining its context and key ideas."
 placeholder: "Paste your original text or content here, and our models will rewrite it to create a unique, engaging, and appealing version."
 help_hint: "Enter the text you want to rewrite, and we'll generate a new, unique version while preserving the original meaning and context. Ideal for enhancing content quality and avoiding plagiarism issues."
-tags: [Copywriting,content rewriter,AI content rewriter]
+tags: [Copywriting, content rewriter, AI content rewriter]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

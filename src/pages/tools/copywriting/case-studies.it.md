@@ -7,7 +7,7 @@ header: "Trasforma i tuoi dati in casi studio approfonditi con assistenza all'in
 usage: "Per utilizzare questo modello, inserisci semplicemente la materia principale del caso di studio, i punti chiave e tutti i dati o le statistiche pertinenti.  Questo strumento genererà un caso di studio ben strutturato, accattivante e informativo in base al tuo contributo."
 placeholder: "Immettere l'argomento o il problema principale, insieme ai punti chiave e ai dati che si desidera includere nel caso di studio, ad esempio: \ n \ nmain Oggetto: Miglioramento della soddisfazione del cliente in un negozio al dettaglio \ n \ nkey punti: \ n \ n1.  Identificazione dei punti deboli del cliente \ N2.  Implementazione di soluzioni efficaci \ n3.  Valutazione dell'impatto delle modifiche \ n \ ndata: aumento della valutazione media della soddisfazione del cliente da 3,5 a 4,2 \ n \ nkeywords: vendita al dettaglio, soddisfazione del cliente, miglioramento"
 help_hint: "Qual è l'argomento principale o il problema per il tuo caso di studio?  Fornisci punti chiave, dati o statistiche che desideri includere e creeremo un case study completo in base al tuo contributo."
-tags: [Copywriting,case study generator,AI case study]
+tags: [Copywriting, case study generator, AI case study]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

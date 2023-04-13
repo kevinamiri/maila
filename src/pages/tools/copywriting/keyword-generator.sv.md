@@ -7,7 +7,7 @@ header: "Upptäck kraftfulla nyckelord för att öka ditt innehålls prestanda."
 usage: "För att använda den här mallen, mata in ditt innehålls ämne eller några relaterade nyckelord.  AI-nyckelordgeneratorn genererar sedan en lista över relevanta och högpresterande nyckelord för att optimera ditt innehåll för bättre synlighet och engagemang."
 placeholder: "Ange ett ämne eller några nyckelord relaterade till ditt innehåll, t.ex. digital marknadsföring, resebloggning eller fitness tips."
 help_hint: "Vad är ämnet eller huvudfokus för ditt innehåll?  Ge några relaterade nyckelord, så genererar vi en lista över kraftfulla nyckelord för att förbättra ditt innehålls prestanda."
-tags: [Copywriting,keyword generator,ai keyword generator]
+tags: [Copywriting, keyword generator, ai keyword generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

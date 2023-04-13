@@ -7,7 +7,7 @@ header: "Laissez l'IA vous aider à créer le terrain d'ascenseur parfait pour v
 usage: "Pour utiliser cet outil, entrez simplement le nom de votre entreprise, les fonctionnalités clés et le public cible.  Ce générateur d'IA créera ensuite un argument d'ascenseur bien conçu, concis et persuasif qui met en évidence les arguments de vente uniques de votre entreprise ou de votre produit."
 placeholder: "Entrez les détails essentiels sur votre entreprise ou votre produit, par exemple le nom de l'entreprise, les fonctionnalités clés, le public cible, etc."
 help_hint: "Quels sont les aspects clés de votre entreprise ou de votre produit sur lesquels vous souhaitez vous concentrer?  Entrez certains mots clés liés à ces aspects, et notre IA créera un pitch d'ascenseur engageant en fonction de votre entrée."
-tags: [Copywriting,elevator pitch,pitch generator]
+tags: [Copywriting, elevator pitch, pitch generator]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

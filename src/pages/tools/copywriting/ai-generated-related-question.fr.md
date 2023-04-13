@@ -7,7 +7,7 @@ header: "Générez des questions qui suscitent la réflexion pour engager votre 
 usage: "Pour utiliser cet outil, il vous suffit de saisir votre sujet, vos mots-clés ou vos points clés souhaités. Notre IA générera alors un ensemble de questions bien conçues, pertinentes et captivantes en fonction de vos entrées."
 placeholder: "Entrez le sujet, les mots clés ou les points clés souhaités, par exemple: \ n \ ntopic: marketing des médias sociaux \ nkeywords: Facebook, Instagram, Twitter, LinkedIn \ n \ n"
 help_hint: "Pour quel sujet aimeriez-vous générer des questions connexes?  Entrez quelques mots clés liés au sujet et nous créerons une liste de questions engageantes en fonction de votre entrée.  Il est recommandé de fournir une orientation ou un aspect spécifique que vous souhaitez que les questions répondent."
-tags: [Copywriting,FAQ,AI-generated questions]
+tags: [Copywriting, FAQ, AI-generated questions]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

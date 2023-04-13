@@ -7,7 +7,7 @@ header: "Rationalisez votre processus de création de contenu avec les contours 
 usage: "Pour utiliser cet outil, entrez simplement votre sujet, vos mots clés ou vos points clés souhaités.  Ce générateur alimenté par AI créera ensuite un plan de blog complet et bien structuré en fonction de votre contribution."
 placeholder: "Entrez votre sujet et les points ou mots clés importants que vous souhaitez inclure dans le plan, par exemple: \ n \ n Sujet: Les avantages des points clés de yoga \ n \ n: \ n \ n1.  Améliore la flexibilité \ n2.  Améliore la concentration mentale \ n3.  Réduit les mots clés du stress \ n \ n: yoga, flexibilité, focus mental, réduction du stress"
 help_hint: "Pour quel sujet aimeriez-vous créer un plan de blog?  Fournissez des mots clés ou des points clés liés au sujet et notre IA générera un plan de blog bien structuré en fonction de votre contribution.  Il est recommandé d'énumérer les points clés que vous souhaitez couvrir dans le billet de blog."
-tags: [Copywriting,blog outline,AI blog outline generator,content creation]
+tags: [Copywriting, blog outline, AI blog outline generator, content creation]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
