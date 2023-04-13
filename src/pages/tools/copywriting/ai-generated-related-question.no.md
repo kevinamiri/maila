@@ -6,7 +6,7 @@ url: "/app/ai-generated-related-question"
 header: "Generer tankevekkende spørsmål for å engasjere publikum."
 usage: "Hvis du vil bruke dette verktøyet, kan du bare legge inn ønsket emne, nøkkelord eller nøkkelpunkter.  Vår AI vil da generere et sett med godt laget, relevante og engasjerende spørsmål basert på dine innspill."
 placeholder: "Skriv inn ønsket emne, nøkkelord eller nøkkelpunkter, for eksempel: \ n \ ntopic: Social Media Marketing \ nkeywords: Facebook, Instagram, Twitter, LinkedIn \ n \ n"
-help_hint: "How about generating questions related to "sustainability in fashion"? I would like questions that explore the challenges and opportunities of sustainable fashion practices, as well as the impact of the fashion industry on the environment and society."
+help_hint: "How about generating questions related to 'sustainability in fashion'? I would like questions that explore the challenges and opportunities of sustainable fashion practices, as well as the impact of the fashion industry on the environment and society."
 tags: [Copywriting, FAQ, AI-generated questions]
 template: 'tools-body'
 templateKey: 'tools-body'
