@@ -152,9 +152,14 @@
     },
     {
       "id": "07",
-      "en": "",
-      "fa": "",
-      "sv": ""
+      "en": "tools",
+      "sv": "tools",
+      "de": "tools",
+      "fr": "tools",
+      "no": "tools",
+      "it": "tools",
+      "da": "tools",
+      "fi": "tools"
     },
     {
       "id": "08",
