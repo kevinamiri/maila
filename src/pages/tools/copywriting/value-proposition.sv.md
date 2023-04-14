@@ -57,7 +57,7 @@ Skapa en kraftfull värdegrund med insikter från AI.
 
 ## Steg-för-steg-guide
 
-1. Registrera dig för en gratis provperiod eller logga in på ditt COPY.AI-konto.
+1. Registrera dig för en gratis provperiod eller logga in på ditt COPY.TOOLS-konto.
 2. Gå till verktyget AI Value Proposition Generator.
 3. Ange relevanta detaljer eller sökord om ditt företag, produkt eller tjänst (t.ex. företagsnamn, erbjuden tjänst, unika funktioner).
 4. Klicka på "Generera värdeerbjudande" för att låta AI:n göra sitt magi.

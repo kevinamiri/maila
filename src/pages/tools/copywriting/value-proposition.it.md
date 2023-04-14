@@ -57,7 +57,7 @@ Formulare una proposta di valore potente con insights guidati dall'AI.
 
 ## Guida Passo-Passo
 
-1. Registrati per una prova gratuita o accedi al tuo account COPY.AI.
+1. Registrati per una prova gratuita o accedi al tuo account COPY.TOOLS.
 2. Naviga fino al tool Generatore di Proposte di Valore AI.
 3. Fornisci i dettagli o le parole chiave pertinenti sulla tua attività, prodotto o servizio (es. nome dell'attività, servizio offerto, caratteristiche uniche).
 4. Clicca su "Genera Proposta di Valore" per far lavorare l'AI.

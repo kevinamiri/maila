@@ -57,7 +57,7 @@ Skab en stærk værditilbud med AI-drevne indsigt.
 
 ## Trin-for-trin guide
 
-1. Tilmeld dig en gratis prøveperiode eller log ind på din COPY.AI-konto.
+1. Tilmeld dig en gratis prøveperiode eller log ind på din COPY.TOOLS-konto.
 2. Gå til AI Value Proposition Generator-værktøjet.
 3. Angiv relevante detaljer eller nøgleord om din virksomhed, produkt eller service (f.eks. virksomhedsnavn, tilbudt service, unikke funktioner).
 4. Klik på "Generer værditilbud" for at lade AI'en gøre sit arbejde.

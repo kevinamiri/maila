@@ -563,6 +563,19 @@
       "zh": "tools/copywriting/value-proposition",
       "es": "tools/copywriting/value-proposition",
       "it": "tools/copywriting/value-proposition"
+    },
+    {
+      "id": "44",
+      "sv": "tools/copywriting/vision-statement",
+      "en": "tools/copywriting/vision-statement",
+      "fi": "tools/copywriting/vision-statement",
+      "da": "tools/copywriting/vision-statement",
+      "no": "tools/copywriting/vision-statement",
+      "de": "tools/copywriting/vision-statement",
+      "fr": "tools/copywriting/vision-statement",
+      "zh": "tools/copywriting/vision-statement",
+      "es": "tools/copywriting/vision-statement",
+      "it": "tools/copywriting/vision-statement"
     }
   ]
 }

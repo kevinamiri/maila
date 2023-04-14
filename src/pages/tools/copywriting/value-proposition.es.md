@@ -57,7 +57,7 @@ Elabora una propuesta de valor impactante con insights impulsados por IA.
 
 ## Guía paso a paso
 
-1. Regístrese para una prueba gratuita o inicie sesión en su cuenta de COPY.AI.
+1. Regístrese para una prueba gratuita o inicie sesión en su cuenta de COPY.TOOLS.
 2. Vaya a la herramienta Generador de Propuestas de Valor de AI.
 3. Proporcione detalles o palabras clave relevantes sobre su negocio, producto o servicio (por ejemplo, nombre del negocio, servicio ofrecido, características únicas).
 4. Haga clic en "Generar Propuesta de Valor" para dejar que la IA haga su magia.

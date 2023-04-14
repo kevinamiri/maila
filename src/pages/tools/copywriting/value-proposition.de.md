@@ -57,7 +57,7 @@ Erstellen Sie eine überzeugende Nutzenaussage mit AI-gesteuerten Erkenntnissen.
 
 ## Schritt-für-Schritt Anleitung
 
-1. Registrieren Sie sich für eine kostenlose Testversion oder melden Sie sich bei Ihrem COPY.AI-Konto an.
+1. Registrieren Sie sich für eine kostenlose Testversion oder melden Sie sich bei Ihrem COPY.TOOLS-Konto an.
 2. Navigieren Sie zur AI Value Proposition Generator-Tool.
 3. Geben Sie relevante Details oder Keywords über Ihr Unternehmen, Produkt oder Service an (z. B. Firmenname, angebotene Dienstleistung, einzigartige Funktionen).
 4. Klicken Sie auf "Generate Value Proposition", um die KI ihre Magie wirken zu lassen.

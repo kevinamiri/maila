@@ -57,7 +57,7 @@ Craft a powerful value proposition with AI-driven insights.
 
 ## Step-by-Step Guide
 
-1. Sign up for a free trial or log in to your COPY.AI account.
+1. Sign up for a free trial or log in to your COPY.TOOLS account.
 2. Navigate to the AI Value Proposition Generator tool.
 3. Provide relevant details or keywords about your business, product, or service (e.g., business name, service offered, unique features).
 4. Click on "Generate Value Proposition" to let the AI work its magic.

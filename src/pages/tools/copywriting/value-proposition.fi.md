@@ -57,7 +57,7 @@ Luo tehokas arvolupaus AI-pohjaisten oivallusten avulla.
 
 ## Askel askeleelta -opas
 
-1. Rekisteröidy ilmaiseksi tai kirjaudu sisään COPY.AI-tilillesi.
+1. Rekisteröidy ilmaiseksi tai kirjaudu sisään COPY.TOOLS-tilillesi.
 2. Siirry AI:n arvolupausgeneraattorityökaluun.
 3. Anna relevantit tiedot tai avainsanat yrityksestäsi, tuotteestasi tai palvelustasi (esim. yrityksen nimi, tarjottu palvelu, ainutlaatuiset ominaisuudet).
 4. Napsauta "Generoi arvolupaus" antaaksesi AI:n tehdä taikansa.

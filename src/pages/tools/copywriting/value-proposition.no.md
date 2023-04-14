@@ -57,7 +57,7 @@ Craft en kraftig verdi proposisjon med AI-drevne innsikter.
 
 ## Steg-for-steg-guide
 
-1. Registrer deg for en gratis prøveperiode eller logg inn på din COPY.AI-konto.
+1. Registrer deg for en gratis prøveperiode eller logg inn på din COPY.TOOLS-konto.
 2. Gå til verktøyet for AI-verdiløftegenerator.
 3. Oppgi relevante detaljer eller nøkkelord om din virksomhet, produkt eller tjeneste (f.eks. firmanavn, tilbudt tjeneste, unike funksjoner).
 4. Klikk på "Generer verdiløfte" for å la AI-en gjøre sin magi.
