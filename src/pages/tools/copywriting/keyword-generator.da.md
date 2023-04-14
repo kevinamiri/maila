@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/keyword-generator
-path: /en/tools/copywriting/keyword-generator
+slug: /da/tools/copywriting/keyword-generator
+path: /da/tools/copywriting/keyword-generator
 lang: da
 image: ../images/job-description.png
 imageStatus: true

@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/elevator-pitch
-path: /en/tools/copywriting/elevator-pitch
+slug: /fi/tools/copywriting/elevator-pitch
+path: /fi/tools/copywriting/elevator-pitch
 lang: fi
 image: ../images/job-description.png
 imageStatus: true

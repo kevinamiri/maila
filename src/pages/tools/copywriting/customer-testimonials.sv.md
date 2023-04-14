@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/customer-testimonials
-path: /en/tools/copywriting/customer-testimonials
+slug: /sv/tools/copywriting/customer-testimonials
+path: /sv/tools/copywriting/customer-testimonials
 lang: sv
 image: ../images/job-description.png
 imageStatus: true

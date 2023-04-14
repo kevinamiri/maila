@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/case-studies
-path: /en/tools/copywriting/case-studies
+slug: /sv/tools/copywriting/case-studies
+path: /sv/tools/copywriting/case-studies
 lang: sv
 image: ../images/job-description.png
 imageStatus: true

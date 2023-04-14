@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/blog-outline
-path: /en/tools/copywriting/blog-outline
+slug: /fi/tools/copywriting/blog-outline
+path: /fi/tools/copywriting/blog-outline
 lang: fi
 image: ../images/job-description.png
 imageStatus: true

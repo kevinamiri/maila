@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/ai-generated-related-question
-path: /en/tools/copywriting/ai-generated-related-question
+slug: /da/tools/copywriting/ai-generated-related-question
+path: /da/tools/copywriting/ai-generated-related-question
 lang: da
 image: ../images/job-description.png
 imageStatus: true

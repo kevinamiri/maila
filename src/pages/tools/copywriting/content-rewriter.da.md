@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/content-rewriter
-path: /en/tools/copywriting/content-rewriter
+slug: /da/tools/copywriting/content-rewriter
+path: /da/tools/copywriting/content-rewriter
 lang: da
 image: ../images/job-description.png
 imageStatus: true
