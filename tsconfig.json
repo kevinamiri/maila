@@ -18,8 +18,13 @@
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx"
-, "src/templates/home.js", "src/templates/contact.js", "src/templates/blog-post.js", "src/components/SEO/SchemaOrg.js"  ],
+    "**/*.tsx",
+    "src/templates/home.js",
+    "src/templates/contact.js",
+    "src/templates/blog-post.js",
+    "src/components/SEO/SchemaOrg.js",
+    "createPost/rx.js"
+  ],
   "exclude": [
     "node_modules"
   ]
