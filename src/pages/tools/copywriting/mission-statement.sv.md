@@ -1,6 +1,6 @@
 ---
 id: "50"
-title: "Affärsidé"
+title: "uppdragsbeskrivning"
 description: "En AI Mission Statement Generator är ett verktyg som använder artificiell intelligens för att skapa korta och kraftfulla uppdragssatser för din organisation eller företag. Genom att ange några nyckelord och mål kommer generatorn automatiskt att generera en uppdragssats som överensstämmer med din organisations mål och värderingar."
 url: "/app/mission-statement"
 header: "Formulera en övertygande missionsutlåtande som definierar din organisations syfte."
@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-14"
-slug: /en/tools/copywriting/mission-statement
-path: /en/tools/copywriting/mission-statement
+slug: /sv/tools/copywriting/mission-statement
+path: /sv/tools/copywriting/mission-statement
 lang: sv
 image: ../images/job-description.png
 imageStatus: true

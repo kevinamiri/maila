@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-14"
-slug: /en/tools/copywriting/mission-statement
-path: /en/tools/copywriting/mission-statement
+slug: /fi/tools/copywriting/mission-statement
+path: /fi/tools/copywriting/mission-statement
 lang: fi
 image: ../images/job-description.png
 imageStatus: true

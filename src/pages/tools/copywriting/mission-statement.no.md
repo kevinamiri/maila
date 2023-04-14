@@ -1,6 +1,6 @@
 ---
 id: "50"
-title: "Misligholdserklæring"
+title: "oppdragsbeskrivelse"
 description: "En AI Mission Statement Generator er et verktøy som bruker kunstig intelligens til å lage korte og kraftfulle misjonsuttalelser for organisasjonen eller bedriften din. Ved å gi noen nøkkelord og mål, vil generatoren automatisk lage en misjonsuttalelse som samsvarer med organisasjonens mål og verdier."
 url: "/app/mission-statement"
 header: "Formuler en engasjerende misjonsuttalelse som definerer organisasjonens formål."
@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-14"
-slug: /en/tools/copywriting/mission-statement
-path: /en/tools/copywriting/mission-statement
+slug: /no/tools/copywriting/mission-statement
+path: /no/tools/copywriting/mission-statement
 lang: no
 image: ../images/job-description.png
 imageStatus: true

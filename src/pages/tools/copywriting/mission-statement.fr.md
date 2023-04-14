@@ -1,6 +1,6 @@
 ---
 id: "50"
-title: "Déclaration de mission"
+title: "déclaration de mission"
 description: "Un Générateur de Déclaration de Mission basé sur l'IA est un outil qui utilise l'intelligence artificielle pour créer des déclarations de mission concises et puissantes pour votre organisation ou votre entreprise. En fournissant quelques mots-clés et objectifs, le générateur générera automatiquement une déclaration de mission qui correspond aux objectifs et aux valeurs de votre organisation."
 url: "/app/mission-statement"
 header: "Rédigez une déclaration de mission convaincante qui définit le but de votre organisation."
@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-14"
-slug: /en/tools/copywriting/mission-statement
-path: /en/tools/copywriting/mission-statement
+slug: /fr/tools/copywriting/mission-statement
+path: /fr/tools/copywriting/mission-statement
 lang: fr
 image: ../images/job-description.png
 imageStatus: true
