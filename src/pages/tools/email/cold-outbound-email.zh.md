@@ -2,18 +2,18 @@
 id: "39"
 title: "冷出站电子邮件"
 description: "AI评论生成器是一种使用人工智能来为产品或服务创建真实和有说服力的评论的工具。 通过基于给定的主题或关键字生成现实，连贯和引人入胜的评论来节省时间和精力，以增强您的在线形象和信誉。"
-url: "/app/review-generator"
+url: "/app/cold-outbound-email"
 header: "通过AI生成的评论提高您的在线声誉。"
 usage: "要使用此工具，只需输入您所需的主题，关键字和产品或服务的关键功能即可。 然后，AI评论生成器将根据您的输入创建结构良好，独特和有说服力的评论。"
 placeholder: "在评论中写下您要突出显示的所有基本细节，例如：\ n \ n关键点：\ n \ n1。 优秀的客户服务\ n2。 高质量产品\ n3。 快速运输\ n \ n关键字：客户服务，产品质量，运输\ n \ n"
 help_hint: "您想为哪种产品或服务进行评论？ 输入与该主题相关的一些关键字，我们将根据您的输入创建引人注目的评论。 建议在评论中列出您要突出的要点。"
-tags: [Copywriting, review generator ai, ai review generator]
+tags: ["Email", "Cold Email"]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/review-generator
-path: /en/tools/copywriting/review-generator
+slug: /zh/tools/email/cold-outbound-email
+path: /zh/tools/email/cold-outbound-email
 lang: zh
 image: ../images/job-description.png
 imageStatus: true

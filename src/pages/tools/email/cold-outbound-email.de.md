@@ -2,18 +2,18 @@
 id: "39"
 title: "Kaltes Outbound -E -Mail"
 description: "AI Review Generator ist ein Tool, das künstliche Intelligenz verwendet, um authentische und überzeugende Bewertungen für Produkte oder Dienstleistungen zu erstellen.  Sparen Sie Zeit und Mühe, indem Sie realistische, kohärente und ansprechende Bewertungen erstellen, die auf einem bestimmten Thema oder Schlüsselwörtern basieren, um Ihre Online -Präsenz und Glaubwürdigkeit zu verbessern."
-url: "/app/review-generator"
+url: "/app/cold-outbound-email"
 header: "Steigern Sie Ihren Online-Ruf mit AI-generierten Bewertungen."
-usage: "Um dieses Tool zu verwenden, geben Sie einfach Ihr gewünschtes Thema, Schlüsselwörter und Schlüsselfunktionen des Produkts oder der Dienstleistung ein.  Der AI Review-Generator erstellt dann eine gut strukturierte, einzigartige und überzeugende Überprüfung, die auf Ihrer Eingabe basiert."
+usage: "Um dieses Tool zu verwenden, geben Sie einfach Ihr gewünschtes Thema, Schlüsselwörter und Schlüsselfunktionen des Produkts oder der Dienstleistung ein.  Der AI cold-outbound-email erstellt dann eine gut strukturierte, einzigartige und überzeugende Überprüfung, die auf Ihrer Eingabe basiert."
 placeholder: "Schreiben Sie alle wesentlichen Details, die Sie in der Bewertung hervorheben möchten, z. B.: \ n \ n Schlüsselpunkte: \ n \ n1.  Ausgezeichneter Kundenservice \ N2.  Hochwertiges Produkt \ n3.  Schneller Versand \ n \ n Schlüsselwörter: Kundendienst, Produktqualität, Versand \ n \ n"
 help_hint: "Für welches Produkt oder für welches Service möchten Sie eine Bewertung erstellen?  Geben Sie einige Schlüsselwörter in Bezug auf das Thema ein und wir erstellen eine überzeugende Überprüfung basierend auf Ihrer Eingabe.  Es wird empfohlen, die wichtigsten Punkte aufzulisten, die Sie in der Überprüfung hervorheben möchten."
-tags: [Copywriting, review generator ai, ai review generator]
+tags: ["Email", "Cold Email"]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/review-generator
-path: /en/tools/copywriting/review-generator
+slug: /de/tools/email/cold-outbound-email
+path: /de/tools/email/cold-outbound-email
 lang: de
 image: ../images/job-description.png
 imageStatus: true

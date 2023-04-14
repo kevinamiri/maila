@@ -2,18 +2,18 @@
 id: "39"
 title: "Correo electrónico de salida en frío"
 description: "AI Review Generator es una herramienta que utiliza inteligencia artificial para crear revisiones auténticas y persuasivas para productos o servicios.  Ahorre tiempo y esfuerzo generando revisiones realistas, coherentes y atractivas basadas en un tema o palabras clave determinadas para mejorar su presencia y credibilidad en línea."
-url: "/app/review-generator"
+url: "/app/cold-outbound-email"
 header: "Aumente su reputación en línea con revisiones generadas por IA."
 usage: "Para usar esta herramienta, simplemente ingrese su tema deseado, palabras clave y características clave del producto o servicio.  El generador de revisión de AI creará una revisión bien estructurada, única y persuasiva basada en su aporte."
 placeholder: "Escriba todos los detalles esenciales que desea destacar en la revisión, por ejemplo: \ n \ n Puntos clave: \ n \ n1.  Excelente servicio al cliente \ N2.  Producto de alta calidad \ n3.  Envío rápido \ n \ n Palabras clave: servicio al cliente, calidad del producto, envío \ n \ n"
 help_hint: "¿Para qué producto o servicio le gustaría generar una revisión?  Ingrese algunas palabras clave relacionadas con el tema y crearemos una revisión convincente basada en su aporte.  Se recomienda enumerar los puntos clave que desea resaltar en la revisión."
-tags: [Copywriting, review generator ai, ai review generator]
+tags: ["Email", "Cold Email"]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/review-generator
-path: /en/tools/copywriting/review-generator
+slug: /es/tools/email/cold-outbound-email
+path: /es/tools/email/cold-outbound-email
 lang: es
 image: ../images/job-description.png
 imageStatus: true

@@ -2,18 +2,18 @@
 id: "39"
 title: "Kall utgående e -post"
 description: "AI Review Generator är ett verktyg som använder artificiell intelligens för att skapa autentiska och övertygande recensioner för produkter eller tjänster.  Spara tid och ansträngning genom att skapa realistiska, sammanhängande och engagerande recensioner baserade på ett givet ämne eller nyckelord för att förbättra din online -närvaro och trovärdighet."
-url: "/app/review-generator"
+url: "/app/cold-outbound-email"
 header: "Öka ditt online rykte med AI-genererade recensioner."
 usage: "För att använda det här verktyget, ange bara ditt önskade ämne, nyckelord och nyckelfunktioner i produkten eller tjänsten.  AI-granskningsgeneratorn kommer sedan att skapa en välstrukturerad, unik och övertygande recension baserad på din input."
 placeholder: "Skriv alla viktiga detaljer du vill lyfta fram i granskningen, till exempel: \ n \ n Nyckelpunkter: \ n \ n1.  Utmärkt kundservice \ n2.  Högkvalitativ produkt \ n3.  Snabb frakt \ n \ n Nyckelord: kundservice, produktkvalitet, frakt \ n \ n"
 help_hint: "Vilken produkt eller tjänst vill du generera en recension för?  Ange några nyckelord relaterade till ämnet så skapar vi en övertygande granskning baserad på din input.  Det rekommenderas att lista de viktigaste punkter du vill lyfta fram i granskningen."
-tags: [Copywriting, review generator ai, ai review generator]
+tags: ["Email", "Cold Email"]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/review-generator
-path: /en/tools/copywriting/review-generator
+slug: /sv/tools/email/cold-outbound-email
+path: /sv/tools/email/cold-outbound-email
 lang: sv
 image: ../images/job-description.png
 imageStatus: true

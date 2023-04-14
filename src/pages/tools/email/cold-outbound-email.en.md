@@ -2,18 +2,18 @@
 id: "39"
 title: "Cold Outbound Email"
 description: "AI Review Generator is a tool that uses artificial intelligence to create authentic and persuasive reviews for products or services. Save time and effort by generating realistic, coherent, and engaging reviews based on a given topic or keywords to enhance your online presence and credibility."
-url: "/app/review-generator"
+url: "/app/cold-outbound-email"
 header: "Boost your online reputation with AI-generated reviews."
 usage: "To use this tool, simply input your desired topic, keywords, and key features of the product or service. The AI Review Generator will then create a well-structured, unique, and persuasive review based on your input."
 placeholder: "Write all the essential details you want to highlight in the review, for instance:\n\n Key Points:\n \n1. Excellent customer service\n2. High-quality product\n3. Fast shipping\n\n keywords: customer service, product quality, shipping\n\n"
 help_hint: "What product or service would you like to generate a review for? Enter some keywords related to the topic and we will create a compelling review based on your input. It is recommended to list the key points you want to highlight in the review."
-tags: [Copywriting, review generator ai, ai review generator]
+tags: ["Email", "Cold Email"]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-03"
-slug: /en/tools/copywriting/review-generator
-path: /en/tools/copywriting/review-generator
+slug: /en/tools/email/cold-outbound-email
+path: /en/tools/email/cold-outbound-email
 lang: en
 image: ../images/job-description.png
 imageStatus: true
