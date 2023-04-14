@@ -537,6 +537,32 @@
       "zh": "tools/copywriting/blog-outline",
       "es": "tools/copywriting/blog-outline",
       "it": "tools/copywriting/blog-outline"
+    },
+    {
+      "id": "42",
+      "sv": "tools/copywriting/value-proposition",
+      "en": "tools/copywriting/value-proposition",
+      "fi": "tools/copywriting/value-proposition",
+      "da": "tools/copywriting/value-proposition",
+      "no": "tools/copywriting/value-proposition",
+      "de": "tools/copywriting/value-proposition",
+      "fr": "tools/copywriting/value-proposition",
+      "zh": "tools/copywriting/value-proposition",
+      "es": "tools/copywriting/value-proposition",
+      "it": "tools/copywriting/value-proposition"
+    },
+    {
+      "id": "43",
+      "sv": "tools/copywriting/value-proposition",
+      "en": "tools/copywriting/value-proposition",
+      "fi": "tools/copywriting/value-proposition",
+      "da": "tools/copywriting/value-proposition",
+      "no": "tools/copywriting/value-proposition",
+      "de": "tools/copywriting/value-proposition",
+      "fr": "tools/copywriting/value-proposition",
+      "zh": "tools/copywriting/value-proposition",
+      "es": "tools/copywriting/value-proposition",
+      "it": "tools/copywriting/value-proposition"
     }
   ]
 }
