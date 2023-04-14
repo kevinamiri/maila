@@ -23,13 +23,13 @@ tone: false
 jsonId: "1039"
 product_type: "1039"
 ---
-# Kylmä lähtevä sähköposti |  copy.tools, AI-kopiointiympäristö
+# Kylmä lähtevä sähköposti |  Maila.AI, AI-kopiointiympäristö
 
-Tutustu kuinka copy.tools voi mullistaa kylmän tiedotuspelin tekemällä henkilökohtaista, kiinnostavaa ja korkean konvertoimalla kylmiä sähköposteja keinotekoisen älykkyyden voimalla.
+Tutustu kuinka Maila.AI voi mullistaa kylmän tiedotuspelin tekemällä henkilökohtaista, kiinnostavaa ja korkean konvertoimalla kylmiä sähköposteja keinotekoisen älykkyyden voimalla.
 
 ## Tuotteen Kuvaus
 
-copy.tools on huippuluokan AI-käyttöinen copywriting-alusta, joka auttaa sinua luomaan vakuuttavia ja kiinnostavia kylmiä sähköposteja lähteville kampanjoillesi.  copy.tools -sovelluksella voit sanoa hyvästit yleisille ja houkuttelemattomille sähköposteille, jotka päätyvät roskakoriin.  Sen sijaan edistyneet AI-algoritmimme tuottavat henkilökohtaista, huomion herättävää sisältöä, joka puhuu suoraan potentiaalisiisi, lisäämällä avoimia hintoja, napsautustapoja ja viime kädessä tuloksia.
+Maila.AI on huippuluokan AI-käyttöinen copywriting-alusta, joka auttaa sinua luomaan vakuuttavia ja kiinnostavia kylmiä sähköposteja lähteville kampanjoillesi.  Maila.AI -sovelluksella voit sanoa hyvästit yleisille ja houkuttelemattomille sähköposteille, jotka päätyvät roskakoriin.  Sen sijaan edistyneet AI-algoritmimme tuottavat henkilökohtaista, huomion herättävää sisältöä, joka puhuu suoraan potentiaalisiisi, lisäämällä avoimia hintoja, napsautustapoja ja viime kädessä tuloksia.
 
 ## Avainominaisuudet
 
@@ -57,7 +57,7 @@ copy.tools on huippuluokan AI-käyttöinen copywriting-alusta, joka auttaa sinua
 
 ## Suositukset
 
-> "copy.tools on ollut pelinvaihtaja myyntitiimillemme. Kylmien sähköpostikampanjoissamme on lisääntynyt huomattavasti avoimia hintoja ja tuloksia siitä lähtien, kun aloitimme alustan käytön. Se on pakollinen työkalu kaikille yrityksille, jotka etsivät heidän uusintaansa  Kylmä tiedotuspeli! "  - _Jane Smith, myyntipäällikkö_
+> "Maila.AI on ollut pelinvaihtaja myyntitiimillemme. Kylmien sähköpostikampanjoissamme on lisääntynyt huomattavasti avoimia hintoja ja tuloksia siitä lähtien, kun aloitimme alustan käytön. Se on pakollinen työkalu kaikille yrityksille, jotka etsivät heidän uusintaansa  Kylmä tiedotuspeli! "  - _Jane Smith, myyntipäällikkö_
  -
  > "Freelancerina olen aina kamppaillut kirjoittamalla kylmiä sähköposteja, jotka huomaavat. Kopio.  - _John Doe, freelance -suunnittelija_
 
@@ -65,9 +65,9 @@ copy.tools on huippuluokan AI-käyttöinen copywriting-alusta, joka auttaa sinua
 
 Oletko valmis mullistamaan kylmän sähköpostipelin ja lisäämään tuloksia?  .
 
-## Vaiheittainen opas copy.tools -sovelluksen käytöstä
+## Vaiheittainen opas Maila.AI -sovelluksen käytöstä
 
-1. ** Rekisteröidy: ** Rekisteröidy copy.tools -tilille ja valitse tarpeitasi vastaava tilaussuunnitelma.
+1. ** Rekisteröidy: ** Rekisteröidy Maila.AI -tilille ja valitse tarpeitasi vastaava tilaussuunnitelma.
  2. ** Luo uusi kampanja: ** Siirry kojelautaan ja napsauta "Uusi kampanja" -painiketta.
  3. ** Valitse kylmä sähköpostimuoto: ** Selaa käytettävissä olevia malleja ja valitse kylmä sähköposti -vaihtoehto.
  4. ** Anna syöttö: ** Kirjoita tietoja kohdeyleisöstäsi, tuotteestasi tai palvelustasi ja kaikista tiettyjen avainsanojen tai lauseista, jotka haluat sisällyttää.

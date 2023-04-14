@@ -23,13 +23,13 @@ tone: false
 jsonId: "1039"
 product_type: "1039"
 ---
-# Correo electrónico de salida en frío |  copy.tools, plataforma de escritura de copy-copy
+# Correo electrónico de salida en frío |  Maila.AI, plataforma de escritura de copy-copy
 
-Descubra cómo copy.tools puede revolucionar su juego de divulgación en frío creando correos electrónicos fríos personalizados, atractivos y de alta conversión con el poder de la inteligencia artificial.
+Descubra cómo Maila.AI puede revolucionar su juego de divulgación en frío creando correos electrónicos fríos personalizados, atractivos y de alta conversión con el poder de la inteligencia artificial.
 
 ## Descripción del Producto
 
-copy.tools es una plataforma de redacción con AI de vanguardia que lo ayuda a crear correos electrónicos fríos persuasivos y atractivos para sus campañas de salida.  Con copy.tools, puede decir adiós a los correos electrónicos genéricos y poco atractivos que terminan en la basura.  En cambio, nuestros algoritmos de IA avanzados generarán contenido personalizado y llamativo que habla directamente a sus perspectivas, aumentando las tasas de apertura, las tasas de clics y, en última instancia, las conversiones.
+Maila.AI es una plataforma de redacción con AI de vanguardia que lo ayuda a crear correos electrónicos fríos persuasivos y atractivos para sus campañas de salida.  Con Maila.AI, puede decir adiós a los correos electrónicos genéricos y poco atractivos que terminan en la basura.  En cambio, nuestros algoritmos de IA avanzados generarán contenido personalizado y llamativo que habla directamente a sus perspectivas, aumentando las tasas de apertura, las tasas de clics y, en última instancia, las conversiones.
 
 ## Características clave
 
@@ -57,17 +57,17 @@ copy.tools es una plataforma de redacción con AI de vanguardia que lo ayuda a c
 
 ## testimonios
 
-> "copy.tools ha cambiado el juego para nuestro equipo de ventas. Nuestras campañas de correo electrónico frías han visto un aumento significativo en las tasas de apertura y las conversiones desde que comenzamos a usar la plataforma. Es una herramienta imprescindible para cualquier negocio que busque aumentar sus  Juego de divulgación fría! "  - _Jane Smith, Gerente de ventas_
+> "Maila.AI ha cambiado el juego para nuestro equipo de ventas. Nuestras campañas de correo electrónico frías han visto un aumento significativo en las tasas de apertura y las conversiones desde que comenzamos a usar la plataforma. Es una herramienta imprescindible para cualquier negocio que busque aumentar sus  Juego de divulgación fría! "  - _Jane Smith, Gerente de ventas_
  >
- > "Como profesional independiente, siempre he tenido problemas para escribir correos electrónicos fríos que se noten. copy.tools no solo me ha ahorrado tiempo y esfuerzo, sino que también me ayudó a conseguir más clientes que nunca. ¡No puedo recomendarlo lo suficiente!"  - _John Doe, Freelance Designer_
+ > "Como profesional independiente, siempre he tenido problemas para escribir correos electrónicos fríos que se noten. Maila.AI no solo me ha ahorrado tiempo y esfuerzo, sino que también me ayudó a conseguir más clientes que nunca. ¡No puedo recomendarlo lo suficiente!"  - _John Doe, Freelance Designer_
 
 ## Llamada a la acción
 
-¿Listo para revolucionar tu juego de correo electrónico frío y aumentar tus resultados?  [Regístrese en copy.tools] (https://www.copy.tools) hoy y experimente el poder de la redacción dirigida por AI para usted!
+¿Listo para revolucionar tu juego de correo electrónico frío y aumentar tus resultados?  [Regístrese en Maila.AI] (https://www.Maila.AI) hoy y experimente el poder de la redacción dirigida por AI para usted!
 
-## guía paso a paso sobre cómo usar copy.tools
+## guía paso a paso sobre cómo usar Maila.AI
 
-1. ** Regístrese: ** Regístrese para una cuenta copy.tools y elija un plan de suscripción que se adapte a sus necesidades.
+1. ** Regístrese: ** Regístrese para una cuenta Maila.AI y elija un plan de suscripción que se adapte a sus necesidades.
  2. ** Cree una nueva campaña: ** Navegue al tablero y haga clic en el botón "Nueva campaña".
  3. ** Seleccione la plantilla de correo electrónico fría: ** Explore las plantillas disponibles y elija la opción de correo electrónico frío.
  4. ** Proporcione información: ** Ingrese información sobre su público objetivo, producto o servicio, y cualquier palabra o frases clave específicas que desee incluir.

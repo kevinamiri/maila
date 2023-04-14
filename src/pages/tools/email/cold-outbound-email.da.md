@@ -23,13 +23,13 @@ tone: false
 jsonId: "1039"
 product_type: "1039"
 ---
-# Kold udgående e -mail |  copy.tools, ai-copywriting platform
+# Kold udgående e -mail |  Maila.AI, ai-copywriting platform
 
-Oplev, hvordan copy.tools kan revolutionere dit kolde opsøgende spil ved at udforme personaliserede, engagerende og højtkonverterende kolde e-mails med kraften i kunstig intelligens.
+Oplev, hvordan Maila.AI kan revolutionere dit kolde opsøgende spil ved at udforme personaliserede, engagerende og højtkonverterende kolde e-mails med kraften i kunstig intelligens.
 
 ## Produkt beskrivelse
 
-copy.tools er en banebrydende AI-drevet tekstforfatterplatform, der hjælper dig med at skabe overbevisende og engagerende kolde e-mails til dine udgående kampagner.  Med copy.tools kan du sige farvel til generiske og ubehagelige e -mails, der ender i papirkurven.  I stedet vil vores avancerede AI-algoritmer generere personaliserede, opmærksomhedsfangende indhold, der taler direkte til dine kundeemner, øger åbne priser, klikfrekvenser og i sidste ende konverteringer.
+Maila.AI er en banebrydende AI-drevet tekstforfatterplatform, der hjælper dig med at skabe overbevisende og engagerende kolde e-mails til dine udgående kampagner.  Med Maila.AI kan du sige farvel til generiske og ubehagelige e -mails, der ender i papirkurven.  I stedet vil vores avancerede AI-algoritmer generere personaliserede, opmærksomhedsfangende indhold, der taler direkte til dine kundeemner, øger åbne priser, klikfrekvenser og i sidste ende konverteringer.
 
 ## Nøglefunktioner
 
@@ -57,13 +57,13 @@ copy.tools er en banebrydende AI-drevet tekstforfatterplatform, der hjælper dig
 
 ## Udtalelser
 
-> "copy.tools har været en spiludveksler for vores salgsteam. Vores kolde e-mail-kampagner har set en markant stigning i åbne priser og konverteringer, siden vi begyndte  Kold opsøgende spil! "  - _Jane Smith, Sales Manager_
+> "Maila.AI har været en spiludveksler for vores salgsteam. Vores kolde e-mail-kampagner har set en markant stigning i åbne priser og konverteringer, siden vi begyndte  Kold opsøgende spil! "  - _Jane Smith, Sales Manager_
  >
- > "Som freelancer har jeg altid kæmpet med at skrive kolde e -mails, der bliver bemærket. copy.tools har ikke kun reddet mig tid og kræfter, men også hjulpet mig med at lande flere klienter end nogensinde før. Jeg kan ikke anbefale det nok!"  - _John Doe, Freelance Designer_
+ > "Som freelancer har jeg altid kæmpet med at skrive kolde e -mails, der bliver bemærket. Maila.AI har ikke kun reddet mig tid og kræfter, men også hjulpet mig med at lande flere klienter end nogensinde før. Jeg kan ikke anbefale det nok!"  - _John Doe, Freelance Designer_
 
 ## Opfordring til handling
 
-Klar til at revolutionere dit kolde e -mail -spil og øge dine resultater?  [Tilmeld dig copy.tools] (https://www.copy.tools) i dag og oplev kraften i AI-drevet tekstforfatter til dig selv!
+Klar til at revolutionere dit kolde e -mail -spil og øge dine resultater?  [Tilmeld dig Maila.AI] (https://www.Maila.AI) i dag og oplev kraften i AI-drevet tekstforfatter til dig selv!
 
 ## trin-for-trin guide til, hvordan man bruger kopi.ai
 

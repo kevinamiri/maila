@@ -23,13 +23,13 @@ tone: false
 jsonId: "1039"
 product_type: "1039"
 ---
-# Courriel sortant froid |  copy.tools, plateforme AI-Copywriting
+# Courriel sortant froid |  Maila.AI, plateforme AI-Copywriting
 
-Découvrez comment copy.tools peut révolutionner votre jeu de sensibilisation au froid en créant des e-mails froids personnalisés, engageants et à conversion élevée avec la puissance de l'intelligence artificielle.
+Découvrez comment Maila.AI peut révolutionner votre jeu de sensibilisation au froid en créant des e-mails froids personnalisés, engageants et à conversion élevée avec la puissance de l'intelligence artificielle.
 
 ## Description du produit
 
-copy.tools est une plate-forme de rédaction de pointe alimentée par AI qui vous aide à créer des e-mails froids persuasifs et engageants pour vos campagnes sortantes.  Avec copy.tools, vous pouvez dire au revoir aux e-mails génériques et peu attrayants qui se retrouvent dans la poubelle.  Au lieu de cela, nos algorithmes AI avancés généreront un contenu personnalisé et attirant l'attention qui parle directement de vos prospects, augmentant les taux d'ouverture, les taux de clics et, finalement, les conversions.
+Maila.AI est une plate-forme de rédaction de pointe alimentée par AI qui vous aide à créer des e-mails froids persuasifs et engageants pour vos campagnes sortantes.  Avec Maila.AI, vous pouvez dire au revoir aux e-mails génériques et peu attrayants qui se retrouvent dans la poubelle.  Au lieu de cela, nos algorithmes AI avancés généreront un contenu personnalisé et attirant l'attention qui parle directement de vos prospects, augmentant les taux d'ouverture, les taux de clics et, finalement, les conversions.
 
 ## Principales caractéristiques
 
@@ -57,17 +57,17 @@ copy.tools est une plate-forme de rédaction de pointe alimentée par AI qui vou
 
 ## Témoignages
 
-> "copy.tools a changé la donne pour notre équipe de vente. Nos campagnes par e-mail à froid ont connu une augmentation significative des taux d'ouverture et des conversions depuis que nous avons commencé à utiliser la plate-forme. C'est un outil incontournable pour toute entreprise qui cherche à augmenter leur  Jeu de sensibilisation à froid! "  - _Jane Smith, directeur des ventes_
+> "Maila.AI a changé la donne pour notre équipe de vente. Nos campagnes par e-mail à froid ont connu une augmentation significative des taux d'ouverture et des conversions depuis que nous avons commencé à utiliser la plate-forme. C'est un outil incontournable pour toute entreprise qui cherche à augmenter leur  Jeu de sensibilisation à froid! "  - _Jane Smith, directeur des ventes_
  >
- > "En tant que pigiste, j'ai toujours eu du mal à écrire des e-mails froids qui se font remarquer. copy.tools m'a non seulement fait gagner du temps et des efforts, mais m'a également aidé à attirer plus de clients que jamais. Je ne peux pas le recommander assez!"  - _John Doe, Freelance Designer_
+ > "En tant que pigiste, j'ai toujours eu du mal à écrire des e-mails froids qui se font remarquer. Maila.AI m'a non seulement fait gagner du temps et des efforts, mais m'a également aidé à attirer plus de clients que jamais. Je ne peux pas le recommander assez!"  - _John Doe, Freelance Designer_
 
 ## Appel à l'action
 
-Prêt à révolutionner votre jeu de messagerie froid et à augmenter vos résultats?  [Inscrivez-vous à copy.tools] (https://www.copy.tools) et expérimentez la puissance de l'écriture de copys-a-AI!
+Prêt à révolutionner votre jeu de messagerie froid et à augmenter vos résultats?  [Inscrivez-vous à Maila.AI] (https://www.Maila.AI) et expérimentez la puissance de l'écriture de copys-a-AI!
 
-## Guide étape par étape sur la façon d'utiliser copy.tools
+## Guide étape par étape sur la façon d'utiliser Maila.AI
 
-1. ** Inscrivez-vous: ** Inscrivez-vous pour un compte copy.tools et choisissez un plan d'abonnement qui répond à vos besoins.
+1. ** Inscrivez-vous: ** Inscrivez-vous pour un compte Maila.AI et choisissez un plan d'abonnement qui répond à vos besoins.
  2. ** Créez une nouvelle campagne: ** Accédez au tableau de bord et cliquez sur le bouton "Nouvelle campagne".
  3. ** Sélectionnez le modèle de courrier électronique froid: ** Parcourez les modèles disponibles et choisissez l'option de courrier électronique froid.
  4. ** Fournir une entrée: ** Entrez des informations sur votre public, produit ou service cible, et tous les mots clés ou phrases spécifiques que vous souhaitez inclure.

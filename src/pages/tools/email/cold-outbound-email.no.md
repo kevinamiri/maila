@@ -23,13 +23,13 @@ tone: false
 jsonId: "1039"
 product_type: "1039"
 ---
-# Kald utgående e -post |  copy.tools, ai-copywriting plattform
+# Kald utgående e -post |  Maila.AI, ai-copywriting plattform
 
-Oppdag hvordan copy.tools kan revolusjonere det kalde oppsøkende spillet ditt ved å lage personaliserte, engasjerende og høye konverterende kalde e-postmeldinger med kraften i kunstig intelligens.
+Oppdag hvordan Maila.AI kan revolusjonere det kalde oppsøkende spillet ditt ved å lage personaliserte, engasjerende og høye konverterende kalde e-postmeldinger med kraften i kunstig intelligens.
 
 ## Produktbeskrivelse
 
-copy.tools er en nyskapende AI-drevet tekstforfatterplattform som hjelper deg med å lage overbevisende og engasjerende kalde e-postmeldinger for dine utgående kampanjer.  Med copy.tools kan du ta farvel med generiske og uoppnåelige e -postmeldinger som havner i søpla.  I stedet vil våre avanserte AI-algoritmer generere personalisert, oppmerksomhetsopphold som snakker direkte til potensielle kunder, øke åpne priser, klikkfrekvenser og til slutt konverteringer.
+Maila.AI er en nyskapende AI-drevet tekstforfatterplattform som hjelper deg med å lage overbevisende og engasjerende kalde e-postmeldinger for dine utgående kampanjer.  Med Maila.AI kan du ta farvel med generiske og uoppnåelige e -postmeldinger som havner i søpla.  I stedet vil våre avanserte AI-algoritmer generere personalisert, oppmerksomhetsopphold som snakker direkte til potensielle kunder, øke åpne priser, klikkfrekvenser og til slutt konverteringer.
 
 ## Nøkkelegenskaper
 
@@ -57,15 +57,15 @@ copy.tools er en nyskapende AI-drevet tekstforfatterplattform som hjelper deg me
 
 ## attester
 
-> "copy.tools har vært en spillbytter for salgsteamet vårt. Våre kalde e-postkampanjer har sett en betydelig økning i åpne priser og konverteringer siden vi begynte å bruke plattformen. Det er et must-have-verktøy for enhver virksomhet som ønsker å øke deres  Cold Outreach Game! "  - _Jane Smith, salgssjef_
+> "Maila.AI har vært en spillbytter for salgsteamet vårt. Våre kalde e-postkampanjer har sett en betydelig økning i åpne priser og konverteringer siden vi begynte å bruke plattformen. Det er et must-have-verktøy for enhver virksomhet som ønsker å øke deres  Cold Outreach Game! "  - _Jane Smith, salgssjef_
  >
- > "Som frilanser har jeg alltid slitt med å skrive kalde e -postmeldinger som blir lagt merke til. copy.tools har ikke bare spart meg tid og krefter, men også hjulpet meg med å lande flere kunder enn noen gang før. Jeg kan ikke anbefale det nok!"  - _John doe, frilansdesigner_
+ > "Som frilanser har jeg alltid slitt med å skrive kalde e -postmeldinger som blir lagt merke til. Maila.AI har ikke bare spart meg tid og krefter, men også hjulpet meg med å lande flere kunder enn noen gang før. Jeg kan ikke anbefale det nok!"  - _John doe, frilansdesigner_
 
 ## Oppfordring til handling
 
-Klar til å revolusjonere det kalde e -postspillet ditt og øke resultatene?  [Registrer deg for copy.tools] (https://www.copy.tools) i dag og opplever kraften til AI-drevet tekstforfatter for deg selv!
+Klar til å revolusjonere det kalde e -postspillet ditt og øke resultatene?  [Registrer deg for Maila.AI] (https://www.Maila.AI) i dag og opplever kraften til AI-drevet tekstforfatter for deg selv!
 
-## Trinn-for-trinns guide for hvordan du bruker copy.tools
+## Trinn-for-trinns guide for hvordan du bruker Maila.AI
 
 1. ** Registrer deg: ** Registrer deg for en kopi.AI -konto og velg en abonnementsplan som passer dine behov.
  2. ** Opprett en ny kampanje: ** Naviger til dashbordet og klikk på "Ny kampanje" -knappen.
