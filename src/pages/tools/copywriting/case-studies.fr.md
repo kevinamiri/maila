@@ -33,11 +33,11 @@ Maila.AI est un outil de rédaction avancé par l'IA qui vous aide à créer un 
 
 ## Principales caractéristiques
 
-1. ** Génération de copie alimentée en AI **: Tirez parti de la puissance de l'IA pour générer une copie de haute qualité adaptée à votre public cible et aux besoins spécifiques.
- 2. ** Large gamme de catégories de contenu **: des articles de blog aux campagnes publicitaires, au contenu des médias sociaux, etc., Maila.AI couvre tous vos besoins de rédaction.
+1. **Génération de copie alimentée en AI **: Tirez parti de la puissance de l'IA pour générer une copie de haute qualité adaptée à votre public cible et aux besoins spécifiques.
+ 2. **Large gamme de catégories de contenu **: des articles de blog aux campagnes publicitaires, au contenu des médias sociaux, etc., Maila.AI couvre tous vos besoins de rédaction.
  3. ** Interface conviviale **: Notre tableau de bord intuitif et facile à utiliser assure une expérience de création de contenu transparente.
- 4. ** Personnalisation **: adaptez la copie générée par l'AI sur vos exigences spécifiques et votre voix de marque.
- 5. ** Rapide et efficace **: générer un contenu de haute qualité en quelques secondes, ce qui réduit considérablement le temps et les efforts impliqués dans la création de contenu.
+ 4. **Personnalisation **: adaptez la copie générée par l'AI sur vos exigences spécifiques et votre voix de marque.
+ 5. **Rapide et efficace **: générer un contenu de haute qualité en quelques secondes, ce qui réduit considérablement le temps et les efforts impliqués dans la création de contenu.
 
 ## Avantages
 
@@ -49,11 +49,11 @@ Maila.AI est un outil de rédaction avancé par l'IA qui vous aide à créer un 
 
 ## Cas d'utilisation
 
-1. ** MARKETING DE CONTENU **: Générez des articles et des articles de blog engageants pour générer du trafic vers votre site Web et augmenter le référencement.
- 2. ** Gestion des médias sociaux **: Créer des publications et des légendes convaincantes pour accroître la notoriété et l'engagement de la marque.
+1. **MARKETING DE CONTENU **: Générez des articles et des articles de blog engageants pour générer du trafic vers votre site Web et augmenter le référencement.
+ 2. **Gestion des médias sociaux **: Créer des publications et des légendes convaincantes pour accroître la notoriété et l'engagement de la marque.
  3. ** Campagnes publicitaires **: produire une copie d'annonce persuasive qui anime les conversions et génère des prospects.
- 4. ** Marketing par e-mail **: artisanat captivant les lignes d'objet et la copie du corps pour améliorer les tarifs ouverts et clics.
- 5. ** Descriptions de produits **: Générez des descriptions de produit attrayantes et informatives pour augmenter les ventes.
+ 4. **Marketing par e-mail **: artisanat captivant les lignes d'objet et la copie du corps pour améliorer les tarifs ouverts et clics.
+ 5. **Descriptions de produits **: Générez des descriptions de produit attrayantes et informatives pour augmenter les ventes.
 
 ## Témoignages
 
@@ -76,8 +76,8 @@ Prêt à transformer votre processus de création de contenu?  [Inscrivez-vous] 
 
 ## Plus de fonctionnalités expliquées
 
-- ** AI Copy Assistant **: Obtenez des suggestions et des idées en temps réel pour votre contenu pendant que vous tapez.
- - ** Modèles de contenu **: Choisissez parmi une variété de modèles prédéfinis pour différents types de contenu et industries.
- - ** Prise en charge multi-langues **: Générez la copie en plusieurs langues pour cibler un public mondial.
- - ** Personnalisation avancée **: affinez la copie générée par l'AI-AI en ajustant les paramètres comme la tonalité, le style et le nombre de mots.
- - ** Options d'exportation **: Enregistrez votre copie générée en tant que fichier texte ou intégrez-la directement avec votre système de gestion de contenu préféré.
+- **AI Copy Assistant **: Obtenez des suggestions et des idées en temps réel pour votre contenu pendant que vous tapez.
+ - **Modèles de contenu **: Choisissez parmi une variété de modèles prédéfinis pour différents types de contenu et industries.
+ - **Prise en charge multi-langues **: Générez la copie en plusieurs langues pour cibler un public mondial.
+ - **Personnalisation avancée **: affinez la copie générée par l'AI-AI en ajustant les paramètres comme la tonalité, le style et le nombre de mots.
+ - **Options d'exportation **: Enregistrez votre copie générée en tant que fichier texte ou intégrez-la directement avec votre système de gestion de contenu préféré.

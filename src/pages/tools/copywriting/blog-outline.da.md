@@ -33,11 +33,11 @@ Maila.AI er en innovativ AI-drevet copywriting-platform designet til at hjælpe 
 
 ## Nøglefunktioner
 
-1. ** AI-drevet indholdsgenerering **: Giv kraften i kunstig intelligens til at generere indhold af høj kvalitet, der er skræddersyet til dine specifikke behov.
- 2. ** Tilpasbare skabeloner **: Vælg mellem en lang række skabeloner for at skabe det perfekte indhold til din målgruppe.
+1. **AI-drevet indholdsgenerering **: Giv kraften i kunstig intelligens til at generere indhold af høj kvalitet, der er skræddersyet til dine specifikke behov.
+ 2. **Tilpasbare skabeloner **: Vælg mellem en lang række skabeloner for at skabe det perfekte indhold til din målgruppe.
  3. ** Hurtig og effektiv **: Spar tid og kræfter ved at generere indhold i kun et par klik, mens du opretholder kvalitet og konsistens.
- 4. ** Brugervenlig grænseflade **: Navngiv let platformen og skab indhold uden forudgående teknisk viden.
- 5. ** Prisfastsættelsesplaner for overkommelige priser **: Find en prisplan, der passer til dine behov, uanset om du er en lille virksomhedsejer eller en stor virksomhed.
+ 4. **Brugervenlig grænseflade **: Navngiv let platformen og skab indhold uden forudgående teknisk viden.
+ 5. **Prisfastsættelsesplaner for overkommelige priser **: Find en prisplan, der passer til dine behov, uanset om du er en lille virksomhedsejer eller en stor virksomhed.
 
 ## fordele
 
@@ -77,8 +77,8 @@ Klar til at revolutionere din indholdsoprettelsesproces?  Prøv Maila.AI i dag, 
 
 ## Flere funktioner forklaret
 
-- ** Omskrivning af indhold **: Har eksisterende indhold, der har brug for et nyt touch?  Maila.AI kan hjælpe dig med at omskrive og forbedre dit indhold, mens du opretholder dets originale meddelelse.
- - ** Flersproget support **: Saml dig et globalt publikum ved at generere indhold på flere sprog.
- - ** Skræddersyet tone og stil **: Tilpas tonen og stilen i dit indhold, så du matcher din brandstemme og publikums præferencer.
- - ** AI Writer Collaboration **: Træn AI med din skrivestil og præferencer for en mere personlig indholdsgenerationsoplevelse.
- - ** Regelmæssige opdateringer og forbedringer **: Hold dig foran kurven med kontinuerlige platformopdateringer og forbedringer baseret på brugerfeedback og fremskridt inden for AI -teknologi.
+- **Omskrivning af indhold **: Har eksisterende indhold, der har brug for et nyt touch?  Maila.AI kan hjælpe dig med at omskrive og forbedre dit indhold, mens du opretholder dets originale meddelelse.
+ - **Flersproget support **: Saml dig et globalt publikum ved at generere indhold på flere sprog.
+ - **Skræddersyet tone og stil **: Tilpas tonen og stilen i dit indhold, så du matcher din brandstemme og publikums præferencer.
+ - **AI Writer Collaboration **: Træn AI med din skrivestil og præferencer for en mere personlig indholdsgenerationsoplevelse.
+ - **Regelmæssige opdateringer og forbedringer **: Hold dig foran kurven med kontinuerlige platformopdateringer og forbedringer baseret på brugerfeedback og fremskridt inden for AI -teknologi.

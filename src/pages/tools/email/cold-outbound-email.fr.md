@@ -33,27 +33,27 @@ Maila.AI est une plate-forme de rédaction de pointe alimentée par AI qui vous 
 
 ## Principales caractéristiques
 
-- ** Copywriting propulsé par AI: ** Tirez parti des algorithmes avancés pour produire des e-mails froids de haute qualité, persuasifs et engageants adaptés à votre public cible.
- - ** Personnalisation: ** Générez du contenu qui parle directement aux prospects individuels, augmentant la probabilité d'établir une véritable connexion.
- - ** Optimisation: ** Améliorer les taux d'ouverture, les taux de clics et les taux de conversion en testant et en affinant régulièrement votre contenu par e-mail.
- - ** GAGNANT DU TEMPS: ** Automatiser la tâche fastidieuse de rédiger des e-mails froids, vous permettant de vous concentrer sur des aspects plus critiques de votre entreprise.
- - ** Interface conviviale: ** Créez, modifiez et gérez facilement vos campagnes de courrier électronique à froid à l'aide de notre tableau de bord intuitif.
+- **Copywriting propulsé par AI:** Tirez parti des algorithmes avancés pour produire des e-mails froids de haute qualité, persuasifs et engageants adaptés à votre public cible.
+ - **Personnalisation:** Générez du contenu qui parle directement aux prospects individuels, augmentant la probabilité d'établir une véritable connexion.
+ - **Optimisation:** Améliorer les taux d'ouverture, les taux de clics et les taux de conversion en testant et en affinant régulièrement votre contenu par e-mail.
+ - **GAGNANT DU TEMPS:** Automatiser la tâche fastidieuse de rédiger des e-mails froids, vous permettant de vous concentrer sur des aspects plus critiques de votre entreprise.
+ - **Interface conviviale:** Créez, modifiez et gérez facilement vos campagnes de courrier électronique à froid à l'aide de notre tableau de bord intuitif.
 
 ## Avantages
 
-1. ** Taux ouverts plus élevés: ** CAPUTER L'attention de vos prospects avec un contenu personnalisé et engageant qui se démarque de la concurrence.
- 2. ** Amélioration des taux de clics: ** Encouragez les prospects à agir avec des appels à l'action persuasifs et pertinents.
- 3. ** Conversions accrues: ** Convertissez plus de prospects en clients en établissant la confiance et en démontrant la valeur grâce à un contenu sur mesure.
- 4. ** Temps et rentabilité: ** Économisez du temps, des efforts et des ressources en s'appuyant sur le contenu généré par l'IA pour vos campagnes de courrier électronique à froid.
- 5. ** Évolutivité: ** Écheignez facilement vos efforts de sensibilisation au froid en automatisant le processus de rédaction et en atteignant plus de prospects sans sacrifier la qualité.
+1. **Taux ouverts plus élevés:** CAPUTER L'attention de vos prospects avec un contenu personnalisé et engageant qui se démarque de la concurrence.
+ 2. **Amélioration des taux de clics:** Encouragez les prospects à agir avec des appels à l'action persuasifs et pertinents.
+ 3. ** Conversions accrues:** Convertissez plus de prospects en clients en établissant la confiance et en démontrant la valeur grâce à un contenu sur mesure.
+ 4. **Temps et rentabilité:** Économisez du temps, des efforts et des ressources en s'appuyant sur le contenu généré par l'IA pour vos campagnes de courrier électronique à froid.
+ 5. **Évolutivité:** Écheignez facilement vos efforts de sensibilisation au froid en automatisant le processus de rédaction et en atteignant plus de prospects sans sacrifier la qualité.
 
 ## Cas d'utilisation
 
-- ** Équipes de vente: ** Générez des intérêts et stimulent les ventes en réalisant des e-mails froids convaincants pour les clients potentiels.
- - ** Agences de marketing: ** Impressionnent les clients avec des campagnes par e-mail à froid personnalisées et axées sur les résultats qui stimulent l'engagement et les conversions.
- - ** Freelancers: ** Attirez plus de clients en présentant vos compétences et votre expertise grâce à des emplacements de courrier électronique à froid captivant.
- - ** Startups: ** Créez la sensibilisation et générez du buzz pour votre nouveau produit ou service avec des campagnes de sensibilisation à froid sur mesure.
- - ** Les demandeurs d'emploi: ** se démarquent de la compétition et décrochez votre emploi de rêve en envoyant des e-mails froids personnalisés et persuasifs aux employeurs potentiels.
+- **Équipes de vente:** Générez des intérêts et stimulent les ventes en réalisant des e-mails froids convaincants pour les clients potentiels.
+ - **Agences de marketing:** Impressionnent les clients avec des campagnes par e-mail à froid personnalisées et axées sur les résultats qui stimulent l'engagement et les conversions.
+ - **Freelancers:** Attirez plus de clients en présentant vos compétences et votre expertise grâce à des emplacements de courrier électronique à froid captivant.
+ - **Startups:** Créez la sensibilisation et générez du buzz pour votre nouveau produit ou service avec des campagnes de sensibilisation à froid sur mesure.
+ - **Les demandeurs d'emploi:** se démarquent de la compétition et décrochez votre emploi de rêve en envoyant des e-mails froids personnalisés et persuasifs aux employeurs potentiels.
 
 ## Témoignages
 
@@ -67,18 +67,18 @@ Prêt à révolutionner votre jeu de messagerie froid et à augmenter vos résul
 
 ## Guide étape par étape sur la façon d'utiliser Maila.AI
 
-1. ** Inscrivez-vous: ** Inscrivez-vous pour un compte Maila.AI et choisissez un plan d'abonnement qui répond à vos besoins.
- 2. ** Créez une nouvelle campagne: ** Accédez au tableau de bord et cliquez sur le bouton "Nouvelle campagne".
- 3. ** Sélectionnez le modèle de courrier électronique froid: ** Parcourez les modèles disponibles et choisissez l'option de courrier électronique froid.
- 4. ** Fournir une entrée: ** Entrez des informations sur votre public, produit ou service cible, et tous les mots clés ou phrases spécifiques que vous souhaitez inclure.
- 5. ** Générer du contenu: ** Cliquez sur "Générer" et regardez l'IA crafaît une copie de courrier électronique à froid convaincante adaptée à votre contribution.
- 6. ** Modifier et affiner: ** Passez en revue votre contenu généré, effectuez toutes les modifications ou ajustements nécessaires et finalisez votre copie par e-mail à froid.
- 7. ** Exportez et lancez votre campagne: ** Exportez votre copie par e-mail vers votre plateforme de marketing par e-mail préférée et lancez votre campagne de sensibilisation à froid.
+1. **Inscrivez-vous:** Inscrivez-vous pour un compte Maila.AI et choisissez un plan d'abonnement qui répond à vos besoins.
+ 2. **Créez une nouvelle campagne:** Accédez au tableau de bord et cliquez sur le bouton "Nouvelle campagne".
+ 3. ** Sélectionnez le modèle de courrier électronique froid:** Parcourez les modèles disponibles et choisissez l'option de courrier électronique froid.
+ 4. **Fournir une entrée:** Entrez des informations sur votre public, produit ou service cible, et tous les mots clés ou phrases spécifiques que vous souhaitez inclure.
+ 5. **Générer du contenu:** Cliquez sur "Générer" et regardez l'IA crafaît une copie de courrier électronique à froid convaincante adaptée à votre contribution.
+ 6. **Modifier et affiner:** Passez en revue votre contenu généré, effectuez toutes les modifications ou ajustements nécessaires et finalisez votre copie par e-mail à froid.
+ 7. **Exportez et lancez votre campagne:** Exportez votre copie par e-mail vers votre plateforme de marketing par e-mail préférée et lancez votre campagne de sensibilisation à froid.
 
 ## Plus de fonctionnalités expliquées
 
-- ** Modèles personnalisés: ** Personnalisez vos modèles de messagerie froids pour correspondre à la voix et au style de votre marque.
- - ** Ciblage avancé: ** Générez des e-mails froids en fonction de industries spécifiques, de titres d'emploi ou d'autres facteurs démographiques.
- - ** Intégration d'analyse: ** Suivez les performances de vos e-mails froids et prenez des décisions basées sur les données pour optimiser vos campagnes.
- - ** Support multilingue: ** Atteignez les prospects mondiaux en générant des e-mails froids en plusieurs langues.
- - ** Collaboration d'équipe: ** (Remarque: l'entreprise ne fournit pas cette fonctionnalité)
+- **Modèles personnalisés:** Personnalisez vos modèles de messagerie froids pour correspondre à la voix et au style de votre marque.
+ - **Ciblage avancé:** Générez des e-mails froids en fonction de industries spécifiques, de titres d'emploi ou d'autres facteurs démographiques.
+ - **Intégration d'analyse:** Suivez les performances de vos e-mails froids et prenez des décisions basées sur les données pour optimiser vos campagnes.
+ - **Support multilingue:** Atteignez les prospects mondiaux en générant des e-mails froids en plusieurs langues.
+ - **Collaboration d'équipe:** (Remarque: l'entreprise ne fournit pas cette fonctionnalité)

@@ -33,11 +33,11 @@ Maila.AI es una herramienta avanzada de redacción de IA que lo ayuda a crear co
 
 ## Características clave
 
-1. ** Generación de copias con AI **: Aproveche el poder de la IA para generar una copia de alta calidad adaptada a su público objetivo y necesidades específicas.
- 2. ** Una amplia gama de categorías de contenido **: Desde publicaciones de blog hasta campañas publicitarias, contenido de redes sociales y más, Maila.AI cubre todas sus necesidades de redacción.
+1. **Generación de copias con AI **: Aproveche el poder de la IA para generar una copia de alta calidad adaptada a su público objetivo y necesidades específicas.
+ 2. **Una amplia gama de categorías de contenido **: Desde publicaciones de blog hasta campañas publicitarias, contenido de redes sociales y más, Maila.AI cubre todas sus necesidades de redacción.
  3. ** Interfaz fácil de usar **: Nuestro tablero intuitivo y fácil de usar garantiza una experiencia de creación de contenido perfecta.
- 4. ** Personalización **: Adapte la copia generada por AI a sus requisitos específicos y voz de marca.
- 5. ** Rápido y eficiente **: Genere contenido de alta calidad en solo unos segundos, reduciendo significativamente el tiempo y el esfuerzo involucrados en la creación de contenido.
+ 4. **Personalización **: Adapte la copia generada por AI a sus requisitos específicos y voz de marca.
+ 5. **Rápido y eficiente **: Genere contenido de alta calidad en solo unos segundos, reduciendo significativamente el tiempo y el esfuerzo involucrados en la creación de contenido.
 
 ## Beneficios
 
@@ -49,11 +49,11 @@ Maila.AI es una herramienta avanzada de redacción de IA que lo ayuda a crear co
 
 ## Casos de uso
 
-1. ** Marketing de contenido **: Genere publicaciones y artículos de blog atractivos para impulsar el tráfico a su sitio web y aumentar el SEO.
- 2. ** Gestión de redes sociales **: Cree publicaciones y subtítulos de las redes sociales convincentes para aumentar la conciencia y el compromiso de la marca.
+1. **Marketing de contenido **: Genere publicaciones y artículos de blog atractivos para impulsar el tráfico a su sitio web y aumentar el SEO.
+ 2. **Gestión de redes sociales **: Cree publicaciones y subtítulos de las redes sociales convincentes para aumentar la conciencia y el compromiso de la marca.
  3. ** Campañas publicitarias **: Producir una copia publicitaria persuasiva que impulse las conversiones y genera clientes potenciales.
- 4. ** Marketing por correo electrónico **: Craft cautivando las líneas de asunto del correo electrónico y la copia del cuerpo para mejorar las tarifas de apertura y clic.
- 5. ** Descripciones de productos **: Genere descripciones de productos atractivas e informativas para aumentar las ventas.
+ 4. **Marketing por correo electrónico **: Craft cautivando las líneas de asunto del correo electrónico y la copia del cuerpo para mejorar las tarifas de apertura y clic.
+ 5. **Descripciones de productos **: Genere descripciones de productos atractivas e informativas para aumentar las ventas.
 
 ## testimonios
 
@@ -76,8 +76,8 @@ Maila.AI es una herramienta avanzada de redacción de IA que lo ayuda a crear co
 
 ## Más características explicadas
 
-- ** Asistente de copia AI **: Obtenga sugerencias e ideas en tiempo real para su contenido mientras escribe.
- - ** Plantillas de contenido **: Elija entre una variedad de plantillas preconstruidas para diferentes tipos e industrias de contenido.
- - ** Soporte de varios idiomas **: Genere una copia en varios idiomas para dirigirse a una audiencia global.
+- **Asistente de copia AI **: Obtenga sugerencias e ideas en tiempo real para su contenido mientras escribe.
+ - **Plantillas de contenido **: Elija entre una variedad de plantillas preconstruidas para diferentes tipos e industrias de contenido.
+ - **Soporte de varios idiomas **: Genere una copia en varios idiomas para dirigirse a una audiencia global.
  -** Personalización avanzada **: ajuste la copia generada por AI ajustando los parámetros como el tono, el estilo y el recuento de palabras.
- - ** Opciones de exportación **: Guarde su copia generada como un archivo de texto o integre directamente con su sistema de administración de contenido favorito.
+ - **Opciones de exportación **: Guarde su copia generada como un archivo de texto o integre directamente con su sistema de administración de contenido favorito.

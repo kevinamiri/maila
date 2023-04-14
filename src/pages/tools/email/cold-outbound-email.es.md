@@ -33,27 +33,27 @@ Maila.AI es una plataforma de redacción con AI de vanguardia que lo ayuda a cre
 
 ## Características clave
 
--** Corneado a IA: ** Aproveche los algoritmos avanzados para producir correos electrónicos fríos de alta calidad, persuasivos y atractivos adaptados a su público objetivo.
- - ** Personalización: ** Genere contenido que habla directamente a las perspectivas individuales, aumentando la probabilidad de establecer una conexión genuina.
- - ** Optimización: ** Mejore las tasas de apertura, las tasas de clics y las tasas de conversión al probar y refinar constantemente su contenido de correo electrónico.
- - ** Guardar en el tiempo: ** Automatice la tediosa tarea de escribir correos electrónicos fríos, lo que le permite concentrarse en aspectos más críticos de su negocio.
- - ** Interfaz fácil de usar: ** Crear, editar y administrar fácilmente sus campañas de correo electrónico frías utilizando nuestro tablero intuitivo.
+-** Corneado a IA:** Aproveche los algoritmos avanzados para producir correos electrónicos fríos de alta calidad, persuasivos y atractivos adaptados a su público objetivo.
+ - **Personalización:** Genere contenido que habla directamente a las perspectivas individuales, aumentando la probabilidad de establecer una conexión genuina.
+ - **Optimización:** Mejore las tasas de apertura, las tasas de clics y las tasas de conversión al probar y refinar constantemente su contenido de correo electrónico.
+ - **Guardar en el tiempo:** Automatice la tediosa tarea de escribir correos electrónicos fríos, lo que le permite concentrarse en aspectos más críticos de su negocio.
+ - **Interfaz fácil de usar:** Crear, editar y administrar fácilmente sus campañas de correo electrónico frías utilizando nuestro tablero intuitivo.
 
 ## Beneficios
 
-1. ** Tasas de apertura más altas: ** Capture la atención de sus prospectos con contenido personalizado y atractivo que se destaca de la competencia.
- 2. ** Tasas de clics mejoradas: ** Aliente a los prospectos a tomar medidas con llamadas a la acción persuasivas y relevantes.
- 3. ** Aumento de las conversiones: ** Convierta más prospectos en clientes estableciendo confianza y demostrando valor a través de contenido personalizado.
- 4. ** Tiempo y rentabilidad: ** Guarde el tiempo, el esfuerzo y los recursos al confiar en el contenido generado por la IA para sus campañas de correo electrónico frías.
- 5. ** Escalabilidad: ** Escala fácilmente sus esfuerzos de divulgación en frío automatizando el proceso de redacción y alcanzando más perspectivas sin sacrificar la calidad.
+1. **Tasas de apertura más altas:** Capture la atención de sus prospectos con contenido personalizado y atractivo que se destaca de la competencia.
+ 2. **Tasas de clics mejoradas:** Aliente a los prospectos a tomar medidas con llamadas a la acción persuasivas y relevantes.
+ 3. ** Aumento de las conversiones:** Convierta más prospectos en clientes estableciendo confianza y demostrando valor a través de contenido personalizado.
+ 4. **Tiempo y rentabilidad:** Guarde el tiempo, el esfuerzo y los recursos al confiar en el contenido generado por la IA para sus campañas de correo electrónico frías.
+ 5. **Escalabilidad:** Escala fácilmente sus esfuerzos de divulgación en frío automatizando el proceso de redacción y alcanzando más perspectivas sin sacrificar la calidad.
 
 ## Casos de uso
 
-- ** Equipos de ventas: ** Genere interés e impulse las ventas al crear correos electrónicos fríos convincentes para clientes potenciales.
- - ** Agencias de marketing: ** Impresiona a los clientes con campañas de correo electrónico frías personalizadas y basadas en resultados que aumentan el compromiso y las conversiones.
- - ** Freelancers: ** Atrae a más clientes al mostrar sus habilidades y experiencia a través de cautivadores lanzamientos de correo electrónico frío.
- - ** Startups: ** Crear conciencia y generar bullicio para su nuevo producto o servicio con campañas de divulgación fría a medida.
- - ** Sesperadores de empleo: ** Se destaca de la competencia y consigue el trabajo de sus sueños enviando correos electrónicos fríos personalizados y persuasivos a empleadores potenciales.
+- **Equipos de ventas:** Genere interés e impulse las ventas al crear correos electrónicos fríos convincentes para clientes potenciales.
+ - **Agencias de marketing:** Impresiona a los clientes con campañas de correo electrónico frías personalizadas y basadas en resultados que aumentan el compromiso y las conversiones.
+ - **Freelancers:** Atrae a más clientes al mostrar sus habilidades y experiencia a través de cautivadores lanzamientos de correo electrónico frío.
+ - **Startups:** Crear conciencia y generar bullicio para su nuevo producto o servicio con campañas de divulgación fría a medida.
+ - **Sesperadores de empleo:** Se destaca de la competencia y consigue el trabajo de sus sueños enviando correos electrónicos fríos personalizados y persuasivos a empleadores potenciales.
 
 ## testimonios
 
@@ -67,18 +67,18 @@ Maila.AI es una plataforma de redacción con AI de vanguardia que lo ayuda a cre
 
 ## guía paso a paso sobre cómo usar Maila.AI
 
-1. ** Regístrese: ** Regístrese para una cuenta Maila.AI y elija un plan de suscripción que se adapte a sus necesidades.
- 2. ** Cree una nueva campaña: ** Navegue al tablero y haga clic en el botón "Nueva campaña".
- 3. ** Seleccione la plantilla de correo electrónico fría: ** Explore las plantillas disponibles y elija la opción de correo electrónico frío.
- 4. ** Proporcione información: ** Ingrese información sobre su público objetivo, producto o servicio, y cualquier palabra o frases clave específicas que desee incluir.
- 5. ** Generar contenido: ** Haga clic en "Generar" y observe cómo las artesanías de IA Corrientes de correo electrónico frías convenciones están adaptadas a su entrada.
- 6. ** Editar y refinar: ** Revise su contenido generado, realice las ediciones o ajustes necesarios y finalice su copia de correo electrónico frío.
- 7. ** Exporte y lance su campaña: ** Exporte su copia por correo electrónico a su plataforma de marketing por correo electrónico preferida y inicie su campaña de divulgación en frío.
+1. **Regístrese:** Regístrese para una cuenta Maila.AI y elija un plan de suscripción que se adapte a sus necesidades.
+ 2. **Cree una nueva campaña:** Navegue al tablero y haga clic en el botón "Nueva campaña".
+ 3. ** Seleccione la plantilla de correo electrónico fría:** Explore las plantillas disponibles y elija la opción de correo electrónico frío.
+ 4. **Proporcione información:** Ingrese información sobre su público objetivo, producto o servicio, y cualquier palabra o frases clave específicas que desee incluir.
+ 5. **Generar contenido:** Haga clic en "Generar" y observe cómo las artesanías de IA Corrientes de correo electrónico frías convenciones están adaptadas a su entrada.
+ 6. ** Editar y refinar:** Revise su contenido generado, realice las ediciones o ajustes necesarios y finalice su copia de correo electrónico frío.
+ 7. ** Exporte y lance su campaña:** Exporte su copia por correo electrónico a su plataforma de marketing por correo electrónico preferida y inicie su campaña de divulgación en frío.
 
 ## Más características explicadas
 
-- ** Plantillas personalizadas: ** Personalice sus plantillas de correo electrónico frías para que coincidan con la voz y el estilo de su marca.
- - ** Dirección avanzada: ** Genere correos electrónicos fríos basados ​​en industrias específicas, títulos de trabajo u otros factores demográficos.
- - ** Integración de análisis: ** Rastree el rendimiento de sus correos electrónicos fríos y tome decisiones basadas en datos para optimizar sus campañas.
- - ** Soporte multilingüe: ** Llegue a las perspectivas globales generando correos electrónicos fríos en varios idiomas.
- - ** Colaboración del equipo: ** (Nota: La compañía no proporciona esta característica)
+- **Plantillas personalizadas:** Personalice sus plantillas de correo electrónico frías para que coincidan con la voz y el estilo de su marca.
+ - **Dirección avanzada:** Genere correos electrónicos fríos basados ​​en industrias específicas, títulos de trabajo u otros factores demográficos.
+ - **Integración de análisis:** Rastree el rendimiento de sus correos electrónicos fríos y tome decisiones basadas en datos para optimizar sus campañas.
+ - **Soporte multilingüe:** Llegue a las perspectivas globales generando correos electrónicos fríos en varios idiomas.
+ - **Colaboración del equipo:** (Nota: La compañía no proporciona esta característica)
