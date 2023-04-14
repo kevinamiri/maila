@@ -6,7 +6,7 @@ header: "Sähköposti, jonka lähetät sen jälkeen, kun joku on suorittanut jon
 placeholder: "Kiitos, että tilasit uutiskirjeemme!"
 usage: "Seuraava generaattori voi auttaa sinua luomaan brändiisi räätälöidyn seurantasähköpostin."
 help_hint: "Mihin toimenpiteeseen henkilö ryhtyi? Kirjoita se ylös, niin teemme siitä seurantasähköpostin."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-03-28"
 slug: "/fi/tools/email/follow-up-email"
 lang: "fi"

@@ -6,7 +6,7 @@ header: "Write emails to follow up on sales and communication with customers."
 usage: "The following generator can help you create a follow-up email that is tailored to your brand."
 placeholder: "the email you sent yesterday"
 help_hint: "What action did the person take? Write it down and we'll turn it into a Follow-up Email."
-tags: ["Email", "Email Template"]
+tags: ["Email", "ai email generator", "Email Template"]
 date: "2022-03-28"
 slug: /en/tools/email/follow-up-email
 lang: en

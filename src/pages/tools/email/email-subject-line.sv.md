@@ -6,7 +6,7 @@ usage: "Brainstorm ämnesrader för din e-post kampanj"
 placeholder: "återanvändbara kopp, hållbar"
 header: "skapa en fängslande ämnesrad för din kampanj"
 help_hint: "Någon annan information, såsom nyckelord eller mer information om din kampanj."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-08-24"
 slug: /sv/tools/email/email-subject-line
 lang: sv

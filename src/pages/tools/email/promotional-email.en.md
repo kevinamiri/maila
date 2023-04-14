@@ -6,7 +6,7 @@ header: "Generate a promotional email that is tailored to your brand."
 usage: "Email promotions are a type of email marketing that can be used to promote sales, events, or new products. The following generator can help you design and brainstrom a promotional email that is closely aligned with your brand."
 placeholder: "reusable cup of coffee, eco-friendly, 20% discount, free shipping"
 help_hint: "Write a few keywords about your email and we'll turn it into a campaign message."
-tags: ["Email", "Promotional Email", "Email Generator"]
+tags: ["Email", "ai email generator", "Promotional Email", "Email Generator"]
 date: "2022-08-24"
 slug: /en/tools/email/promotional-email
 lang: en

@@ -6,7 +6,7 @@ header: "En e-mail, som du sender, når en person har foretaget en handling."
 placeholder: "Tak for din tilmelding til vores nyhedsbrev!"
 usage: "Følgende generator kan hjælpe dig med at oprette en opfølgningsmail, der er skræddersyet til dit brand."
 help_hint: "Hvilken handling foretog personen? Skriv det ned, så laver vi det om til en opfølgningsmail."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-03-28"
 slug: "/da/tools/email/follow-up-email"
 lang: "da"

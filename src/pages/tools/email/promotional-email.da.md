@@ -6,7 +6,7 @@ header: "Generer en salgsfremmende e-mail, der sælger dine produkter eller tjen
 usage: "E-mail-kampagner er en type e-mail-marketing, der kan bruges til at fremme salg, begivenheder eller nye produkter. Følgende generator kan hjælpe dig med at designe og brainstorme en salgsfremmende e-mail, der er tæt på dit brand."
 placeholder: "genanvendelig kop kaffe, miljøvenlig, 20% rabat, gratis forsendelse"
 help_hint: "Skriv et par nøgleord om din e-mail, og vi vil omdanne det til en kampagnebesked."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-08-24"
 slug: "/da/tools/email/promotional-email"
 lang: "da"

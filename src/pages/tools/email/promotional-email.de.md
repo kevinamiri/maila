@@ -6,7 +6,7 @@ header: "Erstellen Sie eine Werbe-E-Mail, in der Ihre Produkte oder Dienstleistu
 placeholder: "wiederverwendbarer Kaffeebecher, umweltfreundlich, 20% Rabatt, kostenloser Versand"
 usage: "E-Mail-Promotions sind eine Form des E-Mail-Marketings, die zur Förderung von Verkäufen, Veranstaltungen oder neuen Produkten eingesetzt werden kann. Der folgende Generator hilft Ihnen bei der Gestaltung und dem Brainstrom einer Werbe-E-Mail, die eng mit Ihrer Marke abgestimmt ist."
 help_hint: "Schreiben Sie ein paar Stichworte zu Ihrer E-Mail und wir machen daraus eine Kampagnenbotschaft."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-03-28"
 slug: "/de/tools/email/promotional-email"
 lang: "de"

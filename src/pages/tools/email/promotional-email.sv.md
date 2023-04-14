@@ -6,7 +6,7 @@ header: "Skapa ett e-postmeddelande som säljer dina produkter eller tjänster."
 placeholder: "återanvändbar kaffekopp, miljövänlig, 20 % rabatt, fri frakt"
 help_hint: "Skriv några nyckelord om ditt e-postmeddelande så omvandlar vi det till ett kampanjmeddelande."
 usage: "Kampanjer via e-post är en typ av e-postmarknadsföring som kan användas för att marknadsföra försäljning, evenemang eller nya produkter. Följande generator kan hjälpa dig att utforma och brainstromera ett kampanjmejl som är nära kopplat till ditt varumärke."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-03-28"
 slug: "/sv/tools/email/promotional-email"
 lang: "sv"

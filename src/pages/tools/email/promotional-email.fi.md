@@ -6,7 +6,7 @@ header: "Luo mainossähköposti, joka myy tuotteitasi tai palveluitasi."
 usage: "Sähköpostimarkkinointi on tapa markkinoida tuotteita, tapahtumia tai uusia tuotteita. Seuraava generaattori auttaa sinua suunnittelemaan ja kehittämään sähköpostimarkkinointikampanjan, joka on täysin yhteensopiva brändisi kanssa."
 placeholder: "kierrätettävä kahvikuppi, ekologinen, 20% alennus, ilmainen toimitus"
 help_hint: "Kirjoita muutama avainsana sähköpostistasi ja muutamme sen kampanjaviestiksi."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-03-28"
 slug: "/fi/tools/email/promotional-email"
 lang: "fi"

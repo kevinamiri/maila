@@ -6,7 +6,7 @@ usage: "Brainstorm subject lines for your email campaign"
 placeholder: "reusable cup, eco-friendly"
 header: "create a catchy subject line for your campaign in seconds"
 help_hint: "Any other information, such as keywords or more details about your campaign."
-tags: ["Email", "Email subject line"]
+tags: ["Email", "ai email generator", "Email subject line"]
 date: "2022-08-29"
 slug: /en/tools/email/email-subject-line
 lang: en

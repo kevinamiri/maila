@@ -6,7 +6,7 @@ usage: "Brainstorming für die Betreffzeilen Ihrer E-Mail-Kampagne"
 placeholder: "Wiederverwendbare Tasse, umweltfreundlich"
 header: "Erstellen Sie eine auffällige Betreffzeile für Ihre Kampagne"
 help_hint: "Jede andere Information, wie Keywords oder mehr Details über Ihre Kampagne."
-tags: ["Email", "Writing Aid"]
+tags: ["Email", "ai email generator", "Writing Aid"]
 date: "2022-08-28"
 slug: /de/tools/email/email-subject-line
 lang: de

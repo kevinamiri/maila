@@ -7,7 +7,7 @@ header: "Aumenta la tua reputazione online con recensioni generate dall'IA."
 usage: "Per utilizzare questo strumento, inserisci semplicemente l'argomento, le parole chiave e le caratteristiche chiave del prodotto o del servizio.  Il generatore di revisione AI creerà quindi una revisione ben strutturata, unica e persuasiva in base al tuo contributo."
 placeholder: "Scrivi tutti i dettagli essenziali che desideri evidenziare nella recensione, ad esempio: \ n \ n punti chiave: \ n \ n1.  Ottimo servizio clienti \ N2.  Prodotto di alta qualità \ N3.  Spedizione veloce \ n \ n Parole chiave: servizio clienti, qualità del prodotto, spedizione \ n \ n"
 help_hint: "Per quale prodotto o servizio vorresti generare una recensione?  Immettere alcune parole chiave relative all'argomento e creeremo una revisione avvincente in base al tuo input.  Si consiglia di elencare i punti chiave che si desidera evidenziare nella recensione."
-tags: ["Email", "Cold Email"]
+tags: ["Email", "ai email generator", "Cold Email"]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

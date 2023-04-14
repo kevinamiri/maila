@@ -6,7 +6,7 @@ header: "Ett e-postmeddelande som du skickar efter att någon har vidtagit en å
 placeholder: "det mejl som du skickade i går"
 usage: "Följande generator kan hjälpa dig att skapa ett uppföljningsmeddelande som är skräddarsytt för ditt varumärke."
 help_hint: "Vad gjorde personen? Skriv ner det så omvandlar vi det till ett uppföljningsmeddelande."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-03-28"
 slug: "/sv/tools/email/follow-up-email"
 lang: "sv"

@@ -6,7 +6,7 @@ header: "Eine E-Mail, die Sie versenden, nachdem jemand eine Aktion durchgeführ
 placeholder: "Vielen Dank, dass Sie sich für unseren Newsletter angemeldet haben!"
 usage: "Mit dem folgenden Generator können Sie eine auf Ihre Marke zugeschnittene Follow-up-E-Mail erstellen."
 help_hint: "Was hat die Person unternommen? Schreiben Sie es auf und wir verwandeln es in eine Follow-up-E-Mail."
-tags: ["Email"]
+tags: ["Email", "ai email generator"]
 date: "2022-03-28"
 slug: "/de/tools/email/follow-up-email"
 lang: "de"

@@ -7,7 +7,7 @@ header: "Stimulez votre réputation en ligne avec des critiques générées par 
 usage: "Pour utiliser cet outil, entrez simplement votre sujet, vos mots clés souhaités et vos fonctionnalités clés du produit ou du service.  Le générateur d'examen de l'IA créera ensuite une revue bien structurée, unique et persuasive basée sur votre contribution."
 placeholder: "Écrivez tous les détails essentiels que vous souhaitez mettre en évidence dans la revue, par exemple: \ n \ n Points de clé: \ n \ n1.  Excellent service client \ n2.  Produit de haute qualité \ n3.  Expédition rapide \ n \ n Mots-clés: service client, qualité du produit, expédition \ n \ n"
 help_hint: "Pour quel produit ou service aimeriez-vous générer un avis?  Entrez certains mots clés liés au sujet et nous créerons une revue convaincante en fonction de votre entrée.  Il est recommandé d'énumérer les points clés que vous souhaitez mettre en évidence dans la revue."
-tags: ["Email", "Cold Email"]
+tags: ["Email", "ai email generator", "Cold Email"]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

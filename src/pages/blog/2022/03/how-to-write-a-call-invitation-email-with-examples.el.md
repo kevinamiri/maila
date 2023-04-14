@@ -9,7 +9,7 @@ date: "2022-03-21"
 slug: /el/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /el/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 lang: el
-tags: ["Email", "Invitation"]
+tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---

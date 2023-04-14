@@ -7,7 +7,7 @@ header: "Steigern Sie Ihren Online-Ruf mit AI-generierten Bewertungen."
 usage: "Um dieses Tool zu verwenden, geben Sie einfach Ihr gewünschtes Thema, Schlüsselwörter und Schlüsselfunktionen des Produkts oder der Dienstleistung ein.  Der AI cold-outbound-email erstellt dann eine gut strukturierte, einzigartige und überzeugende Überprüfung, die auf Ihrer Eingabe basiert."
 placeholder: "Schreiben Sie alle wesentlichen Details, die Sie in der Bewertung hervorheben möchten, z. B.: \ n \ n Schlüsselpunkte: \ n \ n1.  Ausgezeichneter Kundenservice \ N2.  Hochwertiges Produkt \ n3.  Schneller Versand \ n \ n Schlüsselwörter: Kundendienst, Produktqualität, Versand \ n \ n"
 help_hint: "Für welches Produkt oder für welches Service möchten Sie eine Bewertung erstellen?  Geben Sie einige Schlüsselwörter in Bezug auf das Thema ein und wir erstellen eine überzeugende Überprüfung basierend auf Ihrer Eingabe.  Es wird empfohlen, die wichtigsten Punkte aufzulisten, die Sie in der Überprüfung hervorheben möchten."
-tags: ["Email", "Cold Email"]
+tags: ["Email", "ai email generator", "Cold Email"]
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
