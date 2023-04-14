@@ -12,8 +12,8 @@ template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-14"
-slug: /en/tools/copywriting/value-proposition
-path: /en/tools/copywriting/value-proposition
+slug: /fr/tools/copywriting/value-proposition
+path: /fr/tools/copywriting/value-proposition
 lang: fr
 image: ../images/job-description.png
 imageStatus: true
