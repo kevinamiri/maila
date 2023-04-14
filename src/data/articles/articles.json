@@ -654,6 +654,19 @@
       "zh": "tools/copywriting/mission-statement",
       "es": "tools/copywriting/mission-statement",
       "it": "tools/copywriting/mission-statement"
+    },
+    {
+      "id": "51",
+      "sv": "tools/writing/outline-generator",
+      "en": "tools/writing/outline-generator",
+      "fi": "tools/writing/outline-generator",
+      "da": "tools/writing/outline-generator",
+      "no": "tools/writing/outline-generator",
+      "de": "tools/writing/outline-generator",
+      "fr": "tools/writing/outline-generator",
+      "zh": "tools/writing/outline-generator",
+      "es": "tools/writing/outline-generator",
+      "it": "tools/writing/outline-generator"
     }
   ]
 }
