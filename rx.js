@@ -1,21 +1,33 @@
+const fs = require('fs');
+const path = require('path');
 
-import fs from 'fs';
-import path from 'path';
 
-function getLanguageCode(content: string): string | null {
+function getLanguageCode(content) {
     const langRegex = /lang:\s*(\w+)/;
     const match = content.match(langRegex);
 
     return match ? match[1] : null;
 }
 
-function updateMdFile(filePath: string, langCode: string): void {
+function fixFrontMatterFormatting(content) {
+    return content.replace(/(placeholder|title):\s*"(.*?)"/g, (match, key, value) => {
+        return `${key}: "${value.replace(/"/g, '\'')}"`;
+    });
+}
+
+function updateMdFile(filePath, langCode) {
     const content = fs.readFileSync(filePath, 'utf-8');
-    const newContent = content.replace(/(slug|path):\s*\/\w+\/(.+)/g, `$1: /${langCode}/$2`);
+
+    // Fix front matter formatting
+    const fixedContent = fixFrontMatterFormatting(content);
+
+    // Update the slug and path
+    const newContent = fixedContent.replace(/(slug|path):\s*\/\w+\/(.+)/g, `$1: /${langCode}/$2`);
+
     fs.writeFileSync(filePath, newContent);
 }
 
-function findAndUpdateMdFiles(dirPath: string): void {
+function findAndUpdateMdFiles(dirPath) {
     const files = fs.readdirSync(dirPath);
 
     for (const file of files) {
@@ -34,8 +46,7 @@ function findAndUpdateMdFiles(dirPath: string): void {
     }
 }
 
-// Usage: findAndUpdateMdFiles('/your/path/here');
-
+findAndUpdateMdFiles('src/pages/tools');
 
 /*
 
