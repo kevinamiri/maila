@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-
 function getLanguageCode(content) {
     const langRegex = /lang:\s*(\w+)/;
     const match = content.match(langRegex);
@@ -11,7 +10,8 @@ function getLanguageCode(content) {
 
 function fixFrontMatterFormatting(content) {
     return content.replace(/(placeholder|title):\s*"(.*?)"/g, (match, key, value) => {
-        return `${key}: "${value.replace(/"/g, '\'')}"`;
+        const newValue = value.replace(/"/g, '\'').replace(/\n/g, '\\n');
+        return `${key}: "${newValue}"`;
     });
 }
 
@@ -47,11 +47,3 @@ function findAndUpdateMdFiles(dirPath) {
 }
 
 findAndUpdateMdFiles('src/pages/tools');
-
-/*
-
-
-First, the `getLanguageCode` function extracts the language code from the file content using a regular expression. The `updateMdFile` function then updates the file's `slug` and `path` values with the language code. Finally, the `findAndUpdateMdFiles` function recursively searches through the provided directory and its subdirectories, updating all `.md` files it encounters.
-
-To use the function, call `findAndUpdateMdFiles('/your/path/here');`, replacing `/your/path/here` with the desired path.
-*/
