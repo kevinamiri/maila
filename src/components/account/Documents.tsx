@@ -1,7 +1,6 @@
 import type { FC } from "react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import Divider from "@mui/material/Divider";
@@ -15,19 +14,26 @@ import { Node as SlateNode } from "slate";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
 
-export const serialize = (children) => {
-  return children.map((x) => SlateNode.string(x)).join("\n");
+// Function to serialize children nodes
+export const serializeNodes = (children: SlateNode[]): string => {
+  return children.map((node) => SlateNode.string(node)).join("\n");
 };
 
+interface MyDataType {
+  userData: any; // replace 'any' with the actual type of 'userData' if known
+  // other properties...
+}
+
 const Documents: FC = () => {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [posts, setPosts] = useState<any[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  // Function to fetch data from the API
   const fetchData = async () => {
-    const theUrl = `https://api.maila.ai/get-saved-data`;
+    const apiUrl = `https://api.maila.ai/get-saved-data`;
     const user = await Auth.currentAuthenticatedUser();
-    let params = {};
-    params["username"] = user.username;
-    const response = await fetch(theUrl, {
+    const params = { username: user.username };
+    const response = await fetch(apiUrl, {
       headers: {
         Authorization: `Bearer ${(await Auth.currentSession())
           .getIdToken()
@@ -37,14 +43,14 @@ const Documents: FC = () => {
       body: JSON.stringify(params),
     });
     const data = await response.json();
-    const values = Object.values(data).filter((x) => {
-      return x.userData !== undefined;
-    });
-    // console.log(values);
-    return values;
+    const validValues = Object.values(data).filter(
+      (value: MyDataType) => value.userData !== undefined
+    );
+    return validValues;
   };
 
-  React.useEffect(() => {
+  // Fetch data on component mount
+  useEffect(() => {
     fetchData().then(setPosts);
     setLoading(false);
   }, []);
@@ -92,7 +98,7 @@ const Documents: FC = () => {
                 </TableCell>
                 <TableCell>
                   <Typography color='textSecondary' variant='body1'>
-                    {serialize(post.userData)}{" "}
+                    {serializeNodes(post.userData)}{" "}
                   </Typography>
                 </TableCell>
               </TableRow>

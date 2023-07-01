@@ -1,30 +1,69 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Grid from "@mui/material/Grid";
 import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
 import { useSelector } from "react-redux";
 import ToggleButtonList from "./ToggleButtonList";
-//Mui theme
+
+export const audioAWS = async ({ text }: any) => {
+  const url = `https://6uk77gp2holg7cmjh5zfjatydq0wtxpe.lambda-url.us-east-2.on.aws`;
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "*/*",
+      },
+      body: JSON.stringify({ text }),
+    });
+    const buffer = await response.arrayBuffer();
+    // const typedArray = new Uint8Array(buffer);
+    return buffer;
+  } catch (err) {
+    throw err;
+  }
+};
 
 export default function Play() {
+  const [isPlaying, setIsPlaying] = useState(false);
   const { selectedTextValue } = useSelector((state) => state.editorParams);
   const serverAudioStreamControl = useRef(null);
+  const audioSrc = useRef(null);
+  const audioElement = useRef(null);
 
-  const streamQueryString = `phrase=${selectedTextValue}`;
-  let url = `${"https://audio.maila.ai:1920/text-to-speech"}?${streamQueryString}`;
+  const [audio, setAudio] = useState<HTMLAudioElement>();
+
+  const playAudio = async () => {
+    try {
+      const arrayBuffer = await audioAWS({ text: selectedTextValue });
+      const blob = new Blob([new Uint8Array(arrayBuffer)], {
+        type: "audio/mpeg",
+      });
+      const url = URL.createObjectURL(blob);
+      audioSrc.current = url;
+      audioElement.current.load();
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  React.useEffect(() => {
+    if (audioElement.current) {
+      audioElement.current.src = audioSrc.current;
+    }
+  }, [audioSrc.current]);
+
   return (
     <>
       <Grid hidden item>
-        <audio ref={serverAudioStreamControl}>
-          <source src={url} />
-        </audio>
+        <div>
+          <button onClick={playAudio}>Play</button>
+          <audio ref={audioElement} controls />
+        </div>
       </Grid>
       <ToggleButtonList
         icon={<PlayCircleOutlineRoundedIcon fontSize='inherit' />}
         title='Listen'
-        onClick={() => {
-          serverAudioStreamControl.current.load();
-          serverAudioStreamControl.current.play();
-        }}
+        onClick={playAudio}
         disabled={selectedTextValue.length > 2 ? false : true}
       />
     </>

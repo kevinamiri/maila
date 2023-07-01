@@ -12,7 +12,23 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Typography from "@mui/material/Typography";
 
-const planOptions = [
+interface PlanOption {
+  id: string;
+  description: string;
+  label: string;
+  priceOptions: PriceOption[];
+  value: string;
+  status: boolean;
+}
+
+// Define the structure of a price option
+interface PriceOption {
+  chargeType: string;
+  amount: string | number;
+}
+
+// Define the available plan options
+const planOptions: PlanOption[] = [
   {
     id: "1",
     description: "Free 10,000 word per month",
@@ -49,7 +65,9 @@ const planOptions = [
   },
 ];
 
-export const BillingPlanCardContent = () => {
+// Component for displaying and selecting billing plans
+export const BillingPlanCardContent: React.FC = () => {
+  // Initialize formik for form handling
   const formik = useFormik({
     initialValues: {
       plan: "free",
@@ -70,11 +88,17 @@ export const BillingPlanCardContent = () => {
       }
     },
   });
-  const [chargeType, setChargeType] = useState("monthly");
 
-  const handleChargeTypeChange = (event, newMode) => {
-    if (newMode) {
-      setChargeType(newMode);
+  // State for handling the charge type (monthly/yearly)
+  const [chargeType, setChargeType] = useState<string>("monthly");
+
+  // Handler for changing the charge type
+  const handleChargeTypeChange = (
+    event: React.MouseEvent<HTMLElement>,
+    newChargeType: string | null
+  ) => {
+    if (newChargeType) {
+      setChargeType(newChargeType);
     }
   };
 
@@ -98,6 +122,7 @@ export const BillingPlanCardContent = () => {
           value={chargeType}
         >
           <ToggleButton value='monthly'>Monthly</ToggleButton>
+          <ToggleButton value='yearly'>Yearly</ToggleButton>
         </ToggleButtonGroup>
       </Box>
       <Divider />
@@ -113,7 +138,7 @@ export const BillingPlanCardContent = () => {
               disableTypography
               control={
                 <Radio
-                  {...(option.status ? "" : `disabled=${true}`)}
+                  {...(option.status ? {} : { disabled: true })}
                   color='primary'
                 />
               }
@@ -137,8 +162,9 @@ export const BillingPlanCardContent = () => {
                   <Typography color='textPrimary' variant='h5'>
                     {
                       option.priceOptions.find(
-                        (priceOption) => priceOption.chargeType === chargeType
-                      ).amount
+                        (priceOption: PriceOption) =>
+                          priceOption.chargeType === chargeType
+                      )?.amount
                     }
                   </Typography>
                 </Box>
@@ -157,9 +183,11 @@ export const BillingPlanCardContent = () => {
       {formik.touched.plan && formik.errors.plan && (
         <FormHelperText error>{formik.errors.plan}</FormHelperText>
       )}
-      {formik.errors.submit && (
+      {formik?.errors?.submit && (
         <FormHelperText error sx={{ mt: 2 }}>
-          {formik.errors.submit}
+          {typeof formik.errors.submit === "string"
+            ? formik.errors.submit
+            : JSON.stringify(formik.errors.submit)}
         </FormHelperText>
       )}
     </>

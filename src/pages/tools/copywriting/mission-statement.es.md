@@ -7,7 +7,10 @@ header: "Elabore una declaración de misión convincente que defina el propósit
 usage: "Para usar esta herramienta, simplemente ingrese el nombre de su organización, palabras clave, objetivos y valores. Este modelo de IA generará luego una declaración de misión clara, única y atractiva basada en su entrada."
 placeholder: "Organization Name: Green Planet\n Objectives: Environmental conservation, sustainability \nValues: Protecting nature, eco-friendly practices\nKeywords: Green living, eco-friendly, sustainability"
 help_hint: "Mi organización se llama "Tech Solutions". Nuestro objetivo es proporcionar soluciones tecnológicas innovadoras y de alta calidad a nuestros clientes. Valoramos la excelencia, la transparencia y la satisfacción del cliente. Algunas palabras clave relacionadas con nuestros objetivos incluyen tecnología, innovación, calidad, eficiencia y satisfacción del cliente."
-tags: [Copywriting,Tools,Templates,Mission Statement]
+tags: |
+  - Copywriting
+  - Tools
+  - Templates
 template: 'tools-body'
 templateKey: 'tools-body'
 author: 'Kevin Levin'

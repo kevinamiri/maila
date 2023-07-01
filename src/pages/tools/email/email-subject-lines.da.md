@@ -7,14 +7,13 @@ header: "Øg dine e-mail åbningsrater med fængende emnelinjer."
 usage: "For at bruge dette værktøj skal du blot indtaste formålet med din e-mail, din målgruppe eller eventuelle relevante nøgleord. AI E-mail Emne Linjer Generatoren vil derefter skræddersy unikke og iøjnefaldende emnelinjer til dine behov."
 placeholder: "Indtast din emails formål, målgruppe eller relevante nøgleord, f.eks .:\n\n- Formål: Nyhedsbrev, Salgsfremmende, Invitation til arrangement\n- Målgruppe: Iværksættere, Modeentusiaster, Fitness-entusiaster\n- Nøgleord: Gratis levering, Eksklusiv rabat, Begrænset tids tilbud"
 help_hint: "Hvad er formålet med din e-mail eller hvem er din målgruppe? Indtast eventuelle betydningsfulde nøgleord eller sætninger, og vores AI vil generere kraftfulde emnelinjer til din e-mail for at øge dine åbningsrater."
-tags: [Copywriting,Tools,Templates,Email Subject Lines]
+tags: [Copywriting, Tools, Templates, Email Subject Lines]
 template: 'tools-body'
 author: 'Kevin Levin'
 date: "2023-04-17"
 slug: /da/tools/email/email-subject-line
 path: /da/tools/email/email-subject-line
 lang: da
-image: ../images/job-description.png
 imageStatus: true
 icon: "addEmail"
 hasCustomTemplate: false

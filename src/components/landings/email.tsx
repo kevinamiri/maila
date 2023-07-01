@@ -22,10 +22,10 @@ const Badge = styled.span`
 `;
 
 export const Email = ({
-  title = "AI-Powered Customer Support",
-  subheader = "Revolutionizing Customer Support: AI-Powered App Streamlines Communication Through Email",
-  labelbutton = "Comming soon",
-  description = "Say goodbye to long wait times and hello to instant support! Our AI-powered customer support app handles all inquiries through email, providing efficient and personalized solutions for each customer. Experience the future of customer support today.",
+  title = "Meet Your New AI Assistant",
+  subheader = "Email or Ask Maila anything about your documents.",
+  labelbutton = "Ask or Email",
+  description = "Chatbot: chat.maila.ai  or Email: anything@bot.maila.ai",
 }: HomeEmailProps) => (
   <Box
     sx={{
@@ -69,7 +69,7 @@ export const Email = ({
           </Typography>
         </Grid>
         <Grid item>
-          <Button href='/app' variant='contained'>
+          <Button href='https://chat.maila.ai' variant='contained'>
             <Typography
               variant='body2'
               sx={{
