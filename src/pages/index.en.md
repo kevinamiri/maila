@@ -1,7 +1,7 @@
 ---
 id: "01"
-title: "AI Copywriting & AI Writing Assistant"
-description: "AI-powered copywriting tools are designed to help you quickly write content for your brand."
+title: "AI Writing Assistant"
+description: "Boost your productivity with our AI-powered Writing Assistant. Designed to enhance your writing speed and quality, it's the perfect tool for anyone looking to create compelling content efficiently. Try it now and experience the future of writing!"
 templateKey: home
 tags:
   - Maila.ai
@@ -98,7 +98,7 @@ B100:
   - "Analyze and grade your content with our AI-powered SEO checker"
   - "Use powerful tools to create a strong voice for your content landing pages."
 H0121: "Maila.AI is an AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
-T0152: "AI Copywriting & AI Writing Assistant"
+T0152: "AI Writing Assistant"
 H01051: "Start writing with your first 10,000 words free trial and see if your work improves."
 H01047: "These results are pre-generated and fully empowered by AI"
 H0118:

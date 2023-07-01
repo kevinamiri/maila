@@ -5,14 +5,14 @@ module.exports = {
     title: `MAILA AI`,
     description: `AI Copywriting & Writing Assistant`,
     siteUrl: "https://maila.ai/en",
-    image: "img/logo-dark.png",
+    image: "img/logo/mstile-150x150.png",
     author: {
       name: "Kevin Amiri",
     },
     organization: {
       name: "MAILA AI",
       url: "https://maila.ai/en",
-      logo: "img/logo-dark.svg",
+      logo: "img/logo/logo-dark.svg",
     },
     social: {
       twitter: "@mailaai",
@@ -164,7 +164,7 @@ module.exports = {
         start_url: `/en/`,
         display: `standalone`,
         description: `AI Copywriting & Writing Assistant`,
-        icon: `${__dirname}/src/img/logo.png`,
+        icon: `${__dirname}/src/img/logo/mstile-150x150.png`,
         localize: [
           {
             start_url: `/sv/`,
