@@ -1,15 +1,20 @@
-import React, { createContext, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-// import { THEMES } from '../constants';
+import React, { createContext, useEffect, useState, ReactNode } from 'react';
 
-const initialSettings = JSON.parse(typeof window !== "undefined" && localStorage.getItem("settings")) || {
+interface Settings {
+  direction: string;
+  responsiveFontSizes: boolean;
+  lang: string;
+  theme: string;
+}
+
+const initialSettings: Settings = JSON.parse(typeof window !== "undefined" && localStorage.getItem("settings")) || {
   direction: 'ltr',
   responsiveFontSizes: true,
   lang: "en",
   theme: 'light'
 };
 
-const defaultSettings = () => {
+const defaultSettings = (): Settings => {
   return (
     JSON.parse(typeof window !== "undefined" && localStorage.getItem("settings")) || {
       direction: "ltr",
@@ -20,8 +25,8 @@ const defaultSettings = () => {
   );
 };
 
-export const restoreSettings = () => {
-  let settings = null;
+export const restoreSettings = (): Settings | null => {
+  let settings: Settings | null = null;
 
   try {
     const storedData = window.localStorage.getItem('settings');
@@ -45,18 +50,27 @@ export const restoreSettings = () => {
   return settings;
 };
 
-export const storeSettings = (settings) => {
+export const storeSettings = (settings: Settings): void => {
   window.localStorage.setItem('settings', JSON.stringify(settings));
 };
 
-const SettingsContext = createContext({
+interface SettingsContextProps {
+  settings: Settings;
+  saveSettings: (settings: Settings) => void;
+}
+
+const SettingsContext = createContext<SettingsContextProps>({
   settings: initialSettings,
   saveSettings: () => { }
 });
 
-export const SettingsProvider = (props) => {
+interface SettingsProviderProps {
+  children: ReactNode;
+}
+
+export const SettingsProvider: React.FC<SettingsProviderProps> = (props) => {
   const { children } = props;
-  const [settings, setSettings] = useState(defaultSettings);
+  const [settings, setSettings] = useState<Settings>(defaultSettings);
 
   useEffect(() => {
     const restoredSettings = restoreSettings();
@@ -66,7 +80,7 @@ export const SettingsProvider = (props) => {
     }
   }, []);
 
-  const saveSettings = (updatedSettings) => {
+  const saveSettings = (updatedSettings: Settings) => {
     setSettings(updatedSettings);
     storeSettings(updatedSettings);
   };
@@ -81,11 +95,6 @@ export const SettingsProvider = (props) => {
       {children}
     </SettingsContext.Provider>
   );
-};
-
-
-SettingsProvider.propTypes = {
-  children: PropTypes.node.isRequired
 };
 
 export const SettingsConsumer = SettingsContext.Consumer;

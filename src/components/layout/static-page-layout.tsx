@@ -59,12 +59,12 @@ const StaticPageLayout = (props) => {
     langKey === "sv"
       ? handleChange("lang", "sv")
       : langKey === "no"
-      ? handleChange("lang", "no")
-      : langKey === "fi"
-      ? handleChange("lang", "fi")
-      : langKey === "da"
-      ? handleChange("lang", "da")
-      : handleChange("lang", "en");
+        ? handleChange("lang", "no")
+        : langKey === "fi"
+          ? handleChange("lang", "fi")
+          : langKey === "da"
+            ? handleChange("lang", "da")
+            : handleChange("lang", "en");
   }, []);
 
   return (
