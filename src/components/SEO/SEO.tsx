@@ -35,9 +35,6 @@ const SEO = ({ frontmatter, postImage, isBlogPost, langKey }: SEOProps) => (
               url
               logo
             }
-            social {
-              twitter
-            }
           }
         }
       }

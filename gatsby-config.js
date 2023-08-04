@@ -14,9 +14,6 @@ module.exports = {
       url: "https://maila.ai/en",
       logo: "img/logo/logo-dark.svg",
     },
-    social: {
-      twitter: "@mailaai",
-    },
     languages,
   },
   plugins: [
@@ -81,15 +78,6 @@ module.exports = {
       options: {
         path: `${__dirname}/src/img/`,
         name: "images",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          posts: require.resolve("./src/components/layout/mdx-layout.tsx"),
-          default: require.resolve("./src/components/layout/mdx-layout.tsx"),
-        },
       },
     },
     "gatsby-transformer-javascript-frontmatter",
@@ -171,7 +159,7 @@ module.exports = {
             lang: `sv`,
             name: `AI skrivassistent`,
             short_name: `Maila AI`,
-            description: `A revolutionary AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes`,
+            description: `An AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes`,
           },
         ],
       },
