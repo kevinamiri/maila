@@ -2,15 +2,17 @@ import React from "react";
 import Layout from "../components/layout/Layout";
 import BlogLists from "../components/homepage/blog-lists";
 import { graphql } from "gatsby";
+import PropTypes from "prop-types";
 
-const BlogListsPage = (props) => {
-  const data = props.data;
-  const location = props.location;
-  return (
-    <Layout data={data} location={location}>
-      <BlogLists data={data} />
-    </Layout>
-  );
+const BlogListsPage = ({ data, location }) => (
+  <Layout data={data} location={location}>
+    <BlogLists data={data} />
+  </Layout>
+);
+
+BlogListsPage.propTypes = {
+  data: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 export default BlogListsPage;

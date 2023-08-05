@@ -1,6 +1,9 @@
 const languages = require("./src/data/languages");
 const siteUrl = `https://maila.ai/en`
 module.exports = {
+  flags: {
+    DEV_SSR: true
+  },
   siteMetadata: {
     title: `MAILA AI`,
     description: `AI Copywriting & Writing Assistant`,

@@ -18,12 +18,13 @@ import { useLocation } from "@reach/router";
 import Box from "@mui/material/Box";
 import SearchBox from "../../components/subcomponents/searchBox";
 import useSettings from "../../hooks/useSettings";
-import { useSnackbar } from "notistack";
+import { OptionsObject, SnackbarKey, SnackbarMessage, SnackbarProvider, useSnackbar } from 'notistack';
 import LangSettingsDials from "../../components/subcomponents/LangSettingsDials";
 import EditorManage from "../../components/editor-manage";
 import useToolsProducts from "../../hooks/useToolsProducts";
 import DocumentsPage from "../../components/documents-page";
 import States from "../../components/app-components/states";
+import { Settings } from "contexts/settings-context";
 
 const inputList = 800;
 const MarginBox = styled("div")(({ theme }) => ({
@@ -42,7 +43,7 @@ const MarginBox = styled("div")(({ theme }) => ({
   },
 }));
 
-const getValues = (settings) => ({
+const getValues = (settings: Settings) => ({
   direction: settings.direction,
   responsiveFontSizes: settings.responsiveFontSizes,
   theme: settings.theme,
@@ -69,7 +70,14 @@ export default function App() {
     redirectToList();
   }, [location.pathname]);
 
-  const { enqueueSnackbar } = useSnackbar();
+  // Initialize enqueueSnackbar as a no-op function
+  let enqueueSnackbar: (message: SnackbarMessage, options?: OptionsObject) => SnackbarKey = () => "";
+
+  // Check if window is defined (i.e., we're on the client)
+  if (typeof window !== 'undefined') {
+    // If we're on the client, get enqueueSnackbar from useSnackbar
+    ({ enqueueSnackbar } = useSnackbar());
+  }
   /**
    * why state? When the component receives updates, the result is displayed immediately, otherwise we can use ref.
    */
@@ -82,13 +90,6 @@ export default function App() {
   );
 
   const products = allProducts;
-  // const productDescription = allProducts.filter(
-  //   (item) => item.slug.split("/")[4] === "product-description"
-  // )[0];
-  // const tagline = allProducts.filter(
-  //   (item) => item.slug.split("/")[4] === "product-description"
-  // )[0];
-
   const handleChange = (field: any, value: any): void => {
     setValues({
       ...values,
@@ -171,104 +172,107 @@ export default function App() {
   } else {
     return (
       <AppContext.Provider value={state}>
-        <IntlProvider locale={values.lang} messages={i18nMessages}>
-          <Helmet>
-            <meta charSet='utf-8' />
-            <meta
-              name='viewport'
-              content='width=device-width, initial-scale=1.0'
-            />
-            <title>Maila App</title>
-          </Helmet>
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <TopBar
-              icon='MenuRoundedIcon'
-              title='maila.ai'
-              uilang={<LangSettingsDials changeLanguage={changeLanguage} />}
-            />
-            <DrawerSideBar />
+        <SnackbarProvider>
+          <IntlProvider locale={values.lang} messages={i18nMessages}>
+            <Helmet>
+              <meta charSet='utf-8' />
+              <meta
+                name='viewport'
+                content='width=device-width, initial-scale=1.0'
+              />
+              <title>Maila App</title>
+            </Helmet>
+
             <Box
               sx={{
-                flexGrow: 1,
-                height: "100vh",
-                overflow: "auto",
-                backgroundColor: "background.default",
+                display: "flex",
               }}
-              component='main'
             >
-              <MarginBox />
+              <TopBar
+                icon='MenuRoundedIcon'
+                title='maila.ai'
+                uilang={<LangSettingsDials changeLanguage={changeLanguage} />}
+              />
+              <DrawerSideBar />
               <Box
                 sx={{
-                  py: 3,
-                  px: "1vw",
+                  flexGrow: 1,
+                  height: "100vh",
+                  overflow: "auto",
+                  backgroundColor: "background.default",
                 }}
+                component='main'
               >
-                <SearchBox />
-                <Router basepath='/app'>
-                  <PrivateRoute path='/profile' component={AccountManage} />
-                  <PrivateRoute path='/list' component={States} />
-                  {products.map((product, index) => {
-                    const path = product.url.split("/")[2];
-                    return (
-                      <ProductDescription
-                        key={index}
-                        label={product.title}
-                        headerTitle={product.title}
-                        description={product.usage}
-                        example={product.placeholder}
-                        editorHeight={product.editor_height}
-                        instructHelp={product.help_hint}
-                        productType={product.product_type}
-                        path={path}
-                        extraFields={product.extraFields}
-                        toneTextField={product.tone}
-                        loadFromUrl={product.loadFromUrl}
-                      />
-                    );
-                  })}
-                  <EditorManage
-                    label={"Advanced Editor"}
-                    headerTitle={
-                      "This is an advanced editor for special applications and tuning outputs."
-                    }
-                    description={
-                      "This is an advanced editor for special applications and tuning outputs."
-                    }
-                    example={
-                      "This is an advanced editor for special applications and tuning outputs.."
-                    }
-                    instructHelp={
-                      "This is an advanced editor for special applications and tuning outputs."
-                    }
-                    productType='44'
-                    path='/prompt'
-                    toneTextField={true}
-                    labelsLists={[]}
-                    tunningOptions
-                  />
-                  <ProductDescription
-                    label={"suffix"}
-                    headerTitle={"suffix"}
-                    description={"suffix"}
-                    example={"suffix test"}
-                    instructHelp={"suffix about product text"}
-                    productType='46'
-                    path='/suffix'
-                    toneTextField={true}
-                    labelsLists={[]}
-                  />
-                  <AccountManage path='/profile' />
-                  <DocumentsPage path='/documents' />
-                  <EditorManage path='/editor' />
-                </Router>
+                <MarginBox />
+                <Box
+                  sx={{
+                    py: 3,
+                    px: "1vw",
+                  }}
+                >
+                  <SearchBox />
+                  <Router basepath='/app'>
+                    <PrivateRoute path='/profile' component={AccountManage} />
+                    <PrivateRoute path='/list' component={States} />
+                    {products.map((product, index) => {
+                      const path = product.url.split("/")[2];
+                      return (
+                        <ProductDescription
+                          key={index}
+                          label={product.title}
+                          headerTitle={product.title}
+                          description={product.usage}
+                          example={product.placeholder}
+                          editorHeight={product.editor_height}
+                          instructHelp={product.help_hint}
+                          productType={product.product_type}
+                          path={path}
+                          extraFields={product.extraFields}
+                          toneTextField={product.tone}
+                          loadFromUrl={product.loadFromUrl}
+                        />
+                      );
+                    })}
+                    <EditorManage
+                      label={"Advanced Editor"}
+                      headerTitle={
+                        "This is an advanced editor for special applications and tuning outputs."
+                      }
+                      description={
+                        "This is an advanced editor for special applications and tuning outputs."
+                      }
+                      example={
+                        "This is an advanced editor for special applications and tuning outputs.."
+                      }
+                      instructHelp={
+                        "This is an advanced editor for special applications and tuning outputs."
+                      }
+                      productType='44'
+                      path='/prompt'
+                      toneTextField={true}
+                      labelsLists={[]}
+                      tunningOptions
+                    />
+                    <ProductDescription
+                      label={"suffix"}
+                      headerTitle={"suffix"}
+                      description={"suffix"}
+                      example={"suffix test"}
+                      instructHelp={"suffix about product text"}
+                      productType='46'
+                      path='/suffix'
+                      toneTextField={true}
+                      labelsLists={[]}
+                    />
+                    <AccountManage path='/profile' />
+                    <DocumentsPage path='/documents' />
+                    <EditorManage path='/editor' />
+                  </Router>
+                </Box>
               </Box>
             </Box>
-          </Box>
-        </IntlProvider>
+          </IntlProvider>
+        </SnackbarProvider>
       </AppContext.Provider>
     );
   }

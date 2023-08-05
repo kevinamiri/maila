@@ -37,12 +37,10 @@ function TopLayout(props) {
                       lang: settings.lang,
                     })}
                   >
-                    <SnackbarProvider maxSnack={3}>
-                      <RTL direction={settings.direction}>
-                        <CssBaseline />
-                        {props.children}
-                      </RTL>
-                    </SnackbarProvider>
+                    <RTL direction={settings.direction}>
+                      <CssBaseline />
+                      {props.children}
+                    </RTL>
                   </ThemeProvider>
                 )}
               </SettingsConsumer>

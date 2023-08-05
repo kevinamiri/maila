@@ -1,12 +1,14 @@
 import React from "react";
 import Footer from "../../components/landings/Footer";
-import SEO from "../../components/SEO/SEO";
+// import SEO from "../../components/SEO/SEO";
 import TopBar from "../../components/TopBar";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 import { IntlProvider } from "react-intl";
 import { getSrc } from "gatsby-plugin-image";
 import Box from "@mui/material/Box";
 import useSettings from "../../hooks/useSettings";
+import { Head as SEOHead } from "../../components/SEO/head";
+
 
 const Layout = (props) => {
   const data = props.data;
@@ -50,12 +52,6 @@ const Layout = (props) => {
 
   return (
     <>
-      <SEO
-        frontmatter={frontmatter}
-        postImage={imageStatus && imageSrc}
-        langKey={langKey}
-        isBlogPost={isBlogPost ? true : false}
-      />
       <IntlProvider
         locale={langKey}
         messages={i18nMessages}
@@ -76,3 +72,8 @@ const Layout = (props) => {
 };
 
 export default Layout;
+
+
+export const Head = (props) => {
+  return <SEOHead {...props} />;
+};
