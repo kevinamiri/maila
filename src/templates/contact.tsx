@@ -1,77 +1,93 @@
-import * as React from "react";
+import React, { memo } from "react";
+import PropTypes from "prop-types";
+import TagList from "../components/landings/modules/TagList";
 import { graphql } from "gatsby";
-import StaticPageLayout from "../components/layout/static-page-layout";
-import ContactMe from "../components/homepage/ContactMe";
-import { getCurrentLangKey } from "../langfile";
+import Layout from "../components/layout/Layout";
+import Content from "../components/homepage/Content";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+import ContactMe from "components/homepage/ContactMe";
 
-// markup
-const IndexPage = (props) => {
-  const data = props.data;
-  const jsonData = data.articles.edges[0].node.articles;
-  const location = props.location;
-  const url = location.pathname;
-  const { langs, defaultLangKey } = data.site.siteMetadata.languages;
-  const langKey = getCurrentLangKey(langs, defaultLangKey, url);
-  const languages = data.site.siteMetadata.languages;
-  const id = data.markdownRemark.frontmatter.id;
-  const description = data.markdownRemark.frontmatter.description;
-  const title = data.markdownRemark.frontmatter.title;
-  const date = data.markdownRemark.frontmatter.date;
+const AboutPageTemplate = ({ content, contentComponent: PageContent = Content, tags, langKey }) => (
+  <Box sx={{ mt: 8 }}>
+    <Container sx={{ mt: 5 }}>
+      <PageContent content={content} />
+      <TagList tags={tags} langKey={langKey} />
+    </Container>
+  </Box>
+);
+
+AboutPageTemplate.propTypes = {
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
+  tags: PropTypes.array,
+  langKey: PropTypes.string,
+};
+
+const AboutPage = ({ data, location }) => {
+  const { markdownRemark, allArticlesJson } = data;
+  const jsonData = allArticlesJson.edges[0].node.articles;
+  const langKey = markdownRemark.frontmatter.lang;
 
   return (
-    <main>
-      <StaticPageLayout
-        title={title}
-        jsonData={jsonData}
-        languages={languages}
-        location={location}
-        id={id}
-        description={description}
-      >
-        {date}
-        <title>{title}</title>
+    <Layout data={data} jsonData={jsonData} location={location}>
+      <Container>
         <ContactMe langkey={langKey} />
-      </StaticPageLayout>
-    </main>
+      </Container>
+    </Layout>
   );
 };
 
-export default IndexPage;
+AboutPage.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+    allArticlesJson: PropTypes.object,
+  }).isRequired,
+  location: PropTypes.object.isRequired,
+};
+
+export default memo(AboutPage);
 
 export const pageQuery = graphql`
-  query contactPageQuery($id: String!) {
+  query AboutPageQuery($id: String!) {
     site {
       siteMetadata {
-        title
-        siteUrl
-        description
         languages {
           defaultLangKey
           langs
         }
       }
     }
-    articles: allArticlesJson(filter: { title: { eq: "home" } }) {
+    allArticlesJson(filter: { title: { eq: "home" } }) {
       edges {
         node {
           articles {
             en
             sv
+            da
+            no
+            fi
           }
         }
       }
     }
     markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        date
-        description
-        id
-        lang
-        slug
-        tags
-        title
-      }
       html
+      frontmatter {
+        id
+        title
+        description
+        tags
+        lang
+        image {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
+      }
+      fields {
+        slug
+      }
     }
   }
 `;

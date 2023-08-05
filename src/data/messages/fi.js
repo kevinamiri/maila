@@ -51,12 +51,11 @@ module.exports = {
 
   // accessability settings
 
-  A01: "Accessibility Settings",
-  A02: "Enable Dark Mode",
-  A03: "Light Mode",
-  A04: "Dark Mode",
-  A05: "Save Settings",
-
+  A01: "Esteettömyysasetukset",
+  A02: "Ota päälle tumma tila",
+  A03: "Vaalea tila",
+  A04: "Tumma tila",
+  A05: "Tallenna asetukset",
 
   //Landing page
   K01: "Lue lisää",

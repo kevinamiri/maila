@@ -7,6 +7,7 @@ date: 2022-12-25
 slug: /en/contact
 path: /en/contact
 lang: en
+image: ../img/logo.png
 tags: ['contact us']
 ---
 # Contact us

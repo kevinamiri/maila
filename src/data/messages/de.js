@@ -35,6 +35,17 @@ module.exports = {
   F46: 'Dies ist die Authentifizierungsseite für das Anmelde-, Registrierungs- und Passwortwiederherstellungssystem.',
   F47: 'Passwort bestätigen',
 
+
+
+
+  A01: "Barrierefreiheitseinstellungen",
+  A02: "Dunklen Modus aktivieren",
+  A03: "Heller Modus",
+  A04: "Dunkler Modus",
+  A05: "Einstellungen speichern",
+
+
+
   //footer
   F50: 'Hinterlassen Sie ein Feedback',
   F51: "Wir suchen immer nach Möglichkeiten, unseren Service zu verbessern. Wenn Sie eine tolle Erfahrung mit uns gemacht haben, hinterlassen Sie uns bitte eine Bewertung. Wenn nicht, lassen Sie uns wissen, wie wir uns verbessern können.",
