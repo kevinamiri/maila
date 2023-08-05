@@ -18,14 +18,12 @@ const AboutPageTemplate = ({
   return (
     <Box
       sx={{
-        mt: 8,
-        backgroundColor: (theme) => theme.palette.background.default,
+        mt: 8
       }}
     >
       <Container
         sx={{
           mt: 5,
-          backgroundColor: (theme) => theme.palette.background.default,
         }}
       >
         <PageContent content={content} />

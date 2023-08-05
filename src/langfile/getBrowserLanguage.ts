@@ -1,8 +1,3 @@
-/**
- * Get browser language.
- *
- * @return {String} langKey
- */
 const getBrowserLanguage = () => {
   if (typeof window === 'undefined') {
     return null;

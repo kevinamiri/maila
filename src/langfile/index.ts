@@ -1,4 +1,4 @@
-import { curry, startsWith } from 'ramda';
+
 import getCurrentLangKey from './getCurrentLangKey';
 import getValidLangKey from './getValidLangKey';
 import getBrowserLanguage from './getBrowserLanguage';
@@ -6,7 +6,35 @@ import redirectToHome from './redirectToHome';
 import getUserLangKey from './getUserLangKey';
 import getSlugAndLang from './getSlugAndLang';
 import getPagesPaths from './getPagesPaths';
-import isInPagesPaths from './isInPagesPaths';
+import { isInPagesPaths } from './isInPagesPaths';
+
+
+// curry: transforms a function with multiple arguments into a sequence of functions each with a single argument
+function curry(fn: (...args: any[]) => any) {
+  return function curried(...args: any[]): any {
+    if (args.length >= fn.length) {
+      return fn.apply(null, args);
+    } else {
+      return (...args2: any[]) => curried.apply(null, args.concat(args2));
+    }
+  };
+}
+
+// filter: creates a new array with all elements that pass the test implemented by the provided function
+function filter<T>(fn: (value: T) => boolean, array: T[]): T[] {
+  return array.filter(fn);
+}
+
+// isNil: checks if a value is null or undefined
+function isNil(value: any): value is null | undefined {
+  return value === null || value === undefined;
+}
+
+// startsWith: checks if a string starts with a given substring
+function startsWith(substring: string, str: string): boolean {
+  return str.startsWith(substring);
+}
+
 
 /**
  * Gets the number of paths in a url
