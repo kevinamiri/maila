@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Auth } from "aws-amplify";
 import { navigate } from "gatsby";
 import { Helmet } from "react-helmet";
-import { FormattedMessage, IntlProvider } from "react-intl";
+import { IntlProvider } from "react-intl";
 import "../../../configureAmplify";
 import AppContext from "../../contexts/AppContext";
 import SignIn from "../../components/SignIn";
@@ -86,7 +86,7 @@ export default function App() {
 
   // because product description uses the ProductDescriptionTool template, I filter out the product description
   const allProducts = useTools[`${values.lang}`].edges.map(
-    (item) => item.node.frontmatter
+    (item: { node: { frontmatter: any; }; }) => item.node.frontmatter
   );
 
   const products = allProducts;
@@ -214,7 +214,7 @@ export default function App() {
                   <Router basepath='/app'>
                     <PrivateRoute path='/profile' component={AccountManage} />
                     <PrivateRoute path='/list' component={States} />
-                    {products.map((product, index) => {
+                    {products.map((product: { url: string; title: any; usage: any; placeholder: any; editor_height: number; help_hint: any; product_type: string; extraFields: any; tone: boolean; loadFromUrl: boolean; }, index: React.Key) => {
                       const path = product.url.split("/")[2];
                       return (
                         <ProductDescription
