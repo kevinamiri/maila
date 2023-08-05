@@ -5,7 +5,7 @@
   "version": "v2.1.1",
   "author": "Kevin Levin",
   "engines": {
-    "node": "^v18.1.0"
+    "node": "^v19.1.0"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.22.5",
@@ -19,18 +19,18 @@
     "@formatjs/intl-relativetimeformat": "^11.2.4",
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
-    "@mui/icons-material": "^5.11.16",
+    "@mui/icons-material": "^5.14.3",
     "@mui/lab": "^5.0.0-alpha.118",
-    "@mui/material": "^5.13.6",
+    "@mui/material": "^5.14.3",
     "@mui/x-data-grid": "^5.17.26",
     "@mui/x-data-grid-generator": "^5.17.26",
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "@reduxjs/toolkit": "^1.9.5",
-    "aws-amplify": "^5.3.1",
+    "aws-amplify": "^5.3.6",
     "axios-mock-adapter": "^1.21.5",
     "deepmerge": "^4.3.1",
     "editable-slate-react": "^0.83.0",
-    "formik": "^2.4.2",
+    "formik": "^2.4.3",
     "fs-extra": "^11.1.1",
     "gatsby": "^5.11.0",
     "gatsby-plugin-emotion": "^8.11.0",
@@ -38,8 +38,6 @@
     "gatsby-plugin-i18n-tags": "^1.0.0",
     "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-manifest": "^5.11.0",
-    "gatsby-plugin-mdx": "^5.11.0",
-    "gatsby-plugin-offline": "^6.11.0",
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "^5.11.0",
@@ -52,13 +50,11 @@
     "gatsby-transformer-json": "^5.11.0",
     "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
-    "is-url": "^1.2.4",
+    "graphql": "^16.7.1",
     "lodash": "^4.17.21",
-    "material-design-icons": "^3.0.1",
-    "material-icons": "^1.13.8",
-    "node-fetch": "^2.6.11",
+    "material-icons": "^1.13.9",
+    "node-fetch": "^2.6.12",
     "notistack": "^2.0.8",
-    "path": "^0.12.7",
     "prismjs": "^1.29.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -66,13 +62,12 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1",
     "react-intl": "^6.4.4",
-    "react-redux": "^8.1.1",
+    "react-redux": "^8.1.2",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
     "slate": "^0.90.0",
     "slate-history": "^0.86.0",
     "slate-react": "^0.90.0",
-    "slug": "^8.2.2",
     "yup": "^0.32.11"
   },
   "keywords": [
@@ -80,7 +75,9 @@
     "i18n"
   ],
   "license": "MIT",
-  "resolutions": "",
+  "resolutions": {
+    "graphql": "16.7.1"
+  },
   "scripts": {
     "develop": "NODE_OPTIONS=--max-old-space-size=8096 gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
