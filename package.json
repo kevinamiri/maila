@@ -76,7 +76,10 @@
   ],
   "license": "MIT",
   "resolutions": {
-    "graphql": "16.7.1"
+    "graphql": "16.7.1",
+    "babel-plugin-lodash": {
+      "@babel/types": "~7.20.0"
+    }
   },
   "scripts": {
     "develop": "NODE_OPTIONS=--max-old-space-size=8096 gatsby develop -H 0.0.0.0",
