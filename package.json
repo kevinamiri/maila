@@ -24,6 +24,7 @@
     "@mui/material": "^5.14.3",
     "@mui/x-data-grid": "^5.17.26",
     "@mui/x-data-grid-generator": "^5.17.26",
+    "@mui/x-date-pickers": "^6.11.0",
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "@reduxjs/toolkit": "^1.9.5",
     "aws-amplify": "^5.3.6",
@@ -68,6 +69,7 @@
     "slate": "^0.90.0",
     "slate-history": "^0.86.0",
     "slate-react": "^0.90.0",
+    "stylis-plugin-rtl": "^2.1.1",
     "yup": "^0.32.11"
   },
   "keywords": [
@@ -86,6 +88,7 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.6",
+    "@types/stylis": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "typescript": "^4.9.5"
   },

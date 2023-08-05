@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export, react/prop-types */
 import React from "react";
-import { SettingsProvider } from "./src/contexts/SettingsContext";
+import { SettingsProvider } from "./src/contexts/settings-context";
 import useSettings from "./src/hooks/useSettings";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";

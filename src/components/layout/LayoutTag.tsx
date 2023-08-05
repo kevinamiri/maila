@@ -7,6 +7,17 @@ import { IntlProvider } from "react-intl";
 import Box from "@mui/material/Box";
 import useSettings from "../../hooks/useSettings";
 
+
+
+
+const getValues = (settings) => ({
+  direction: settings.direction,
+  responsiveFontSizes: settings.responsiveFontSizes,
+  lang: settings.lang,
+  theme: settings.theme,
+});
+
+
 const LayoutTag = (props) => {
   const data = props.data;
   const description = props.data.markdownRemark.frontmatter.description;
@@ -17,29 +28,50 @@ const LayoutTag = (props) => {
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
   const { settings, saveSettings } = useSettings();
-  const handleChange = (field, value) => {
-    saveSettings({
-      ...settings,
-      [field]: value,
+  const [values, setValues] = React.useState(getValues(settings));
+
+  const handleLanguageDirection = (lang, dir) => {
+    setValues({
+      ...values,
+      lang: lang,
+      direction: dir,
     });
-    // polyfill(value);
+    saveSettings({
+      ...values,
+      lang: lang,
+      direction: dir,
+    });
+  };
+
+
+  const handleChangeLanguage = (lang): void => {
+    switch (lang) {
+      case "sv":
+        handleLanguageDirection("sv", "ltr");
+        break;
+      case "no":
+        handleLanguageDirection("no", "ltr");
+        break;
+      case "fi":
+        handleLanguageDirection("ar", "ltr");
+        break;
+      case "dk":
+        handleLanguageDirection("tr", "ltr");
+        break;
+      case "en":
+        handleLanguageDirection("en", "ltr");
+        break;
+      default:
+        handleLanguageDirection("en", "ltr");
+    }
   };
 
   React.useEffect(() => {
-    langKey === "sv"
-      ? handleChange("lang", "sv")
-      : langKey === "no"
-      ? handleChange("lang", "no")
-      : langKey === "fi"
-      ? handleChange("lang", "fi")
-      : langKey === "da"
-      ? handleChange("lang", "da")
-      : handleChange("lang", "en");
-  }, []);
+    handleChangeLanguage(langKey);
+  }, [langKey]);
 
-  const i18nMessages = require(`../../data/messages/${
-    langKey || settings.lang
-  }`);
+  const i18nMessages = require(`../../data/messages/${langKey || settings.lang
+    }`);
 
   return (
     <>

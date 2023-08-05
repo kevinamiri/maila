@@ -6,25 +6,43 @@ import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import useSettings from "../hooks/useSettings";
 import { X as XIcon } from "../icons/x";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { FormattedMessage } from "react-intl";
+// import SelectLanguage from "./homepage/SelectLanguage";
+import Link from "./Link";
+
+
+const languageTag = {
+  en: "EN-English",
+  fi: "FI-Finnish",
+  da: "DA-Danish",
+  sv: "SV-Swedish",
+  no: "NO-Norwegian",
+};
+
+
+export type langProps = {
+  langKey: string;
+  link: string;
+  selected: boolean;
+};
 
 interface SettingsDrawerProps {
   onClose?: () => void;
-  langs?: string[];
+  langs?: langProps[];
   open?: boolean;
 }
 
 const themes = [
   {
-    label: "Light",
+    label: <FormattedMessage id='A03' />,
     value: "light",
     icon: LightModeIcon,
   },
   {
-    label: "Dark",
+    label: <FormattedMessage id='A04' />,
     value: "dark",
     icon: DarkModeIcon,
   },
@@ -51,7 +69,6 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
   const handleSave = (): void => {
     saveSettings(values);
     onClose?.();
-    window.location.reload();
   };
 
   return (
@@ -77,10 +94,10 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
       >
         <Typography
           color='primary'
-          sx={{ fontWeight: 600, fontSize: "1rem", lineHeight: 1.375 }}
-          variant='h1'
+          sx={{ fontWeight: 600, lineHeight: 1.375 }}
+          variant='h5'
         >
-          settings
+          {<FormattedMessage id='A01' />}
         </Typography>
         <IconButton color='primary' onClick={onClose}>
           <XIcon fontSize='small' />
@@ -88,7 +105,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
       </Box>
       <Box
         sx={{
-          py: 4,
+          py: 3,
           px: 3,
         }}
       >
@@ -100,7 +117,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           }}
           variant='overline'
         >
-          Theme
+          {<FormattedMessage id='A02' />}
         </Typography>
         <Box
           sx={{
@@ -135,25 +152,21 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
                 >
                   <Icon fontSize='small' />
                 </Box>
-                <Typography align='center' sx={{ mt: 1 }} variant='subtitle2'>
+                <Typography
+                  align='center'
+                  sx={{ m: 1.5 }}
+                  variant='caption'
+                  color={values.theme === value ? "primary" : "textSecondary"}
+                >
                   {label}
                 </Typography>
               </div>
             );
           })}
         </Box>
-        <Divider sx={{ mt: 5 }} />
-        {/* <Typography
-          color='textSecondary'
-          sx={{
-            display: "block",
-            mb: 1,
-            mt: 4,
-          }}
-          variant='overline'
-        >
-          Language
-        </Typography> */}
+        <Divider sx={{ mt: 4 }} />
+        <NestedList items={langs} />
+        <Divider sx={{ mt: 4 }} />
         <Button
           color='primary'
           fullWidth
@@ -163,7 +176,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           variant='contained'
           aria-label='save'
         >
-          Save Setting
+          {<FormattedMessage id='A05' />}
         </Button>
       </Box>
     </Drawer>
@@ -171,3 +184,72 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
 };
 
 export default SettingsDrawer;
+
+import ListSubheader from "@mui/material/ListSubheader";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Collapse from "@mui/material/Collapse";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
+import TranslateRoundedIcon from "@mui/icons-material/TranslateRounded";
+import useSettings from "hooks/useSettings";
+
+export function NestedList({ items }) {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <List
+      sx={{ width: "100%", maxWidth: 360, bgcolor: "background.default" }}
+      component='nav'
+      aria-labelledby='nested-list-subheader'
+      subheader={
+        <ListSubheader component='div' id='nested-list-subheader'>
+          <Typography variant='caption' color='testSecondary'>
+            Change Language:{" "}
+          </Typography>
+        </ListSubheader>
+      }
+    >
+      <ListItemButton onClick={handleClick}>
+        <ListItemIcon>
+          <TranslateRoundedIcon />
+        </ListItemIcon>
+        <ListItemText
+          primary={
+            <Typography variant='subtitle2' color='initial'>
+              {items &&
+                items
+                  .filter((item) => item?.selected)
+                  .map((item) => languageTag[`${item.langKey}`])}
+            </Typography>
+          }
+        />
+        {open ? <ExpandLess /> : <ExpandMore />}
+      </ListItemButton>
+      <Collapse in={open} timeout='auto' unmountOnExit>
+        <List component='div' disablePadding>
+          <Typography variant='subtitle2' color='initial'>
+            {/* items */}
+            {items &&
+              items
+                .filter((item) => !item.selected)
+                .map((item, index) => (
+                  <Link key={index + 300} to={item.link}>
+                    <ListItemButton sx={{ pl: 9 }}>
+                      {languageTag[`${item.langKey}`]}
+                    </ListItemButton>
+                  </Link>
+                ))}
+            {/* items */}
+          </Typography>
+        </List>
+      </Collapse>
+    </List>
+  );
+}

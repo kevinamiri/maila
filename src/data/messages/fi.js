@@ -48,6 +48,16 @@ module.exports = {
         "Saat 10 tulosta kerralla, ja voit ajaa verkkojärjestelmän uudelleen saadaksesi lisää ideoita.",
     },
   ],
+
+  // accessability settings
+
+  A01: "Accessibility Settings",
+  A02: "Enable Dark Mode",
+  A03: "Light Mode",
+  A04: "Dark Mode",
+  A05: "Save Settings",
+
+
   //Landing page
   K01: "Lue lisää",
   B01: "Blogi",

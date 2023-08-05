@@ -48,6 +48,16 @@ module.exports = {
         "Du får 10 resultater på en gang, og du kan kjøre verktøyet på nytt for flere ideer.",
     },
   ],
+
+  // accessability settings
+
+  A01: "Tilgjengelighetsinnstillinger",
+  A02: "Aktiver mørk modus",
+  A03: "Lys modus",
+  A04: "Mørk modus",
+  A05: "Lagre innstillinger",
+
+
   //Landing side
   K01: "Lær mer",
   B01: "Blogg",

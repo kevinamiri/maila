@@ -49,6 +49,15 @@ module.exports = {
         "You’ll get 10 results at a time, and you can run the tool again for more ideas.",
     },
   ],
+
+  // accessability settings
+
+  A01: "Accessibility Settings",
+  A02: "Enable Dark Mode",
+  A03: "Light Mode",
+  A04: "Dark Mode",
+  A05: "Save Settings",
+
   //Landing page
   K01: "Learn More",
   B01: "Blog",
