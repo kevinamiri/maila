@@ -3,7 +3,7 @@ id: "09"
 title: "Alla taggar med blogginlägg"
 description: " Hitta alla blogginlägg med en viss tagg"
 templateKey: allTags
-date: "11-09-2022"
+date: 2022-12-25
 slug: /sv/tags
 path: /sv/tags
 lang: sv

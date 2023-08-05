@@ -3,7 +3,7 @@ id: "09"
 title: "All tags associated with blog posts"
 description: " Find all blog posts tagged with a certain keyword"
 templateKey: allTags
-date: "11-09-2022"
+date: 2022-12-25
 slug: /en/tags
 path: /en/tags
 lang: en

@@ -3,7 +3,7 @@ id: "09"
 title: "Alle tags forbundet med blogindlæg"
 description: " Find alle blogindlæg tagget med et bestemt nøgleord"
 templateKey: allTags
-date: "11-09-2025"
+date: 2022-12-25
 slug: /da/tags
 path: /da/tags
 lang: da

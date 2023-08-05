@@ -85,6 +85,22 @@ exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
       devtool: false
     })
   }
+  const jsLoader = loaders.js()
+
+  if (!jsLoader) {
+    return
+  }
+
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          use: jsLoader,
+        },
+      ],
+    },
+  })
 }
 
 exports.onCreatePage = async ({ page, actions }) => {
@@ -97,3 +113,19 @@ exports.onCreatePage = async ({ page, actions }) => {
     createPage(page)
   }
 }
+
+const resolvableExtensions = () => [`.ts`, `.tsx`]
+
+function onCreateBabelConfig({ actions }) {
+  actions.setBabelPreset({
+    name: `@babel/preset-typescript`,
+    options: {
+      isTSX: true,
+      allExtensions: true,
+    },
+  })
+}
+
+
+exports.resolvableExtensions = resolvableExtensions
+exports.onCreateBabelConfig = onCreateBabelConfig
