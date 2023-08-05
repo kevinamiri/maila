@@ -134,12 +134,6 @@ const ListSidebar = () => {
                                 </ListCatChild>
                             )
                         })}
-                        {/* <ListCatChild dirList="/app/paraphrase" formattedId="RH004" iconComponent={<DictionaryCheck viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/possible-answers" formattedId="RH004" iconComponent={<HistoryEduRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/grammar" formattedId="GC009" iconComponent={<GrammarCorrection viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/adjust-tone-rewriting" formattedId="B04" iconComponent={<BrandVoiceicon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/create-outline" formattedId="CT940" iconComponent={<DoneOutlineRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/expand" formattedId="E405" iconComponent={<PlaylistAddRoundedIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} /> */}
                     </List>
                 </Collapse>
                 {/* ************************************************************************************* */}
@@ -162,52 +156,8 @@ const ListSidebar = () => {
                                 </ListCatChild>
                             )
                         })}
-                        {/* <ListCatChild dirList="/app/blog-post-intro" formattedId="BT03" iconComponent={<BlogIntro viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/blog-post-ideas" formattedId="BT04" iconComponent={<BulpIdea viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/blog-post-conclusion" formattedId="BT05" iconComponent={<BlogConclusion viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/blog-post-headline" formattedId="BT06" iconComponent={<ViewHeadlineOutlinedIcon fontSize="small" />} />
-                        <ListCatChild dirList="/app/blog-post-summary" formattedId="BT07" iconComponent={<SummarizeOutlinedIcon fontSize="small" />} />
-                        <ListCatChild dirList="/app/blog-post-aida" formattedId="BT08" iconComponent={<BulpIdea viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/blog-post-pas" formattedId="BT09" iconComponent={<BlogOutline viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} /> */}
                     </List>
                 </Collapse>
-                {/* ************************************************************************************* */}
-                {/* <Tooltip title={<FormattedMessage id='WT02' />} disableFocusListener placement='right-start' disableInteractive >
-                    <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'WebPageTools01' })}>
-                        <ListItemIcon>
-                            <WebRoundedIcon />
-                        </ListItemIcon>
-                        <ListItemTextParent primary={<FormattedMessage id='WT02' />} />
-                        {(state.WebPageTools01) ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
-                </Tooltip> */}
-                {/* <Collapse in={(state.WebPageTools01)} timeout="auto" unmountOnExit>
-                    <List dense>
-                        <ListCatChild dirList="/app/tagline" formattedId="TG03" iconComponent={<TaglineIcon viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/landing-page-headline-description" formattedId="LP02" iconComponent={<LandingPageHeaderDescription viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/landing-page-headline" formattedId="LP01" iconComponent={<LandingPageHeader viewBox="0 0 656 656" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/meta-descriptions" formattedId="LP03" iconComponent={<MetaDescription viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/question-generator" formattedId="LP04" iconComponent={<QuestionGeneration viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/keyword-finder" formattedId="LP06" iconComponent={<SearchKeyword viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/subject-suggestion" formattedId="LP07" iconComponent={<SubjectFinder viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                    </List>
-                </Collapse> */}
-
-                {/* <Tooltip title={<FormattedMessage id='A1203' />} disableFocusListener placement='right-start' disableInteractive >
-                    <ListItem sx={{ color: 'text.secondary' }} button onClick={() => dispatch({ type: 'GAds01' })}>
-                        <ListItemIcon>
-                            <MaterialSiGoogleadsense />
-                        </ListItemIcon>
-                        <ListItemTextParent primary={<FormattedMessage id='A1203' />} />
-                        {(state.GAds01) ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
-                </Tooltip>
-                <Collapse in={(state.GAds01)} timeout="auto" unmountOnExit>
-                    <List dense>
-                        <ListCatChild dirList="/app/g-ad-title" formattedId="AG0021" iconComponent={<MaterialSiGoogleads viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                        <ListCatChild dirList="/app/g-ad-description" formattedId="AG0022" iconComponent={<MaterialSiGoogleads viewBox="0 0 32 32" height="24" width="24" fontSize="small" />} />
-                    </List>
-                </Collapse> */}
             </List>
         </>
     )
