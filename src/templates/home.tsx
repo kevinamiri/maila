@@ -142,11 +142,6 @@ export const pageQuery = graphql`
         T100
         B100
         F100
-        image {
-          childImageSharp {
-            gatsbyImageData(width: 248, quality: 100, layout: CONSTRAINED)
-          }
-        }
         T0152
         H0121
         H01047

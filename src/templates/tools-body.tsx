@@ -41,11 +41,6 @@ export const pageQuery = graphql`
       frontmatter {
         id
         title
-        image {
-          childImageSharp {
-            gatsbyImageData(width: 800, layout: CONSTRAINED)
-          }
-        }
         description
         date
         tags

@@ -99,11 +99,6 @@ export const pageQuery = graphql`
         description
         tags
         lang
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
       }
       fields {
         slug

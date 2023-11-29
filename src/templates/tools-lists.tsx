@@ -45,11 +45,6 @@ export const pageQuery = graphql`
             templateKey
             date
             lang
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 500, layout: CONSTRAINED)
-              }
-            }
             tags
           }
         }
@@ -61,11 +56,6 @@ export const pageQuery = graphql`
       frontmatter {
         id
         title
-        image {
-          childImageSharp {
-            gatsbyImageData(width: 800, layout: CONSTRAINED)
-          }
-        }
         description
         date
         tags
