@@ -99,6 +99,7 @@ const RegisterAmplify = () => {
               label={intl.formatMessage({ id: "F44" })}
               margin='normal'
               name='email'
+              id='email'
               onBlur={handleBlur}
               onChange={handleChange}
               type='email'
@@ -111,6 +112,7 @@ const RegisterAmplify = () => {
               helperText={touched.password && errors.password}
               label={intl.formatMessage({ id: "F45" })}
               margin='normal'
+              id='password'
               name='password'
               onBlur={handleBlur}
               onChange={handleChange}
@@ -134,7 +136,7 @@ const RegisterAmplify = () => {
               />
               <Typography color='textSecondary' variant='body2'>
                 {intl.formatMessage({ id: "F43" })}{" "}
-                <Link color='primary' href={termLink}>
+                <Link color='primary' to={termLink}>
                   {intl.formatMessage({ id: "F41" })}
                 </Link>
               </Typography>
@@ -144,7 +146,9 @@ const RegisterAmplify = () => {
             )}
             {errors.submit && (
               <Box sx={{ mt: 3 }}>
-                <FormHelperText error>{errors.submit}</FormHelperText>
+                <FormHelperText error>
+                  {typeof errors.submit === 'string' ? errors.submit : null}
+                </FormHelperText>
               </Box>
             )}
             <Box sx={{ mt: 2 }}>

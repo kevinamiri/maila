@@ -45,7 +45,7 @@ const PasswordResetAmplify = () => {
       <Formik
         initialValues={{
           code: ["", "", "", "", "", ""],
-          email: location.state?.username || "",
+          email: location.state?.['username'] || "",
           password: "",
           passwordConfirm: "",
           submit: null,
@@ -107,15 +107,16 @@ const PasswordResetAmplify = () => {
           values,
         }) => (
           <form noValidate onSubmit={handleSubmit}>
-            {!location.state?.username ? (
+            {!((location.state as any)?.username) ? (
               <TextField
                 autoFocus
                 error={Boolean(touched.email && errors.email)}
                 fullWidth
-                helperText={touched.email && errors.email}
+                helperText={touched.email && typeof errors.email === 'string' ? errors.email : undefined}
                 label={intl.formatMessage({ id: "F44" })}
                 margin='normal'
                 name='email'
+                id='email'
                 onBlur={handleBlur}
                 onChange={handleChange}
                 type='email'
@@ -127,7 +128,7 @@ const PasswordResetAmplify = () => {
                 disabled
                 fullWidth
                 margin='normal'
-                value={location.state.username}
+                value={(location.state as any)?.username}
                 variant='outlined'
               />
             )}
@@ -153,8 +154,8 @@ const PasswordResetAmplify = () => {
                 <TextField
                   error={Boolean(
                     Array.isArray(touched.code) &&
-                      touched.code.length === 6 &&
-                      errors.code
+                    touched.code.length === 6 &&
+                    errors.code
                   )}
                   fullWidth
                   inputRef={(el) => (itemsRef.current[i] = el)}
@@ -219,14 +220,14 @@ const PasswordResetAmplify = () => {
             </Box>
             {Boolean(
               Array.isArray(touched.code) &&
-                touched.code.length === 6 &&
-                errors.code
+              touched.code.length === 6 &&
+              errors.code
             ) && (
-              <FormHelperText error sx={{ mx: "14px" }}>
-                {Array.isArray(errors.code) &&
-                  errors.code.find((x) => x !== undefined)}
-              </FormHelperText>
-            )}
+                <FormHelperText error sx={{ mx: "14px" }}>
+                  {Array.isArray(errors.code) &&
+                    errors.code.find((x) => x !== undefined)}
+                </FormHelperText>
+              )}
             <TextField
               error={Boolean(touched.password && errors.password)}
               fullWidth
@@ -255,7 +256,9 @@ const PasswordResetAmplify = () => {
             />
             {errors.submit && (
               <Box sx={{ mt: 3 }}>
-                <FormHelperText error>{errors.submit}</FormHelperText>
+                <FormHelperText error>
+                  {typeof errors.submit === 'string' ? errors.submit : ''}
+                </FormHelperText>
               </Box>
             )}
             <Box sx={{ mt: 3 }}>

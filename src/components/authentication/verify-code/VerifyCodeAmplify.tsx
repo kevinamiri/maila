@@ -15,16 +15,40 @@ import useIsMountedRef from "../../../hooks/useIsMountedRef";
 import { useIntl } from "react-intl";
 import Link from "../../../components/Link";
 
-const VerifyCodeAmplify = () => {
+interface LocationState {
+  username?: string;
+}
+
+
+const CodeVerification = () => {
   const isMountedRef = useIsMountedRef();
   const location = useLocation();
   const { enqueueSnackbar } = useSnackbar();
-  const itemsRef = useRef([]);
+  const codeInputsRef = useRef([]);
   const intl = useIntl();
 
+  const locationState = location.state as LocationState;
+
+
   useEffect(() => {
-    itemsRef.current = itemsRef.current.slice(0, 6);
+    // Limit the number of code inputs
+    codeInputsRef.current = codeInputsRef.current.slice(0, 6);
   }, []);
+
+  const handleCodeSubmit = async (values, actions) => {
+    try {
+      await Auth.confirmSignUp(values.email, values.code.join(""));
+      enqueueSnackbar(intl.formatMessage({ id: "E509" }), { variant: "success" });
+      navigate("/auth/login");
+    } catch (error) {
+      console.error(error);
+      if (isMountedRef.current) {
+        actions.setStatus(true);
+        actions.setErrors({ submit: error.message });
+        actions.setSubmitting(false);
+      }
+    }
+  };
 
   return (
     <>
@@ -36,209 +60,188 @@ const VerifyCodeAmplify = () => {
           mb: 3,
         }}
       >
-        <div>
-          <Typography color='textPrimary' gutterBottom variant='h4'>
-            {intl.formatMessage({ id: "F32" })}
-          </Typography>
-        </div>
+        <Typography color='textPrimary' gutterBottom variant='h4'>
+          {intl.formatMessage({ id: "F32" })}
+        </Typography>
       </Box>
       <Formik
         initialValues={{
-          email: location.state?.username || "",
+          email: locationState?.username || "",
           code: ["", "", "", "", "", ""],
           submit: null,
         }}
         validationSchema={Yup.object().shape({
           email: Yup.string()
-            .email(`${intl.formatMessage({ id: "E501" })}`)
+            .email(intl.formatMessage({ id: "E501" }))
             .max(255)
-            .required(`${intl.formatMessage({ id: "E502" })}`),
-          code: Yup.array().of(
-            Yup.string().required(`${intl.formatMessage({ id: "E503" })}`)
-          ),
+            .required(intl.formatMessage({ id: "E502" })),
+          code: Yup.array().of(Yup.string().required(intl.formatMessage({ id: "E503" }))),
         })}
-        onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
-          try {
-            await Auth.confirmSignUp(values.email, values.code.join(""));
-            enqueueSnackbar(`${intl.formatMessage({ id: "E509" })}`, {
-              variant: "success",
-            });
-            navigate("/auth/login");
-          } catch (err) {
-            console.error(err);
-            if (isMountedRef.current) {
-              setStatus(true);
-              setErrors({ submit: err.message });
-              setSubmitting(false);
-            }
-          }
-        }}
+        onSubmit={handleCodeSubmit}
       >
-        {({
-          errors,
-          handleBlur,
-          handleChange,
-          handleSubmit,
-          isSubmitting,
-          setFieldValue,
-          touched,
-          values,
-        }) => (
-          <form noValidate onSubmit={handleSubmit}>
-            {!location.state?.username ? (
-              <TextField
-                autoFocus
-                error={Boolean(touched.email && errors.email)}
-                fullWidth
-                helperText={touched.email && errors.email}
-                label={intl.formatMessage({ id: "F44" })}
-                margin='normal'
-                name='email'
-                onBlur={handleBlur}
-                onChange={handleChange}
-                type='email'
-                value={values.email}
-                variant='outlined'
-              />
-            ) : (
-              <TextField
-                disabled
-                fullWidth
-                margin='normal'
-                value={location.state.username}
-                variant='outlined'
-              />
-            )}
-            <Typography
-              color='textSecondary'
-              sx={{
-                mb: 2,
-                mt: 3,
-              }}
-              variant='subtitle2'
-            >
-              {intl.formatMessage({ id: "F39" })}
-            </Typography>
-            <Box
-              sx={{
-                display: "grid",
-                columnGap: "16px",
-                gridTemplateColumns: "repeat(7, 1fr)",
-                pt: 1,
-              }}
-            >
-              {[1, 2, 3, 4, 5, 6].map((ref, i) => (
-                <TextField
-                  error={Boolean(
-                    Array.isArray(touched.code) &&
-                      touched.code.length === 6 &&
-                      errors.code
-                  )}
-                  fullWidth
-                  inputRef={(el) => (itemsRef.current[i] = el)}
-                  key={`code-${i}`}
-                  name={`code[${i}]`}
-                  onBlur={handleBlur}
-                  onKeyDown={(event) => {
-                    if (event.code === "ENTER") {
-                      if (values.code[i]) {
-                        setFieldValue(`code[${i}]`, "");
-                        return;
-                      }
-
-                      if (i > 0) {
-                        setFieldValue(`code[${i}]`, "");
-                        itemsRef.current[i - 1].focus();
-                        return;
-                      }
-                    }
-
-                    if (Number.isInteger(parseInt(event.key, 10))) {
-                      setFieldValue(`code[${i}]`, event.key);
-
-                      if (i < 5) {
-                        itemsRef.current[i + 1].focus();
-                      }
-                    }
-                  }}
-                  onPaste={(event) => {
-                    const paste = event.clipboardData.getData("text");
-                    const pasteArray = paste.split("");
-
-                    if (pasteArray.length !== 6) {
-                      return;
-                    }
-
-                    let valid = true;
-
-                    pasteArray.forEach((x) => {
-                      if (!Number.isInteger(parseInt(x, 10))) {
-                        valid = false;
-                      }
-                    });
-
-                    if (valid) {
-                      setFieldValue("code", pasteArray);
-                      itemsRef.current[5].focus();
-                    }
-                  }}
-                  value={values.code[i]}
-                  sx={{
-                    display: "inline-block",
-                    textAlign: "center",
-                    "& .MuiInputBase-input": {
-                      textAlign: "center",
-                    },
-                  }}
-                  variant='outlined'
-                />
-              ))}
-            </Box>
-            {Boolean(
-              Array.isArray(touched.code) &&
-                touched.code.length === 6 &&
-                errors.code
-            ) && (
-              <FormHelperText error sx={{ mx: "14px" }}>
-                {Array.isArray(errors.code) &&
-                  errors.code.find((x) => x !== undefined)}
-              </FormHelperText>
-            )}
-            {errors.submit && (
-              <Box sx={{ mt: 3 }}>
-                <FormHelperText error>{errors.submit}</FormHelperText>
-              </Box>
-            )}
-            <Box sx={{ mt: 3 }}>
-              <Button
-                color='primary'
-                disabled={isSubmitting}
-                fullWidth
-                size='large'
-                type='submit'
-                variant='contained'
-              >
-                {intl.formatMessage({ id: "F31" })}
-              </Button>
-            </Box>
+        {formikProps => (
+          <form noValidate onSubmit={formikProps.handleSubmit}>
+            <EmailInput {...formikProps} location={location} intl={intl} />
+            <CodeInputFields {...formikProps} codeInputsRef={codeInputsRef} intl={intl} />
+            <SubmitButton isSubmitting={formikProps.isSubmitting} intl={intl} />
           </form>
         )}
       </Formik>
       <Divider sx={{ my: 3 }} />
-      <Box sx={{ display: "flex", p: 1 }}>
-        <Box sx={{ p: 1, flexGrow: 1 }}>
-          <Link color='textSecondary' to='/auth/Recovery'>
-            {intl.formatMessage({ id: "F30" })}
-          </Link>
-        </Box>
-        <Box sx={{ p: 1 }}>
-          <Link color='textSecondary' to='/auth/login'>
-            {intl.formatMessage({ id: "L66" })}
-          </Link>
-        </Box>
-      </Box>
+      <NavigationLinks intl={intl} />
     </>
   );
 };
 
-export default VerifyCodeAmplify;
+const EmailInput = ({ errors, handleBlur, handleChange, touched, values, location, intl }) => {
+  return !location.state?.username ? (
+    <TextField
+      id='email'
+      autoFocus
+      error={Boolean(touched.email && errors.email)}
+      fullWidth
+      helperText={touched.email && typeof errors.email === 'string' ? errors.email : ''}
+      label={intl.formatMessage({ id: "F44" })}
+      margin='normal'
+      name='email'
+      onBlur={handleBlur}
+      onChange={handleChange}
+      type='email'
+      value={values.email}
+      variant='outlined'
+    />
+  ) : (
+    <TextField
+      id='username'
+      disabled
+      fullWidth
+      margin='normal'
+      value={location.state.username}
+      variant='outlined'
+    />
+  );
+};
+
+const CodeInputFields = ({ errors, handleBlur, setFieldValue, touched, values, codeInputsRef, intl }) => {
+  return (
+    <>
+      <Typography color='textSecondary' sx={{ mb: 2, mt: 3 }} variant='subtitle2'>
+        {intl.formatMessage({ id: "F39" })}
+      </Typography>
+      <Box
+        sx={{
+          display: "grid",
+          columnGap: "16px",
+          gridTemplateColumns: "repeat(6, 1fr)",
+          pt: 1,
+        }}
+      >
+        {[...Array(6)].map((_, i) => (
+          <CodeInput
+            key={`code-${i}`}
+            codeIndex={i}
+            errors={errors}
+            handleBlur={handleBlur}
+            setFieldValue={setFieldValue}
+            touched={touched}
+            value={values.code[i]}
+            codeInputsRef={codeInputsRef}
+          />
+        ))}
+      </Box>
+      {Boolean(touched.code && errors.code) && (
+        <FormHelperText error sx={{ mx: "14px" }}>
+          {errors.code}
+        </FormHelperText>
+      )}
+    </>
+  );
+};
+
+
+const CodeInput = ({ codeIndex, errors, handleBlur, setFieldValue, touched, value, codeInputsRef }) => {
+  const handleKeyDown = (event, index) => {
+    if (event.key === "Backspace" && !value) {
+      // Move to previous field if current is empty
+      if (index > 0) {
+        codeInputsRef.current[index - 1].focus();
+      }
+    } else if (event.key >= "0" && event.key <= "9") {
+      // Allow numeric values and move to next field
+      setFieldValue(`code[${index}]`, event.key);
+      if (index < 5) {
+        codeInputsRef.current[index + 1].focus();
+      }
+    } else {
+      // Prevent non-numeric input
+      event.preventDefault();
+    }
+  };
+
+  const handlePaste = (event) => {
+    const pasteData = event.clipboardData.getData("text").split("");
+    if (pasteData.length === 6 && pasteData.every(char => char >= "0" && char <= "9")) {
+      // If paste data is exactly 6 numeric characters, distribute them to the fields
+      pasteData.forEach((char, i) => {
+        setFieldValue(`code[${i}]`, char);
+      });
+      codeInputsRef.current[5].focus(); // Focus on the last field
+    }
+    event.preventDefault();
+  };
+
+  return (
+    <TextField
+      id={`code-${codeIndex}`}
+      error={Boolean(touched.code && errors.code)}
+      fullWidth
+      inputRef={(el) => (codeInputsRef.current[codeIndex] = el)}
+      name={`code[${codeIndex}]`}
+      onBlur={handleBlur}
+      onKeyDown={(event) => handleKeyDown(event, codeIndex)}
+      onPaste={handlePaste}
+      value={value}
+      sx={{
+        display: "inline-block",
+        textAlign: "center",
+        "& .MuiInputBase-input": {
+          textAlign: "center",
+        },
+      }}
+      variant='outlined'
+    />
+  );
+};
+
+
+const SubmitButton = ({ isSubmitting, intl }) => (
+  <Box sx={{ mt: 3 }}>
+    <Button
+      color='primary'
+      disabled={isSubmitting}
+      fullWidth
+      size='large'
+      type='submit'
+      variant='contained'
+    >
+      {intl.formatMessage({ id: "F31" })}
+    </Button>
+  </Box>
+);
+
+const NavigationLinks = ({ intl }) => (
+  <Box sx={{ display: "flex", p: 1 }}>
+    <Box sx={{ p: 1, flexGrow: 1 }}>
+      <Link color='textSecondary' to='/auth/Recovery'>
+        {intl.formatMessage({ id: "F30" })}
+      </Link>
+    </Box>
+    <Box sx={{ p: 1 }}>
+      <Link color='textSecondary' to='/auth/login'>
+        {intl.formatMessage({ id: "L66" })}
+      </Link>
+    </Box>
+  </Box>
+);
+
+export default CodeVerification;

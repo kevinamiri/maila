@@ -10,32 +10,32 @@ date: 2020-12-25
 image: ../img/logo.png
 sectionlabel: "More Features"
 section1:
-    title: "Simplifying content"
-    description: "Simplify your articles, essays and reports with advanced artificial intelligence."
+  title: "Simplifying content"
+  description: "Simplify your articles, essays and reports with advanced artificial intelligence."
 section2:
-    title: "Translating content"
-    description: "Translate your documents into another language with high accuracy, built on top of advanced language models like GPT-3"
+  title: "Translating content"
+  description: "Translate your documents into another language with high accuracy, built on top of advanced language models like GPT-3"
 section3:
-    title: "Summarizing content"
-    description: "Summarize your documents and extract the key points with built in intelligence."
+  title: "Summarizing content"
+  description: "Summarize your documents and extract the key points with built in intelligence."
 section4:
-    title: "Revising content"
-    description: "Review and refine your documents with AI powered suggestions."
+  title: "Revising content"
+  description: "Review and refine your documents with AI powered suggestions."
 section5:
-    title: "Generating content"
-    description: "Generate content for your brand with AI powered tools."
+  title: "Generating content"
+  description: "Generate content for your brand with AI powered tools."
 section6:
-    title: "Classifying content"
-    description: "Classify your documents into categories with built in intelligence."
+  title: "Classifying content"
+  description: "Classify your documents into categories with built in intelligence."
 section7:
-    title: "Analyzing content"
-    description: "Analyze your documents and extract key insights with built in intelligence."
+  title: "Analyzing content"
+  description: "Analyze your documents and extract key insights with built in intelligence."
 section8:
-    title: "Clustering content"
-    description: "Cluster documents into groups easily and identify similar content."
+  title: "Clustering content"
+  description: "Cluster documents into groups easily and identify similar content."
 
 section10:
-  caption:  It’s as easy as selecting a template, and letting us know the name of your product and what you do.
+  caption: It’s as easy as selecting a template, and letting us know the name of your product and what you do.
   step1: 1 - Pick a template
   describe1: Select a type of copy from a range of options including headlines, blog intros, product descriptions, and many more
   step2: 2 - Enter your details
@@ -90,7 +90,7 @@ T100:
   - "Summary Generator"
   - "SEO Checker"
   - "Paraphrasing"
-B100: 
+B100:
   - "The proven formulas for creating structured statements about your product."
   - "Generate sales emails copy with powerful words and phrases for your product."
   - "Effective ways to bring new ideas into your Product."
@@ -103,7 +103,7 @@ H01051: "Start writing with your first 10,000 words free trial and see if your w
 H01047: "These results are pre-generated and fully empowered by AI"
 H0118:
   A0117q:
-    - Is AI-generated content plagiarism-free? 
+    - Is AI-generated content plagiarism-free?
     - Our AI-generated content is plagiarism-free and accurate.
     - How can AI-powered copywriting be used in a business?
     - AI based content generation can be used for a variety of purposes in businesses. This type of content can help with product descriptions, social media updates, email subject lines and much more. Having an AI writing assistant can help save time and improve the quality of the content produced.
@@ -115,7 +115,7 @@ H0118:
     - Yes, we offer custom solutions to our clients. Please contact us for more information.
     - How is Maila AI-generated content different from other forms of content?
     - Our AI-powered copywriting tools are designed to produce content that is indistinguishable from human-written content.
-H01194: 
+H01194:
   - AI Copy Generator
   - Use advanced artificial intelligence to generate content for your website, blog or marketing materials.
   - AI-powered Writing Tools
@@ -126,4 +126,3 @@ L0401:
 path: /en/
 slug: /en/
 ---
-

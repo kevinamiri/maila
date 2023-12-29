@@ -9,15 +9,14 @@ import TextField from "@mui/material/TextField";
 import Divider from "@mui/material/Divider";
 import { Auth } from "aws-amplify";
 import Typography from "@mui/material/Typography";
-import { useSnackbar } from "notistack";
 import useIsMountedRef from "../../../hooks/useIsMountedRef";
 import { useIntl } from "react-intl";
 import Link from "../../Link";
 
+
 const PasswordRecoveryAmplify = () => {
   const intl = useIntl();
   const isMountedRef = useIsMountedRef();
-  const { enqueueSnackbar } = useSnackbar();
 
   return (
     <>
@@ -49,8 +48,6 @@ const PasswordRecoveryAmplify = () => {
         onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
           try {
             await Auth.forgotPassword(values.email).then((seccessful) => {
-              let { CodeDeliveryDetails } = seccessful;
-              let emailDestination = CodeDeliveryDetails.Destination;
               setStatus({ success: true });
               setErrors({ submit: seccessful.message });
               setSubmitting(true);
@@ -81,6 +78,7 @@ const PasswordRecoveryAmplify = () => {
         }) => (
           <form noValidate onSubmit={handleSubmit}>
             <TextField
+              id='email'
               autoFocus
               error={Boolean(touched.email && errors.email)}
               fullWidth
@@ -96,7 +94,9 @@ const PasswordRecoveryAmplify = () => {
             />
             {errors.submit && (
               <Box sx={{ mt: 3 }}>
-                <FormHelperText error>{errors.submit}</FormHelperText>
+                <FormHelperText error>
+                  {typeof errors.submit === 'string' ? errors.submit : JSON.stringify(errors.submit)}
+                </FormHelperText>
               </Box>
             )}
             <Box sx={{ mt: 3 }}>
@@ -122,7 +122,7 @@ const PasswordRecoveryAmplify = () => {
           </Link>
         </Box>
         <Box sx={{ p: 1 }}>
-          <Link color='textSecondary' to='/auth/register'>
+          <Link to='/auth/register'>
             {intl.formatMessage({ id: "F34" })}
           </Link>
         </Box>

@@ -99,6 +99,7 @@ const LoginAmplify = (props) => {
           <form noValidate onSubmit={handleSubmit}>
             <TextField
               autoFocus
+              id='email'
               error={Boolean(touched.email && errors.email)}
               fullWidth
               helperText={touched.email && errors.email}
@@ -118,6 +119,7 @@ const LoginAmplify = (props) => {
               helperText={touched.password && errors.password}
               label={intl.formatMessage({ id: "F45" })}
               margin='normal'
+              id='password'
               name='password'
               onBlur={handleBlur}
               onChange={handleChange}
@@ -128,7 +130,7 @@ const LoginAmplify = (props) => {
             />
             {errors.submit && (
               <Box sx={{ mt: 3 }}>
-                <FormHelperText error>{errors.submit}</FormHelperText>
+                <FormHelperText error>{errors.submit.toString()}</FormHelperText>
               </Box>
             )}
             <Box sx={{ mt: 2 }}>

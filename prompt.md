@@ -1,193 +1,258 @@
-Rewrite the given code in best practice design patterns, clean code
+Rewrite the following code snippet according to the following guidelines:
 
-```tsx
-import React, { useContext, useState, useEffect } from "react";
-import { Auth } from "aws-amplify";
+Guidelines:
+
+- Use meaningful semantic names. (No more than two words)
+- Only break code into smaller functions if necessary. Avoid unnecessary complexity.
+- Use comments wisely. Good code mostly documents itself. Comments should be used to explain why something is done, not how.
+- Use async/await instead of promises, try catch instead of .catch
+- Consistent formatting improves readability. This includes indentation, spacing, and organizing code in a logical order.
+
+import React, { useEffect, useRef } from "react";
 import { navigate } from "gatsby";
-import { Helmet } from "react-helmet";
-import { FormattedMessage, IntlProvider } from "react-intl";
-import "../../../configureAmplify";
-import AppContext from "../../contexts/AppContext";
-import SignIn from "../../components/SignIn";
-import TopBar from "../../components/TopBar";
-import DrawerSideBar from "../../components/DrawerSideBar";
-import PrivateRoute from "../../components/layout/PrivateRoute";
-import ProductDescription from "../../components/editors/ProductDescription";
-import AccountManage from "../../components/AccountManage";
-import { styled } from "@mui/material/styles";
-import { Router, useLocation } from "@reach/router";
+import { useLocation } from "@reach/router";
+import \* as Yup from "yup";
+import { Formik } from "formik";
 import Box from "@mui/material/Box";
-import SearchBox from "../../components/subcomponents/searchBox";
-import useSettings from "../../hooks/useSettings";
+import Button from "@mui/material/Button";
+import FormHelperText from "@mui/material/FormHelperText";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
+import { Auth } from "aws-amplify";
 import { useSnackbar } from "notistack";
-import LangSettingsDials from "../../components/subcomponents/LangSettingsDials";
-import EditorManage from "../../components/editor-manage";
-import useToolsProducts from "../../hooks/useToolsProducts";
-import DocumentsPage from "../../components/documents-page";
-import States from "../../components/app-components/states";
+import useIsMountedRef from "../../../hooks/useIsMountedRef";
+import { useIntl } from "react-intl";
+import Link from "../../../components/Link";
 
-const MarginBox = styled("div")(({ theme }) => ({
-  minHeight: 56,
-  [theme.breakpoints.down("sm")]: {
-    minHeight: 48,
-  },
-}));
+const VerifyCodeAmplify = () => {
+const isMountedRef = useIsMountedRef();
+const location = useLocation();
+const { enqueueSnackbar } = useSnackbar();
+const itemsRef = useRef([]);
+const intl = useIntl();
 
-const getValues = (settings) => ({
-  direction: settings.direction,
-  responsiveFontSizes: settings.responsiveFontSizes,
-  theme: settings.theme,
-  lang: settings.lang,
+useEffect(() => {
+itemsRef.current = itemsRef.current.slice(0, 6);
+}, []);
+
+return (
+<>
+<Box
+sx={{
+          alignItems: "center",
+          display: "flex",
+          justifyContent: "space-between",
+          mb: 3,
+        }} >
+<div>
+<Typography color='textPrimary' gutterBottom variant='h4'>
+{intl.formatMessage({ id: "F32" })}
+</Typography>
+</div>
+</Box>
+<Formik
+initialValues={{
+          email: location.state?.username || "",
+          code: ["", "", "", "", "", ""],
+          submit: null,
+        }}
+validationSchema={Yup.object().shape({
+email: Yup.string()
+.email(`${intl.formatMessage({ id: "E501" })}`)
+.max(255)
+.required(`${intl.formatMessage({ id: "E502" })}`),
+code: Yup.array().of(
+Yup.string().required(`${intl.formatMessage({ id: "E503" })}`)
+),
+})}
+onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
+try {
+await Auth.confirmSignUp(values.email, values.code.join(""));
+enqueueSnackbar(`${intl.formatMessage({ id: "E509" })}`, {
+variant: "success",
 });
+navigate("/auth/login");
+} catch (err) {
+console.error(err);
+if (isMountedRef.current) {
+setStatus(true);
+setErrors({ submit: err.message });
+setSubmitting(false);
+}
+}
+}} >
+{({
+errors,
+handleBlur,
+handleChange,
+handleSubmit,
+isSubmitting,
+setFieldValue,
+touched,
+values,
+}) => (
+<form noValidate onSubmit={handleSubmit}>
+{!location.state?.username ? (
+<TextField
+id='email'
+autoFocus
+error={Boolean(touched.email && errors.email)}
+fullWidth
+helperText={touched.email && typeof errors.email === 'string' ? errors.email : ''}
+label={intl.formatMessage({ id: "F44" })}
+margin='normal'
+name='email'
+onBlur={handleBlur}
+onChange={handleChange}
+type='email'
+value={values.email}
+variant='outlined'
+/>
+) : (
+<TextField
+id='username'
+disabled
+fullWidth
+margin='normal'
+value={location && location.state && (location.state as any).username ? (location.state as any).username : ''}
+variant='outlined'
+/>
+)}
+<Typography
+color='textSecondary'
+sx={{
+                mb: 2,
+                mt: 3,
+              }}
+variant='subtitle2' >
+{intl.formatMessage({ id: "F39" })}
+</Typography>
+<Box
+sx={{
+                display: "grid",
+                columnGap: "16px",
+                gridTemplateColumns: "repeat(7, 1fr)",
+                pt: 1,
+              }} >
+{[1, 2, 3, 4, 5, 6].map((ref, i) => (
+<TextField
+id={`code-${i}`}
+error={Boolean(
+Array.isArray(touched.code) &&
+touched.code.length === 6 &&
+errors.code
+)}
+fullWidth
+inputRef={(el) => (itemsRef.current[i] = el)}
+key={`code-${i}`}
+name={`code[${i}]`}
+onBlur={handleBlur}
+onKeyDown={(event) => {
+if (event.code === "ENTER") {
+if (values.code[i]) {
+setFieldValue(`code[${i}]`, "");
+return;
+}
 
-const isNew = (str, text) => str.toLowerCase().includes(text.toLowerCase());
+                      if (i > 0) {
+                        setFieldValue(`code[${i}]`, "");
+                        itemsRef.current[i - 1].focus();
+                        return;
+                      }
+                    }
 
-const App = () => {
-  const { settings, saveSettings } = useSettings();
-  const location = useLocation();
-  const { enqueueSnackbar } = useSnackbar();
-  const [values, setValues] = useState(getValues(settings));
-  const [user, setUser] = useState(null);
-  const [context, setContext] = useState(useContext(AppContext));
-  const useTools = useToolsProducts();
-  const i18nMessages = require(`../../data/messages/${values.lang}`);
-  const allProducts = useTools[`${values.lang}`].edges.map(
-    (item) => item.node.frontmatter
-  );
+                    if (Number.isInteger(parseInt(event.key, 10))) {
+                      setFieldValue(`code[${i}]`, event.key);
 
-  const handleChange = (field, value) => {
-    const newValues = { ...values, [field]: value };
-    setValues(newValues);
-    saveSettings(newValues);
-  };
+                      if (i < 5) {
+                        itemsRef.current[i + 1].focus();
+                      }
+                    }
+                  }}
+                  onPaste={(event) => {
+                    const paste = event.clipboardData.getData("text");
+                    const pasteArray = paste.split("");
 
-  const changeLanguage = (event, newValue) => {
-    handleChange("lang", newValue ? newValue.LangCode : "en");
-  };
+                    if (pasteArray.length !== 6) {
+                      return;
+                    }
 
-  const checkUser = async () => {
-    try {
-      const user = await Auth.currentAuthenticatedUser();
-      setContext({ ...context, userInfo: user });
-    } catch (err) {
-      setContext({ ...context, userInfo: err });
-      if (isNew(location.search, "error_description")) {
-        enqueueSnackbar("User has been successfully registered", {
-          variant: "success",
-          autoHideDuration: 15000,
-        });
-        setTimeout(
-          () =>
-            enqueueSnackbar("To access the app you need to sign in again.", {
-              variant: "warning",
-              autoHideDuration: 3000,
-            }),
-          3000
-        );
-      }
-      navigate("/auth/login");
-    }
-  };
+                    let valid = true;
 
-  const logout = async () => {
-    const user = await Auth.currentAuthenticatedUser();
-    if (user) {
-      Auth.signOut();
-      navigate("/auth/login");
-    }
-  };
+                    pasteArray.forEach((x) => {
+                      if (!Number.isInteger(parseInt(x, 10))) {
+                        valid = false;
+                      }
+                    });
 
-  const toggleOpen = () => {
-    setContext({ ...context, IsOpen: !context.IsOpen });
-  };
-
-  const state = {
-    ...context,
-    toggleOpen,
-    checkUser,
-    logout,
-  };
-
-  useEffect(() => {
-    if (location.pathname === "/app" || location.pathname === "/app/") {
-      navigate("/app/list");
-    }
-    checkUser();
-    Auth.currentAuthenticatedUser().then(setUser);
-  }, []);
-
-  if (!user || user === "The user is not authenticated") {
-    return isNew(location.search, "?code=") ? (
-      <SignIn isRedirecting={true} />
-    ) : (
-      <SignIn />
-    );
-  }
-
-  return (
-    <AppContext.Provider value={state}>
-      <IntlProvider locale={values.lang} messages={i18nMessages}>
-        <Helmet>
-          <meta charSet='utf-8' />
-          <meta
-            name='viewport'
-            content='width=device-width, initial-scale=1.0'
-          />
-          <title>Maila App</title>
-        </Helmet>
-        <Box sx={{ display: "flex" }}>
-          <TopBar
-            icon='MenuRoundedIcon'
-            title='maila.ai'
-            uilang={<LangSettingsDials changeLanguage={changeLanguage} />}
-          />
-          <DrawerSideBar />
-          <Box
-            sx={{
-              flexGrow: 1,
-              height: "100vh",
-              overflow: "auto",
-              backgroundColor: "background.default",
-            }}
-            component='main'
-          >
-            <MarginBox />
-            <Box sx={{ py: 3, px: "1vw" }}>
-              <SearchBox />
-              <Router basepath='/app'>
-                <PrivateRoute path='/profile' component={AccountManage} />
-                <PrivateRoute path='/list' component={States} />
-                {allProducts.map((product, index) => {
-                  const path = product.url.split("/")[2];
-                  return (
-                    <ProductDescription
-                      key={index}
-                      label={product.title}
-                      headerTitle={product.title}
-                      description={product.usage}
-                      example={product.placeholder}
-                      editorHeight={product.editor_height}
-                      instructHelp={product.help_hint}
-                      productType={product.product_type}
-                      path={path}
-                      extraFields={product.extraFields}
-                      toneTextField={product.tone}
-                      loadFromUrl={product.loadFromUrl}
-                    />
-                  );
-                })}
-                <AccountManage path='/profile' />
-                <DocumentsPage path='/documents' />
-                <EditorManage path='/editor' />
-              </Router>
+                    if (valid) {
+                      setFieldValue("code", pasteArray);
+                      itemsRef.current[5].focus();
+                    }
+                  }}
+                  value={values.code[i]}
+                  sx={{
+                    display: "inline-block",
+                    textAlign: "center",
+                    "& .MuiInputBase-input": {
+                      textAlign: "center",
+                    },
+                  }}
+                  variant='outlined'
+                />
+              ))}
             </Box>
-          </Box>
+            {Boolean(
+              Array.isArray(touched.code) &&
+              touched.code.length === 6 &&
+              errors.code
+            ) && (
+                <FormHelperText error sx={{ mx: "14px" }}>
+                  {Array.isArray(errors.code) &&
+                    errors.code.find((x) => x !== undefined)}
+                </FormHelperText>
+              )}
+            {errors.submit && (
+              <Box sx={{ mt: 3 }}>
+                <FormHelperText error>{errors.submit.toString()}</FormHelperText>
+              </Box>
+            )}
+            <Box sx={{ mt: 3 }}>
+              <Button
+                color='primary'
+                disabled={isSubmitting}
+                fullWidth
+                size='large'
+                type='submit'
+                variant='contained'
+              >
+                {intl.formatMessage({ id: "F31" })}
+              </Button>
+            </Box>
+          </form>
+        )}
+      </Formik>
+      <Divider sx={{ my: 3 }} />
+      <Box sx={{ display: "flex", p: 1 }}>
+        <Box sx={{ p: 1, flexGrow: 1 }}>
+          <Link color='textSecondary' to='/auth/Recovery'>
+            {intl.formatMessage({ id: "F30" })}
+          </Link>
         </Box>
-      </IntlProvider>
-    </AppContext.Provider>
-  );
+        <Box sx={{ p: 1 }}>
+          <Link color='textSecondary' to='/auth/login'>
+            {intl.formatMessage({ id: "L66" })}
+          </Link>
+        </Box>
+      </Box>
+    </>
+
+);
 };
 
-export default App;
+export default VerifyCodeAmplify;
+
+```
 
 ```
