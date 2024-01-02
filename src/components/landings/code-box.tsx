@@ -29,25 +29,24 @@ curl -X GET "https://keyword-explorer.maila.ai/related-keywords?keyword=SEO" \
 const CodeDisplayComponent: FC = () => {
     const [schemaJson, setSchemaJson] = useState<string>('');
     const [schemaSpecification, setSchemaSpecification] = useState<string>('');
-    const [schemaCurl, setSchemaCurl] = useState<string>('');
 
     const samples: Sample[] = [
         {
             lang: 'yaml',
             label: 'OpenAPI Specification',
-            icon: '/assets/logos/yaml.svg',
+            icon: '/assets/yaml.svg',
             code: JSON.stringify(schemaSpecification, null, 2),
         },
         {
             lang: 'json',
             label: 'JSON Schema',
-            icon: '/assets/logos/json.svg',
+            icon: '/assets/json.svg',
             code: JSON.stringify(schemaJson, null, 2),
         },
         {
             lang: 'curl',
             label: 'API (curl)',
-            icon: '/assets/logos/curl.svg',
+            icon: '/assets/curl.svg',
             code: JSON.stringify(curlAPI, null, 2),
         },
     ];
