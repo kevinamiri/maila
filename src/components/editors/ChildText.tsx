@@ -8,26 +8,13 @@ import {
   Element as SlateElement,
 } from "slate";
 import { styled } from "@mui/material/styles";
-import { Text as Textt } from "slate";
 import CardContent from "@mui/material/CardContent";
 import isHotkey from "is-hotkey";
 import FooterEditorBar from "./FooterEditorBar";
 import { selectedText, serialize } from "hooks/currentSelectEditor";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { setCurrentWordRange } from "slices/editorParams";
 import Box from "@mui/material/Box";
-import BorderColorRoundedIcon from "@mui/icons-material/BorderColorRounded";
-const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
-import FormatBoldRoundedIcon from "@mui/icons-material/FormatBold";
-import FormatItalicRoundedIcon from "@mui/icons-material/FormatItalic";
-import FormatUnderlinedRoundedIcon from "@mui/icons-material/FormatUnderlined";
-import CodeRoundedIcon from "@mui/icons-material/Code";
-import LooksOneRoundedIcon from "@mui/icons-material/LooksOne";
-import LooksTwoRoundedIcon from "@mui/icons-material/LooksTwo";
-import FormatQuoteRoundedIcon from "@mui/icons-material/FormatQuote";
-import FormatListNumberedRoundedIcon from "@mui/icons-material/FormatListNumbered";
-import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBulleted";
-import { StyledToggleButtonGroup } from "./toggle-button-group";
 
 const HOTKEYS = {
   "mod+b": "bold",
@@ -40,6 +27,7 @@ const HOTKEYS = {
 };
 
 import ToggleButton from "@mui/material/ToggleButton";
+import { useDispatch } from "store";
 
 const LIST_TYPES = ["numbered-list", "bulleted-list"];
 const TEXT_ALIGN_TYPES = ["left", "center", "right", "justify"];
@@ -53,12 +41,12 @@ const ChildText = (props) => {
     []
   );
   const renderLeaf = React.useCallback((props) => <Leaf {...props} />, []);
-  const { currentWordRange } = useSelector((state) => state.editorParams);
+  const { currentWordRange } = useSelector((state: any) => state.editorParams);
   const defaultValue = () => {
     return (
       JSON.parse(
         typeof window !== "undefined" &&
-          window.localStorage.getItem(props.storageName)
+        window.localStorage.getItem(props.storageName)
       ) || [
         {
           type: "paragraph",
@@ -133,33 +121,6 @@ const ChildText = (props) => {
     localStorage.setItem(props.storageName, content);
   };
 
-  // const savedSelectedPosition = React.useRef(editor2.selection);
-
-  // const divRef = React.useRef<HTMLDivElement>(null);
-
-  // const onFocus = React.useCallback(() => {
-  //   if (!editor2.selection) {
-  //     Transforms.select(
-  //       editor2,
-  //       savedSelectedPosition.current ?? Editor.end(editor2, [])
-  //     );
-  //   }
-  // }, [editor2]);
-
-  // const onBlur = React.useCallback(() => {
-  //   savedSelectedPosition.current = editor2.children
-  // }, []);
-
-  // const focusEditor = React.useCallback(
-  //   (e: React.MouseEvent) => {
-  //     e.preventDefault();
-  //     ReactEditor.focus(editor2);
-  //     if (e.target === divRef.current) {
-  //     }
-  //   },
-  //   [editor2]
-  // );
-
   const selectedSentence = (editor: Editor) => {
     if (!editor.selection) return;
     let [node]: any = Editor.node(editor, editor.selection);
@@ -197,12 +158,12 @@ const ChildText = (props) => {
         return (
           (index >= currentSentenceIndex &&
             index <=
-              currentSentenceIndex +
-                fragmentText.split(/(?<=[.?!\n\:])\s/).length -
-                1) ||
+            currentSentenceIndex +
+            fragmentText.split(/(?<=[.?!\n\:])\s/).length -
+            1) ||
           currentSentenceIndex +
-            fragmentText.split(/(?<=[.?!\n\:])\s/).length +
-            1
+          fragmentText.split(/(?<=[.?!\n\:])\s/).length +
+          1
         );
       });
       return selectedSentences.join(" ");
@@ -212,37 +173,6 @@ const ChildText = (props) => {
   };
 
   const lightingText = React.useRef("");
-
-  // const decorate = React.useCallback(([node, path]) => {
-  //   const ranges = [];
-
-  //   if (lightingText.current && Textt.isText(node)) {
-  //     const { text } = node;
-  //     const parts = text.split(lightingText.current);
-  //     let offset = 0;
-
-  //     parts.forEach((part, i) => {
-  //       if (i !== 0) {
-  //         ranges.push({
-  //           anchor: { path, offset: offset - lightingText.current.length },
-  //           focus: { path, offset },
-  //           lightText: true,
-  //         });
-  //       }
-
-  //       offset = offset + part.length + lightingText.current.length;
-  //     });
-  //   }
-  //   return ranges;
-  // }, []);
-
-  // if (isTextBlurred) {
-  //   Editor.removeMark(editor2, "lightText");
-  // }
-
-  // if (isTextBlurred && previousEditorSelectedText.current) {
-  //   Editor.addMark(editor2, "lightText", true);
-  // }
 
   return (
     <CardContent>

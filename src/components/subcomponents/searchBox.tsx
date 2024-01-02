@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import ProductAutocompleteUrl from "./ProductAutocompleteUrl";
 
 const SearchBox: FC = () => {
-  const { expand } = useSelector((state) => state.expandReducer);
+  const { expand } = useSelector((state: any) => state.expandReducer);
 
   return (
     <Box

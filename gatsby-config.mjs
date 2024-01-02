@@ -1,6 +1,12 @@
-const languages = require("./src/data/languages");
+import { dirname } from "path"
+import { fileURLToPath } from "url"
+import languages from "./src/data/languages.js";
 const siteUrl = `https://maila.ai/en`
-module.exports = {
+
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const config = {
   flags: {
     DEV_SSR: true
   },
@@ -48,6 +54,7 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-transformer-csv`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -169,3 +176,5 @@ module.exports = {
     },
   ],
 };
+
+export default config

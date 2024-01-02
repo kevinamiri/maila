@@ -3,7 +3,7 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Play from "components/subcomponents/Play";
-import BarToggleButton from "./BarToggleButton";
+import BarToggleButton from "./bar-toggle-button";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import SpellcheckIcon from "@mui/icons-material/Spellcheck";
 
