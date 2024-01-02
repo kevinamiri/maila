@@ -86,8 +86,6 @@ const CodeDisplayComponent: FC = () => {
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    height: '50%',
-                    overflow: 'auto',
                     my: 4,
                 }}
             >
@@ -138,8 +136,6 @@ const CodeDisplayComponent: FC = () => {
                                             sx={{
                                                 borderRadius: '4px',
                                                 flex: '0 0 auto',
-                                                height: 20,
-                                                overflow: 'hidden',
                                                 width: 20,
                                                 '& img': {
                                                     width: '100%',
@@ -174,7 +170,7 @@ const CodeDisplayComponent: FC = () => {
                             fontSize: '12px !important',
                             height: '100%',
                             m: '0 !important',
-                            overflow: 'hidden !important',
+                            overflow: 'auto !important',
                             p: '0 !important',
                         },
                         '& code': {
