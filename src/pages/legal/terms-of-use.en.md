@@ -62,10 +62,11 @@ We reserve the right to modify the contents of our websites at any time, but we 
 
 ---
 
-## 3. Service Provider
+## 3. Service Providers
 
-### Company Information
-MailaAI is a private company registered in Sweden with registration number [556999-9999]. Our registered office is located at [Göteborg, Sweden]. You can contact us by email at [support@maila.ai] or by mail at our registered office address.
+-
+
+
 
 --
 ## 4. Age Requirements
@@ -438,7 +439,6 @@ All claims and disputes within the scope of this arbitration agreement must be a
 
 ### No Waiver
 - Enforcement of Rights: MailaAI's failure to enforce any right or provision of these Terms shall not be considered a waiver of such right or provision. The waiver of any such right or provision will be effective only if in writing and signed by a duly authorized representative of MailaAI.
-
 
 ### Survival of Terms
 - Post-Termination Validity: Upon termination of these Terms, any provision which, by its nature or express terms should survive, shall survive such termination or expiration, including, but not limited to, ownership provisions, warranty disclaimers, indemnity, limitations of liability, and dispute resolution provisions.  
