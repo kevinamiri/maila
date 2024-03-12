@@ -11,7 +11,7 @@ slug: /en/legal/terms-of-use
 ---
 
 
-## TERMS OF USE
+## Terms of Use
 
 Last updated: 12 March 2024
 
@@ -551,69 +551,7 @@ MailaAI reserves the right to remove any content that violates these Community G
 
 ---
 
-## 20. Prohibited Uses
-
-### Abusive or Fraudulent Content
-You may not use the Services to create, share, or engage with content or activities that:
-- Involve spam, phishing attempts, or other unsolicited messages
-- Deceive or mislead others, such as through impersonation or fake identities
-- Distribute malware, viruses, or other harmful code
-- Scrape or extract data from the Services using automated means without permission
-- Interfere with the proper functioning of the Services or MailaAI's systems
-- Attempt to gain unauthorized access to the Services or user accounts
-- Violate the privacy or intellectual property rights of others
-
-### Child Sexual Exploitation or Abuse
-The use of the Services to create, share, or engage with content involving the sexual exploitation or abuse of minors is strictly prohibited. This includes but is not limited to:
-- Child sexual abuse imagery or content
-- Grooming or solicitation of minors for sexual purposes
-- Sexualization of minors in any context
-
-Any instances of child sexual exploitation or abuse will be reported to the appropriate authorities.
-
-### Deceptive or Misleading Content
-You may not use the Services to create, share, or engage with content intended to deceive or mislead others, such as:
-- Misinformation or disinformation campaigns
-- Fake news or hoaxes
-- Impersonation of individuals, organizations, or official sources
-- Deceptive propaganda or influence operations
-- Academic dishonesty, such as plagiarism or cheating
-
-### Illegal or Highly Regulated Goods or Services
-The Services may not be used to promote, facilitate, or engage in illegal activities or highly regulated goods and services, including but not limited to:
-- Illegal drugs or controlled substances
-- Weapons, explosives, or other dangerous materials
-- Human trafficking or sexual exploitation
-- Illegal gambling or unregulated financial services
-- Counterfeit goods or unauthorized sales of regulated products
-
-### Psychologically or Emotionally Harmful Content
-You may not use the Services to create, share, or engage with content that could cause psychological or emotional harm to others, such as:
-- Promoting or glorifying self-harm, suicide, or eating disorders
-- Engaging in bullying, harassment, or threats toward individuals or groups
-- Nonconsensual intimate imagery or sexual content 
-- Encouraging physically dangerous or reckless behaviors
-
-### Sexually Explicit Content
-The Services may not be used to create, share, or engage with sexually explicit content, including but not limited to:
-- Pornography or adult sexual services
-- Graphic depictions of sexual acts
-- Nonconsensual or illegal sexual content
-- Promotion of escort services or sexual exploitation
-
-### Violent, Hateful, or Threatening Content
-You may not use the Services to create, share, or engage with content that promotes or glorifies violence, hate, or threats, such as:
-- Graphic violence or gore
-- Animal cruelty or abuse
-- Hate speech or supremacist ideologies
-- Incitement of violence or support for terrorist or extremist groups
-- Threatening or harassing language
-
-MailaAI reserves the right to remove any content that violates these Prohibited Uses and to suspend or terminate the accounts of users who engage in these prohibited activities.
-
----
-
-## 21. Prohibited Business Use Cases
+## 20. Prohibited Business Use Cases
 
 The following business use cases are prohibited on the Services:
 
@@ -667,7 +605,7 @@ Law enforcement use of the Services must comply with all applicable laws, regula
 
 ---
 
-## 22. Additional Requirements for Businesses
+## 21. Additional Requirements for Businesses
 
 ### Professional Review
 If you are a business using the Services to generate content related to legal, medical, financial, or other professional advice, you must ensure that:
@@ -686,7 +624,7 @@ If your business uses the Services to interact with customers or users in an aut
 
 ---
 
-## 23. Evaluation and Additional Services
+## 22. Evaluation and Additional Services
 
 ### Limited Evaluation Use
 You may use the Services on a limited basis for evaluation purposes before purchasing a subscription. Evaluation use is subject to these Terms and any additional limitations communicated by MailaAI, such as time limits or feature restrictions.
@@ -696,7 +634,7 @@ Certain Services may be subject to additional terms, conditions, or requirements
 
 ---
 
-## 24. Copyright and Trademark
+## 23. Copyright and Trademark
 
 ### Rights Granted to MailaAI
 By using the Services, you grant MailaAI a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, prepare derivative works of, display, and perform any content or materials you submit or generate through the Services ("Assets") in connection with providing and improving the Services.
@@ -715,7 +653,7 @@ If you choose to publicly share images generated using the Services, you agree t
 
 ---
 
-## 25. DMCA and Takedowns Policy 
+## 24. DMCA and Takedowns Policy 
 
 ### Notification Procedures
 If you believe that content available through the Services infringes your copyright or trademark rights, you may submit a takedown notice to MailaAI's designated agent. The notice must include:
@@ -738,32 +676,14 @@ Upon receiving a valid counter-notification, MailaAI will promptly forward it to
 
 ---
 
-## 26. Service-Related Communications
+## 25. Service-Related Communications
 
 ### Service Announcements
 MailaAI may send you service-related announcements and updates about the Services from time to time. These communications are considered part of the Services and you may opt-out of receiving them by contacting MailaAI support.
 
 ---
 
-## 27. EEA Instructions on Withdrawal
-
-### Withdrawal Rights
-If you are a customer based in the European Economic Area (EEA), you have the right to withdraw from your contract with MailaAI within 14 days without giving any reason. The withdrawal period will expire after 14 days from the day of the conclusion of the contract.
-
-### Right to Withdraw
-To exercise the right of withdrawal, you must inform MailaAI of your decision to withdraw from the contract by an unequivocal statement (e.g., a letter sent by post or email). You may use the model withdrawal form provided by MailaAI, but it is not obligatory.
-
-### Withdrawal Process
-To meet the withdrawal deadline, it is sufficient for you to send your communication concerning your exercise of the right of withdrawal before the withdrawal period has expired. If you withdraw from the contract, MailaAI will reimburse to you all payments received from you, including the costs of delivery (except for the supplementary costs arising if you chose a type of delivery other than the least expensive type of standard delivery offered by MailaAI).
-
-### Effects of Withdrawal
-MailaAI will make the reimbursement without undue delay, and not later than 14 days from the day on which MailaAI is informed about your decision to withdraw from the contract. MailaAI will make the reimbursement using the same means of payment as you used for the initial transaction unless you have expressly agreed otherwise; in any event, you will not incur any fees as a result of the reimbursement.
-
-If you requested to begin the performance of services during the withdrawal period, you shall pay MailaAI an amount which is in proportion to what has been provided until you have communicated to MailaAI your withdrawal from the contract, in comparison with the full coverage of the contract.
-
----
-
-## 28. Handling Requests for Your Data  
+## 26. Handling Requests for Your Data  
 
 ### Privacy and Security
 MailaAI takes the privacy and security of your data seriously. In the event that MailaAI receives a request from a third party seeking access to your data (such as a subpoena, court order, or other legal request), MailaAI will make reasonable efforts to notify you and provide you with an opportunity to object to the disclosure, unless prohibited by law.
@@ -772,7 +692,7 @@ For detailed information on how MailaAI collects, uses, and protects your data, 
 
 ---
 
-## 29. Data Collection and Privacy
+## 27. Data Collection and Privacy
 
 ### Information Collection
 MailaAI collects various types of information from users, including:
@@ -800,7 +720,7 @@ You have the right to request the deletion of your personal data from MailaAI's 
 
 ---
 
-## 30. Data Deletion Process
+## 38. Data Deletion Process
 
 ### Eligibility for Data Deletion
 MailaAI will honor data deletion requests for personal data that is no longer necessary for the purposes for which it was collected, or where the processing is based on consent and you have withdrawn your consent. However, MailaAI may retain certain data as necessary for legitimate business purposes or to comply with legal obligations.
@@ -818,7 +738,7 @@ MailaAI may request additional information from you to verify your identity and 
 
 ---
 
-## 31. Definitions
+## 39. Definitions
 
 ### Glossary
 
