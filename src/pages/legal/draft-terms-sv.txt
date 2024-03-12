@@ -1,0 +1,806 @@
+## 1. Introduktion
+
+Välkommen till MailaAI. Dessa användarvillkor ("Villkor") reglerar din åtkomst till och användning av webbplatserna, produkterna, API:erna, programvaran, verktygen och andra tjänster (kollektivt kallade "Tjänsterna") som tillhandahålls av MailaAI ("MailaAI", "vi", "oss" eller "vår"). Genom att få åtkomst till eller använda Tjänsterna på något sätt samtycker du ("du", "din" eller "Kund") till att vara bunden av dessa Villkor, som utgör ett juridiskt bindande avtal mellan dig och MailaAI, gällande från och med det datum då du först får åtkomst till eller använder Tjänsterna.
+
+### Syfte och omfattning
+Dessa Villkor definierar både dina och MailaAI:s rättigheter, skyldigheter och förpliktelser med avseende på din användning av Tjänsterna. De täcker viktiga ämnen som acceptabel användning, immateriella rättigheter, betalningsvillkor, ansvarsfriskrivningar och ansvarsbegränsningar samt tvistlösningsförfaranden. Läs dessa Villkor noggrant för att säkerställa att du till fullo förstår avtalet.
+
+### Parter
+Dessa Villkor utgör ett avtal mellan MailaAI, tjänsteleverantören, och dig, kunden som får åtkomst till eller använder Tjänsterna. Villkoren gäller och är bindande från och med första gången du använder Tjänsterna.
+
+### Godkännande och uppdateringar
+Genom att få åtkomst till eller använda Tjänsterna bekräftar du att du har läst, förstått och samtycker till att vara bunden av dessa Villkor och eventuella ytterligare villkor som det hänvisas till här. MailaAI förbehåller sig rätten att när som helst uppdatera eller ändra dessa Villkor. Vi kommer att meddela dig om eventuella väsentliga ändringar genom att publicera de uppdaterade Villkoren på vår webbplats eller via andra kommunikationskanaler. Din fortsatta användning av Tjänsterna efter sådana ändringar utgör ditt godkännande av de uppdaterade Villkoren.
+
+### Referensdokument
+Dessa Villkor införlivar genom hänvisning vår Sekretesspolicy och Policy för godtagbar användning, som innehåller ytterligare information om hur vi samlar in, använder och skyddar dina data, samt riktlinjer för lämplig användning av Tjänsterna. Genom att godkänna dessa Villkor samtycker du även till att följa de villkor som anges i dessa policyer.
+
+### Tjänstens omfattning
+Tjänsterna som omfattas av dessa Villkor omfattar alla MailaAI:s webbplatser, produkter, API:er, programvara, verktyg och andra funktioner som erbjuds av MailaAI. Genom att använda någon del av Tjänsterna samtycker du till dessa Villkor i sin helhet.
+
+---
+
+## 2. Ändringar av villkoren
+
+### Revidering och uppdateringar
+MailaAI förbehåller sig rätten att efter eget gottfinnande ändra, uppdatera eller ersätta delar av dessa Villkor. Vi kan göra detta som svar på ändrade juridiska, tekniska eller affärsmässiga krav. Det är ditt ansvar att regelbundet kontrollera om Villkoren har ändrats.
+
+### Godkännande av uppdaterade villkor
+Din fortsatta användning av Tjänsterna efter att ändringar av Villkoren har publicerats innebär att du godkänner dessa ändringar. Om du inte godkänner de uppdaterade Villkoren måste du sluta använda Tjänsterna.
+
+### Uppdateringar av villkoren
+Vi kommer att meddela om uppdateringar av Villkoren via Tjänsterna, via e-post eller på annat rimligt sätt. I meddelandet anges en rimlig period efter vilken de uppdaterade Villkoren träder i kraft. För vissa väsentliga ändringar av Villkoren kan vi kräva att du samtycker till de uppdaterade Villkoren innan du får fortsätta att använda Tjänsterna.
+
+### Noggrannhet för webbplatsinformation
+Vi gör vårt bästa för att tillhandahålla korrekt och uppdaterad information på våra webbplatser, men vi lämnar inga utfästelser eller garantier om fullständighet, riktighet, tillförlitlighet, lämplighet eller tillgänglighet för information, produkter, tjänster eller relaterad grafik som finns på webbplatserna. Allt förlitande du gör på sådan information sker helt på egen risk.
+
+Vi förbehåller oss rätten att när som helst ändra innehållet på våra webbplatser, men vi har ingen skyldighet att uppdatera informationen på våra webbplatser. Du samtycker till att det är ditt ansvar att övervaka ändringar på våra webbplatser.
+
+---
+
+## 3. Tjänsteleverantör
+
+### Företagsinformation
+MailaAI är ett privat företag registrerat i Sverige med registreringsnummer [556999-9999]. Vårt säte ligger i [Göteborg, Sverige]. Du kan kontakta oss via e-post på [support@maila.ai] eller via post till vår registrerade kontorsadress.
+
+---
+
+## 4. Ålderskrav
+
+### Minimiålder
+Du måste vara minst 16 år gammal för att få åtkomst till eller använda Tjänsterna. Genom att få åtkomst till eller använda Tjänsterna intygar och garanterar du att du är minst 16 år gammal.
+
+### Användning av minderåriga
+Om du är mellan 16 och 18 år gammal (eller myndig i din jurisdiktion) får du endast använda Tjänsterna under överinseende av en förälder eller vårdnadshavare som samtycker till att vara bunden av dessa Villkor.
+
+### Föräldrasamtycke
+Om du är en förälder eller vårdnadshavare som samtycker till dessa Villkor till förmån för en minderårig är du fullt ansvarig för deras användning av Tjänsterna, inklusive alla ekonomiska avgifter och juridiskt ansvar som de kan ådra sig.
+
+### Föräldraansvar
+Genom att tillåta en minderårig under din vårdnad att använda Tjänsterna samtycker du till Villkoren på den minderåriges vägnar och ansvarar för all användning av Tjänsterna och allt innehåll som genereras via Tjänsterna av den minderårige.
+
+---
+
+## 5. Registrering och åtkomst
+
+### Åldersbegränsningar
+- Krav på minimiålder: Du måste vara minst 16 år gammal för att använda Tjänsterna.
+- Villkor för minderårigas användning: Om du är mellan 16 och 18 år gammal får du endast använda Tjänsterna under överinseende av en förälder eller vårdnadshavare som samtycker till att vara bunden av dessa Villkor.
+
+### Kontoinformation
+- Krav på riktighet: Du samtycker till att tillhandahålla korrekt, aktuell och fullständig information under registreringsprocessen och att uppdatera sådan information för att hålla den korrekt, aktuell och fullständig.
+- Säkerhet för inloggningsuppgifter: Du ansvarar för att skydda det lösenord eller de inloggningsuppgifter som du använder för att få åtkomst till Tjänsterna och för alla aktiviteter eller åtgärder under ditt konto.
+
+### Registreringskrav
+För att få åtkomst till vissa funktioner i Tjänsterna kan du behöva registrera ett konto. Du samtycker till att tillhandahålla korrekt och fullständig information under registreringsprocessen och att uppdatera din information vid behov för att hålla den korrekt och aktuell.
+
+### Kontosäkerhet och ansvar
+Du ansvarar för att upprätthålla sekretessen för ditt konto och lösenord, och du samtycker till att ta ansvar för alla aktiviteter som sker under ditt konto. Om du misstänker att ditt konto inte längre är säkert, vänligen meddela oss omedelbart.
+
+### Avslutande av konto
+MailaAI förbehåller sig rätten att när som helst och av vilken anledning som helst avsluta ditt konto eller din åtkomst till Tjänsterna, utan föregående meddelande eller ansvar.
+
+### Stängning av konto
+Du kan när som helst stänga ditt konto genom att följa instruktionerna i Tjänsterna. Stängning av ditt konto befriar dig inte från eventuella skyldigheter du kan ha ådragit dig före stängningen av ditt konto eller eventuella skyldigheter som kan överleva uppsägningen av dessa Villkor.
+
+---
+
+## 6. Användningskrav
+
+### Användning av tjänsten
+- Efterlevnad: Du samtycker till att använda Tjänsterna i enlighet med dessa Villkor, tillämpliga lagar och eventuella ytterligare villkor eller policyer som det hänvisas till här.
+- Äganderätt: Alla rättigheter, äganderätter och intressen i och till Tjänsterna är och förblir MailaAI:s och dess närstående bolags exklusiva egendom.
+
+### Inlämning av feedback
+- Användningsrättigheter: Genom att lämna feedback, förslag eller annan information om Tjänsterna ger du MailaAI en världsomspännande, evig, oåterkallelig, royaltyfri licens att använda och införliva sådan feedback i Tjänsterna utan begränsning.
+
+### Begränsningar för användning
+- Förbjudna aktiviteter: Du samtycker till att inte använda Tjänsterna för olagliga, obehöriga eller förbjudna ändamål, inklusive men inte begränsat till:
+  - Att kränka immateriella rättigheter
+  - Att ägna sig åt bedrägliga eller vilseledande aktiviteter
+  - Att distribuera skadlig kod eller annan skadlig programvara
+  - Att störa integriteten eller prestandan för Tjänsterna
+  - Att försöka få obehörig åtkomst till Tjänsterna eller system
+  - Att trakassera, missbruka eller hota andra användare
+- Begränsningar för API- och dataanvändning: Du samtycker till att inte använda automatiserade medel, inklusive skript, bottar eller skrapare, för att få åtkomst till Tjänsterna eller extrahera data utan uttryckligt skriftligt tillstånd från MailaAI.
+
+### Efterlevnad av policyer
+Du samtycker till att följa MailaAI:s Policy för godtagbar användning och alla andra policyer eller villkor som det hänvisas till i dessa Villkor när du använder Tjänsterna. Underlåtenhet att följa dessa kan leda till att din åtkomst till Tjänsterna stängs av eller avslutas.
+
+### Förbjuden användning
+Du är förbjuden att använda Tjänsterna för olagliga, skadliga eller stötande ändamål, inklusive men inte begränsat till:
+
+- Att göra intrång i immateriella rättigheter
+- Att ägna sig åt bedrägliga eller vilseledande metoder
+- Att distribuera skadlig kod, virus eller annan skadlig programvara
+- Att störa Tjänsternas korrekta funktion
+- Att försöka få obehörig åtkomst till MailaAI:s system eller användarkonton
+- Att trakassera, missbruka eller hota andra användare eller individer
+- Att främja hatpropaganda, våld eller diskriminering
+- Att bryta mot tillämpliga lagar eller förordningar
+
+MailaAI förbehåller sig rätten att undersöka och vidta lämpliga åtgärder mot misstänkta överträdelser av dessa användningskrav, inklusive att stänga av eller avsluta åtkomsten till Tjänsterna.
+
+---
+
+## 7. Innehåll
+
+### AI-genererat innehåll
+- Rättigheter till indata och utdata: Du behåller äganderätten till de data du matar in och utdata som det resulterande innehållet som genereras av våra Tjänster.
+
+### Användargenererat innehåll
+- Rättigheter till ditt innehåll: Du behåller full äganderätt till det innehåll du skapar via våra Tjänster.
+
+### Användning för tjänsteförbättring
+- API- och icke-API-innehåll: MailaAI använder inte både API- och icke-API-innehåll som skickas till Tjänsterna för att träna, utveckla och förbättra sina Tjänster utan ditt uttryckliga samtycke.
+- Noggrannhet och utvärdering: MailaAI kan noggrant granska och utvärdera utdata med avseende på noggrannhet, användbarhet och lämplighet innan de används för något ändamål.
+
+### Rättigheter till material
+Du ansvarar för innehållet i eventuella material som du skickar till Tjänsterna ("Material"). Genom att skicka in Material intygar du att du har alla nödvändiga rättigheter att göra det. MailaAI gör inte anspråk på äganderätt eller kontroll över ditt Material, men genom att skicka in det ger du MailaAI vissa rättigheter att använda det i samband med att tillhandahålla och förbättra Tjänsterna.
+
+### Hantering av personlig information
+All personlig information som ingår i ditt Material kommer att hanteras i enlighet med MailaAI:s Sekretesspolicy. Genom att skicka in Material intygar du att du har nödvändiga rättigheter och samtycken för att inkludera eventuell personlig information däri.
+
+### Utdatas karaktär
+På grund av maskininlärningssystemens karaktär kan utdata som genereras av Tjänsterna som svar på dina indata vara likartade eller identiska med utdata som genereras för andra användare. MailaAI garanterar inte att utdata är unika eller exklusiva.
+
+### Förlitande på utdata
+Även om MailaAI strävar efter att tillhandahålla användbara och relevanta utdata, lämnar vi inga utfästelser eller garantier angående deras riktighet, tillförlitlighet eller lämplighet för något specifikt ändamål. Du ansvarar själv för att utvärdera utdata och avgöra deras lämplighet för din avsedda användning.
+
+### Användning av material av MailaAI
+Genom att skicka in Material till Tjänsterna ger du MailaAI en världsomspännande, evig, oåterkallelig, royaltyfri, vidarelicensierbar och överförbar licens att använda, reproducera, distribuera, förbereda bearbetningar av, visa och utföra Materialet i samband med att tillhandahålla, underhålla och förbättra Tjänsterna.
+
+### Innehållslikhet
+- Maskininlärningens karaktär: På grund av de maskininlärningstekniker som används av Tjänsterna kan utdata som genereras för olika användare vara likartade eller identiska, även om indata inte är desamma.
+
+### Policy för generering av användarinnehåll
+
+MailaAI är engagerad i att främja en säker, inkluderande och respektfull miljö för alla användare. För att uppnå detta mål förbjuder vi användare att medvetet generera eller tillåta andra att generera innehåll som faller inom följande kategorier:
+
+#### Hatpropaganda och diskriminering
+MailaAI tolererar inte innehåll som främjar hat, våld eller diskriminering mot individer eller grupper baserat på ras, etnicitet, nationellt ursprung, religion, kön, sexuell läggning, funktionsnedsättning eller annan skyddad egenskap. Vi tror starkt på principerna om jämlikhet och respekt för alla.
+
+#### Olagliga aktiviteter
+Användare är strängt förbjudna att generera innehåll som är olagligt eller främjar olagliga aktiviteter. Detta inkluderar men är inte begränsat till innehåll relaterat till narkotikahandel, människohandel, utnyttjande av barn, terrorism och andra kriminella handlingar. MailaAI kommer att samarbeta med brottsbekämpande myndigheter vid utredning av misstänkta olagliga aktiviteter.
+
+#### Trakasserier och mobbning
+MailaAI tillåter inte innehåll som trakasserar, skrämmer eller mobbar andra. Vi strävar efter att skapa en välkomnande miljö där alla användare känner sig trygga och respekterade. Allt innehåll som riktar sig mot individer eller grupper i syfte att orsaka oro, rädsla eller förödmjukelse kommer inte att tolereras.
+
+#### Våld och grafiskt innehåll
+Innehåll som främjar, förhärligar eller firar våld, lidande eller förödmjukelse är strängt förbjudet. Detta inkluderar grafiska skildringar av våld, gore eller grymhet. MailaAI tror på att främja fred och icke-våld i alla interaktioner.
+
+#### Självskada och ätstörningar
+MailaAI tillåter inte innehåll som främjar, uppmuntrar eller skildrar handlingar av självskada, såsom självmord, självskada eller ätstörningar. Vi inser allvaret i dessa frågor och strävar efter att tillhandahålla en trygg plats som inte bidrar till att förhärliga eller normalisera självdestruktiva beteenden.
+
+#### Vuxet och sexuellt explicit innehåll
+Användare är förbjudna att generera innehåll avsett att väcka sexuell upphetsning eller främja sexuella tjänster, med undantag för utbildnings- och hälsorelaterat innehåll. MailaAI strävar efter att upprätthålla en plattform som är lämplig för alla målgrupper och tillåter inte generering av pornografiskt eller sexuellt explicit material.
+
+#### Integritetskränkningar
+MailaAI respekterar alla individers integritet. Användare får inte generera innehåll som kränker andras integritet, såsom att dela personlig information, bilder eller videor utan uttryckligt samtycke från de berörda individerna. Vi prioriterar skyddet av den personliga integriteten och förväntar oss att våra användare gör detsamma.
+
+#### Skräppost och oönskat innehåll
+Användare är förbjudna att generera oönskat massinnehåll eller ägna sig åt spamaktiviteter. Detta inkluderar att generera innehåll i syfte att annonsera, nätfiska eller distribuera skadlig kod. MailaAI strävar efter att upprätthålla en ren och fri miljö för alla användare.
+
+#### Bedrägeri och desinformation
+MailaAI tillåter inte innehåll som är falskt, vilseledande eller avsett att bedra andra. Detta inkluderar försök att lura individer, sprida desinformation eller ägna sig åt andra bedrägliga metoder. Vi värdesätter ärlighet och transparens i alla användarinteraktioner.
+
+#### Skadlig kod och skadlig programvara
+Användare är strängt förbjudna att generera innehåll som försöker skapa eller distribuera utpressningsprogram, keyloggers, virus eller annan programvara utformad för att orsaka skada eller införa obehörig kontroll över datorsystem. MailaAI tar säkerheten och integriteten för vår plattform och användarnas enheter på största allvar.
+
+#### Medicinska råd och information
+MailaAI tillåter inte innehåll som ger medicinska råd eller främjar specifika medicinska behandlingar, såvida det inte genereras av kvalificerad sjukvårdspersonal. Vi uppmuntrar användare att konsultera legitimerade sjukvårdspersonal för sina vårdbehov och att förlita sig på trovärdiga källor för medicinsk information.
+
+#### Religiöst innehåll
+Användare är förbjudna att generera innehåll som främjar eller talar nedsättande om någon religion eller religiös tro. MailaAI respekterar mångfalden av religiösa åsikter och strävar efter att upprätthålla en neutral hållning i trosfrågor. Vi uppmuntrar respektfull dialog och fredlig samexistens mellan olika trossystem.
+
+#### Politiskt inflytande och kampanjer
+MailaAI tillåter inte innehåll avsett att påverka politiska val eller manipulera den allmänna opinionen. Vi tror på vikten av fria och rättvisa demokratiska processer och tillåter inte användning av vår plattform för politiska kampanjer, lobbying eller spridning av propaganda.
+
+Genom att använda MailaAI:s tjänster samtycker du till att följa denna policy för generering av användarinnehåll. MailaAI förbehåller sig rätten att ta bort allt innehåll som bryter mot dessa riktlinjer och att vidta lämpliga åtgärder mot användare som ägnar sig åt förbjudet beteende, upp till och inklusive avslutande av konto. Låt oss arbeta tillsammans för att skapa en positiv och respektfull gemenskap för alla.
+
+---
+
+## 8. Äganderätt till tjänster
+### Rättigheter och ägarskap
+MailaAI och dess licensgivare äger alla rättigheter, ägarskap och intressen i och till Tjänsterna, inklusive alla immateriella rättigheter. Din användning av Tjänsterna ger dig inte någon äganderätt eller rättigheter till Tjänsterna.
+
+---
+
+## 9. Avgifter och betalning
+
+### Faktureringsprocess
+- Avgiftsstruktur: MailaAI tar ut avgifter för vissa aspekter av Tjänsterna. Du samtycker till att betala alla avgifter förknippade med din användning av Tjänsterna till de priser och med den frekvens som anges av MailaAI.
+- Faktureringsinformation: Du måste tillhandahålla korrekt och auktoriserad betalningsinformation till MailaAI för att underlätta faktureringsprocessen. Du ansvarar för att hålla denna information uppdaterad.
+
+### Skatteansvar
+- Användarens skyldighet: Du ansvarar för att betala eventuella skatter, avgifter, tullar eller liknande statliga bedömningar förknippade med din användning av Tjänsterna, inklusive men inte begränsat till mervärdesskatt, försäljningsskatt, användningsskatt eller källskatt.
+
+### Prisjusteringar
+- Meddelande om ändringar: MailaAI förbehåller sig rätten att när som helst ändra sina priser och avgifter. Vi kommer att ge rimligt varsel om eventuella prisändringar, och de uppdaterade priserna kommer att gälla för efterföljande faktureringsperioder efter ändringens ikraftträdandedatum.
+
+### Betalningstvister och betalningsdröjsmål
+- Tvistlösning: Om du anser att det har skett ett fel i faktureringen, vänligen kontakta MailaAI omedelbart. MailaAI kommer att undersöka problemet och göra korrigeringar efter behov.
+- Konsekvenser av sena betalningar: Om din betalning är mer än 30 dagar försenad förbehåller sig MailaAI rätten att stänga av din åtkomst till Tjänsterna tills betalning har mottagits. Förfallna betalningar kan bli föremål för ränta på 1,5 % per månad eller den högsta tillåtna räntan enligt lag, beroende på vilken som är lägst.
+
+### Serviceavgifter
+Din användning av Tjänsterna kan vara föremål för avgifter, vilket tydligt kommer att meddelas dig innan du ådrar dig några avgifter. Genom att använda Tjänsterna samtycker du till att betala alla tillämpliga avgifter i enlighet med de faktureringsvillkor som gäller vid tidpunkten.  
+
+### Betalningsmetoder och ansvar
+MailaAI erbjuder olika betalningsmetoder för din bekvämlighet. Beroende på Tjänsten kan avgifter debiteras återkommande (t.ex. månadsvis eller årligen) eller per användning. Du ansvarar för att upprätthålla korrekt och uppdaterad betalningsinformation och för att betala alla avgifter i tid.
+
+### Ytterligare avgifter och prenumerationer
+Vissa funktioner eller aspekter av Tjänsterna kan kräva ytterligare avgifter eller prenumerationer. Dessa kommer att beskrivas tydligt, och ditt uttryckliga samtycke kommer att erhållas innan några ytterligare avgifter uppstår. Du kan säga upp ytterligare prenumerationer i enlighet med de uppsägningsvillkor som tillhandahålls.
+
+### Prenumerationshantering
+- Prenumerationstyper: MailaAI erbjuder olika prenumerationsplaner för sina Tjänster. Information om dessa planer, inklusive fördelar, begränsningar och prissättning, finns på vår webbplats.
+- Prenumerationsändringar: Du kan uppgradera eller nedgradera din prenumerationsplan när som helst via dina kontoinställningar. Ändringar i din plan träder i kraft efter att betalningen har behandlats.
+- Automatisk förnyelse: Prenumerationer förnyas automatiskt vid slutet av varje faktureringsperiod om du inte säger upp din prenumeration före förnyelsedatumet.
+
+### Återbetalningspolicy
+- Generell policy: MailaAI erbjuder en 14-dagars pengarna-tillbaka-garanti för nya prenumerationsköp. Om du av någon anledning inte är nöjd med Tjänsterna kan du begära full återbetalning inom 14 dagar från ditt köp.
+- Återbetalningsprocess: För att begära återbetalning, vänligen kontakta vårt supportteam med dina köpuppgifter. Återbetalningar behandlas tillbaka till den ursprungliga betalningsmetod som användes för köpet.
+- Undantag: 14-dagars återbetalningspolicyn gäller inte för förnyade betalningar eller ytterligare tjänster som köpts separat från prenumerationen.
+
+### Faktureringsprocess
+MailaAI använder en tredjepartsbetalningsprocessor för att hantera fakturering för Tjänsterna. Genom att godkänna dessa Villkor samtycker du också till betalningsprocessorns användarvillkor. MailaAI ansvarar inte för eventuella fel som görs av betalningsprocessorn.
+
+### Uppsägning och upphörande
+Du kan säga upp din prenumeration på Tjänsterna när som helst genom att följa de uppsägningsförfaranden som tillhandahålls. Uppsägningen träder i kraft vid slutet av den då gällande faktureringsperioden. MailaAI förbehåller sig rätten att säga upp din åtkomst till Tjänsterna på grund av utebliven betalning av avgifter. Vid uppsägning är du fortsatt ansvarig för att betala eventuella utestående avgifter som uppstått före uppsägningsdatumet.
+
+---
+
+## 10. Sekretess, säkerhet och dataskydd
+
+### Konfidentiell information
+- Användningsbegränsning: Du samtycker till att endast använda konfidentiell information som erhållits via Tjänsterna för det ändamål för vilket den lämnades ut och i enlighet med dessa Villkor och eventuella tillämpliga sekretessavtal.
+- Begränsningar av utlämnande: Du får inte lämna ut konfidentiell information till tredje part utan MailaAI:s föregående skriftliga samtycke, såvida det inte krävs enligt lag eller domstolsbeslut.
+
+### Säkerhetsskyldigheter
+- Användaråtgärder: Du ansvarar för att implementera lämpliga säkerhetsåtgärder för att skydda dina kontoinloggningsuppgifter och förhindra obehörig åtkomst till ditt konto.
+- Rapportering av sårbarheter: Om du upptäcker några potentiella säkerhetssårbarheter i Tjänsterna samtycker du till att omgående rapportera dem till MailaAI och inte offentliggöra dem förrän MailaAI har haft rimlig möjlighet att åtgärda sårbarheten.
+
+### Hantering av personuppgifter
+- Lagefterlevnad: MailaAI behandlar personuppgifter i enlighet med tillämplig dataskyddslagstiftning. Genom att använda Tjänsterna intygar du att du har nödvändiga rättigheter och samtycken för att tillhandahålla eventuella personuppgifter till MailaAI för behandling i samband med Tjänsterna.
+
+### Tjänstesäkerhet
+MailaAI implementerar säkerhetsåtgärder enligt branschstandard för att skydda Tjänsterna och användardata. Ingen överföringsmetod över internet eller elektronisk lagring är dock 100 % säker. Därför kan vi, även om vi strävar efter att skydda din personliga information, inte garantera absolut säkerhet.
+
+### Förbjudna handlingar
+Du samtycker till att inte ägna dig åt någon aktivitet som stör eller avbryter Tjänsterna eller de servrar och nätverk som är anslutna till Tjänsterna. Detta inkluderar att försöka få obehörig åtkomst till Tjänsterna, andra användarkonton eller MailaAI:s system.
+
+---
+
+## 11. Löptid och uppsägning
+
+### Uppsägningsrätt och processer
+- Användaruppsägning: Du kan säga upp ditt avtal med MailaAI och stänga ditt konto när som helst genom att följa den process för kontostängning som tillhandahålls i Tjänsterna.  
+- Uppsägning av MailaAI: MailaAI kan när som helst, utan föregående meddelande, av vilken anledning som helst, säga uppeller stänga av din åtkomst till Tjänsterna, inklusive om vi skäligen anser att du har brutit mot dessa Villkor.
+
+### Skyldigheter efter uppsägning
+- Avbrytande av tjänsten: Vid uppsägning upphör omedelbart din rätt att få tillgång till och använda Tjänsterna. Du måste sluta använda Tjänsterna och radera eventuella Material eller Utdata som erhållits via Tjänsterna.
+- Hantering av konfidentiell information: De sekretessförpliktelser som anges i dessa Villkor ska överleva uppsägningen. Du måste fortsätta att upprätthålla sekretessen för eventuell konfidentiell information som erhållits via Tjänsterna.
+
+### Uppsägning av villkor
+Dessa Villkor gäller tills de sägs upp av antingen dig eller MailaAI. Du kan säga upp dessa Villkor när som helst genom att sluta använda Tjänsterna och stänga ditt konto. MailaAI kan säga upp dessa Villkor när som helst utan föregående meddelande om du underlåter att följa något av villkoren i dessa Villkor.
+
+### Effekt på tjänster
+Vid uppsägning av dessa Villkor kommer din rätt att få tillgång till Tjänsterna omedelbart att återkallas. Det är dock viktigt att notera att vissa bestämmelser i dessa Villkor är avsedda att fortsätta gälla efter uppsägning. Dessa bestående bestämmelser inkluderar, men är inte begränsade till, klausuler om äganderätt, friskrivningar från garantier, skyldighet att gottgöra och begränsningar av ansvar.
+
+---
+
+## 12. Skadestånd, friskrivning från garantier, begränsningar av ansvar
+
+### Skadestånd
+- Användaransvar: Du samtycker till att hålla MailaAI, dess närstående bolag, tjänstemän, direktörer, anställda, agenter, licensgivare och leverantörer skadeslösa från och mot alla anspråk, ansvar, skador, domar, utmärkelser, förluster, kostnader, utgifter eller avgifter (inklusive skäliga advokatarvoden) som uppstår på grund av eller i samband med din överträdelse av dessa Villkor eller din användning av Tjänsterna.
+
+### Friskrivning från garantier
+- Tjänstens skick: Tjänsterna tillhandahålls "i befintligt skick" och "i mån av tillgänglighet" utan garantier av något slag, vare sig uttryckliga eller underförstådda. MailaAI friskriver sig från alla garantier, inklusive men inte begränsat till underförstådda garantier om säljbarhet, lämplighet för ett visst ändamål och icke-intrång.
+
+### Ansvarsbegränsningar
+- Undantag för skador: I den utsträckning som tillåts enligt lag ska MailaAI, dess närstående bolag, tjänstemän, direktörer, anställda, agenter, licensgivare eller leverantörer under inga omständigheter hållas ansvariga för några indirekta, oavsiktliga, särskilda, följdskador eller skadestånd i avskräckande syfte, inklusive men inte begränsat till förlust av vinst, data, användning, goodwill eller andra immateriella förluster, som uppstår på grund av eller i samband med din användning av Tjänsterna.
+
+### Risk vid användning av tjänsten
+Tjänsterna tillhandahålls "i befintligt skick" och "i mån av tillgänglighet". MailaAI garanterar inte att Tjänsterna kommer att vara oavbrutna, felfria eller fria från skadliga komponenter. Din användning av Tjänsterna sker på egen risk.
+
+### Skadestånd från användare
+Du samtycker till att hålla MailaAI, dess närstående bolag, tjänstemän, agenter, anställda och partners skadeslösa från och mot alla anspråk, ansvar, skador, förluster, kostnader, utgifter eller avgifter som uppstår på grund av din användning av Tjänsterna eller överträdelse av dessa Villkor.
+
+### Friskrivning av tjänster
+MailaAI friskriver sig från alla garantier relaterade till Tjänsterna, vare sig uttryckliga eller underförstådda, inklusive men inte begränsat till garantier om säljbarhet, lämplighet för ett visst ändamål och icke-intrång. MailaAI garanterar inte att Tjänsterna kommer att uppfylla dina krav eller att deras drift kommer att vara oavbruten eller felfri.
+
+### Ansvarsbegränsning
+I den utsträckning som tillåts enligt lag ska MailaAI inte hållas ansvarigt för några indirekta, oavsiktliga, särskilda, följdskador eller skadestånd i avskräckande syfte, eller för förlust av vinst eller intäkter, vare sig de uppstår direkt eller indirekt, eller för förlust av data, användning, goodwill eller andra immateriella förluster till följd av din användning av Tjänsterna.
+
+### Skadestånd
+Du samtycker till att hålla MailaAI, dess närstående bolag, tjänstemän, direktörer, anställda, agenter, licensgivare och leverantörer skadeslösa från alla anspråk, förluster, ansvar, utgifter, skador och kostnader, inklusive skäliga advokatarvoden, som uppstår på grund av eller på något sätt är kopplade till din åtkomst till eller användning av Tjänsterna eller din överträdelse av dessa Villkor.
+
+---
+
+## 13. Ändringar, avstängning, avbrytande av tjänster
+
+### Ändringar av tjänsten
+MailaAI förbehåller sig rätten att när som helst, med eller utan förvarning till dig, ändra, stänga av eller avbryta Tjänsterna (helt eller delvis). MailaAI ska inte hållas ansvarigt gentemot dig eller någon tredje part för någon ändring, avstängning eller avbrytande av Tjänsterna.
+
+### Meddelande och ansvar
+MailaAI kommer att göra rimliga ansträngningar för att meddela om eventuella väsentliga ändringar av Tjänsterna. MailaAI ska dock inte hållas ansvarigt för underlåtenhet att tillhandahålla sådant meddelande eller för eventuella olägenheter, förluster eller skador som uppstår till följd av någon ändring, avstängning eller avbrytande av Tjänsterna.
+
+### Förbättring av tjänsten
+MailaAI arbetar kontinuerligt med att förbättra Tjänsterna och kan uppdatera Tjänsterna med eller utan förvarning. Dessa uppdateringar kan innefatta ändringar av funktioner, funktionalitet, användargränssnitt, API:er eller underliggande tekniker. MailaAI ansvarar inte för eventuella ändringar av Tjänsterna eller för någon inverkan dessa ändringar kan ha på din användning av Tjänsterna.
+
+### Ändringar
+MailaAI förbehåller sig rätten att när som helst ändra Tjänsterna, inklusive ändringar av algoritmer, modeller, data eller funktionalitet. Detta kan leda till ändringar av stil, innehåll eller andra aspekter av de utdata som produceras av Tjänsterna. MailaAI ansvarar inte för eventuell inverkan dessa ändringar kan ha på din användning av Tjänsterna.
+
+### Tjänstens tillförlitlighet
+MailaAI garanterar inte att Tjänsterna alltid kommer att vara tillgängliga, oavbrutna, säkra eller felfria. Tjänsterna kan vara föremål för begränsningar, förseningar och andra problem som är förknippade med användningen av internet och elektronisk kommunikation. MailaAI ansvarar inte för eventuella förseningar, leveransfel eller andra skador som uppstår till följd av sådana problem.
+
+### Kundberoende
+Du bekräftar att Tjänsterna inte är avsedda att förlitas på som det enda medlet för kritiska eller väsentliga funktioner. MailaAI ansvarar inte för eventuella skador eller förluster som uppstår till följd av att du förlitar dig på Tjänsterna för sådana ändamål. Det är ditt ansvar att upprätthålla reservplaner och redundanta system efter behov.
+
+### Ansvar
+MailaAI ska inte hållas ansvarigt för eventuell oförmåga att använda Tjänsterna, förlust av data eller Innehåll, eller för andra skador eller förluster som uppstår till följd av ändring, avstängning eller avbrytande av Tjänsterna. Det är ditt ansvar att upprätthålla säkerhetskopior av dina data och att säkerställa att Tjänsterna är lämpliga för dina behov.
+
+---
+
+## 14. Tredjepartstjänster och länkar
+
+### Externt innehåll
+Tjänsterna kan innehålla länkar till tredjepartswebbplatser, tjänster eller innehåll. MailaAI varken rekommenderar, kontrollerar eller tar ansvar för några tredjepartstjänster eller -innehåll. Din användning av tredjepartstjänster sker på egen risk och är föremål för villkoren och sekretesspolicyerna för dessa tredje parter.
+
+---
+
+## 15. Feedback
+
+### Licens för feedback
+Genom att tillhandahålla feedback, förslag eller idéer om Tjänsterna till MailaAI beviljar du MailaAI en världsomspännande, evig, oåterkallelig, royaltyfri licens att använda och införliva feedbacken i Tjänsterna utan någon skyldighet att kompensera dig.
+
+---
+
+## 16. Tvistlösning
+
+För att anpassa avsnittet om tvistlösning till svensk jurisdiktion kan du ändra innehållet enligt följande:
+
+---
+
+## Tvistlösning
+
+### Informell lösning
+
+Innan några formella rättsliga förfaranden inleds uppmuntrar vi dig att kontakta oss direkt för att söka en informell lösning. Detta tillvägagångssätt leder ofta till en snabbare och mindre motstridande lösning. Vänligen kontakta vårt supportteam med eventuella problem, så strävar vi efter att lösa dem omgående.
+
+### Skiljedomsavtal
+
+Om en tvist inte kan lösas informellt samtycker du och MailaAI till att lösa eventuella anspråk relaterade till dessa Villkor eller Tjänsterna genom slutlig och bindande skiljedom, förutom vad som anges under Undantag från skiljedomsavtal nedan. Detta skiljedomsavtal är föremål för lagen om skiljeförfarande.
+
+#### Skiljedomsförfarande
+
+Skiljeförfarandet ska genomföras av en neutral skiljedomare i enlighet med Skiljedomsreglerna för Stockholms Handelskammares Skiljedomsinstitut. Sätet för skiljeförfarandet ska vara Stockholm, Sverige, och skiljeförfarandet ska genomföras på engelska. Skiljeförfarandet ska vara konfidentiellt.
+
+#### Skiljedomskostnader
+
+Fördelningen och betalningen av alla inlämnings-, administrations- och skiljedomaravgifter ska regleras av reglerna för Stockholms Handelskammares Skiljedomsinstitut. Varje part ansvarar för sina egna advokatarvoden och andra kostnader, om inte skiljedomaren tilldelar dem enligt tillämplig lag.
+
+### Undantag från skiljedomsavtal
+
+Tvister som involverar anspråk på intrång i upphovsrätt eller andra immateriella rättigheter, eller anspråk på föreläggande, kan väckas vid behörig domstol i Sverige utan att först inleda skiljeförfarande eller den informella tvistlösningsprocess som beskrivs ovan.
+
+### Tillämplig lag
+
+Eventuella tvister som uppstår på grund av eller i samband med dessa Villkor eller Tjänsterna ska regleras av och tolkas i enlighet med svensk lag, utan hänsyn till dess lagvalsbestämmelser eller regler.
+
+### Avstående från juryprövning
+
+DU OCH MAILAAI AVSTÅR HÄRMED FRÅN EVENTUELLA RÄTTIGHETER TILL EN JURYPRÖVNING i eventuella förfaranden som uppstår på grund av eller i samband med dessa Villkor eller Tjänsterna. Istället ska eventuella tvister som inte omfattas av skiljedom lösas i domstolarna i Sverige.
+
+### Inga grupptalan
+
+Alla anspråk och tvister inom ramen för detta skiljedomsavtal måste skiljas på individuell basis och inte på gruppbasis. Anspråk från fler än en kund eller användare kan inte skiljas eller drivas gemensamt eller konsoliderat med anspråk från andra kunder eller användare.
+
+---
+
+## 17. Allmänna bestämmelser
+
+### Tolkning och definitioner
+- Förtydliganden av villkor: Orden "inkluderar", "inkluderar" och "inklusive" ska anses följas av frasen "utan begränsning". Ordet "kommer" ska tolkas på samma sätt och ha samma innebörd som ordet "ska".
+
+### Meddelande om ändringar
+- Metod för att kommunicera uppdateringar: MailaAI kommer att tillhandahålla meddelanden om ändringar av dessa Villkor eller Tjänsterna via den e-postadress som är kopplad till ditt konto eller genom att publicera meddelanden på MailaAI:s webbplats.
+
+### Elektronisk kommunikation
+- Godkännande av elektroniska meddelanden: Genom att använda Tjänsterna samtycker du till att ta emot elektronisk kommunikation från MailaAI. Du samtycker till att alla avtal, meddelanden, upplysningar och annan kommunikation som tillhandahålls elektroniskt uppfyller eventuella lagkrav på att sådan kommunikation ska vara skriftlig.
+
+### Efterlevnad av lagar
+- Skyldighet att följa lagar: Du samtycker till att följa alla tillämpliga lagar, förordningar och tredje parts rättigheter (inklusive utan begränsning lagar om import eller export av data eller programvara, integritet och lokala lagar) när du använder Tjänsterna.
+
+### Inget avstående
+- Hävdande av rättigheter: MailaAI:s underlåtenhet att hävda någon rättighet eller bestämmelse i dessa Villkor ska inte anses vara ett avstående från sådan rättighet eller bestämmelse. Ett avstående från någon sådan rättighet eller bestämmelse är endast giltigt om det är skriftligt och undertecknat av en behörig företrädare för MailaAI.
+
+### Överlevnad av villkor
+- Giltighet efter uppsägning: Vid uppsägning av dessa Villkor ska alla bestämmelser som till sin natur eller uttryckliga villkor bör överleva, överleva sådan uppsägning eller upphörande, inklusive, men inte begränsat till, bestämmelser om äganderätt, friskrivningar från garantier, skadestånd, ansvarsbegränsningar och tvistlösning.
+
+### Rubriker och tolkning- Roll för rubriker: Avsnitts- och styckerubrikerna i dessa Villkor är endast för bekvämlighet och ska inte påverka deras tolkning.
+- Tolkningsregler: Eventuella tvetydigheter vid tolkningen av dessa Villkor ska inte tolkas mot den part som upprättat dem.
+
+### Efterlevnad av ytterligare villkor
+Du samtycker till att följa alla tillämpliga ytterligare villkor, regler eller krav som styr användningen av Tjänsterna, inklusive de som tillhandahålls av tredjepartspartners eller leverantörer.
+
+### Hela avtalet och överlåtelse
+Dessa Villkor utgör hela avtalet mellan dig och MailaAI gällande användningen av Tjänsterna. MailaAI kan överlåta sina rättigheter och skyldigheter enligt dessa Villkor utan ditt samtycke. Du får inte överlåta dina rättigheter eller skyldigheter enligt dessa Villkor utan MailaAI:s föregående skriftliga godkännande.
+
+### Skälig gottgörelse och juridiska förhållanden
+Du bekräftar att eventuellt brott mot dessa Villkor kan orsaka oåterkallelig skada för MailaAI, för vilken monetära skadestånd skulle vara otillräckliga, och att MailaAI har rätt att söka föreläggande utöver eventuella andra tillgängliga rättsmedel. Dessa Villkor skapar inga byråer, partnerskap, joint ventures eller anställningsförhållanden mellan dig och MailaAI.
+
+### Varumärkesanvändning och delbarhet
+Du får inte använda MailaAI:s handelsnamn, varumärken, tjänstemärken, logotyper, domännamn eller andra särskiljande varumärkesfunktioner utan föregående skriftligt samtycke. Om någon bestämmelse i dessa Villkor befinns vara ogiltig, olaglig eller ogenomförbar ska de återstående bestämmelserna fortsätta att gälla fullt ut.
+
+### Efterlevnad av lagar och tillämplig lag
+Du samtycker till att följa alla tillämpliga lagar, författningar, förordningar och föreskrifter gällande din användning av Tjänsterna. Dessa Villkor ska regleras av och tolkas i enlighet med svensk lag, utan hänsyn till dess lagvalsbestämmelser.
+
+### Användning av amerikanska myndigheter och exportkontroller  
+Tjänsterna tillhandahålls som "kommersiella artiklar" och är föremål för tillämpliga exportkontrollagar och -förordningar. Du intygar och garanterar att du inte befinner dig i ett land som är föremål för ett amerikanskt regeringsembargo eller har betecknats som ett "terrorismstödjande" land och inte finns med på någon amerikansk regeringslista över förbjudna eller begränsade parter.
+
+### Inget sponsorskap
+Du samtycker till att inte utge dig för att vara en agent, anställd eller representant för MailaAI. Du får inte använda MailaAI:s namn, logotyp eller varumärken för att antyda stöd, sponsorskap eller anknytning utan uttryckligt skriftligt tillstånd från MailaAI.
+
+### Delbarhet
+Om någon bestämmelse i dessa Villkor befinns vara ogiltig, olaglig eller ogenomförbar ska de återstående bestämmelserna fortsätta att gälla fullt ut. Den ogiltiga, olagliga eller ogenomförbara bestämmelsen ska ersättas av en giltig, laglig och genomförbar bestämmelse som ligger närmast avsikten med den ursprungliga bestämmelsen.
+
+### Efterlevnad av lagar
+Du samtycker till att följa alla tillämpliga lagar och förordningar i samband med din användning av Tjänsterna, inklusive men inte begränsat till dataskydds- och integritetslagar. MailaAI förbehåller sig rätten att lämna ut all information som är nödvändig för att uppfylla någon lag, förordning, rättslig process eller myndighetsförfrågan, eller att redigera, vägra att publicera eller ta bort all information eller allt material, helt eller delvis, efter MailaAI:s eget gottfinnande.
+
+### Tillämplig lag och exklusiv jurisdiktion
+Dessa Villkor ska regleras av och tolkas i enlighet med svensk lag, utan hänsyn till dess lagvalsbestämmelser. Eventuella rättsliga åtgärder eller förfaranden som uppstår enligt dessa Villkor ska väckas uteslutande vid domstolarna i Göteborg, Sverige, och parterna samtycker härmed till personlig jurisdiktion och forum däri.
+
+### Användning av amerikanska myndigheter
+Tjänsterna tillhandahålls till den amerikanska regeringen som "kommersiella artiklar", "kommersiell datorprogramvara", "kommersiell datorprogramvarudokumentation" och "tekniska data" med samma rättigheter och begränsningar som generellt gäller för Tjänsterna. Om du använder Tjänsterna på uppdrag av den amerikanska regeringen och dessa villkor inte uppfyller den amerikanska regeringens behov eller är oförenliga med federal lag i något avseende, ska du omedelbart avbryta din användning av Tjänsterna.
+
+### Export och sanktioner
+Tjänsterna får inte exporteras eller återexporteras till vissa länder eller till de personer eller enheter som är förbjudna att ta emot export från USA eller Sverige. Genom att använda Tjänsterna intygar och garanterar du att du inte befinner dig i något sådant land eller på någon sådan lista. Du samtycker också till att följa alla tillämpliga amerikanska och svenska exportkontroll- och handelssanktionsförordningar.
+
+### Force Majeure
+MailaAI ska inte hållas ansvarigt för eventuell försening eller underlåtenhet att prestera till följd av orsaker utanför dess rimliga kontroll, inklusive men inte begränsat till force majeure, krig, terrorism, upplopp, embargon, agerande av civila eller militära myndigheter, brand, översvämningar, olyckor, strejker eller brist på transportmedel, bränsle, energi, arbetskraft eller material.
+
+### Inget ombud
+Ingenting i dessa Villkor ska tolkas som att det skapar något ombud, partnerskap, joint venture eller annan form av gemensamt företag mellan dig och MailaAI. Ingen part ska ha befogenhet att binda den andra parten eller ådra sig skyldigheter på den andra partens vägnar utan den andra partens föregående skriftliga godkännande.
+
+### Inga tredjepartsförmånstagare
+Dessa Villkor ger inga rättigheter till tredje part. Ingen bestämmelse i dessa Villkor kommer att vara verkställbar av någon person eller enhet som inte är part i dessa Villkor.
+
+---
+
+## 18. Förhållande med MailaAI
+
+### Tillstånd för tjänsten
+MailaAI ger dig ett begränsat, återkalleligt, icke-exklusivt, icke-överlåtbart, icke-sublicensierbart tillstånd att använda Tjänsterna i enlighet med dessa Villkor. Detta tillstånd beviljas enbart i syfte att låta dig använda och dra nytta av Tjänsterna som tillhandahålls av MailaAI, på det sätt som tillåts enligt dessa Villkor.
+
+### Förväntningar från MailaAI
+MailaAI arbetar kontinuerligt med att förbättra Tjänsterna och ge dig en positiv användarupplevelse. Du kan förvänta dig att MailaAI:
+- Strävar efter att upprätthålla Tjänsternas tillgänglighet, tillförlitlighet och säkerhet
+- Tillhandahåller tydlig och korrekt information om Tjänsterna och eventuella tillhörande avgifter  
+- Svarar på dina förfrågningar och supportärenden i tid och på ett professionellt sätt
+- Respekterar din integritet och hanterar din personliga information i enlighet med vår Sekretesspolicy
+- Meddelar dig om eventuella väsentliga ändringar av Tjänsterna eller dessa Villkor
+
+### Tjänstehantering
+MailaAI förbehåller sig rätten att hantera och driva Tjänsterna efter eget gottfinnande, inklusive rätten att:
+- Ändra, uppdatera eller avbryta någon del av Tjänsterna
+- Övervaka din användning av Tjänsterna för att säkerställa efterlevnad av dessa Villkor 
+- Stänga av eller säga upp din åtkomst till Tjänsterna av någon anledning, inklusive överträdelse av dessa Villkor
+
+### Användarinnehåll och immateriella rättigheter
+Du behåller alla rättigheter till det innehåll du laddar upp, skickar in eller skapar via Tjänsterna ("Användarinnehåll"). Genom att använda Tjänsterna ger du MailaAI en världsomspännande, icke-exklusiv, royaltyfri, vidarelicensierbar och överförbar licens att använda, reproducera, distribuera, skapa bearbetningar av, visa och framföra Användarinnehållet i samband med att driva och förbättra Tjänsterna och MailaAI:s verksamhet.
+
+Du intygar och garanterar att du har alla nödvändiga rättigheter för att bevilja denna licens och att ditt Användarinnehåll inte gör intrång i eller kränker några tredje parters rättigheter. MailaAI gör inte anspråk på äganderätten till ditt Användarinnehåll, men du ger MailaAI de rättigheter som krävs för att tillhandahålla Tjänsterna.
+
+---
+
+## 19. Gemenskapsriktlinjer
+
+### Beteendeförväntningar
+När du använder Tjänsterna samtycker du till att:
+- Vara respektfull och hänsynsfull mot andra
+- Inte ägna dig åt någon form av trakasserier, hatpropaganda eller diskriminerande beteende
+- Inte utge dig för att vara MailaAI-personal eller andra användare
+- Inte försöka lura eller vilseleda andra
+- Inte dela eller främja olagligt, skadligt eller stötande innehåll
+
+### Innehållsbegränsningar
+Du samtycker till att inte använda Tjänsterna för att skapa, ladda upp eller dela något innehåll som:
+- Är sexuellt explicit eller pornografiskt
+- Främjar våld, självskada eller djurplågeri
+- Stöder eller främjar terroristgrupper eller extremistgrupper
+- Gör intrång i immateriella rättigheter
+- Innehåller personlig eller känslig information om andra utan deras samtycke
+- Används för politiska kampanjer eller lobbyverksamhet
+- Bryter mot tillämpliga lagar eller förordningar
+
+MailaAI förbehåller sig rätten att ta bort allt innehåll som bryter mot dessa Gemenskapsriktlinjer eller att stänga av eller säga upp konton tillhörande användare som upprepade gånger bryter mot dessa riktlinjer.
+
+---
+
+## 20. Förbjuden användning
+
+### Stötande eller bedrägligt innehåll
+Du får inte använda Tjänsterna för att skapa, dela eller interagera med innehåll eller aktiviteter som:
+- Involverar spam, nätfiskeförsök eller andra oönskade meddelanden
+- Lurar eller vilseleder andra, till exempel genom att utge sig för att vara någon annan eller använda falska identiteter
+- Distribuerar skadlig kod, virus eller annan skadlig programvara
+- Skrapar eller extraherar data från Tjänsterna med automatiserade medel utan tillstånd
+- Stör Tjänsternas eller MailaAI:s systems korrekta funktion
+- Försöker få obehörig åtkomst till Tjänsterna eller användarkonton
+- Bryter mot andras integritets- eller immateriella rättigheter
+
+### Sexuellt utnyttjande eller övergrepp av barn
+Användning av Tjänsterna för att skapa, dela eller interagera med innehåll som involverar sexuellt utnyttjande eller övergrepp av minderåriga är strängt förbjudet. Detta inkluderar men är inte begränsat till:
+- Barnpornografiskt material eller innehåll
+- Grooming eller kontaktsökande av minderåriga för sexuella ändamål
+- Sexualisering av minderåriga i något sammanhang
+
+Alla fall av sexuellt utnyttjande eller övergrepp av barn kommer att rapporteras till lämpliga myndigheter.
+
+### Vilseledande eller missledande innehåll
+Du får inte använda Tjänsterna för att skapa, dela eller interagera med innehåll som är avsett att vilseleda eller missleda andra, såsom:
+- Desinformations- eller desinformationskampanjer
+- Falska nyheter eller bluffar
+- Att utge sig för att vara individer, organisationer eller officiella källor
+- Vilseledande propaganda eller påverkansoperationer
+- Akademisk oärlighet, såsom plagiat eller fusk
+
+### Olagliga eller starkt reglerade varor eller tjänster
+Tjänsterna får inte användas för att främja, underlätta eller ägna sig åt olagliga aktiviteter eller starkt reglerade varor och tjänster, inklusive men inte begränsat till:
+- Olagliga droger eller kontrollerade ämnen
+- Vapen, sprängämnen eller andra farliga material
+- Människohandel eller sexuellt utnyttjande
+- Olagligt spel eller oreglerade finansiella tjänster
+- Förfalskade varor eller obehörig försäljning av reglerade produkter
+
+### Psykologiskt eller känslomässigt skadligt innehåll
+Du får inte använda Tjänsterna för att skapa, dela eller interagera med innehåll som kan orsaka psykologisk eller känslomässig skada för andra, såsom:
+- Att främja eller förhärliga självskada, självmord eller ätstörningar
+- Att ägna sig åt mobbning, trakasserier eller hot mot individer eller grupper
+- Icke-samtyckande intima bilder eller sexuellt innehåll
+- Att uppmuntra fysiskt farliga eller vårdslösa beteenden
+
+### Sexuellt explicit innehåll
+Tjänsterna får inte användas för att skapa, dela eller interagera med sexuellt explicit innehåll, inklusive men inte begränsat till:
+- Pornografi eller vuxna sexuella tjänster
+- Grafiska skildringar av sexuella handlingar
+- Icke-samtyckande eller olagligt sexuellt innehåll
+- Främjande av eskorttjänster eller sexuellt utnyttjande
+
+### Våldsamt, hatiskt eller hotfullt innehåll
+Du får inte använda Tjänsterna för att skapa, dela eller interagera med innehåll som främjar eller förhärligar våld, hat eller hot, såsom:
+- Grafiskt våld eller gore
+- Djurplågeri eller djurmisshandel
+- Hatpropaganda eller supremacistiska ideologier
+- Anstiftan tillHär är den resterande översättningen av dokumentet:
+
+ våld eller stöd för terroristgrupper eller extremistgrupper
+- Hotfullt eller trakasserande språk
+
+MailaAI förbehåller sig rätten att ta bort allt innehåll som bryter mot dessa Förbjudna användningsområden och att stänga av eller säga upp konton tillhörande användare som ägnar sig åt dessa förbjudna aktiviteter.
+
+---
+
+## 21. Förbjudna affärsanvändningsfall
+
+Följande affärsanvändningsfall är förbjudna på Tjänsterna:
+
+### Politiska kampanjer eller lobbying
+Tjänsterna får inte användas i syfte att bedriva politiska kampanjer, lobbying eller försök att påverka val eller lagstiftning. Detta inkluderar men är inte begränsat till:
+- Att skapa eller distribuera innehåll som stöder eller motsätter sig politiska kandidater, partier eller omröstningsåtgärder
+- Insamling av medel för politiska kampanjer eller politiska aktionskommittéer (PAC)
+- Samordning eller organisering av politiska aktiviteter eller evenemang
+- Att ägna sig åt astroturfing eller tillverkade gräsrotskampanjer
+
+### Dold spårning och övervakning
+Du får inte använda Tjänsterna för att ägna dig åt dold spårning eller övervakning av individer eller grupper utan deras uttryckliga samtycke. Detta inkluderar men är inte begränsat till:
+- Att förfölja eller övervaka andras aktiviteter och kommunikation
+- Att använda Tjänsterna för att samla information eller genomföra undersökningar om individer
+- Att använda ansiktsigenkänning eller andra biometriska identifieringstekniker utan samtycke
+- Att skrapa eller samla in personuppgifter från Tjänsterna i spårnings- eller övervakningssyfte
+- Att ägna sig åt eller främja aktiviteter som underlättar obehörig spårning eller övervakning av individer
+
+All användning av Tjänsterna som äventyrar individers integritet eller frihet kommer att bli föremål för omedelbar granskning och potentiellt upphörande av tjänstetillgången.
+
+### Social poängsättning
+Tjänsterna får inte användas för att skapa eller implementera sociala poängsättningssystem som utvärderar eller rankar individer baserat på deras sociala beteende, interaktioner eller uppfattad pålitlighet. Detta inkluderar men är inte begränsat till:
+- Att använda Tjänsterna för att bedöma individers kredit eller rykte
+- Att använda Tjänsterna för att fatta beslut om individers föreningar, yttranden eller andra attribut som bör förbli privata och respekterade
+
+### Straffrättsliga beslut
+Tjänsterna får inte användas för att fatta automatiserade beslut relaterade till straffrättsliga processer, såsom:
+- Att utvärdera individers lämplighet för villkorlig frigivning eller skyddstillsyn
+- Att bedöma risken för rymning eller återfall för borgen eller domar
+- Att profilera individer baserat på deras kriminella historik eller demografiska egenskaper
+
+### Automatiserade finansiella beslut
+Du får inte använda Tjänsterna för att fatta automatiserade beslut relaterade till finansiella tjänster eller kreditvärdighet, inklusive men inte begränsat till:
+- Att utvärdera individers lämplighet för lån, kredit eller försäkringsprodukter
+- Att bedöma individers riskprofiler för investerings- eller utlåningsändamål
+- Att fatta automatiserade beslut som har juridiska eller liknande betydande effekter på individers ekonomiska ställning
+
+### Anställnings- och bostadsbeslut
+Tjänsterna får inte användas för att fatta automatiserade beslut relaterade till anställnings- eller bostadsmöjligheter, såsom:
+- Att granska jobbsökande eller fatta anställningsbeslut baserat på automatiserad behandling
+- Att utvärdera kandidaters lämplighet för befordringar eller arbetsuppgifter
+- Att bedöma individers lämplighet för bostad eller fatta hyresbeslut baserat på automatiserade faktorer
+
+### Brottsbekämpande tillämpningar
+Brottsbekämpande myndigheter i USA får endast använda Tjänsterna för specifika, icke-påträngande tillämpningar, såsom:
+- Att generera ledtrådar eller tips för vidare mänsklig utredning
+- Att hjälpa till med analys av bevis eller data relaterade till brottsutredningar
+- Att förbättra samhällskontakter och kommunikationsinsatser mot allmänheten
+
+Brottsbekämpande myndigheters användning av Tjänsterna måste överensstämma med alla tillämpliga lagar, förordningar och konstitutionella skydd. Tjänsterna får inte användas för övervakning, profilering eller andra påträngande brottsbekämpande aktiviteter utan vederbörlig rättslig auktoritet och tillsyn.
+
+---
+
+## 22. Ytterligare krav för företag
+
+### Professionell granskning
+Om du är ett företag som använder Tjänsterna för att generera innehåll relaterat till juridiska, medicinska, finansiella eller andra professionella råd måste du se till att:
+- Innehållet granskas och godkänns av kvalificerade yrkesutövare innan det tillhandahålls till slutanvändare
+- Lämpliga ansvarsfriskrivningar inkluderas för att indikera att innehållet inte är en ersättning för individuella professionella råd
+- Innehållet överensstämmer med alla tillämpliga lagar, förordningar och yrkesstandarder i din jurisdiktion
+
+### Människa i loopen
+Företag som använder Tjänsterna för kundinteraktioner eller beslutsprocesser måste se till att det finns meningsfullt mänskligt engagemang och tillsyn i loopen. Detta inkluderar:
+- Att regelbundet granska och revidera de utdata som genereras av Tjänsterna
+- Att tillhandahålla tydliga eskaleringssökvägar för användare att begära mänsklig granskning eller överklaga automatiserade beslut
+- Att se till att människor behåller slutlig kontroll och ansvar för betydande beslut
+
+### Automatiserad tjänsteinformation
+Om ditt företag använder Tjänsterna för att interagera med kunder eller användare på ett automatiserat sätt måste du tydligt informera om att de interagerar med ett AI-system. Denna information bör ges i början av interaktionen och på ett sätt som är tydligt och begripligt för den genomsnittliga användaren.
+
+---
+
+## 23. Utvärdering och ytterligare tjänster
+
+### Begränsad utvärderingsanvändning
+Du kan använda Tjänsterna i begränsad omfattning i utvärderingssyfte innan du köper en prenumeration. Utvärderingsanvändning är föremål för dessa Villkor och eventuella ytterligare begränsningar som meddelats av MailaAI, såsom tidsgränser eller funktionsbegränsningar.
+
+### Godkännande av ytterligare villkor
+Vissa Tjänster kan vara föremål för ytterligare villkor, krav eller förutsättningar. Genom att använda dessa Tjänster samtycker du till att följa eventuella ytterligare villkor som presenteras för dig. I händelse av konflikt mellan dessa Villkor och de ytterligare villkoren ska de ytterligare villkoren gälla med avseende på den specifika Tjänsten.
+
+---
+
+## 24. Upphovsrätt och varumärke
+
+### Rättigheter som beviljats MailaAI
+Genom att använda Tjänsterna beviljar du MailaAI en världsomspännande, icke-exklusiv, royaltyfri, vidarelicensierbar och överförbar licens att använda, reproducera, distribuera, skapa bearbetningar av, visa och framföra allt innehåll eller material som du skickar in eller genererar via Tjänsterna ("Tillgångar") i samband med att tillhandahålla och förbättra Tjänsterna.
+
+### Kundens äganderätt
+Du behåller äganderätten till alla Tillgångar du skapar med hjälp av Tjänsterna, med förbehåll för de rättigheter som beviljats MailaAI i dessa Villkor. MailaAI gör inte anspråk på äganderätten till dina Tillgångar.
+
+### Undantag
+Oaktat ovanstående gör MailaAI inte anspråk på äganderätten till Tillgångar som:
+- Genereras helt av Tjänsterna utan något kreativt bidrag eller modifiering från dig
+- Baseras på mallar, uppmaningar eller annat befintligt material som tillhandahålls av MailaAI
+- Är i public domain eller på annat sätt inte är berättigade till upphovsrättsskydd
+
+### Offentlig delning
+Om du väljer att offentligt dela bilder som genererats med hjälp av Tjänsterna samtycker du till att andra får remixa, omvandla och bygga vidare på bilderna, även för kommersiella ändamål. Om du inte vill tillåta sådan användning ska du inte dela bilderna offentligt.
+
+---
+
+## 25. DMCA och policy för borttagning
+
+### Anmälningsförfaranden
+Om du anser att innehåll som finns tillgängligt via Tjänsterna gör intrång i dina upphovsrätter eller varumärkesrättigheter kan du skicka in en begäran om borttagning till MailaAI:s utsedda agent. Meddelandet måste innehålla:
+- Identifiering av det upphovsrättsskyddade eller varumärkesskyddade verk som påstås ha gjorts intrång i
+- Identifiering av det påstått intrångsgörande materialet och dess plats på Tjänsterna
+- Din kontaktinformation, inklusive namn, adress, telefonnummer och e-postadress
+- Ett uttalande om att du har en god tro om att användningen av materialet inte är auktoriserad av rättighetsinnehavaren
+- Ett uttalande om att informationen i meddelandet är korrekt och, under straffansvar för mened, att du är auktoriserad att agera på uppdrag av rättighetsinnehavaren
+- Din fysiska eller elektroniska signatur
+
+### Motanmälningsförfaranden
+Om du anser att ditt innehåll togs bort från Tjänsterna på grund av ett misstag eller en felidentifiering kan du skicka in en motanmälan till MailaAI:s utsedda agent. Motanmälan måste innehålla:
+- Identifiering av det material som har tagits bort och dess tidigare plats på Tjänsterna
+- Din kontaktinformation, inklusive namn, adress, telefonnummer och e-postadress  
+- Ett uttalande under straffansvar för mened om att du har en god tro om att materialet togs bort av misstag eller felidentifiering
+- Ett uttalande om att du samtycker till domstolens jurisdiktion där din adress är belägen
+- Din fysiska eller elektroniska signatur
+
+Efter att ha mottagit en giltig motanmälan kommer MailaAI omgående att vidarebefordra den till den part som lämnade in den ursprungliga begäran om borttagning. Om MailaAI inte inom 10 arbetsdagar får ett meddelande om att den ursprungliga klaganden söker ett domstolsbeslut för att förhindra ytterligare intrång, kan MailaAI återställa det borttagna materialet till Tjänsterna.
+
+---
+
+## 26. Tjänsterelaterad kommunikation
+
+### Tjänstemeddelanden
+MailaAI kan då och då skicka tjänsterelaterade meddelanden och uppdateringar om Tjänsterna till dig. Dessa meddelanden anses vara en del av Tjänsterna och du kan välja bort att ta emot dem genom att kontakta MailaAI:s support.
+
+---
+
+## 27. Instruktioner för EES-kunder om återkallande
+
+### Rätt att återkalla
+Om du är en kund baserad i Europeiska ekonomiska samarbetsområdet (EES) har du rätt att återkalla ditt avtal med MailaAI inom 14 dagar utan att ange något skäl. Återkallandeperioden löper ut 14 dagar efter dagen för avtalets ingående.
+
+### Återkallandeprocess
+För att utöva återkallanderätten måste du informera MailaAI om ditt beslut att återkalla avtalet genom ett otvetydigt uttalande (t.ex. ett brev som skickas med post eller e-post). Du kan använda den återkallandeblankett som tillhandahålls av MailaAI, men det är inte obligatoriskt.
+
+### Återkallandeförfarande
+För att uppfylla återkallandefristen räcker det att du skickar ditt meddelande om att du utövar din återkallanderätt innan återkallandeperioden har löpt ut. Om du återkallar avtalet kommer MailaAI att återbetala alla betalningar som mottagits från dig, inklusive leveranskostnaderna (förutom de extrakostnader som uppstår om du valt en annan typ av leverans än den billigaste typen av standardleverans som erbjuds av MailaAI).
+
+### Effekter av återkallande
+MailaAI kommer att göra återbetalningen utan onödigt dröjsmål och senast 14 dagar från den dag då MailaAI informeras om ditt beslut att återkalla avtalet. MailaAI kommer att genomföra återbetalningen med samma betalningsmedel som du använde för den ursprungliga transaktionen, såvida du inte uttryckligen har kommit överens om något annat. Under inga omständigheter kommer du att ådra dig några avgifter som en följd av återbetalningen.
+
+Om du begärde att tillhandahållandet av tjänster skulle påbörjas under återkallandeperioden ska du betala MailaAI ett belopp som står i proportion till vad som har tillhandahållits tills du har meddelat MailaAI om ditt återkallande av avtalet, jämfört med hela omfattningen av avtalet.
+
+---
+
+## 28. Hantering av förfrågningar om dina data
+
+### Integritet och säkerhet
+MailaAI tar din datas integritet och säkerhet på allvar. I händelse av att MailaAI får en begäran från en tredje part som söker tillgång till dina data (såsom en stämning, ett domstolsbeslut eller annan juridisk begäran) kommer MailaAI att göra rimliga ansträngningar för att meddela dig och ge dig möjlighet att invända mot utlämnandet, såvida det inte är förbjudet enligt lag.
+
+För detaljerad information om hur MailaAI samlar in, använder och skyddar dina data, vänligen se vår Sekretesspolicy.
+
+---
+
+## 29. Datainsamling och integritet
+
+### Informationsinsamling
+MailaAI samlar in olika typer av information från användare, inklusive:
+- Personuppgifter som lämnas vid kontoregistrering, såsom namn och e-postadress
+- Innehåll och data som laddas upp eller genereras genom användning av Tjänsterna
+- Användningsdata och mätvärden relaterade till din interaktion med Tjänsterna
+- Enhets- och webbläsarinformation som samlas in automatiskt när du använder Tjänsterna
+- Cookies och liknande spårningsteknik som beskrivs i vår Cookiepolicy
+
+### Datalagring
+MailaAI lagrar dina personuppgifter så länge det är nödvändigt för att uppfylla de syften som anges i vår Sekretesspolicy, såvida inte en längre lagringsperiod krävs eller tillåts enligt lag. De specifika lagringstiderna beror på uppgifternas art och det sammanhang i vilket de samlades in.
+
+### Datalagringens plats
+MailaAI lagrar och behandlar dina data i datacenter belägna i Sverige och andra länder där MailaAI eller dess tjänsteleverantörer har anläggningar. Genom att använda Tjänsterna samtycker du till överföring av dina data till länder utanför ditt bosättningsland, som kan ha andra dataskyddslagar.
+
+### Discord-data
+Om du interagerar med MailaAI via Discord lagras alla data du tillhandahåller via direktmeddelanden eller andra interaktioner med MailaAI:s Discord-bot på Discords servrar och är föremål för Discords sekretesspolicy. MailaAI har begränsad möjlighet att komma åt eller ta bort data som lagras av Discord.
+
+### Försäljning av personuppgifter
+MailaAI säljer inte dina personuppgifter till tredje part. Mer information om MailaAI:s datahanteringspraxis finns i vår Sekretesspolicy.
+
+### Begäranden om radering av data
+Du har rätt att begära radering av dina personuppgifter från MailaAI:s system, med förbehåll för vissa undantag som tillåts enligt lag. Vid mottagande av en verifierbar raderingsbegäran kommer MailaAI att radera dina personuppgifter från våra register och instruera våra tjänsteleverantörer att göra detsamma, såvida inte ett undantag gäller. Undantag kan inkludera fall där uppgifterna är nödvändiga för att följa rättsliga förpliktelser.
+
+---
+
+## 30. Dataradering
+
+### Berättigande till dataradering
+MailaAI kommer att tillmötesgå begäranden om radering av personuppgifter som inte längre är nödvändiga för de ändamål för vilka de samlades in, eller där behandlingen baseras på samtycke och du har dragit tillbaka ditt samtycke. MailaAI kan dock behålla vissa uppgifter som är nödvändiga för legitima affärsändamål eller för att uppfylla rättsliga förpliktelser.
+
+### Nödvändig information
+För att skicka in en begäran om dataradering, vänligen tillhandahåll följande information:
+- Ditt fullständiga namn och e-postadress kopplad till ditt MailaAI-konto
+- En tydlig och specifik beskrivning av de personuppgifter du vill få raderade
+- Eventuell ytterligare information som kan vara nödvändig för att verifiera din identitet och lokalisera dina data
+
+### Svarstid
+MailaAI kommer att bekräfta mottagandet av din begäran om dataradering inom 30 arbetsdagar och tillhandahålla en uppskattad tidsram för behandling av begäran. I de flesta fall kommer MailaAI att slutföra raderingen inom 60 dagar från mottagandet av en verifierbar begäran. Om MailaAI behöver mer tid kommer du att meddelas om anledningen och förlängningsperioden.
+
+MailaAI kan begära ytterligare information från dig för att verifiera din identitet och säkerställa att du är auktoriserad att göra raderingsbegäran. MailaAI kommer att meddela dig när raderingsprocessen är slutförd.
+
+---
+
+## 31. Definitioner
+
+### Ordlista
+
+Följande termer har motsvarande betydelser genom hela dessa Villkor:
+
+- "Företagskund" avser en kund som använder Tjänsterna för affärs- eller kommersiella ändamål, i motsats till personlig eller konsumentanvändning.
+- "Konsument" avser en individ som använder Tjänsterna för personliga, familje- eller hushållsändamål.
+- "Upphovsrätt" avser de juridiska rättigheter som skyddar originalverk av författarskap, såsom litterära, musikaliska, konstnärliga och vissa andra intellektuella verk.  
+- "Ansvarsfriskrivning" avser ett uttalande som förnekar ansvar för eller begränsar omfattningen av rättigheter och skyldigheter.
+- "MailaAI" avser leverantören av Tjänsterna, som identifieras i avsnittet "Tjänsteleverantör" i dessa Villkor.
+- "Genererat innehåll" avser allt innehåll, material eller tillgångar som skapas eller produceras med hjälp av Tjänsterna, inklusive men inte begränsat till text, bilder, ljud, video och annat multimedieinnehåll.
+- "AI-genererat" avser innehåll som skapas eller produceras med hjälp av Tjänsterna, helt eller delvis, av en artificiell intelligensmodell eller algoritm.
+- "Gottgörelse" avser en avtalsförpliktelse att kompensera en annan part för förluster eller skador som åsamkats den andra parten.
+
+---
+
+Genom att använda MailaAI:s tjänster bekräftar du att du har läst, förstått och samtycker till att vara bunden av dessa användarvillkor. Om du inte samtycker till dessa villkor, vänligen avstå från att använda tjänsterna.
+
+Senast uppdaterad: [2024-03-12]
