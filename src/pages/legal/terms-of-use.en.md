@@ -13,7 +13,7 @@ slug: /en/legal/terms-of-use
 
 ## Terms of Use
 
-Last updated: 12 March 2024
+Last updated: 14 March 2024
 
 ## 1. Introduction
 
@@ -62,11 +62,19 @@ We reserve the right to modify the contents of our websites at any time, but we 
 
 ---
 
-## 3. Service Providers
+## 3. Service Providers and Data Handling
 
--
+MailaAI collaborates with various third-party service providers to ensure the efficient and secure delivery of our Services to you. These providers are carefully chosen for their expertise and capabilities in supporting the functionalities and features that MailaAI offers. It's important to note that in the process of delivering these services, your data may be processed or pass through the systems of these service providers. Below is a list of our key service providers:
+
+- **OpenAI**: Specializes in advanced AI technologies and models. [Privacy Policy](https://openai.com/privacy/)
+  - **Microsoft**: Offers cloud computing services, including Azure, and various other technology solutions. [Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement)
+- **Amazon Web Services (AWS)**: Provides a broad set of global cloud-based products. [Privacy Policy](https://aws.amazon.com/privacy/)
+- **Google Cloud Platform (GCP)**: Offers a suite of cloud computing services. [Privacy Policy](https://cloud.google.com/terms/cloud-privacy-notice)
+- **Anthropic**: Focuses on AI safety and research. [Privacy Policy](https://www.anthropic.com/privacy-policy)
+- **Vercel**: A cloud platform for static sites and Serverless Functions. [Privacy Policy](https://vercel.com/legal/privacy-policy)
 
 
+By using MailaAI's Services, you acknowledge and agree that your data may be processed by these service providers as part of the service delivery. MailaAI ensures that all service providers are compliant with our data protection standards and policies to safeguard your data's privacy and security.
 
 --
 ## 4. Age Requirements
