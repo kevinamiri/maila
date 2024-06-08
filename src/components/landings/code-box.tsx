@@ -67,17 +67,17 @@ const CodeDisplayComponent: FC = () => {
 
     const code = samples.find((sample) => sample.lang === lang)?.code.trim() || '';
 
-    useEffect(() => {
-        fetch('https://keyword-explorer.maila.ai/.well-known/openapi.yaml')
-            .then((response) => response.text())
-            .then((data) => setSchemaSpecification(data));
-    }, []);
+    // useEffect(() => {
+    //     fetch('https://keyword-explorer.maila.ai/.well-known/openapi.yaml')
+    //         .then((response) => response.text())
+    //         .then((data) => setSchemaSpecification(data));
+    // }, []);
 
-    useEffect(() => {
-        fetch('https://keyword-explorer.maila.ai/.well-known/ai-plugin.json')
-            .then((response) => response.text())
-            .then((data) => setSchemaJson(data));
-    }, []);
+    // useEffect(() => {
+    //     fetch('https://keyword-explorer.maila.ai/.well-known/ai-plugin.json')
+    //         .then((response) => response.text())
+    //         .then((data) => setSchemaJson(data));
+    // }, []);
 
     return (
         <>
@@ -180,6 +180,7 @@ const CodeDisplayComponent: FC = () => {
                     <SyntaxHighlighter language={lang} style={codeStyle}>
                         {JSON.parse(code)}
                     </SyntaxHighlighter>
+            
                     <Box
                         sx={{
                             display: 'flex',

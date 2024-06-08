@@ -9,19 +9,19 @@ import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 
-interface StatesProps {
-  label?: string;
-  number?: string;
-  label2?: string;
-  number2?: string;
+interface SimpleStateProps {
+  label: string;
+  number: string | React.ReactNode;  // Allow ReactNode along with string
+  label2: string;
+  number2: string | React.ReactNode; // Allow ReactNode along with string
 }
 
-const SimpleState: React.FC<StatesProps> = ({
+const SimpleState: React.FC<SimpleStateProps> = ({
   label = "Totall number of characters handled",
   number = "0",
   label2 = "Total number of tokens used",
   number2 = "0",
-}: StatesProps) => (
+}: SimpleStateProps) => (
   <Box>
     <Card>
       <CardHeader title={"Usage"} />
@@ -36,7 +36,7 @@ const SimpleState: React.FC<StatesProps> = ({
             </TableCell>
             <TableCell>
               <Typography color='textSecondary' variant='body2'>
-                {`${number}`}
+                {number}
               </Typography>
             </TableCell>
           </TableRow>
@@ -50,7 +50,7 @@ const SimpleState: React.FC<StatesProps> = ({
             </TableCell>
             <TableCell>
               <Typography color='textSecondary' variant='body2'>
-                {`${number2}`}
+                {number2}
               </Typography>
             </TableCell>
           </TableRow>

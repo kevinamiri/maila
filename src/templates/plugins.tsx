@@ -7,6 +7,7 @@ import Content from "../components/homepage/Content";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import FeatureSection from "components/landings/feature-section";
+import DiscussionFeature from "components/landings/landing-feature";
 
 const PluginsPageTemplate = ({ content, contentComponent: PageContent = Content, tags, langKey }) => (
   <Box sx={{ mt: 8 }}>
@@ -35,6 +36,7 @@ const PluginsPage = ({ data, location }) => {
     <Layout data={data} jsonData={jsonData} location={location}>
       <Container>
         <FeatureSection title="Feature Title" description="Feature Description" primaryButtonText="Primary Button" />
+        <DiscussionFeature />
       </Container>
     </Layout>
   );

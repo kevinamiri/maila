@@ -11,7 +11,20 @@ import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import CheckoutButton from "./CheckoutButton";
 
-const UserCardDetailsList = (props) => {
+interface UserCardDetailsListProps {
+  title: string;
+  emailLabel: string;
+  email: string;
+  name1: string;
+  value1: string;
+  name2: string;
+  value2: string;
+  userType: React.ReactNode;
+  userTypeLabel: string;
+  upgradeLabel?: string;
+}
+
+const UserCardDetailsList: React.FC<UserCardDetailsListProps> = (props) => {
   const {
     title,
     emailLabel,
@@ -24,6 +37,7 @@ const UserCardDetailsList = (props) => {
     userTypeLabel,
     upgradeLabel,
   } = props;
+
   return (
     <Card>
       <CardHeader title={title} />
@@ -32,48 +46,48 @@ const UserCardDetailsList = (props) => {
         <TableBody>
           <TableRow>
             <TableCell>
-              <Typography color='textPrimary' variant='subtitle2'>
+              <Typography color="textPrimary" variant="subtitle2">
                 {emailLabel}
               </Typography>
             </TableCell>
             <TableCell>
-              <Typography color='textSecondary' variant='body2'>
+              <Typography color="textSecondary" variant="body2">
                 {email}
               </Typography>
             </TableCell>
           </TableRow>
           <TableRow>
             <TableCell>
-              <Typography color='textPrimary' variant='subtitle2'>
+              <Typography component="span" color="textPrimary" variant="subtitle2">
                 {name1}
               </Typography>
             </TableCell>
             <TableCell>
-              <Typography color='textSecondary' variant='body2'>
+              <Typography component="span" color="textSecondary" variant="body2">
                 {value1}
               </Typography>
             </TableCell>
           </TableRow>
           <TableRow>
             <TableCell>
-              <Typography color='textPrimary' variant='subtitle2'>
+              <Typography component="span" color="textPrimary" variant="subtitle2">
                 {name2}
               </Typography>
             </TableCell>
             <TableCell>
-              <Typography color='textSecondary' variant='body2'>
+              <Typography component="span" color="textSecondary" variant="body2">
                 {value2}
               </Typography>
             </TableCell>
           </TableRow>
           <TableRow>
             <TableCell>
-              <Typography color='textPrimary' variant='subtitle2'>
+              <Typography component="span" color="textPrimary" variant="subtitle2">
                 {userTypeLabel}
               </Typography>
             </TableCell>
             <TableCell>
-              <Typography color='textSecondary' variant='body2'>
+              <Typography component="span" color="textSecondary" variant="body2">
                 {userType}
               </Typography>
             </TableCell>

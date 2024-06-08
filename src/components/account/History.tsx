@@ -1,20 +1,16 @@
-import type { FC } from "react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo, FC } from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import Divider from "@mui/material/Divider";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableRow from "@mui/material/TableRow";
-import Typography from "@mui/material/Typography";
-import { Auth } from "aws-amplify";
 import Stack from "@mui/material/Stack";
 import Alert from "@mui/material/Alert";
 import LinearProgress from "@mui/material/LinearProgress";
+import Skeleton from "@mui/material/Skeleton";
+import { Auth } from "aws-amplify";
+import HistoryTab from "./HistoryTab";
 
-// Define the type for a Post
+// Post type
 type Post = {
   id: string;
   userQuery: string;
@@ -24,41 +20,49 @@ type Post = {
 const History: FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   // Fetch data from the API
   const fetchHistoryData = async () => {
-    const apiUrl = `https://api.maila.ai/history-data`;
-    const user = await Auth.currentAuthenticatedUser();
-    const params = { username: user.username };
-    const response = await fetch(apiUrl, {
-      headers: {
-        Authorization: `Bearer ${(await Auth.currentSession())
-          .getIdToken()
-          .getJwtToken()}`,
-      },
-      method: "POST",
-      body: JSON.stringify(params),
-    });
-    const data = await response.json();
-    return data;
+    try {
+      const apiUrl = `https://api.maila.ai/history-data`;
+      const user = await Auth.currentAuthenticatedUser();
+      const params = { username: user.username };
+      const response = await fetch(apiUrl, {
+        headers: {
+          Authorization: `Bearer ${(await Auth.currentSession())
+            .getIdToken()
+            .getJwtToken()}`,
+        },
+        method: "POST",
+        body: JSON.stringify(params),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      if (!Array.isArray(data)) {
+        throw new Error("Data is not an array");
+      }
+
+      setPosts(data);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  // Fetch data on component mount
   useEffect(() => {
-    fetchHistoryData().then(setPosts);
-    setLoading(false);
+    fetchHistoryData();
   }, []);
 
-  // Extract values from the post object
-  const extractValues = (postObject: object) => {
-    const values = [];
-    for (const key in postObject) {
-      if (postObject.hasOwnProperty(key)) {
-        values.push(postObject[key]["S"]);
-      }
-    }
-    return values;
-  };
+  // Extract values from post object
+  const extractValues = (postObject: Record<string, any>): string[] =>
+    Object.keys(postObject).map((key) => postObject[key]["S"]);
 
   return (
     <Box
@@ -69,56 +73,34 @@ const History: FC = () => {
       }}
     >
       <Stack sx={{ width: "100%", mb: 4 }} spacing={2}>
-        <Alert severity='info'>
+        <Alert severity="info">
           This page and its functionality is currently under development, and we
           expect to add more additional features shortly.
         </Alert>
       </Stack>
-      <Card>
-        <CardHeader title='Saved Outputs' />
-        {loading ? (
-          <Box sx={{ width: "100%" }}>
-            <LinearProgress />
-          </Box>
-        ) : null}
-        <Divider />
-        <Table>
-          <TableBody>
-            {posts &&
-              posts.map((post, index) => {
-                const postValues = extractValues(JSON.parse(post.allUserPost));
-                return (
-                  <TableRow
-                    key={post.id + index}
-                    sx={{
-                      "&:last-child td": {
-                        border: 0,
-                      },
-                    }}
-                  >
-                    <TableCell>
-                      <Typography color='textSecondary' variant='body1'>
-                        {post.userQuery}
-                      </Typography>
-                    </TableCell>
-
-                    {postValues.map((value, inx) => {
-                      return (
-                        <TableCell key={inx}>
-                          <Typography color='textSecondary' variant='body1'>
-                            {value}
-                          </Typography>
-                        </TableCell>
-                      );
-                    })}
-                  </TableRow>
-                );
-              })}
-          </TableBody>
-        </Table>
-      </Card>
+      {loading ? (
+        <Box sx={{ width: "100%" }}>
+          <LinearProgress />
+          <Skeleton variant="rectangular" width="100%" height={60} />
+        </Box>
+      ) : error ? (
+        <Alert severity="error">{error}</Alert>
+      ) : (
+        <Stack spacing={2}>
+          {posts.map((post, index) => {
+            return (
+              <Card key={post.id + index}>
+                <Divider />
+                <Box p={2}>
+                  <HistoryTab postContents={post.allUserPost} input={post.userQuery}/>
+                </Box>
+              </Card>
+            );
+          })}
+        </Stack>
+      )}
     </Box>
   );
 };
 
-export default History;
+export default memo(History);

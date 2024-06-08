@@ -1,258 +1,181 @@
-Rewrite the following code snippet according to the following guidelines:
+You will be provided with code snippets. Your task is follow the given goals to assist user.
 
-Guidelines:
+## Styles:
 
-- Use meaningful semantic names. (No more than two words)
-- Only break code into smaller functions if necessary. Avoid unnecessary complexity.
-- Use comments wisely. Good code mostly documents itself. Comments should be used to explain why something is done, not how.
-- Use async/await instead of promises, try catch instead of .catch
-- Consistent formatting improves readability. This includes indentation, spacing, and organizing code in a logical order.
+### Writing Style Guide:
+1. Descriptive and Concise:
+   - Use minimalist and concise language.
+   - Maintain an objective and understated tone.
+   - Prefer short declarative sentences and simple vocabulary.
+   - Use concrete nouns.
+   - Stay to the point and keep a balance. Be concise to the core.
 
-import React, { useEffect, useRef } from "react";
-import { navigate } from "gatsby";
-import { useLocation } from "@reach/router";
-import \* as Yup from "yup";
-import { Formik } from "formik";
+### Code Writing Style Guide:
+1. Readability and Minimalism:
+   - Use clear, short semantic names (not more than two words).
+   - Keep comments minimal and visual.
+     - Create usage examples in comments.
+     - Specify types.
+     - Make it easily understandable at first glance using simple words.
+   - Use emojis as visual aids if they enhance helpfulness and clarity.
+   - Aim to keep the code as simple as possible.
+
+2. Asynchronous Programming:
+   - Prefer `async`, `await`, `try`, and `catch` if has utility.
+   - Perfer using functional programming like map, filter, reduce, etc if makes code more readable.
+   - Perfer using conditional operator, short circuit evaluation, ternary operator if only makes code more cleaner.
+3. Logging:
+   - Log short information, such as the number of items or the length of text, at each step for easier debugging.
+   
+4. Examples and Features:
+   - Provide examples of usage for functions in comments.
+   - Convert commented-out code into features, if helps.
+
+
+```tsx
+import React, { useEffect, useState, memo, FC } from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import FormHelperText from "@mui/material/FormHelperText";
-import TextField from "@mui/material/TextField";
-import Typography from "@mui/material/Typography";
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
 import Divider from "@mui/material/Divider";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableRow from "@mui/material/TableRow";
+import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
+import Alert from "@mui/material/Alert";
+import LinearProgress from "@mui/material/LinearProgress";
+import Skeleton from "@mui/material/Skeleton";
 import { Auth } from "aws-amplify";
-import { useSnackbar } from "notistack";
-import useIsMountedRef from "../../../hooks/useIsMountedRef";
-import { useIntl } from "react-intl";
-import Link from "../../../components/Link";
 
-const VerifyCodeAmplify = () => {
-const isMountedRef = useIsMountedRef();
-const location = useLocation();
-const { enqueueSnackbar } = useSnackbar();
-const itemsRef = useRef([]);
-const intl = useIntl();
-
-useEffect(() => {
-itemsRef.current = itemsRef.current.slice(0, 6);
-}, []);
-
-return (
-<>
-<Box
-sx={{
-          alignItems: "center",
-          display: "flex",
-          justifyContent: "space-between",
-          mb: 3,
-        }} >
-<div>
-<Typography color='textPrimary' gutterBottom variant='h4'>
-{intl.formatMessage({ id: "F32" })}
-</Typography>
-</div>
-</Box>
-<Formik
-initialValues={{
-          email: location.state?.username || "",
-          code: ["", "", "", "", "", ""],
-          submit: null,
-        }}
-validationSchema={Yup.object().shape({
-email: Yup.string()
-.email(`${intl.formatMessage({ id: "E501" })}`)
-.max(255)
-.required(`${intl.formatMessage({ id: "E502" })}`),
-code: Yup.array().of(
-Yup.string().required(`${intl.formatMessage({ id: "E503" })}`)
-),
-})}
-onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
-try {
-await Auth.confirmSignUp(values.email, values.code.join(""));
-enqueueSnackbar(`${intl.formatMessage({ id: "E509" })}`, {
-variant: "success",
-});
-navigate("/auth/login");
-} catch (err) {
-console.error(err);
-if (isMountedRef.current) {
-setStatus(true);
-setErrors({ submit: err.message });
-setSubmitting(false);
-}
-}
-}} >
-{({
-errors,
-handleBlur,
-handleChange,
-handleSubmit,
-isSubmitting,
-setFieldValue,
-touched,
-values,
-}) => (
-<form noValidate onSubmit={handleSubmit}>
-{!location.state?.username ? (
-<TextField
-id='email'
-autoFocus
-error={Boolean(touched.email && errors.email)}
-fullWidth
-helperText={touched.email && typeof errors.email === 'string' ? errors.email : ''}
-label={intl.formatMessage({ id: "F44" })}
-margin='normal'
-name='email'
-onBlur={handleBlur}
-onChange={handleChange}
-type='email'
-value={values.email}
-variant='outlined'
-/>
-) : (
-<TextField
-id='username'
-disabled
-fullWidth
-margin='normal'
-value={location && location.state && (location.state as any).username ? (location.state as any).username : ''}
-variant='outlined'
-/>
-)}
-<Typography
-color='textSecondary'
-sx={{
-                mb: 2,
-                mt: 3,
-              }}
-variant='subtitle2' >
-{intl.formatMessage({ id: "F39" })}
-</Typography>
-<Box
-sx={{
-                display: "grid",
-                columnGap: "16px",
-                gridTemplateColumns: "repeat(7, 1fr)",
-                pt: 1,
-              }} >
-{[1, 2, 3, 4, 5, 6].map((ref, i) => (
-<TextField
-id={`code-${i}`}
-error={Boolean(
-Array.isArray(touched.code) &&
-touched.code.length === 6 &&
-errors.code
-)}
-fullWidth
-inputRef={(el) => (itemsRef.current[i] = el)}
-key={`code-${i}`}
-name={`code[${i}]`}
-onBlur={handleBlur}
-onKeyDown={(event) => {
-if (event.code === "ENTER") {
-if (values.code[i]) {
-setFieldValue(`code[${i}]`, "");
-return;
-}
-
-                      if (i > 0) {
-                        setFieldValue(`code[${i}]`, "");
-                        itemsRef.current[i - 1].focus();
-                        return;
-                      }
-                    }
-
-                    if (Number.isInteger(parseInt(event.key, 10))) {
-                      setFieldValue(`code[${i}]`, event.key);
-
-                      if (i < 5) {
-                        itemsRef.current[i + 1].focus();
-                      }
-                    }
-                  }}
-                  onPaste={(event) => {
-                    const paste = event.clipboardData.getData("text");
-                    const pasteArray = paste.split("");
-
-                    if (pasteArray.length !== 6) {
-                      return;
-                    }
-
-                    let valid = true;
-
-                    pasteArray.forEach((x) => {
-                      if (!Number.isInteger(parseInt(x, 10))) {
-                        valid = false;
-                      }
-                    });
-
-                    if (valid) {
-                      setFieldValue("code", pasteArray);
-                      itemsRef.current[5].focus();
-                    }
-                  }}
-                  value={values.code[i]}
-                  sx={{
-                    display: "inline-block",
-                    textAlign: "center",
-                    "& .MuiInputBase-input": {
-                      textAlign: "center",
-                    },
-                  }}
-                  variant='outlined'
-                />
-              ))}
-            </Box>
-            {Boolean(
-              Array.isArray(touched.code) &&
-              touched.code.length === 6 &&
-              errors.code
-            ) && (
-                <FormHelperText error sx={{ mx: "14px" }}>
-                  {Array.isArray(errors.code) &&
-                    errors.code.find((x) => x !== undefined)}
-                </FormHelperText>
-              )}
-            {errors.submit && (
-              <Box sx={{ mt: 3 }}>
-                <FormHelperText error>{errors.submit.toString()}</FormHelperText>
-              </Box>
-            )}
-            <Box sx={{ mt: 3 }}>
-              <Button
-                color='primary'
-                disabled={isSubmitting}
-                fullWidth
-                size='large'
-                type='submit'
-                variant='contained'
-              >
-                {intl.formatMessage({ id: "F31" })}
-              </Button>
-            </Box>
-          </form>
-        )}
-      </Formik>
-      <Divider sx={{ my: 3 }} />
-      <Box sx={{ display: "flex", p: 1 }}>
-        <Box sx={{ p: 1, flexGrow: 1 }}>
-          <Link color='textSecondary' to='/auth/Recovery'>
-            {intl.formatMessage({ id: "F30" })}
-          </Link>
-        </Box>
-        <Box sx={{ p: 1 }}>
-          <Link color='textSecondary' to='/auth/login'>
-            {intl.formatMessage({ id: "L66" })}
-          </Link>
-        </Box>
-      </Box>
-    </>
-
-);
+// Define the type for a Post
+type Post = {
+  id: string;
+  userQuery: string;
+  allUserPost: string;
 };
 
-export default VerifyCodeAmplify;
+const History: FC = () => {
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch data from the API
+  const fetchHistoryData = async () => {
+    try {
+      const apiUrl = `https://api.maila.ai/history-data`;
+      const user = await Auth.currentAuthenticatedUser();
+      const params = { username: user.username };
+      const response = await fetch(apiUrl, {
+        headers: {
+          Authorization: `Bearer ${(await Auth.currentSession())
+            .getIdToken()
+            .getJwtToken()}`,
+        },
+        method: "POST",
+        body: JSON.stringify(params),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      if (!Array.isArray(data)) {
+        throw new Error("Data is not an array");
+      }
+
+      setPosts(data);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Fetch data on component mount
+  useEffect(() => {
+    fetchHistoryData();
+  }, []);
+
+  // Extract values from the post object
+  const extractValues = (postObject: Record<string, any>) =>
+    Object.keys(postObject).map((key) => postObject[key]["S"]);
+
+  return (
+    <Box
+      sx={{
+        backgroundColor: "background.default",
+        minHeight: "100%",
+        p: 3,
+      }}
+    >
+      <Stack sx={{ width: "100%", mb: 4 }} spacing={2}>
+        <Alert severity="info">
+          This page and its functionality is currently under development, and we
+          expect to add more additional features shortly.
+        </Alert>
+      </Stack>
+      <Card>
+        <CardHeader title="Saved Outputs" />
+        {loading ? (
+          <Box sx={{ width: "100%" }}>
+            <LinearProgress />
+            <Skeleton variant="rectangular" width="100%" height={60} />
+          </Box>
+        ) : error ? (
+          <Alert severity="error">{error}</Alert>
+        ) : (
+          <>
+            <Divider />
+            <Table>
+              <TableBody>
+                {posts.map((post, index) => {
+                  const postValues: string[] = extractValues(JSON.parse(post.allUserPost));
+                  console.log(postValues);
+                  return (
+                    <TableRow
+                      key={post.id + index}
+                      sx={{
+                        "&:last-child td": {
+                          border: 0,
+                        },
+                      }}
+                    >
+                      <TableCell>
+                        <Typography color="textSecondary" variant="body1">
+                          {post.userQuery}
+                        </Typography>
+                      </TableCell>
+                      {postValues.map((value, inx) => (
+                        <TableCell key={inx}>
+                          <Typography color="textSecondary" variant="body1">
+                            {value}
+                          </Typography>
+                        </TableCell>
+                      ))}
+                    </TableRow>
+                  );
+                })}
+              </TableBody>
+            </Table>
+          </>
+        )}
+      </Card>
+    </Box>
+  );
+};
+
+export default memo(History);
+
 
 ```
 
-```
+Goal: 
+- Rewrite the given snippet in style of clean code.
+- Reflect the changes you made after the code is rewritten.
+- Apply React.memo for potential performance optimization if required.
+- Implement MUI Skeleton for displaying a loading state if will require more time to load.
+- Instead of new columns use Tab component, instead show posts in cards rather than table each card should indicate each post all cards should be in one column.
