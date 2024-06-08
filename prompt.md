@@ -33,149 +33,210 @@ You will be provided with code snippets. Your task is follow the given goals to 
 
 
 ```tsx
-import React, { useEffect, useState, memo, FC } from "react";
+import { Fragment, useState } from "react";
+import { useFormik } from "formik";
+import React from "react";
+import * as Yup from "yup";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
 import Divider from "@mui/material/Divider";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableRow from "@mui/material/TableRow";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormHelperText from "@mui/material/FormHelperText";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
-import Alert from "@mui/material/Alert";
-import LinearProgress from "@mui/material/LinearProgress";
-import Skeleton from "@mui/material/Skeleton";
-import { Auth } from "aws-amplify";
 
-// Define the type for a Post
-type Post = {
+interface PlanOption {
   id: string;
-  userQuery: string;
-  allUserPost: string;
-};
+  description: string;
+  label: string;
+  priceOptions: PriceOption[];
+  value: string;
+  status: boolean;
+}
 
-const History: FC = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+// Define the structure of a price option
+interface PriceOption {
+  chargeType: string;
+  amount: string | number;
+}
 
-  // Fetch data from the API
-  const fetchHistoryData = async () => {
-    try {
-      const apiUrl = `https://api.maila.ai/history-data`;
-      const user = await Auth.currentAuthenticatedUser();
-      const params = { username: user.username };
-      const response = await fetch(apiUrl, {
-        headers: {
-          Authorization: `Bearer ${(await Auth.currentSession())
-            .getIdToken()
-            .getJwtToken()}`,
-        },
-        method: "POST",
-        body: JSON.stringify(params),
-      });
+// Define the available plan options
+const planOptions: PlanOption[] = [
+  {
+    id: "1",
+    description: "Free 10,000 word per month",
+    label: "Free",
+    priceOptions: [
+      {
+        chargeType: "monthly",
+        amount: 0,
+      },
+      {
+        chargeType: "yearly",
+        amount: 0,
+      },
+    ],
+    value: "free",
+    status: true,
+  },
+  {
+    id: "2",
+    description: "1M word/month",
+    label: "Premium beta",
+    priceOptions: [
+      {
+        chargeType: "monthly",
+        amount: "9.8 USD",
+      },
+      {
+        chargeType: "yearly",
+        amount: "98 USD",
+      },
+    ],
+    value: "Premium Beta",
+    status: true,
+  },
+];
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+// Component for displaying and selecting billing plans
+export const BillingPlanCardContent: React.FC = () => {
+  // Initialize formik for form handling
+  const formik = useFormik({
+    initialValues: {
+      plan: "free",
+      submit: null,
+    },
+    validationSchema: Yup.object().shape({
+      plan: Yup.mixed().oneOf(planOptions.map((option) => option.value)),
+    }),
+    onSubmit: async (values, helpers) => {
+      try {
+        helpers.setStatus({ success: true });
+        helpers.setSubmitting(false);
+      } catch (err) {
+        console.error(err);
+        helpers.setStatus({ success: false });
+        helpers.setErrors({ submit: err.message });
+        helpers.setSubmitting(false);
       }
+    },
+  });
 
-      const data = await response.json();
+  // State for handling the charge type (monthly/yearly)
+  const [chargeType, setChargeType] = useState<string>("monthly");
 
-      if (!Array.isArray(data)) {
-        throw new Error("Data is not an array");
-      }
-
-      setPosts(data);
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setLoading(false);
+  // Handler for changing the charge type
+  const handleChargeTypeChange = (
+    event: React.MouseEvent<HTMLElement>,
+    newChargeType: string | null
+  ) => {
+    if (newChargeType) {
+      setChargeType(newChargeType);
     }
   };
 
-  // Fetch data on component mount
-  useEffect(() => {
-    fetchHistoryData();
-  }, []);
-
-  // Extract values from the post object
-  const extractValues = (postObject: Record<string, any>) =>
-    Object.keys(postObject).map((key) => postObject[key]["S"]);
-
   return (
-    <Box
-      sx={{
-        backgroundColor: "background.default",
-        minHeight: "100%",
-        p: 3,
-      }}
-    >
-      <Stack sx={{ width: "100%", mb: 4 }} spacing={2}>
-        <Alert severity="info">
-          This page and its functionality is currently under development, and we
-          expect to add more additional features shortly.
-        </Alert>
-      </Stack>
-      <Card>
-        <CardHeader title="Saved Outputs" />
-        {loading ? (
-          <Box sx={{ width: "100%" }}>
-            <LinearProgress />
-            <Skeleton variant="rectangular" width="100%" height={60} />
-          </Box>
-        ) : error ? (
-          <Alert severity="error">{error}</Alert>
-        ) : (
-          <>
+    <>
+      <Box
+        sx={{
+          alignItems: "center",
+          display: "flex",
+          px: 3,
+          py: 2,
+        }}
+      >
+        <Typography color='textPrimary' sx={{ mr: 3 }} variant='subtitle2'>
+          Billing
+        </Typography>
+        <ToggleButtonGroup
+          exclusive
+          onChange={handleChargeTypeChange}
+          size='small'
+          value={chargeType}
+        >
+          <ToggleButton value='monthly'>Monthly</ToggleButton>
+          <ToggleButton value='yearly'>Yearly</ToggleButton>
+        </ToggleButtonGroup>
+      </Box>
+      <Divider />
+      <RadioGroup
+        name='plan'
+        onBlur={formik.handleBlur}
+        onChange={formik.handleChange}
+        value={formik.values.plan}
+      >
+        {planOptions.map((option) => (
+          <Fragment key={option.id}>
+            <FormControlLabel
+              disableTypography
+              control={
+                <Radio
+                  {...(option.status ? {} : { disabled: true })}
+                  color='primary'
+                />
+              }
+              label={
+                <Box
+                  sx={{
+                    alignItems: "center",
+                    display: "flex",
+                    width: "100%",
+                  }}
+                >
+                  <div>
+                    <Typography color='textPrimary' variant='body1'>
+                      {option.label}
+                    </Typography>
+                    <Typography color='textSecondary' variant='caption'>
+                      {option.description}
+                    </Typography>
+                  </div>
+                  <Box sx={{ flexGrow: 1 }} />
+                  <Typography color='textPrimary' variant='h5'>
+                    {
+                      option.priceOptions.find(
+                        (priceOption: PriceOption) =>
+                          priceOption.chargeType === chargeType
+                      )?.amount
+                    }
+                  </Typography>
+                </Box>
+              }
+              sx={{
+                m: 0,
+                px: 3,
+                py: 1.5,
+              }}
+              value={option.value}
+            />
             <Divider />
-            <Table>
-              <TableBody>
-                {posts.map((post, index) => {
-                  const postValues: string[] = extractValues(JSON.parse(post.allUserPost));
-                  console.log(postValues);
-                  return (
-                    <TableRow
-                      key={post.id + index}
-                      sx={{
-                        "&:last-child td": {
-                          border: 0,
-                        },
-                      }}
-                    >
-                      <TableCell>
-                        <Typography color="textSecondary" variant="body1">
-                          {post.userQuery}
-                        </Typography>
-                      </TableCell>
-                      {postValues.map((value, inx) => (
-                        <TableCell key={inx}>
-                          <Typography color="textSecondary" variant="body1">
-                            {value}
-                          </Typography>
-                        </TableCell>
-                      ))}
-                    </TableRow>
-                  );
-                })}
-              </TableBody>
-            </Table>
-          </>
-        )}
-      </Card>
-    </Box>
+          </Fragment>
+        ))}
+      </RadioGroup>
+      {formik.touched.plan && formik.errors.plan && (
+        <FormHelperText error>{formik.errors.plan}</FormHelperText>
+      )}
+      {formik?.errors?.submit && (
+        <FormHelperText error sx={{ mt: 2 }}>
+          {typeof formik.errors.submit === "string"
+            ? formik.errors.submit
+            : JSON.stringify(formik.errors.submit)}
+        </FormHelperText>
+      )}
+    </>
   );
 };
 
-export default memo(History);
-
+export default BillingPlanCardContent;
 
 ```
 
 Goal: 
 - Rewrite the given snippet in style of clean code.
+- Start by identifying the problem and articilate and thought about the problem inside <thoughts> tag. What needs to be done, how to do it, edge cases, etc.
 - Reflect the changes you made after the code is rewritten.
 - Apply React.memo for potential performance optimization if required.
 - Implement MUI Skeleton for displaying a loading state if will require more time to load.
-- Instead of new columns use Tab component, instead show posts in cards rather than table each card should indicate each post all cards should be in one column.
+- Add handle network error, handle loading, if applicable.
