@@ -5,8 +5,26 @@ import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
 import Grid from "@mui/material/Grid";
+import { useId } from 'react';
+
+
+import { useEffect, useState } from 'react'
+
+const ClientOnlyTextField = ({ ...props }) => {
+  const [hasMounted, setHasMounted] = useState(false)
+
+  useEffect(() => {
+    setHasMounted(true)
+  }, [])
+
+  if (!hasMounted) return null
+
+  return <TextField {...props} />
+}
+
 
 const TypingEffect = ({ helpernote }) => {
+  const id = useId();
   const helpenote = helpernote;
   const reference = React.useRef();
   const buttonRef = React.useRef<HTMLButtonElement | null>(null);
@@ -65,7 +83,7 @@ John Doe`;
               spacing={2}
             >
               <Grid xs={9} item>
-                <TextField
+                <ClientOnlyTextField
                   fullWidth
                   multiline
                   rows={2}
@@ -88,7 +106,7 @@ John Doe`;
                 </Button>
               </Grid>
               <Grid xs={12} item>
-                <TextField
+                <ClientOnlyTextField
                   InputLabelProps={{ shrink: true }}
                   label='AI Output'
                   fullWidth
@@ -97,6 +115,7 @@ John Doe`;
                   rows={8}
                   helperText={helpenote}
                   variant='outlined'
+                  id={id}
                 />
               </Grid>
             </Grid>

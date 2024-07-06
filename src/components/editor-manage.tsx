@@ -3,7 +3,6 @@ import ProductDescription, {
   ProductGenerationProps,
 } from "./editors/ProductDescription";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
