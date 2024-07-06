@@ -4,7 +4,6 @@ import { Editable, Slate, ReactEditor } from "editable-slate-react";
 import { Editor, Transforms, Descendant } from "slate";
 import { Node as SlateNode } from "slate";
 import { Text as Textt } from "slate";
-import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import { Leaf } from "./Leaf";
@@ -14,7 +13,6 @@ import {
   updateSelectedText,
 } from "../../slices/editorParams";
 import FooterEditorBar from "./FooterEditorBar";
-// import usePrism from "../../hooks/usePrism";
 const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
 import FormatBoldRoundedIcon from "@mui/icons-material/FormatBold";
 import FormatItalicRoundedIcon from "@mui/icons-material/FormatItalic";
@@ -28,6 +26,7 @@ import FormatListBulletedRoundedIcon from "@mui/icons-material/FormatListBullete
 import { StyledToggleButtonGroup } from "./toggle-button-group";
 import UseCompletionSuffix from "hooks/UseCompletionSuffix";
 import { useSelector, useDispatch } from "react-redux";
+import { AppDispatch } from "store";
 import { updateProgressValue } from "../../slices/progress";
 import { useSnackbar } from "notistack";
 import HoveringToolbar from "./HoveringToolbar";
@@ -42,10 +41,10 @@ import { toggleMark, BlockButton, MarkButton, Element } from "./formats";
 
 const MainSlateEditor = (props) => {
   //hooks must be inside of the function
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   // const { decorate } = usePrism();
-  const fieldValues = useSelector((state) => state.fieldsValue);
-  const { highlightedText } = useSelector((state) => state.expandReducer);
+  const fieldValues = useSelector((state: any) => state.fieldsValue);
+  const { highlightedText } = useSelector((state: any) => state.expandReducer);
   const { enqueueSnackbar } = useSnackbar();
   const renderElement = useCallback((props) => <Element {...props} />, []);
   const renderLeaf = useCallback((props) => <Leaf {...props} />, []);
@@ -128,10 +127,13 @@ const MainSlateEditor = (props) => {
   }, []);
 
   const [value, setValue] = useState<Descendant[]>(defaultValue);
-  const handleChange = (value: SlateNode[]) => {
+  
+  const handleChange = (value: Descendant[]) => {
     setValue(value);
     const content = JSON.stringify(value);
     localStorage.setItem(storageKey, content);
+    
+    
     if (!editor.selection) return;
     dispatch(setCurrentWordRange(editor.selection));
     savedSelection.current = editor.selection;
@@ -144,8 +146,8 @@ const MainSlateEditor = (props) => {
 
   const handleSuffix = (e) => {
     e.preventDefault();
-    window.grecaptcha.ready(() => {
-      window.grecaptcha
+    (window as any).grecaptcha.ready(() => {
+      (window as any).grecaptcha
         .execute(SITE_KEY, { action: "submit" })
         .then((gtoken) => {
           dispatch(updateProgressValue(15));
@@ -163,8 +165,8 @@ const MainSlateEditor = (props) => {
 
   const handleSuffixCode = (e) => {
     e.preventDefault();
-    window.grecaptcha.ready(() => {
-      window.grecaptcha
+    (window as any).grecaptcha.ready(() => {
+      (window as any).grecaptcha
         .execute(SITE_KEY, { action: "submit" })
         .then((gtoken) => {
           dispatch(updateProgressValue(15));
@@ -182,8 +184,8 @@ const MainSlateEditor = (props) => {
 
   const handleSuffixCodeItself = (e) => {
     e.preventDefault();
-    window.grecaptcha.ready(() => {
-      window.grecaptcha
+    (window as any).grecaptcha.ready(() => {
+      (window as any).grecaptcha
         .execute(SITE_KEY, { action: "submit" })
         .then((gtoken) => {
           dispatch(updateProgressValue(15));
@@ -201,8 +203,8 @@ const MainSlateEditor = (props) => {
 
   const handleGenerate = (e) => {
     e.preventDefault();
-    window.grecaptcha.ready(() => {
-      window.grecaptcha
+    (window as any).grecaptcha.ready(() => {
+      (window as any).grecaptcha
         .execute(SITE_KEY, { action: "submit" })
         .then((gtoken) => {
           dispatch(updateProgressValue(15));
@@ -220,8 +222,8 @@ const MainSlateEditor = (props) => {
 
   const handleTranslate = (e) => {
     e.preventDefault();
-    window.grecaptcha.ready(() => {
-      window.grecaptcha
+    (window as any).grecaptcha.ready(() => {
+      (window as any).grecaptcha
         .execute(SITE_KEY, { action: "submit" })
         .then((gtoken) => {
           dispatch(updateProgressValue(15));
@@ -240,8 +242,8 @@ const MainSlateEditor = (props) => {
   //handle clicks
   const handleGenerateButton = (e) => {
     e.preventDefault();
-    window.grecaptcha.ready(() => {
-      window.grecaptcha
+    (window as any).grecaptcha.ready(() => {
+      (window as any).grecaptcha
         .execute(SITE_KEY, { action: "submit" })
         .then((gtoken) => {
           dispatch(updateProgressValue(10));

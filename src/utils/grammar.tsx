@@ -1,41 +1,47 @@
-// const correct = "She no went to the market"
-// const incorrect = "She didn't go to the market but did she"
+type ComparisonResult = {
+  shared: string[];
+  diffRight: string[];
+  diffLeft: string[];
+};
 
-// const correctArray = correct.split(" ")
-// const incorrectArray = incorrect.split(" ")
+/**
+ * Compares two sentences and finds shared and different words.
+ * @param correct - The correct sentence
+ * @param incorrect - The sentence to compare
+ * @returns Object with shared and different words
+ * @example
+ * const result = compareStrings("She went to the market", "She go to the store");
+ * console.log(result);
+ * // { shared: ["She", "to", "the"], diffRight: ["went", "market"], diffLeft: ["go", "store"] }
+ */
+export const compareStrings = (correct: string, incorrect: string): ComparisonResult => {
+  try {
+    const correctWords = correct.split(" ");
+    const incorrectWords = incorrect.split(" ");
+    const maxLength = Math.max(correctWords.length, incorrectWords.length);
 
-// function compare(correctArray, incorrectArray) {
-//     for (let i = 0; i < correctArray.length; i++) {
-//         for (let j = 0; j < incorrectArray.length; j++) {
-//             if (correctArray[i] === incorrectArray[j]) {
-//                 console.log(correctArray[i])
-//             }
-//         }
-//     }
-// }
+    console.log(`📊 Comparing ${correctWords.length} vs ${incorrectWords.length} words`);
 
-// compare(correctArray, incorrectArray)
+    const result: ComparisonResult = { shared: [], diffRight: [], diffLeft: [] };
 
-/*
-1. Iterate through the correctArray and incorrectArray
-2. If the values are the same, add them to the sharedValues array
-3. If the values are different, add them to the diffValuesRight and diffValuesLeft arrays
-4. Return the sharedValues array, diffValuesRight array, and diffValuesLeft array in an object form
-*/
-
-export function findSharedSequence(correct: string, incorrect: string) {
-  let correctArray: string[] = correct.split(" ");
-  let incorrectArray: string[] = incorrect.split(" ");
-  let sharedValues = [];
-  let diffValuesRight = [];
-  let diffValuesLeft = [];
-  for (let i = 0; i < correctArray.length; i++) {
-    if (correctArray[i] === incorrectArray[i]) {
-      sharedValues.push(correctArray[i]);
-    } else {
-      diffValuesRight.push(correctArray[i]);
-      diffValuesLeft.push(incorrectArray[i]);
+    for (let i = 0; i < maxLength; i++) {
+      if (correctWords[i] === incorrectWords[i]) {
+        result.shared.push(correctWords[i]);
+      } else {
+        if (correctWords[i]) result.diffRight.push(correctWords[i]);
+        if (incorrectWords[i]) result.diffLeft.push(incorrectWords[i]);
+      }
     }
+
+    console.log(`✅ Comparison complete: ${result.shared.length} shared words found`);
+    return result;
+  } catch (error) {
+    console.error(`❌ Error comparing strings: ${error.message}`);
+    throw error;
   }
-  return { sharedValues, diffValuesRight, diffValuesLeft };
-}
+};
+
+// Uncomment to test the function
+// const testCorrect = "She no went to the market";
+// const testIncorrect = "She didn't go to the market but did she";
+// console.log(compareStrings(testCorrect, testIncorrect));

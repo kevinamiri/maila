@@ -17,7 +17,7 @@ export default function ProductDescriptionApp() {
           headerTitle='Product Description'
           generateButtonName='Generate description'
           toneTextField={true}
-          LabelsLists={[
+          labelsLists={[
             {
               label: "Brand name",
               placeholder: "Brand/Business name",

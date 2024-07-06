@@ -69,17 +69,7 @@ export default function WithIllustrationFeatures({
             ))}
           </Grid>
           <Grid item xs={12} md={4}>
-            {/* <Box sx={{ borderRadius: 4, maxWidth: 1 }}> */}
             <PopUpCards />
-            {/* <StaticImage
-                style={{
-                  clipPath: "polygon(0 0, 100% 0, 100% 96%, 0% 100%)",
-                  borderRadius: "6px",
-                }}
-                src='../../../static/img/5.jpg'
-                alt='A man checking his phone'
-              /> */}
-            {/* </Box> */}
           </Grid>
         </Grid>
       </Container>

@@ -4,10 +4,8 @@ import Link from "gatsby-link";
 import Button from '@mui/material/Button';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
-
-
 const SelectLanguageNav = (props) => {
-  const [boolinOnScroll, setboolinOnScroll] = useState(true)
+  // const [boolinOnScroll, setboolinOnScroll] = useState(true)
   const [languageColor, setLanguageColor] = useState(false)
 
 

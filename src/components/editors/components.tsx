@@ -4,40 +4,28 @@ import { cx, css } from "@emotion/css";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { styled } from "@mui/material/styles";
 
+// Styled component for toggle button group
 const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
   "& .MuiToggleButtonGroup-grouped": {
     margin: theme.spacing(0.5),
     border: 0,
-    "&.Mui-disabled": {
-      border: 0,
-    },
-    "&:not(:first-of-type)": {
-      borderRadius: theme.shape.borderRadius,
-    },
-    "&:first-of-type": {
-      borderRadius: theme.shape.borderRadius,
-    },
+    "&.Mui-disabled": { border: 0 },
+    "&:not(:first-of-type)": { borderRadius: theme.shape.borderRadius },
+    "&:first-of-type": { borderRadius: theme.shape.borderRadius },
   },
 }));
+
+// Types
 interface BaseProps {
   className: string;
   [key: string]: unknown;
 }
 type OrNull<T> = T | null;
 
+// Button component with conditional styling
 export const Button = React.forwardRef(
   (
-    {
-      className,
-      active,
-      reversed,
-      ...props
-    }: PropsWithChildren<
-      {
-        active: boolean;
-        reversed: boolean;
-      } & BaseProps
-    >,
+    { className, active, reversed, ...props }: PropsWithChildren<{ active: boolean; reversed: boolean } & BaseProps>,
     ref: Ref<OrNull<HTMLSpanElement>>
   ) => (
     <span
@@ -47,36 +35,20 @@ export const Button = React.forwardRef(
         className,
         css`
           cursor: pointer;
-          color: ${reversed
-            ? active
-              ? "white"
-              : "#aaa"
-            : active
-            ? "black"
-            : "#ccc"};
+          color: ${reversed ? (active ? "white" : "#aaa") : active ? "black" : "#ccc"};
         `
       )}
     />
   )
 );
 
+// EditorValue component to display the editor's text value
 export const EditorValue = React.forwardRef(
   (
-    {
-      className,
-      value,
-      ...props
-    }: PropsWithChildren<
-      {
-        value: any;
-      } & BaseProps
-    >,
-    ref: Ref<OrNull<null>>
+    { className, value, ...props }: PropsWithChildren<{ value: any } & BaseProps>,
+    ref: Ref<OrNull<HTMLDivElement>>
   ) => {
-    const textLines = value.document.nodes
-      .map((node) => node.text)
-      .toArray()
-      .join("\n");
+    const textLines = value.document.nodes.map((node) => node.text).toArray().join("\n");
     return (
       <div
         ref={ref}
@@ -117,11 +89,9 @@ export const EditorValue = React.forwardRef(
   }
 );
 
+// Icon component for displaying material icons
 export const Icon = React.forwardRef(
-  (
-    { className, ...props }: PropsWithChildren<BaseProps>,
-    ref: Ref<OrNull<HTMLSpanElement>>
-  ) => (
+  ({ className, ...props }: PropsWithChildren<BaseProps>, ref: Ref<OrNull<HTMLSpanElement>>) => (
     <span
       {...props}
       ref={ref}
@@ -137,11 +107,9 @@ export const Icon = React.forwardRef(
   )
 );
 
+// Instruction component for displaying instructions
 export const Instruction = React.forwardRef(
-  (
-    { className, ...props }: PropsWithChildren<BaseProps>,
-    ref: Ref<OrNull<HTMLDivElement>>
-  ) => (
+  ({ className, ...props }: PropsWithChildren<BaseProps>, ref: Ref<OrNull<HTMLDivElement>>) => (
     <div
       {...props}
       ref={ref}
@@ -159,13 +127,11 @@ export const Instruction = React.forwardRef(
   )
 );
 
+// Menu component using the styled ToggleButtonGroup
 export const Menu = React.forwardRef(
-  (
-    { className, ...props }: PropsWithChildren<BaseProps>,
-    ref: Ref<OrNull<HTMLDivElement>>
-  ) => (
+  ({ className, ...props }: PropsWithChildren<BaseProps>, ref: Ref<OrNull<HTMLDivElement>>) => (
     <StyledToggleButtonGroup
-      size='small'
+      size="small"
       {...props}
       ref={ref}
       className={cx(
@@ -180,17 +146,14 @@ export const Menu = React.forwardRef(
   )
 );
 
-export const Portal = ({ children }) => {
-  return typeof document === "object"
-    ? ReactDOM.createPortal(children, document.body)
-    : null;
+// Portal component for rendering children into a portal
+export const Portal = ({ children }: { children: React.ReactNode }) => {
+  return typeof document === "object" ? ReactDOM.createPortal(children, document.body) : null;
 };
 
+// Toolbar component using the Menu component
 export const Toolbar = React.forwardRef(
-  (
-    { className, ...props }: PropsWithChildren<BaseProps>,
-    ref: Ref<OrNull<HTMLDivElement>>
-  ) => (
+  ({ className, ...props }: PropsWithChildren<BaseProps>, ref: Ref<OrNull<HTMLDivElement>>) => (
     <Menu
       {...props}
       ref={ref}

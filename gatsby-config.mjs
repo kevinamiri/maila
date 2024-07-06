@@ -1,40 +1,48 @@
 import { dirname } from "path"
 import { fileURLToPath } from "url"
-import languages from "./src/data/languages.js";
-const siteUrl = `https://maila.ai/en`
+import languages from "./src/data/languages.js"
 
-
+const siteUrl = "https://maila.ai"
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+// Common file paths
+const paths = {
+  static: `${__dirname}/static`,
+  uploads: `${__dirname}/static/img`,
+  pages: `${__dirname}/src/pages`,
+  images: `${__dirname}/src/img/`,
+  articles: `${__dirname}/src/data/articles`,
+  sheets: `${__dirname}/src/data/sheets`,
+}
+
+const siteMetadata = {
+  title: `MAILA AI`,
+  description: `AI Copywriting & Writing Assistant`,
+  siteUrl,
+  image: "img/logo/mstile-150x150.png",
+  author: { name: "Kevin Amiri" },
+  organization: {
+    name: "MAILA AI",
+    url: `${siteUrl}/en`,
+    logo: "img/logo/logo-dark.svg",
+  },
+  languages,
+}
+
 const config = {
-  flags: {
-    DEV_SSR: true
-  },
-  siteMetadata: {
-    title: `MAILA AI`,
-    description: `AI Copywriting & Writing Assistant`,
-    siteUrl: "https://maila.ai/en",
-    image: "img/logo/mstile-150x150.png",
-    author: {
-      name: "Kevin Amiri",
-    },
-    organization: {
-      name: "MAILA AI",
-      url: "https://maila.ai/en",
-      logo: "img/logo/logo-dark.svg",
-    },
-    languages,
-  },
+  flags: { DEV_SSR: true },
+  siteMetadata,
   plugins: [
+    // TypeScript support
     {
       resolve: `gatsby-plugin-typescript`,
-      options: {
-        isTSX: true, // defaults to false
-        jsxPragma: `jsx`, // defaults to "React"
-        allExtensions: true, // defaults to false
-      },
+      options: { isTSX: true, jsxPragma: `jsx`, allExtensions: true },
     },
+
+    // UI and styling
     `gatsby-plugin-mui-emotion`,
+
+    // Internationalization
     {
       resolve: "gatsby-plugin-i18n",
       options: {
@@ -45,62 +53,27 @@ const config = {
     },
     {
       resolve: "gatsby-plugin-i18n-tags",
-      options: {
-        // Default options
-        tagPage: "src/templates/tags.tsx",
-        tagsUrl: "/tags/",
-        langKeyForNull: "any",
-      },
+      options: { tagPage: "src/templates/tags.tsx", tagsUrl: "/tags/", langKeyForNull: "any" },
     },
+
+    // Data transformers
     `gatsby-transformer-json`,
     `gatsby-transformer-csv`,
     `gatsby-plugin-mdx`,
-    {
+    `gatsby-transformer-javascript-frontmatter`,
+
+    // File system sources
+    ...Object.entries(paths).map(([name, path]) => ({
       resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/data/articles`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/data/sheets`,
-        name: "sheets",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/static`,
-        name: "static",
-      },
-    },
-    {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/static/img`,
-        name: "uploads",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/img/`,
-        name: "images",
-      },
-    },
-    "gatsby-transformer-javascript-frontmatter",
+      options: { path, name },
+    })),
+
+    // Image processing
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+
+    // Utility plugins
     "gatsby-plugin-resolve-src",
     {
       resolve: `gatsby-transformer-remark`,
@@ -122,39 +95,21 @@ const config = {
       },
     },
 
+    // SEO and site metadata
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => "https://maila.ai",
-        resolvePages: ({
-          allSitePage: { nodes: allPages }
-        }) => {
-          return allPages.map(page => {
-            return { ...page }
-          })
-        },
-        serialize: ({ path, modifiedGmt }) => {
-          return {
-            url: path,
-            lastmod: modifiedGmt,
-          }
-        },
+        query: `{ allSitePage { nodes { path } } }`,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => allPages,
+        serialize: ({ path, modifiedGmt }) => ({ url: path, lastmod: modifiedGmt }),
       },
     },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://maila.ai",
-        sitemap: "https://maila.ai/sitemap/sitemap-0.xml",
+        host: siteUrl,
+        sitemap: `${siteUrl}/sitemap/sitemap-0.xml`,
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
@@ -168,8 +123,8 @@ const config = {
         theme_color: `#50a1ff`,
         start_url: `/en/`,
         display: `standalone`,
-        description: `AI Copywriting & Writing Assistant`,
-        icon: `${__dirname}/src/img/logo/mstile-150x150.png`,
+        description: siteMetadata.description,
+        icon: `${paths.images}/logo/mstile-150x150.png`,
         localize: [
           {
             start_url: `/sv/`,
@@ -182,6 +137,6 @@ const config = {
       },
     },
   ],
-};
+}
 
 export default config

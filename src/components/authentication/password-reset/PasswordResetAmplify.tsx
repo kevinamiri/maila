@@ -38,7 +38,7 @@ const PasswordResetAmplify = () => {
       >
         <div>
           <Typography color='textPrimary' gutterBottom variant='h4'>
-            {intl.formatMessage({ id: "F36" })}
+            {intl.formatMessage({ id: "LanguageResetPassword" })}
           </Typography>
         </div>
       </Box>
@@ -270,7 +270,7 @@ const PasswordResetAmplify = () => {
                 type='submit'
                 variant='contained'
               >
-                {intl.formatMessage({ id: "F36" })}
+                {intl.formatMessage({ id: "LanguageResetPassword" })}
               </Button>
             </Box>
           </form>

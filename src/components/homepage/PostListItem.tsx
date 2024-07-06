@@ -1,48 +1,57 @@
-import * as React from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import Time from "./Time";
 import Link from "../Link";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+import { Card, CardContent, Typography, Box } from "@mui/material";
 
-const PostListItem = ({ post }) => {
+interface PostFields {
+  slug: string;
+  langKey: string;
+}
+
+interface PostFrontmatter {
+  title: string;
+  date: string;
+}
+
+interface Post {
+  fields: PostFields;
+  frontmatter: PostFrontmatter;
+  excerpt?: string;
+}
+
+interface PostListItemProps {
+  post: Post;
+}
+
+// 📌 Usage: <PostListItem post={postData} />
+const PostListItem: React.FC<PostListItemProps> = ({ post }) => {
+  const { fields, frontmatter, excerpt } = post;
+  const { slug } = fields;
+  const { title, date } = frontmatter;
+
   return (
     <Box sx={{ maxWidth: 450, m: 1 }}>
       <Card>
         <CardContent>
-          <Time date={post?.frontmatter?.date && post.frontmatter.date} />
-          <Typography gutterBottom variant='h2'>
-            <Link
-              href={post?.fields?.slug && post.fields.slug}
-              sx={{ fontSize: "16px" }}
-              size='small'
-            >
-              {post?.frontmatter?.title && post.frontmatter.title}
+          <Time date={date} />
+          <Typography gutterBottom variant="h2">
+            <Link href={slug} sx={{ fontSize: "16px" }} size="small">
+              {title}
             </Link>
           </Typography>
-          <Typography variant='body1' color='textSecondary'>
-            {post?.excerpt && post.excerpt}
-          </Typography>
+          {excerpt && (
+            <Typography variant="body1" color="textSecondary">
+              {excerpt}
+            </Typography>
+          )}
         </CardContent>
       </Card>
     </Box>
   );
 };
 
-PostListItem.propTypes = {
-  post: PropTypes.shape({
-    fields: PropTypes.shape({
-      slug: PropTypes.string.isRequired,
-      langKey: PropTypes.string.isRequired,
-    }),
-    frontmatter: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      date: PropTypes.string.isRequired,
-    }),
-    excerpt: PropTypes.string.isRequired,
-  }),
-};
-
 export default PostListItem;
+
+// 💡 Potential feature: Add truncation for long excerpts
+// const truncateExcerpt = (text: string, maxLength = 150): string => 
+//   text.length > maxLength ? `${text.substring(0, maxLength)}...` : text;

@@ -12,8 +12,6 @@ const PopUpCards: React.FC = () => {
       container
       sx={{
         borderRadius: 4,
-        // gridRow: "3 / 4",
-        // gridColumn: "3 / 4",
         opacity: "100%",
       }}
     >

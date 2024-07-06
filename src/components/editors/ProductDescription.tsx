@@ -25,13 +25,16 @@ import { updateExpansion } from "../../slices/ui-states";
 import LanguageOutputsModal from "../../components/subcomponents/language-outputs-modal";
 import MultipleOptions from "components/subcomponents/MultipleOptions";
 import { LoadFromUrl } from "./loadFromUrl";
+import { AppDispatch } from "store";
+
 
 interface placeholdersList {
   label: string;
   placeholder: string;
-  dispatcher: (value: string) => void;
+  dispatcher?: (value: string) => void;
 }
 type placeholderLists = placeholdersList[];
+
 
 export interface ProductGenerationProps {
   generateButtonName?: string | any;
@@ -72,13 +75,10 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   editorType = "document",
   loadFromUrl,
 }: ProductGenerationProps) => {
-  // const editor = useMemo(() => withHistory(withReact(createEditor())), []);
   const editors = useEditors();
   const { editor1, editor2, editor3, editor4, editor5 } = editors;
-
-  // const editors = [editor, editor2, editor3, editor4, editor5];
-  const dispatch = useDispatch();
-  const { expand } = useSelector((state) => state.expandReducer);
+  const dispatch = useDispatch<AppDispatch>();
+  const { expand } = useSelector((state: any) => state.expandReducer);
 
   const mainEditors = {
     document: editor1,

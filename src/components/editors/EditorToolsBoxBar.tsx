@@ -5,12 +5,10 @@ import BarToggleButton from "components/editors/bar-toggle-button";
 import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
 import BallotOutlinedIcon from "@mui/icons-material/BallotOutlined";
 import LiveHelpOutlinedIcon from "@mui/icons-material/LiveHelpOutlined";
-// import LongMenu from "./LongMenu";
 import SpellcheckIcon from "@mui/icons-material/Spellcheck";
-import { FormalStyle, RephraseParaphrase, SummaryRephrase } from "icons/Icons";
-// import CircularProgress from "@mui/material/CircularProgress";
-// import LoadingButton from "@mui/lab/LoadingButton";
-// import Play from "components/subcomponents/Play";
+import { FormalStyle, RephraseParaphrase } from "icons/Icons";
+
+
 const EditorToolsBoxBar = ({
   handleSpellcheck,
   handleAdvancify,

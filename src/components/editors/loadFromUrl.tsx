@@ -16,33 +16,30 @@ import Portal from "@mui/material/Portal";
 import { Link } from "@mui/material";
 import { debounce } from "lodash";
 import { updateLoadFromUrl } from "slices/fieldsValue";
+import { HistoryEditor } from "slate-history";
+import { ReactEditor } from "editable-slate-react";
+import { AppDispatch } from "store";
 
-interface loadFromUrlProps {
-  editor: Editor;
-  editor2?: Editor;
-  editor3?: Editor;
-  editor4?: Editor;
+interface LoadFromUrlProps {
+  editor: Editor & ReactEditor & HistoryEditor;
+  editor2?: Editor & ReactEditor & HistoryEditor;
+  editor3?: Editor & ReactEditor & HistoryEditor;
+  editor4?: Editor & ReactEditor & HistoryEditor;
 }
 
-export const LoadFromUrl: FC = ({
-  editor,
-  editor2,
-  editor3,
-  editor4,
-}: loadFromUrlProps) => {
-  //hooks must be outside of the function
-  const dispatch = useDispatch();
+export const LoadFromUrl: React.FC<LoadFromUrlProps> = ({ editor, editor2, editor3, editor4 }) => {
+  const dispatch = useDispatch<AppDispatch>();
   const { enqueueSnackbar } = useSnackbar();
-  const fieldValues = useSelector((state) => state.fieldsValue);
+  const fieldValues = useSelector((state: any) => state.fieldsValue);
   const editors = [editor, editor2, editor3, editor4];
   const [show, setShow] = React.useState(false);
 
-  const handleGenerate = (e) => {
+  const handleGenerate = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    window.grecaptcha.ready(() => {
-      window.grecaptcha
+    (window as any).grecaptcha.ready(() => {
+      (window as any).grecaptcha
         .execute(SITE_KEY, { action: "submit" })
-        .then((gtoken) => {
+        .then((gtoken: string) => {
           dispatch(updateProgressValue(15));
           useFetchUrl2Insert(
             dispatch,
@@ -116,3 +113,4 @@ export const LoadFromUrl: FC = ({
     </>
   );
 };
+

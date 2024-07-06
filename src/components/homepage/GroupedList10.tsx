@@ -1,6 +1,4 @@
 import React from "react";
-import { styled } from "@mui/material/styles";
-
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
@@ -15,10 +13,6 @@ import { IconButtonProps } from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
-interface ExpandMoreProps extends IconButtonProps {
-  expand: boolean;
-}
 
 export function SimpleCard() {
   return (

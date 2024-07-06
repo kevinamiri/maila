@@ -22,7 +22,6 @@ const neutral = {
   900: '#111827',
 };
 
-
 const baseOptions = {
   direction: 'ltr',
   components: {

@@ -1,18 +1,35 @@
 import React from "react";
-import PropTypes from "prop-types";
 import PostListItem from "./PostListItem";
-const PostList = ({ posts }) => {
+
+// Define types
+type Post = {
+  id: string;
+  // Add other post properties here
+};
+
+type PostListProps = {
+  posts: Post[];
+  isLoading?: boolean;
+};
+
+const PostList: React.FC<PostListProps> = ({ posts, isLoading = false }) => {
+  // Log for debugging
+  console.log(`Rendering PostList with ${posts.length} posts`);
+
+  if (isLoading) return <p>Loading posts...</p>;
+
+  if (!posts.length) return <p>No posts available.</p>;
+
   return (
-    <>
-      {posts.map((post, index) => (
-        <PostListItem post={post} key={index} />
+    <ul aria-label="Post list">
+      {posts.map((post) => (
+        <PostListItem key={post.id} post={post} />
       ))}
-    </>
+    </ul>
   );
 };
 
-PostList.propTypes = {
-  posts: PropTypes.array,
-};
-
 export default PostList;
+
+// Usage example:
+// <PostList posts={postData} isLoading={isLoadingPosts} />

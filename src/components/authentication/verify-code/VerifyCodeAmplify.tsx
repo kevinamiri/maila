@@ -38,7 +38,7 @@ const CodeVerification = () => {
   const handleCodeSubmit = async (values, actions) => {
     try {
       await Auth.confirmSignUp(values.email, values.code.join(""));
-      enqueueSnackbar(intl.formatMessage({ id: "E509" }), { variant: "success" });
+      enqueueSnackbar(intl.formatMessage({ id: "UseEmailAndPasswordCreated" }), { variant: "success" });
       navigate("/auth/login");
     } catch (error) {
       console.error(error);

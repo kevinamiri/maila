@@ -1,121 +1,74 @@
-import React from "react";
-import PlusButton from "../subcomponents/plus-button";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import { styled } from "@mui/material/styles";
-import { Editor } from "slate";
-import RedoIcon from "@mui/icons-material/Redo";
-import UndoIcon from "@mui/icons-material/Undo";
-import ToggleButtonList from "../subcomponents/ToggleButtonList";
-import CopyToClipboard from "../subcomponents/CopyToClipboard";
-import { serialize } from "../../hooks/currentSelectEditor";
-import Play from "components/subcomponents/Play";
-import ButtonPostData from "./button-post-data";
-import Box from "@mui/material/Box";
-// @refresh reset
+import React from 'react';
+import { Editor } from 'slate';
+import { styled, Box, Divider, Typography } from '@mui/material';
+import { Redo as RedoIcon, Undo as UndoIcon } from '@mui/icons-material';
 
-const TotalCharacters = styled("div")(({ theme }) => ({
-  padding: "0.1em 0.1rem",
-  color: theme.palette.primary.main,
-  fontSize: "80%",
-  maxHeight: "24px",
+import PlusButton from '../subcomponents/plus-button';
+import ToggleButtonList from '../subcomponents/ToggleButtonList';
+import CopyToClipboard from '../subcomponents/CopyToClipboard';
+import Play from 'components/subcomponents/Play';
+import ButtonPostData from './button-post-data';
+import { serialize } from '../../hooks/currentSelectEditor';
+
+// Styled components
+const CharacterCount = styled('div')<{ isWarning: boolean }>(({ theme, isWarning }) => ({
+  padding: '0.1em 0.1rem',
+  color: isWarning ? theme.palette.warning.main : theme.palette.primary.main,
+  fontSize: '80%',
+  maxHeight: '24px',
   fontWeight: 600,
-  textAlign: "center",
-  borderRadius: "10%",
+  textAlign: 'center',
+  borderRadius: '10%',
 }));
 
-const TotalCharactersWarning = styled("div")(({ theme }) => ({
-  padding: "0.1em 0.1rem",
-  color: theme.palette.warning.main,
-  fontSize: "80%",
-  maxHeight: "24px",
-  fontWeight: 600,
-  textAlign: "center",
-  borderRadius: "10%",
-}));
-
-interface footerEditorBarProps {
+// Types
+interface FooterEditorBarProps {
   editor: Editor;
-  handleTranser?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  handleTransfer?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
   voice?: boolean;
 }
 
-export const FooterEditorBar = ({
+export const FooterEditorBar: React.FC<FooterEditorBarProps> = ({
   editor,
-  handleTranser,
+  handleTransfer,
   voice = false,
   disabled = false,
-}: footerEditorBarProps) => {
-  const CharCount =
-    serialize(editor).length > 15000 ? TotalCharactersWarning : TotalCharacters;
+}) => {
+  const characterCount = serialize(editor).length;
+  const isWarning = characterCount > 15000;
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "flex-start",
-      }}
-    >
-      <Divider
-        orientation='horizontal'
-        component='hr'
-        variant='fullWidth'
-        sx={{
-          width: "100%",
-          marginTop: "1.5rem",
-        }}
-      />
-      <Box
-        sx={{
-          display: "flex",
-          marginTop: "0.15rem",
-        }}
-      >
+    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
+      <Divider sx={{ width: '100%', marginTop: '1.5rem' }} />
+      <Box sx={{ display: 'flex', marginTop: '0.15rem' }}>
         <Box sx={{ flexGrow: 1 }}>
-          {disabled ? "" : <PlusButton onClick={handleTranser} />}
+          {!disabled && <PlusButton onClick={handleTransfer} />}
           <CopyToClipboard editor={editor} />
           <ButtonPostData editor={editor} />
-          {voice ? <Play /> : ""}
+          {voice && <Play />}
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "flex-end",
-          }}
-        >
+        <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
           <ToggleButtonList
-            title='Undo'
-            icon={<UndoIcon fontSize='inherit' />}
-            onClick={(event) => {
-              // event.preventDefault();
-              editor.undo();
-            }}
-            disabled={editor.history.undos.length == 0}
+            title="Undo"
+            icon={<UndoIcon fontSize="inherit" />}
+            onClick={() => editor.undo()}
+            disabled={editor.history.undos.length === 0}
           />
           <ToggleButtonList
-            title='Redo'
-            icon={<RedoIcon fontSize='inherit' />}
-            onClick={(event) => {
-              event.preventDefault();
+            title="Redo"
+            icon={<RedoIcon fontSize="inherit" />}
+            onClick={(e) => {
+              e.preventDefault();
               editor.redo();
             }}
-            disabled={editor.history.redos.length == 0}
+            disabled={editor.history.redos.length === 0}
           />
           <ToggleButtonList
-            title='Number of Characters'
+            title="Number of Characters"
             icon={
-              <Typography
-                sx={{
-                  mb: 0,
-                }}
-                variant='caption'
-                display='block'
-                gutterBottom
-              >
-                <CharCount>{serialize(editor).length}</CharCount>
+              <Typography variant="caption" display="block" gutterBottom sx={{ mb: 0 }}>
+                <CharacterCount isWarning={isWarning}>{characterCount}</CharacterCount>
               </Typography>
             }
           />

@@ -1,6 +1,6 @@
 import { Auth } from "aws-amplify";
 
-const postData = async ({ editor }) => {
+const useSaveCompletions = async ({ editor }) => {
   const theUrl = `https://api.maila.ai/save-completions`;
   const user = await Auth.currentAuthenticatedUser();
   let params = {};
@@ -20,4 +20,4 @@ const postData = async ({ editor }) => {
   return res;
 };
 
-export default postData;
+export default useSaveCompletions;

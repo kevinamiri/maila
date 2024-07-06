@@ -13,11 +13,7 @@ interface LandingsFeatureProps {
   descriptionRight?: string;
   ctaActionText?: string;
 }
-/**
- * This is a feature component for landing page consisting of a header, description, and call to action button.
- * @link components/landings/landings-feature
- * @returns Landing page feature block
- */
+
 const LandingsFeature = ({
   headerRight,
   headerLeft,

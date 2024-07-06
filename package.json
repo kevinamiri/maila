@@ -34,7 +34,7 @@
     "editable-slate-react": "^0.83.0",
     "formik": "^2.4.3",
     "fs-extra": "^11.1.1",
-    "gatsby": "^5.12.11",
+    "gatsby": "^5.13.6",
     "gatsby-plugin-emotion": "^8.11.0",
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-i18n-tags": "^1.0.0",

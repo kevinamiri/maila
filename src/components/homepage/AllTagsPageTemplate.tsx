@@ -5,12 +5,7 @@ import { Box, Chip, Typography } from "@mui/material";
 import LabelRoundedIcon from "@mui/icons-material/LabelRounded";
 import AccessibleLink from "components/Link";
 
-/**
- * AllTagsPageTemplate component displays all the available tags for a blog in a chip format.
- *
- * @param {Object} props - The props object containing allBlogTags and langKey.
- * @returns {JSX.Element} - The AllTagsPageTemplate component.
- */
+
 const AllTagsPageTemplate = ({ allBlogTags, langKey }) => {
   return (
     <Box

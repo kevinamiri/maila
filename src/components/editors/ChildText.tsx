@@ -104,6 +104,7 @@ const ChildText = (props) => {
         editor,
         currentWordRange ? currentWordRange : Editor.end(editor, [])
       );
+
       dispatch(setCurrentWordRange(false));
     }
 
@@ -112,6 +113,7 @@ const ChildText = (props) => {
     //     at: currentWordRange ? currentWordRange : Editor.end(editor, []),
     //   });
   };
+
 
   const saveContextText = React.useRef(defaultValue);
   // Add the initial value when setting up our state.
@@ -370,19 +372,21 @@ const HighlightSpan = styled("span")(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+import { useSelected, useFocused } from 'slate-react';
+
 const Leaf = ({ attributes, children, leaf }) => {
+  const selected = useSelected();
+  const focused = useFocused();
+
   if (leaf.bold) {
     children = <strong>{children}</strong>;
   }
-
   if (leaf.code) {
     children = <code>{children}</code>;
   }
-
   if (leaf.italic) {
     children = <em>{children}</em>;
   }
-
   if (leaf.underline) {
     children = <u>{children}</u>;
   }
@@ -397,6 +401,11 @@ const Leaf = ({ attributes, children, leaf }) => {
   }
   if (leaf.lightText) {
     children = <HighlightSpan>{children}</HighlightSpan>;
+  }
+
+  // Apply a style if the leaf is part of the selection and the editor is focused
+  if (selected && focused) {
+    children = <span style={{ backgroundColor: 'yellow' }}>{children}</span>;
   }
 
   return <span {...attributes}>{children}</span>;

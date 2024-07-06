@@ -1,6 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+export interface ProgressState {
+  progressValue: number;
+  status: number;
+  lastId: string;
+}
+
+const initialState: ProgressState = {
   progressValue: 0,
   status: 0,
   lastId: "none",

@@ -15,10 +15,6 @@ export interface SettingsContextValue {
   saveSettings: (update: Settings) => void;
 }
 
-interface SettingsProviderProps {
-  children?: ReactNode;
-}
-
 const initialSettings: Settings = {
   direction: "ltr",
   lang: "en",
