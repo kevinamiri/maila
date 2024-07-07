@@ -1,77 +1,79 @@
-import React from "react";
-import Footer from "../landings/Footer";
-import Helmet from "react-helmet";
-import TopBar from "../TopBar";
-import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
-import { IntlProvider } from "react-intl";
-import Box from "@mui/material/Box";
-import useSettings from "../../hooks/useSettings";
+import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import { IntlProvider } from 'react-intl';
+import { Box } from '@mui/material';
 
+import Footer from '../landings/Footer';
+import TopBar from '../TopBar';
+import useSettings from '../../hooks/useSettings';
+import { getCurrentLangKey, getLangs, getUrlForLang } from '../../langfile';
 
+// 🌐 Supported languages and their directions
+const languageConfig = {
+  sv: 'ltr',
+  no: 'ltr',
+  fi: 'ltr',
+  dk: 'ltr',
+  en: 'ltr',
+};
 
+type LanguageKey = keyof typeof languageConfig;
 
-const getValues = (settings) => ({
-  direction: settings.direction,
-  responsiveFontSizes: settings.responsiveFontSizes,
-  lang: settings.lang,
-  theme: settings.theme,
-});
+interface LayoutTagProps {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        description: string;
+        title: string;
+      };
+    };
+    site: {
+      siteMetadata: {
+        languages: {
+          langs: string[];
+          defaultLangKey: string;
+        };
+      };
+    };
+  };
+  location: {
+    pathname: string;
+  };
+  children: React.ReactNode;
+}
 
-
-const LayoutTag = (props) => {
-  const data = props.data;
-  const description = props.data.markdownRemark.frontmatter.description;
-  const title = props.data.markdownRemark.frontmatter.title;
-  const url = props.location.pathname;
-  const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
+const LayoutTag: React.FC<LayoutTagProps> = ({ data, location, children }) => {
+  const { description, title } = data.markdownRemark.frontmatter;
+  const { langs, defaultLangKey } = data.site.siteMetadata.languages;
+  const url = location.pathname;
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
+
   const { settings, saveSettings } = useSettings();
-  const [values, setValues] = React.useState(getValues(settings));
+  const [values, setValues] = useState(settings);
 
-  const handleLanguageDirection = (lang, dir) => {
-    setValues({
-      ...values,
-      lang: lang,
-      direction: dir,
-    });
-    saveSettings({
-      ...values,
-      lang: lang,
-      direction: dir,
-    });
+  const handleLanguageChange = (lang: LanguageKey) => {
+    const direction = languageConfig[lang] as "ltr" | "rtl";
+    const newValues = { ...values, lang, direction };
+    setValues(newValues);
+    saveSettings(newValues);
   };
 
-
-  const handleChangeLanguage = (lang): void => {
-    switch (lang) {
-      case "sv":
-        handleLanguageDirection("sv", "ltr");
-        break;
-      case "no":
-        handleLanguageDirection("no", "ltr");
-        break;
-      case "fi":
-        handleLanguageDirection("ar", "ltr");
-        break;
-      case "dk":
-        handleLanguageDirection("tr", "ltr");
-        break;
-      case "en":
-        handleLanguageDirection("en", "ltr");
-        break;
-      default:
-        handleLanguageDirection("en", "ltr");
-    }
-  };
-
-  React.useEffect(() => {
-    handleChangeLanguage(langKey);
+  
+  useEffect(() => {
+    handleLanguageChange(langKey as LanguageKey);
   }, [langKey]);
 
-  const i18nMessages = require(`../../data/messages/${langKey || settings.lang
-    }`);
+  // 🔄 Load language messages
+  const i18nMessages = React.useMemo(() => {
+    try {
+      return require(`../../data/messages/${values.lang}`);
+    } catch (error) {
+      console.error(`Failed to load messages for ${values.lang}`, error);
+      return require(`../../data/messages/en`); // Fallback to English
+    }
+  }, [values.lang]);
 
   return (
     <>
@@ -88,13 +90,9 @@ const LayoutTag = (props) => {
         messages={i18nMessages}
         textComponent={React.Fragment}
       >
-        <Box
-          sx={{
-            backgroundColor: "background.paper",
-          }}
-        >
+        <Box sx={{ backgroundColor: 'background.paper' }}>
           <TopBar title='Home' icon='logo' />
-          {props.children}
+          {children}
           <Footer langKey={langKey} langs={langsMenu} />
         </Box>
       </IntlProvider>
@@ -103,3 +101,8 @@ const LayoutTag = (props) => {
 };
 
 export default LayoutTag;
+
+// 📝 Usage example:
+// <LayoutTag data={pageData} location={locationObject}>
+//   <YourPageContent />
+// </LayoutTag>

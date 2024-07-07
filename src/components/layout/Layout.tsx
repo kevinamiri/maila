@@ -1,79 +1,64 @@
-import React from "react";
-import Footer from "../../components/landings/Footer";
-// import SEO from "../../components/SEO/SEO";
-import TopBar from "../../components/TopBar";
-import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
+import React, { useEffect } from "react";
 import { IntlProvider } from "react-intl";
-import { getSrc } from "gatsby-plugin-image";
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
+import Footer from "../../components/landings/Footer";
+import TopBar from "../../components/TopBar";
 import useSettings from "../../hooks/useSettings";
-import { Head as SEOHead } from "../../components/SEO/head";
+import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
 
-
-const Layout = (props) => {
-  const data = props.data;
-  const location = props.location;
-  const isBlogPost = props.isBlogPost;
-  const imageSrc =
-    props.data.markdownRemark.frontmatter.image &&
-    getSrc(props.data.markdownRemark.frontmatter.image);
-  const frontmatter = props.data.markdownRemark.frontmatter;
-  const siteTitle = props.data.site.siteMetadata.title;
-  const url = location.pathname;
-  const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
-  const langKey = getCurrentLangKey(langs, defaultLangKey, url);
-  const homeLink = `/${langKey}/`;
-  const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
-
-  const { settings, saveSettings } = useSettings();
-  const handleChange = (field, value) => {
-    saveSettings({
-      ...settings,
-      [field]: value,
-    });
+// Types
+type LayoutProps = {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        image?: any;
+        [key: string]: any;
+      };
+    };
+    site: {
+      siteMetadata: {
+        title: string;
+        languages: {
+          langs: string[];
+          defaultLangKey: string;
+        };
+      };
+    };
   };
+  location: {
+    pathname: string;
+  };
+  isBlogPost?: boolean;
+  children: React.ReactNode;
+};
 
-  React.useEffect(() => {
-    langKey === "sv"
-      ? handleChange("lang", "sv")
-      : langKey === "no"
-        ? handleChange("lang", "no")
-        : langKey === "fi"
-          ? handleChange("lang", "fi")
-          : langKey === "da"
-            ? handleChange("lang", "da")
-            : handleChange("lang", "en");
-  }, []);
+const Layout: React.FC<LayoutProps> = ({ data, location, children }) => {
+  const { settings, saveSettings } = useSettings();
+  const { langs, defaultLangKey } = data.site.siteMetadata.languages;
+  const langKey = getCurrentLangKey(langs, defaultLangKey, location.pathname);
 
-  const i18nMessages = require(`../../data/messages/${langKey || settings.lang
-    }`);
+  useEffect(() => {
+    const newLang = ['sv', 'no', 'fi', 'da'].includes(langKey) ? langKey : 'en';
+    saveSettings({ ...settings, lang: newLang });
+  }, [langKey]);
 
-  const imageStatus = imageSrc ? true : false;
+  const i18nMessages = require(`../../data/messages/${settings.lang}`);
+  const langsMenu = getLangs(langs, langKey, getUrlForLang(`/${langKey}/`, location.pathname));
 
   return (
-    <>
-      <IntlProvider
-        locale={langKey}
-        messages={i18nMessages}
-        textComponent={React.Fragment}
-      >
-        <Box
-          sx={{
-            backgroundColor: (theme) => theme.palette.background.default,
-          }}
-        >
-          <TopBar title='maila.ai' icon='logo' />
-          {props.children}
-          <Footer langKey={langKey} langs={langsMenu} />
-        </Box>
-      </IntlProvider>
-    </>
+    <IntlProvider locale={langKey} messages={i18nMessages}>
+      <Box sx={{ backgroundColor: (theme) => theme.palette.background.default }}>
+        <TopBar title="maila.ai" icon="logo" />
+        {children}
+        <Footer langKey={langKey} langs={langsMenu} />
+      </Box>
+    </IntlProvider>
   );
 };
 
 export default Layout;
 
+// SEO component (kept for potential future use)
+// import SEO from "../../components/SEO/SEO";
 
-export const Head = (props) => {
-  return <SEOHead {...props} />;
-};
+export { Head } from "../../components/SEO/head";

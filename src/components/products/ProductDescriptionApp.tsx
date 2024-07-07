@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Suspense } from "react";
-// import ProductDescription from "components/editors/ProductDescription";
 const ProductDescription = React.lazy(
   () => import("components/editors/ProductDescription")
 );

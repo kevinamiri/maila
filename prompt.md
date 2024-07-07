@@ -34,108 +34,119 @@ You will be provided with code snippets. Your task is follow the given goals, gu
 4. Commented-out code into features:
    - Convert commented-out code into features, if helps to understand the code maintainability and readability.
 
+5. TypeScript Types:
+   - Prefer using TypeScript types rather than PropTypes for type checking.
+   - Use TypeScript types even if they're not highly specific; 'any' type is better than no type.
+   - Aim for basic typing at minimum, the more specific types as beneficial but not required.
+
+
 
 ```tsx
+import React from "react";
+import Footer from "../landings/Footer";
+import Helmet from "react-helmet";
+import TopBar from "../TopBar";
+import { getCurrentLangKey, getLangs, getUrlForLang } from "../../langfile";
+import { IntlProvider } from "react-intl";
+import Box from "@mui/material/Box";
+import useSettings from "../../hooks/useSettings";
 
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const fs = require('fs-extra')
 
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
 
-  return graphql(`
-  {
-    site {
-      siteMetadata {
-        languages {
-          langs
-        }
-      }
+const getValues = (settings) => ({
+  direction: settings.direction,
+  responsiveFontSizes: settings.responsiveFontSizes,
+  lang: settings.lang,
+  theme: settings.theme,
+});
+
+
+const LayoutTag = (props) => {
+  const data = props.data;
+  const description = props.data.markdownRemark.frontmatter.description;
+  const title = props.data.markdownRemark.frontmatter.title;
+  const url = props.location.pathname;
+  const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
+  const langKey = getCurrentLangKey(langs, defaultLangKey, url);
+  const homeLink = `/${langKey}/`;
+  const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
+  const { settings, saveSettings } = useSettings();
+  const [values, setValues] = React.useState(getValues(settings));
+
+  const handleLanguageDirection = (lang, dir) => {
+    setValues({
+      ...values,
+      lang: lang,
+      direction: dir,
+    });
+    saveSettings({
+      ...values,
+      lang: lang,
+      direction: dir,
+    });
+  };
+
+
+  const handleChangeLanguage = (lang): void => {
+    switch (lang) {
+      case "sv":
+        handleLanguageDirection("sv", "ltr");
+        break;
+      case "no":
+        handleLanguageDirection("no", "ltr");
+        break;
+      case "fi":
+        handleLanguageDirection("ar", "ltr");
+        break;
+      case "dk":
+        handleLanguageDirection("tr", "ltr");
+        break;
+      case "en":
+        handleLanguageDirection("en", "ltr");
+        break;
+      default:
+        handleLanguageDirection("en", "ltr");
     }
-    markdownRemark {
-      frontmatter {
-        HeroTaglineDescription
-      }
-    }
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-            langKey
-            tagSlugs {
-              tag
-              link
-            }
-          }
-          frontmatter {
-            id
-            date
-            path
-            tags
-            templateKey
-            lang
-            title
-            HeroTaglineDescription
-          }
-        }
-      }
-    }
-  }
-  `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+  };
 
-    const posts = result.data.allMarkdownRemark.edges
+  React.useEffect(() => {
+    handleChangeLanguage(langKey);
+  }, [langKey]);
 
-    posts.forEach(edge => {
-      // const id = edge.node.id;
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`
-        ),
-        // additional data can be passed via context
-        context: {
-          id: edge.node.id,
-          lang: edge.node.frontmatter.lang
-        },
-      })
-    })
+  const i18nMessages = require(`../../data/messages/${langKey || settings.lang
+    }`);
 
-  })
-}
+  return (
+    <>
+      <Helmet
+        key='app-head'
+        defaultTitle={title}
+        titleTemplate={`%s | ${title}`}
+      >
+        <html lang={langKey} />
+        <meta name='description' content={description} />
+      </Helmet>
+      <IntlProvider
+        locale={langKey}
+        messages={i18nMessages}
+        textComponent={React.Fragment}
+      >
+        <Box
+          sx={{
+            backgroundColor: "background.paper",
+          }}
+        >
+          <TopBar title='Home' icon='logo' />
+          {props.children}
+          <Footer langKey={langKey} langs={langsMenu} />
+        </Box>
+      </IntlProvider>
+    </>
+  );
+};
 
-
-exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
-  const config = getConfig()
-  if (stage.startsWith('develop') && config.resolve) {
-    config.resolve.alias = {
-      ...config.resolve.alias
-    }
-  }
-  if (stage === 'build-javascript') {
-    actions.setWebpackConfig({
-      devtool: false
-    })
-  }
-}
-
-exports.onCreatePage = async ({ page, actions }) => {
-  const { createPage } = actions
-  // page.matchPath is a special key that's used for matching pages
-  // only on the client.
-  if (page.path.match(/^\/app/)) {
-    page.matchPath = "/app/*"
-    // Update the page.
-    createPage(page)
-  }
-}
+export default LayoutTag;
 
 ```
 
