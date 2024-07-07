@@ -37,7 +37,9 @@ const ListMain = (props: listMainProps) => {
       >
         <ListItem button onClick={() => dispatch({ type: formattedIdList })}>
           <ListItemIcon>
-            <Link to={dirListName}>{iconComponent}</Link>
+            <Link to={dirListName}>
+              {React.createElement(iconComponent)}
+            </Link>
           </ListItemIcon>
 
           <ListItemText primary={<FormattedMessage id={formattedIdList} />} />

@@ -6,6 +6,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import { updateDefaultLanguage } from "../../slices/fieldsValue";
 import { useDispatch } from "react-redux";
 import countries from "../../components/account/countries";
+import { AppDispatch } from "store";
 
 interface CountryType {
   code: string;
@@ -15,7 +16,7 @@ interface CountryType {
 
 export default function LanguageAutocomplete() {
   const [inputValue, setInputValue] = React.useState("");
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
 
   console.log("countries", countries);
 

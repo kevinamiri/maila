@@ -8,6 +8,7 @@ import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import { useSelector, useDispatch } from "react-redux";
 import { updateToneOfVoiceValue } from "../../slices/fieldsValue";
 import Voices from "./Voices";
+import { AppDispatch } from "store";
 
 interface VoiceOptionType {
   inputValue?: string;
@@ -18,7 +19,7 @@ const icon = <CheckBoxOutlineBlankIcon fontSize='small' />;
 const checkedIcon = <CheckBoxIcon fontSize='small' />;
 const filter = createFilterOptions<VoiceOptionType>();
 export default function CheckboxesTags() {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const { defaultVoice } = useSelector((state: any) => state.fieldsValue);
   const [inputValue, setInputValue] = React.useState("");
 
@@ -48,7 +49,7 @@ export default function CheckboxesTags() {
         const filtered = filter(options, params);
 
         const { inputValue } = params;
-        const isExisting = options.some((option) => inputValue === option.tone);
+        const isExisting = options.some((option: any) => inputValue === option.tone);
         if (inputValue !== "" && !isExisting) {
           filtered.push({
             inputValue,
@@ -59,7 +60,7 @@ export default function CheckboxesTags() {
         return filtered;
       }}
       disableCloseOnSelect
-      getOptionLabel={(option) => option.tone}
+      getOptionLabel={(option: any) => option.tone}
       renderOption={(props, option, { selected }) => (
         <li {...props}>
           <Checkbox

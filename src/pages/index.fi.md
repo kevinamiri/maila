@@ -72,7 +72,7 @@ B100:
   - "Lyhennä asiakirjoja yhteenvetoihin. Saat käsityksen siitä, mitä ihmiset sanovat eri aiheista ilman, että heidät ylikuormittaisi."
   - "Analysoi ja arvostele sisältöä tehokkaalla SEO-tarkistuksellamme, joka on tietokoneavusteinen."
   - "Luo vahva ääni sisältösi aloitussivuille tehokkaiden työkalujen avulla."
-H0121: "Maila.ai on vallankumouksellinen tekoälyllä toimiva copywriting- ja kirjoitusapualusta, jonka avulla voit tuottaa ammattilaistason sisältöä muutamassa minuutissa."
+HeroTaglineDescription: "Maila.ai on vallankumouksellinen tekoälyllä toimiva copywriting- ja kirjoitusapualusta, jonka avulla voit tuottaa ammattilaistason sisältöä muutamassa minuutissa."
 T0152: "Seuraavan tason tekoälykäyttöinen copywriting-alusta"
 H01051: "Aloita kirjoittaminen ensimmäisellä 25 000 sanan ilmaisella kokeilukerralla ja katso, paraneeko työsi."
 H01047: "Nämä tulokset ovat valmiiksi luotuja ja täysin tekoälyn valtuuttamia"

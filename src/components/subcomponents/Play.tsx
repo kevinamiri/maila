@@ -25,7 +25,7 @@ export const audioAWS = async ({ text }: any) => {
 
 export default function Play() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const { selectedTextValue } = useSelector((state) => state.editorParams);
+  const { selectedTextValue } = useSelector((state: any) => state.editorParams);
   const serverAudioStreamControl = useRef(null);
   const audioSrc = useRef(null);
   const audioElement = useRef(null);

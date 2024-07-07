@@ -100,9 +100,8 @@ const DrawerSideBar = () => {
       <Divider />
       <List dense>
         <ListItem>
-          <LinearP progressType={!IsOpen} />
+          <LinearP progressType={IsOpen ? "linear" : "circular"} />
         </ListItem>
-        {/* </Tooltip> */}
       </List>
       <Divider />
     </Drawer>

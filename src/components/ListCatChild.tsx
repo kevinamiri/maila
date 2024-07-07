@@ -13,7 +13,7 @@ interface listProps {
 }
 
 const ListCatChild = (props: listProps) => {
-  let selectedList = (url) => {
+  let selectedList = (url: string) => {
     if (url == window.location.pathname) {
       return true;
     } else {

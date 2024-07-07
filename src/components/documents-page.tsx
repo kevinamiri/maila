@@ -6,7 +6,6 @@ import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import useSettings from "../hooks/useSettings";
 import ChevronRight from "@mui/icons-material/ChevronRight";
 import Documents from "../components/account/Documents";
 import Tabs from "@mui/material/Tabs";
@@ -24,10 +23,9 @@ const tabs = [
 ];
 
 const DocumentsPage: React.FC<DocumentsPageProps> = () => {
-  const { settings } = useSettings();
   const [currentTab, setCurrentTab] = useState("History");
 
-  const handleTabsChange = (event, value) => {
+  const handleTabsChange = (event: React.SyntheticEvent, value: string) => {
     setCurrentTab(value);
   };
 
@@ -40,7 +38,7 @@ const DocumentsPage: React.FC<DocumentsPageProps> = () => {
           py: 2,
         }}
       >
-        <Container maxWidth={settings.compact ? "xl" : false}>
+        <Container maxWidth="xl">
           <Grid container justifyContent='space-between' spacing={3}>
             <Grid item>
               <Breadcrumbs

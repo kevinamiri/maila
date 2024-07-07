@@ -23,15 +23,16 @@ You will be provided with code snippets. Your task is follow the given goals, gu
 ## Preferences:
 
 1. Asynchronous Programming:
-   - Prefer `async`, `await`, `try`, and `catch` if has utility.
    - Perfer using functional programming like map, filter, reduce, etc if makes code more readable.
    - Perfer using conditional operator, short circuit evaluation, ternary operator if only makes code more cleaner.
 2. Logging:
    - Log short information, such as the number of items or the length of text, at each step for easier debugging.
     
-3. Examples and Features:
+3. Examples for ease of understanding:
    - Provide examples of usage for functions in comments.
-   - Convert commented-out code into features, if helps.
+   
+4. Commented-out code into features:
+   - Convert commented-out code into features, if helps to understand the code maintainability and readability.
 
 
 ```tsx
@@ -55,7 +56,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
     markdownRemark {
       frontmatter {
-        H0121
+        HeroTaglineDescription
       }
     }
     allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
@@ -78,7 +79,7 @@ exports.createPages = ({ actions, graphql }) => {
             templateKey
             lang
             title
-            H0121
+            HeroTaglineDescription
           }
         }
       }
@@ -135,6 +136,7 @@ exports.onCreatePage = async ({ page, actions }) => {
     createPage(page)
   }
 }
+
 ```
 
 ## Procedures:

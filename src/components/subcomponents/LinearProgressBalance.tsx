@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 export default function LinearProgressBalance(props: LinearProgressProps) {
   //hooks must be outside of the function
-  const { progressValue } = useSelector((state) => state.progressValue);
+  const { progressValue } = useSelector((state: any) => state.progressValue);
 
   return (
     <Box display='flex' alignItems='center'>

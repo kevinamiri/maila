@@ -17,7 +17,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
     markdownRemark {
       frontmatter {
-        H0121
+        HeroTaglineDescription
       }
     }
     allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
@@ -40,7 +40,7 @@ exports.createPages = ({ actions, graphql }) => {
             templateKey
             lang
             title
-            H0121
+            HeroTaglineDescription
           }
         }
       }

@@ -72,7 +72,7 @@ B100:
   - "Forkort dokumenter til sammendrag. Få en forståelse av hva folk sier om forskjellige emner uten å bli overveldet."
   - "Analyserer og ranger innholdet ditt med vår SEO-sjekker drevet av AI"
   - "Bruk kraftige verktøy til å skape en sterk stemme for innholdslandingssiden din."
-H0121: "Maila.ai er en revolusjonerende AI-drevet kopierings- og skrivehjelpsplattform som lar deg lage profesjonell kvalitet innhold på noen få minutter."
+HeroTaglineDescription: "Maila.ai er en revolusjonerende AI-drevet kopierings- og skrivehjelpsplattform som lar deg lage profesjonell kvalitet innhold på noen få minutter."
 T0152: "AI Copywriting & Writing Assistant"
 H01051: "Start å skrive med din første 10,000 ord gratis prøveperiode og se om arbeidet ditt forbedrer seg."
 H01047: "Disse resultatene er forhåndsgenerert og fullt utstyrt av AI"

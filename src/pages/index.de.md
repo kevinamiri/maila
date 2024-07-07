@@ -73,7 +73,7 @@ B100:
   - "Kürzen Sie Dokumente zu Zusammenfassungen. Bekommen Sie ein Gefühl dafür, was Menschen über verschiedene Themen sagen, ohne dabei überfordert zu sein."
   - "Analysieren und bewerten Sie Ihre Inhalte mit unserem KI-gesteuerten SEO-Checker."
   - "Nutzen Sie leistungsstarke Tools, um Ihren Landing Pages eine starke Stimme zu geben."
-H0121: "Maila.AI ist eine AI-Kopier- und Schreibassistentenplattform, mit der Sie professionelle Inhalte in wenigen Minuten erstellen können."
+HeroTaglineDescription: "Maila.AI ist eine AI-Kopier- und Schreibassistentenplattform, mit der Sie professionelle Inhalte in wenigen Minuten erstellen können."
 T0152: "AI-Kopierwerkzeuge & AI-Schreibassistent"
 H01051: "Starten Sie mit Ihrer ersten 25.000-Wörter-Testversion und sehen Sie, ob Ihre Arbeit verbessert wird."
 H01047: "Diese Ergebnisse werden vorab generiert und vollständig von AI angetrieben"

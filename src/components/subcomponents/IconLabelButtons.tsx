@@ -1,60 +1,49 @@
-import * as React from "react";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
-import SvgIcon from "@mui/material/SvgIcon";
-import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+import React from 'react';
+import { Button, Box, SvgIcon } from '@mui/material';
+import { FaFacebookSquare, FaGoogle } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
+import { IconType } from 'react-icons';
 
-function asSvgIcon(reactSvgComponent) {
-  const Icon = function (props) {
-    const viewBox = React.useMemo(
-      () => reactSvgComponent({}).props.attr.viewBox,
-      []
-    );
-    return (
-      <SvgIcon component={reactSvgComponent} viewBox={viewBox} {...props} />
-    );
+// Convert react-icons to MUI SvgIcon
+const asSvgIcon = (Icon: IconType) => {
+  const SvgIconComponent = (props: React.ComponentProps<typeof SvgIcon>) => {
+    const viewBox = React.useMemo(() => Icon({}).props.attr.viewBox, []);
+    return <SvgIcon component={Icon} viewBox={viewBox} {...props} />;
   };
 
-  Object.defineProperty(Icon, "displayName", {
-    value: `AsSvgIcon(${
-      reactSvgComponent.displayName || reactSvgComponent.name
-    })`,
-  });
+  SvgIconComponent.displayName = `AsSvgIcon(${(Icon as any).displayName ?? Icon.name ?? 'UnknownIcon'})`;
+  return SvgIconComponent;
+};
 
-  return Icon;
-}
 
-const IconLabelButtons = () => {
-  const FilledFaGoogle = asSvgIcon(FaGoogle);
-  const FilledFaFacebookSquare = asSvgIcon(FaFacebookSquare);
-  const FilledFcGoogle = asSvgIcon(FcGoogle);
+// Button configuration
+const buttons = [
+  { icon: FaFacebookSquare, label: 'Facebook', color: 'primary' },
+  { icon: FaGoogle, label: 'Google', color: 'secondary' },
+  { icon: FcGoogle, label: 'Google', color: 'primary' },
+] as const;
 
+const IconLabelButtons: React.FC = () => {
   return (
-    <Box
-      sx={{
-        "& > :not(style)": { m: 1 },
-      }}
-    >
-      <Button
-        variant='outlined'
-        color='primary'
-        startIcon={<FilledFaFacebookSquare />}
-      >
-        Facebook
-      </Button>
-      <Button
-        variant='outlined'
-        color='secondary'
-        startIcon={<FilledFaGoogle />}
-      >
-        Google
-      </Button>
-      <Button variant='outlined' color='primary' startIcon={<FilledFcGoogle />}>
-        Google
-      </Button>
+    <Box sx={{ '& > :not(style)': { m: 1 } }}>
+      {buttons.map(({ icon, label, color }) => {
+        const Icon = asSvgIcon(icon);
+        return (
+          <Button
+            key={`${label}-${color}`}
+            variant="outlined"
+            color={color}
+            startIcon={<Icon />}
+          >
+            {label}
+          </Button>
+        );
+      })}
     </Box>
   );
 };
 
 export default IconLabelButtons;
+
+// Example usage:
+// <IconLabelButtons />

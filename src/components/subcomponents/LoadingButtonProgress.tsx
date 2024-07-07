@@ -1,10 +1,9 @@
 import * as React from "react";
 import LoadingButton from "@mui/lab/LoadingButton";
 import { useSelector } from "react-redux";
-import Tooltip from "@mui/material/Tooltip";
 
-export default function LoadingButtonProgress(props) {
-  const { progressValue } = useSelector((state) => state.progressValue);
+export default function LoadingButtonProgress(props: any) {
+  const { progressValue } = useSelector((state: any) => state.progressValue);
   const loading = progressValue > 0 && progressValue < 100;
   return (
     <LoadingButton {...props} loading={loading} loadingIndicator='Loading...'>

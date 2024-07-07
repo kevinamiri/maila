@@ -17,7 +17,7 @@ export default function MuiInputWithGrid6({ value, ...others }) {
       }}
     >
       <TextField
-        onChange={debounce((e) => {
+        onChange={debounce((e: any) => {
           e.preventDefault();
           Number.isInteger(InputValue * 1000)
             ? setInputValue(parseFloat(e.target.value))

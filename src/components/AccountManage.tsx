@@ -33,7 +33,7 @@ const AccountManage: React.FC<AccountManageProps> = () => {
   const { settings } = useSettings();
   const [currentTab, setCurrentTab] = useState("general");
 
-  const handleTabsChange = (event, value) => {
+  const handleTabsChange = (event: React.SyntheticEvent, value: string) => {
     setCurrentTab(value);
   };
 
@@ -46,7 +46,7 @@ const AccountManage: React.FC<AccountManageProps> = () => {
           py: 2,
         }}
       >
-        <Container maxWidth={settings.compact ? "xl" : false}>
+        <Container maxWidth="xl">
           <Grid container justifyContent='space-between' spacing={3}>
             <Grid item>
               <Breadcrumbs

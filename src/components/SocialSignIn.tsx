@@ -2,10 +2,11 @@ import React from "react";
 import { Auth } from "aws-amplify";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-// import Link from "@mui/material/Link";
 import SvgIcon from "@mui/material/SvgIcon";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth";
+
 
 function asSvgIcon(reactSvgComponent) {
   const Icon = function (props) {
@@ -38,7 +39,7 @@ function SocialSignIn(props) {
       >
         <Button
           variant='outlined'
-          onClick={() => Auth.federatedSignIn({ provider: "Google" })}
+          onClick={() => Auth.federatedSignIn({ provider: CognitoHostedUIIdentityProvider.Google })}
           {...props}
           color='primary'
           startIcon={<FilledFcGoogle />}

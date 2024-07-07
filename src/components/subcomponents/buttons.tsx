@@ -17,7 +17,7 @@ const options = [
   "Rebase and merge",
 ];
 
-const Buttons: FC = (props) => {
+const Buttons: FC = () => {
   const anchorRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(1);

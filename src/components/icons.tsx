@@ -1,5 +1,4 @@
 /* Component that takes props as string and depend on type of the props will return material icon related to the props */
-
 import React from "react";
 import BorderColorRoundedIcon from "@mui/icons-material/BorderColorRounded";
 import EmailIcon from "@mui/icons-material/Email";
@@ -7,15 +6,12 @@ import PlaylistAddRoundedIcon from "@mui/icons-material/PlaylistAddRounded";
 import DoneOutlineRoundedIcon from "@mui/icons-material/DoneOutlineRounded";
 import LibraryBooksRoundedIcon from "@mui/icons-material/LibraryBooksRounded";
 import DescriptionRoundedIcon from "@mui/icons-material/DescriptionRounded";
-import CopyrightRoundedIcon from "@mui/icons-material/CopyrightRounded";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import WebRoundedIcon from "@mui/icons-material/WebRounded";
 import HistoryEduRoundedIcon from "@mui/icons-material/HistoryEduRounded";
 import SummarizeOutlinedIcon from "@mui/icons-material/SummarizeOutlined";
 import ViewHeadlineOutlinedIcon from "@mui/icons-material/ViewHeadlineOutlined";
-import VrpanoOutlinedIcon from "@mui/icons-material/VrpanoOutlined";
-import MarkEmailReadRoundedIcon from "@mui/icons-material/MarkEmailReadRounded";
 import {
   BrandVoiceicon,
   SubHeader,

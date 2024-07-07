@@ -31,7 +31,7 @@ const HomePage = (props) => {
         }}
       >
         <HomeHeroPage
-          header={dataMarkdown.frontmatter.H0121}
+          header={dataMarkdown.frontmatter.HeroTaglineDescription}
           cta={dataMarkdown.frontmatter.H01051}
           title={dataMarkdown.frontmatter.T0152}
           labelbutton={dataMarkdown.frontmatter.L0401[0]}
@@ -143,7 +143,7 @@ export const pageQuery = graphql`
         B100
         F100
         T0152
-        H0121
+        HeroTaglineDescription
         H01047
         H01051
         H0118 {

@@ -97,7 +97,7 @@ B100:
   - "Shorten documents to summaries. Get a sense of what people are saying about different topics without being overwhelmed."
   - "Analyze and grade your content with our AI-powered SEO checker"
   - "Use powerful tools to create a strong voice for your content landing pages."
-H0121: "Maila.AI is an AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
+HeroTaglineDescription: "Maila.AI is an AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
 T0152: "AI Writing Assistant"
 H01051: "Start writing with your first 10,000 words free trial and see if your work improves."
 H01047: "These results are pre-generated and fully empowered by AI"

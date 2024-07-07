@@ -3,10 +3,11 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { useDispatch, useSelector } from "react-redux";
 import { updateOutputShape } from "slices/fieldsValue";
+import { AppDispatch } from "store";
 
 export default function ToggleButtonGroupOptions({ options }) {
-  const dispatch = useDispatch();
-  const fieldValues = useSelector((state) => state.fieldsValue);
+  const dispatch = useDispatch<AppDispatch>();
+  const fieldValues = useSelector((state: any) => state.fieldsValue);
 
   const handleChange = (
     e: React.MouseEvent<HTMLElement>,

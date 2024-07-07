@@ -11,7 +11,7 @@ import Tabs from "@mui/material/Tabs";
  */
 const EditorManage: React.FC<ProductGenerationProps> = (props) => {
   const [currentTab, setCurrentTab] = useState("document");
-  const handleTabsChange = (event, value) => {
+  const handleTabsChange = (event: React.SyntheticEvent, value: string) => {
     setCurrentTab(value);
   };
 
