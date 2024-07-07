@@ -10,28 +10,16 @@ import { X as XIcon } from "../icons/x";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { FormattedMessage } from "react-intl";
-// import SelectLanguage from "./homepage/SelectLanguage";
-import Link from "./Link";
+import NestedList, { langProps } from "./NestedList";
+import useSettings from "hooks/use-settings";
+import { Settings } from "contexts/settings-context";
 
 
-const languageTag = {
-  en: "EN-English",
-  fi: "FI-Finnish",
-  da: "DA-Danish",
-  sv: "SV-Swedish",
-  no: "NO-Norwegian",
-};
-
-
-export type langProps = {
-  langKey: string;
-  link: string;
-  selected: boolean;
-};
 
 interface SettingsDrawerProps {
   onClose?: () => void;
   langs?: langProps[];
+  langKey?: string;
   open?: boolean;
 }
 
@@ -48,7 +36,7 @@ const themes = [
   },
 ];
 
-const getValues = (settings) => ({
+const getValues = (settings: Settings) => ({
   direction: settings.direction,
   responsiveFontSizes: settings.responsiveFontSizes,
   theme: settings.theme,
@@ -56,11 +44,10 @@ const getValues = (settings) => ({
 });
 
 const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
-
-  const { open, onClose, langs, ...other } = props;
+  const { open, onClose, langs, langKey, ...other } = props;
   const { settings, saveSettings } = useSettings();
   const [values, setValues] = React.useState(getValues(settings));
-  const handleChange = (field: 'direction' | 'responsiveFontSizes' | 'theme' | 'lang', value: any): void => {
+  const handleChange = (field, value): void => {
     setValues({
       ...values,
       [field]: value,
@@ -166,7 +153,7 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           })}
         </Box>
         <Divider sx={{ mt: 4 }} />
-        <NestedList items={langs} />
+        <NestedList items={langs} langKey={langKey} />
         <Divider sx={{ mt: 4 }} />
         <Button
           color='primary'
@@ -185,70 +172,3 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
 };
 
 export default SettingsDrawer;
-
-import ListSubheader from "@mui/material/ListSubheader";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import Collapse from "@mui/material/Collapse";
-import ExpandLess from "@mui/icons-material/ExpandLess";
-import ExpandMore from "@mui/icons-material/ExpandMore";
-import TranslateRoundedIcon from "@mui/icons-material/TranslateRounded";
-import useSettings from "hooks/useSettings";
-
-export function NestedList({ items }) {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClick = () => {
-    setOpen(!open);
-  };
-
-  return (
-    <List
-      sx={{ width: "100%", maxWidth: 360, bgcolor: "background.default" }}
-      component='nav'
-      aria-labelledby='nested-list-subheader'
-      subheader={
-        <ListSubheader component='div' id='nested-list-subheader'>
-          <Typography variant='caption' color='testSecondary'>
-            Change Language:{" "}
-          </Typography>
-        </ListSubheader>
-      }
-    >
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <TranslateRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-          primary={
-            <Typography variant='subtitle2' color='initial'>
-              {items &&
-                items
-                  .filter((item: langProps) => item?.selected)
-                  .map((item: langProps) => languageTag[`${item.langKey}`])}
-            </Typography>
-          }
-        />
-        {open ? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-      <Collapse in={open} timeout='auto' unmountOnExit>
-        <List component='div' disablePadding>
-          <Typography variant='subtitle2' color='initial'>
-            {items &&
-              items
-                .filter((item: langProps) => !item.selected)
-                .map((item: langProps, index: number) => (
-                  <Link key={index + 300} to={item.link}>
-                    <ListItemButton sx={{ pl: 9 }}>
-                      {languageTag[`${item.langKey}`]}
-                    </ListItemButton>
-                  </Link>
-                ))}
-          </Typography>
-        </List>
-      </Collapse>
-    </List>
-  );
-}

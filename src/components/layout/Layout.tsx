@@ -35,20 +35,24 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ data, location, children }) => {
   const { settings, saveSettings } = useSettings();
   const { langs, defaultLangKey } = data.site.siteMetadata.languages;
+
   const langKey = getCurrentLangKey(langs, defaultLangKey, location.pathname);
+
 
   useEffect(() => {
     const newLang = ['sv', 'no', 'fi', 'da'].includes(langKey) ? langKey : 'en';
     saveSettings({ ...settings, lang: newLang });
   }, [langKey]);
 
+
   const i18nMessages = require(`../../data/messages/${settings.lang}`);
   const langsMenu = getLangs(langs, langKey, getUrlForLang(`/${langKey}/`, location.pathname));
+
 
   return (
     <IntlProvider locale={langKey} messages={i18nMessages}>
       <Box sx={{ backgroundColor: (theme) => theme.palette.background.default }}>
-        <TopBar title="maila.ai" icon="logo" />
+        <TopBar title="maila.ai" icon="logo" langKey={langKey} langs={langsMenu} />
         {children}
         <Footer langKey={langKey} langs={langsMenu} />
       </Box>

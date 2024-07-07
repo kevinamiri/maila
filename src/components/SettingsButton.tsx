@@ -5,7 +5,17 @@ import IconButton from "@mui/material/IconButton";
 import SettingsIcon from "@mui/icons-material/Settings";
 import SettingsDrawer from "./settings-drawer";
 
-export const SettingsButton = () => {
+export type langProps = {
+  langKey: string;
+  link: string;
+  selected: boolean;
+};
+interface SettingsButtonProps {
+  langs?: langProps[];
+  langKey?: string;
+}
+
+export const SettingsButton = ({ langs, langKey }: SettingsButtonProps) => {
   const [open, setOpen] = useState<boolean>(false);
 
   const handleOpen = (): void => {
@@ -35,7 +45,7 @@ export const SettingsButton = () => {
           <SettingsIcon />
         </IconButton>
       </Tooltip>
-      <SettingsDrawer onClose={handleClose} open={open} />
+      <SettingsDrawer onClose={handleClose} open={open} langs={langs} langKey={langKey} />
     </>
   );
 };

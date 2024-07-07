@@ -11,7 +11,7 @@ import { navigate } from "gatsby";
 import { FormattedMessage } from "react-intl";
 import { SeverityPill } from "./severity-pill";
 
-import { SettingsButton } from "./SettingsButton";
+import { SettingsButton, langProps } from "./SettingsButton";
 import Container from "@mui/material/Container";
 
 const drawerWidth = 240;
@@ -20,9 +20,11 @@ interface TopBarProps {
   title: string;
   icon: string;
   uilang?: any;
+  langKey?: string;
+  langs?: langProps[];
 }
 
-const TopBar = ({ title, icon, uilang }: TopBarProps) => {
+const TopBar = ({ title, icon, uilang, langKey, langs }: TopBarProps) => {
   const { IsOpen, toggleOpen, logout } = React.useContext(AppContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
@@ -103,7 +105,7 @@ const TopBar = ({ title, icon, uilang }: TopBarProps) => {
             }}
           >
             {uilang && uilang}
-            <SettingsButton />
+            <SettingsButton langs={langs} langKey={langKey} />
             <UserAvatar handleClick={handleClick} />
           </Box>
 
