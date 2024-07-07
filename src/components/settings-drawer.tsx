@@ -56,10 +56,11 @@ const getValues = (settings) => ({
 });
 
 const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
+
   const { open, onClose, langs, ...other } = props;
   const { settings, saveSettings } = useSettings();
   const [values, setValues] = React.useState(getValues(settings));
-  const handleChange = (field, value): void => {
+  const handleChange = (field: 'direction' | 'responsiveFontSizes' | 'theme' | 'lang', value: any): void => {
     setValues({
       ...values,
       [field]: value,
@@ -225,8 +226,8 @@ export function NestedList({ items }) {
             <Typography variant='subtitle2' color='initial'>
               {items &&
                 items
-                  .filter((item) => item?.selected)
-                  .map((item) => languageTag[`${item.langKey}`])}
+                  .filter((item: langProps) => item?.selected)
+                  .map((item: langProps) => languageTag[`${item.langKey}`])}
             </Typography>
           }
         />
@@ -235,18 +236,16 @@ export function NestedList({ items }) {
       <Collapse in={open} timeout='auto' unmountOnExit>
         <List component='div' disablePadding>
           <Typography variant='subtitle2' color='initial'>
-            {/* items */}
             {items &&
               items
-                .filter((item) => !item.selected)
-                .map((item, index) => (
+                .filter((item: langProps) => !item.selected)
+                .map((item: langProps, index: number) => (
                   <Link key={index + 300} to={item.link}>
                     <ListItemButton sx={{ pl: 9 }}>
                       {languageTag[`${item.langKey}`]}
                     </ListItemButton>
                   </Link>
                 ))}
-            {/* items */}
           </Typography>
         </List>
       </Collapse>
