@@ -1,91 +1,33 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
-import SchemaOrg from "./SchemaOrg";
+import useSiteMetadata from "hooks/useSiteMetadata"
+import React from "react"
 
-interface frontmatter {
-  title: string;
-  description: string;
-  date: string;
-  image: string;
-  slug: string;
+export const SEO = ({ title, description, pathname, children }) => {
+  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, author } = useSiteMetadata()
+  const postTitle = `${title} | ${defaultTitle}`
+  console.log(postTitle)
+  const seo = {
+    title: title || defaultTitle,
+    description: description || defaultDescription,
+    image: `${siteUrl}/${image}`,
+    url: `${siteUrl}${pathname}`,
+    twitterUsername,
+  }
+
+  return (
+    <>
+      <title>{postTitle}</title>
+      {postTitle && <meta name="title" content={postTitle} />}
+      {seo?.description && <meta name="description" content={seo.description} />}
+      {author?.name && <meta name="author" content={author.name} />}
+      {seo?.description && <meta name="description" content={seo.description} />}
+      {seo?.image && <meta name="image" content={seo.image} />}
+      <meta name="twitter:card" content="summary_large_image" />
+      {seo?.title && <meta name="twitter:title" content={seo.title} />}
+      {seo?.url && <meta name="twitter:url" content={seo.url} />}
+      {seo?.description && <meta name="twitter:description" content={seo.description} />}
+      {seo?.image && <meta name="twitter:image" content={seo.image} />}
+      {seo?.twitterUsername && <meta name="twitter:creator" content={seo.twitterUsername} />}
+      {children}
+    </>
+  )
 }
-interface SEOProps {
-  isBlogPost?: boolean;
-  frontmatter?: frontmatter;
-  postImage?: string;
-  langKey?: string;
-}
-
-const SEO = ({ frontmatter, postImage, isBlogPost, langKey }: SEOProps) => (
-  <StaticQuery
-    query={graphql`
-      {
-        site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-            image
-            author {
-              name
-            }
-            organization {
-              name
-              url
-              logo
-            }
-          }
-        }
-      }
-    `}
-    render={({ site: { siteMetadata: seo } }) => {
-      const title = frontmatter.title || seo.title;
-      const description = frontmatter.description || seo.description;
-      const image = postImage ? `${seo.siteUrl}${postImage}` : seo.image;
-      console.log(description);
-
-      const url = frontmatter.slug
-        ? `${seo.siteUrl}/${frontmatter.slug}/`
-        : seo.siteUrl;
-      const datePublished = frontmatter.date;
-
-      return (
-        <React.Fragment>
-          <Helmet
-            key='app-head'
-            defaultTitle={title}
-            titleTemplate={`%s | ${seo.title}`}
-          >
-            <html lang={langKey} />
-            <title>{title}</title>
-            <meta name='description' content={description} />
-            <meta name='author' content={seo.author.name} />
-            <meta name='image' content={image} />
-            <meta property='og:url' content={url} />
-            {isBlogPost ? <meta property='og:type' content='article' /> : null}
-            <meta property='og:title' content={title} />
-            <meta property='og:description' content={description} />
-            <meta property='og:site_name' content={title} />
-            <meta property='og:image' content={image} />
-            {image ? <meta property='og:image' content={image} /> : ""}
-          </Helmet>
-          <SchemaOrg
-            isBlogPost={isBlogPost ? true : false}
-            url={url}
-            title={title}
-            image={image}
-            description={description}
-            author={seo.author.name}
-            datePublished={datePublished}
-            siteUrl={seo.siteUrl}
-            organization={seo.organization}
-            defaultTitle={seo.title}
-          />
-        </React.Fragment>
-      );
-    }}
-  />
-);
-
-export default SEO;

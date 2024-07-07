@@ -1,17 +1,14 @@
 import React from "react";
 import { useIntl } from "react-intl";
-import ProductDescription from "./editors/ProductDescription";
+import ProductDescription, { ProductGenerationProps } from "./editors/ProductDescription";
 import {
   updateAudienceValue,
   updateBusinessNameValue,
   updateKeywordValue,
   updateFeatureValue,
 } from "../slices/fieldsValue";
-/**
- *
- * In order to handle the language and avoid typing errors,
- * we put the component in the wtitingtools component
- */
+import { JSX } from "react/jsx-runtime";
+
 
 export const ProductDescriptionTool = (props) => {
   const intl = useIntl();
@@ -58,7 +55,7 @@ export const ProductDescriptionTool = (props) => {
   );
 };
 
-export const ProductTaglineTool = (props) => {
+export const ProductTaglineTool = (props: JSX.IntrinsicAttributes & ProductGenerationProps) => {
   const intl = useIntl();
   const keywordslabel: string = intl.formatMessage({ id: "A009" });
   const keywordsplaceholder: string = intl.formatMessage({ id: "A0010" });

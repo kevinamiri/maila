@@ -10,6 +10,9 @@ export const useSiteMetadata = () => {
             title
             siteUrl
             description
+            image
+            author { name }
+            organization { name url logo }
           }
         }
       }
@@ -19,3 +22,5 @@ export const useSiteMetadata = () => {
 };
 
 export default useSiteMetadata;
+
+

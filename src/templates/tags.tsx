@@ -53,6 +53,7 @@ export const pageQuery = graphql`
             description
             date
             slug
+            path
           }
           fields {
             langKey
@@ -68,3 +69,17 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+
+import { SEO } from "../components/SEO/SEO";
+
+
+export const Head = (props) => {
+  const { data } = props;
+  const { markdownRemark: post } = data;
+  return (
+  <SEO title={post.frontmatter.title} description={post.frontmatter.description} pathname={post.frontmatter.path}>
+    <meta name="description" content={post.frontmatter.description} />
+  </SEO>
+  )
+}

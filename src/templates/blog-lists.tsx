@@ -47,6 +47,7 @@ export const pageQuery = graphql`
             templateKey
             date
             lang
+            path
             tags
           }
         }
@@ -61,8 +62,23 @@ export const pageQuery = graphql`
         description
         date
         tags
+        path
         lang
       }
     }
   }
 `;
+
+
+import { SEO } from "../components/SEO/SEO";
+
+
+export const Head = (props) => {
+  const { data } = props;
+  const { markdownRemark: post } = data;
+  return (
+  <SEO title={post.frontmatter.title} description={post.frontmatter.description} pathname={post.frontmatter.path}>
+    <meta name="description" content={post.frontmatter.description} />
+  </SEO>
+  )
+}

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import { IntlProvider } from 'react-intl';
 import { Box } from '@mui/material';
 
@@ -8,16 +7,6 @@ import TopBar from '../TopBar';
 import useSettings from '../../hooks/useSettings';
 import { getCurrentLangKey, getLangs, getUrlForLang } from '../../langfile';
 
-// 🌐 Supported languages and their directions
-const languageConfig = {
-  sv: 'ltr',
-  no: 'ltr',
-  fi: 'ltr',
-  dk: 'ltr',
-  en: 'ltr',
-};
-
-type LanguageKey = keyof typeof languageConfig;
 
 interface LayoutTagProps {
   data: {
@@ -53,8 +42,9 @@ const LayoutTag: React.FC<LayoutTagProps> = ({ data, location, children }) => {
   const { settings, saveSettings } = useSettings();
   const [values, setValues] = useState(settings);
 
-  const handleLanguageChange = (lang: LanguageKey) => {
-    const direction = languageConfig[lang] as "ltr" | "rtl";
+
+  const handleLanguageChange = (lang: string) => {
+    const direction: "rtl" | "ltr" = ["ar", "he", "fa"].includes(lang) ? "rtl" : "ltr";
     const newValues = { ...values, lang, direction };
     setValues(newValues);
     saveSettings(newValues);
@@ -62,7 +52,7 @@ const LayoutTag: React.FC<LayoutTagProps> = ({ data, location, children }) => {
 
   
   useEffect(() => {
-    handleLanguageChange(langKey as LanguageKey);
+    handleLanguageChange(langKey);
   }, [langKey]);
 
   // 🔄 Load language messages
@@ -77,14 +67,6 @@ const LayoutTag: React.FC<LayoutTagProps> = ({ data, location, children }) => {
 
   return (
     <>
-      <Helmet
-        key='app-head'
-        defaultTitle={title}
-        titleTemplate={`%s | ${title}`}
-      >
-        <html lang={langKey} />
-        <meta name='description' content={description} />
-      </Helmet>
       <IntlProvider
         locale={langKey}
         messages={i18nMessages}

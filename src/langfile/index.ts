@@ -90,6 +90,14 @@ const getI18nBase = curry(
   (i18n, langKey) => i18n[langKey] || Object.values(i18n)[0]
 );
 
+
+
+export const getLangConfig = (langKey: string) => {
+  const lang = ['sv', 'no', 'fi', 'da'].includes(langKey) ? langKey : 'en';
+  const direction: "rtl" | "ltr" = ["ar", "he", "fa"].includes(lang) ? "rtl" : "ltr";
+  return { lang, direction };
+};
+
 export {
   isHomePage,
   isInPagesPaths,
