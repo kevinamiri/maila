@@ -13,6 +13,8 @@ yarn-error-log
 public/
 dist/
 createPost/*
+bash.bash
+.cursorrules
 
 #amplify
 amplify/\#current-cloud-backend

@@ -8,17 +8,17 @@ import { red } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-interface CardTstimonialsProps {
+interface TestimonialProps {
   body?: string;
   title?: string;
   subheader?: string;
 }
 
-const CardTstimonials: React.FC<CardTstimonialsProps> = ({
+const TestimonialCard: React.FC<TestimonialProps> = ({
   body = "maila.ai is a new AI-powered copywriter and copy editor that helps you to craft a powerful product description.",
-  title = "Dr. lex K. Maher",
+  title = "Dr. Lex K. Maher",
   subheader = "@Maherwork",
-}: CardTstimonialsProps) => (
+}) => (
   <Card
     sx={{
       backgroundColor: "background.default",
@@ -30,12 +30,12 @@ const CardTstimonials: React.FC<CardTstimonialsProps> = ({
   >
     <CardHeader
       avatar={
-        <Avatar sx={{ bgcolor: red[500] }} aria-label='recipe'>
+        <Avatar sx={{ bgcolor: red[500] }} aria-label='avatar'>
           R
         </Avatar>
       }
       action={
-        <IconButton aria-label='settings' color='primary' size='large'>
+        <IconButton aria-label='twitter' color='primary' size='large'>
           <TwitterIcon />
         </IconButton>
       }
@@ -48,4 +48,4 @@ const CardTstimonials: React.FC<CardTstimonialsProps> = ({
   </Card>
 );
 
-export default CardTstimonials;
+export default TestimonialCard;

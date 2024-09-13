@@ -10,15 +10,8 @@ const BlogPost = (props) => {
   return (
     <Layout data={data} location={location} isBlogPost>
       <BlogPostTemplate
+        {...post.frontmatter}
         content={post.html}
-        description={post.frontmatter.description}
-        tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
-        image={post.frontmatter.image}
-        date={post.frontmatter.date}
-        lang={post.frontmatter.lang}
-        imageAlt={post.frontmatter.imageAlt}
-        imageStatus={post.frontmatter.imageStatus}
       />
     </Layout>
   );

@@ -1,49 +1,62 @@
-import * as React from "react";
-import Button from "@mui/material/Button";
-import Snackbar from "@mui/material/Snackbar";
-import Slide from "@mui/material/Slide";
+import React, { useState, useEffect } from 'react';
+import { Button, Snackbar, Slide, SlideProps } from '@mui/material';
 
-function TransitionLeft(props) {
-  return <Slide {...props} direction='left' />;
-}
+// DirectionSnackbar: Displays a message in a Snackbar with directional animation
+type DirectionSnackbarProps = {
+  message: string;
+  running: [boolean, React.Dispatch<React.SetStateAction<boolean>>];
+};
 
-function TransitionRight(props) {
-  return <Slide {...props} direction='right' />;
-}
+const DirectionSnackbar: React.FC<DirectionSnackbarProps> = ({ message, running }) => {
+  const [open, setOpen] = useState(false);
+  const [transition, setTransition] = useState<React.ComponentType<SlideProps> | undefined>(undefined);
+  const [run, setRun] = running;
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
-export default function DirectionSnackbar(props) {
-  const [open, setOpen] = React.useState(false);
-  const [transition, setTransition] = React.useState(undefined);
-  const [run, setRun] = props.running;
-
-  const handleClick = () => () => {
-    setTransition(() => (props) => <Slide {...props} direction='right' />);
+  const handleClick = () => {
+    setTransition(() => (props: SlideProps) => <Slide {...props} direction="right" />);
     setOpen(true);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClose = () => setOpen(false);
 
-  // const status = () => {
-  //   run? handleClick(): null
-  // }
+  useEffect(() => {
+    if (run) {
+      setLoading(true);
+      // Simulating an async operation
+      setTimeout(() => {
+        handleClick();
+        setLoading(false);
+      }, 1000);
+    }
+  }, [run]);
 
-  // React.useEffect(() => {
-  //   run? handleClick(): null
-  // }
-  // ,[])
+  // Error handling example
+  useEffect(() => {
+    if (error) {
+      console.error('An error occurred:', error);
+      setOpen(true);
+    }
+  }, [error]);
 
   return (
     <div>
-      <Button onClick={handleClick()}>Left</Button>
+      <Button onClick={handleClick} disabled={loading}>
+        {loading ? 'Loading...' : 'Show Snackbar'}
+      </Button>
       <Snackbar
         open={open}
         onClose={handleClose}
         TransitionComponent={transition}
-        message={props.message}
-        key={transition ? transition.name : ""}
+        message={error || message}
+        key={transition ? transition.name : ''}
       />
     </div>
   );
-}
+};
+
+export default DirectionSnackbar;
+
+// Usage example:
+// <DirectionSnackbar message="Hello, World!" running={[isRunning, setIsRunning]} />

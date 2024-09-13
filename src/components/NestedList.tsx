@@ -10,6 +10,7 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import TranslateRoundedIcon from "@mui/icons-material/TranslateRounded";
 import Typography from "@mui/material/Typography";
+import { useTheme } from '@mui/material/styles';
 
 export type langProps = {
     langKey: string;
@@ -26,8 +27,9 @@ const languageTag = {
   no: "NO-Norwegian",
 };
 
-export function  NestedList({ items, langKey }) {
+export function NestedList({ items, langKey }) {
   const [open, setOpen] = React.useState(false);
+  const theme = useTheme();
 
   const handleClick = () => {
     setOpen(!open);
@@ -46,36 +48,47 @@ export function  NestedList({ items, langKey }) {
         </ListSubheader>
       }
     >
-      <ListItemButton onClick={handleClick}>
+      <ListItemButton 
+        onClick={handleClick}
+        aria-expanded={open}
+        aria-controls="language-list"
+      >
         <ListItemIcon>
           <TranslateRoundedIcon />
         </ListItemIcon>
         <ListItemText
           primary={
-            <Typography variant='subtitle2' color='initial'>
+            <Typography 
+              variant='subtitle2' 
+              color={theme.palette.mode === 'dark' ? 'primary' : 'initial'}
+              fontWeight="bold"
+            >
               {items &&
                 items
                   .filter((item: langProps) => item?.selected)
-                  .map((item: langProps) => languageTag[`${item.langKey}`])}
+                  .map((item: langProps) => `${languageTag[item.langKey]} (Selected)`)}
             </Typography>
           }
         />
         {open ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open} timeout='auto' unmountOnExit>
-        <List component='div' disablePadding>
-          <Typography variant='subtitle2' color='initial'>
-            {items &&
-              items
-                .filter((item: langProps) => !item.selected)
-                .map((item: langProps, index: number) => (
-                  <Link key={index + 300} to={item.link}>
-                    <ListItemButton sx={{ pl: 9 }}>
-                      {languageTag[`${item.langKey}`]}
-                    </ListItemButton>
-                  </Link>
-                ))}
-          </Typography>
+        <List component='div' disablePadding id="language-list">
+          {items &&
+            items
+              .filter((item: langProps) => !item.selected)
+              .map((item: langProps, index: number) => (
+                <Link key={index + 300} to={item.link}>
+                  <ListItemButton sx={{ pl: 9 }}>
+                    <Typography 
+                      variant='subtitle2' 
+                      color={theme.palette.mode === 'dark' ? 'text.primary' : 'initial'}
+                    >
+                      {languageTag[item.langKey]}
+                    </Typography>
+                  </ListItemButton>
+                </Link>
+              ))}
         </List>
       </Collapse>
     </List>

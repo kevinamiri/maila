@@ -7,7 +7,6 @@ import AllTagsPageTemplate from "../components/homepage/AllTagsPageTemplate";
 import { Box } from "@mui/material";
 
 const AllTagsPage = (props) => {
-  console.log(props);
   const url = props.location.pathname;
   const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);

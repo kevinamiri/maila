@@ -1,5 +1,4 @@
 import React from "react";
-import * as PropTypes from "prop-types";
 import TagList from "../components/landings/modules/TagList";
 import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
@@ -7,7 +6,15 @@ import Content, { HTMLContent } from "../components/homepage/Content";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
-const AboutPageTemplate = ({
+interface AboutPageTemplateProps {
+  title: string;
+  content?: string;
+  contentComponent?: React.ComponentType<any>;
+  tags?: string[];
+  langKey?: string;
+}
+
+const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
   title,
   content,
   contentComponent,
@@ -33,15 +40,44 @@ const AboutPageTemplate = ({
   );
 };
 
-AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-  tags: PropTypes.array,
-  langKey: PropTypes.string,
-};
+interface AboutPageProps {
+  data: {
+    markdownRemark: {
+      html: string;
+      frontmatter: {
+        title: string;
+        description: string;
+        tags: string[];
+        lang: string;
+      };
+    };
+    allArticlesJson: {
+      edges: {
+        node: {
+          articles: {
+            en: string;
+            sv: string;
+            da: string;
+            no: string;
+            fi: string;
+          };
+        };
+      }[];
+    };
+    site: {
+      siteMetadata: {
+        title: string;
+        languages: {
+          langs: string[];
+          defaultLangKey: string;
+        };
+      };
+    };
+  };
+  location: Location;
+}
 
-const AboutPage = (props) => {
+const AboutPage: React.FC<AboutPageProps> = (props) => {
   const data = props.data;
   const markdownRemark = props.data.markdownRemark;
   const jsonData = props.data.allArticlesJson.edges[0].node.articles;
@@ -62,9 +98,6 @@ const AboutPage = (props) => {
   );
 };
 
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
-};
 
 export default AboutPage;
 

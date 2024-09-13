@@ -4,63 +4,61 @@ import Time from "./Time";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 
-const BlogPostTemplate = (data) => {
-  const image = getImage(data.image);
-  const imageAlt = data.imageAlt && data.imageAlt;
+interface BlogPostTemplateProps {
+  image: IGatsbyImageData;
+  imageAlt?: string;
+  date: string;
+  content: string;
+  tags: string[];
+  lang: string;
+}
+
+const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
+  image,
+  imageAlt,
+  date,
+  content,
+  tags,
+  lang,
+}) => {
+  const gatsbyImage = image ? getImage(image) : null;
+
   return (
-    <>
-      <Container
-        sx={{
-          minHeight: "100%",
-          mt: 8,
-        }}
-        maxWidth='lg'
-        component='section'
-      >
-        <Grid container spacing={3}>
-          <Grid item xs={12} sx={{ my: 4 }}>
-            <Time date={data.date} />
+    <Container maxWidth="lg" component="section" sx={{ mt: 8, minHeight: "100%" }}>
+      <Grid container spacing={3}>
+        <Grid item xs={12} sx={{ my: 4 }}>
+          {date && <Time date={date} />}
 
-            {image && (
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
+          {gatsbyImage && (
+            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <GatsbyImage
+                style={{
+                  border: "2px solid #43C6B7",
+                  borderRadius: "5px",
                 }}
-              >
-                <GatsbyImage
-                  style={{
-                    border: "2px solid #43C6B7",
-                    borderRadius: "5px",
-                  }}
-                  image={image}
-                  alt={imageAlt}
-                />
-              </Box>
-            )}
+                image={gatsbyImage}
+                alt={imageAlt || "Blog post image"}
+              />
+            </Box>
+          )}
+          
+          {content && (
             <Box
-              color='text.primary'
-              dangerouslySetInnerHTML={{ __html: data.content }}
+              color="text.primary"
+              dangerouslySetInnerHTML={{ __html: content }}
             />
-          </Grid>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              alignItem: "flex-start",
-              flexWrap: "wrap",
-              mb: 5,
-            }}
-          >
-            <TagList tags={data.tags} langKey={data.lang} />
-          </Box>
+          )}
         </Grid>
-      </Container>
-    </>
+        
+        {tags && tags.length > 0 && (
+          <Box sx={{ display: "flex", flexWrap: "wrap", mb: 5 }}>
+            <TagList tags={tags} langKey={lang} />
+          </Box>
+        )}
+      </Grid>
+    </Container>
   );
 };
 

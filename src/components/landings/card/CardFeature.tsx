@@ -16,14 +16,14 @@ const CardFeature: React.FC<CardFeatureProps> = ({
   title = "The default title",
   body = "maila.ai is a new AI-powered copywriter and copy editor that helps you to craft a powerful product description.",
   badgeLabel,
-}: CardFeatureProps) => {
+}) => {
   return (
     <Card sx={{ maxWidth: 350, minWidth: 300, p: 1, m: 1 }}>
       <CardHeader
         action={
           badgeLabel && (
             <Chip
-              label={"Coming soon"}
+              label={badgeLabel}
               sx={{
                 fontWeight: 500,
                 borderRadius: "4px",
@@ -47,4 +47,5 @@ const CardFeature: React.FC<CardFeatureProps> = ({
     </Card>
   );
 };
+
 export default CardFeature;
