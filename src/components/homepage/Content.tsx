@@ -7,9 +7,9 @@ import Typography from "@mui/material/Typography";
 export const HTMLContent = ({ content }) => (
   <Box
     sx={{
-      fontSize: 14, // 📏 Base font size
-      p: 2, // 🧩 Padding
-      fontWeight: 400, // 📝 Regular font weight
+      fontSize: 14,
+      p: 2,
+      fontWeight: 400,
     }}
     dangerouslySetInnerHTML={{ __html: content }}
   />
@@ -19,18 +19,18 @@ export const HTMLContent = ({ content }) => (
 const Content = ({ content }) => (
   <Box
     sx={{
-      p: 2, // 🧩 Padding
+      p: 2,
     }}
   >
-    <Typography variant='body1' color='textPrimary'> {/* 🎨 Updated color for better readability */}
+    <Typography variant='body1' color='text.primary'>
       {content}
     </Typography>
   </Box>
 );
 
 Content.propTypes = {
-  content: PropTypes.node, // 📄 Content to display
-  className: PropTypes.string, // 🏷️ Optional class name
+  content: PropTypes.node,
+  className: PropTypes.string,
 };
 
 HTMLContent.propTypes = Content.propTypes;
