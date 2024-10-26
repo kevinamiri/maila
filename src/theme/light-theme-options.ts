@@ -64,8 +64,8 @@ const error = {
 };
 
 const text = {
-  primary: "#121828",
-  secondary: "#65748B",
+  primary: "#101828",
+  secondary: "#475467",
   disabled: "rgba(55, 65, 81, 0.48)",
 };
 

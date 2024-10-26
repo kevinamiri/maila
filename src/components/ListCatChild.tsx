@@ -9,8 +9,9 @@ import { Link } from "gatsby";
 interface listProps {
   dirList: string;
   formattedId: string;
-  children: string;
+  children: React.ReactNode; // Changed from string to React.ReactNode
 }
+
 
 const ListCatChild = (props: listProps) => {
   let selectedList = (url: string) => {
