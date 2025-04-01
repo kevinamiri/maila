@@ -4,7 +4,7 @@ import { X } from "../icons/x"
 import { ReactJSXElement } from "@emotion/react/types/jsx-namespace"
 import LinearProgress from "./subcomponents/LinearProgressLoading"
 
-type DrawerProps = {
+type SlidePanelProps = {
   onClose?: () => void
   children: ReactJSXElement
   handleExpand?: any
@@ -13,10 +13,10 @@ type DrawerProps = {
 }
 
 // @example
-// <OutputsDrawer open={true} anchor="right" onClose={() => {}}>
+// <SlidePanelOutput open={true} anchor="right" onClose={() => {}}>
 //   <div>Content</div>
-// </OutputsDrawer>
-const OutputsDrawer: FC<DrawerProps> = ({ open, onClose, children, anchor, ...props }) => (
+// </SlidePanelOutput>
+const SlidePanelOutput: FC<SlidePanelProps> = ({ open, onClose, children, anchor, ...props }) => (
   <Drawer
     anchor={anchor}
     onClose={onClose}
@@ -65,4 +65,4 @@ const OutputsDrawer: FC<DrawerProps> = ({ open, onClose, children, anchor, ...pr
   </Drawer>
 )
 
-export default OutputsDrawer
+export default SlidePanelOutput

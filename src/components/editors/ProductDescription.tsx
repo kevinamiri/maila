@@ -17,13 +17,13 @@ import { AppDispatch } from "store"
 import loadScriptByURL from "./google"
 import GenerationButton from "./GenerationButton"
 import MultipleOptions from "components/subcomponents/MultipleOptions"
-import OutputsDrawer from "components/outputs-drawer"
-import Card3EditorsRightSide from "./Card3EditorsRightSide"
+import SlidePanelOutput from "components/side-panel-output"
 import LanguageOutputsModal from "components/subcomponents/language-outputs-modal"
 import QuestionMarkIcon from "components/subcomponents/questionMarkIcon"
 import { LoadFromUrl } from "./loadFromUrl"
 import InputSettings from "./input-settings"
 import FormRedux from "./FormRedux"
+import EditorsPanelSide from "./EditorsPanelSide"
 
 
 // Lazy loaded components
@@ -169,21 +169,19 @@ const ProductDescription = ({
       </Box>
 
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: { xs: "center", md: "flex-start" } }}>
-        <OutputsDrawer
+        <SlidePanelOutput
           anchor={isDesktop ? "right" : "bottom"}
           handleExpand={toggleExpand}
           onClose={closeExpand}
           open={expand}
         >
-
-          <Card3EditorsRightSide
+          <EditorsPanelSide
             editor={editor}
             editor2={editor2}
             editor3={editor3}
             editor4={editor4}
           />
-
-        </OutputsDrawer>
+        </SlidePanelOutput>
       </Box>
     </Box>
   )

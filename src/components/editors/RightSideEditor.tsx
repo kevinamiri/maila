@@ -33,7 +33,7 @@ type CustomElement = SlateElement & {
   children: Descendant[];
 };
 
-const ChildText = (props) => {
+const RightSideEditor = (props) => {
   const editor = props.mainEditor;
   const editor2 = props.correspondedEditor;
   const dispatch = useDispatch();
@@ -270,4 +270,4 @@ export const MarkButton = ({ format, children }) => {
   );
 };
 
-export default ChildText;
+export default RightSideEditor;

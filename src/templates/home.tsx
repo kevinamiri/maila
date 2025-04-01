@@ -52,9 +52,9 @@ const HomePage = ({ data, location }) => {
         />
         
         {/* FAQ section */}
-        <AccordionBlock 
+        {/* <AccordionBlock 
           questions={faqPairs} 
-        />
+        /> */}
         
         {/* Disabled sections - preserved for future use */}
         {/* 

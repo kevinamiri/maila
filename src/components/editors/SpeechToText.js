@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import mic from 'microphone-stream';
 import Amplify, { Predictions } from 'aws-amplify'
-import { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
 import '../../../configureAmplify'
 const initialState = { name: '', description: '' }
 

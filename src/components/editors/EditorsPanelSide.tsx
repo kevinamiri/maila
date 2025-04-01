@@ -1,22 +1,23 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import ChildText from "./ChildText";
+import ChildText from "./RightSideEditor";
 import Card from "@mui/material/Card";
+import RightSideEditor from "./RightSideEditor";
 
-const Card3EditorsRightSide = ({ editor, editor2, editor3, editor4 }) => {
+const EditorsPanelSide = ({ editor, editor2, editor3, editor4 }) => {
   return (
     <Card elevation={1} sx={{ width: "100%" }}>
-      <ChildText
+      <RightSideEditor
         mainEditor={editor}
         correspondedEditor={editor2}
         storageName='content22'
       />
-      <ChildText
+      <RightSideEditor
         mainEditor={editor}
         correspondedEditor={editor3}
         storageName='content33'
       />
-      <ChildText
+      <RightSideEditor
         mainEditor={editor}
         correspondedEditor={editor4}
         storageName='content44'
@@ -25,4 +26,4 @@ const Card3EditorsRightSide = ({ editor, editor2, editor3, editor4 }) => {
   );
 };
 
-export default Card3EditorsRightSide;
+export default EditorsPanelSide;

@@ -103,15 +103,15 @@ const HomeHeroPage: React.FC<Props> = ({
               component="header"
             >
               <Box sx={styles.titleWrapper}>
-                <Typography color="primary" variant="h1">
+                {/* <Typography color="primary" variant="h1">
                   {splitText.firstTwo(title) + " "}
                   <Typography color="success.main" variant="h1" component="span">
                     {splitText.afterTwo(title)}
-                  </Typography>
-                </Typography>
+                  </Typography> */}
+                {/* </Typography> */}
               </Box>
 
-              <Typography color="text.secondary" variant="body2">
+              {/* <Typography color="text.secondary" variant="body2">
                 {header}
               </Typography>
               <Typography
@@ -121,16 +121,16 @@ const HomeHeroPage: React.FC<Props> = ({
                 component="h2"
               >
                 {cta}
-              </Typography>
+              </Typography> */}
             </Grid>
 
-            <Grid sx={{ mb: 3 }} item justifyContent="center" alignContent="center">
+            {/* <Grid sx={{ mb: 3 }} item justifyContent="center" alignContent="center">
               <Button href="/app" variant="contained">
                 <Typography variant="body2" sx={styles.button}>
                   {labelbutton}
                 </Typography>
               </Button>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Box>
       </Grid>
@@ -202,7 +202,7 @@ const HomeHeroPage: React.FC<Props> = ({
             </g>
           </svg>
           <Box sx={styles.typingEffect}>
-            <TypingEffect helpernote={helpernotice} />
+            {/* <TypingEffect helpernote={helpernotice} /> */}
           </Box>
         </Box>
       </Grid>
