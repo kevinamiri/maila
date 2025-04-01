@@ -1,65 +1,87 @@
-import React, { useEffect, Suspense } from "react";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Divider from "@mui/material/Divider";
-import useEditors from "../../hooks/useEditors";
-import loadScriptByURL from "./google";
-const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
-import FormRedux from "./FormRedux";
-import Card3EditorsRightSide from "./Card3EditorsRightSide";
-import GenerationButton from "./GenerationButton";
-const MainSlateEditor = React.lazy(() => import("./MainSlateEditor"));
-import FormHelperText from "@mui/material/FormHelperText";
-import QuestionMarkIcon from "../subcomponents/questionMarkIcon";
-import InputSettings from "./input-settings";
-import OutputsDrawer from "components/outputs-drawer";
-import Box from "@mui/material/Box";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import IconButton from "@mui/material/IconButton";
-import OpenInFullRoundedIcon from "@mui/icons-material/OpenInFullRounded";
-import { useDispatch, useSelector } from "react-redux";
-import { updateExpansion } from "../../slices/ui-states";
-import LanguageOutputsModal from "../../components/subcomponents/language-outputs-modal";
-import MultipleOptions from "components/subcomponents/MultipleOptions";
-import { LoadFromUrl } from "./loadFromUrl";
-import { AppDispatch } from "store";
+// Core
+import React, { useEffect, Suspense } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { useTheme } from "@mui/material/styles"
+
+// UI Components
+import {
+  Box, Card, CardHeader, CardContent, CardActions,
+  Divider, FormHelperText, IconButton, useMediaQuery
+} from "@mui/material"
+import OpenInFullRoundedIcon from "@mui/icons-material/OpenInFullRounded"
+
+// Local
+import useEditors from "../../hooks/useEditors"
+import { updateExpansion } from "../../slices/ui-states"
+import { AppDispatch } from "store"
+import loadScriptByURL from "./google"
+import GenerationButton from "./GenerationButton"
+import MultipleOptions from "components/subcomponents/MultipleOptions"
+import OutputsDrawer from "components/outputs-drawer"
+import Card3EditorsRightSide from "./Card3EditorsRightSide"
+import LanguageOutputsModal from "components/subcomponents/language-outputs-modal"
+import QuestionMarkIcon from "components/subcomponents/questionMarkIcon"
+import { LoadFromUrl } from "./loadFromUrl"
+import InputSettings from "./input-settings"
+import FormRedux from "./FormRedux"
 
 
-interface placeholdersList {
-  label: string;
-  placeholder: string;
-  dispatcher?: (value: string) => void;
+// Lazy loaded components
+const MainSlateEditor = React.lazy(() => import("./MainSlateEditor"))
+
+// Constants
+const RECAPTCHA_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP"
+const RECAPTCHA_URL = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_KEY}`
+
+// Types
+type InputField = { label: string; placeholder: string; dispatcher?: (v: string) => void }
+type EditorType = "document" | "draft"
+
+type Props = {
+  generateButtonName?: string
+  inputLimitation?: number
+  message01?: string
+  mainPlaceholder?: string
+  headerTitle?: string
+  toneTextField?: boolean
+  productType?: string
+  productUrl?: string
+  labelsLists?: InputField[]
+  path: string
+  extraFields?: any
+  editorHeight?: number
+  label?: string
+  tunningOptions?: boolean
+  description?: string
+  example?: string
+  instructHelp?: string
+  component?: React.ComponentType<{}>
+  editorType?: EditorType
+  loadFromUrl?: boolean
 }
-type placeholderLists = placeholdersList[];
 
-
-export interface ProductGenerationProps {
-  generateButtonName?: string | any;
-  inputLimitation?: number;
-  message01?: string | any;
-  mainPlaceholder?: String | any;
-  headerTitle?: string | any;
-  toneTextField?: boolean;
-  productType?: string;
-  productUrl?: string;
-  labelsLists?: placeholderLists;
-  path: string;
-  extraFields?: any;
-  editorHeight?: number;
-  label?: String | any;
-  tunningOptions?: any;
-  description?: String | any;
-  example?: String | any;
-  instructHelp?: String | any;
-  component?: React.ComponentType<{}>;
-  editorType?: "document" | "draft";
-  loadFromUrl?: boolean;
+// Styles
+const styles = {
+  mainBox: (expand: boolean) => ({
+    flexGrow: 1,
+    width: "100%",
+    ...(expand && {
+      width: { xs: "100%", md: "calc(100% - 30%)" },
+      height: { xs: "calc(100% - 30%)", md: "100%" },
+      marginRight: { xs: "0%", md: "33%" },
+      marginBottom: { xs: "60vw", md: "0%" },
+    })
+  }),
+  container: {
+    display: "flex",
+    flexDirection: { xs: "column", md: "row" },
+    justifyContent: "center",
+    alignItems: "center"
+  }
 }
 
-const ProductDescription: React.FC<ProductGenerationProps> = ({
+// Component
+const ProductDescription = ({
   inputLimitation = 15000,
   productType = "4",
   label,
@@ -74,174 +96,97 @@ const ProductDescription: React.FC<ProductGenerationProps> = ({
   tunningOptions,
   editorType = "document",
   loadFromUrl,
-}: ProductGenerationProps) => {
-  const editors = useEditors();
-  const { editor1, editor2, editor3, editor4, editor5 } = editors;
-  const dispatch = useDispatch<AppDispatch>();
-  const { expand } = useSelector((state: any) => state.expandReducer);
+}: Props) => {
+  const { editor1, editor2, editor3, editor4, editor5 } = useEditors()
+  const dispatch = useDispatch<AppDispatch>()
+  const { expand } = useSelector((state: any) => state.expandReducer)
+  const theme = useTheme()
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"))
 
-  const mainEditors = {
-    document: editor1,
-    draft: editor5,
-    storageKey: ["draft", "document"],
-  };
-
-  const editor = editorType === "draft" ? editor5 : editor1;
-  const storageKey = editorType === "draft" ? "draft" : "document";
+  const editor = editorType === "draft" ? editor5 : editor1
+  const storageKey = editorType === "draft" ? "draft" : "document"
 
   useEffect(() => {
-    // load the script by passing the URL
-    loadScriptByURL(
-      "recaptcha-key",
-      `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`,
-      function () {
-        console.log("Google ReCaptcha loaded");
-      }
-    );
-  }, []);
-  const handleClose = (): void => {
-    dispatch(updateExpansion(false));
-  };
-  const handleExpand = (): void => {
-    dispatch(updateExpansion(!expand));
-  };
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
+    loadScriptByURL("recaptcha-key", RECAPTCHA_URL, () => console.log("ReCaptcha loaded"))
+  }, [])
+
+  const toggleExpand = () => dispatch(updateExpansion(!expand))
+  const closeExpand = () => dispatch(updateExpansion(false))
 
   return (
-    <>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Box
-          sx={{
-            flexGrow: 1,
-            // height: 233,
-            width: "100%",
-            // 'vw' make it more smoother than '%'
-            ...(expand && {
-              width: { xs: "100%", md: "calc(100% - 30%)" },
-              height: { xs: "calc(100% - 30%)", md: "100%" },
-              marginRight: { xs: "0%", md: "33%" },
-              marginBottom: { xs: "60vw", md: "0%" },
-            }),
-          }}
-        >
-          <Card
-            elevation={1}
-            sx={{
-              backgroundColor: "background.paper",
-            }}
-          >
-            <CardHeader
-              title={label}
-              avatar={<QuestionMarkIcon title={description} />}
-              action={
-                <>
-                  <LanguageOutputsModal />
-                  <IconButton
-                    onClick={handleExpand}
-                    size='small'
-                    aria-label='Expanding window'
-                  >
-                    <OpenInFullRoundedIcon fontSize='small' />
-                  </IconButton>
-                </>
-              }
-            />
+    <Box sx={styles.container}>
+      <Box sx={styles.mainBox(expand)}>
+        <Card elevation={1} sx={{ backgroundColor: "background.paper" }}>
+          <CardHeader
+            title={label}
+            avatar={<QuestionMarkIcon title={description} />}
+            action={
+              <>
+                <LanguageOutputsModal />
+                <IconButton onClick={toggleExpand} size="small" aria-label="Expand">
+                  <OpenInFullRoundedIcon fontSize="small" />
+                </IconButton>
+              </>
+            }
+          />
 
-            <CardContent>
-              {tunningOptions && (
-                <InputSettings
-                  temperature
-                  tokenL
-                  frequencyP
-                  presenceP
-                  engineId
-                />
-              )}
-              {extraFields && (
-                <FormRedux
-                  labelsLists={labelsLists}
-                  extraFields={extraFields}
-                />
-              )}
-              {toneTextField && (
-                <Box sx={{ mt: 2 }}>
-                  <MultipleOptions />
-                </Box>
-              )}
-              {loadFromUrl && (
-                <LoadFromUrl
-                  editor={editor}
-                  editor2={editor2}
-                  editor3={editor3}
-                  editor4={editor4}
-                />
-              )}
-              <Suspense fallback={<div>Loading...</div>}>
-                <FormHelperText sx={{ mb: 2 }}>{instructHelp}</FormHelperText>
-                <MainSlateEditor
-                  placeholder={example}
-                  editor={editor}
-                  limitChar={inputLimitation}
-                  //main editor storage name for editor
-                  storageKey={storageKey}
-                  editorHeight={editorHeight}
-                  productType={productType}
-                  editor2={editor2}
-                  editor3={editor3}
-                  editor4={editor4}
-                />
-              </Suspense>
-            </CardContent>
-            <Divider />
-            <CardActions disableSpacing>
-              <GenerationButton
-                inputLimitation={inputLimitation}
+          <CardContent>
+            {tunningOptions && <InputSettings temperature tokenL frequencyP presenceP engineId />}
+            {extraFields && <FormRedux labelsLists={labelsLists} extraFields={extraFields} />}
+            {toneTextField && <Box sx={{ mt: 2 }}><MultipleOptions /></Box>}
+            {loadFromUrl && <LoadFromUrl editor={editor} editor2={editor2} editor3={editor3} editor4={editor4} />}
+
+            <Suspense fallback={<div>Loading...</div>}>
+              <FormHelperText sx={{ mb: 2 }}>{instructHelp}</FormHelperText>
+              <MainSlateEditor
+                placeholder={example}
+                editor={editor}
+                limitChar={inputLimitation}
+                storageKey={storageKey}
+                editorHeight={editorHeight}
                 productType={productType}
-                productUrl={productUrl}
-                // the main editor is editor
-                editor={editor}
                 editor2={editor2}
                 editor3={editor3}
                 editor4={editor4}
               />
-            </CardActions>
-          </Card>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: { xs: "center", md: "flex-start" },
-          }}
-        >
-          <OutputsDrawer
-            anchor={matches ? "right" : "bottom"}
-            handleExpand={handleExpand}
-            onClose={handleClose}
-            open={expand}
-          >
-            <Card elevation={1} sx={{ width: "100%" }}>
-              <Card3EditorsRightSide
-                // the main editor is editor
-                editor={editor}
-                editor2={editor2}
-                editor3={editor3}
-                editor4={editor4}
-              />
-            </Card>
-          </OutputsDrawer>
-        </Box>
-      </Box>
-    </>
-  );
-};
+            </Suspense>
+          </CardContent>
 
-export default ProductDescription;
+          <Divider />
+
+          <CardActions disableSpacing>
+            <GenerationButton
+              inputLimit={inputLimitation}
+              pType={productType}
+              pUrl={productUrl}
+              editor={editor}
+              editor2={editor2}
+              editor3={editor3}
+              editor4={editor4}
+            />
+          </CardActions>
+        </Card>
+      </Box>
+
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: { xs: "center", md: "flex-start" } }}>
+        <OutputsDrawer
+          anchor={isDesktop ? "right" : "bottom"}
+          handleExpand={toggleExpand}
+          onClose={closeExpand}
+          open={expand}
+        >
+
+          <Card3EditorsRightSide
+            editor={editor}
+            editor2={editor2}
+            editor3={editor3}
+            editor4={editor4}
+          />
+
+        </OutputsDrawer>
+      </Box>
+    </Box>
+  )
+}
+
+export default ProductDescription

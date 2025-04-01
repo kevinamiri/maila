@@ -18,7 +18,10 @@ interface VoiceOptionType {
 const icon = <CheckBoxOutlineBlankIcon fontSize='small' />;
 const checkedIcon = <CheckBoxIcon fontSize='small' />;
 const filter = createFilterOptions<VoiceOptionType>();
-export default function CheckboxesTags() {
+
+
+
+export default function MultipleOptions() {
   const dispatch = useDispatch<AppDispatch>();
   const { defaultVoice } = useSelector((state: any) => state.fieldsValue);
   const [inputValue, setInputValue] = React.useState("");

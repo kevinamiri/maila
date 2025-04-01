@@ -10,29 +10,14 @@ date: 2020-12-25
 image: ../img/logo.png
 sectionlabel: "More Features"
 section1:
-  title: "Simplifying content"
-  description: "Simplify your articles, essays and reports with advanced artificial intelligence."
-section2:
   title: "Translating content"
-  description: "Translate your documents into another language with high accuracy, built on top of advanced language models like GPT-3"
-section3:
-  title: "Summarizing content"
-  description: "Summarize your documents and extract the key points with built in intelligence."
-section4:
+  description: "Translate your documents into another language"
+section2:
   title: "Revising content"
-  description: "Review and refine your documents with AI powered suggestions."
-section5:
+  description: "Align your documents with your style and tone."
+section3:
   title: "Generating content"
-  description: "Generate content for your brand with AI powered tools."
-section6:
-  title: "Classifying content"
-  description: "Classify your documents into categories with built in intelligence."
-section7:
-  title: "Analyzing content"
-  description: "Analyze your documents and extract key insights with built in intelligence."
-section8:
-  title: "Clustering content"
-  description: "Cluster documents into groups easily and identify similar content."
+  description: "Generate content for your brand with AI tools."
 
 section10:
   caption: It’s as easy as selecting a template, and letting us know the name of your product and what you do.
@@ -84,19 +69,15 @@ F100:
   - Integrate AI into your editorial process
   - It's important to spend less time discovering and brainstorming and more time actually producing results. By incorporating AI algorithms into your editorial process, you can bring new ideas into your business. no matter if you need to write a blog post, create content for a website or create a marketing email, our platform can help you speed up your writing process.
 T100:
-  - "Content Copywriting"
-  - "Email Copywriting"
-  - "Brainstorming"
-  - "Summary Generator"
-  - "SEO Checker"
-  - "Paraphrasing"
+  - "Generate"
+  - "Translate"
+  - "Revise"
+
 B100:
-  - "The proven formulas for creating structured statements about your product."
-  - "Generate sales emails copy with powerful words and phrases for your product."
-  - "Effective ways to bring new ideas into your Product."
-  - "Shorten documents to summaries. Get a sense of what people are saying about different topics without being overwhelmed."
-  - "Analyze and grade your content with our AI-powered SEO checker"
-  - "Use powerful tools to create a strong voice for your content landing pages."
+  - "Generate Anything: Text, Audio, Video, Speech"
+  - "Translate Every Language, Every Context."
+  - "Improve content naturally, keeping it human"
+
 HeroTaglineDescription: "Maila.AI is an AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
 T0152: "AI Writing Assistant"
 H01051: "Start writing with your first 10,000 words free trial and see if your work improves."

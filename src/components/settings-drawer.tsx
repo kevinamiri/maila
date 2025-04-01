@@ -14,8 +14,6 @@ import NestedList, { langProps } from "./NestedList";
 import useSettings from "hooks/use-settings";
 import { Settings } from "contexts/settings-context";
 
-
-
 interface SettingsDrawerProps {
   onClose?: () => void;
   langs?: langProps[];
@@ -25,12 +23,12 @@ interface SettingsDrawerProps {
 
 const themes = [
   {
-    label: <FormattedMessage id='A03' />,
+    label: <FormattedMessage id="A03" />,
     value: "light",
     icon: LightModeIcon,
   },
   {
-    label: <FormattedMessage id='A04' />,
+    label: <FormattedMessage id="A04" />,
     value: "dark",
     icon: DarkModeIcon,
   },
@@ -61,13 +59,13 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
 
   return (
     <Drawer
-      anchor='right'
+      anchor="right"
       onClose={onClose}
       open={open}
       ModalProps={{ sx: { zIndex: 2000 } }}
       PaperProps={{ sx: { width: 320 } }}
       {...other}
-      aria-label='right drawer'
+      aria-label="right drawer"
     >
       <Box
         sx={{
@@ -81,14 +79,14 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
         }}
       >
         <Typography
-          color='primary'
+          color="primary"
           sx={{ fontWeight: 600, lineHeight: 1.375 }}
-          variant='h5'
+          variant="h5"
         >
-          {<FormattedMessage id='A01' />}
+          {<FormattedMessage id="A01" />}
         </Typography>
-        <IconButton color='primary' onClick={onClose}>
-          <XIcon fontSize='small' />
+        <IconButton color="primary" onClick={onClose}>
+          <XIcon fontSize="small" />
         </IconButton>
       </Box>
       <Box
@@ -98,14 +96,14 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
         }}
       >
         <Typography
-          color='textSecondary'
+          color="textSecondary"
           sx={{
             display: "block",
             mb: 1,
           }}
-          variant='overline'
+          variant="overline"
         >
-          {<FormattedMessage id='A02' />}
+          {<FormattedMessage id="A02" />}
         </Typography>
         <Box
           sx={{
@@ -138,12 +136,12 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
                     },
                   }}
                 >
-                  <Icon fontSize='small' />
+                  <Icon fontSize="small" />
                 </Box>
                 <Typography
-                  align='center'
+                  align="center"
                   sx={{ m: 1.5 }}
-                  variant='caption'
+                  variant="caption"
                   color={values.theme === value ? "primary" : "textSecondary"}
                 >
                   {label}
@@ -156,15 +154,15 @@ const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
         <NestedList items={langs} langKey={langKey} />
         <Divider sx={{ mt: 4 }} />
         <Button
-          color='primary'
+          color="primary"
           fullWidth
           onClick={handleSave}
           sx={{ mt: 3 }}
-          size='small'
-          variant='contained'
-          aria-label='save'
+          size="small"
+          variant="contained"
+          aria-label="save"
         >
-          {<FormattedMessage id='A05' />}
+          {<FormattedMessage id="A05" />}
         </Button>
       </Box>
     </Drawer>

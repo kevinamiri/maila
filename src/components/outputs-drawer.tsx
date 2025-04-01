@@ -1,96 +1,68 @@
-import type { FC } from "react";
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import { X as XIcon } from "../icons/x";
-import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
-import LinearProgressLoading from "./subcomponents/LinearProgressLoading";
+import React, { FC } from "react"
+import { Box, Divider, Drawer, IconButton } from "@mui/material"
+import { X } from "../icons/x"
+import { ReactJSXElement } from "@emotion/react/types/jsx-namespace"
+import LinearProgress from "./subcomponents/LinearProgressLoading"
 
-interface SettingsDrawerProps {
-  onClose?: () => void;
-  children: ReactJSXElement;
-  handleExpand?: any;
-  open?: boolean;
-  anchor?: "right" | "bottom";
+type DrawerProps = {
+  onClose?: () => void
+  children: ReactJSXElement
+  handleExpand?: any
+  open?: boolean
+  anchor?: "right" | "bottom"
 }
 
-const OutputsDrawer: FC<SettingsDrawerProps> = (props) => {
-  const { open, onClose, handleExpand, children, anchor, ...other } = props;
-
-  return (
-    <Drawer
-      anchor={anchor}
-      onClose={onClose}
-      open={open}
-      ModalProps={{ sx: { zIndex: 1690 } }}
-      PaperProps={{
-        sx: {
-          width: { xs: "100%", md: "31%" },
-          height: { xs: "43%", md: "100%" },
-          mt: { xs: 0, md: "5rem" },
-          border: (theme) => `1px solid ${theme.palette.divider}`,
-          borderRadius: 1,
-        },
+// @example
+// <OutputsDrawer open={true} anchor="right" onClose={() => {}}>
+//   <div>Content</div>
+// </OutputsDrawer>
+const OutputsDrawer: FC<DrawerProps> = ({ open, onClose, children, anchor, ...props }) => (
+  <Drawer
+    anchor={anchor}
+    onClose={onClose}
+    open={open}
+    ModalProps={{ sx: { zIndex: 1690 } }}
+    PaperProps={{
+      sx: {
+        width: { xs: "100%", md: "31%" },
+        height: { xs: "43%", md: "100%" },
+        mt: { xs: 0, md: "5rem" },
+        border: t => `1px solid ${t.palette.divider}`,
+        borderRadius: 1
+      }
+    }}
+    variant="persistent"
+    {...props}
+  >
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "center", 
+        backgroundColor: "background.paper",
+        borderBottom: t => `1px solid ${t.palette.divider}`,
+        px: 2,
+        py: 1,
+        position: "sticky",
+        top: 0,
+        zIndex: 10
       }}
-      variant='persistent'
-      {...other}
     >
-      <Box
-        sx={{
-          alignItems: "center",
-          backgroundColor: "background.paper",
-          display: "flex",
-          justifyContent: "flex-end",
-          borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
-          px: 2,
-          py: 1,
-          position: "sticky",
-          top: 0,
-          zIndex: 10,
-        }}
-      >
-        <Box sx={{ flexGrow: 1 }}>
-          <LinearProgressLoading />
-        </Box>
-        <Box>
-          <IconButton color='primary' onClick={onClose}>
-            <XIcon fontSize='small' />
-          </IconButton>
-        </Box>
+      <Box sx={{ flexGrow: 1 }}>
+        <LinearProgress /> 
       </Box>
+      <IconButton color="primary" onClick={onClose}>
+        <X fontSize="small" />
+      </IconButton>
+    </Box>
 
-      <Box
-        sx={{
-          py: 4,
-          px: 1,
-        }}
-      >
-        <Box
-          sx={{
-            alignItems: "center",
-            display: "flex",
-          }}
-        >
-          {children}
-        </Box>
-        <Divider sx={{ mt: 5 }} />
-        {/* <Button
-          color='primary'
-          fullWidth
-          onClick={handleSave}
-          sx={{ mt: 3 }}
-          size='small'
-          variant='contained'
-        >
-          Save Settings
-        </Button> */}
+    <Box sx={{ py: 4, px: 1 }}>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        {children}
       </Box>
-    </Drawer>
-  );
-};
+      <Divider sx={{ mt: 5 }} />
+    </Box>
+  </Drawer>
+)
 
-export default OutputsDrawer;
+export default OutputsDrawer

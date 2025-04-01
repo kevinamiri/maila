@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, Dispatch } from "@reduxjs/toolkit";
 
 export interface ProgressState {
   progressValue: number;
@@ -35,11 +35,11 @@ const slice = createSlice({
 
 export const { reducer } = slice;
 
-export const updateProgressValue = (x) => async (dispatch) => {
+export const updateProgressValue = (x: number) => async (dispatch: Dispatch) => {
   dispatch(slice.actions.updateProgressValue(x));
 };
 
-export const updateLastId = (x) => async (dispatch) => {
+export const updateLastId = (x: any) => async (dispatch: Dispatch) => {
   dispatch(slice.actions.updateLastId(x));
 };
 

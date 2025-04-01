@@ -1,95 +1,80 @@
-import React from "react";
-import { Editor, Node as SlateNode } from "slate";
-import Box from "@mui/material/Box";
-const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP";
-import { useSnackbar } from "notistack";
-import { useSelector, useDispatch } from "react-redux";
-import { updateProgressValue } from "../../slices/progress";
-import SelectionTransformerBar from "./SelectionTransformerBar";
-import LoadingButtonProgress from "../subcomponents/LoadingButtonProgress";
-import useFetchAllData from "../../hooks/useFetchAllData";
+import React from "react"
+import { Editor, Node } from "slate"
+import { Box } from "@mui/material"
+import { useSnackbar } from "notistack"
+import { useSelector, useDispatch } from "react-redux"
+import { updateProgressValue } from "../../slices/progress"
+import SelectionTransformerBar from "./SelectionTransformerBar"
+import LoadingButtonProgress from "../subcomponents/LoadingButtonProgress"
+import useFetchAllData from "../../hooks/useFetchAllData"
+import { AppDispatch, RootState } from "store"
 
-const serialize = (editorname: Editor) => {
-  return editorname.children.map((x) => SlateNode.string(x)).join("\n");
-};
-interface GenerationButtonProps {
-  inputLimitation?: number;
-  mainPlaceholder?: String;
-  productType?: string;
-  productUrl?: string;
-  editor: Editor;
-  editor2?: Editor;
-  editor3?: Editor;
-  editor4?: Editor;
+declare global {
+  interface Window {
+    grecaptcha: {
+      ready: (cb: () => void) => void
+      execute: (siteKey: string, options: { action: string }) => Promise<string>
+    }
+  }
 }
 
-const GenerationButton: React.FC<GenerationButtonProps> = ({
-  inputLimitation = 15000,
-  productType = "4",
-  productUrl = "generate",
+const SITE_KEY = "6LcA4HoaAAAAAMHEQHKWWXyoi1TaCiDgSJoy2qtP"
+
+type Props = {
+  inputLimit?: number
+  pType?: string
+  pUrl?: string
+  editor: Editor
+  editor2?: Editor
+  editor3?: Editor
+  editor4?: Editor
+}
+
+const serialize = (ed: Editor) => ed.children.map(x => Node.string(x)).join("\n")
+
+const GenerationButton = ({
+  inputLimit = 15000,
+  pType = "4",
+  pUrl = "generate",
   editor,
   editor2,
   editor3,
   editor4,
-}: GenerationButtonProps) => {
-  const editors = [editor, editor2, editor3, editor4];
+}: Props) => {
+  const eds = [editor, editor2, editor3, editor4]
+  const { enqueueSnackbar } = useSnackbar()
+  const dispatch = useDispatch<AppDispatch>()
+  const fields = useSelector((state: RootState) => state.fieldsValue)
 
-  const { enqueueSnackbar } = useSnackbar();
-
-  const dispatch = useDispatch();
-
-  //hooks must be outside of the function
-  const fieldValues = useSelector((state) => state.fieldsValue);
-
-  //handle clicks
-  const handleOnClick = () => {
+  const generate = () => {
     window.grecaptcha.ready(() => {
       window.grecaptcha
         .execute(SITE_KEY, { action: "submit" })
-        .then((gtoken) => {
-          dispatch(updateProgressValue(10));
-          useFetchAllData(
-            dispatch,
-            enqueueSnackbar,
-            editors,
-            gtoken,
-            productType,
-            fieldValues
-          );
-        });
-    });
-  };
+        .then((token: string) => {
+          dispatch(updateProgressValue(10))
+          useFetchAllData(dispatch, enqueueSnackbar, eds, token, pType, fields)
+        })
+    })
+  }
+
+  const btnStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    boxSizing: "border-box" as const,
+  }
 
   return (
     <>
-      <Box
-        sx={{
-          marginRight: "auto",
-          display: "flex",
-          flexWrap: "wrap",
-          boxSizing: "border-box",
-          paddingRight: "0.9em",
-          justifyContent: "start",
-        }}
-      >
+      <Box sx={{ ...btnStyle, marginRight: "auto", paddingRight: "0.9em", justifyContent: "start" }}>
         <LoadingButtonProgress
-          size='small'
-          color='primary'
-          variant='contained'
-          title='Compose'
-          onClick={handleOnClick}
+          size="small"
+          color="primary"
+          variant="contained"
+          title="Compose"
+          onClick={generate}
         />
       </Box>
-
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          boxSizing: "border-box",
-          paddingRight: "0.5em",
-          justifyContent: "end",
-        }}
-      >
+      <Box sx={{ ...btnStyle, paddingRight: "0.5em", justifyContent: "end" }}>
         <SelectionTransformerBar
           editor={editor}
           editor2={editor2}
@@ -98,7 +83,7 @@ const GenerationButton: React.FC<GenerationButtonProps> = ({
         />
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default GenerationButton;
+export default GenerationButton

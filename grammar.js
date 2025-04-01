@@ -13,8 +13,8 @@ inCorrect: She didn't go to the market.
 [['she', 1, 'no-strikethrough'], ['no', 2, 'strikethrough'], ['went', 3, 'strikethrough'], ['to', 4, 'no-strikethrough'], ['the', 5, 'no-strikethrough'], ['market', 6, 'no-strikethrough']]
 [['she', 1, 'no-strikethrough'], ['didn\'t', 2, 'no-strikethrough'], ['go', 3, 'no-strikethrough'], ['to', 4, 'no-strikethrough'], ['the', 5, 'no-strikethrough'], ['market', 6, 'no-strikethrough']]
 */
-const correct = 'The most common and best-option stand for the best possible outcome is words.';
-const inCorrect = 'the most comon and wise stand for the best possible knoen is words.';
+const correct = 'I was very angry. Somehow they always made me angry. I know they are supposed to be amusing, and you should be tolerant, but I wanted to swing on one, any one, anything to shatter that superior, simpering composure. Instead, I walked down the street and had a beer at the bar at the next Bal. The beer was not good and I had a worse cognac to take the taste out of my mouth. When I came back to the Bal there was a crowd on the floor and Georgette was dancing with the tall blond youth, who danced big-hippily, carrying his head on one side, his eyes lifted as he danced. As soon as the music stopped another one of them asked her to dance. She had been taken up by them. I knew then that they would all dance with her. They are like that.';
+const inCorrect ="I was so annoyed with them, as usual. I know I should be more tolerant since they're meant to entertain, but I felt like lashing out at one of them to break through that smug composure. Instead, I went to a nearby bar for a beer to cool off. The beer wasn't good so I had some bad cognac too, just to get the taste out. When I returned, a crowd had formed as Georgette danced with one of those tall blond guys, dancing pretentiously with his head tilted as if he didn't have a care. And as soon as the music ended, another one asked her to dance. I realized then they'd all want their turn with her. It's just how they operate";
 
 const correctSentence = correct.split(' ');
 const inCorrectSentence = inCorrect.split(' ');
@@ -37,7 +37,7 @@ const compareSentences = (correctSentence, inCorrectSentence) => {
     return [correctSentence, inCorrectSentence];
 };
 
-console.log(compareSentences(correctSentenceMatrix, inCorrectSentenceMatrix));
+// console.log(compareSentences(correctSentenceMatrix, inCorrectSentenceMatrix));
 
 
 
@@ -116,7 +116,7 @@ function compareSentence(correct, incorrect) {
     return result;
 }
 
-console.log(compareSentence("She no went to the market.", "She didn't go to the market."));
+console.log(compareSentence("I was very angry. Somehow they always made me angry. I know they are supposed to be amusing, and you should be tolerant, but I wanted to swing on one, any one, anything to shatter that superior, simpering composure. Instead, I walked down the street and had a beer at the bar at the next Bal. The beer was not good and I had a worse cognac to take the taste out of my mouth. When I came back to the Bal there was a crowd on the floor and Georgette was dancing with the tall blond youth, who danced big-hippily, carrying his head on one side, his eyes lifted as he danced. As soon as the music stopped another one of them asked her to dance. She had been taken up by them. I knew then that they would all dance with her. They are like that.", "I was so annoyed with them, as usual. I know I should be more tolerant since they're meant to entertain, but I felt like lashing out at one of them to break through that smug composure. Instead, I went to a nearby bar for a beer to cool off. The beer wasn't good so I had some bad cognac too, just to get the taste out. When I returned, a crowd had formed as Georgette danced with one of those tall blond guys, dancing pretentiously with his head tilted as if he didn't have a care. And as soon as the music ended, another one asked her to dance. I realized then they'd all want their turn with her. It's just how they operate"));
 
 
 

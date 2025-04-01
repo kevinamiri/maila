@@ -1,65 +1,82 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Container from "@mui/material/Container";
+import chunk from "lodash/chunk";
+
+// Layout components
 import Layout from "../components/layout/Layout";
+import { SEO } from "../components/SEO/SEO";
+
+// Page sections
+import HomeHeroPage from "../components/landings/HomeHeroPage";
 import CardFeatureBlock from "../components/landings/CardFeatureBlock";
 import AccordionBlock from "../components/landings/AccordionBlock";
-import HomeHeroPage from "../components/landings/HomeHeroPage";
-import _ from "lodash";
 import LandingsFeature from "../components/landings/landings-feature";
-import Container from "@mui/material/Container";
 import WithIllustrationFeatures from "../components/landings/WithIllustrationFeatures";
 import { Pricing } from "../components/landings/pricing";
 import Email from "components/landings/email";
 
-const HomePage = (props) => {
-  const data = props.data;
-  const dataMarkdown = props.data.markdownRemark;
-  const jsonData = data.allArticlesJson.edges[0].node.articles;
-  const langKey = dataMarkdown.frontmatter.lang;
-  const features = [
-    dataMarkdown.frontmatter.section1,
-    dataMarkdown.frontmatter.section2,
-    dataMarkdown.frontmatter.section3,
+const HomePage = ({ data, location }) => {
+  const { markdownRemark, allArticlesJson } = data;
+  const { frontmatter } = markdownRemark;
+  const articles = allArticlesJson.edges[0].node.articles;
+  
+  // Sections data
+  const featureSections = [
+    frontmatter.section1,
+    frontmatter.section2, 
+    frontmatter.section3
   ];
+  
+  // FAQ questions grouped in pairs
+  const faqPairs = chunk(frontmatter.H0118.A0117q, 2);
+
   return (
-    <Layout data={props.data} jsonData={jsonData} location={props.location}>
+    <Layout data={data} jsonData={articles} location={location}>
       <Container
-        maxWidth='xl'
-        sx={{
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+        maxWidth="xl"
+        sx={{ alignItems: "center", justifyContent: "center" }}
       >
         <HomeHeroPage
-          header={dataMarkdown.frontmatter.HeroTaglineDescription}
-          cta={dataMarkdown.frontmatter.H01051}
-          title={dataMarkdown.frontmatter.T0152}
-          labelbutton={dataMarkdown.frontmatter.L0401[0]}
-          helpernotice={dataMarkdown.frontmatter.H01047}
+          header={frontmatter.HeroTaglineDescription}
+          cta={frontmatter.H01051}
+          title={frontmatter.T0152}
+          labelbutton={frontmatter.L0401[0]}
+          helpernotice={frontmatter.H01047}
         />
+        
+        {/* Core features section */}
+        <CardFeatureBlock 
+          titles={frontmatter.T100} 
+          bodys={frontmatter.B100} 
+        />
+        
+        {/* FAQ section */}
+        <AccordionBlock 
+          questions={faqPairs} 
+        />
+        
+        {/* Disabled sections - preserved for future use */}
+        {/* 
         <Email />
+        
         <LandingsFeature
-          headerRight={dataMarkdown.frontmatter.H01194[0]}
-          descriptionRight={dataMarkdown.frontmatter.H01194[1]}
-          headerLeft={dataMarkdown.frontmatter.H01194[2]}
-          descriptionLeft={dataMarkdown.frontmatter.H01194[3]}
+          headerRight={frontmatter.H01194[0]}
+          descriptionRight={frontmatter.H01194[1]}
+          headerLeft={frontmatter.H01194[2]}
+          descriptionLeft={frontmatter.H01194[3]}
         />
-        <CardFeatureBlock
-          titles={dataMarkdown.frontmatter.T100}
-          bodys={dataMarkdown.frontmatter.B100}
-        />
-
+        
         <WithIllustrationFeatures
-          features={features}
-          sectionlabel={dataMarkdown.frontmatter.sectionlabel}
+          features={featureSections}
+          sectionlabel={frontmatter.sectionlabel}
         />
-        <Pricing
-          tables={dataMarkdown.frontmatter.tables}
-          plans={dataMarkdown.frontmatter.plans}
-        />
-        <AccordionBlock
-          questions={_.chunk(dataMarkdown.frontmatter.H0118.A0117q, 2)}
-        />
+        
+        <Pricing 
+          tables={frontmatter.tables} 
+          plans={frontmatter.plans} 
+        /> 
+        */}
       </Container>
     </Layout>
   );
@@ -131,7 +148,6 @@ export const pageQuery = graphql`
           title
           description
         }
-
         section2 {
           title
           description
@@ -160,17 +176,16 @@ export const pageQuery = graphql`
   }
 `;
 
-
-
-import { SEO } from "../components/SEO/SEO";
-
-
-export const Head = (props) => {
-  const { data } = props;
-  const { markdownRemark: post } = data;
+export const Head = ({ data }) => {
+  const { frontmatter } = data.markdownRemark;
+  
   return (
-  <SEO title={post.frontmatter.title} description={post.frontmatter.description} pathname={post.frontmatter.path}>
-    <meta name="description" content={post.frontmatter.description} />
-  </SEO>
-  )
-}
+    <SEO
+      title={frontmatter.title}
+      description={frontmatter.description}
+      pathname={frontmatter.path}
+    >
+      <meta name="description" content={frontmatter.description} />
+    </SEO>
+  );
+};
