@@ -15,6 +15,7 @@ import LandingsFeature from "../components/landings/landings-feature";
 import WithIllustrationFeatures from "../components/landings/WithIllustrationFeatures";
 import { Pricing } from "../components/landings/pricing";
 import Email from "components/landings/email";
+import StudioSection from "../components/landings/StudioSection";
 
 const HomePage = ({ data, location }) => {
   const { markdownRemark, allArticlesJson } = data;
@@ -46,14 +47,24 @@ const HomePage = ({ data, location }) => {
         />
         
         {/* Core features section */}
-        <CardFeatureBlock 
-          titles={frontmatter.T100} 
-          bodys={frontmatter.B100} 
+        <CardFeatureBlock
+          titles={frontmatter.T100}
+          bodys={frontmatter.B100}
         />
-        
+
+        <StudioSection
+          title="Speech Studio"
+          description="Generate and refine natural-sounding speech with powerful AI tools."
+        />
+
+        <StudioSection
+          title="Content Studio"
+          description="Create, edit and organize written content effortlessly."
+        />
+
         {/* FAQ section */}
-        {/* <AccordionBlock 
-          questions={faqPairs} 
+        {/* <AccordionBlock
+          questions={faqPairs}
         /> */}
         
         {/* Disabled sections - preserved for future use */}
