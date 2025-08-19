@@ -1,7 +1,7 @@
 {
   "name": "maila",
   "private": true,
-  "description": "Copywriting and content marketing for the AI age.",
+  "description": "AI Assistant",
   "version": "v2.1.1",
   "author": "Kevin Levin",
   "engines": {
