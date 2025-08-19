@@ -1,5 +1,5 @@
 import React from "react";
-import ToggleButtonList from "../subcomponents/ToggleButtonList";
+import ToggleButtonList from "../subcomponents/toggle-button-list";
 import useSaveCompletions from "../../hooks/useSaveComplitions";
 import BookmarkBorderRoundedIcon from "@mui/icons-material/BookmarkBorderRounded";
 

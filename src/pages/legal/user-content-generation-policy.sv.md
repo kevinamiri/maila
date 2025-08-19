@@ -4,7 +4,7 @@ title: "Policy för generering av användarinnehåll"
 description: "Principen för generering av användarinnehåll är en policy som reglerar hur användare kan generera innehåll på plattformen."
 template: about
 templateKey: about
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-01-16"
 slug: /sv/legal/user-content-generation-policy
 path: /sv/legal/user-content-generation-policy
@@ -13,7 +13,9 @@ tags: ["User Content Generation Policy"]
 image: ./images/terms.png
 imageStatus: false
 ---
+
 ```toc
+
 ```
 
 ## Policy för generering av användarinnehåll
@@ -35,5 +37,3 @@ Vi strävar efter att skapa en säker och välkomnande miljö för alla våra an
 - Religion: Vi tillåter inte innehåll som främjar eller förringar religioner.
 
 Vi förbehåller oss rätten att när som helst blockera användare som vi anser bryter mot vår policy för användarinnehåll.
-
-

@@ -30,7 +30,7 @@ extraFields:
   mission:
     name: "mission"
     id: 2
-    label: "Mission statement"	
+    label: "Mission statement"
     type: "textarea"
     placeholder: "Vi tillhandahåller produkter eller tjänster som förbättrar livskvaliteten för våra kunder och anställda samtidigt som de gör en positiv inverkan på våra kommuner och miljön."
   outputType:
@@ -43,7 +43,7 @@ extraFields:
       - "klickfiske"
   placeholder: "frågor"
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 jsonId: "1197"
 product_type: "30"
 image: ../../blog/2022/images/maila-email-subject.png
@@ -92,7 +92,6 @@ User Input: "Summer Sale" AI-generated Output: "Get ready for summer with our ex
 
 User Input: "New Product Launch" AI-generated Output: "Introducing the must-have product of the year!"
 
-
 User input: "customer insights"
 
 **Generated subject line:**
@@ -100,7 +99,6 @@ User input: "customer insights"
 1. "What your customers are saying about you"
 2. "Your customers, insights and what they mean for your business"
 3. "How to use customer insights to improve your business"
-   
 
 ### Call to Action
 

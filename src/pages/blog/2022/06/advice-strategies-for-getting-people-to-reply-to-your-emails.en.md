@@ -4,7 +4,7 @@ title: "Advice strategies to get reply in two different styles"
 description: "Don’t send long e-mails to people you want to work with. Just put your point across as quickly as possible and keep it short."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-06-14"
 slug: /en/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
 path: /en/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
@@ -14,13 +14,9 @@ image: ../images/emails-hey.jpg
 imageStatus: true
 ---
 
-
-
-
 Language models are one of the key components in AI-powered writing assistance platforms. They are used to analyze text and predict the next word, sentence, or even entire paragraphs. The power of these models lies in their ability to capture patterns in text and generate new content based on them. This allows users to write blog posts in a variety of styles and tones.
 
 In this blog post, we will showcase the versatility of language models by demonstrating how they can be used to write a blog post in two different styles. By leveraging the capabilities of AI-powered writing assistance platforms, we will show how users can switch between different writing styles with ease and produce high-quality content in no time. Whether you are looking to write in a professional, conversational, or creative style, the writing assistance platform will help you to achieve your goals.
-
 
 # Secret strategies for getting people to reply to your emails
 
@@ -46,13 +42,11 @@ In this blog post, we will showcase the versatility of language models by demons
 
 11. Try this subject line for extra power: ‘Help: [name]’ —a subject line that also works via text message according to veteran journalist and screenwriter Paul Laverty whom I always text when he is travelling as I know he won't reply but he usually does when he gets home because everyone loves someone asking them for help (so long as they are not someone being annoying!) [/end of advice]
 
-
 ---
 
 # Secret strategies for getting people to reply to your emails
 
 By following these strategies and customizing your approach based on the situation, you can increase the rate at which people respond to your emails and get more out of every interaction. With time and practice, these tips can help you build lasting relationships and reap greater success in all your endeavors.
-
 
 # Maximizing the Response Rate of Your Emails
 
@@ -84,4 +78,4 @@ If you know the person in real life, skip email entirely and opt for a phone cal
 
 # Look Elsewhere
 
-Finally, if all else fails, it may be beneficial to look for other opportunities related to their work. Doing some research on websites like theirs can help you find topics they may be interested in that you can contact them about via email or text. Additionally, if you sense the person is ignoring your messages altogether, consider giving them a call before leaving them alone forever—it may not have been personal at all but simply a matter of being busy or overwhelmed. 
+Finally, if all else fails, it may be beneficial to look for other opportunities related to their work. Doing some research on websites like theirs can help you find topics they may be interested in that you can contact them about via email or text. Additionally, if you sense the person is ignoring your messages altogether, consider giving them a call before leaving them alone forever—it may not have been personal at all but simply a matter of being busy or overwhelmed.

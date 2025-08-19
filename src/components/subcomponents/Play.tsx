@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Grid from "@mui/material/Grid";
 import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
 import { useSelector } from "react-redux";
-import ToggleButtonList from "./ToggleButtonList";
+import ToggleButtonList from "./toggle-button-list";
 
 export const audioAWS = async ({ text }: any) => {
   const url = `https://6uk77gp2holg7cmjh5zfjatydq0wtxpe.lambda-url.us-east-2.on.aws`;
@@ -24,13 +24,9 @@ export const audioAWS = async ({ text }: any) => {
 };
 
 export default function Play() {
-  const [isPlaying, setIsPlaying] = useState(false);
   const { selectedTextValue } = useSelector((state: any) => state.editorParams);
-  const serverAudioStreamControl = useRef(null);
   const audioSrc = useRef(null);
-  const audioElement = useRef(null);
-
-  const [audio, setAudio] = useState<HTMLAudioElement>();
+  const audioElement = useRef(null)
 
   const playAudio = async () => {
     try {

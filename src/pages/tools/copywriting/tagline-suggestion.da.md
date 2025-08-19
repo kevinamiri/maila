@@ -13,7 +13,7 @@ lang: "da"
 icon: "taglineIcon"
 hasCustomTemplate: false
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "10"
 url: "/app/tagline-suggestion"
 ---
@@ -59,4 +59,3 @@ Output: "Kom i form med de rigtige redskaber."
 ## Opfordring til handling
 
 Kom i gang med den AI-drevne Tagline Generator i dag! Det tager kun et par klik at generere en unik og effektfuld tagline til dit brand eller produkt. Besøg vores websted, vælg værktøjerne, og indtast dine nøgleord for at komme i gang. Der kræves ingen kodning.
-

@@ -10,14 +10,14 @@ date: 2020-12-25
 image: ../img/logo.png
 sectionlabel: "Fler funktioner"
 section1:
-    title: "Förenkla innehåll"
-    description: "Förenkla dina artiklar, uppsatser och rapporter med avancerad artificiell intelligens."
+  title: "Förenkla innehåll"
+  description: "Förenkla dina artiklar, uppsatser och rapporter med avancerad artificiell intelligens."
 section2:
-    title: "Översätt innehåll"
-    description: "Översätt dina artiklar, uppsatser och rapporter från ett språk till ett annat."
+  title: "Översätt innehåll"
+  description: "Översätt dina artiklar, uppsatser och rapporter från ett språk till ett annat."
 section3:
-    title: "Rätta fel"
-    description: "Förbättra kvaliteten på ditt innehåll genom att rätta grammatikfel, stavfel och stilfel."
+  title: "Rätta fel"
+  description: "Förbättra kvaliteten på ditt innehåll genom att rätta grammatikfel, stavfel och stilfel."
 tables:
   button: "Registrera dig"
   link: "/app"
@@ -65,7 +65,7 @@ T100:
   - "Sammanfattningsgenerator"
   - "SEO-kontroll"
   - "Parafrasera"
-B100: 
+B100:
   - "De beprövade formlerna för att skapa strukturerade uttalanden om ditt produkt."
   - "Generera försäljningskopieremails med kraftfulla ord och fraser för ditt produkt."
   - "Effektiva sätt att ta nya idéer i ditt produkt."
@@ -78,7 +78,7 @@ H01051: "Börja skriva med din första kostnadsfria provperiod på 25 000 ord oc
 H01047: "Dessa resultat är genererade i förväg och har full kapacitet av artificiell intelligens."
 H0118:
   A0117q:
-    - Är AI-skapat innehåll fritt från plagiat? 
+    - Är AI-skapat innehåll fritt från plagiat?
     - Vårt AI-genererade innehåll är plagiatfritt och korrekt.
     - Hur kan AI-drivna texter användas i ett företag?
     - AI-baserad innehållsgenerering kan användas för en mängd olika ändamål i företag. Den här typen av innehåll kan hjälpa till med produktbeskrivningar, uppdateringar i sociala medier, ämnesrader för e-post och mycket mer. Att ha en AI-skrivarassistent kan hjälpa till att spara tid och förbättra kvaliteten på det producerade innehållet.
@@ -90,7 +90,7 @@ H0118:
     - Vi genererar innehåll i realtid, så dina resultat är klara omedelbart. Det kan ta lite tid att vänja sig vid att använda en AI-skrivarassistent, men när du väl har fått grepp om det kan det spara dig mycket tid.
     - Kan jag skapa innehåll på andra språk?
     - Ja, vi har stöd för andra språk än engelska. Översättningar av bästa kvalitet finns för närvarande tillgängliga på engelska.
-H01194: 
+H01194:
   - AI-skrivassistent
   - AI-verktyg för copywriting som kan hjälpa dig att skriva bättre texter till din webbplats eller marknadsföringskampanj genom att tillhandahålla ett verktyg som är lätt att använda och gör copywritingprocessen effektivare.
   - AI-innehållsgenerator

@@ -13,7 +13,7 @@ lang: "de"
 icon: "prospectingEmail"
 hasCustomTemplate: false
 tone: true
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "21"
 url: "/app/promotional-email"
 ---
@@ -27,5 +27,5 @@ Dieses Tool wurde optimiert, um Vertriebsteams in die Lage zu versetzen, mit wen
 ## Der E-Mail-Generator auf einen Blick:
 
 1. Die Vorlage kann Verkaufs-E-Mails in Sekundenschnelle generieren, ohne dass die Schreibqualität darunter leidet.
-2. Das Modell wurde anhand von Tausenden effektiver Verkaufs-E-Mails trainiert und kann einen Text generieren, der Ihren geschäftlichen Anforderungen entspricht. 
+2. Das Modell wurde anhand von Tausenden effektiver Verkaufs-E-Mails trainiert und kann einen Text generieren, der Ihren geschäftlichen Anforderungen entspricht.
 3. Es erstellt E-Mails, die auf verschiedenen Szenarien, Tönen und Absichten basieren.

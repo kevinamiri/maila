@@ -7,10 +7,10 @@ header: "Formulieren Sie eine überzeugende Missionserklärung, die den Zweck Ih
 usage: "Um dieses Tool zu verwenden, geben Sie einfach den Namen Ihrer Organisation, Stichwörter, Ziele und Werte ein. Dieses KI-Modell generiert dann auf der Grundlage Ihrer Eingabe eine klare, einzigartige und ansprechende Missionserklärung."
 placeholder: "Organization Name: Green Planet\n Objectives: Environmental conservation, sustainability \nValues: Protecting nature, eco-friendly practices\nKeywords: Green living, eco-friendly, sustainability"
 help_hint: "Wie lautet der Name Ihrer Organisation und welche Ziele und Werte verfolgt sie? Geben Sie einige Schlüsselwörter im Zusammenhang mit den Zielen Ihrer Organisation an, und unsere Plattform wird eine Missionserklärung auf der Grundlage Ihrer Eingabe generieren."
-tags: [Copywriting,Tools,Templates,Mission Statement]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Mission Statement]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-14"
 slug: /de/tools/copywriting/mission-statement
 path: /de/tools/copywriting/mission-statement
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1050"
 product_type: "1050"
 ---
+
 # AI-Mission-Statement-Generator
 
 Formulieren Sie mit Hilfe unseres KI-gesteuerten Mission-Statement-Generators eine überzeugende Mission, die den Zweck Ihrer Organisation definiert.

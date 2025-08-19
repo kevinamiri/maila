@@ -4,7 +4,7 @@ title: "Neuvontastrategiat saada ihmiset vastaamaan sähköposteihisi"
 description: "Älä lähetä pitkiä sähköposteja ihmisille, joiden kanssa haluat työskennellä.  Aseta kohta vain mahdollisimman nopeasti ja pidä se lyhyenä."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-06-14"
 slug: /fi/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
 path: /fi/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
@@ -37,5 +37,3 @@ imageStatus: true
 10. Odota päivä tai kaksi ennen kuin lähetät heille sähköpostia uudelleen (vain yksi "seuraava" sähköposti vaikuttaa parhaalta - liian monta on ärsyttävää) koska on todennäköistä, että heillä oli vain jotain, joka häiritsi heitä (kuten he itse). Tai älä seuraa ollenkaan, ehkä odota toista mahdollisuutta, joskus pallo on toisen kentällä ja joskus pallo on kokonaan pois kentältä tuulisella mustalla jäällä ajan!
 
 11. Kokeile tätä aihekenttää lisävoimaa varten: ”Apua: [nimi]” - aihe, joka toimii myös tekstiviestin mukaan veteraanitoimittaja ja käsikirjoittaja Paul Laverty, jonka aina tekstaan, kun hän matkustaa, koska tiedän, että hän ei vastaa, mutta hän yleensä tekee kotiin palattuaan, koska kaikki rakastavat jotakuta, joka pyytää heitä auttamaan (niin kauan kuin he eivät ole ärsyttäviä!) [/end of advice]
-
-

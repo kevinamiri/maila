@@ -7,10 +7,10 @@ header: "用AI精心制作的引人注目的销售宣传词吸引您的潜在客
 usage: "要使用此模板，只需输入您的产品或服务，目标受众和关键卖点。AI 销售宣传生成器将根据您的输入创建一个定制的、有说服力的、有效的销售宣传。"
 placeholder: "关键字：\n\n产品：家庭安全系统\n目标受众：业主\n主要销售点：易安装，24/7监控，智能手机集成"
 help_hint: "抱歉，我是一个语言模型AI，我没有任何产品或服务。我只是一个程序，旨在帮助您翻译和回答问题。请提供更具体的信息，以便我更好地了解您的需求并为您提供更好的帮助。"
-tags: [Copywriting,Tools,Templates,Sales Pitch,Website copywriting]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Sales Pitch, Website copywriting]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-18"
 slug: /zh/tools/copywriting/sales-pitch
 path: /zh/tools/copywriting/sales-pitch
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1064"
 product_type: "1064"
 ---
+
 # AI销售话术生成器
 
 使用先进的人工智能定制具有说服力和有效性的销售话术，以迎合您的目标受众。通过根据您的输入生成定制的销售话术，节省时间和精力，让您专注于成交。
@@ -49,6 +50,7 @@ product_type: "1064"
 ## 使用案例
 
 AI 销售宣传生成器非常适合：
+
 - 寻求推广创新产品或服务的初创公司
 - 需要有说服力的销售脚本的销售专业人士
 - 希望建立引人注目的电子邮件活动或登陆页面的营销人员

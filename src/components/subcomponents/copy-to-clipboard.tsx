@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
-import ToggleButtonList from "./ToggleButtonList";
+import ToggleButtonList from "./toggle-button-list";
 import { Node, Editor } from "slate";
 
 // Serialize editor content to string

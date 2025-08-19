@@ -4,7 +4,7 @@ title: "Algoritmi strojnega učenja lahko pomagajo ustvariti ciljno usmerjeno vs
 description: "Algoritmi strojnega učenja se lahko uporabljajo za analizo in učenje iz velikih zbirk podatkov, da bi prepoznali vzorce. To se lahko nato uporabi za ustvarjanje vsebin, ki so namenjene določenemu občinstvu glede na njegove interese. Z uporabo strojnega učenja lahko podjetja ustvarjajo vsebine, ki so bolj relevantne za njihove stranke in ki bodo pripomogle k povečanju prodaje."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-18"
 slug: /sl/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content
 path: /sl/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content
@@ -13,8 +13,11 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+
 ```toc
+
 ```
+
 ## AIDA copywriting okvir z uporabo AI
 
 V digitalni dobi se morajo blagovne znamke osredotočiti na to, da pritegnejo pozornost ljudi, jih zanimajo za svojo ponudbo in jih nato spodbudijo k dejanjem z nakupom njihovega izdelka ali storitve.
@@ -31,7 +34,6 @@ Pri uporabi modela AIDA je treba upoštevati različne faze, skozi katere gre ku
 
 Najprej ustvarite privlačen naslov ali slogan, ki bo pritegnil pozornost ljudi.
 
-
 #### Ustvarjanje zanimanja:
 
 Nato uporabite zanimive slike ali ustvarite provokativno vprašanje, ki bo vzbudilo zanimanje za vaš izdelek ali storitev.
@@ -42,9 +44,7 @@ Nato se osredotočite na prednosti svojega izdelka ali storitve in na to, kako l
 
 #### Spodbujajte ukrepanje:
 
-
 Na koncu ljudem olajšajte ukrepanje z jasnimi navodili in pozivom k akciji (CTA).
-
 
 #### Drugi nasveti po AIDA
 
@@ -57,4 +57,5 @@ Obstajajo številni nasveti za pritegnitev pozornosti strank in ustvarjanje zani
 - Ustvarjanje pozitivnega okolja, ki spodbuja interakcijo s strankami.
 
 ### Algoritmi umetne inteligence lahko pomagajo ustvariti ciljno usmerjeno vsebino
+
 Algoritmi strojnega učenja se lahko uporabljajo za analizo in učenje iz velikih zbirk podatkov, da bi prepoznali vzorce. To se lahko nato uporabi za ustvarjanje vsebin, ki so namenjene določenemu občinstvu glede na njegove interese in potrebe. Poleg tega je mogoče umetno inteligenco uporabiti za samodejno ustvarjanje naslovov in naslovnic, za katere je bolj verjetno, da bodo pritegnili pozornost ljudi.

@@ -7,10 +7,10 @@ header: "Impresione a sus prospectos con un discurso de ventas convincente cread
 usage: "Para usar esta plantilla, simplemente ingrese su producto o servicio, público objetivo y puntos clave de venta. El Generador de Pitch de Ventas de IA creará entonces un pitch de ventas personalizado, persuasivo y efectivo basado en su entrada."
 placeholder: "Producto: Sistema de seguridad para el hogar\nPúblico objetivo: Propietarios de viviendas\nPuntos clave de venta: Instalación fácil, monitoreo 24/7, integración con smartphone"
 help_hint: "¿Cuál es su producto o servicio y quién es su público objetivo? Proporcione algunos puntos clave de venta y crearemos un discurso de ventas persuasivo adaptado a su audiencia."
-tags: [Copywriting,Tools,Templates,Sales Pitch,Website copywriting]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Sales Pitch, Website copywriting]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-18"
 slug: /es/tools/copywriting/sales-pitch
 path: /es/tools/copywriting/sales-pitch
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1064"
 product_type: "1064"
 ---
+
 # Generador de argumentos de venta de IA
 
 Craft es un servicio que utiliza inteligencia artificial avanzada para crear discursos de ventas persuasivos y efectivos adaptados a su audiencia objetivo. Ahorre tiempo y esfuerzo generando discursos personalizados basados en su entrada, lo que le permitirá centrarse en cerrar el trato.
@@ -49,6 +50,7 @@ Craft es un servicio que utiliza inteligencia artificial avanzada para crear dis
 ## Casos de uso
 
 El Generador de Discurso de Ventas de AI es perfecto para:
+
 - Startups que buscan presentar sus productos o servicios innovadores
 - Profesionales de ventas que necesitan un guión de ventas persuasivo
 - Marketers que buscan crear campañas de correo electrónico o páginas de destino convincentes
@@ -76,7 +78,7 @@ El Generador de Argumentos de Venta de IA es versátil y puede crear argumentos 
 
 "AI Sales Pitch Generator ha sido un cambio radical para nuestra empresa, permitiéndonos crear discursos de ventas persuasivos en una fracción del tiempo. Hemos visto un aumento notable en las conversiones desde que utilizamos esta herramienta", dijo Jane, Directora de Marketing.
 
-*"Como profesional de ventas, siempre estoy buscando herramientas que puedan ayudarme a cerrar más tratos. El Generador de Discursos de Ventas de IA ha sido fundamental para crear mensajes de venta convincentes que resuenan con nuestros prospectos." - Tom, Ejecutivo de Ventas*
+_"Como profesional de ventas, siempre estoy buscando herramientas que puedan ayudarme a cerrar más tratos. El Generador de Discursos de Ventas de IA ha sido fundamental para crear mensajes de venta convincentes que resuenan con nuestros prospectos." - Tom, Ejecutivo de Ventas_
 
 ## Ejemplo
 

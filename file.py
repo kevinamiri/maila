@@ -1,87 +1,99 @@
-import os
+import tiktoken
 import re
 import logging
 from pathlib import Path
 
-# 📄 Configuration
+# Configuration
 EXCLUDE_DIRS = [
     'venv', 'node_modules', '.git', 'build', 'dist', '.github',
     'target', 'out', 'bin', 'lib', '.idea', '.vscode', '.settings',
     'agent.log', 'exchange_log.json', '.next', 'public',
-    'p.md', 'src', 'generated-projects',
-    'src', 'plugins', 'amplify', '.cache', 'static'
+    'p.md', 'generated-projects', '.aws-sam', 'logs', 'src/icons/untitled-ui/duocolor'
 ]
 
-INCLUDE_DIRS = [
-    'src/theme'  # Specific directory inclusion
-]
-
-INCLUDE_FILE_EXTENSIONS = ['php', 'yml', 'yaml', 'ts', 'json']
-EXCLUDE_FILE_EXTENSIONS = ['log', 'md', 'txt']
+INCLUDE_DIRS = ['.']
+INCLUDE_FILE_EXTENSIONS = ['sh', 'yml', 'yaml', 'ts', 'tsx']
+EXCLUDE_FILE_EXTENSIONS = ['log', 'md', 'txt', 'json']
 
 EXCLUDE_FILES = [
     'package-lock.json', 'yarn.lock', 'conversation.json', 'exchange_log.json',
-    'readme.md', 'exchange_log.md', 'p.md', '.env', 'bash.bash', '.eslintrc.json', '.cursorrules', 'prompt.md', 'objectives.md', 'debug.log', ' next.d.ts', 'tsconfig.json', 'package.json', 'next.config.js', 'next-env.d.ts',
-    'src/theme/oldtheme.js', 'src/theme/shadows.js'
+    'readme.md', 'exchange_log.md', 'p.md', '.env', 'bash.bash', '.eslintrc.json', 
+    '.cursorrules', 'prompt.md', 'objectives.md', 'debug.log', ' next.d.ts', 
+    'tsconfig.json', 'package.json', 'next.config.js', 'next-env.d.ts', 'a.py', 'b.py', 'f.py'
 ]
 
-INCLUDE_FILES = ['debug.log']  # Example include file
+INCLUDE_FILES = ['']
 
 OUTPUT_FILE = 'prompt.md'
 PROMPT_FILE = '.cursorrules'
 
-# 📄 Logging Configuration
 logging.basicConfig(level=logging.ERROR, format='%(message)s')
 logger = logging.getLogger()
 
 def get_language(file: str) -> str:
-    """Determine the language based on file extension."""
-    if file.endswith('.php'):
-        return 'php'
-    if file.endswith(('.yml', '.yaml')):
-        return 'yaml'
-    if file.endswith('.js'):
-        return 'javascript'
-    if file.endswith(('.ts', '.tsx')):
-        return 'typescript'
-    if file.endswith('.css'):
-        return 'css'
-    if file.endswith('.json'):
-        return 'json'
-    if file.endswith('.py'):
-        return 'python'
+    """Return language based on the file extension."""
+    mapping = {
+        '.php': 'php',
+        '.yml': 'yaml',
+        '.yaml': 'yaml',
+        '.js': 'javascript',
+        '.ts': 'typescript',
+        '.tsx': 'typescript',
+        '.css': 'css',
+        '.json': 'json',
+        '.py': 'python'
+    }
+    for ext, lang in mapping.items():
+        if file.endswith(ext):
+            return lang
     return 'plaintext'
 
 def load_prompt() -> str:
-    """Load prompt content from PROMPT_FILE."""
-    if not Path(PROMPT_FILE).exists():
+    """Load prompt content from PROMPT_FILE; prefer content within <system> tags."""
+    path = Path(PROMPT_FILE)
+    if not path.exists():
+        logger.error(f'Error: Prompt file not found: {PROMPT_FILE}')
         return None
 
-    content = Path(PROMPT_FILE).read_text(encoding='utf-8')
+    content = path.read_text(encoding='utf-8')
+    if not content.strip():
+        logger.error(f'Error: Prompt file is empty: {PROMPT_FILE}')
+        return None
+
     match = re.search(r'<system>([\s\S]*?)<\/system>', content)
-    return match.group(1) if match else None
+    if match:
+        logger.error('Prompt loaded successfully from <system> tags')
+        return match.group(1)
+    
+    logger.error('No <system> tags found, using entire file content')
+    return content.strip()
 
 def load_objectives() -> str:
-    """Load objectives content from objectives.md."""
-    goals_file = 'objectives.md'
-    if not Path(goals_file).exists():
-        logger.error(f'Error: Goals file not found: {goals_file}')
-        # Optionally, return a default objective or prompt the user
+    """Load objectives from objectives.md using defined tags."""
+    path = Path('objectives.md')
+    if not path.exists():
+        logger.error('Error: Goals file not found: objectives.md')
         return 'No objectives defined.'
 
-    content = Path(goals_file).read_text(encoding='utf-8')
-    match = re.search(r'<goals>([\s\S]*?)<\/goals>', content)
-    if match and match.group(1):
-        logger.error('Debug: Objectives content:')
-        logger.error(match.group(1))
-        return match.group(1)
-    else:
-        logger.error(f'Error: No content found between <goals> tags in {goals_file}')
-        return 'No objectives defined.'
+    content = path.read_text(encoding='utf-8')
+    pattern = (
+        r'<feature_objectives>([\s\S]*?)<\/feature_objectives>|'
+        r'<goals>([\s\S]*?)<\/goals>|'
+        r'<objective>([\s\S]*?)<\/objective>'
+    )
+    match = re.search(pattern, content)
+    if match:
+        for group in match.groups():
+            if group and group.strip():
+                logger.error('Debug: Objectives content:')
+                logger.error(group)
+                return group
+    logger.error('Error: No content found between objectives tags in objectives.md')
+    return 'No objectives defined.'
 
 def is_file_included(file: str) -> bool:
-    """Determine if a file should be included based on inclusion and exclusion rules with weighted precedence."""
-    rule_weights = {
+    """Determine file inclusion using weighted rules."""
+    weights = {
         'include_file': 100,
         'exclude_file': 90,
         'include_dir': 80,
@@ -89,147 +101,144 @@ def is_file_included(file: str) -> bool:
         'include_ext': 60,
         'exclude_ext': 50
     }
+    
+    rules = []
+    if file in INCLUDE_FILES:
+        rules.append(('include_file', weights['include_file']))
 
-    applied_rules = []
+    if file in EXCLUDE_FILES:
+        rules.append(('exclude_file', weights['exclude_file']))
 
-    # Check INCLUDE_FILES
-    for inc_file in INCLUDE_FILES:
-        if file == inc_file:
-            applied_rules.append(('include_file', rule_weights['include_file']))
+    for dir_ in INCLUDE_DIRS:
+        if file.startswith(f'{dir_}/'):
+            rules.append(('include_dir', weights['include_dir']))
 
-    # Check EXCLUDE_FILES
-    for exc_file in EXCLUDE_FILES:
-        if file == exc_file:
-            applied_rules.append(('exclude_file', rule_weights['exclude_file']))
+    for dir_ in EXCLUDE_DIRS:
+        if file.startswith(f'{dir_}/'):
+            rules.append(('exclude_dir', weights['exclude_dir']))
 
-    # Check INCLUDE_DIRS
-    for inc_dir in INCLUDE_DIRS:
-        if file.startswith(f'{inc_dir}/'):
-            applied_rules.append(('include_dir', rule_weights['include_dir']))
-
-    # Check EXCLUDE_DIRS
-    for exc_dir in EXCLUDE_DIRS:
-        if file.startswith(f'{exc_dir}/'):
-            applied_rules.append(('exclude_dir', rule_weights['exclude_dir']))
-
-    # Check file extensions
     if '.' in file:
         ext = file.split('.')[-1]
-        # Check INCLUDE_FILE_EXTENSIONS
         if ext in INCLUDE_FILE_EXTENSIONS:
-            applied_rules.append(('include_ext', rule_weights['include_ext']))
-        # Check EXCLUDE_FILE_EXTENSIONS
+            rules.append(('include_ext', weights['include_ext']))
         if ext in EXCLUDE_FILE_EXTENSIONS:
-            applied_rules.append(('exclude_ext', rule_weights['exclude_ext']))
+            rules.append(('exclude_ext', weights['exclude_ext']))
 
-    if not applied_rules:
-        # Default action if no rules match
+    if not rules:
         return False
 
-    # Determine the rule with the highest weight
-    applied_rules.sort(key=lambda x: x[1], reverse=True)
-    highest_weight = applied_rules[0][1]
-    # Get all rules with the highest weight
-    highest_rules = [rule for rule in applied_rules if rule[1] == highest_weight]
-
-    # If multiple rules have the same highest weight, prioritize 'include' over 'exclude'
-    for rule in highest_rules:
-        if rule[0].startswith('include'):
-            return True
-    return False
+    rules.sort(key=lambda rule: rule[1], reverse=True)
+    top_weight = rules[0][1]
+    top_rules = [r for r in rules if r[1] == top_weight]
+    return any(rule[0].startswith('include') for rule in top_rules)
 
 def should_exclude_dir(dir_path: str) -> bool:
-    """Determine if a directory should be excluded based on EXCLUDE_DIRS and INCLUDE_DIRS."""
-    # Normalize paths to ensure consistent comparison
-    normalized_dir = dir_path.rstrip('/\\')
-
-    # Check if the directory matches any exclude rule
-    for exc_dir in EXCLUDE_DIRS:
-        normalized_exc_dir = exc_dir.rstrip('/\\')
-        if normalized_dir == normalized_exc_dir or normalized_dir.startswith(f'{normalized_exc_dir}/'):
-            # Now check if any include rule overrides this exclusion
-            for inc_dir in INCLUDE_DIRS:
-                normalized_inc_dir = inc_dir.rstrip('/\\')
-                if normalized_dir.startswith(normalized_inc_dir) or normalized_inc_dir.startswith(normalized_dir):
-                    # If the excluded directory is a parent of an included directory, do not exclude
+    """Return True if the directory should be excluded based on matching rules."""
+    norm_dir = dir_path.rstrip('/\\')
+    for exc in EXCLUDE_DIRS:
+        norm_exc = exc.rstrip('/\\')
+        if norm_dir == norm_exc or norm_dir.startswith(f'{norm_exc}/'):
+            for inc in INCLUDE_DIRS:
+                norm_inc = inc.rstrip('/\\')
+                if norm_dir.startswith(norm_inc) or norm_inc.startswith(norm_dir):
                     return False
-            # No include rule overrides the exclusion
             return True
     return False
 
 def traverse_directory(dir_path: str, file_list: list) -> list:
-    """Recursively traverse directories and collect file paths, respecting include/exclude rules."""
+    """Recursively traverse dir_path and append valid files to file_list."""
     try:
-        entries = Path(dir_path).iterdir()
+        entries = list(Path(dir_path).iterdir())
     except PermissionError as e:
         logger.error(f'Permission denied: {dir_path} ({e})')
         return file_list
 
     for entry in entries:
-        full_path = entry.resolve()
         try:
-            relative_path = str(full_path.relative_to(Path('.').resolve()))
+            full = entry.resolve()
+            relative = str(full.relative_to(Path('.').resolve()))
         except ValueError:
-            # If the path is not relative to current directory, skip it
             continue
 
         if entry.is_dir():
-            # Check if the directory should be excluded
-            if should_exclude_dir(relative_path):
-                logger.error(f'Excluding directory: {relative_path}')
+            if should_exclude_dir(relative):
+                logger.error(f'Excluding directory: {relative}')
                 continue
-            traverse_directory(relative_path, file_list)
+            traverse_directory(relative, file_list)
         elif entry.is_file():
-            file_list.append(relative_path)
+            file_list.append(relative)
     return file_list
 
-def generate_markdown():
-    """Generate markdown file with included file contents and objectives."""
-    logger.error('Starting markdown generation...')
-    output_lines = []
+def count_tokens_in_file(file_path: str) -> int:
+    """
+    Count tokens in a file using GPT-4's tiktoken encoder.
+    
+    Example:
+      cnt = count_tokens_in_file('prompt.md')
+    """
+    try:
+        enc = tiktoken.encoding_for_model("gpt-4")  # Initialize encoder
+        content = Path(file_path).read_text(encoding='utf-8')  # Read file
+        tokens = enc.encode(content)  # Encode content
+        return len(tokens)  # Return token count
+    except FileNotFoundError:
+        print(f"Error: File not found at {file_path}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    return None
 
-    prompt_content = load_prompt()
-    if not prompt_content:
+def generate_markdown():
+    """
+    Generate a markdown file by embedding the prompt, file contents,
+    and objectives.
+    """
+    logger.error('Starting markdown generation...')
+    md_lines = []
+
+    prompt = load_prompt()
+    if not prompt:
         logger.error('Failed to load prompt, using fallback')
-        prompt_content = (
+        prompt = (
             'You will be provided with files and their contexts inside ``` code blocks ```. '
-            'Your task is to provide assistance based on these file contexts and given defined Goals.'
+            'Your task is to provide assistance based on these file contexts and defined Goals.'
         )
     else:
         logger.error('Prompt loaded successfully')
 
-    output_lines.extend([prompt_content, '\n\n', '# File Contents', '\n'])
-
+    md_lines.extend([prompt, '\n\n', '# File Contents', '\n'])
     logger.error('Building file list...')
-    all_files = []
-    traverse_directory('.', all_files)
 
+    files = traverse_directory('.', [])
     logger.error('Processing files...')
-    for file in all_files:
+
+    for file in files:
         if is_file_included(file):
             logger.error(f'Processing file: {file}')
-            language = get_language(file)
-            output_lines.append(f'```{language}:{file}')
+            lang = get_language(file)
+            md_lines.append(f'```{lang}:{file}')
             try:
-                file_content = Path(file).read_text(encoding='utf-8')
-                output_lines.extend([file_content, '\n```'])
+                content = Path(file).read_text(encoding='utf-8')
+                md_lines.extend([content, '\n```'])
             except Exception as e:
-                logger.error(f'Error reading file {file}: {e}')
+                logger.error(f'Error reading {file}: {e}')
         else:
             logger.error(f'Skipping file: {file}')
 
-    objectives_content = load_objectives()
-    if objectives_content:
+    objectives = load_objectives()
+    if objectives:
         logger.error('Objectives loaded successfully')
-        output_lines.append(objectives_content)
+        md_lines.extend(['\n## Features:\n', '---\n', objectives, '\n---\n'])
     else:
         logger.error('Failed to load objectives')
 
     try:
-        Path(OUTPUT_FILE).write_text('\n'.join(output_lines), encoding='utf-8')
-        logger.error(f'Markdown generation completed. Output: {OUTPUT_FILE}')
+        Path(OUTPUT_FILE).write_text('\n'.join(md_lines), encoding='utf-8')
+        logger.error(f'Markdown generated: {OUTPUT_FILE}')
     except Exception as e:
         logger.error(f'Error writing to {OUTPUT_FILE}: {e}')
 
 if __name__ == '__main__':
     generate_markdown()
+    tokens = count_tokens_in_file(OUTPUT_FILE)
+    if tokens is not None:
+        print(f"Number of tokens in the file: {tokens}")

@@ -4,7 +4,7 @@ title: "Den AI-medierade virtuella assistenten att ändra spelet"
 description: "Föreställ dig en värld där du kan prata med din virtuella assistent som du skulle göra med din bästa vän.  En värld där din assistent förstår sammanhanget.  Välkommen till eran av GPT-4, den AI-medierade virtuella assistenten som revolutionerar hur vi interagerar med teknik."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2023-03-15"
 slug: /sv/blog/2023/03/the-ai-mediated-virtual-assistant-that-changing-the-game
 path: /sv/blog/2023/03/the-ai-mediated-virtual-assistant-that-changing-the-game
@@ -54,7 +54,7 @@ När du läser om de fantastiska framstegen som GPT-4 har medfört kanske du und
 
 Oavsett om du är en upptagen professionell, en student eller någon som helt enkelt letar efter en hjälpande hand, kan GPT-4-drivna virtuella assistenter förändra hur du interagerar med teknik. Från att förenkla komplexa uppgifter till att erbjuda ett lyssnande öra när du behöver det som mest är möjligheterna oändliga.
 
-## Låt oss sammanfatta 
+## Låt oss sammanfatta
 
 GPT-4, den senaste och mest kraftfulla iterationen av OpenAI:s språkmodell, revolutionerar världen av virtuella personliga assistenter. Dess avancerade förmågor inom språkförståelse, kontextbearbetning och bildigenkänning öppnar nya dörrar för olika tillämpningar, från konversationssystem till bildigenkänning och mer därtill.
 

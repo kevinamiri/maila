@@ -7,10 +7,10 @@ header: "Imponer dine potensielle kunder med en overbevisende salgspresentasjon 
 usage: "For å bruke denne malen, er alt du trenger å gjøre å legge inn ditt produkt eller tjeneste, målgruppe og viktige salgsargumenter. AI-salgsfremmingsgeneratoren vil deretter lage en tilpasset, overbevisende og effektiv salgspitch basert på informasjonen du oppgir."
 placeholder: "Produkt: Hjemmesikkerhetssystem\nMålgruppe: Huseiere\nNøkkel-salgsargumenter: Enkel installasjon, 24/7 overvåking, integrasjon med smarttelefon"
 help_hint: "Hva er ditt produkt eller tjeneste, og hvem er målgruppen? Gi noen nøkkel-salgsargumenter, så vil vi lage et overbevisende salgsfremstøt skreddersydd for din målgruppe."
-tags: [Copywriting,Tools,Templates,Sales Pitch,Website copywriting]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Sales Pitch, Website copywriting]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-18"
 slug: /no/tools/copywriting/sales-pitch
 path: /no/tools/copywriting/sales-pitch
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1064"
 product_type: "1064"
 ---
+
 # AI Salgstale-generator
 
 Lag overbevisende og effektive salgstaler tilpasset din målgruppe ved hjelp av avansert kunstig intelligens. Spar tid og krefter ved å generere tilpassede salgstaler basert på din inndata, slik at du kan fokusere på å lukke avtalen.
@@ -49,6 +50,7 @@ Lag overbevisende og effektive salgstaler tilpasset din målgruppe ved hjelp av 
 ## Bruksområder
 
 AI Sales Pitch Generator passer perfekt for:
+
 - Oppstartsselskaper som ønsker å presentere sine innovative produkter eller tjenester
 - Salgsfagfolk som trenger et overbevisende salgsskript
 - Markedsførere som ønsker å lage engasjerende e-postkampanjer eller landingssider

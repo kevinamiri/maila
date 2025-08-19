@@ -33,7 +33,7 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-const Layout: React.FC<LayoutProps> = ({ data, jsonData, location, children }) => {
+const Layout: React.FC<LayoutProps> = ({ data, location, children }) => {
 
   const { settings, saveSettings } = useSettings();
   const { langs, defaultLangKey } = data.site.siteMetadata.languages;

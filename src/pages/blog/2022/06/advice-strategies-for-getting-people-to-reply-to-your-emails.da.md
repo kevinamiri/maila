@@ -4,7 +4,7 @@ title: "Rådgivningstrategier for at få folk til at svare på dine e -mails"
 description: "Send ikke lange e-mails til folk, du vil arbejde med.  Bare sæt dit punkt på tværs så hurtigt som muligt, og hold det kort."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-06-14"
 slug: /da/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
 path: /da/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
@@ -37,5 +37,3 @@ imageStatus: true
 10. Vent et eller to dage, før du sender dem en e-mail igen (bare en "follow up" e-mail synes bedst - for mange er irriterende) fordi der er en chance for, at der var noget, der distraherede dem (som dem selv). Eller følg ikke op overhovedet, måske vent på en anden mulighed, nogle gange er bolden i den anden retning, og nogle gange er bolden blevet fejet fra banen helt på den vindige sorte is af tid!
 
 11. Prøv dette emne for ekstra magt: "Hjælp: [navn]" - et emne, der også fungerer via tekstbesked ifølge veteran journalist og forfatter Paul Laverty, som jeg altid tekster, når han rejser, fordi jeg ved, at han ikke vil svare, men han gør normalt, når han kommer hjem, fordi alle elsker nogen, der spørger dem om hjælp (så længe de ikke er nogen, der er irriterende!) [/end of advice]
-
-

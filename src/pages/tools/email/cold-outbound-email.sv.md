@@ -8,9 +8,9 @@ usage: "För att använda det här verktyget, ange bara ditt önskade ämne, nyc
 placeholder: "Skriv alla viktiga detaljer du vill lyfta fram i granskningen, till exempel: \ n \ n Nyckelpunkter: \ n \ n1.  Utmärkt kundservice \ n2.  Högkvalitativ produkt \ n3.  Snabb frakt \ n \ n Nyckelord: kundservice, produktkvalitet, frakt \ n \ n"
 help_hint: "Vilken produkt eller tjänst vill du generera en recension för?  Ange några nyckelord relaterade till ämnet så skapar vi en övertygande granskning baserad på din input.  Det rekommenderas att lista de viktigaste punkter du vill lyfta fram i granskningen."
 tags: ["Email", "ai email generator", "Cold Email"]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-03"
 slug: /sv/tools/email/cold-outbound-email
 path: /sv/tools/email/cold-outbound-email
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1039"
 product_type: "1039"
 ---
+
 # Kalla utgående e-postmeddelanden | COPY.TOOLS, AI-Copywriting-plattform
 
 Upptäck hur COPY.TOOLS kan revolutionera ditt kalla utskicksspel genom att skapa personliga, engagerande och konverterande kalla e-postmeddelanden med kraften från artificiell intelligens.

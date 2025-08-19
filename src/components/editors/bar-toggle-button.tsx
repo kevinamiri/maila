@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import ToggleButtonList from "components/subcomponents/ToggleButtonList";
+import ToggleButtonList from "components/subcomponents/toggle-button-list";
 
 // BarToggleButton Component
 export default function BarToggleButton({ format, icon, handleClick }) {

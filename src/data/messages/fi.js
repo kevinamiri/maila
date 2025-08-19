@@ -49,8 +49,6 @@ module.exports = {
     },
   ],
 
-  // accessability settings
-
   A01: "Esteettömyysasetukset",
   A02: "Ota päälle tumma tila",
   A03: "Vaalea tila",
@@ -72,7 +70,9 @@ module.exports = {
   T05: "Selaa",
   L66: "Kirjaudu sisään",
   B11: "BETA",
+  
   //Auth
+
   F30: "Lähetä nollauspyyntö",
   F31: "Tarkista",
   F32: "Verification",
@@ -124,7 +124,6 @@ module.exports = {
 
   //copy tools
   CT01: "Copywriting Tools",
-  B01: "Mission Statement",
   B010: "Brand Mission Statement",
   B02: "Vision Statement",
   B020: "Brand Vision Statement",
@@ -138,7 +137,6 @@ module.exports = {
   WT01: "Kirjoitus työkalut",
   RH004: "Parapherase",
   GC009: "Good Grammar",
-  LP01: "Landing Page Headline",
   LP02: "Landing Page Headline Description",
   LP03: "Meta Descriptions",
   LP04: "Question Generator",

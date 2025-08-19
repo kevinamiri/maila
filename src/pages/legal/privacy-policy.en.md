@@ -10,10 +10,11 @@ path: /en/legal/privacy-policy
 slug: /en/legal/privacy-policy
 ---
 
-```toc
 # Privacy Policy
-```
 
+```toc
+
+```
 
 ## 1. Introduction
 
@@ -22,6 +23,7 @@ At Maila AI, we are committed to protecting your privacy and safeguarding your p
 - Scope: This policy applies to all Customers and Website visitors of Maila.ai. By using our services or visiting our website, you agree to the terms outlined in this Privacy Policy.
 
 - Definitions:
+
   - "Personal Data": Any information relating to an identified or identifiable natural person, such as name, email address, or IP address.
   - "Processing": Any operation performed on Personal Data, such as collection, recording, storage, alteration, retrieval, use, disclosure, or erasure.
 
@@ -32,6 +34,7 @@ At Maila AI, we are committed to protecting your privacy and safeguarding your p
 - Maila.ai acts as a Controller, meaning that we are responsible for determining the purposes and means of Processing Personal Data. We collect and Process data to provide our AI-generated voice, image, and text services to our users.
 
 - As a Controller, we are committed to:
+
   - Being transparent about our data collection and Processing practices
   - Collecting and Processing Personal Data lawfully and fairly
   - Ensuring the accuracy and security of the Personal Data we Process
@@ -45,6 +48,7 @@ At Maila AI, we are committed to protecting your privacy and safeguarding your p
 ## 3. Our Processing of Personal Data
 
 - Lawful Basis for Processing: We Process Personal Data based on the following legal grounds:
+
   - Consent: When you provide explicit consent for us to Process your Personal Data for a specific purpose, such as signing up for our newsletter.
   - Performance of a Contract: When Processing is necessary to fulfill our contractual obligations to you, such as providing our services.
   - Legitimate Interest: When we have a legitimate business interest to Process your Personal Data, such as improving our services or detecting and preventing fraud.
@@ -80,7 +84,6 @@ We will only Process your Personal Data for the purposes specified above or for 
 
 We will not sell, rent, or trade your Personal Data to third parties for their marketing purposes without your explicit consent. We may share your Personal Data with trusted service providers who assist us in delivering our services, but only to the extent necessary and under strict confidentiality obligations.
 
-
 ## 5. Your Rights
 
 At Maila.ai, we respect your rights as a data subject under the GDPR and the Swedish Data Protection Act. You have the following rights regarding your Personal Data:
@@ -110,6 +113,7 @@ If you are not satisfied with our response to your request or believe that we ar
 We are committed to ensuring the security and privacy of your Personal Data when it is transferred to third parties or outside the European Union (EU) or European Economic Area (EEA).
 
 - **Processors**: We may engage trusted third-party service providers (Processors) to assist us in delivering our services and Processing your Personal Data on our behalf. These Processors are bound by strict Data Processing Agreements (DPAs) that require them to:
+
   - Process your Personal Data only on our documented instructions
   - Implement appropriate technical and organizational measures to protect your data
   - Assist us in fulfilling our obligations under data protection laws
@@ -117,12 +121,14 @@ We are committed to ensuring the security and privacy of your Personal Data when
   - Submit to audits and inspections to verify compliance with the DPA
 
 - **International Transfers**: When transferring your Personal Data outside the EU/EEA, we ensure that appropriate safeguards are in place to provide an adequate level of protection in accordance with GDPR requirements. These safeguards may include:
+
   - Transferring data to countries that have been deemed to provide an adequate level of protection by the European Commission
   - Using standard contractual clauses approved by the European Commission
   - Implementing Binding Corporate Rules (BCRs) for intra-group transfers
   - Obtaining your explicit consent for the transfer, after informing you of the possible risks
 
 - **Disclosure to Third Parties**: We may disclose your Personal Data to third parties in the following circumstances:
+
   - When required by law, such as to comply with a court order or legal process
   - To protect our rights, property, or safety, or that of our users or the public
   - In connection with a merger, acquisition, or sale of all or a portion of our assets
@@ -130,90 +136,13 @@ We are committed to ensuring the security and privacy of your Personal Data when
 
 - **Anonymized Data**: We may share aggregated or anonymized data that does not identify you personally with third parties for research, marketing, or other purposes. This data is not considered Personal Data under the GDPR.
 
-
 ## 8. Cookie Usage
 
 We use cookies and similar tracking technologies to enhance your user experience, secure our services, and analyze website performance. This section explains how we use cookies and your options for managing them.
 
 - **Types of Cookies**: We use the following types of cookies on our website:
+
   - **Essential Cookies**: These cookies are necessary for the operation of our website and enable you to navigate and use its features. Without these cookies, certain functionalities would not be possible.
   - **Performance Cookies**: We use performance cookies to analyze how visitors use our website, detect errors, and improve the website's performance and user experience.
   - **Functional Cookies**: These cookies allow our website to remember choices you make, such as your language preference or login information, to provide a more personalized experience.
   - **Advertising Cookies**: We may use advertising cookies to deliver targeted advertisements that are relevant to your interests. These cookies may track your online activities over time and across different websites.
-
-- **First-party and Third-party Cookies**: We use both first-party cookies (set by Maila.ai) and third-party cookies (set by our trusted partners and service providers) on our website. Third-party cookies are subject to the privacy policies of the respective third parties.
-
-- **Cookie Duration**: The storage duration of cookies varies depending on their purpose:
-  - **Session Cookies**: These cookies are temporary and expire once you close your browser. They are used to maintain your session state and preferences during your visit.
-  - **Persistent Cookies**: These cookies remain on your device for a predetermined period or until you delete them manually. They are used to remember your preferences, settings, and activity over time.
-
-- **Managing Cookies**: You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by:
-  - Configuring your browser settings to accept or refuse cookies, or to notify you when a cookie is being set. Note that disabling cookies may affect the functionality of our website.
-  - Using the cookie consent tool on our website to adjust your preferences for non-essential cookies.
-  - Opting out of third-party advertising cookies through the Network Advertising Initiative (NAI) or the Digital Advertising Alliance (DAA).
-
-For more detailed information about the specific cookies we use and your options for managing them, please refer to our Cookie Policy.
-
-Please note that we may change the cookies we use from time to time to improve the functionality of our website and your user experience. We will inform you of any significant changes to our use of cookies by updating this Privacy Policy or our Cookie Policy accordingly.
-
-
-## 9. Complaint Procedure
-
-If you believe that we have not complied with applicable data protection laws or have infringed upon your privacy rights, you have the right to lodge a complaint through the following procedure:
-
-1. **Contact Us**: As a first step, we encourage you to contact us directly with your complaint or concern. You can reach out at support@maila.ai or using the contact information provided in the "Contact Information" section below. We will investigate your complaint and attempt to resolve it internally as quickly as possible.
-
-2. **Provide Relevant Information**: To help us effectively address your complaint, please provide us with the following information:
-   - Your full name and contact details
-   - A clear and concise description of your complaint, including the specific rights you believe have been violated
-   - Any relevant documentation or evidence supporting your complaint
-   - The outcome you are seeking
-
-3. **Our Response**: Upon receiving your complaint, we will:
-   - Acknowledge receipt of your complaint within 7 days
-   - Investigate your complaint thoroughly and impartially
-   - Keep you informed about the progress of our investigation
-   - Provide you with a final response within 30 days, unless the complexity of the complaint requires an extension, in which case we will notify you accordingly
-
-5. **Supervisory Authority**: If you are not satisfied with our response to your complaint or believe that we are processing your Personal Data in violation of data protection laws, you have the right to lodge a complaint with the Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten). 
-   - You may also have the right to lodge a complaint with the supervisory authority in your country of residence, place of work, or where the alleged infringement took place.
-
-6. **Judicial Remedy**: In addition to lodging a complaint with a supervisory authority, you have the right to an effective judicial remedy if you consider that your rights under data protection laws have been infringed as a result of the processing of your Personal Data in non-compliance with these laws.
-
-If you believe that we have not been able to address your complaint satisfactorily, we respect your right to seek redress through the appropriate supervisory authority or judicial body.
-
-
-## 10. Children's Privacy
-
-Our services are not directed at children under the age of 16. We do not knowingly collect Personal Data from children. If we become aware that we have collected Personal Data from a child without parental consent, we will take steps to delete that information as soon as possible.
-
-## 11. Changes to the Policy
-
-We may update or modify this Privacy Policy from time to time to reflect changes in our data processing practices, legal obligations, or other relevant factors. We are committed to keeping you informed about any significant changes to this policy and how they may impact your rights or our obligations.
-
-- **Notification of Changes**: If we make material changes to this Privacy Policy that affect your rights or increase our obligations, we will notify you in advance through one or more of the following methods:
-  - Sending an email to the address associated with your account
-  - Displaying a prominent notice on our website or within our services
-  - Requesting your explicit consent for the changes, where required by law
-
-- **Timing of Notifications**: We will provide you with a reasonable notice period before the changes take effect, typically at least 30 days in advance. This gives you an opportunity to review the changes and decide whether to continue using our services under the updated terms.
-
-- **Non-Material Changes**: For non-material changes that do not significantly impact your rights or our obligations, we may update the Privacy Policy without providing advance notice. However, we will always indicate the date of the latest revision at the top of the policy.
-
-- **Reviewing Changes**: We encourage you to review this Privacy Policy periodically to stay informed about how we collect, use, and protect your Personal Data. Your continued use of our services after the effective date of any changes constitutes your acceptance of the updated Privacy Policy.
-
-
-If you have any questions or concerns about changes to this Privacy Policy, please don't hesitate to reach out to us using the contact information provided in the "Contact Information" section below. We are committed to engaging with you and addressing any inquiries you may have about our data protection practices.
-
-## 12. Contact Information
-
-If you have any questions, concerns, or requests regarding this Privacy Policy or our data processing practices, please contact us using the following information:
-
-Maila.ai
-Email: [support@maila.ai](mailto:support@maila.ai).
-
-[Privacy Notice](https://maila.ai/en/legal/privacy-policy)
-
-If you are not satisfied with our response or believe that we are processing your Personal Data in violation of applicable data protection laws, you have the right to lodge a complaint with the Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten) or another competent supervisory authority, as described in the "Complaint Procedure" section above.
-
-We are committed to working with you to resolve any issues and ensuring that your privacy rights are respected. Your trust and confidence in our data protection practices are of utmost importance to us.

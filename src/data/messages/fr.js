@@ -122,7 +122,6 @@ module.exports = {
   ET05: "Email de prospection",
   //outils de copie
   CT01: "Copywriting Tools",
-  B01: "Mission Statement",
   B010: "Mission de la marque",
   B02: "Déclaration de vision",
   B020: "Déclaration de vision de la marque",
@@ -136,7 +135,6 @@ module.exports = {
   WT01: "Outils de rédaction",
   RH004: "Parapherase",
   GC009: "Bonne grammaire",
-  LP01: "Landing Page Headline",
   LP02: "Landing Page Headline Description",
   LP03: "Meta Descriptions",
   LP04: "Question Generator",
@@ -404,20 +402,11 @@ module.exports = {
   E56728: "Par exemple, une tasse réutilisable qui garde le café chaud et qui est écologique",
   N78928: "Composer",
 
-
   L12330: "Blog Post Pas",
   T00930: "Blog Post Pas",
   D76530: "Douleur, Agitation, Solution. Ou Problème, Agitation, Solution. Si vous voulez écrire un bon texte, vous devez réfléchir au problème que rencontre votre lecteur, puis agiter ce problème. Enfin, proposez une solution qui améliorera la vie du lecteur",
   H43230: "Ecrivez quelques paragraphes et ensuite nous créerons un problème, une agitation et une solution pour le texte donné",
   E56730: "Par exemple, une tasse réutilisable qui garde le café chaud et qui est écologique",
-  N78930: "Compose",
-
-
-  L12330: "En-tête d'annonce Google",
-  T00930: "En-tête d'annonce Google",
-  D76530: "Il peut être utilisé pour créer un en-tête de publicité Google pour votre page",
-  H43230: "Ecrivez quelques paragraphes ; puis nous créerons un Google Ad Header pour le texte donné.",
-  E56730: "Par exemple, une tasse réutilisable qui garde le café au chaud et qui est écologique",
   N78930: "Compose",
 
   L12331: "Description de l'annonce Google",

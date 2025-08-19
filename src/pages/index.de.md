@@ -10,14 +10,14 @@ date: 2020-12-25
 image: ../img/logo.png
 sectionlabel: "Mehr Funktionen"
 section1:
-    title: "Vereinfachung von Inhalten"
-    description: "Vereinfachen Sie Ihre Artikel, Aufsätze und Berichte mit fortgeschrittener künstlicher Intelligenz."
+  title: "Vereinfachung von Inhalten"
+  description: "Vereinfachen Sie Ihre Artikel, Aufsätze und Berichte mit fortgeschrittener künstlicher Intelligenz."
 section2:
-    title: " Übersetzung von Inhalten"
-    description: "Übersetzen Sie Ihre Artikel, Aufsätze und Berichte von einer Sprache in eine andere."
+  title: " Übersetzung von Inhalten"
+  description: "Übersetzen Sie Ihre Artikel, Aufsätze und Berichte von einer Sprache in eine andere."
 section3:
-    title: " Fehler beheben"
-    description: "Verbessern Sie die Qualität Ihres Inhalts, indem Sie Grammatikfehler, Rechtschreibfehler und stilistische Fehler beheben."
+  title: " Fehler beheben"
+  description: "Verbessern Sie die Qualität Ihres Inhalts, indem Sie Grammatikfehler, Rechtschreibfehler und stilistische Fehler beheben."
 tables:
   button: "Registrieren"
   link: "/app"
@@ -66,7 +66,7 @@ T100:
   - "Zusammenfassungsgenerator"
   - "SEO-Prüfer"
   - "Paraphrasieren"
-B100: 
+B100:
   - "Die bewährten Formeln zur Erstellung strukturierter Aussagen über Ihr Produkt."
   - "Erstellen Sie Verkaufstexte in E-Mails mit aussagekräftigen Worten und Phrasen für Ihr Produkt."
   - "Effektive Wege, um neue Ideen in Ihr Produkt zu bringen."
@@ -79,7 +79,7 @@ H01051: "Starten Sie mit Ihrer ersten 25.000-Wörter-Testversion und sehen Sie, 
 H01047: "Diese Ergebnisse werden vorab generiert und vollständig von AI angetrieben"
 H0118:
   A0117q:
-    - Ist AI-generierter Inhalt frei von Plagiaten? 
+    - Ist AI-generierter Inhalt frei von Plagiaten?
     - Unser AI-generierter Inhalt ist frei von Plagiaten und genau.
     - Wie kann AI-Kopierwerkzeug in einem Unternehmen verwendet werden?
     - AI-basierte Inhaltsgenerierung kann für eine Vielzahl von Zwecken in Unternehmen verwendet werden. Diese Art von Inhalten kann bei Produktbeschreibungen, Social Media-Updates, E-Mail-Betreffzeilen und vielem mehr helfen. Ein AI-Schreibassistent kann dabei helfen, Zeit zu sparen und die Qualität der erstellten Inhalte zu verbessern.
@@ -91,7 +91,7 @@ H0118:
     - Wir generieren Inhalte in Echtzeit, sodass Ihre Ergebnisse sofort verfügbar sind. Es kann ein wenig Zeit in Anspruch nehmen, sich an einen AI-Schreibassistenten zu gewöhnen, aber sobald Sie den Dreh raus haben, kann es Ihnen viel Zeit sparen.
     - Kann ich Inhalte in anderen Sprachen erstellen?
     - Ja, wir unterstützen Sprachen außer Englisch. Die besten qualitativ hochwertigen Übersetzungen sind derzeit in Englisch verfügbar.
-H01194: 
+H01194:
   - AI-Kopiergenerator
   - Verwenden Sie fortschrittliche künstliche Intelligenz, um Inhalte für Ihre Website, Ihren Blog oder Ihre Marketingmaterialien zu erstellen.
   - AI-Kopierwerkzeuge

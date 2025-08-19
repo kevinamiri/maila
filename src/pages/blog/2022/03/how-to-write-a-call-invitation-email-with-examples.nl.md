@@ -4,7 +4,7 @@ title: "Hoe schrijf je een e-mail met uitnodiging tot een gesprek, met voorbeeld
 description: "Een call invite e-mail is een prima manier om een ontmoeting of overleg met een potentiële klant of cliënt te regelen"
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /nl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /nl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Uitnodiging e-mail.
 
+# Uitnodiging e-mail.
 
 Een e-mail met uitnodiging tot bellen is een e-mail die naar een potentiële klant of cliënt wordt gestuurd om hem uit te nodigen voor een telefoongesprek. Dit type e-mail wordt meestal gebruikt om een afspraak of een consult te regelen, en bevat meestal de datum, het tijdstip en het doel van het gesprek.
 
@@ -44,7 +44,6 @@ Om uw e-mail af te sluiten, moet u de persoon bedanken voor zijn tijd en uw cont
 
 - Om uw e-mail af te sluiten, moet u de persoon bedanken voor zijn tijd en uw contactgegevens toevoegen.
 
-
 ## Basic Structure
 
 - Stel uzelf voor en leg uit waarom de persoon die u uitnodigt aan uw gesprek zou moeten deelnemen.
@@ -58,7 +57,6 @@ Om uw e-mail af te sluiten, moet u de persoon bedanken voor zijn tijd en uw cont
 - Bedank de persoon voor zijn tijd.
 
 - Voeg uw contactgegevens toe.
-
 
 ## Tips
 
@@ -104,11 +102,11 @@ Hoogachtend,
 
 ---
 
-Beste ____,
+Beste \_\_\_\_,
 
 Het is ons een groot genoegen u uit te nodigen voor ons komende evenement.
 
-Het evenement wordt gehouden op _____.
+Het evenement wordt gehouden op **\_**.
 
 Wij hopen dat u zich bij ons kunt voegen voor wat een zeer gedenkwaardige gelegenheid belooft te worden.
 

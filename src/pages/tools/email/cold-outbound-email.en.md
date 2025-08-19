@@ -8,9 +8,9 @@ usage: "To use this tool, simply input your desired topic, keywords, and key fea
 placeholder: "Write all the essential details you want to highlight in the review, for instance:\n\n Key Points:\n \n1. Excellent customer service\n2. High-quality product\n3. Fast shipping\n\n keywords: customer service, product quality, shipping\n\n"
 help_hint: "What product or service would you like to generate a review for? Enter some keywords related to the topic and we will create a compelling review based on your input. It is recommended to list the key points you want to highlight in the review."
 tags: ["Email", "ai email generator", "Cold Email"]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-03"
 slug: /en/tools/email/cold-outbound-email
 path: /en/tools/email/cold-outbound-email
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1039"
 product_type: "1039"
 ---
+
 # Cold Outbound Email | Maila.AI, AI-Copywriting Platform
 
 Discover how Maila.AI can revolutionize your cold outreach game by crafting personalized, engaging, and high-converting cold emails with the power of artificial intelligence.

@@ -4,7 +4,7 @@ title: "机器学习算法可以帮助创建有针对性的内容"
 description: "机器学习算法可用于分析和学习大型数据集，以确定模式。然后，这可以被用来创建基于特定受众兴趣的内容。通过使用机器学习，企业可以创建与客户更相关的内容，这将有助于增加销售。"
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-18"
 slug: /zh/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content
 path: /zh/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content
@@ -13,8 +13,11 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+
 ```toc
+
 ```
+
 ##使用AI的AIDA文案写作框架
 
 在数字时代，品牌必须专注于吸引人们的注意力，使他们对他们所提供的东西感兴趣，然后激励他们采取行动，购买他们的产品或服务。
@@ -31,7 +34,6 @@ AIDA模型是一种营销策略，可以帮助你创建更有可能吸引受众�
 
 首先创建一个吸引人的标题或口号，以吸引人们的注意力。
 
-
 ###产生兴趣。
 
 接下来，使用有趣的图片或创建一个挑衅性的问题，以引起对你的产品或服务的兴趣。
@@ -42,9 +44,7 @@ AIDA模型是一种营销策略，可以帮助你创建更有可能吸引受众�
 
 ###鼓励行动。
 
-
 最后，通过提供明确的指示和行动呼吁（CTA），使人们容易采取行动。
-
 
 ###沿着AIDA的其他提示
 

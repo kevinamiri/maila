@@ -7,6 +7,7 @@ date: 2022-12-25
 slug: /sv/tags
 path: /sv/tags
 lang: sv
-tags: ['labels', 'tags']
+tags: ["labels", "tags"]
 ---
+
 Letar du efter information om specifika bloggtagg? Denna lista har dem alla!

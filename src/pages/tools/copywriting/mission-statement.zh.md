@@ -7,10 +7,10 @@ header: "构建一个引人入胜的使命宣言来定义您的组织目的。"
 usage: "要使用此工具，只需输入您的组织名称、关键词、目标和价值观。然后，这个AI模型将根据您的输入生成清晰、独特且引人入胜的使命宣言。"
 placeholder: "提供您组织的名称，目标，价值观或关键词，例如：\n\n组织名称：绿色星球\n目标：环境保护，可持续性\n价值观：保护自然，环保实践\n关键词：绿色生活，环保，可持续性"
 help_hint: "我的组织名称是什么，其目标和价值观是什么？提供一些与您组织目标相关的关键词，然后我们的平台将根据您的输入生成一份使命声明。"
-tags: [Copywriting,Tools,Templates,Mission Statement]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Mission Statement]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-14"
 slug: /zh/tools/copywriting/mission-statement
 path: /zh/tools/copywriting/mission-statement
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1050"
 product_type: "1050"
 ---
+
 # AI使命陈述生成器
 
 利用我们的AI动力的使命陈述生成器，打造一个引人注目的使命陈述，定义您的组织宗旨。

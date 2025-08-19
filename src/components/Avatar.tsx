@@ -8,7 +8,7 @@ import { navigate } from "gatsby";
 function UserAvatar({ handleClick }) {
   const { userInfo, checkUser } = useContext(AppContext);
   const redirect = () => {
-    navigate("/app");
+    navigate("https://speech.maila.ai/auth/login");
   };
 
   if (
@@ -23,7 +23,7 @@ function UserAvatar({ handleClick }) {
             mx: 1,
             textTransform: "none",
           }}
-          href='/app'
+          href='https://speech.maila.ai'
           onClick={redirect}
           size='small'
           variant='contained'

@@ -4,7 +4,7 @@ title: "Masinõppe algoritmid võivad aidata luua sihipärast sisu"
 description: "Masinõppe algoritme saab kasutada suurte andmekogumite analüüsimiseks ja õppimiseks, et tuvastada mustreid. Seejärel saab seda kasutada sellise sisu loomiseks, mis on suunatud konkreetsele sihtrühmale tema huvide alusel. Masinõppe abil saavad ettevõtted luua sisu, mis on nende klientidele asjakohasem ja aitab suurendada müüki."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-18"
 slug: /et/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content
 path: /et/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content
@@ -13,6 +13,7 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+
 ## AIDA copywriting raamistik, mis kasutab tehisintellekti
 
 Digitaalajastul peavad kaubamärgid keskenduma inimeste tähelepanu äratamisele, tekitama neis huvi selle vastu, mida neil on pakkuda, ja seejärel motiveerima neid tegutsema, ostes nende toodet või teenust.
@@ -29,7 +30,6 @@ AIDA-mudeli kasutamisel on oluline meeles pidada erinevaid etappe, mida klient o
 
 Alustage meeldejääva pealkirja või loosungi loomisest, mis äratab inimeste tähelepanu.
 
-
 ### Genereeri huvi:
 
 Seejärel kasutage huvitavaid pilte või koostage provokatiivne küsimus, et tekitada huvi teie toote või teenuse vastu.
@@ -40,9 +40,7 @@ Seejärel keskenduge oma toote või teenuse eelistele ja sellele, kuidas see võ
 
 ### Julgustage tegutsema:
 
-
 Lõpetuseks, tehke inimestel lihtne tegutseda, andes selged juhised ja üleskutse tegutsemiseks (Call To Action, CTA).
-
 
 ### Muud näpunäited mööda AIDA-d
 
@@ -55,4 +53,5 @@ Klientide tähelepanu äratamiseks ja toodete vastu huvi tekitamiseks on mitmeid
 - Positiivse keskkonna loomine, mis soodustab klientide suhtlemist.
 
 ### AI algoritmid võivad aidata luua sihipärast sisu
+
 Masinõppe algoritme saab kasutada suurte andmekogumite analüüsimiseks ja õppimiseks, et tuvastada mustreid. Seejärel saab seda kasutada sellise sisu loomiseks, mis on suunatud konkreetsele sihtrühmale, lähtudes selle huvidest ja vajadustest. Lisaks saab tehisintellekti kasutada selliste pealkirjade ja pealkirjade automaatseks genereerimiseks, mis äratavad suurema tõenäosusega inimeste tähelepanu.

@@ -1,6 +1,6 @@
 ---
 id: "01"
-title: "AI Writing Assistant"
+title: "AI Platform "
 description: "Boost your productivity with our AI-powered Writing Assistant. Designed to enhance your writing speed and quality, it's the perfect tool for anyone looking to create compelling content efficiently. Try it now and experience the future of writing!"
 templateKey: home
 tags:
@@ -29,7 +29,7 @@ section10:
   describe3: Get your results in seconds, you can also edit it and run the same query as many times as you want.
 
 tables:
-  button: "Sign up"
+  button: "Join Waiting List"
   link: "/app"
   header: "An affordable, yet powerful AI copywriting platform"
   caption: "Maila offers a cost-effective plan that allows its users to generate up to 50K characters (~ 10,000 words) per month free of cost, across various domains and contexts. In case the monthly usage exceeds 50K characters, users can opt for the monthly premium plan to continue generating content as per their needs."
@@ -78,9 +78,9 @@ B100:
   - "Translate Every Language, Every Context."
   - "Improve content naturally, keeping it human"
 
-HeroTaglineDescription: "Maila.AI is an AI-powered copywriting and writing assistance platform that enables you to produce professional-grade content in a few minutes."
-T0152: "AI Writing Assistant"
-H01051: "Start writing with your first 10,000 words free trial and see if your work improves."
+HeroTaglineDescription: "Thinking ..."
+T0152: "Maila AI: Making the Impossible Accessible"
+H01051: ""
 H01047: "These results are pre-generated and fully empowered by AI"
 H0118:
   A0117q:
@@ -102,7 +102,7 @@ H01194:
   - AI-powered Writing Tools
   - Use advanced artificial intelligence to improve the quality of your content by fixing style and grammar errors.
 L0401:
-  - Sign up
+  - Join Waiting List
   - Login
 path: /en/
 slug: /en/

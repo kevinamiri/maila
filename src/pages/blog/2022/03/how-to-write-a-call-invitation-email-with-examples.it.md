@@ -4,7 +4,7 @@ title: "Come scrivere un'email di invito con esempi"
 description: "Una mail di invito è un ottimo modo per organizzare un incontro o una consultazione con un potenziale cliente"
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /it/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /it/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Chiama l'e-mail di invito.
 
+# Chiama l'e-mail di invito.
 
 Un'e-mail di invito è un'e-mail che viene inviata a un potenziale cliente per invitarlo a una telefonata. Questo tipo di email è tipicamente usato per organizzare un incontro o una consultazione, e di solito include la data, l'ora e lo scopo della chiamata.
 
@@ -44,7 +44,6 @@ Per terminare la tua e-mail, dovrai ringraziare la persona per il suo tempo e ag
 
 - Per finire la tua e-mail, dovresti ringraziare la persona per il suo tempo e aggiungere le tue informazioni di contatto.
 
-
 ## Struttura di base
 
 - Presentati e spiega perché la persona che stai invitando dovrebbe partecipare alla tua chiamata.
@@ -58,7 +57,6 @@ Per terminare la tua e-mail, dovrai ringraziare la persona per il suo tempo e ag
 - Ringrazia la persona per il suo tempo.
 
 - Aggiungi le tue informazioni di contatto.
-
 
 ## Suggerimenti
 
@@ -104,11 +102,11 @@ Sinceramente,
 
 ---
 
-Caro ____,
+Caro \_\_\_\_,
 
 È con grande piacere che vi invitiamo al nostro prossimo evento.
 
-L'evento si terrà su _____ a _____.
+L'evento si terrà su **\_** a **\_**.
 
 Speriamo che possiate unirvi a noi per quella che promette di essere un'occasione davvero memorabile.
 

@@ -4,7 +4,7 @@ title: "Kuinka kirjoittaa puhelun kutsusähköposti esimerkkien avulla"
 description: "Puhelinkutsu sähköpostitse on hyvä tapa sopia tapaaminen tai konsultointi potentiaalisen asiakkaan tai asiakkaan kanssa."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /fi/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /fi/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Soita kutsu sähköpostitse.
 
+# Soita kutsu sähköpostitse.
 
 Puhelinkutsusähköposti on sähköpostiviesti, joka lähetetään potentiaaliselle asiakkaalle tai asiakkaalle, jotta hänet voidaan kutsua puheluun. Tällaista sähköpostia käytetään yleensä tapaamisen tai konsultaation järjestämiseen, ja se sisältää yleensä puhelun päivämäärän, kellonajan ja tarkoituksen.
 
@@ -44,7 +44,6 @@ Sähköpostiviestin lopuksi sinun on kiitettävä henkilöä hänen käyttämäs
 
 - Sähköpostiviestin lopuksi sinun tulisi kiittää henkilöä hänen käyttämästään ajasta ja lisätä yhteystietosi.
 
-
 ## Perusrakenne
 
 - Esittele itsesi ja selitä, miksi kutsumasi henkilön pitäisi osallistua puheluusi.
@@ -58,7 +57,6 @@ Sähköpostiviestin lopuksi sinun on kiitettävä henkilöä hänen käyttämäs
 - Kiitä henkilöä hänen ajastaan.
 
 - Lisää yhteystietosi.
-
 
 ## Vinkkejä
 
@@ -104,11 +102,11 @@ Ystävällisin terveisin,
 
 ---
 
-Rakas ____,
+Rakas \_\_\_\_,
 
 Meillä on suuri ilo kutsua sinut tulevaan tapahtumaamme.
 
-Tapahtuma järjestetään osoitteessa _____ osoitteessa _____.
+Tapahtuma järjestetään osoitteessa **\_** osoitteessa **\_**.
 
 Toivomme, että voitte liittyä seuraamme, sillä tapahtumasta on tulossa hyvin ikimuistoinen.
 

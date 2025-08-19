@@ -7,6 +7,7 @@ date: 2022-12-25
 slug: /fi/tools
 path: /fi/tools
 lang: fi
-tags: ['templates', 'tools', 'use-cases']
+tags: ["templates", "tools", "use-cases"]
 ---
+
 # List of templates

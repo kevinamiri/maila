@@ -32,14 +32,16 @@ extraFields:
     type: "text"
     placeholder: "Features of the product"
 tone: true
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "5"
 lang: en
 jsonId: "4"
 ---
 
 ```toc
+
 ```
+
 ## AI-generated Product Descriptions for Amazon
 
 As the technology improves and becomes more advanced, AI may be able to create content that is indistinguishable from human-written content. This will be a game-changer for businesses.
@@ -50,18 +52,17 @@ The best way to do this is by taking advantage of artificial intelligence (AI) t
 
 ## What we offer and how it works:
 
-
 We offer an AI product description generator, that generates a description of a product based on the name of the product, keywords, and features you supply. Even if you are not a provider all inputs our models will be able to generate unique content for your product.
 
 ### How it works
 
-It takes just a few clicks to get started with  - no coding required! Create new descriptions in seconds: Enter some keywords about your product, and our AI will generate a unique description for you. You can then copy and paste the description into your product listing.
+It takes just a few clicks to get started with - no coding required! Create new descriptions in seconds: Enter some keywords about your product, and our AI will generate a unique description for you. You can then copy and paste the description into your product listing.
+
 1. From there, you will be given a prompt to input your details about the product, keywords, ...; 2. Once you are satisfied with your inputs, click "compose" button and let AI write content based on your input!; Copy and paste AI-generated content into your csm or ecommerce platform.
 
 ### Example:
 
 Product Description:
-
 
 The arctic air conditioner is a powerful and efficient unit that is designed to keep your home cool and comfortable all summer long. The system features an adjustable thermostat that allows you to customize the temperature to your liking. The unit has three different fan speeds so you can choose the right amount of cool air needed to make any room feel comfortable.
 

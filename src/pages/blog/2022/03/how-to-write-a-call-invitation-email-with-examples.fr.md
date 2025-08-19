@@ -4,7 +4,7 @@ title: "Comment rédiger un courriel d'invitation à une réunion avec des exemp
 description: "Un courriel d'invitation à téléphoner est un excellent moyen d'organiser une réunion ou une consultation avec un client potentiel."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /fr/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /fr/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Appeler l'email d'invitation.
 
+# Appeler l'email d'invitation.
 
 Un courriel d'invitation à un appel est un courriel envoyé à un client potentiel pour l'inviter à un appel téléphonique. Ce type d'e-mail est généralement utilisé pour organiser une réunion ou une consultation, et il indique généralement la date, l'heure et l'objet de l'appel.
 
@@ -44,7 +44,6 @@ Pour terminer votre courriel, vous devrez remercier la personne de son temps et 
 
 - Pour terminer votre courriel, vous devez remercier la personne de son temps et ajouter vos coordonnées.
 
-
 ## Structure de base
 
 - Présentez-vous et expliquez pourquoi la personne que vous invitez devrait se joindre à votre appel.
@@ -58,7 +57,6 @@ Pour terminer votre courriel, vous devrez remercier la personne de son temps et 
 - Remerciez la personne pour son temps.
 
 - Ajoutez vos informations de contact.
-
 
 ## Tips
 
@@ -104,11 +102,11 @@ Sincèrement,
 
 ---
 
-Cher ____,
+Cher \_\_\_\_,
 
 Nous avons le grand plaisir de vous inviter à notre prochain événement.
 
-L'événement aura lieu le _____ à _____.
+L'événement aura lieu le **\_** à **\_**.
 
 Nous espérons que vous pourrez vous joindre à nous pour ce qui promet d'être une occasion très mémorable.
 

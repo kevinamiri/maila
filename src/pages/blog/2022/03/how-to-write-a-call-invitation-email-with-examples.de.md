@@ -4,7 +4,7 @@ title: "Wie man eine Einladungs-E-Mail schreibt, mit Beispielen"
 description: "Eine E-Mail mit Anrufeinladung ist eine gute Möglichkeit, ein Treffen oder eine Beratung mit einem potenziellen Kunden oder Klienten zu vereinbaren."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /de/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /de/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,11 +13,12 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
+
 ```toc
+
 ```
 
 # Einladungs-E-Mail aufrufen.
-
 
 Eine E-Mail mit einer Anrufeinladung ist eine E-Mail, die an einen potenziellen Kunden oder Klienten geschickt wird, um ihn zu einem Telefonat einzuladen. Diese Art von E-Mail wird in der Regel verwendet, um ein Treffen oder eine Beratung zu vereinbaren, und sie enthält normalerweise das Datum, die Uhrzeit und den Zweck des Anrufs.
 
@@ -47,7 +48,6 @@ Am Ende Ihrer E-Mail müssen Sie der Person für ihre Zeit danken und Ihre Konta
 
 - Am Ende Ihrer E-Mail sollten Sie der Person für ihre Zeit danken und Ihre Kontaktdaten hinzufügen.
 
-
 ## Grundstruktur
 
 - Stellen Sie sich vor und erklären Sie, warum die Person, die Sie einladen, an Ihrem Gespräch teilnehmen sollte.
@@ -61,7 +61,6 @@ Am Ende Ihrer E-Mail müssen Sie der Person für ihre Zeit danken und Ihre Konta
 - Danken Sie der Person für ihre Zeit.
 
 - Fügen Sie Ihre Kontaktinformationen hinzu.
-
 
 ## Tipps
 
@@ -107,11 +106,11 @@ Mit freundlichen Grüßen,
 
 ---
 
-Liebe ____,
+Liebe \_\_\_\_,
 
 Es ist uns eine große Freude, Sie zu unserer nächsten Veranstaltung einzuladen.
 
-Die Veranstaltung findet auf _____ statt.
+Die Veranstaltung findet auf **\_** statt.
 
 Wir hoffen, dass Sie an diesem denkwürdigen Ereignis teilnehmen können.
 

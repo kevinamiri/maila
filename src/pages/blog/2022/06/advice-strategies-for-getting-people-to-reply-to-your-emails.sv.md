@@ -4,7 +4,7 @@ title: "Rådstrategier för att få människor att svara på dina e -postmeddela
 description: "Skicka inte långa e-postmeddelanden till personer du vill arbeta med.  Lägg bara din poäng så snabbt som möjligt och håll den kort."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-06-14"
 slug: /sv/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
 path: /sv/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
@@ -37,6 +37,3 @@ imageStatus: true
 10. Vänta en eller två dagar innan du e-postar dem igen (bara en "uppföljning" e-post verkar bäst - för många är irriterande) eftersom chansen är att det bara var något som distraherade dem (som sig själva). Eller följ inte upp alls, kanske vänta på en annan möjlighet, ibland är bollen i den andra domstolen och ibland har bollen blivit svept från domstolen helt på den vindiga svarta isen av tid!
 
 11. Prova den här ämnesraden för extra kraft: "Hjälp: [namn]" - en ämnesrad som också fungerar via textmeddelande enligt veteranjournalisten och manusförfattaren Paul Laverty som jag alltid textar när han reser eftersom jag vet att han inte kommer att svara men han brukar göra det när han kommer hem för alla älskar någon som ber dem om hjälp (så länge de inte är någon som är irriterande!) [/slut på råd]
-
-
-

@@ -32,48 +32,56 @@ extraFields:
     type: "text"
     placeholder: "Features of the product"
 tone: true
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "5"
 lang: en
 jsonId: "4"
 ---
 
 ```toc
+
 ```
 
-# AI-Generated Product Description for eCommerce 
+# AI-Generated Product Description for eCommerce
 
-## Headline: 
-Revolutionize Your Product Descriptions with AI-Powered Copywriting 
+## Headline:
 
-## Introduction: 
-Product descriptions are an essential part of any eCommerce website. They are what entice potential customers to make a purchase and what sets your product apart from the competition. That's why it's important to have high-quality, well-written descriptions. With the AI-generated product description tool, you can have access to professional, engaging descriptions that are unique to your product. 
+Revolutionize Your Product Descriptions with AI-Powered Copywriting
+
+## Introduction:
+
+Product descriptions are an essential part of any eCommerce website. They are what entice potential customers to make a purchase and what sets your product apart from the competition. That's why it's important to have high-quality, well-written descriptions. With the AI-generated product description tool, you can have access to professional, engaging descriptions that are unique to your product.
 
 ## Key features & benefits:
+
 - AI-powered copywriting: Get descriptions that are written by an AI algorithm, ensuring that they are unique and professional-looking.
 - Customizable: Choose from different templates and styles, and input keywords to tailor the descriptions to your product.
-- Time-saving: No need to spend hours writing descriptions yourself. With just a few clicks, you can generate multiple descriptions in minutes. 
-- High-quality output: The AI algorithm is trained on a large database of product descriptions, ensuring that the output is high-quality and relevant to your product. 
+- Time-saving: No need to spend hours writing descriptions yourself. With just a few clicks, you can generate multiple descriptions in minutes.
+- High-quality output: The AI algorithm is trained on a large database of product descriptions, ensuring that the output is high-quality and relevant to your product.
 
-## User stories: 
-"I was struggling to come up with descriptions for my new product line. With the AI-generated product description tool, I was able to generate multiple descriptions in just a few minutes. The descriptions were professional and engaging, and helped increase my sales." - Sarah, small business owner 
+## User stories:
 
-"I was always hesitant to use automated tools for my product descriptions, but this AI-powered copywriting tool exceeded my expectations. The descriptions were unique and accurately reflected my product. I was able to save time and focus on other aspects of my business." - David, eCommerce store owner 
+"I was struggling to come up with descriptions for my new product line. With the AI-generated product description tool, I was able to generate multiple descriptions in just a few minutes. The descriptions were professional and engaging, and helped increase my sales." - Sarah, small business owner
 
-## Frequently asked questions (FAQs): 
-1. Is the output completely unique? 
-Yes, the AI algorithm generates descriptions that are unique to your product and not found anywhere else on the web. 
+"I was always hesitant to use automated tools for my product descriptions, but this AI-powered copywriting tool exceeded my expectations. The descriptions were unique and accurately reflected my product. I was able to save time and focus on other aspects of my business." - David, eCommerce store owner
 
-2. Can I customize the output? 
-Yes, you can choose from different templates and input keywords to tailor the descriptions to your product. 
+## Frequently asked questions (FAQs):
 
-3. How does the AI algorithm generate descriptions? 
-The AI algorithm uses a database of product descriptions and uses machine learning to generate descriptions that are relevant and high-quality. 
+1. Is the output completely unique?
+   Yes, the AI algorithm generates descriptions that are unique to your product and not found anywhere else on the web.
 
-## Examples: 
-Input: Portable Bluetooth Speaker 
-Keywords: High-quality sound, waterproof, long battery life 
-Output: "Introducing our Portable Bluetooth Speaker, designed for those who demand the best in sound quality. With its high-quality audio and waterproof design, you can take your music with you anywhere. And with its long battery life, you can enjoy your tunes all day long." 
+2. Can I customize the output?
+   Yes, you can choose from different templates and input keywords to tailor the descriptions to your product.
 
-## Call to action: 
+3. How does the AI algorithm generate descriptions?
+   The AI algorithm uses a database of product descriptions and uses machine learning to generate descriptions that are relevant and high-quality.
+
+## Examples:
+
+Input: Portable Bluetooth Speaker
+Keywords: High-quality sound, waterproof, long battery life
+Output: "Introducing our Portable Bluetooth Speaker, designed for those who demand the best in sound quality. With its high-quality audio and waterproof design, you can take your music with you anywhere. And with its long battery life, you can enjoy your tunes all day long."
+
+## Call to action:
+
 Get started with our AI-generated product description tool today! With just a few clicks, you can generate unique, professional descriptions for your products. No coding required. Visit our website to choose your tools and start revolutionizing your product descriptions.

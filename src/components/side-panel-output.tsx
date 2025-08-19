@@ -5,11 +5,11 @@ import { ReactJSXElement } from "@emotion/react/types/jsx-namespace"
 import LinearProgress from "./subcomponents/LinearProgressLoading"
 
 type SlidePanelProps = {
+  open?: boolean
   onClose?: () => void
   children: ReactJSXElement
-  handleExpand?: any
-  open?: boolean
   anchor?: "right" | "bottom"
+  [key: string]: any
 }
 
 // @example

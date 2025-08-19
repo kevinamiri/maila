@@ -7,10 +7,10 @@ header: "Formulare una dichiarazione di missione accattivante che definisca lo s
 usage: "Per utilizzare questo strumento, inserisci semplicemente il nome della tua organizzazione, le parole chiave, gli obiettivi e i valori. Questo modello di intelligenza artificiale genererà quindi una chiara, unica e coinvolgente dichiarazione di missione basata sulle tue informazioni."
 placeholder: "Nome dell'organizzazione: Green Planet\nObiettivi: Conservazione ambientale, sostenibilità\nValori: Protezione della natura, pratiche eco-friendly\nParole chiave: Vita verde, eco-friendly, sostenibilità"
 help_hint: "Qual è il nome della tua organizzazione e quali sono i suoi obiettivi e valori? Fornisci alcune parole chiave relative agli obiettivi della tua organizzazione e la nostra piattaforma genererà una dichiarazione di missione in base alle tue informazioni."
-tags: [Copywriting,Tools,Templates,Mission Statement]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Mission Statement]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-14"
 slug: /it/tools/copywriting/mission-statement
 path: /it/tools/copywriting/mission-statement
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1050"
 product_type: "1050"
 ---
+
 # Generatore di Dichiarazioni di Missione IA
 
 Crea una dichiarazione di missione convincente che definisca lo scopo della tua organizzazione con l'aiuto del nostro generatore di dichiarazioni di missione alimentato dall'IA.

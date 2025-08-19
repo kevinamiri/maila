@@ -171,7 +171,7 @@ const ProductDescription = ({
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: { xs: "center", md: "flex-start" } }}>
         <SlidePanelOutput
           anchor={isDesktop ? "right" : "bottom"}
-          handleExpand={toggleExpand}
+          // handleExpand={toggleExpand}
           onClose={closeExpand}
           open={expand}
         >

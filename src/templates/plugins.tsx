@@ -1,15 +1,72 @@
 import React, { memo } from "react";
-import PropTypes from "prop-types";
-import TagList from "../components/landings/modules/TagList";
 import { graphql } from "gatsby";
+
+// MUI Components
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+
+// Custom Components
 import Layout from "../components/layout/Layout";
 import Content from "../components/homepage/Content";
-import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
-import FeatureSection from "components/landings/feature-section";
-import DiscussionFeature from "components/landings/landing-feature";
+import TagList from "../components/landings/modules/TagList";
+import FeatureSection from "../components/landings/feature-section";
+import DiscussionFeature from "../components/landings/landing-feature";
+import { SEO } from "../components/SEO/SEO";
 
-const PluginsPageTemplate = ({ content, contentComponent: PageContent = Content, tags, langKey }) => (
+// =============================================
+// Interfaces
+// =============================================
+interface PluginsPageTemplateProps {
+  content: string;
+  contentComponent?: React.ComponentType<any>;
+  tags: string[];
+  langKey: string;
+}
+
+interface PluginsPageProps {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        [key: string]: any;
+        image?: any;
+      }
+    };
+    site: {
+      siteMetadata: {
+        title: string;
+        languages: {
+          defaultLangKey: string;
+          langs: string[];
+        }
+      }
+    }
+  };
+  location: {
+    pathname: string;
+  };
+}
+
+interface HeadProps {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        title: string;
+        description: string;
+        path: string;
+      }
+    }
+  };
+}
+
+// =============================================
+// Template Component
+// =============================================
+const PluginsPageTemplate = ({ 
+  content, 
+  contentComponent: PageContent = Content, 
+  tags, 
+  langKey 
+}: PluginsPageTemplateProps) => (
   <Box sx={{ mt: 8 }}>
     <Container sx={{ mt: 5 }}>
       <PageContent content={content} />
@@ -18,60 +75,55 @@ const PluginsPageTemplate = ({ content, contentComponent: PageContent = Content,
   </Box>
 );
 
-PluginsPageTemplate.propTypes = {
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-  tags: PropTypes.array,
-  langKey: PropTypes.string,
-};
-
-const PluginsPage = ({ data, location }) => {
-  const { markdownRemark, allArticlesJson } = data;
-  const jsonData = allArticlesJson.edges[0].node.articles;
-  const langKey = markdownRemark.frontmatter.lang;
-
-  console.log(markdownRemark.frontmatter)
+// =============================================
+// Main Page Component
+// =============================================
+const PluginsPage = ({ data, location }: PluginsPageProps) => {
+  const { markdownRemark } = data;
 
   return (
-    <Layout data={data} jsonData={jsonData} location={location}>
+    <Layout data={data} location={location}>
       <Container>
-        <FeatureSection title="Feature Title" description="Feature Description" primaryButtonText="Primary Button" />
+        <FeatureSection 
+          title="Feature Title" 
+          description="Feature Description" 
+          primaryButtonText="Primary Button" 
+        />
         <DiscussionFeature />
       </Container>
     </Layout>
   );
 };
 
-PluginsPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-    allArticlesJson: PropTypes.object,
-  }).isRequired,
-  location: PropTypes.object.isRequired,
-};
-
 export default memo(PluginsPage);
 
+// =============================================
+// Head Component for SEO
+// =============================================
+export const Head = ({ data }: HeadProps) => {
+  const { markdownRemark: post } = data;
+  return (
+    <SEO 
+      title={post.frontmatter.title} 
+      description={post.frontmatter.description} 
+      pathname={post.frontmatter.path}
+    >
+      <meta name="description" content={post.frontmatter.description} />
+    </SEO>
+  );
+};
+
+// =============================================
+// GraphQL Query
+// =============================================
 export const pageQuery = graphql`
   query PluginsPageQuery($id: String!) {
     site {
       siteMetadata {
+        title
         languages {
           defaultLangKey
           langs
-        }
-      }
-    }
-    allArticlesJson(filter: { title: { eq: "home" } }) {
-      edges {
-        node {
-          articles {
-            en
-            sv
-            da
-            no
-            fi
-          }
         }
       }
     }
@@ -98,17 +150,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-
-import { SEO } from "../components/SEO/SEO";
-
-
-export const Head = (props) => {
-  const { data } = props;
-  const { markdownRemark: post } = data;
-  return (
-  <SEO title={post.frontmatter.title} description={post.frontmatter.description} pathname={post.frontmatter.path}>
-    <meta name="description" content={post.frontmatter.description} />
-  </SEO>
-  )
-}

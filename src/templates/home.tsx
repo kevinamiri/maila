@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Container from "@mui/material/Container";
-import chunk from "lodash/chunk";
 
 // Layout components
 import Layout from "../components/layout/Layout";
@@ -9,27 +8,12 @@ import { SEO } from "../components/SEO/SEO";
 
 // Page sections
 import HomeHeroPage from "../components/landings/HomeHeroPage";
-import CardFeatureBlock from "../components/landings/CardFeatureBlock";
-import AccordionBlock from "../components/landings/AccordionBlock";
-import LandingsFeature from "../components/landings/landings-feature";
-import WithIllustrationFeatures from "../components/landings/WithIllustrationFeatures";
-import { Pricing } from "../components/landings/pricing";
-import Email from "components/landings/email";
+import LandingCta from "sections/landing-cta";
 
 const HomePage = ({ data, location }) => {
   const { markdownRemark, allArticlesJson } = data;
   const { frontmatter } = markdownRemark;
   const articles = allArticlesJson.edges[0].node.articles;
-  
-  // Sections data
-  const featureSections = [
-    frontmatter.section1,
-    frontmatter.section2, 
-    frontmatter.section3
-  ];
-  
-  // FAQ questions grouped in pairs
-  const faqPairs = chunk(frontmatter.H0118.A0117q, 2);
 
   return (
     <Layout data={data} jsonData={articles} location={location}>
@@ -45,38 +29,8 @@ const HomePage = ({ data, location }) => {
           helpernotice={frontmatter.H01047}
         />
         
-        {/* Core features section */}
-        <CardFeatureBlock 
-          titles={frontmatter.T100} 
-          bodys={frontmatter.B100} 
-        />
-        
-        {/* FAQ section */}
-        {/* <AccordionBlock 
-          questions={faqPairs} 
-        /> */}
-        
-        {/* Disabled sections - preserved for future use */}
-        {/* 
-        <Email />
-        
-        <LandingsFeature
-          headerRight={frontmatter.H01194[0]}
-          descriptionRight={frontmatter.H01194[1]}
-          headerLeft={frontmatter.H01194[2]}
-          descriptionLeft={frontmatter.H01194[3]}
-        />
-        
-        <WithIllustrationFeatures
-          features={featureSections}
-          sectionlabel={frontmatter.sectionlabel}
-        />
-        
-        <Pricing 
-          tables={frontmatter.tables} 
-          plans={frontmatter.plans} 
-        /> 
-        */}
+        <LandingCta />
+
       </Container>
     </Layout>
   );

@@ -7,10 +7,10 @@ header: "Formuler en engasjerende misjonsuttalelse som definerer organisasjonens
 usage: "For å bruke dette verktøyet, skriv inn organisasjonens navn, nøkkelord, mål og verdier. Deretter vil denne AI-modellen generere en klar, unik og engasjerende misjonsuttalelse basert på opplysningene dine."
 placeholder: "Organization Name: Green Planet\n Objectives: Environmental conservation, sustainability \nValues: Protecting nature, eco-friendly practices\nKeywords: Green living, eco-friendly, sustainability"
 help_hint: "Jeg er en AI-assistent og har ingen organisasjon."
-tags: [Copywriting,Tools,Templates,Mission Statement]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Mission Statement]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-14"
 slug: /no/tools/copywriting/mission-statement
 path: /no/tools/copywriting/mission-statement
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1050"
 product_type: "1050"
 ---
+
 # AI Mission Statement Generator
 
 Formuler en overbevisende misjonsuttalelse som definerer organisasjonens formål med hjelp av vår AI-drevne Misjonsuttalelse Generator.

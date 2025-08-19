@@ -77,7 +77,6 @@ module.exports = {
   ET05: "Prospektierung E-Mail",
   //Branding tools
   CT01: "Kopierwerkzeuge",
-  B01: "Mission Statement",
   B010: "Brand Mission Statement",
   B02: "Vision Statement",
   B020: "Brand Vision Statement",
@@ -91,7 +90,6 @@ module.exports = {
   WT01: "Schreibwerkzeuge",
   RH004: "Parapherase",
   GC009: "Gute Grammatik",
-  LP01: "Landing Page Headline",
   LP02: "Landing Page Headline Beschreibung",
   LP03: "Meta-Beschreibungen",
   LP04: "Fragen Generator",

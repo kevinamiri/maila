@@ -4,7 +4,7 @@ title: "How to write a call invitation email with examples"
 description: "A call invite email is a great way to set up a meeting or consultation with a potential customer or client"
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /en/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /en/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Call invitation email.
 
+# Call invitation email.
 
 A call invite email is an email that is sent to a potential customer or client in order to invite them to a phone call. This type of email is typically used in order to set up a meeting or consultation, and it usually includes the date, time, and purpose of the call.
 
@@ -44,7 +44,6 @@ To end your email, you will need to thank the person for their time and add your
 
 - To end your email, you should thank the person for their time and add your contact information.
 
-
 ## Basic Structure
 
 - Introduce yourself and explain why the person you are inviting should join your call.
@@ -58,7 +57,6 @@ To end your email, you will need to thank the person for their time and add your
 - Thank the person for their time.
 
 - Add your contact information.
-
 
 ## Tips
 
@@ -104,11 +102,11 @@ Sincerely,
 
 ---
 
-Dear ____,
+Dear \_\_\_\_,
 
 It is our great pleasure to invite you to our upcoming event.
 
-The event will be held on _____ at _____.
+The event will be held on **\_** at **\_**.
 
 We hope you can join us for what promises to be a very memorable occasion.
 

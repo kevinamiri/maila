@@ -4,8 +4,8 @@ import { styled, Box, Divider, Typography } from '@mui/material';
 import { Redo as RedoIcon, Undo as UndoIcon } from '@mui/icons-material';
 
 import PlusButton from '../subcomponents/plus-button';
-import ToggleButtonList from '../subcomponents/ToggleButtonList';
-import CopyToClipboard from '../subcomponents/CopyToClipboard';
+import ToggleButtonList from '../subcomponents/toggle-button-list';
+import CopyToClipboard from '../subcomponents/copy-to-clipboard';
 import Play from 'components/subcomponents/Play';
 import ButtonPostData from './button-post-data';
 import { serialize } from '../../hooks/currentSelectEditor';

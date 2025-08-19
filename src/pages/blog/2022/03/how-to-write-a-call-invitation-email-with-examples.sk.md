@@ -4,7 +4,7 @@ title: "Ako napísať e-mail s pozvánkou na konferenciu s príkladmi"
 description: "E-mailová pozvánka na stretnutie je skvelý spôsob, ako si dohodnúť stretnutie alebo konzultáciu s potenciálnym zákazníkom alebo klientom."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /sk/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /sk/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Pozvánka na výzvu e-mailom.
 
+# Pozvánka na výzvu e-mailom.
 
 E-mail s pozvánkou na hovor je e-mail, ktorý sa posiela potenciálnemu zákazníkovi alebo klientovi s cieľom pozvať ho na telefonický hovor. Tento typ e-mailu sa zvyčajne používa na dohodnutie stretnutia alebo konzultácie a zvyčajne obsahuje dátum, čas a účel hovoru.
 
@@ -44,7 +44,6 @@ Na záver e-mailu musíte poďakovať osobe za jej čas a pridať svoje kontaktn
 
 - Na záver e-mailu by ste sa mali poďakovať za čas, ktorý vám venoval, a pridať svoje kontaktné údaje.
 
-
 ## Základná štruktúra
 
 - Predstavte sa a vysvetlite, prečo by sa pozývaná osoba mala pripojiť k vášmu hovoru.
@@ -58,7 +57,6 @@ Na záver e-mailu musíte poďakovať osobe za jej čas a pridať svoje kontaktn
 - Poďakujte osobe za jej čas.
 
 - Pridajte svoje kontaktné údaje.
-
 
 ## Tipy
 
@@ -104,11 +102,11 @@ S úctou,
 
 ---
 
-Drahá ____,
+Drahá \_\_\_\_,
 
 Je nám veľkým potešením pozvať vás na naše nadchádzajúce podujatie.
 
-Podujatie sa uskutoční na stránke _____ na adrese _____.
+Podujatie sa uskutoční na stránke **\_** na adrese **\_**.
 
 Dúfame, že sa k nám môžete pripojiť, čo sľubuje veľmi nezabudnuteľnú udalosť.
 

@@ -7,10 +7,10 @@ header: "Imponera på dina potentiella kunder med en övertygande försäljnings
 usage: "För att använda den här mallen är det bara att ange din produkt eller tjänst, målgrupp och viktiga försäljningsargument. AI-försäljningspitchgeneratorn kommer sedan att skapa en anpassad, övertygande och effektiv försäljningspitch baserat på din inmatning."
 placeholder: "Produkt: Hemlarm\nMålgrupp: Husegare\nNyckelförsäljningspunkter: Enkel installation, 24/7 övervakning, smartphone-integration"
 help_hint: "Vilken är din produkt eller tjänst, och vem är målgruppen? Ange några viktiga försäljningsargument, så skapar vi en övertygande säljpitch anpassad till din målgrupp."
-tags: [Copywriting,Tools,Templates,Sales Pitch,Website copywriting]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Sales Pitch, Website copywriting]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-18"
 slug: /sv/tools/copywriting/sales-pitch
 path: /sv/tools/copywriting/sales-pitch
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1064"
 product_type: "1064"
 ---
+
 # AI-försäljningspitchgenerator
 
 Skapa övertygande och effektiva försäljningsargument anpassade till din målgrupp med hjälp av avancerad artificiell intelligens. Spara tid och ansträngning genom att generera skräddarsydda försäljningspitchar baserade på din input, vilket gör att du kan fokusera på att slutföra affären.
@@ -49,6 +50,7 @@ Skapa övertygande och effektiva försäljningsargument anpassade till din målg
 ## Användningsområden
 
 AI Sales Pitch Generator är perfekt för:
+
 - Startups som vill pitcha sina innovativa produkter eller tjänster
 - Säljproffs som behöver ett övertygande försäljningsskript
 - Marknadsförare som vill skapa övertygande e-postkampanjer eller landningssidor

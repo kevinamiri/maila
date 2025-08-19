@@ -10,14 +10,14 @@ date: 2020-12-25
 image: ../img/logo.png
 sectionlabel: "Flere funktioner"
 section1:
-    title: "Forenkling af indhold"
-    description: "Forenkle dine artikler, essays og rapporter med avanceret kunstig intelligens."
+  title: "Forenkling af indhold"
+  description: "Forenkle dine artikler, essays og rapporter med avanceret kunstig intelligens."
 section2:
-    title: " Oversætte indhold"
-    description: "Oversæt dine artikler, essays og rapporter fra et sprog til et andet."
+  title: " Oversætte indhold"
+  description: "Oversæt dine artikler, essays og rapporter fra et sprog til et andet."
 section3:
-    title: " Fejlrettelse"
-    description: "Forbedr kvaliteten af dit indhold ved at rette grammatiske fejl, stavefejl og stilistiske fejl."
+  title: " Fejlrettelse"
+  description: "Forbedr kvaliteten af dit indhold ved at rette grammatiske fejl, stavefejl og stilistiske fejl."
 tables:
   button: "Tilmeld dig"
   link: "/app"
@@ -66,7 +66,6 @@ T100:
   - "SEO-sjekker"
   - "Omformulering"
 B100:
-
   - "De beviste formlene for å lage strukturerte utsagn om produktet ditt."
   - "Generer salgsfremmende e-poster med kraftige ord og uttrykk for produktet ditt."
   - "Effektive måter å bringe nye ideer inn i produktet ditt."
@@ -79,7 +78,7 @@ H01051: "Begynd at skrive med din første gratis prøveperiode på 25.000 ord, o
 H01047: "Disse resultater er præ-genereret og fuldt ud styrket af AI"
 H0118:
   A0117q:
-    - Er AI-genereret indhold plagiatfrit? 
+    - Er AI-genereret indhold plagiatfrit?
     - Vores AI-genererede indhold er plagiatfrit og nøjagtigt.
     - Hvordan kan AI-drevet tekstforfatning bruges i en virksomhed?
     - AI-baseret indholdsgenerering kan bruges til en række forskellige formål i virksomheder. Denne type indhold kan hjælpe med produktbeskrivelser, opdateringer på sociale medier, emnelinjer til e-mails og meget mere. At have en AI-skriveassistent kan være med til at spare tid og forbedre kvaliteten af det producerede indhold.
@@ -91,7 +90,7 @@ H0118:
     - Vi genererer indhold i realtid, så dine resultater er klar med det samme. Det kan tage lidt tid at vænne sig til at bruge en AI-skriveassistent, men når du først har fået styr på det, kan det spare dig en masse tid.
     - Kan jeg oprette indhold på andre sprog?
     - Ja, vi understøtter andre sprog end engelsk. Oversættelserne af den bedste kvalitet er i øjeblikket tilgængelige på engelsk.
-H01194: 
+H01194:
   - AI Copywriting Tool
   - AI copywriting tool that can help you write better copy for your website or marketing campaign.
   - AI Email Generation Tool
@@ -102,6 +101,5 @@ L0401:
 path: /da/
 slug: /da/
 ---
-
 
 AI-driven copywriting tools are designed to help you write more interesting contents.

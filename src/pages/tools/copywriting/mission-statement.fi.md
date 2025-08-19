@@ -7,10 +7,10 @@ header: "Laadi vakuuttava missio-lause, joka määrittelee organisaatiosi tarkoi
 usage: "Voit käyttää tätä työkalua syöttämällä organisaatiosi nimen, avainsanat, tavoitteet ja arvot. Tämä tekoälymalli generoi selkeän, uniikin ja kiinnostavan mission statementin syöttösi perusteella."
 placeholder: "Organization Name: Green Planet\n Objectives: Environmental conservation, sustainability \nValues: Protecting nature, eco-friendly practices\nKeywords: Green living, eco-friendly, sustainability"
 help_hint: "Mikä on organisaatiosi nimi ja mitkä ovat sen tavoitteet ja arvot? Anna muutamia avainsanoja organisaatiosi tavoitteisiin liittyen, niin alustamme luo sinulle missio-lausunnon syöttämäsi tiedon perusteella."
-tags: [Copywriting,Tools,Templates,Mission Statement]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Mission Statement]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-14"
 slug: /fi/tools/copywriting/mission-statement
 path: /fi/tools/copywriting/mission-statement
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1050"
 product_type: "1050"
 ---
+
 # AI Missio-lauseen generaattori
 
 Luo vakuuttava missiojulistus, joka määrittelee organisaatiosi tarkoituksen AI-pohjaisen missiojulistusgeneraattorimme avulla.

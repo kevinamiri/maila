@@ -13,7 +13,7 @@ lang: "fi"
 icon: "searchKeyword"
 hasCustomTemplate: false
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "34"
 url: "/app/keyword-generator"
 ---

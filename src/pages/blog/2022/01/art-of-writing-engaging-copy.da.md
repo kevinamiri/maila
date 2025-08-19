@@ -4,7 +4,7 @@ title: "Kunsten at skrive engagerende kopi"
 description: "I denne artikel deler vi nogle tips til at skrive effektiv kopi, der engagerer dit publikum og skaber resultater."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-01-16"
 slug: /da/blog/2022/01/art-of-writing-engaging-copy
 path: /da/blog/2022/01/art-of-writing-engaging-copy
@@ -15,7 +15,6 @@ imageStatus: false
 ---
 
 I denne artikel vil vi gennemgå det grundlæggende i at skrive engagerende tekster. Copywriting er en kunst og en videnskab, og det kan være forskellen mellem en vellykket kampagne og en mislykket kampagne.
-
 
 #### Bedste praksis Resumé
 
@@ -34,7 +33,6 @@ Her er nogle bedste praksis, som du skal huske på:
 - Overvej at bruge humor
 - Overvej at bruge spørgsmål
 - Overvej at bruge historiefortælling
-
 
 ## Det grundlæggende i tekstforfatning
 
@@ -68,7 +66,6 @@ Tone og stemme er to af de vigtigste elementer i skrivestilen. Tonen henviser ti
 
 Vælg en tone og stemme, der er i overensstemmelse med dit brand.
 
-
 | Eksempel            | Branche       | Tone og stemme                  |
 | ------------------- | ------------- | ------------------------------- |
 | Slack               | Teknologi     | Klar, kortfattet og menneskelig |
@@ -82,7 +79,6 @@ Vælg en tone og stemme, der er i overensstemmelse med dit brand.
 | Cosmopolitan        | Livsstil      | Modig og styrkende              |
 | National Geographic | Rejser        | Informativt og inspirerende     |
 | Vogue               | Mode          | Sofistikeret og glamourøst      |
-
 
 #### Overskrifter og underoverskrifter
 
@@ -115,6 +111,7 @@ Der findes to typer lister:
 - Nummererede lister
 
 Punktlister bruges til at opregne punkter, som ikke behøver at være i en bestemt rækkefølge. Nummererede lister bruges til at opregne punkter, der skal være i en bestemt rækkefølge.
+
 #### Billeder og videoer
 
 Billeder og videoer er en god måde at illustrere vigtige punkter på og gøre dit indhold mere interessant. De hjælper også med at bryde teksten op og gøre den lettere at læse.
@@ -142,6 +139,7 @@ Humor er en god måde at engagere dit publikum på og gøre dit indhold mere min
 #### Spørgsmål
 
 Spørgsmål er en god måde at engagere dit publikum på og gøre dit indhold mere mindeværdigt.
+
 ## Konklusion
 
 Det første skridt i enhver god tekstforfatningsproces er at forstå din målgruppe. Hvad er deres behov? Hvad er deres smertepunkter? Hvad er deres mål? Når du forstår din målgruppe, kan du begynde at lave tekster, der taler direkte til dem.

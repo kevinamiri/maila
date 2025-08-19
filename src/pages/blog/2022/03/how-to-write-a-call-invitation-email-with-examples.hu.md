@@ -4,7 +4,7 @@ title: "Hogyan kell írni egy hívás meghívó e-mailt példákkal"
 description: "A hívás meghívó e-mail remek módja annak, hogy találkozót vagy konzultációt szervezzen egy potenciális ügyféllel vagy vásárlóval."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /hu/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /hu/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Hívás meghívó e-mail.
 
+# Hívás meghívó e-mail.
 
 A hívásmeghívó e-mail egy olyan e-mail, amelyet egy potenciális ügyfélnek vagy ügyfélnek küldenek, hogy meghívják őket egy telefonhívásra. Az ilyen típusú e-mailt általában találkozó vagy konzultáció összehívására használják, és általában tartalmazza a hívás dátumát, időpontját és célját.
 
@@ -44,7 +44,6 @@ Az e-mail befejezéseként meg kell köszönnie az illetőnek, hogy időt szánt
 
 - E-mailje végén köszönje meg az illetőnek, hogy időt szánt rá, és adja meg elérhetőségét.
 
-
 ## Alapszerkezet
 
 - Mutatkozzon be, és magyarázza el, hogy a meghívott személynek miért érdemes csatlakoznia a híváshoz.
@@ -58,7 +57,6 @@ Az e-mail befejezéseként meg kell köszönnie az illetőnek, hogy időt szánt
 - Köszönje meg az illetőnek az idejét.
 
 - Adja hozzá elérhetőségét.
-
 
 ## Tippek
 
@@ -104,11 +102,11 @@ Tisztelettel,
 
 ---
 
-Kedves ____,
+Kedves \_\_\_\_,
 
 Nagy örömünkre szolgál, hogy meghívhatjuk Önt közelgő rendezvényünkre.
 
-Az eseményre a _____ címen kerül sor: _____.
+Az eseményre a **\_** címen kerül sor: **\_**.
 
 Reméljük, hogy csatlakozhat hozzánk, ami egy nagyon emlékezetes alkalomnak ígérkezik.
 

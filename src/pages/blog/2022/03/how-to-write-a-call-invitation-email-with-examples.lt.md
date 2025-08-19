@@ -4,7 +4,7 @@ title: "Kaip parašyti kvietimą į el. paštą su pavyzdžiais"
 description: "Kvietimas skambinti el. paštu yra puikus būdas susitarti dėl susitikimo ar konsultacijos su potencialiu klientu ar užsakovu."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /lt/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /lt/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Kvietimo kvietimas el. paštu.
 
+# Kvietimo kvietimas el. paštu.
 
 Kvietimo skambinti el. laiškas - tai el. laiškas, siunčiamas potencialiam klientui ar klientei, siekiant pakviesti juos į pokalbį telefonu. Tokio tipo el. laiškas paprastai naudojamas siekiant susitarti dėl susitikimo ar konsultacijos, jame paprastai nurodoma skambučio data, laikas ir tikslas.
 
@@ -44,7 +44,6 @@ Baigdami el. laišką padėkokite asmeniui už skirtą laiką ir pridėkite savo
 
 - Laiško pabaigoje turėtumėte padėkoti asmeniui už skirtą laiką ir pridėti savo kontaktinę informaciją.
 
-
 ## Pagrindinė struktūra
 
 - Prisistatykite ir paaiškinkite, kodėl kviečiamas asmuo turėtų prisijungti prie jūsų skambučio.
@@ -58,7 +57,6 @@ Baigdami el. laišką padėkokite asmeniui už skirtą laiką ir pridėkite savo
 - Padėkokite asmeniui už jo laiką.
 
 - Pridėkite savo kontaktinę informaciją.
-
 
 ## Patarimai
 
@@ -104,11 +102,11 @@ Nuoširdžiai,
 
 ---
 
-Gerbiamas ____,
+Gerbiamas \_\_\_\_,
 
 Mums labai malonu jus pakviesti į artėjantį renginį.
 
-Renginys vyks svetainėje _____ adresu _____.
+Renginys vyks svetainėje **\_** adresu **\_**.
 
 Tikimės, kad galėsite prisijungti prie mūsų ir dalyvauti šioje, kaip žadama, labai įsimintinoje šventėje.
 

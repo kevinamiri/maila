@@ -15,14 +15,14 @@ hasCustomTemplate: false
 hasCustomTextArea: true
 editor_height: 150
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 jsonId: "6121"
 product_type: "53"
 image: ../../blog/2022/images/idea-generation.png
 url: /app/brainstorming
 ---
-# AI Idea Generator
 
+# AI Idea Generator
 
 Whether your goal is to become a better writer or start a business, you will need a lot of motivation, inspiration and ideas. AI Idea Generator uses artificial intelligence to help you generate ideas faster and more efficiently. It makes it easier for you to create new ideas and find ideas that are relevant to the topic you are writing about.
 
@@ -30,12 +30,11 @@ Whether your goal is to become a better writer or start a business, you will nee
 
 - Saves time by automating idea generation, Generates ideas less than one minute.
 - Can be used by anyone who needs inspiration, including writers, innovators and entrepreneurs
-- More creative and effective than traditional brainstorming techniques 
-- Helps users come up with new ideas 
+- More creative and effective than traditional brainstorming techniques
+- Helps users come up with new ideas
 - Saves time by reducing the amount of research needed
-- Can help users discover new topics they may not have considered otherwise 
+- Can help users discover new topics they may not have considered otherwise
 - Has been shown to increase creativity and innovation in employees and managers
-
 
 ## How product works:
 
@@ -43,20 +42,18 @@ Whether your goal is to become a better writer or start a business, you will nee
 - Step 2: The generator analyzes the keywords and topics in the text and creates new ideas based on those keywords and topics.
 - Step 3: The user can then use the new ideas to guide them when writing their blog or article.
 
-
-### Example: 
+### Example:
 
 #### Keywords: food, catering, AI, company
 
-  1. A catering company that specializes in food delivery using AI technology to optimize efficiency.
-  2. A food company that uses AI technology to develop new recipes and cater to specific dietary needs. 
-  3. An AI-based software application that helps users plan and manage their meals, including groceries and dining out options.
+1. A catering company that specializes in food delivery using AI technology to optimize efficiency.
+2. A food company that uses AI technology to develop new recipes and cater to specific dietary needs.
+3. An AI-based software application that helps users plan and manage their meals, including groceries and dining out options.
 
-#### Keywords:  food, catering, AI, blog post
-  
-  1. A blog post about how to use AI in catering to make your food business more efficient.
-  2. A blog post about the best catering companies that use AI to create amazing dishes.
-  3. A blog post about how AI is changing the food industry, and what that means for catering businesses.
+#### Keywords: food, catering, AI, blog post
 
+1. A blog post about how to use AI in catering to make your food business more efficient.
+2. A blog post about the best catering companies that use AI to create amazing dishes.
+3. A blog post about how AI is changing the food industry, and what that means for catering businesses.
 
 Get started with [free AI brainstorming tool](https://maila.ai/app/brainstorming) today!

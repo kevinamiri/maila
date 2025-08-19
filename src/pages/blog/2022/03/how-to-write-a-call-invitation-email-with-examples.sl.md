@@ -4,7 +4,7 @@ title: "Kako napisati e-poštno sporočilo z vabilom za klic s primeri"
 description: "Klic z vabilom po e-pošti je odličen način za dogovor o srečanju ali posvetovanju s potencialno stranko ali naročnikom."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /sl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /sl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Klicno vabilo po e-pošti.
 
+# Klicno vabilo po e-pošti.
 
 E-poštno sporočilo z vabilom za klic je e-poštno sporočilo, ki ga pošljete potencialni stranki ali naročniku, da bi jo povabili na telefonski klic. Ta vrsta e-poštnega sporočila se običajno uporablja za dogovarjanje o sestanku ali posvetovanju in običajno vključuje datum, uro in namen klica.
 
@@ -44,7 +44,6 @@ Na koncu e-poštnega sporočila se morate osebi zahvaliti za njen čas in dodati
 
 - Na koncu e-poštnega sporočila se osebi zahvalite za njen čas in dodajte svoje kontaktne podatke.
 
-
 ## Osnovna struktura
 
 - Predstavite se in pojasnite, zakaj bi se oseba, ki jo vabite, morala pridružiti vašemu klicu.
@@ -58,7 +57,6 @@ Na koncu e-poštnega sporočila se morate osebi zahvaliti za njen čas in dodati
 - Zahvalite se osebi za njen čas.
 
 - Dodajte svoje kontaktne podatke.
-
 
 ## Nasveti
 
@@ -104,11 +102,11 @@ S spoštovanjem,
 
 ---
 
-Spoštovani ____,
+Spoštovani \_\_\_\_,
 
 V veliko veselje nam je, da vas lahko povabimo na naš prihajajoči dogodek.
 
-Dogodek bo potekal na spletni strani _____ na naslovu _____.
+Dogodek bo potekal na spletni strani **\_** na naslovu **\_**.
 
 Upamo, da se nam boste lahko pridružili na dogodku, ki bo nepozaben.
 

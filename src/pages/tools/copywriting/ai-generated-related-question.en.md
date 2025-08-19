@@ -7,10 +7,10 @@ header: "Generate thought-provoking questions to engage your audience."
 usage: "To use this tool, simply input your desired topic, keywords or key points. Our AI will then generate a set of well-crafted, relevant, and engaging questions based on your input."
 placeholder: "Input your desired topic, keywords or key points, for instance:\n\nTopic: Social Media Marketing\nKeywords: Facebook, Instagram, Twitter, LinkedIn\n\n"
 help_hint: "What topic would you like to generate related questions for? Enter some keywords related to the topic and we will create a list of engaging questions based on your input. It is recommended to provide a specific focus or aspect you want the questions to address."
-tags: [Copywriting,FAQ,AI-generated questions]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, FAQ, AI-generated questions]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-03"
 slug: /en/tools/copywriting/ai-generated-related-question
 path: /en/tools/copywriting/ai-generated-related-question
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1038"
 product_type: "1038"
 ---
+
 # AI-Generated Related Question by Maila.AI: Revolutionize Your Content Creation
 
 Maila.AI is an innovative AI-powered copywriting platform designed to help you create engaging, high-quality content for your business. With our AI-generated related question feature, you can quickly develop a list of relevant questions that will help you create informative and engaging content for your audience.
@@ -80,6 +81,7 @@ Example:
 How to start a successful blog?
 
 **AI-Generated Results:**
+
 1. What are the key elements of a successful blog?
 2. How do I choose the right niche for my blog?
 3. How can I create a content strategy for my blog?

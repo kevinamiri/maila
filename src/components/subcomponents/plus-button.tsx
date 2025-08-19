@@ -1,5 +1,5 @@
 import React from "react";
-import ToggleButtonList from "./ToggleButtonList";
+import ToggleButtonList from "./toggle-button-list";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 
 export default function BarButtonPlusReplace(props) {

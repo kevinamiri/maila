@@ -4,7 +4,7 @@ title: "Hur man skriver ett e-postmeddelande med inbjudan till samtal med exempe
 description: "Ett samtalsinbjudningsmejl är ett utmärkt sätt att boka ett möte eller samråd med en potentiell kund eller klient."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /sv/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /sv/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Skicka en inbjudan via e-post.
 
+# Skicka en inbjudan via e-post.
 
 Ett e-postmeddelande med inbjudan till samtal är ett e-postmeddelande som skickas till en potentiell kund eller klient för att bjuda in dem till ett telefonsamtal. Den här typen av e-postmeddelande används vanligtvis för att ordna ett möte eller en konsultation, och det innehåller vanligtvis datum, tid och syfte med samtalet.
 
@@ -44,7 +44,6 @@ När du avslutar ditt e-postmeddelande måste du tacka personen för att han ell
 
 - I slutet av ditt e-postmeddelande bör du tacka personen för att han eller hon har tagit sig tid och lägga till dina kontaktuppgifter.
 
-
 ## Grundläggande struktur
 
 - Presentera dig själv och förklara varför personen du bjuder in ska delta i samtalet.
@@ -58,7 +57,6 @@ När du avslutar ditt e-postmeddelande måste du tacka personen för att han ell
 - Tacka personen för att han eller hon har tagit sig tid.
 
 - Lägg till din kontaktinformation.
-
 
 ## Tips
 
@@ -104,11 +102,11 @@ Med vänliga hälsningar,
 
 ---
 
-Kära ____,
+Kära \_\_\_\_,
 
 Det är ett stort nöje att bjuda in dig till vårt kommande evenemang.
 
-Evenemanget äger rum på _____ på _____.
+Evenemanget äger rum på **\_** på **\_**.
 
 Vi hoppas att du kan vara med oss på vad som lovar att bli ett mycket minnesvärt tillfälle.
 

@@ -4,7 +4,7 @@ title: "電話案内メールの書き方（例文付き"
 description: "電話招待メールは、潜在的な顧客やクライアントとのミーティングやコンサルティングを設定するのに最適な方法です。"
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /ja/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /ja/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# 招待状メールを呼び出す。
 
+# 招待状メールを呼び出す。
 
 電話招待メールとは、潜在的な顧客やクライアントに対して、電話への招待をするために送信するメールです。このタイプのメールは通常、ミーティングやコンサルティングを設定するために使用され、通常、日時と電話の目的が記載されています。
 
@@ -44,7 +44,6 @@ imageStatus: false
 
 - メールの最後には、時間を割いてくれた相手に感謝し、自分の連絡先を付け加えましょう。
 
-
 ## 基本構造
 
 - 自己紹介をし、なぜその人があなたの通話に参加する必要があるのかを説明します。
@@ -58,7 +57,6 @@ imageStatus: false
 - 相手にお礼を言う。
 
 - 連絡先を追加します。
-
 
 ## Tips
 

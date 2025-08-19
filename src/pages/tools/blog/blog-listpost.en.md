@@ -13,11 +13,12 @@ lang: en
 icon: "blogPostHeaderIcon"
 hasCustomTemplate: false
 tone: true
-templateKey: 'tools-body'
+templateKey: "tools-body"
 url: /app/blog-listpost
 jsonId: "448"
 product_type: "44"
 ---
+
 # Transform your listicles with AI-driven creativity.
 
 Introducing the AI-Powered Copywriting Platform, your ultimate solution to effortlessly create engaging **list-based blog posts** that will impress your audience and skyrocket your online presence!

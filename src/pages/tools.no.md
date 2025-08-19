@@ -7,6 +7,7 @@ date: 2022-12-25
 slug: /no/tools
 path: /no/tools
 lang: no
-tags: ['templates', 'tools', 'use-cases']
+tags: ["templates", "tools", "use-cases"]
 ---
+
 # List of templates

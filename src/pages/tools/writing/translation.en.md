@@ -13,7 +13,7 @@ lang: en
 icon: "languageTranslation"
 hasCustomTemplate: false
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 jsonId: "165"
 product_type: "50"
 url: /app/translation

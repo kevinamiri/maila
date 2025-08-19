@@ -7,7 +7,7 @@ import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
-import LanguageAutocompleteApp from "./languageAutocompleteApp";
+import LanguageAutocompleteApp from "./language-autocomplete-app";
 import Tooltip from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 import GTranslateRoundedIcon from "@mui/icons-material/GTranslateRounded";
@@ -63,7 +63,7 @@ interface valuesT {
   theme: string;
   lang: string;
 }
-export default function LangSettingsDials({ changeLanguage }) {
+export default function SetLanguageModal({ changeLanguage }) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {

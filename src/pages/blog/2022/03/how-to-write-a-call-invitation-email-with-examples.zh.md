@@ -4,7 +4,7 @@ title: "如何写呼叫邀请邮件及示例"
 description: "电话邀请邮件是与潜在客户或顾客安排会议或咨询的好方法"
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /zh/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /zh/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# 呼叫邀请邮件。
 
+# 呼叫邀请邮件。
 
 通话邀请邮件是一封发送给潜在客户或顾客的邮件，以邀请他们进行电话沟通。这种类型的电子邮件通常用于建立一个会议或咨询，它通常包括日期、时间和电话的目的。
 
@@ -44,7 +44,6 @@ imageStatus: false
 
 - 在电子邮件的最后，你应该感谢对方的时间，并添加你的联系信息。
 
-
 ##基本结构
 
 - 介绍自己，并解释为什么你邀请的人应该加入你的电话。
@@ -58,7 +57,6 @@ imageStatus: false
 - 感谢对方的时间。
 
 - 添加您的联系信息。
-
 
 ## 提示
 
@@ -104,11 +102,11 @@ imageStatus: false
 
 ---
 
-亲爱的____。
+亲爱的\_\_\_\_。
 
 我们非常高兴地邀请您参加我们即将举行的活动。
 
-该活动将在_____。
+该活动将在**\_**。
 
 我们希望你能加入我们，这将是一个非常难忘的时刻。
 

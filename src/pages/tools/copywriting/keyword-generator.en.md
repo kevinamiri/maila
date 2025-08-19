@@ -8,9 +8,9 @@ usage: "To use this template, simply input your content's topic or a few related
 placeholder: "Enter a topic or a few keywords related to your content, e.g., digital marketing, travel blogging, or fitness tips."
 help_hint: "What is the topic or main focus of your content? Provide a few related keywords, and we will generate a list of powerful keywords to enhance your content's performance."
 tags: [Copywriting, keyword generator, ai keyword generator]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-03"
 slug: /en/tools/copywriting/keyword-generator
 path: /en/tools/copywriting/keyword-generator
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1037"
 product_type: "1037"
 ---
+
 # Keyword Generator by Maila.AI: Revolutionize Your SEO Strategy
 
 Welcome to the Keyword Generator by Maila.AI, your one-stop solution for creating powerful, relevant, and engaging keywords that will boost your SEO strategy and drive organic traffic to your website. Our AI-powered copywriting platform will help you generate the perfect keywords tailored to your unique content needs.

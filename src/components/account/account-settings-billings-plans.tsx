@@ -19,7 +19,7 @@ interface PriceOption {
   amount: string | number;
 }
 
-const BillingPlanCardContent: React.FC = () => {
+const AccountSettingsBillingsPlans: React.FC = () => {
   const [chargeType, setChargeType] = useState<string>("monthly");
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -121,4 +121,4 @@ const BillingPlanCardContent: React.FC = () => {
   );
 };
 
-export default BillingPlanCardContent;
+export default AccountSettingsBillingsPlans;

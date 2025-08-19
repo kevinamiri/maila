@@ -46,7 +46,7 @@ module.exports = {
     {
       name: "3 - Get your results and edit",
       description:
-        "You’ll get 10 results at a time, and you can run the tool again for more ideas.",
+        "You'll get 10 results at a time, and you can run the tool again for more ideas.",
     },
   ],
 
@@ -125,7 +125,7 @@ module.exports = {
   ET05: "Prospecting Email",
   //Branding tools
   CT01: "Copywriting Tools",
-  B01: "Mission Statement",
+  B01_MISSION: "Mission Statement",
   B010: "Brand Mission Statement",
   B02: "Vision Statement",
   B020: "Brand Vision Statement",
@@ -139,7 +139,7 @@ module.exports = {
   WT01: "Writing Tools",
   RH004: "Parapherase",
   GC009: "Good Grammar",
-  LP01: "Landing Page Headline",
+  LP01_HEADLINE: "Landing Page Headline",
   LP02: "Landing Page Headline Description",
   LP03: "Meta Descriptions",
   LP04: "Question Generator",
@@ -306,7 +306,7 @@ module.exports = {
   T00914: 'Thanks You Email',
   D76514: 'Acknowledging and thanking someone for their help or support can be a great way to show your appreciation and to strengthen the relationship.',
   H43214: "Write a few keywords about your business or product; then we'll wrap it up with a thanks you template in the best possible way.",
-  E56715: 'e.g new product announcements a reusable cup',
+  E56714: 'e.g new product announcements a reusable cup',
   N78914: 'Compose',
 
   L12315: 'Prospecting Email',
@@ -407,7 +407,6 @@ module.exports = {
   E56728: 'e.g., a reusable cup that keeps coffee warm and is eco-friendly.',
   N78928: 'Compose',
 
-
   L12330: 'Blog Post Pas',
   T00930: 'Blog Post Pas',
   D76530: "Pain, Agitate, Solve. Or Problem, Agitate, Solution. If you want to write a good copy, you should think about the problem that your reader is experiencing, and then agitate that problem. Finally, offer a solution that will make the reader's life better.",
@@ -415,13 +414,12 @@ module.exports = {
   E56730: 'e.g., a reusable cup that keeps coffee warm and is eco-friendly.',
   N78930: 'Compose',
 
-
-  L12330: 'Google Ad Header',
-  T00930: 'Google Ad Header',
-  D76530: 'It can be used to create a Google Ad Header for your page.',
-  H43230: "Write a few paragraphs; then we'll create a Google Ad Header for the given text.",
-  E56730: 'e.g., a reusable cup that keeps coffee warm and is eco-friendly.',
-  N78930: 'Compose',
+  L12332: 'Google Ad Header',
+  T00932: 'Google Ad Header',
+  D76532: 'It can be used to create a Google Ad Header for your page.',
+  H43232: "Write a few paragraphs; then we'll create a Google Ad Header for the given text.",
+  E56732: 'e.g., a reusable cup that keeps coffee warm and is eco-friendly.',
+  N78932: 'Compose',
 
   L12331: 'Google Ad Description',
   T00931: 'Google Ad Description',

@@ -4,7 +4,7 @@ title: "Cum să scrieți un e-mail de invitație la apel cu exemple"
 description: "Un e-mail de invitație la apel este o modalitate excelentă de a stabili o întâlnire sau o consultare cu un potențial client sau client."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /ro/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /ro/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Apelarea invitației prin e-mail.
 
+# Apelarea invitației prin e-mail.
 
 Un e-mail de invitație la apel este un e-mail care este trimis unui potențial client sau client pentru a-l invita la un apel telefonic. Acest tip de e-mail este utilizat de obicei pentru a stabili o întâlnire sau o consultare și include de obicei data, ora și scopul apelului.
 
@@ -44,7 +44,6 @@ Pentru a încheia e-mailul, va trebui să mulțumiți persoanei pentru timpul ac
 
 - În finalul e-mailului, trebuie să mulțumiți persoanei pentru timpul acordat și să adăugați informațiile dumneavoastră de contact.
 
-
 ## Structura de bază
 
 - Prezentați-vă și explicați de ce persoana pe care o invitați ar trebui să se alăture apelului dumneavoastră.
@@ -58,7 +57,6 @@ Pentru a încheia e-mailul, va trebui să mulțumiți persoanei pentru timpul ac
 - Mulțumiți-i persoanei pentru timpul acordat.
 
 - Adăugați informațiile dumneavoastră de contact.
-
 
 ## Sfaturi
 
@@ -104,11 +102,11 @@ Cu stimă,
 
 ---
 
-Dragă ____,
+Dragă \_\_\_\_,
 
 Ne face o deosebită plăcere să vă invităm la evenimentul nostru viitor.
 
-Evenimentul va avea loc pe _____ la adresa _____.
+Evenimentul va avea loc pe **\_** la adresa **\_**.
 
 Sperăm să vă puteți alătura nouă pentru ceea ce se anunță a fi o ocazie memorabilă.
 

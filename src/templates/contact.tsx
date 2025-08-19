@@ -1,73 +1,106 @@
-import React, { memo } from "react";
-import PropTypes from "prop-types";
-import TagList from "../components/landings/modules/TagList";
-import { graphql } from "gatsby";
-import Layout from "../components/layout/Layout";
-import Content from "../components/homepage/Content";
-import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
-import ContactMe from "components/homepage/ContactMe";
+// ─── Imports ──────────────────────────────────────────────
+import React, { memo, FC } from 'react'
+import { graphql, PageProps } from 'gatsby'
 
-const AboutPageTemplate = ({ content, contentComponent: PageContent = Content, tags, langKey }) => (
+// ─── MUI ─────────────────────────────────────────────────
+import Container from '@mui/material/Container'
+import Box from '@mui/material/Box'
+
+// ─── Components ───────────────────────────────────────────
+import Layout from '../components/layout/Layout'
+import TagList from '../components/landings/modules/TagList'
+import Content from '../components/homepage/Content'
+import ContactMe from '../components/homepage/contact-me-container'
+import { SEO } from '../components/SEO/SEO'
+
+// ─── Types ───────────────────────────────────────────────
+interface ContactTemplateProps {
+  content: string
+  contentComponent?: FC<{ content: string }>
+  tags: string[]
+  langKey: string
+}
+
+interface ContactPageData {
+  markdownRemark: {
+    html: string
+    frontmatter: {
+      id: string
+      title: string
+      description: string
+      tags?: string[]
+      lang: string
+      path?: string
+    }
+    fields: {
+      slug: string
+    }
+  }
+  site: {
+    siteMetadata: {
+      title: string
+      languages: {
+        defaultLangKey: string
+        langs: string[]
+      }
+    }
+  }
+}
+
+interface HeadProps {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        title: string
+        description: string
+        path?: string
+      }
+    }
+  }
+}
+
+// ─── Template ────────────────────────────────────────────
+export const ContactTemplate: FC<ContactTemplateProps> = ({
+  content,
+  contentComponent: PageContent = Content,
+  tags,
+  langKey,
+}) => (
   <Box sx={{ mt: 8 }}>
     <Container sx={{ mt: 5 }}>
       <PageContent content={content} />
       <TagList tags={tags} langKey={langKey} />
     </Container>
   </Box>
-);
+)
 
-AboutPageTemplate.propTypes = {
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-  tags: PropTypes.array,
-  langKey: PropTypes.string,
-};
+// ─── Page ────────────────────────────────────────────────
+type ContactPageProps = PageProps<ContactPageData>
 
-const AboutPage = ({ data, location }) => {
-  const { markdownRemark, allArticlesJson } = data;
-  const jsonData = allArticlesJson.edges[0].node.articles;
-  const langKey = markdownRemark.frontmatter.lang;
+const ContactPage: FC<ContactPageProps> = ({ data, location }) => {
+  const { markdownRemark } = data
+  const langKey = markdownRemark.frontmatter.lang
 
   return (
-    <Layout data={data} jsonData={jsonData} location={location}>
+    <Layout data={data} location={location}>
       <Container>
         <ContactMe langkey={langKey} />
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-AboutPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-    allArticlesJson: PropTypes.object,
-  }).isRequired,
-  location: PropTypes.object.isRequired,
-};
+export default memo(ContactPage)
 
-export default memo(AboutPage);
-
+// ─── Query ───────────────────────────────────────────────
 export const pageQuery = graphql`
-  query AboutPageQuery($id: String!) {
+  query ContactPageQuery($id: String!) {
     site {
       siteMetadata {
+        title
         languages {
           defaultLangKey
           langs
-        }
-      }
-    }
-    allArticlesJson(filter: { title: { eq: "home" } }) {
-      edges {
-        node {
-          articles {
-            en
-            sv
-            da
-            no
-            fi
-          }
         }
       }
     }
@@ -79,25 +112,25 @@ export const pageQuery = graphql`
         description
         tags
         lang
+        path
       }
       fields {
         slug
       }
     }
   }
-`;
+`
 
-
-
-import { SEO } from "../components/SEO/SEO";
-
-
-export const Head = (props) => {
-  const { data } = props;
-  const { markdownRemark: post } = data;
+// ─── Head ────────────────────────────────────────────────
+export const Head: FC<HeadProps> = ({ data }) => {
+  const { markdownRemark: post } = data
   return (
-  <SEO title={post.frontmatter.title} description={post.frontmatter.description} pathname={post.frontmatter.path}>
-    <meta name="description" content={post.frontmatter.description} />
-  </SEO>
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description}
+      pathname={post.frontmatter.path}
+    >
+      <meta name="description" content={post.frontmatter.description} />
+    </SEO>
   )
 }

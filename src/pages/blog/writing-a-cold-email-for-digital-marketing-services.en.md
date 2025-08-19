@@ -4,17 +4,18 @@ title: "writing a cold email for digital marketing services"
 description: "When writing a cold email for digital marketing services, it is important to introduce yourself and your company, and to explain why you are reaching out to the recipient. It is also important to explain what you can offer the recipient and how you can help them meet their goals."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-01-21"
 slug: /en/blog/writing-a-cold-email-for-digital-marketing-services
 path: /en/blog/writing-a-cold-email-for-digital-marketing-services
 lang: en
-tags: ["blog","cold email for digital marketing services"]
+tags: ["blog", "cold email for digital marketing services"]
 image: ../images/terms.png
 imageStatus: false
 ---
 
 ```toc
+
 ```
 
 ## How to write a cold email for digital marketing services?

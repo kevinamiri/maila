@@ -7,6 +7,7 @@ date: 2022-12-25
 slug: /en/tools
 path: /en/blog
 lang: en
-tags: ['templates', 'tools', 'use-cases']
+tags: ["templates", "tools", "use-cases"]
 ---
+
 # List of templates

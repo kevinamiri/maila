@@ -5,7 +5,7 @@ import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
 import { updateDefaultLanguage } from "../../slices/fieldsValue";
 import { useDispatch } from "react-redux";
-import countries from "../../components/account/countries";
+import countries from "../account/countries";
 import { AppDispatch } from "store";
 
 interface CountryType {

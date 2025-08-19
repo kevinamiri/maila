@@ -4,175 +4,177 @@ title: "How to politely write thank you for your payment in business emails?"
 description: "The phrase Accept our thanks for your recent remittance in emails and it's usage"
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-08-23"
 slug: /en/blog/2022/08/how-to-politely-write-thank-you-for-your-payment-in-business-emails
 path: /en/blog/2022/08/how-to-politely-write-thank-you-for-your-payment-in-business-emails
 lang: en
-tags: [email, thank you email, thank you for payment, sample email, example email]
+tags:
+  [email, thank you email, thank you for payment, sample email, example email]
 image: ../images/thanks-for-the-payment.png
 imageStatus: true
 ---
+
 ```toc
+
 ```
 
 # 4 way to politely say thank you for your payment in business emails.
 
 ## 1. Accept our thanks for your recent remittance
 
-### Meaning: 
+### Meaning:
 
 - Accept our thanks for your recent payment
 - Thank you for sending us your payment
 
-### When to use: 
+### When to use:
 
 - Use this phrase when writing to thank someone for a payment they made.
 - To express gratitude for a payment to repay a debt
 
-### Example: 
+### Example:
 
-- *Thank you again and please accept our thanks for your recent remittance.*
-- *We would like to take this opportunity to thank you in advance for your cooperation and to also accept our thanks for your recent remittance.*
-- *We are looking forward to making a clean sweep of our debts and hope that this may be the beginning of a new era of prosperity. Accept our thanks for your recent remittance.*
-- *After seven months, in the depths of winter, the payment of the first month's rent came. He received it with polite thanks, and the next day, having obtained a bill of exchange for the amount, departed for another town. The remittance reached him at Moscow, and coming on top of all his previous privations, was almost enough to kill him. In a sort of woman's way he immediately, instead of keeping the money for his journey, set off to the shops to buy boots and clothes for his boy—though he would have found it hard to say what the child really needed.*
+- _Thank you again and please accept our thanks for your recent remittance._
+- _We would like to take this opportunity to thank you in advance for your cooperation and to also accept our thanks for your recent remittance._
+- _We are looking forward to making a clean sweep of our debts and hope that this may be the beginning of a new era of prosperity. Accept our thanks for your recent remittance._
+- _After seven months, in the depths of winter, the payment of the first month's rent came. He received it with polite thanks, and the next day, having obtained a bill of exchange for the amount, departed for another town. The remittance reached him at Moscow, and coming on top of all his previous privations, was almost enough to kill him. In a sort of woman's way he immediately, instead of keeping the money for his journey, set off to the shops to buy boots and clothes for his boy—though he would have found it hard to say what the child really needed._
 
+### Email Example:
 
-### Email Example: 
+_Dear colleagues,_
 
+_I would like to take this opportunity to thank everyone for their hard work. The company has recently received a large surge of new funds and this could not have happened without the work of all the employees._
 
-*Dear colleagues,*
+_We would like to take this opportunity to thank you in advance for your cooperation and to also accept our thanks for your recent remittance._
 
-*I would like to take this opportunity to thank everyone for their hard work. The company has recently received a large surge of new funds and this could not have happened without the work of all the employees.*
+_Sincerely,_
 
-*We would like to take this opportunity to thank you in advance for your cooperation and to also accept our thanks for your recent remittance.*
-
-*Sincerely,*
-
-*[Your name]*
+_[Your name]_
 
 ---
+
 ## 2. We are pleased to acknowledge receipt of your payment
 
-### Meaning: 
+### Meaning:
 
 - We got your payment
 
-### When to use: 
+### When to use:
 
 - Use this phrase when someone has made a payment and you want to confirm that you received it.
 
-### Example: 
+### Example:
 
-- *Thank you for your payment. We are pleased to acknowledge receipt of your payment. Your account has now been credited.*
+- _Thank you for your payment. We are pleased to acknowledge receipt of your payment. Your account has now been credited._
 
-### Email Example: 
+### Email Example:
 
-*Dear [name],*
+_Dear [name],_
 
-*Thank you for your payment of [amount]. We are pleased to acknowledge receipt of your payment.*
+_Thank you for your payment of [amount]. We are pleased to acknowledge receipt of your payment._
 
-*Your account has now been credited.*
+_Your account has now been credited._
 
-*Sincerely,*
+_Sincerely,_
 
-*[Your name]*
+_[Your name]_
 
 ---
+
 ## 3. We have now processed your payment
 
-### Meaning: 
+### Meaning:
 
 - We have made the payment
 - We have now received your payment
 
-### When to use: 
+### When to use:
 
 - Use this phrase when you want to inform someone that you have received their payment and processed it.
 - This is typically used in a business context. It is a good idea to mention the amount of the payment.
 
-### Example: 
+### Example:
 
-- *We have now processed your payment of $50.*
-- *You should have received your new products by now. We have now processed your payment and you have nothing else to worry about!*
-- *We are pleased to confirm that we have now processed your payment of $9,000. We hope you enjoy your new product.*
+- _We have now processed your payment of $50._
+- _You should have received your new products by now. We have now processed your payment and you have nothing else to worry about!_
+- _We are pleased to confirm that we have now processed your payment of $9,000. We hope you enjoy your new product._
 
-### Email Example: 
+### Email Example:
 
-*Dear [name],*
+_Dear [name],_
 
-*Please find below the details of your order.*
+_Please find below the details of your order._
 
-*We are pleased to confirm that we have now processed your payment of [amount]. Your order is now being processed.*
+_We are pleased to confirm that we have now processed your payment of [amount]. Your order is now being processed._
 
-*We hope you enjoy your new product. Let us know if you have any questions.*
+_We hope you enjoy your new product. Let us know if you have any questions._
 
-*Sincerely,*
+_Sincerely,_
 
-*[Your name]*
+_[Your name]_
 
 ---
+
 ## 4. With reference to your payment of [amount], please find attached our remittance advice
 
-### Meaning: 
+### Meaning:
 
 - In reference to your payment of [amount], here is the document that confirms our payment
 
-### When to use: 
+### When to use:
 
 - Use this phrase when you want to confirm that you have paid someone.
 - This is typically used when payment is made for a purchase.
 - This phrase can be used in both a formal and informal context.
 
-### Example: 
+### Example:
 
-- *I am writing to request a remittance advice for a payment I made. With reference to your payment of $100, please find attached our remittance advice.*
-- *I purchased a widget from your company on August 1st and the payment was processed on August 5th. With reference to your payment of $87, please find attached our remittance advice.*
+- _I am writing to request a remittance advice for a payment I made. With reference to your payment of $100, please find attached our remittance advice._
+- _I purchased a widget from your company on August 1st and the payment was processed on August 5th. With reference to your payment of $87, please find attached our remittance advice._
 
+### Email Example:
 
-### Email Example: 
+_Dear [name],_
 
-*Dear [name],*
+_We are writing to request a remittance advice for a payment we made to you._
 
-*We are writing to request a remittance advice for a payment we made to you.*
+_With reference to our payment of [amount], please find attached our remittance advice._
 
-*With reference to our payment of [amount], please find attached our remittance advice.*
+_Please let us know if you have any questions._
 
-*Please let us know if you have any questions.*
+_Sincerely,_
 
-*Sincerely,*
-
-*[Your name]*
+_[Your name]_
 
 ---
+
 ## 5. We are glad to inform you that your payment has been successfully processed
 
-### Meaning: 
+### Meaning:
 
 - Your payment was successful
 - Your payment has been made
 
-### When to use: 
+### When to use:
 
 - Use this phrase when you have processed a payment and want to inform the person who made the payment that it was successful.
 - This phrase can be used in both a formal and informal context.
 
+### Example:
 
-### Example: 
+- _You should have received your new products by now. We are glad to inform you that your payment has been successfully processed._
+- _We are glad to inform you that your payment has been successfully processed. You should receive your new products within the next few days._
+- _We are glad to inform you that your payment has been successfully processed. Please note that your account balance is now due._
 
-- *You should have received your new products by now. We are glad to inform you that your payment has been successfully processed.*
-- *We are glad to inform you that your payment has been successfully processed. You should receive your new products within the next few days.*
-- *We are glad to inform you that your payment has been successfully processed. Please note that your account balance is now due.*
+### Email Example:
 
+_Dear [name],_
 
-### Email Example: 
+_We are pleased to inform you that your payment has been successfully processed._
 
-*Dear [name],*
+_Please let us know if you have any questions._
 
-*We are pleased to inform you that your payment has been successfully processed.*
+_Sincerely,_
 
-*Please let us know if you have any questions.*
-
-*Sincerely,*
-
-*[Your name]*
+_[Your name]_

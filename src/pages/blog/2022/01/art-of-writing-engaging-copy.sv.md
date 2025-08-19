@@ -4,7 +4,7 @@ title: "Konsten att skriva engagerande texter"
 description: "I den här artikeln delar vi med oss av några tips för att skriva effektiva texter som engagerar din publik och ger resultat."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-01-16"
 slug: /sv/blog/2022/01/art-of-writing-engaging-copy
 path: /sv/blog/2022/01/art-of-writing-engaging-copy
@@ -15,7 +15,6 @@ imageStatus: false
 ---
 
 I den här artikeln tar vi upp grunderna för att skriva engagerande texter. Copywriting är en konst och en vetenskap, och det kan vara skillnaden mellan en lyckad kampanj och en misslyckad kampanj.
-
 
 #### Bästa praxis Sammanfattning
 
@@ -34,7 +33,6 @@ Här är några bästa metoder att tänka på:
 - Överväg att använda humor
 - Överväg att använda frågor
 - Överväg att använda berättelser
-
 
 ## Grunderna för copywriting
 
@@ -68,7 +66,6 @@ Ton och röst är två av de viktigaste delarna av skrivstilen. Tonen avser din 
 
 Välj en ton och en röst som överensstämmer med ditt varumärke.
 
-
 | Exempel             | Bransch         | Ton och röst                       |
 | ------------------- | --------------- | ---------------------------------- |
 | Slack               | Teknik          | Klart, koncist och mänskligt       |
@@ -82,7 +79,6 @@ Välj en ton och en röst som överensstämmer med ditt varumärke.
 | Cosmopolitan        | Livsstil        | Djärv och kraftfull                |
 | National Geographic | Resor           | Informativt och inspirerande       |
 | Vogue               | Mode            | Sofistikerad och glamorös          |
-
 
 #### Rubriker och underrubriker
 
@@ -115,6 +111,7 @@ Det finns två typer av listor:
 - Numrerade listor
 
 Punktlistor används för att räkna upp punkter som inte behöver stå i någon särskild ordning. Numrerade listor används för att räkna upp punkter som måste vara i en viss ordning.
+
 #### Bilder och videor
 
 Bilder och videor är ett utmärkt sätt att illustrera viktiga punkter och göra ditt innehåll mer engagerande. De bidrar också till att bryta upp texten och göra den lättare att läsa.
@@ -142,6 +139,7 @@ Humor är ett utmärkt sätt att engagera din publik och göra ditt innehåll me
 #### Frågor
 
 Frågor är ett utmärkt sätt att engagera din publik och göra ditt innehåll mer minnesvärt.
+
 ## Slutsats
 
 Det första steget i varje bra copywritingprocess är att förstå din målgrupp. Vilka är deras behov? Vilka är deras problem? Vilka är deras mål? När du förstår din målgrupp kan du börja skriva texter som talar direkt till dem.

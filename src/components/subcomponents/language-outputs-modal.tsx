@@ -10,7 +10,7 @@ import DialogActions from "@mui/material/DialogActions";
 import Tooltip from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 import TranslateRoundedIcon from "@mui/icons-material/TranslateRounded";
-import LanguageAutocomplete from "./LanguageAutocomplete";
+import LanguageAutocomplete from "./language-autocomplete";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),

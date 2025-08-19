@@ -127,7 +127,6 @@ module.exports = {
   ET05: "Prospektering av e-post",
   //kopier verktøy
   CT01: "Kopier verktøy",
-  B01: "Mission Statement",
   B010: "Brand Mission Statement",
   B02: "Vision Statement",
   B020: "Brand Vision Statement",
@@ -140,7 +139,6 @@ module.exports = {
   WT01: "Skriveverktøy",
   RH004: "Parapherase",
   GC009: "God grammatikk",
-  LP01: "Landing Page Headline",
   LP02: "Landing Page Headline Beskrivelse",
   LP03: "Meta Beskrivelser",
   LP04: "Spørsmål Generator",
@@ -417,19 +415,18 @@ module.exports = {
   E56730: 'f.eks. en gjenbrukbar kopp som holder kaffen varm og er miljøvennlig. ',
   N78930: 'Komponere',
 
+  L12332: 'Google annonseoverskrift',
+  T00932: 'Google annonseoverskrift',
+  D76532: 'Den kan brukes til å opprette en Google-annonseoverskrift for siden din. ',
+  H43232: "Skriv noen avsnitt; så oppretter vi en Google Ad Header for den oppgitte teksten. ",
+  E56732: 'f.eks. en gjenbrukbar kopp som holder kaffen varm og er miljøvennlig. ',
+  N78932: 'Komponere',
 
-  L12330: 'Google annonseoverskrift',
-  T00930: 'Google annonseoverskrift',
-  D76530: 'Den kan brukes til å opprette en Google-annonseoverskrift for siden din. ',
-  H43230: "Skriv noen avsnitt; så oppretter vi en Google Ad Header for den oppgitte teksten. ",
-  E56730: 'f.eks. en gjenbrukbar kopp som holder kaffen varm og er miljøvennlig. ',
-  N78930: 'Komponere',
-
-  L12331: 'Beskrivelse av Google Annonse',
-  T00931: 'Beskrivelse av Google Annonse',
-  D76531: 'Den kan brukes til å opprette en Google-annonsebeskrivelse for siden din. ',
-  H43231: "Skriv noen avsnitt, så oppretter vi en Google-annonsebeskrivelse for den oppgitte teksten. ",
-  E56731: 'f.eks. en gjenbrukbar kopp som holder kaffen varm og er miljøvennlig. ',
-  N78931: 'Komponere',
+  L12333: 'Beskrivelse av Google Annonse',
+  T00933: 'Beskrivelse av Google Annonse',
+  D76533: 'Den kan brukes til å opprette en Google-annonsebeskrivelse for siden din. ',
+  H43233: "Skriv noen avsnitt, så oppretter vi en Google-annonsebeskrivelse for den oppgitte teksten. ",
+  E56733: 'f.eks. en gjenbrukbar kopp som holder kaffen varm og er miljøvennlig. ',
+  N78933: 'Komponere',
 
 };

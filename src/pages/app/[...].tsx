@@ -19,7 +19,7 @@ import Box from "@mui/material/Box";
 import SearchBox from "../../components/subcomponents/searchBox";
 import useSettings from "../../hooks/useSettings";
 import { OptionsObject, SnackbarKey, SnackbarMessage, SnackbarProvider, useSnackbar } from 'notistack';
-import LangSettingsDials from "../../components/subcomponents/LangSettingsDials";
+import SetLanguageModal from "../../components/subcomponents/set-language-modal";
 import EditorManage from "../../components/editor-manage";
 import useToolsProducts from "../../hooks/useToolsProducts";
 import DocumentsPage from "../../components/documents-page";
@@ -191,7 +191,7 @@ export default function App() {
               <TopBar
                 icon='MenuRoundedIcon'
                 title='maila.ai'
-                uilang={<LangSettingsDials changeLanguage={changeLanguage} />}
+                uilang={<SetLanguageModal changeLanguage={changeLanguage} />}
               />
               <DrawerSideBar />
               <Box

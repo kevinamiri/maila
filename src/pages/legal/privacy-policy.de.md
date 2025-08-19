@@ -1,7 +1,7 @@
 ---
 id: "07"
-title: "Datenschutzbestimmungen"
-description: "Diese Datenschutzrichtlinie regelt die Art und Weise, in der The we die von unseren Nutzern gesammelten Informationen sammelt, verwendet, pflegt und offenlegt"
+title: "Datenschutzerklärung"
+description: "Diese Datenschutzerklärung regelt, wie The we Informationen sammelt, verwendet, speichert und offenlegt, die von unseren Nutzern erhoben wurden"
 templateKey: about
 lang: de
 image: ../../img/vpn.png
@@ -10,206 +10,139 @@ path: /de/legal/privacy-policy
 slug: /de/legal/privacy-policy
 ---
 
+# Datenschutzerklärung
+
 ```toc
-# Privacy Policy
+
 ```
 
+## 1. Einleitung
 
-Gültig ab: 25 September 2021
+Bei Maila AI verpflichten wir uns, Ihre Privatsphäre zu schützen und Ihre personenbezogenen Daten zu sichern. Diese Datenschutzerklärung erläutert, wie wir Daten erheben, verwenden, offenlegen und schützen, wenn Sie mit unserer Website, unseren KI-Softwareprodukten und -diensten („Dienste“) interagieren.
 
-### **Einführung**
+- Geltungsbereich: Diese Richtlinie gilt für alle Kunden und Website-Besucher von Maila.ai. Durch die Nutzung unserer Dienste oder den Besuch unserer Website stimmen Sie den Bedingungen dieser Datenschutzerklärung zu.
 
-maila.ai („wir“, „uns“ oder „unser“) betreibt maila.ai (im Folgenden als „Service“ bezeichnet).
+- Definitionen:
 
-Unsere Datenschutzrichtlinie regelt Ihren Besuch auf maila.ai und erklärt, wie wir Informationen sammeln, sichern und offenlegen, die sich aus der Nutzung unseres Dienstes ergeben.
+  - „personenbezogene Daten“: Alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen, z. B. Name, E-Mail-Adresse oder IP-Adresse.
+  - „Verarbeitung“: Jeder Vorgang, der an personenbezogenen Daten durchgeführt wird, wie Erhebung, Aufzeichnung, Speicherung, Änderung, Abruf, Nutzung, Offenlegung oder Löschung.
 
-Bitte lesen Sie diese Datenschutzerklärung sorgfältig durch, um ein klares Verständnis dafür zu erhalten, wie wir personenbezogene Daten erfassen, verwenden, schützen oder anderweitig verarbeiten.
+- Rechtskonformität: Maila.ai erfüllt vollständig die Datenschutz-Grundverordnung (DSGVO) und das schwedische Datenschutzgesetz. Wir halten die höchsten Standards des Datenschutzes ein, um die Sicherheit und Vertraulichkeit der personenbezogenen Daten unserer Nutzer zu gewährleisten.
 
-Unsere Nutzungsbedingungen („Nutzungsbedingungen“) regeln die gesamte Nutzung unseres Dienstes und bilden zusammen mit der Datenschutzerklärung Ihre Vereinbarung mit uns („Vereinbarung“).
+## 2. Unsere Rolle als Verantwortlicher
 
-Sie stimmen unserer Datenschutzerklärung zu, indem Sie unsere Website nutzen.
+- Maila.ai handelt als Verantwortlicher, d. h. wir bestimmen die Zwecke und Mittel der Verarbeitung personenbezogener Daten. Wir erheben und verarbeiten Daten, um unseren Nutzern KI-generierte Sprach-, Bild- und Textdienste bereitzustellen.
 
+- Als Verantwortlicher verpflichten wir uns zu:
 
-### **Definitionen**
+  - Transparenz bezüglich unserer Datenerhebungs- und Verarbeitungspraktiken
+  - Rechtmäßiger und fairer Erhebung und Verarbeitung personenbezogener Daten
+  - Sicherstellung der Genauigkeit und Sicherheit der verarbeiteten Daten
+  - Wahrung der Rechte der Betroffenen, z. B. Auskunfts-, Berichtigungs- oder Löschungsrecht
+  - Zusammenarbeit mit Aufsichtsbehörden, wie der Schwedischen Behörde für Datenschutz (Integritetsskyddsmyndigheten), im Falle von Untersuchungen
 
-SERVICE bezieht sich auf die von support Levin betriebene maila.ai-Website.
+- Wir haben einen Datenschutzbeauftragten (DSB) benannt, der unsere Datenschutzpraktiken überwacht und die Einhaltung geltender Datenschutzgesetze sicherstellt. Sie erreichen unseren DSB unter dpo@maila.ai.
 
-PERSONENBEZOGENE DATEN beziehen sich auf Daten über eine lebende Person, die anhand solcher Daten (oder anhand dieser und anderer Informationen, die entweder in unserem Besitz oder wahrscheinlich in unseren Besitz gelangen) identifiziert werden kann.
+- Wir prüfen und aktualisieren regelmäßig unsere Datenschutzrichtlinien und -verfahren, um unseren Verpflichtungen als Verantwortlicher nachzukommen und den bestmöglichen Schutz Ihrer personenbezogenen Daten zu gewährleisten.
 
-NUTZUNGSDATEN sind automatisch erfasste Daten, die entweder durch die Nutzung des Dienstes oder aus der Infrastruktur selbst generiert werden (z. B. die Dauer eines Seitenbesuchs).
+## 3. Unsere Verarbeitung personenbezogener Daten
 
-COOKIES sind kleine Dateien, die auf Ihrem Gerät (Computer oder Mobilgerät) gespeichert werden.
+- Rechtsgrundlagen der Verarbeitung: Wir verarbeiten personenbezogene Daten auf Basis folgender Rechtsgrundlagen:
 
-DATENVERANTWORTLICHER ist eine natürliche oder juristische Person, die (allein oder gemeinsam oder gemeinsam mit anderen Personen) die Zwecke bestimmt, für die personenbezogene Daten verarbeitet werden, und die Art und Weise, in der sie verarbeitet werden. Im Falle dieser Website ist der Datenverantwortliche der Eigentümer.
+  - Einwilligung: Wenn Sie uns ausdrücklich Ihre Einwilligung zur Verarbeitung Ihrer personenbezogenen Daten für einen bestimmten Zweck geben, z. B. Anmeldung zu unserem Newsletter.
+  - Erfüllung eines Vertrags: Wenn die Verarbeitung zur Erfüllung unserer vertraglichen Verpflichtungen Ihnen gegenüber erforderlich ist, z. B. zur Bereitstellung unserer Dienste.
+  - Berechtigtes Interesse: Wenn wir ein berechtigtes Interesse an der Verarbeitung Ihrer personenbezogenen Daten haben, z. B. zur Verbesserung unserer Dienste oder zur Betrugsprävention.
+  - Rechtliche Verpflichtung: Wenn die Verarbeitung zur Einhaltung gesetzlicher Vorschriften erforderlich ist, z. B. zur Aufbewahrung von Finanzunterlagen für die Buchführung.
 
-DATENVERARBEITER (ODER DIENSTLEISTER) ist eine natürliche oder juristische Person, die im Auftrag des Datenverantwortlichen die Daten verarbeitet. Wir können die Dienste verschiedener Dienstanbieter nutzen, um Ihre Daten effektiver zu verarbeiten.
+- Datenaufbewahrung: Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die Zwecke, für die sie erhoben wurden, erforderlich ist oder gesetzlich vorgeschrieben ist. Die konkreten Aufbewahrungsfristen können je nach Datenart und Verarbeitungszweck variieren. Nach Ablauf der Frist löschen oder anonymisieren wir Ihre personenbezogenen Daten sicher.
 
-DATENSUBJEKT ist jede lebende Person, die Gegenstand personenbezogener Daten ist.
+- Datenminimierung: Wir befolgen das Prinzip der Datenminimierung und erheben und verarbeiten nur die personenbezogenen Daten, die für die angegebenen Zwecke erforderlich sind. Wir überprüfen regelmäßig unsere Datenerhebungsprozesse, um sicherzustellen, dass wir nicht mehr Daten als nötig erfassen.
 
-DER BENUTZER ist die Person, die unseren Dienst nutzt. Der Benutzer entspricht dem Datensubjekt, das Gegenstand personenbezogener Daten ist.
+- Genauigkeit: Wir ergreifen angemessene Maßnahmen, um sicherzustellen, dass die personenbezogenen Daten, die wir verarbeiten, genau, vollständig und aktuell sind. Wir empfehlen Ihnen, Ihre personenbezogenen Daten auf dem neuesten Stand zu halten und uns über Änderungen oder Ungenauigkeiten zu informieren.
 
-## **Informationen zur Erfassung und Nutzung**
+- Sicherheit: Wir setzen geeignete technische und organisatorische Maßnahmen ein, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Veränderung, Offenlegung oder Zerstörung zu schützen. Diese Maßnahmen umfassen Verschlüsselung, Zugriffskontrollen und regelmäßige Sicherheitsaudits. Zudem stellen wir sicher, dass unsere Mitarbeitenden und Dienstleister, die Zugang zu Ihren personenbezogenen Daten haben, zur Vertraulichkeit verpflichtet sind.
 
-Wir sammeln verschiedene Arten von Informationen für verschiedene Zwecke, um Ihnen unseren Service zu bieten und zu verbessern.
+- Datenschutz-Folgenabschätzungen (DSFA): Wenn die Verarbeitung voraussichtlich ein hohes Risiko für Ihre Rechte und Freiheiten mit sich bringt, führen wir eine DSFA durch, um potenzielle Risiken zu identifizieren und zu mindern. Dies hilft uns, sicherzustellen, dass unsere Verarbeitungsaktivitäten datenschutzkonform sind und Ihre Rechte angemessen geschützt bleiben.
 
-### **Arten von Daten, die erfasst werden**
+- Meldung von Datenschutzverletzungen: Im Falle einer Datenschutzverletzung, die voraussichtlich ein hohes Risiko für Ihre Rechte und Freiheiten darstellt, werden wir Sie und die zuständige Aufsichtsbehörde unverzüglich benachrichtigen, wie gesetzlich vorgeschrieben.
 
-#### **Personenbezogene Daten**
+## 4. Zwecke der Nutzung personenbezogener Daten
 
-Bei der Nutzung unseres Dienstes können wir Sie bitten, uns bestimmte personenbezogene Informationen zur Verfügung zu stellen, die Sie kontaktieren oder identifizieren können („personenbezogene Daten“). Personenbezogene Informationen können beispielsweise Folgendes umfassen:
+Bei Maila.ai erheben und verwenden wir Ihre personenbezogenen Daten für folgende Zwecke:
 
-   - E-Mail-Adresse
-   - Vorname und Nachname
+- **Bereitstellung von Dienstleistungen**: Wir nutzen Ihre personenbezogenen Daten, um unsere Dienstleistungen zu erbringen. Dazu gehört die Verarbeitung Ihrer Eingaben, die Generierung von Ausgaben und die Bereitstellung der Ergebnisse unserer KI-Algorithmen.
 
-Wir können Ihre personenbezogenen Daten verwenden, um Sie über Newsletters, Marketing- oder Werbeunterlagen und andere Informationen zu kontaktieren, die für Sie von Interesse sein könnten. Sie können den Erhalt eines oder aller dieser Kommunikationsmittel von uns abbestellen, indem Sie den Link „Abmelden“ verwenden oder eine E-Mail an [support@maila.ai](mailto:support@maila.ai) senden.
+- **Benutzerauthentifizierung**: Um einen sicheren Zugang zu unseren Diensten zu gewährleisten, verwenden wir Ihre personenbezogenen Daten zur Verifizierung Ihrer Identität beim Einloggen in Ihr Konto. Dies kann die Verarbeitung Ihrer E-Mail-Adresse, Ihres Passworts oder anderer Authentifizierungsinformationen umfassen.
 
-#### **Nutzungsdaten**
+- **Kundendienst und Support**: Wenn Sie uns mit Anfragen oder um Unterstützung kontaktieren, nutzen wir Ihre personenbezogenen Daten, um Ihre Nachrichten zu beantworten und den notwendigen Support zu leisten. Dies kann die Verarbeitung Ihres Namens, Ihrer E-Mail-Adresse und des Inhalts Ihrer Kommunikation mit uns umfassen.
 
-Wir können auch Informationen sammeln, die Ihr Browser sendet, wenn Sie unseren Dienst besuchen oder wenn Sie den Dienst über oder mithilfe eines Mobilgeräts aufrufen („Nutzungsdaten“).
+- **Service-Updates und Newsletter**: Wir können Ihre E-Mail-Adresse verwenden, um Sie über wichtige Updates zu unseren Diensten zu informieren, wie neue Funktionen, Verbesserungen oder Änderungen unserer Geschäftsbedingungen und Richtlinien. Zusätzlich können wir Ihnen Newsletter mit relevanten Informationen zu unseren KI-Technologien und Branchennachrichten zusenden. Sie können diese Mitteilungen jederzeit abbestellen, indem Sie auf den „Abbestellen“-Link in der E-Mail klicken oder uns direkt kontaktieren.
 
-Diese Nutzungsdaten können beispielsweise die Internetprotokolladresse (z. B. IP-Adresse) Ihres Computers, den Browsertyp, die Browserversion, die von Ihnen besuchten Seiten unseres Dienstes, das Datum und die Uhrzeit Ihres Besuchs, die auf diesen Seiten verbrachte Zeit, eindeutige Gerätekennungen und andere Diagnosedaten umfassen.
+- **Buchführung**: Wie gesetzlich vorgeschrieben verwenden wir Ihre personenbezogenen Daten, um korrekte Finanzunterlagen zu Transaktionen im Zusammenhang mit unseren Diensten zu führen. Dies kann die Verarbeitung Ihres Namens, Ihrer Kontaktdaten und Zahlungsinformationen für Rechnungsstellung und Buchhaltung umfassen.
 
-Wenn Sie den Dienst mit einem Mobilgerät aufrufen, können diese Nutzungsdaten beispielsweise den Typ des von Ihnen verwendeten Mobilgeräts, Ihre eindeutige Gerätekennung, die IP-Adresse Ihres Mobilgeräts, Ihr Betriebssystem, den Typ des mobilen Internetbrowsers, den Sie verwenden, eindeutige Gerätekennungen und andere Diagnosedaten umfassen.
+Wir verarbeiten Ihre personenbezogenen Daten nur für die oben genannten Zwecke oder für andere damit vereinbare Zwecke. Benötigen wir Ihre personenbezogenen Daten für einen nicht verwandten Zweck, werden wir Sie informieren und Ihre Einwilligung einholen, sofern dies nicht gesetzlich erforderlich oder zulässig ist.
 
-#### **Cookies-Daten**
+Wir werden Ihre personenbezogenen Daten nicht ohne Ihre ausdrückliche Einwilligung an Dritte verkaufen, vermieten oder zu deren Marketingzwecken handeln. Wir können Ihre Daten mit vertrauenswürdigen Dienstleistern teilen, die uns bei der Erbringung unserer Dienste unterstützen, jedoch nur in dem Umfang, der dafür erforderlich ist, und unter strengen Vertraulichkeitsverpflichtungen.
 
-Beispiele für Cookies, die wir verwenden können:
+## 5. Ihre Rechte
 
-**Session Cookies:** Wir verwenden Session Cookies, um unseren Dienst zu betreiben.
+Bei Maila.ai respektieren wir Ihre Rechte als betroffene Person gemäß der DSGVO und dem schwedischen Datenschutzgesetz. Ihnen stehen folgende Rechte in Bezug auf Ihre personenbezogenen Daten zu:
 
-**Präferenz-Cookies:** Wir verwenden Präferenz-Cookies, um Ihre Präferenzen und verschiedene Einstellungen zu speichern.
+- **Auskunft**: Sie haben das Recht, Auskunft darüber zu verlangen, ob wir Ihre personenbezogenen Daten verarbeiten. Ist dies der Fall, können Sie eine Kopie dieser Daten sowie bestimmte Informationen zur Verarbeitung erhalten.
 
-**Sicherheits-Cookies:** Wir verwenden Sicherheits-Cookies aus Sicherheitsgründen.
+- **Berichtigung**: Wenn Sie der Ansicht sind, dass die von uns gespeicherten personenbezogenen Daten unrichtig oder unvollständig sind, haben Sie das Recht, deren Berichtigung oder Vervollständigung zu verlangen.
 
-### **Verwendung der erfassten Daten**
+- **Löschung** (Recht auf Vergessenwerden): In bestimmten Fällen, etwa wenn Ihre personenbezogenen Daten für die Zwecke, für die sie erhoben wurden, nicht mehr erforderlich sind, haben Sie das Recht, von uns zu verlangen, dass wir Ihre Daten löschen. Dieses Recht unterliegt jedoch bestimmten Ausnahmen, beispielsweise wenn die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung notwendig ist.
 
-Wir verwenden die erfassten Daten für verschiedene Zwecke:
+- **Widerspruch**: Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, der Verarbeitung Ihrer personenbezogenen Daten, die auf unseren oder den berechtigten Interessen eines Dritten beruht, jederzeit zu widersprechen. In diesem Fall werden wir die Verarbeitung Ihrer Daten einstellen, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
 
-- um unseren Service bereitzustellen und aufrechtzuerhalten;
-- um Sie über Änderungen an unserem Service zu informieren;
-- um Unterstützung zu bieten;
-- um die Nutzung unseres Dienstes zu überwachen;
-- um technische Probleme zu erkennen, zu verhindern und zu beheben;
-- um unsere Verpflichtungen zu erfüllen und unsere Rechte aus Verträgen durchzusetzen, die Sie mit uns geschlossen haben;
-- um Ihnen Neuigkeiten, Sonderangebote und allgemeine Informationen über andere Waren, Dienstleistungen und Veranstaltungen zukommen zu lassen, die wir anbieten, die ähnlich sind wie diejenigen, die Sie bereits gekauft oder an denen Sie interessiert sind, es sei denn, Sie haben sich gegen den Erhalt solcher Informationen entschieden.
+- **Einschränkung**: Sie haben das Recht, in bestimmten Fällen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen, etwa wenn Sie die Richtigkeit der Daten bestreiten oder der Verarbeitung widersprochen haben und noch eine Prüfung unserer berechtigten Gründe aussteht.
 
-#### **Übertragung von Daten**
+- **Datenübertragbarkeit**: Sie haben das Recht, die personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und diese Daten einem anderen Verantwortlichen ungehindert zu übermitteln, sofern dies technisch machbar ist.
 
-Ihre Informationen, einschließlich personenbezogener Daten, können – und werden – auf Computer außerhalb Ihres Staates, Ihrer Provinz, Ihres Landes oder anderer staatlicher Jurisdiktion, in denen die Datenschutzgesetze von denen Ihrer Jurisdiktion abweichen können, gespeichert und aufbewahrt werden.
+- **Widerruf der Einwilligung**: Soweit die Verarbeitung Ihrer personenbezogenen Daten auf Ihrer Einwilligung beruht, haben Sie das Recht, diese Einwilligung jederzeit zu widerrufen. Der Widerruf berührt nicht die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung.
 
-Ihre Zustimmung zu dieser Datenschutzerklärung gefolgt von Ihrer Übermittlung solcher Informationen stellt Ihre Zustimmung zu einer solchen Übertragung dar.
+Um eines dieser Rechte auszuüben, kontaktieren Sie uns bitte unter den in der Sektion „Kontaktinformationen“ unten angegebenen Daten. Wir werden Ihrer Anfrage innerhalb eines Monats nachkommen, wie es das Gesetz vorsieht. In bestimmten Fällen können wir diese Frist um weitere zwei Monate verlängern; wir werden Sie dann über die Verlängerung und deren Gründe informieren.
 
-Wir werden alle erforderlichen Schritte unternehmen, um sicherzustellen, dass Ihre Daten sicher behandelt und gemäß dieser Datenschutzerklärung behandelt werden und dass keine Übertragung Ihrer personenbezogenen Daten an eine Organisation oder ein Land erfolgt, es sei denn, es sind angemessene Kontrollen vorhanden, einschließlich der Sicherheit Ihrer Daten und anderer personenbezogener Informationen.
+Bitte beachten Sie, dass wir in einigen Fällen Ihre Identität überprüfen müssen, bevor wir Ihrer Anfrage nachkommen. Wir können außerdem eine angemessene Gebühr erheben oder die Erfüllung Ihrer Anfrage verweigern, wenn diese offensichtlich unbegründet, exzessiv oder sich wiederholend ist.
 
-#### **Offenlegung von Daten**
+Sollten Sie mit unserer Antwort nicht zufrieden sein oder der Ansicht sein, dass wir Ihre personenbezogenen Daten unter Verstoß gegen Datenschutzgesetze verarbeiten, haben Sie das Recht, eine Beschwerde bei der Schwedischen Behörde für Datenschutz (Integritetsskyddsmyndigheten) oder einer anderen zuständigen Aufsichtsbehörde einzureichen.
 
-Wir können personenbezogene Informationen an Dritte weitergeben, die Dienstleistungen für uns erbringen, wie z. B. Cloud- und Hosting-Anbieter, Datenanalyse, Zahlungsabwicklung, Informations- und Kommunikationstechnologie und damit verbundene Infrastrukturbereitstellung, E-Mail-Versand, Prüfung und ähnliche Dienstleistungen.
+## 6. Übermittlung personenbezogener Daten
 
-#### **Sicherheit von Daten**
+Wir verpflichten uns, die Sicherheit und den Schutz Ihrer personenbezogenen Daten zu gewährleisten, wenn diese an Dritte oder außerhalb der Europäischen Union (EU) bzw. des Europäischen Wirtschaftsraums (EWR) übermittelt werden.
 
-Die Sicherheit Ihrer Daten ist uns wichtig, aber beachten Sie, dass keine Übertragungsmethode über das Internet oder elektronische Speichermethode 100% sicher ist. Während wir uns bemühen, kommerziell akzeptable Mittel zum Schutz Ihrer personenbezogenen Daten zu nutzen, können wir keine absolute Sicherheit garantieren.
+- **Auftragsverarbeiter**: Wir können vertrauenswürdige Drittanbieter (Auftragsverarbeiter) beauftragen, uns bei der Bereitstellung unserer Dienstleistungen zu unterstützen und personenbezogene Daten in unserem Auftrag zu verarbeiten. Diese Auftragsverarbeiter sind an strenge Auftragsverarbeitungsverträge (AV-Verträge) gebunden, die sie verpflichten:
 
-#### **Dienstanbieter**
+  - Ihre personenbezogenen Daten nur nach unseren dokumentierten Weisungen zu verarbeiten
+  - geeignete technische und organisatorische Maßnahmen zum Schutz Ihrer Daten umzusetzen
+  - uns bei der Erfüllung unserer Pflichten nach dem Datenschutzrecht zu unterstützen
+  - Ihre personenbezogenen Daten nach Abschluss der Dienstleistungen zu löschen oder zurückzugeben
+  - sich Audits und Inspektionen zu unterziehen, um die Einhaltung des AV-Vertrags zu überprüfen
 
-Wir können Drittunternehmen und Einzelpersonen einstellen, um unseren Service zu erleichtern („Dienstanbieter“), um unseren Service in unserem Namen zu erbringen oder uns bei der Analyse zu unterstützen, wie unsere Dienste genutzt werden.
+- **Internationale Übermittlungen**: Bei der Übermittlung Ihrer personenbezogenen Daten außerhalb der EU/EWR stellen wir sicher, dass geeignete Garantien vorhanden sind, um ein angemessenes Schutzniveau gemäß den Anforderungen der DSGVO zu gewährleisten. Diese Garantien können umfassen:
 
-Diese Dritten haben Zugriff auf Ihre personenbezogenen Daten, um bestimmte Aufgaben auf unserer Seite auszuführen. Sie sind verpflichtet, diese Daten weder offenzulegen noch für einen anderen Zweck zu verwenden.
+  - Übermittlung in Länder, für die die Europäische Kommission ein angemessenes Schutzniveau festgestellt hat
+  - Verwendung von Standardvertragsklauseln, die von der Europäischen Kommission genehmigt wurden
+  - Einführung verbindlicher Unternehmensregeln (Binding Corporate Rules, BCR) für konzerninterne Übermittlungen
+  - Einholung Ihrer ausdrücklichen Einwilligung in die Übermittlung, nachdem wir Sie über die möglichen Risiken informiert haben
 
-Wir können Dienstanbieter in Anspruch nehmen, um den Entwicklungsprozess unseres Dienstes zu automatisieren
+- **Offenlegung an Dritte**: Wir können Ihre personenbezogenen Daten in folgenden Fällen an Dritte weitergeben:
 
-##### **Vercel**
+  - Wenn dies gesetzlich vorgeschrieben ist, beispielsweise zur Erfüllung einer gerichtlichen Anordnung oder eines rechtlichen Verfahrens
+  - Zum Schutz unserer Rechte, unseres Eigentums oder unserer Sicherheit oder der Rechte, des Eigentums oder der Sicherheit unserer Nutzer oder der Öffentlichkeit
+  - Im Zusammenhang mit einer Fusion, Übernahme oder dem Verkauf aller oder eines Teils unserer Vermögenswerte
+  - Mit Ihrer ausdrücklichen Zustimmung
 
-Vercel wird von Vercel, Inc. bereitgestellt.
+- **Anonymisierte Daten**: Wir können aggregierte oder anonymisierte Daten, anhand derer Sie nicht persönlich identifiziert werden können, zu Forschungs-, Marketing- oder anderen Zwecken an Dritte weitergeben. Diese Daten gelten nicht als personenbezogene Daten im Sinne der DSGVO.
 
-Vercel ist eine Plattform zum Bereitstellen und Verwalten von Apps.
+## 8. Verwendung von Cookies
 
-Weitere Informationen zu den von Vercel erfassten Daten, deren Zweck und der Art und Weise, wie der Schutz der Daten gewährleistet wird, finden Sie auf der Vercel-Datenschutzrichtlinie-Seite: [https://vercel.com/privacy](https://vercel.com/privacy).
+Wir verwenden Cookies und ähnliche Tracking-Technologien, um Ihre Nutzererfahrung zu verbessern, unsere Dienste zu sichern und die Leistung der Website zu analysieren. Dieser Abschnitt erklärt, wie wir Cookies verwenden und welche Optionen Sie für deren Verwaltung haben.
 
-##### **Microsoft Azure**
+- **Arten von Cookies**: Auf unserer Website verwenden wir die folgenden Cookie-Typen:
 
-Microsoft Azure wird von Microsoft Corporation bereitgestellt.
-
-Microsoft Azure ist eine Cloud-Computing-Plattform und -Infrastruktur, die von Microsoft für die Erstellung, Bereitstellung und Verwaltung von Anwendungen und Diensten über ein globales Netzwerk von von Microsoft verwalteten Rechenzentren erstellt wurde.
-
-Weitere Informationen zu den von Microsoft Azure erfassten Daten, deren Zweck und der Art und Weise, wie der Schutz der Daten gewährleistet wird, finden Sie auf der Microsoft Azure-Datenschutzrichtlinie-Seite: [https://privacy.microsoft.com/en-us/privacystatement](https://privacy.microsoft.com/en-us/privacystatement).
-
-##### **OpenAI**
-
-OpenAI wird von OpenAI, Inc. bereitgestellt.
-
-OpenAI ist ein Forschungsunternehmen für künstliche Intelligenz ohne Gewinnabsicht, das darauf abzielt, die Verwendung allgemeiner künstlicher Intelligenz (AGI) zum Nutzen der Menschheit zu fördern, zu studieren und zu bedienen.
-
-Weitere Informationen zu den von OpenAI erfassten Daten, deren Zweck und der Art und Weise, wie der Schutz der Daten gewährleistet wird, finden Sie auf der OpenAI-Datenschutzrichtlinie-Seite: [https://openai.com/privacy/](https://openai.com/privacy/).
-
-### **Links zu anderen Websites**
-
-Unser Dienst kann Links zu anderen Sites enthalten, die nicht von uns betrieben werden. Wenn Sie auf einen Link einer Drittpartei klicken, werden Sie auf die Site dieser Drittpartei weitergeleitet. Wir empfehlen Ihnen dringend, die Datenschutzrichtlinie jeder Site, die Sie besuchen, zu überprüfen.
-
-Wir haben keine Kontrolle über und übernehmen keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder die Praktiken von Websites oder Diensten Dritter.
-
-## **Ihre Datenschutzrechte nach der EU-Datenschutzgrundverordnung (DSGVO)**
-
-Wenn Sie ein Einwohner der Europäischen Union (EU) und des Europäischen Wirtschaftsraums (EWR) sind, haben Sie bestimmte Datenschutzrechte, die durch die DSGVO geregelt werden.
-
-– Siehe [https://eur-lex.europa.eu/eli/reg/2016/679/oj](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
-
-Wir werden alle zumutbaren Schritte unternehmen, um Ihnen die Korrektur, Berichtigung, Löschung oder Einschränkung der Nutzung Ihrer personenbezogenen Daten zu ermöglichen.
-
-Wenn Sie wissen möchten, welche personenbezogenen Daten wir über Sie gespeichert haben und wenn Sie möchten, dass diese aus unseren Systemen gelöscht werden, senden Sie uns bitte eine E-Mail an [support@maila.ai](mailto:support@maila.ai).
-
-Sie haben das Recht, auf Ihre personenbezogenen Daten zuzugreifen, diese zu aktualisieren oder zu löschen. Bitte beachten Sie, dass wir Sie möglicherweise auffordern, Ihre Identität zu überprüfen, bevor wir auf solche Anfragen reagieren, um die Sicherheit Ihrer personenbezogenen Daten zu schützen.
-
-Sie haben das Recht, sich bei einer Datenschutzbehörde über unsere Erfassung und Nutzung Ihrer personenbezogenen Daten zu beschweren. Weitere Informationen erhalten Sie bei Ihrer örtlichen Datenschutzbehörde im Europäischen Wirtschaftsraum (EWR).
-
-## **Unsere Richtlinie zu „Do Not Track“-Signalen:**
-
-Wir achten auf „Do Not Track“-Signale und verfolgen, pflanzen Cookies oder verwenden Werbung nicht, wenn ein Do Not Track-Browsermechanismus vorhanden ist. „Do Not Track“ ist eine Einstellung, die Sie in Ihrem Webbrowser festlegen können, um Websites mitzuteilen, dass Sie nicht möchten, dass sie verfolgt werden.
-
-- Sie können Do Not Track aktivieren oder deaktivieren, indem Sie die Einstellungen oder Einstellungen Ihres Webbrowsers aufrufen.
-
-## **Ihre Datenschutzrechte nach dem California Consumer Privacy Act (CCPA)**
-
-Wenn Sie ein Bewohner von Kalifornien sind, haben Sie das Recht, über die von uns über Sie gesammelten Daten informiert zu werden, die Löschung Ihrer Daten anzufordern und deren Weitergabe (Verkauf) abzulehnen. Um Ihre Datenschutzrechte auszuüben, können Sie bestimmte Anfragen stellen und uns nach persönlichen Informationen fragen.
-
-Bei Erhalt einer solchen Anfrage werden wir die folgenden Informationen bereitstellen:
-
-- Die Kategorien von personenbezogenen Daten, die wir über Sie gesammelt haben.
-- Die Kategorien von Quellen, aus denen wir Ihre personenbezogenen Daten sammeln.
-- Der Geschäfts- oder gewerbliche Zweck der Sammlung oder des Verkaufs Ihrer personenbezogenen Daten.
-- Die Kategorien von Dritten, mit denen wir personenbezogene Daten teilen.
-- Die spezifischen Elemente personenbezogener Daten, die wir über Sie gesammelt haben.
-- Eine Liste von Kategorien personenbezogener Daten, die wir für einen Geschäftszweck offengelegt haben, zusammen mit der Kategorie jeder anderen Firma, mit der wir sie geteilt haben.
-- Bitte beachten Sie, dass Sie das Recht haben, uns zu bitten, Ihnen diese Informationen höchstens zweimal in einem laufenden Zeitraum von zwölf Monaten zur Verfügung zu stellen. Wenn Sie diese Anfrage stellen, ist die bereitgestellte Information auf die personenbezogenen Daten beschränkt, die wir in den letzten zwölf Monaten über Sie gesammelt haben.
-
-„Löschen Sie Ihre personenbezogenen Daten.“ Wenn Sie diese Anfrage stellen, werden wir die personenbezogenen Daten, die wir in unseren Unterlagen ab dem Zeitpunkt Ihrer Anfrage halten, löschen. Wir werden Dienstleister anweisen, dies ebenfalls zu tun. In einigen Fällen kann die Löschung durch die Anonymisierung der Informationen erfolgen.
-
-Wir verkaufen oder vermieten Ihre personenbezogenen Daten nicht an Dritte zu irgendeinem Zweck. Sie sind der alleinige Eigentümer Ihrer personenbezogenen Daten und können jederzeit Auskunft oder Löschung anfordern.
-
-Bitte beachten Sie, dass wenn Sie uns bitten, Ihre Daten zu löschen oder zu verkaufen, dies Auswirkungen auf Ihre Erfahrung mit uns haben kann und Sie möglicherweise nicht an bestimmten Programmen oder Mitgliederdiensten teilnehmen können, für die die Verwendung Ihrer personenbezogenen Daten erforderlich ist, um zu funktionieren.
-
-Um Ihre oben beschriebenen Datenschutzrechte auszuüben, senden Sie bitte Ihre Anfrage (n) auf eine der folgenden Arten:
-
-- Per E-Mail: [support@maila.ai](mailto:support@maila.ai)
-- Auf unserer Website: maila.ai/de/contact
-
-Ihre oben beschriebenen Datenschutzrechte sind im CCPA, dem California Consumer Privacy Act, geregelt. Um mehr zu erfahren, besuchen Sie die offizielle Website für kalifornische Legislative Information. Das CCPA trat am 01.01.2020 in Kraft.
-
-## **Kinderdatenschutz**
-
-Unsere Dienste sind nicht für Kinder unter 16 Jahren ("Kinder") bestimmt.
-
-Wir sammeln keine personenbezogenen Daten von Kindern unter 16 Jahren. Wenn Sie feststellen, dass ein Kind uns personenbezogene Daten zur Verfügung gestellt hat, wenden Sie sich bitte an uns. Wenn wir feststellen, dass wir ohne Wissen der Eltern personenbezogene Daten von Kindern gesammelt haben, werden wir Maßnahmen ergreifen, um diese Informationen von unseren Servern zu entfernen.
-
-## **Änderungen an dieser Datenschutzerklärung**
-
-Sie werden gebeten, diese Datenschutzerklärung gelegentlich auf Änderungen zu überprüfen. Änderungen an dieser Datenschutzerklärung treten in Kraft, wenn sie auf dieser Seite veröffentlicht werden.
-
-## **Kontaktieren Sie uns**
-
-Wenn Sie Fragen zu dieser Datenschutzerklärung haben, wenden Sie sich bitte an uns:
-
-Per E-Mail: [support@maila.ai](mailto:support@maila.ai).
-
-[Datenschutzerklärung](https://maila.ai/de/legal/privacy-policy)
-
-Letzte Aktualisierung: 25 September 2020
+  - **Unverzichtbare Cookies**: Diese Cookies sind für den Betrieb unserer Website notwendig und ermöglichen es Ihnen, sich auf der Website zu bewegen und ihre Funktionen zu nutzen. Ohne diese Cookies wären bestimmte Funktionen nicht möglich.
+  - **Leistungs-Cookies**: Wir setzen Leistungs-Cookies ein, um zu analysieren, wie Besucher unsere Website nutzen, Fehler zu erkennen und die Leistung sowie die Nutzererfahrung der Website zu verbessern.
+  - **Funktionale Cookies**: Diese Cookies ermöglichen es unserer Website, sich an von Ihnen getroffene Einstellungen zu erinnern, wie Ihre Spracheinstellung oder Anmeldeinformationen, um eine individuellere Erfahrung zu bieten.
+  - **Werbe-Cookies**: Wir können Werbe-Cookies verwenden, um Ihnen zielgerichtete Werbung zu präsentieren, die Ihren Interessen entspricht. Diese Cookies können Ihre Online-Aktivitäten im Laufe der Zeit und auf verschiedenen Websites nachverfolgen.

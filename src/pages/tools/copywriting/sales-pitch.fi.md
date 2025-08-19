@@ -7,10 +7,10 @@ header: "Vaikuta prospekteihisi vakuuttavalla myyntipuheella, jonka on luonut te
 usage: "Käyttääksesi tätä mallia, syötä vain tuotteesi tai palvelusi, kohdeyleisösi ja tärkeimmät myyntipisteet. AI myyntipuheen generaattori luo sitten räätälöidyn, vakuuttavan ja tehokkaan myyntipuheen syötteesi perusteella."
 placeholder: "Tuote: Kodin turvajärjestelmä\nKohdeyleisö: Omakotitalojen omistajat\nAvainmyyntipisteet: Helppo asennus, 24/7 valvonta, älypuhelin integraatio"
 help_hint: "Mikä on tuotteesi tai palvelusi, ja kuka on kohdeyleisösi? Kerro muutama tärkeä myyntivaltti, niin luomme vakuuttavan myyntipuheen kohdeyleisöllesi."
-tags: [Copywriting,Tools,Templates,Sales Pitch,Website copywriting]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Sales Pitch, Website copywriting]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-18"
 slug: /fi/tools/copywriting/sales-pitch
 path: /fi/tools/copywriting/sales-pitch
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1064"
 product_type: "1064"
 ---
+
 # AI-myyntipuhegeneraattori
 
 Laadi kohdeyleisösi tarpeisiin sopivia, vakuuttavia ja tehokkaita myyntipuheita edistyksellisen tekoälyn avulla. Säästä aikaa ja vaivaa generoimalla räätälöityjä myyntipuheita syöttösi perusteella, jotta voit keskittyä itse kaupan tekoon.
@@ -49,6 +50,7 @@ Laadi kohdeyleisösi tarpeisiin sopivia, vakuuttavia ja tehokkaita myyntipuheita
 ## Käyttötapaukset
 
 AI Sales Pitch Generator on täydellinen:
+
 - Aloittaville yrityksille, jotka haluavat esitellä innovatiivisia tuotteitaan tai palveluitaan
 - Myyntiammattilaisille, jotka tarvitsevat vakuuttavaa myyntiskriptiä
 - Markkinoijille, jotka haluavat luoda vakuuttavia sähköpostikampanjoita tai laskeutumissivuja
@@ -76,7 +78,7 @@ AI-myyntipuhegeneraattori on monipuolinen ja voi luoda räätälöityjä myyntip
 
 "AI Sales Pitch Generator on ollut pelin vaihtaja yrityksellemme, joka on mahdollistanut meille vakuuttavien myyntipuheiden luomisen murto-osassa ajasta. Olemme nähneet huomattavan lisääntymisen konversioissa käyttäessämme tätä työkalua." - Jane, markkinointijohtaja
 
-*"Olen myyntiammattilainen ja etsin jatkuvasti työkaluja, jotka voivat auttaa minua saamaan enemmän kauppoja. AI Sales Pitch Generator on ollut ratkaisevan tärkeä tekijä vakuuttavien myyntiviestien luomisessa, jotka resonoi prospektiemme kanssa." - Tom, myyntijohtaja*
+_"Olen myyntiammattilainen ja etsin jatkuvasti työkaluja, jotka voivat auttaa minua saamaan enemmän kauppoja. AI Sales Pitch Generator on ollut ratkaisevan tärkeä tekijä vakuuttavien myyntiviestien luomisessa, jotka resonoi prospektiemme kanssa." - Tom, myyntijohtaja_
 
 ## Esimerkki
 

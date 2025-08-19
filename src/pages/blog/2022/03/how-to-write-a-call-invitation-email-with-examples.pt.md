@@ -4,7 +4,7 @@ title: "Como escrever um e-mail de convite de chamada com exemplos"
 description: "Um e-mail de convite é uma ótima maneira de marcar uma reunião ou consulta com um potencial cliente ou cliente."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /pt/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /pt/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Telefonar para o e-mail de convite.
 
+# Telefonar para o e-mail de convite.
 
 Um e-mail de convite de chamada é um e-mail que é enviado a um potencial cliente ou cliente para convidá-los para uma chamada telefónica. Este tipo de e-mail é normalmente utilizado para marcar uma reunião ou consulta, e normalmente inclui a data, hora e objetivo da chamada.
 
@@ -44,7 +44,6 @@ Para terminar seu e-mail, você precisará agradecer à pessoa pelo seu tempo e 
 
 - Para terminar seu e-mail, você deve agradecer à pessoa pelo seu tempo e adicionar suas informações de contato.
 
-
 ## Estrutura Básica
 
 - Apresente-se e explique porque a pessoa que você está convidando deve se juntar à sua chamada.
@@ -58,7 +57,6 @@ Para terminar seu e-mail, você precisará agradecer à pessoa pelo seu tempo e 
 - Agradeça à pessoa pelo seu tempo.
 
 - Adicione as suas informações de contacto.
-
 
 ## Dicas
 
@@ -104,11 +102,11 @@ Sinceramente,
 
 ---
 
-Caro ____,
+Caro \_\_\_\_,
 
 É com grande prazer que o convidamos para o nosso próximo evento.
 
-O evento será realizado em _____ em _____.
+O evento será realizado em **\_** em **\_**.
 
 Esperamos que você possa se juntar a nós para o que promete ser uma ocasião muito memorável.
 

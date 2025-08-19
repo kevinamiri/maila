@@ -1,7 +1,7 @@
 ---
 id: "07"
 title: "Integritetspolicy"
-description: "Denna sekretesspolicy reglerar det sätt på vilket vi samlar in, använder, underhåller och avslöjar information som samlas in från våra användare."
+description: "Denna integritetspolicy reglerar hur vi samlar in, använder, upprätthåller och röjer information som samlats in från våra användare"
 templateKey: about
 lang: sv
 image: ../../img/vpn.png
@@ -9,205 +9,140 @@ date: "2020-10-10"
 path: /sv/legal/privacy-policy
 slug: /sv/legal/privacy-policy
 ---
+
+# Integritetspolicy
+
 ```toc
+
 ```
-## SEKRETESSPOLICY
 
-Datum för ikraftträdande: 25 september 2021
+## 1. Inledning
 
-#### **Introduktion**
+På Maila AI är vi fast beslutna att skydda din integritet och värna om dina personuppgifter. Denna integritetspolicy förklarar hur vi samlar in, använder, lämnar ut och skyddar dina uppgifter när du interagerar med vår webbplats, våra AI-programvaror och tjänster (“Tjänster”).
 
-maila.ai ("oss", "vi" eller "vår") driver maila.ai (nedan kallad "tjänsten").
+- Omfattning: Denna policy gäller för alla kunder och besökare på Maila.ai. Genom att använda våra tjänster eller besöka vår webbplats godkänner du villkoren som anges i denna integritetspolicy.
 
-Vår integritetspolicy reglerar ditt besök på maila.ai och förklarar hur vi samlar in, skyddar och avslöjar information som uppstår genom din användning av vår tjänst.
+- Definitioner:
 
-Läs denna integritetspolicy noggrant För att få en tydlig förståelse för hur vi samlar in, använder, skyddar eller på annat sätt hanterar din personliga information.
+  - “Personuppgifter”: Alla uppgifter som avser en identifierad eller identifierbar fysisk person, såsom namn, e-postadress eller IP-adress.
+  - “Behandling”: Alla åtgärder som utförs på personuppgifter, såsom insamling, registrering, lagring, ändring, hämtning, användning, utlämning eller radering.
 
-Våra användarvillkor ("villkor") reglerar all användning av vår tjänst och utgör tillsammans med integritetspolicyn ditt avtal med oss ("avtal").
+- Efterlevnad: Maila.ai följer fullt ut EU:s dataskyddsförordning (GDPR) och den svenska dataskyddslagen. Vi tillämpar de högsta standarderna för dataskydd och integritet för att säkerställa säkerhet och konfidentialitet för våra användares personuppgifter.
 
-Du godkänner vår integritetspolicy genom att använda vår webbplats.
+## 2. Vår roll som personuppgiftsansvarig
 
+- Maila.ai agerar som personuppgiftsansvarig, vilket innebär att vi är ansvariga för att fastställa ändamålen och medlen för behandling av personuppgifter. Vi samlar in och behandlar uppgifter för att tillhandahålla våra AI-genererade röst-, bild- och texttjänster till våra användare.
 
-#### **Definitioner**
+- Som personuppgiftsansvarig åtar vi oss att:
 
-SERVICE hänvisar till webbplatsen maila.ai som drivs av support Levin.
+  - vara transparenta med våra rutiner för insamling och behandling av uppgifter
+  - samla in och behandla personuppgifter lagligt och rättvist
+  - säkerställa att de personuppgifter vi behandlar är korrekta och säkra
+  - respektera registrerades rättigheter, såsom rätten att få tillgång till, rätta eller radera sina personuppgifter
+  - samarbeta med tillsynsmyndigheter, såsom Integritetsskyddsmyndigheten (IMY), vid utredningar eller begäran
 
-PERSONUPPGIFTER avser uppgifter om en levande individ som kan identifieras utifrån dessa uppgifter (eller utifrån dessa och annan information som antingen finns i vår ägo eller som sannolikt kommer i vår ägo).
+- Vi har utsett ett dataskyddsombud (DPO) som övervakar våra rutiner för dataskydd och säkerställer att vi följer gällande lagstiftning. Vårt dataskyddsombud nås via dpo@maila.ai.
 
-ANVÄNDARUPPGIFTER är uppgifter som samlas in automatiskt och som antingen genereras av användningen av tjänsten eller av själva infrastrukturen (t.ex. varaktigheten av ett sidbesök).
+- Vi granskar och uppdaterar regelbundet våra policyer och rutiner för dataskydd för att säkerställa att vi uppfyller våra skyldigheter som personuppgiftsansvarig och erbjuder högsta möjliga skydd för våra användares personuppgifter.
 
-COOKIES är små filer som lagras på din enhet (dator eller mobil enhet).
+## 3. Vår behandling av personuppgifter
 
-DATAKONTROLLER är en fysisk eller juridisk person som (antingen ensam eller gemensamt eller i samverkan med andra personer) bestämmer i vilket syfte och på vilket sätt personuppgifter behandlas eller ska behandlas. När det gäller denna webbplats är ägaren den personuppgiftsansvarige.
+- Laglig grund för behandling: Vi behandlar personuppgifter baserat på följande rättsliga grunder:
 
-DATABERÄTTARE (ELLER TJÄNSTLEVERANTÖRER): varje fysisk eller juridisk person som behandlar uppgifterna för den personuppgiftsansvariges räkning. Vi kan använda oss av olika tjänsteleverantörer för att behandla dina uppgifter på ett mer effektivt sätt.
+  - Samtycke: När du ger uttryckligt samtycke till att vi behandlar dina personuppgifter för ett specifikt ändamål, till exempel när du anmäler dig till vårt nyhetsbrev.
+  - Avtalsförpliktelse: När behandling är nödvändig för att uppfylla våra avtalsenliga skyldigheter gentemot dig, såsom att tillhandahålla våra tjänster.
+  - Berättigat intresse: När vi har ett berättigat affärsintresse av att behandla dina personuppgifter, till exempel för att förbättra våra tjänster eller upptäcka och förhindra bedrägerier.
+  - Rättslig förpliktelse: När behandling krävs för att uppfylla tillämpliga lagar och förordningar, såsom att upprätthålla bokföringsregister.
 
-UPPDATAUPPGIFTER är varje levande individ som är föremål för personuppgifter.
+- Lagring av uppgifter: Vi sparar dina personuppgifter endast så länge det är nödvändigt för att uppfylla de ändamål för vilka de samlades in eller så länge som lagen kräver. De specifika lagringstiderna kan variera beroende på datatyp och ändamål. När lagringstiden har löpt ut raderar vi dina personuppgifter på ett säkert sätt eller anonymiserar dem.
 
-ANVÄNDAREN är den person som använder vår tjänst. Användaren motsvarar den registrerade som är föremål för personuppgifter.
+- Datasnålhet: Vi följer principen om dataminimering, vilket innebär att vi endast samlar in och behandlar de personuppgifter som är nödvändiga för de angivna ändamålen. Vi granskar regelbundet våra rutiner för datainsamling för att säkerställa att vi inte samlar in mer data än vad som krävs.
 
-## **Informationsinsamling och användning**
+- Noggrannhet: Vi vidtar rimliga åtgärder för att säkerställa att de personuppgifter vi behandlar är korrekta, fullständiga och uppdaterade. Vi uppmuntrar dig att hålla dina personuppgifter aktuella och att underrätta oss om eventuella ändringar eller felaktigheter.
 
-Vi samlar in flera olika typer av information för olika ändamål för att tillhandahålla och förbättra vår tjänst till dig.
+- Säkerhet: Vi genomför lämpliga tekniska och organisatoriska åtgärder för att skydda dina personuppgifter från obehörig åtkomst, ändring, utlämning eller förstörelse. Dessa åtgärder omfattar kryptering, åtkomstkontroller och regelbundna säkerhetsgranskningar. Vi ser också till att våra anställda och tjänsteleverantörer med åtkomst till dina personuppgifter är bundna av sekretessåtaganden.
 
-### **Typer av insamlade uppgifter**
+- Konsekvensbedömningar avseende dataskydd (DPIA): När behandling sannolikt kan resultera i en hög risk för dina rättigheter och friheter genomför vi en DPIA för att identifiera och hantera potentiella risker. Detta hjälper oss att säkerställa att våra behandlingar följer dataskyddslagarna och att dina rättigheter är tillräckligt skyddade.
 
-#### **Personuppgifter**
+- Anmälan av personuppgiftsincident: Vid en incident som sannolikt kan leda till en hög risk för dina rättigheter och friheter kommer vi, i enlighet med gällande lag, utan onödigt dröjsmål att underrätta dig och den relevanta tillsynsmyndigheten.
 
-När du använder vår tjänst kan vi be dig att ge oss viss personligt identifierbar information som kan användas för att kontakta eller identifiera dig ("Personuppgifter"). Personligt identifierbar information kan inkludera, men är inte begränsad till:
+## 4. Ändamål för användning av personuppgifter
 
-   - E-postadress
-   - För- och efternamn
+På Maila.ai samlar vi in och använder dina personuppgifter för följande ändamål:
 
-Vi kan använda dina personuppgifter för att kontakta dig via nyhetsbrev, marknadsföringsmaterial och annan information som kan vara av intresse för dig. Du kan välja att inte längre ta emot någon eller alla dessa meddelanden från oss genom att använda länken "avregistrering" eller skicka e-post till [support@maila.ai](mailto:support@maila.ai).
+- **Tillhandahållande av tjänster**: Vi använder dina personuppgifter för att leverera våra tjänster. Detta innefattar att behandla dina indata, generera utdata och förse dig med resultaten av våra AI-algoritmer.
 
-#### **Användningsuppgifter**
+- **Användarautentisering**: För att säkerställa säker åtkomst till våra tjänster använder vi dina personuppgifter för att verifiera din identitet när du loggar in på ditt konto. Detta kan innebära behandling av din e-postadress, ditt lösenord eller annan autentiseringsinformation.
 
-Vi kan också samla in information som din webbläsare skickar när du besöker vår tjänst eller när du får tillgång till "tjänsten" med eller via en mobil enhet ("användningsdata").
+- **Kundservice och support**: När du kontaktar oss med frågor eller för att få hjälp använder vi dina personuppgifter för att besvara dina meddelanden och ge nödvändig support. Det kan inkludera behandling av ditt namn, din e-postadress och innehållet i din kommunikation med oss.
 
-Dessa användningsdata kan innehålla information som din dators Internet Protocol-adress (t.ex. IP-adress), webbläsartyp, webbläsarversion, de sidor i vår tjänst som du besöker, tid och datum för ditt besök, den tid som spenderas på dessa sidor, unika enhetsidentifierare och andra diagnostiska data.
+- **Tjänsteuppdateringar och nyhetsbrev**: Vi kan använda din e-postadress för att skicka viktiga uppdateringar om våra tjänster, såsom nya funktioner, förbättringar eller ändringar i våra villkor och policyer. Vi kan också skicka nyhetsbrev med relevant information om våra AI-teknologier och branschnyheter. Du kan när som helst avanmäla dig från dessa utskick genom att klicka på "Avsluta prenumeration"-länken i e-postmeddelandet eller kontakta oss direkt.
 
-När du använder Tjänsten med en mobil enhet kan denna Användningsdata innehålla information som t.ex. vilken typ av mobil enhet du använder, din mobila enhets unika ID, din mobila enhets IP-adress, ditt mobila operativsystem, vilken typ av mobil webbläsare du använder, unika enhetsidentifierare och andra diagnostiska data.
+- **Bokföring**: Enligt lag använder vi dina personuppgifter för att upprätthålla korrekta ekonomiska register över transaktioner relaterade till våra tjänster. Det kan innefatta behandling av ditt namn, dina kontaktuppgifter och betalningsinformation för fakturering och redovisning.
 
-#### **Cookies Data**
+Vi kommer endast att behandla dina personuppgifter för de ändamål som anges ovan eller för andra ändamål som är förenliga med dessa. Om vi behöver använda dina personuppgifter för ett annat, icke relaterat ändamål, kommer vi att underrätta dig och inhämta ditt samtycke, om inte annat krävs eller tillåts enligt lag.
 
-Exempel på cookies som vi kan använda:
+Vi kommer inte att sälja, hyra ut eller byta dina personuppgifter med tredje part för deras marknadsföringsändamål utan ditt uttryckliga samtycke. Vi kan dela dina personuppgifter med betrodda tjänsteleverantörer som hjälper oss att tillhandahålla våra tjänster, men endast i den utsträckning som är nödvändig och under strikta sekretessåtaganden.
 
-**Session Cookies:** Vi använder Session Cookies för att driva vår tjänst.
+## 5. Dina rättigheter
 
-**Preferenscookies:** Vi använder preferenscookies för att komma ihåg dina preferenser och olika inställningar.
+På Maila.ai respekterar vi dina rättigheter som registrerad enligt GDPR och den svenska dataskyddslagen. Du har följande rättigheter avseende dina personuppgifter:
 
-**Säkerhetscookies:** Vi använder säkerhetscookies för säkerhetsändamål.
+- **Tillgång**: Du har rätt att begära tillgång till de personuppgifter som vi behandlar om dig. Detta innefattar rätten att få bekräftelse på om vi behandlar dina personuppgifter och, i så fall, att erhålla en kopia av dessa uppgifter tillsammans med viss information om behandlingen.
 
-#### **Användning av insamlade uppgifter**
+- **Rättning**: Om du anser att de personuppgifter vi har om dig är felaktiga eller ofullständiga har du rätt att begära att vi rättar eller kompletterar dem.
 
-Vi använder de insamlade uppgifterna för olika ändamål:
+- **Radering (rätten att bli glömd)**: I vissa situationer, till exempel när dina personuppgifter inte längre är nödvändiga för de ändamål för vilka de samlades in, har du rätt att begära att vi raderar dina uppgifter. Denna rätt är dock förenad med vissa undantag, till exempel när behandlingen är nödvändig för att uppfylla en rättslig förpliktelse.
 
-- För att tillhandahålla och underhålla vår tjänst;
-- För att meddela dig om ändringar i vår tjänst;
-- för att tillhandahålla support;
-- för att övervaka användningen av vår tjänst;
-- För att upptäcka, förebygga och åtgärda tekniska problem;
-- För att fullgöra våra skyldigheter och hävda våra rättigheter som följer av avtal som ingåtts mellan dig och oss;
-- Att ge dig nyheter, specialerbjudanden och allmän information om andra varor, tjänster och evenemang som vi erbjuder och som liknar dem som du redan har köpt eller visat intresse för, såvida du inte har valt att inte få sådan information.
+- **Invändning**: Du har rätt att invända mot behandlingen av dina personuppgifter när behandlingen grundar sig på våra berättigade intressen (eller en tredje parts berättigade intressen). I sådana fall upphör vi med behandlingen av dina uppgifter om inte tvingande berättigade skäl föreligger för fortsatt behandling eller om behandlingen är nödvändig för att fastställa, göra gällande eller försvara rättsliga anspråk.
 
-#### **Överföring av uppgifter**
+- **Begränsning**: Du har rätt att begära att vi begränsar behandlingen av dina personuppgifter i vissa situationer, till exempel när du bestrider riktigheten i uppgifterna eller när du har invänt mot behandlingen i avvaktan på att våra berättigade skäl har verifierats.
 
-Din information, inklusive personuppgifter, kan överföras till - och underhållas på - datorer som finns utanför din stat, provins, land eller annan statlig jurisdiktion där dataskyddslagarna kan skilja sig från dem i din jurisdiktion.
+- **Dataportabilitet**: Du har rätt att få ut de personuppgifter som du har lämnat till oss i ett strukturerat, vanligt förekommande och maskinläsbart format, samt att överföra dessa uppgifter till en annan personuppgiftsansvarig utan hinder, där det är tekniskt möjligt.
 
-Ditt samtycke till denna sekretesspolicy följt av att du skickar in sådan information utgör ditt samtycke till en sådan överföring.
+- **Återkalla samtycke**: När behandlingen av dina personuppgifter baseras på ditt samtycke har du rätt att när som helst återkalla det samtycket. Återkallelsen påverkar inte lagligheten i behandlingen som skett baserat på samtycket innan det återkallades.
 
-Vi kommer att vidta alla nödvändiga åtgärder för att säkerställa att dina uppgifter behandlas säkert och i enlighet med denna sekretesspolicy och att ingen överföring av dina personuppgifter till en organisation eller ett land kommer att äga rum om det inte finns adekvata kontroller på plats, inklusive säkerheten för dina uppgifter och annan personlig information.
+För att utöva någon av dessa rättigheter, vänligen kontakta oss med hjälp av uppgifterna i avsnittet “Kontaktinformation” nedan. Vi kommer att svara på din förfrågan inom en månad, enligt lag. I vissa fall kan vi förlänga denna period med ytterligare två månader; i så fall kommer vi att informera dig om förlängningen och skälen till den.
 
-#### **Offentliggörande av uppgifter**
+Observera att vi i vissa fall kan behöva verifiera din identitet innan vi behandlar din förfrågan. Vi kan också ta ut en rimlig avgift eller vägra att vidta åtgärder om din förfrågan är uppenbart ogrundad, överdriven eller upprepande.
 
-Vi kan komma att lämna ut personuppgifter till tredje part som tillhandahåller tjänster till oss, till exempel moln- och hostingleverantörer, dataanalys, betalningshantering, tillhandahållande av informationsteknik och relaterad infrastruktur, e-postleverans, revision och liknande tjänster.
+Om du inte är nöjd med vårt svar på din förfrågan eller anser att vi behandlar dina personuppgifter i strid med dataskyddslagstiftningen, har du rätt att lämna in ett klagomål till Integritetsskyddsmyndigheten eller annan behörig tillsynsmyndighet.
 
-#### **Säkerhet av uppgifter**
+## 6. Överföring av personuppgifter
 
-Säkerheten för dina uppgifter är viktig för oss, men kom ihåg att ingen överföringsmetod över Internet eller metod för elektronisk lagring är 100 % säker. Även om vi strävar efter att använda kommersiellt acceptabla metoder för att skydda dina personuppgifter kan vi inte garantera absolut säkerhet.
+Vi är måna om att säkerställa säkerheten och integriteten för dina personuppgifter när de överförs till tredje part eller utanför Europeiska unionen (EU) eller Europeiska ekonomiska samarbetsområdet (EES).
 
-#### **Tjänsteleverantörer**
+- **Personuppgiftsbiträden**: Vi kan anlita betrodda tredjepartsleverantörer (personuppgiftsbiträden) för att hjälpa oss att leverera våra tjänster och behandla dina personuppgifter för vår räkning. Dessa biträden är bundna av strikta personuppgiftsbiträdesavtal (DPA) som kräver att de:
 
-Vi kan anlita tredjepartsföretag och enskilda personer för att underlätta vår tjänst ("tjänsteleverantörer"), tillhandahålla tjänsten för vår räkning eller hjälpa oss att analysera hur vår tjänst används.
+  - behandlar dina personuppgifter endast enligt våra dokumenterade instruktioner
+  - inför lämpliga tekniska och organisatoriska åtgärder för att skydda dina uppgifter
+  - hjälper oss att uppfylla våra skyldigheter enligt dataskyddslagstiftningen
+  - raderar eller återlämnar dina personuppgifter när tjänsterna är slutförda
+  - underkastar sig revisioner och inspektioner för att verifiera efterlevnaden av DPA
 
-Dessa tredje parter har tillgång till dina personuppgifter för att utföra specificerade uppgifter för vår räkning. De är skyldiga att varken avslöja eller använda uppgifterna i något annat syfte.
+- **Internationella överföringar**: När vi överför dina personuppgifter utanför EU/EES säkerställer vi att lämpliga skyddsåtgärder finns på plats för att ge en adekvat skyddsnivå i enlighet med GDPR-kraven. Dessa åtgärder kan inkludera:
 
-Vi kan använda tredjepartsleverantörer för att automatisera utvecklingsprocessen för vår tjänst.
+  - överföring av uppgifter till länder som Europakommissionen har ansett erbjuda en adekvat skyddsnivå
+  - användning av standardavtalsklausuler godkända av Europakommissionen
+  - införande av bindande företagsbestämmelser (BCR) för överföringar inom koncernen
+  - att inhämta ditt uttryckliga samtycke till överföringen, efter att ha informerat dig om de möjliga riskerna
 
-##### **Vercel**.
+- **Utlämnande till tredje part**: Vi kan lämna ut dina personuppgifter till tredje part i följande situationer:
 
-Vercel tillhandahålls av Vercel, Inc.
+  - När det krävs enligt lag, till exempel för att följa en domstolsorder eller rättslig process
+  - För att skydda våra rättigheter, vår egendom eller säkerhet, eller våra användares eller allmänhetens säkerhet
+  - I samband med en fusion, ett förvärv eller en försäljning av hela eller delar av våra tillgångar
+  - Med ditt uttryckliga samtycke
 
-Vercel är en plattform för att distribuera och hantera appar.
+- **Anonymiserade uppgifter**: Vi kan dela aggregerade eller anonymiserade uppgifter som inte identifierar dig personligen med tredje part för forskning, marknadsföring eller andra ändamål. Dessa uppgifter betraktas inte som personuppgifter enligt GDPR.
 
-För mer information om vilka uppgifter Vercel samlar in och i vilket syfte samt hur skyddet av uppgifterna säkerställs, besök sidan Vercel sekretesspolicy: [https://vercel.com/privacy](https://vercel.com/privacy).
+## 8. Användning av cookies
 
-##### **Microsoft Azure**
+Vi använder cookies och liknande spårningstekniker för att förbättra din användarupplevelse, säkra våra tjänster och analysera webbplatsens prestanda. Detta avsnitt förklarar hur vi använder cookies och dina alternativ för att hantera dem.
 
-Microsoft Azure tillhandahålls av Microsoft Corporation.
+- **Typer av cookies**: Vi använder följande typer av cookies på vår webbplats:
 
-Microsoft Azure är en molndataplattform och infrastruktur, skapad av Microsoft, för att bygga, distribuera och hantera applikationer och tjänster genom ett globalt nätverk av datacenter som förvaltas av Microsoft.
-
-För mer information om vilka uppgifter Microsoft Azure samlar in i vilket syfte och hur skyddet av uppgifterna säkerställs, besök sidan Microsoft Azures sekretesspolicy: [https://privacy.microsoft.com/en-us/privacystatement](https://privacy.microsoft.com/en-us/privacystatement).
-
-##### **OpenAI**
-
-OpenAI tillhandahålls av OpenAI, Inc.
-
-OpenAI är ett icke vinstdrivande AI-forskningsföretag som syftar till att främja, studera och tjäna användningen av artificiell allmän intelligens (AGI) för att gynna mänskligheten.
-
-För mer information om vilka uppgifter OpenAI samlar in i vilket syfte och hur skyddet av uppgifterna säkerställs, besök OpenAI:s sida om sekretesspolicy: [https://openai.com/privacy/](https://openai.com/privacy/).
-
-#### **Länkar till andra webbplatser**
-
-Vår tjänst kan innehålla länkar till andra webbplatser som inte drivs av oss. Om du klickar på en länk från en tredje part kommer du att hänvisas till den tredje partens webbplats. Vi rekommenderar starkt att du granskar sekretesspolicyn för varje webbplats du besöker.
-
-Vi har ingen kontroll över och tar inget ansvar för innehållet, sekretesspolicyn eller praxis på tredje parts webbplatser eller tjänster.
-
-## **Dina dataskyddsrättigheter enligt den allmänna dataskyddsförordningen (GDPR)**
-
-Om du är bosatt i Europeiska unionen (EU) och Europeiska ekonomiska samarbetsområdet (EES) har du vissa dataskyddsrättigheter som omfattas av GDPR.
-
-- Se [https://eur-lex.europa.eu/eli/reg/2016/679/oj](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
-
-Vi kommer att vidta alla rimliga åtgärder för att du ska kunna korrigera, ändra, radera eller begränsa användningen av dina personuppgifter.
-
-Om du vill få information om vilka personuppgifter vi har om dig och om du vill att de ska tas bort från våra system, vänligen skicka ett e-postmeddelande till oss på [support@maila.ai](mailto:support@maila.ai).
-
-Du har rätt att få tillgång till, uppdatera eller radera den information som vi har lagrat om dig. Observera att vi kan be dig att verifiera din identitet innan vi svarar på sådana förfrågningar för att skydda säkerheten för dina personuppgifter.
-
-Du har rätt att klaga till en dataskyddsmyndighet om vår insamling och användning av dina personuppgifter. För mer information kan du kontakta din lokala dataskyddsmyndighet inom Europeiska ekonomiska samarbetsområdet (EES).
-
-## **Vår policy för "Do Not Track"-signaler:**
-
-Vi respekterar "Do Not Track"-signaler och spårar inte, placerar inte cookies och använder inte reklam när en "Do Not Track"-mekanism finns i webbläsaren. "Do Not Track" är en inställning som du kan ställa in i din webbläsare för att informera webbplatser om att du inte vill bli spårad.
-
-- Du kan aktivera eller inaktivera Do Not Track genom att besöka inställningar eller inställningar i din webbläsare.
-
-**Dina dataskyddsrättigheter enligt California Consumer Privacy Act (CCPA)**
-
-Om du är bosatt i Kalifornien har du rätt att få information om vilka uppgifter vi samlar in om dig, be att få radera dina uppgifter och att inte sälja (dela) dem. För att utöva dina dataskyddsrättigheter kan du göra vissa förfrågningar och fråga oss om personuppgifter.
-
-När vi tar emot en sådan begäran kommer vi att tillhandahålla följande information:
-
-- De kategorier av personuppgifter som vi har samlat in om dig.
-- De kategorier av källor från vilka vi samlar in dina personuppgifter.
-- Det affärsmässiga eller kommersiella syftet med att samla in eller sälja dina personuppgifter.
-- De kategorier av tredje parter som vi delar personuppgifter med.
-- De specifika uppgifter om personuppgifter som vi har samlat in om dig.
-- En förteckning över kategorier av personuppgifter som vi har lämnat ut i ett affärssyfte, tillsammans med kategorin för alla andra företag som vi har delat dem med.
-- Observera att du har rätt att be oss att ge dig denna information högst två gånger under en rullande tolvmånadersperiod. När du gör denna begäran kommer den information som tillhandahålls att begränsas till den personliga information som vi har samlat in om dig under de föregående tolv månaderna.
-
-"För att radera dina personuppgifter". Om du gör denna begäran kommer vi att radera de personuppgifter som vi har om dig i våra register från och med dagen för din begäran. Vi kommer att beordra eventuella tjänsteleverantörer att göra detsamma. I vissa fall kan radering ske genom avidentifiering av informationen.
-
-Vi varken säljer eller hyr ut dina personuppgifter till tredje part i något syfte. Du är den enda ägaren av dina personuppgifter och kan när som helst begära utlämnande eller radering.
-
-Observera att om du ber oss att radera eller sluta sälja dina uppgifter kan det påverka din upplevelse hos oss, och du kanske inte kan delta i vissa program eller medlemstjänster som kräver användning av dina personuppgifter för att fungera.
-
-För att utöva dina rättigheter till dataskydd i Kalifornien som beskrivs ovan, vänligen skicka din(a) begäran(ar) på något av följande sätt:
-
-- Med e-post: [support@maila.ai](mailto:support@maila.ai)
-- Genom att besöka vår webbplats: maila.ai/contact
-
-Dina dataskyddsrättigheter, som beskrivs ovan, omfattas av CCPA (California Consumer Privacy Act). Om du vill veta mer kan du besöka den officiella webbplatsen California Legislative Information. CCPA trädde i kraft den 01/01/2020.
-
-## **Barns integritet**
-
-Våra tjänster är inte avsedda att användas av barn under 16 år ("barn").
-
-Vi samlar inte medvetet in personligt identifierbar information om barn under 16 år. Om du får kännedom om att ett barn har lämnat personuppgifter till oss, vänligen kontakta oss. Om vi upptäcker att vi omedvetet har samlat in personuppgifter från barn utan föräldrarnas samtycke kommer vi att vidta åtgärder för att ta bort informationen från våra servrar.
-
-**Ändringar av denna sekretesspolicy**
-
-Du rekommenderas att regelbundet granska denna sekretesspolicy för att se om den har ändrats. Ändringar av denna integritetspolicy träder i kraft när de publiceras på denna sida.
-
-## **Kontakta oss**
-
-Om du har några frågor om denna sekretesspolicy kan du kontakta oss:
-
-Med e-post: [support@maila.ai](mailto:support@maila.ai).
-
-[Integritetspolicy](https://maila.ai/en/privacy-policy)
-
-Senast uppdaterad: 25 september 2020
+  - **Nödvändiga cookies**: Dessa cookies är nödvändiga för webbplatsens drift och gör det möjligt för dig att navigera och använda dess funktioner. Utan dessa cookies skulle vissa funktioner inte vara möjliga.
+  - **Prestandacookies**: Vi använder prestandacookies för att analysera hur besökare använder vår webbplats, upptäcka fel och förbättra webbplatsens prestanda och användarupplevelse.
+  - **Funktionscookies**: Dessa cookies gör att vår webbplats kan komma ihåg val du gör, såsom ditt språkval eller inloggningsuppgifter, för att ge en mer personlig upplevelse.
+  - **Annonscookies**: Vi kan använda annonscookies för att leverera riktade annonser som är relevanta för dina intressen. Dessa cookies kan spåra din onlineaktivitet över tid och över olika webbplatser.

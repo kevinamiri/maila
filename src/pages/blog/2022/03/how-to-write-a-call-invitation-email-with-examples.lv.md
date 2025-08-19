@@ -4,7 +4,7 @@ title: "Kā uzrakstīt uzaicinājuma e-pastu ar piemēriem"
 description: "Zvanu uzaicinājums pa e-pastu ir lielisks veids, kā sarunāt tikšanos vai konsultāciju ar potenciālo klientu vai klientu."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /lv/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /lv/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Zvanu ielūguma e-pasts.
 
+# Zvanu ielūguma e-pasts.
 
 Zvana uzaicinājuma e-pasts ir e-pasts, kas tiek nosūtīts potenciālajam klientam vai klientam, lai uzaicinātu viņu uz telefona zvanu. Šāda veida e-pasta vēstuli parasti izmanto, lai norunātu tikšanos vai konsultāciju, un tajā parasti ir norādīts zvana datums, laiks un mērķis.
 
@@ -44,7 +44,6 @@ Lai pabeigtu e-pasta vēstuli, jums būs jāpateicas personai par veltīto laiku
 
 - E-pasta beigās pateicieties personai par veltīto laiku un pievienojiet savu kontaktinformāciju.
 
-
 ## Pamatstruktūra
 
 - Iepazīstiniet ar sevi un paskaidrojiet, kāpēc personai, kuru aicināt, vajadzētu pievienoties jūsu zvanam.
@@ -58,7 +57,6 @@ Lai pabeigtu e-pasta vēstuli, jums būs jāpateicas personai par veltīto laiku
 - Pateicieties cilvēkam par veltīto laiku.
 
 - Pievienojiet savu kontaktinformāciju.
-
 
 ## Tips
 
@@ -104,11 +102,11 @@ Ar cieņu,
 
 ---
 
-Dārgais ____,
+Dārgais \_\_\_\_,
 
 Mums ir liels prieks aicināt jūs uz mūsu gaidāmo pasākumu.
 
-Pasākums notiks _____ vietnē _____.
+Pasākums notiks **\_** vietnē **\_**.
 
 Mēs ceram, ka jūs varēsiet mums pievienoties, lai piedalītos šajā pasākumā, kas solās būt ļoti neaizmirstams.
 

@@ -4,7 +4,7 @@ title: "Hvordan man skriver en e-mail med eksempler på en invitation til at rin
 description: "En e-mail med en invitation til at ringe op er en god måde at arrangere et møde eller en konsultation med en potentiel kunde eller klient på."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /da/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /da/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,11 +13,12 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
+
 ```toc
+
 ```
 
 # Indkaldelse af invitation via e-mail.
-
 
 En e-mail med invitation til opkald er en e-mail, der sendes til en potentiel kunde eller klient for at invitere dem til et telefonopkald. Denne type e-mail bruges typisk til at arrangere et møde eller en konsultation, og den indeholder normalt dato, klokkeslæt og formål med opkaldet.
 
@@ -47,7 +48,6 @@ Som afslutning på din e-mail skal du takke personen for at have taget sig tid o
 
 - Som afslutning på din e-mail bør du takke personen for hans/hendes tid og tilføje dine kontaktoplysninger.
 
-
 ## Grundlæggende struktur
 
 - Præsenter dig selv og forklar, hvorfor den person, du inviterer, skal deltage i din samtale.
@@ -61,7 +61,6 @@ Som afslutning på din e-mail skal du takke personen for at have taget sig tid o
 - Tak personen for hans/hendes tid.
 
 - Tilføj dine kontaktoplysninger.
-
 
 ## Tips
 
@@ -107,11 +106,11 @@ Med venlig hilsen,
 
 ---
 
-Kære ____,
+Kære \_\_\_\_,
 
 Det er os en stor fornøjelse at invitere dig til vores kommende begivenhed.
 
-Arrangementet finder sted på _____ på _____.
+Arrangementet finder sted på **\_** på **\_**.
 
 Vi håber, at du kan deltage i det, der lover at blive en meget mindeværdig begivenhed.
 

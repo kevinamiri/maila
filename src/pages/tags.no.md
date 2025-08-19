@@ -7,6 +7,7 @@ date: 2022-12-25
 slug: /no/tags
 path: /no/tags
 lang: no
-tags: ['labels', 'tags']
+tags: ["labels", "tags"]
 ---
+
 Leter du etter informasjon om spesifikke bloggpostmerker? Denne listen har dem alle!

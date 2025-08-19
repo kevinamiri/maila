@@ -7,10 +7,10 @@ header: "Craft a compelling mission statement that defines your organization's p
 usage: "To use this tool, simply input your organization's name, keywords, objectives, and values. This AI model will then generate a clear, unique, and engaging mission statement based on your input."
 placeholder: "Organization Name: Green Planet\n Objectives: Environmental conservation, sustainability \nValues: Protecting nature, eco-friendly practices\nKeywords: Green living, eco-friendly, sustainability"
 help_hint: "What is the name of your organization, and what are its objectives and values? Provide some keywords related to your organization's goals, and then our platform will generate a mission statement based on your input."
-tags: [Copywriting,Tools,Templates,Mission Statement]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Mission Statement]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-14"
 slug: /en/tools/copywriting/mission-statement
 path: /en/tools/copywriting/mission-statement
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1050"
 product_type: "1050"
 ---
+
 # AI Mission Statement Generator
 
 Craft a compelling mission statement that defines your organization's purpose with the help of our AI-powered Mission Statement Generator.

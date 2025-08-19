@@ -13,7 +13,7 @@ lang: "da"
 icon: "prospectingEmail"
 hasCustomTemplate: false
 tone: true
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "21"
 url: "/app/promotional-email"
 ---
@@ -27,5 +27,5 @@ Dette værktøj er optimeret til at give salgsteams mulighed for at skrive gode 
 ## Email genrator i et overblik:
 
 1. Skabelonen kan generere salgsmails på få sekunder uden at gå på kompromis med skrivekvaliteten.
-2. Modellen er præ-trænet på tusindvis af effektive salgsmails og kan generere en tekst, der passer til din virksomheds behov. 
+2. Modellen er præ-trænet på tusindvis af effektive salgsmails og kan generere en tekst, der passer til din virksomheds behov.
 3. Den skaber e-mails baseret på forskellige scenarier, toner og intentioner.

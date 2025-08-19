@@ -7,10 +7,10 @@ header: "Beeindrucken Sie Ihre potenziellen Kunden mit einem überzeugenden Verk
 usage: "Um diese Vorlage zu verwenden, geben Sie einfach Ihr Produkt oder Ihre Dienstleistung, die Zielgruppe und die wichtigsten Verkaufsargumente ein. Der KI-Verkaufsgesprächsgenerator erstellt dann auf Basis Ihrer Eingaben einen individuellen, überzeugenden und effektiven Verkaufspitch."
 placeholder: "Produkt: Home-Sicherheitssystem\nZielgruppe: Hausbesitzer\nHaupt-Keywords: Einfache Installation, 24/7 Überwachung, Smartphone-Integration"
 help_hint: "Was ist Ihr Produkt oder Ihre Dienstleistung und wer ist die Zielgruppe? Geben Sie einige wichtige Verkaufsargumente an und wir werden eine überzeugende Verkaufspräsentation erstellen, die auf Ihre Zielgruppe zugeschnitten ist."
-tags: [Copywriting,Tools,Templates,Sales Pitch,Website copywriting]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Sales Pitch, Website copywriting]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-18"
 slug: /de/tools/copywriting/sales-pitch
 path: /de/tools/copywriting/sales-pitch
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1064"
 product_type: "1064"
 ---
+
 # KI-Verkaufsgespräch-Generator
 
 Erstellen Sie überzeugende und effektive Verkaufsgespräche, die auf Ihre Zielgruppe zugeschnitten sind, mit Hilfe fortschrittlicher künstlicher Intelligenz. Sparen Sie Zeit und Mühe, indem Sie individuelle Verkaufsgespräche basierend auf Ihren Eingaben erstellen, sodass Sie sich auf den Abschluss des Geschäfts konzentrieren können.
@@ -49,6 +50,7 @@ Erstellen Sie überzeugende und effektive Verkaufsgespräche, die auf Ihre Zielg
 ## Anwendungsfälle
 
 Der AI Sales Pitch Generator ist perfekt für:
+
 - Startups, die ihre innovativen Produkte oder Dienstleistungen präsentieren möchten
 - Vertriebsprofis, die ein überzeugendes Verkaufsskript benötigen
 - Vermarkter, die ansprechende E-Mail-Kampagnen oder Landingpages erstellen möchten

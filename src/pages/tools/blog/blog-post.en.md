@@ -13,7 +13,7 @@ lang: en
 icon: "blogPostHeaderIcon"
 hasCustomTemplate: false
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 url: /app/blog-post
 jsonId: "448"
 product_type: "28"
@@ -41,11 +41,9 @@ Maila AI can be used for a variety of purposes, such as:
 
 - Creating detailed product descriptions
 
-
 ### Customer Reviews & Testimonials:
 
 > ⭐⭐⭐⭐⭐ "Maila AI has made content creation a breeze for my blog! The AI-generated articles are well-written and engaging." - Karen S.
-
 
 ### Pricing Options:
 

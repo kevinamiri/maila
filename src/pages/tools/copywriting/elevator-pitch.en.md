@@ -8,9 +8,9 @@ usage: "To use this tool, just input your business name, key features, and targe
 placeholder: "Input the essential details about your business or product, e.g., business name, key features, target audience, etc."
 help_hint: "What are the key aspects of your business or product that you want to focus on? Enter some keywords related to these aspects, and our AI will create an engaging elevator pitch based on your input."
 tags: [Copywriting, elevator pitch, pitch generator]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-03"
 slug: /en/tools/copywriting/elevator-pitch
 path: /en/tools/copywriting/elevator-pitch
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1036"
 product_type: "1036"
 ---
+
 # Maila.AI: AI-Copywriting Platform
 
 Unleash the power of AI to supercharge your copywriting with Maila.AI, the ultimate AI-driven copywriting platform designed to help you create captivating copy in a matter of seconds.
@@ -77,11 +78,11 @@ Don't miss out on the opportunity to revolutionize your copywriting process. [Ge
 8. Review the text and make any necessary edits or changes.
 9. Once you are satisfied with the text, copy and paste it to your desired platform or download it as a text file.
 
-1. Sign up for an account on [Maila.AI](https://www.Maila.AI).
-2. Choose the type of content you want to create from the available options.
-3. Input your desired topic or keywords and any additional information or preferences.
-4. Click 'Generate' and watch as Maila.AI produces your high-quality content within seconds.
-5. Edit and customize your generated copy to match your brand voice and messaging.
+10. Sign up for an account on [Maila.AI](https://www.Maila.AI).
+11. Choose the type of content you want to create from the available options.
+12. Input your desired topic or keywords and any additional information or preferences.
+13. Click 'Generate' and watch as Maila.AI produces your high-quality content within seconds.
+14. Edit and customize your generated copy to match your brand voice and messaging.
 
 ## More Features Explained
 

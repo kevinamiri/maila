@@ -4,7 +4,7 @@ title: "Jak napisać e-mail z zaproszeniem na rozmowę telefoniczną - przykład
 description: "Zaproszenie do rozmowy przez e-mail to świetny sposób na umówienie spotkania lub konsultacji z potencjalnym klientem."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /pl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /pl/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Call invitation email.
 
+# Call invitation email.
 
 Wiadomość e-mail z zaproszeniem do rozmowy to wiadomość wysyłana do potencjalnego klienta lub kontrahenta w celu zaproszenia go do rozmowy telefonicznej. Ten rodzaj wiadomości e-mail jest zwykle używany w celu umówienia spotkania lub konsultacji i zawiera datę, godzinę i cel rozmowy.
 
@@ -44,7 +44,6 @@ Na zakończenie wiadomości e-mail należy podziękować danej osobie za poświ�
 
 - Na końcu wiadomości e-mail należy podziękować za poświęcony czas i podać swoje dane kontaktowe.
 
-
 ## Struktura podstawowa
 
 - Przedstaw się i wyjaśnij, dlaczego osoba, którą zapraszasz, powinna dołączyć do rozmowy.
@@ -58,7 +57,6 @@ Na zakończenie wiadomości e-mail należy podziękować danej osobie za poświ�
 - Podziękuj za poświęcony czas.
 
 - Dodaj swoje dane kontaktowe.
-
 
 ## Porady
 
@@ -104,11 +102,11 @@ Z poważaniem,
 
 ---
 
-Droga ____,
+Droga \_\_\_\_,
 
 Mamy wielką przyjemność zaprosić Cię na nasze najbliższe wydarzenie.
 
-Impreza odbędzie się na stronie _____ pod adresem _____.
+Impreza odbędzie się na stronie **\_** pod adresem **\_**.
 
 Mamy nadzieję, że dołączycie do nas w tym niezapomnianym wydarzeniu.
 

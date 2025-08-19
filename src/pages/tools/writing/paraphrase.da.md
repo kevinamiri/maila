@@ -13,7 +13,7 @@ lang: "da"
 icon: "paraphrase"
 hasCustomTemplate: false
 tone: true
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "17"
 url: "/app/paraphrase"
 ---

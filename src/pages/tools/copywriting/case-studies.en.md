@@ -8,9 +8,9 @@ usage: "To use this template, simply input your case study's main subject, key p
 placeholder: "Enter the main subject or problem, along with key points and data you want to include in your case study, for instance:\n\nMain Subject: Improving customer satisfaction in a retail store\n\nKey Points: \n\n1. Identifying customer pain points\n2. Implementing effective solutions\n3. Evaluating the impact of the changes\n\nData: Increase in average customer satisfaction rating from 3.5 to 4.2\n\nKeywords: retail, customer satisfaction, improvement"
 help_hint: "What is the main subject or problem for your case study? Provide key points, data, or statistics you want to include, and we will create a comprehensive case study based on your input."
 tags: [Copywriting, case study generator, AI case study]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-03"
 slug: /en/tools/copywriting/case-studies
 path: /en/tools/copywriting/case-studies
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1033"
 product_type: "1033"
 ---
+
 # Maila.AI - The Ultimate AI-Copywriting Platform
 
 Welcome to Maila.AI, an innovative AI-powered copywriting platform that is designed to meet all your content creation needs. With Maila.AI, you can generate high-quality, engaging, and original copy in just a few seconds. Say goodbye to writer's block and hello to unlimited creativity!

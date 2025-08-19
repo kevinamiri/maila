@@ -12,12 +12,12 @@ const paths = {
   pages: `${__dirname}/src/pages`,
   images: `${__dirname}/src/img/`,
   articles: `${__dirname}/src/data/articles`,
-  sheets: `${__dirname}/src/data/sheets`,
+  sheets: `${__dirname}/src/data/sheets`
 }
 
 const siteMetadata = {
   title: `MAILA AI`,
-  description: `AI Copywriting & Writing Assistant`,
+  description: `AI Content Platform`,
   siteUrl,
   image: "img/logo/mstile-150x150.png",
   author: { name: "Kevin Amiri" },

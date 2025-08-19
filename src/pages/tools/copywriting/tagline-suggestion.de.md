@@ -13,10 +13,11 @@ lang: "de"
 icon: "taglineIcon"
 hasCustomTemplate: true
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "10"
 url: "/app/tagline-suggestion"
 ---
+
 # AI-gesteuerter Tagline-Generator
 
 ## Einleitung

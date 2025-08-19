@@ -15,7 +15,9 @@ dist/
 createPost/*
 bash.bash
 .cursorrules
+.env.development
 
+.env.production
 #amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*
@@ -34,6 +36,7 @@ amplifyxc.config
 # /src/aws-exports.js
 # configureAmplify.js
 # amplify/team-provider-info.json
-
+prompt.md
+*.py
 
 cognito.js

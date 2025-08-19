@@ -4,7 +4,7 @@ title: "User Content Generation Policy"
 description: "The User Content Generation Policy is a policy that governs how users can generate content on the platform."
 template: about
 templateKey: about
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-01-16"
 slug: /en/legal/user-content-generation-policy
 path: /en/legal/user-content-generation-policy
@@ -15,6 +15,7 @@ imageStatus: false
 ---
 
 ```toc
+
 ```
 
 ## User Content Generation Policy

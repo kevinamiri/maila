@@ -4,7 +4,7 @@ title: "Art of Writing Engaging Copy"
 description: "In this article, we’ll share some tips for writing effective copy that engages your audience and drives results."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-01-16"
 slug: /en/blog/2022/01/art-of-writing-engaging-copy
 path: /en/blog/2022/01/art-of-writing-engaging-copy
@@ -15,8 +15,6 @@ imageStatus: false
 ---
 
 In this article, we'll cover the basics of writing engaging copy. Copywriting is an art and a science, and it can be the difference between a successful campaign and a failed one.
-
-
 
 ### Best practices Summary
 
@@ -35,7 +33,6 @@ Here are some best practices to keep in mind:
 - Consider using humor
 - Consider using questions
 - Consider using storytelling
-
 
 ## The basics of copywriting
 
@@ -69,7 +66,6 @@ Tone and voice are two of the most important elements of writing style. Tone ref
 
 Choose a tone and voice that are consistent with your brand.
 
-
 | Example             | Industry   | Tone and Voice              |
 | ------------------- | ---------- | --------------------------- |
 | Slack               | Technology | Clear, concise and human    |
@@ -83,7 +79,6 @@ Choose a tone and voice that are consistent with your brand.
 | Cosmopolitan        | Lifestyle  | Bold and empowering         |
 | National Geographic | Travel     | Informative and inspiring   |
 | Vogue               | Fashion    | Sophisticated and glamorous |
-
 
 ### Headlines and subheads
 
@@ -116,6 +111,7 @@ There are two types of lists:
 - Numbered lists
 
 Bulleted lists are used to list items that don't need to be in any particular order. Numbered lists are used to list items that need to be in a specific order
+
 ### Images and videos
 
 Images and videos are a great way to illustrate key points and make your content more engaging. They also help break up text and make it easier to read.
@@ -143,6 +139,7 @@ Humor is a great way to engage your audience and make your content more memorabl
 ### Questions
 
 Questions are a great way to engage your audience and make your content more memorable
+
 ## Conclusion
 
 The first step in any good copywriting process is to understand your audience. What are their needs? What are their pain points? What are their goals? Once you understand your audience, you can begin to craft copy that speaks to them directly.

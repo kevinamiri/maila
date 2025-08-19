@@ -24,7 +24,17 @@
       "ro": "",
       "bg": "",
       "zh": "",
-      "no": ""
+      "no": "",
+      "ha": "",
+      "ja": "",
+      "ko": "",
+      "ar": "",
+      "vi": "",
+      "hi": "",
+      "th": "",
+      "tr": ""
+
+      
     },
     {
       "id": "02",
@@ -48,7 +58,16 @@
       "lv": "blog",
       "ro": "blog",
       "bg": "blog",
-      "zh": "blog"
+      "zh": "blog",
+      "no": "blogg",
+      "ha": "blog",
+      "ja": "blog",
+      "ko": "blog",
+      "ar": "blog",
+      "vi": "blog",
+      "tr": "blog",
+      "th": "blog"
+      
     },
     {
       "id": "03",
@@ -74,6 +93,7 @@
       "bg": "about",
       "zh": "about",
       "no": "om-meg"
+
     },
     {
       "id": "04",
@@ -98,7 +118,14 @@
       "ro": "contact",
       "bg": "contact",
       "zh": "contact",
-      "no": "kontakt"
+      "no": "kontakt",
+      "ha": "contact",
+      "ja": "contact",
+      "ko": "contact",
+      "ar": "contact",
+      "vi": "contact",
+      "tr": "contact",
+      "th": "contact"
     },
     {
       "id": "05",

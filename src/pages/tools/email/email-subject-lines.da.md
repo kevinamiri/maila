@@ -8,8 +8,8 @@ usage: "For at bruge dette værktøj skal du blot indtaste formålet med din e-m
 placeholder: "Indtast din emails formål, målgruppe eller relevante nøgleord, f.eks .:\n\n- Formål: Nyhedsbrev, Salgsfremmende, Invitation til arrangement\n- Målgruppe: Iværksættere, Modeentusiaster, Fitness-entusiaster\n- Nøgleord: Gratis levering, Eksklusiv rabat, Begrænset tids tilbud"
 help_hint: "Hvad er formålet med din e-mail eller hvem er din målgruppe? Indtast eventuelle betydningsfulde nøgleord eller sætninger, og vores AI vil generere kraftfulde emnelinjer til din e-mail for at øge dine åbningsrater."
 tags: [Copywriting, Tools, Templates, Email Subject Lines]
-template: 'tools-body'
-author: 'Kevin Levin'
+template: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-17"
 slug: /da/tools/email/email-subject-line
 path: /da/tools/email/email-subject-line
@@ -48,11 +48,12 @@ extraFields:
       - "clickbait"
     placeholder: "questions"
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 jsonId: "1197"
 product_type: "30"
 image: ../../blog/2022/images/maila-email-subject.png
 ---
+
 # AI E-mail-emne Linjegenerator
 
 Forøg dine e-mail åbningsrater med fængende emnelinjer
@@ -108,13 +109,13 @@ A: Ja, du kan gennemgå, redigere og tilpasse de AI-genererede emnelinjer, så d
 
 ## Kundeudtalelser
 
->"AI Email Subject Lines Generator har dramatisk forbedret åbningsraterne for vores e-mail kampagner. Vores abonnenter er mere engagerede end nogensinde takket være de fængende emnelinjer, der fanger deres opmærksomhed. Kan varmt anbefales!"
+> "AI Email Subject Lines Generator har dramatisk forbedret åbningsraterne for vores e-mail kampagner. Vores abonnenter er mere engagerede end nogensinde takket være de fængende emnelinjer, der fanger deres opmærksomhed. Kan varmt anbefales!"
 >
->_Jane Smith, Marketing Manager_
+> _Jane Smith, Marketing Manager_
 >
->"Jeg plejede at have svært ved at finde effektive emnelinjer til mine e-mail kampagner. Dette værktøj har gjort en stor forskel både for at spare tid og for at forbedre resultaterne. Jeg kan slet ikke forestille mig at køre en e-mail kampagne uden det nu."
+> "Jeg plejede at have svært ved at finde effektive emnelinjer til mine e-mail kampagner. Dette værktøj har gjort en stor forskel både for at spare tid og for at forbedre resultaterne. Jeg kan slet ikke forestille mig at køre en e-mail kampagne uden det nu."
 >
->_John Doe, Iværksætter_
+> _John Doe, Iværksætter_
 
 ## Eksempel
 

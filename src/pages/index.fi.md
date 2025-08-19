@@ -10,14 +10,14 @@ date: 2020-12-25
 image: ../img/logo.png
 sectionlabel: "Lisää toimintoja"
 section1:
-    title: "Sisällön yksinkertaistaminen"
-    description: "Yksinkertaista artikkeleita, esseitä ja raportteja edistyneellä tekoälyllä."
+  title: "Sisällön yksinkertaistaminen"
+  description: "Yksinkertaista artikkeleita, esseitä ja raportteja edistyneellä tekoälyllä."
 section2:
-    title: " Sisällön kääntäminen"
-    description: "Käännä artikkeleita, esseitä ja raportteja yhdestä kielestä toiseen."
+  title: " Sisällön kääntäminen"
+  description: "Käännä artikkeleita, esseitä ja raportteja yhdestä kielestä toiseen."
 section3:
-    title: " Virheiden korjaaminen"
-    description: "Paranna sisältösi laatua korjaamalla kielioppivirheitä, kirjoitusvirheitä ja tyylivirheitä."
+  title: " Virheiden korjaaminen"
+  description: "Paranna sisältösi laatua korjaamalla kielioppivirheitä, kirjoitusvirheitä ja tyylivirheitä."
 tables:
   button: "Rekisteröidy"
   link: "/app"
@@ -78,7 +78,7 @@ H01051: "Aloita kirjoittaminen ensimmäisellä 25 000 sanan ilmaisella kokeiluke
 H01047: "Nämä tulokset ovat valmiiksi luotuja ja täysin tekoälyn valtuuttamia"
 H0118:
   A0117q:
-    - Onko tekoälyn luoma sisältö plagioimatta? 
+    - Onko tekoälyn luoma sisältö plagioimatta?
     - Tekoälyn luoma sisältö on plagiointivapaata ja tarkkaa.
     - Miten tekoälyn tuottamaa tekstinkäsittelyä voidaan käyttää yrityksessä?
     - Tekoälyavusteinen copy-writing tarkoittaa sitä, että tekoälyä käytetään kirjoittamaan sisältöä yrityksellesi. Tämäntyyppistä copy-writingia voidaan käyttää yrityksesi moniin eri osa-alueisiin, kuten tuotekuvauksiin, sosiaalisen median päivityksiin, sähköpostin otsikkoriviin ja muuhun.
@@ -90,7 +90,7 @@ H0118:
     - Tuotamme sisältöä reaaliajassa, joten tulokset ovat valmiina heti. Koska kopioiden tuottamismoottorimme on täysin automatisoitu, voimme myös skaalata tuotoksemme tarpeittesi mukaan.
     - Voinko luoda sisältöä muilla kielillä?
     - Kyllä, tuemme muitakin kieliä kuin englantia. Laadukkaimmat käännökset ovat tällä hetkellä saatavilla englanniksi.
-H01194: 
+H01194:
   - AI Copywriting Tool
   - AI copywriting tool that can help you write better copy for your website or marketing campaign.
   - AI Email Generation Tool
@@ -101,6 +101,5 @@ L0401:
 path: /fi/
 slug: /fi/
 ---
-
 
 Tekoälypohjaiset copywriting-työkalut on suunniteltu auttamaan sinua kirjoittamaan kiinnostavampaa sisältöä.

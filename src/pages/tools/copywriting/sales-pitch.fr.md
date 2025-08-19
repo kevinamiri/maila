@@ -7,10 +7,10 @@ header: "Impressionnez vos prospects avec un argumentaire de vente convaincant c
 usage: "Pour utiliser ce modèle, il vous suffit de saisir votre produit ou service, votre public cible et vos principaux arguments de vente. Le générateur de pitch de vente IA créera alors un argumentaire de vente personnalisé, persuasif et efficace basé sur vos informations."
 placeholder: "Produit : Système de sécurité domestique\nPublic cible : Propriétaires\nPoints de vente clés : Installation facile, surveillance 24/7, intégration smartphone"
 help_hint: "Quel est votre produit ou service et quel est votre public cible ? Fournissez quelques points clés de vente et nous créerons une argumentation persuasive adaptée à votre public."
-tags: [Copywriting,Tools,Templates,Sales Pitch,Website copywriting]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+tags: [Copywriting, Tools, Templates, Sales Pitch, Website copywriting]
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-18"
 slug: /fr/tools/copywriting/sales-pitch
 path: /fr/tools/copywriting/sales-pitch
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1064"
 product_type: "1064"
 ---
+
 # Générateur de pitch de vente AI
 
 Réalisez des présentations de vente persuasives et efficaces adaptées à votre public cible en utilisant une intelligence artificielle avancée. Gagnez du temps et des efforts en générant des discours de vente personnalisés en fonction de vos entrées, ce qui vous permet de vous concentrer sur la conclusion de la vente.
@@ -49,6 +50,7 @@ Réalisez des présentations de vente persuasives et efficaces adaptées à votr
 ## Cas d'utilisation
 
 Le Générateur de Discours de Vente par IA est parfait pour :
+
 - Les startups cherchant à présenter leurs produits ou services innovants
 - Les professionnels de la vente ayant besoin d'un script de vente persuasif
 - Les marketeurs cherchant à créer des campagnes de mails ou des pages de destination convaincantes

@@ -73,10 +73,29 @@ export const pageQuery = graphql`
         node {
           articles {
             en
+            zh
+            es
+            de
+            ja
+            fr
+            pt
+            ko
+            ar
+            it
+            hi
+            id
+            vi
+            tr
+            th
+            pl
             sv
             no
             da
             fi
+            nl
+            ru
+            cs
+            ha
           }
         }
       }

@@ -13,7 +13,7 @@ lang: en
 icon: "taglineIcon"
 hasCustomTemplate: true
 tone: false
-templateKey: 'tools-body'
+templateKey: "tools-body"
 jsonId: "1020"
 product_type: "10"
 url: /app/tagline-suggestion

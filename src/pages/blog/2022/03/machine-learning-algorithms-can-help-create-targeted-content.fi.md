@@ -4,7 +4,7 @@ title: "Koneoppimisen algoritmit voivat auttaa luomaan kohdennettua sisältöä"
 description: "Koneoppimisalgoritmeja voidaan käyttää suurten tietokokonaisuuksien analysointiin ja oppimiseen kuvioiden tunnistamiseksi. Tätä voidaan sitten käyttää sellaisten sisältöjen luomiseen, jotka on suunnattu tietyille kohderyhmille heidän kiinnostuksen kohteidensa perusteella. Koneoppimisen avulla yritykset voivat luoda sisältöä, joka on merkityksellisempää asiakkailleen ja joka auttaa lisäämään myyntiä."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-18"
 slug: /fi/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content
 path: /fi/blog/2022/03/machine-learning-algorithms-can-help-create-targeted-content
@@ -13,6 +13,7 @@ tags: ["AIDA copywriting formula"]
 image: ../images/terms.jpg
 imageStatus: false
 ---
+
 ## AIDA copywriting-kehys tekoälyn avulla
 
 Digitaalisella aikakaudella brändien on keskityttävä siihen, että ne saavat ihmiset kiinnittämään huomiota, kiinnostumaan tarjonnastaan ja sitten motivoimaan heidät toimimaan ostamalla tuotteen tai palvelun.
@@ -29,7 +30,6 @@ AIDA-mallia käytettäessä on tärkeää pitää mielessä eri vaiheet, jotka a
 
 Aloita luomalla tarttuva otsikko tai iskulause, joka kiinnittää ihmisten huomion.
 
-
 ### Luo kiinnostusta:
 
 Käytä seuraavaksi mielenkiintoisia kuvia tai laadi provosoiva kysymys herättääksesi kiinnostusta tuotetta tai palvelua kohtaan.
@@ -40,9 +40,7 @@ Keskity sitten tuotteesi tai palvelusi hyötyihin ja siihen, miten se voi parant
 
 ### Kannusta toimintaan:
 
-
 Lopuksi tee ihmisten on helppo ryhtyä toimiin antamalla selkeät ohjeet ja toimintakutsu (Call To Action, CTA).
-
 
 ### Muita vinkkejä AIDA:n varrella
 
@@ -55,4 +53,5 @@ On olemassa useita vinkkejä asiakkaiden huomion kiinnittämiseen ja tuotteiden 
 - Luodaan myönteinen ympäristö, joka edistää asiakkaiden vuorovaikutusta.
 
 ### Tekoälyalgoritmit voivat auttaa luomaan kohdennettua sisältöä
+
 Koneoppimisalgoritmeja voidaan käyttää suurten tietokokonaisuuksien analysointiin ja oppimiseen kuvioiden tunnistamiseksi. Tätä voidaan sitten käyttää sellaisten sisältöjen luomiseen, jotka on suunnattu tietyille kohderyhmille heidän kiinnostuksen kohteidensa ja tarpeidensa perusteella. Lisäksi tekoälyä voidaan käyttää luomaan automaattisesti otsikoita ja otsikoita, jotka todennäköisemmin kiinnittävät ihmisten huomion.

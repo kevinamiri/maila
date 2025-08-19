@@ -4,7 +4,7 @@ title: "Kuidas kirjutada kõne kutse e-kirja koos näidetega"
 description: "Helistamise kutse e-kiri on suurepärane võimalus korraldada kohtumine või konsultatsioon potentsiaalse kliendi või kliendiga."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /et/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /et/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Kutsekõne e-kiri.
 
+# Kutsekõne e-kiri.
 
 Kutsekiri on e-kiri, mis saadetakse potentsiaalsele kliendile või kliendile, et kutsuda teda telefonikõnele. Seda tüüpi e-kirja kasutatakse tavaliselt kohtumise või konsultatsiooni kokkuleppimiseks ning see sisaldab tavaliselt kuupäeva, kellaaega ja kõne eesmärki.
 
@@ -44,7 +44,6 @@ E-kirja lõpetamiseks peate tänama isikut tema aja eest ja lisama oma kontaktan
 
 - E-kirja lõpus peaksite tänama isikut tema aja eest ja lisama oma kontaktandmed.
 
-
 ## Põhistruktuur
 
 - Tutvustage ennast ja selgitage, miks peaks kutsutav isik teie kõne osalema.
@@ -58,7 +57,6 @@ E-kirja lõpetamiseks peate tänama isikut tema aja eest ja lisama oma kontaktan
 - Tänage inimest tema aja eest.
 
 - Lisage oma kontaktandmed.
-
 
 ## Nõuanded
 
@@ -104,11 +102,11 @@ Lugupidamisega,
 
 ---
 
-Lugupeetud ____,
+Lugupeetud \_\_\_\_,
 
 Meil on suur rõõm kutsuda teid meie eelseisvale üritusele.
 
-Üritus toimub aadressil _____ aadressil _____.
+Üritus toimub aadressil **\_** aadressil **\_**.
 
 Loodame, et saate meiega ühineda, mis tõotab olla väga meeldejääv sündmus.
 

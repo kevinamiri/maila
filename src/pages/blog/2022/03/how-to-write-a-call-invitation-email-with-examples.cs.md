@@ -4,7 +4,7 @@ title: "Jak napsat e-mail s pozvánkou na schůzku s příklady"
 description: "E-mailová pozvánka na schůzku je skvělý způsob, jak si s potenciálním zákazníkem nebo klientem domluvit schůzku nebo konzultaci."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /cs/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /cs/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -15,10 +15,10 @@ imageStatus: false
 ---
 
 ```toc
+
 ```
 
 # E-mail s pozvánkou na výzvu.
-
 
 E-mail s pozvánkou na hovor je e-mail, který je zaslán potenciálnímu zákazníkovi nebo klientovi s cílem pozvat ho na telefonní hovor. Tento typ e-mailu se obvykle používá za účelem sjednání schůzky nebo konzultace a obvykle obsahuje datum, čas a účel hovoru.
 
@@ -48,7 +48,6 @@ Na závěr e-mailu je třeba poděkovat osobě za její čas a přidat své kont
 
 - Na závěr e-mailu byste měli poděkovat za čas, který vám věnoval, a přidat své kontaktní údaje.
 
-
 ## Základní struktura
 
 - Představte se a vysvětlete, proč by se pozvaná osoba měla připojit k vašemu hovoru.
@@ -62,7 +61,6 @@ Na závěr e-mailu je třeba poděkovat osobě za její čas a přidat své kont
 - Poděkujte osobě za její čas.
 
 - Přidejte své kontaktní údaje.
-
 
 ## Tipy
 
@@ -108,11 +106,11 @@ S pozdravem,
 
 ---
 
-Drahé ____,
+Drahé \_\_\_\_,
 
 Je nám velkým potěšením pozvat vás na naši nadcházející akci.
 
-Akce se koná na adrese _____ na adrese _____.
+Akce se koná na adrese **\_** na adrese **\_**.
 
 Doufáme, že se k nám připojíte a že to bude nezapomenutelná událost.
 

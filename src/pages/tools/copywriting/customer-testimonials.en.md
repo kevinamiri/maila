@@ -8,9 +8,9 @@ usage: "To use this template, simply input your product or service name, keyword
 placeholder: "Provide essential details or keywords about the product or service, e.g. product name such as 'yoga mat', key features such as 'non-slip', 'eco-friendly', or customer names and locations (optional)."
 help_hint: "Enter a few keywords or details about your product or service, and we'll create a compelling customer testimonial based on your input. Optionally, you may also provide customer names and locations."
 tags: [Copywriting, customer testimonials, AI testimonial generator]
-template: 'tools-body'
-templateKey: 'tools-body'
-author: 'Kevin Levin'
+template: "tools-body"
+templateKey: "tools-body"
+author: "Kevin Levin"
 date: "2023-04-03"
 slug: /en/tools/copywriting/customer-testimonials
 path: /en/tools/copywriting/customer-testimonials
@@ -23,6 +23,7 @@ tone: false
 jsonId: "1034"
 product_type: "1034"
 ---
+
 # AI Copywriting Platform - Maila.AI
 
 Maila.AI is the ultimate AI-powered copywriting platform designed to help you create compelling content, generate ideas, and amplify your written communication. Our state-of-the-art technology will revolutionize the way you create content, saving you time and effort while delivering outstanding results.

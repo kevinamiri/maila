@@ -13,7 +13,7 @@ lang: "sv"
 icon: "prospectingEmail"
 hasCustomTemplate: false
 tone: true
-templateKey: 'tools-body'
+templateKey: "tools-body"
 product_type: "21"
 url: "/app/promotional-email"
 ---

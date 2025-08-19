@@ -4,7 +4,7 @@ title: "Cómo redactar un correo electrónico de invitación a una reunión con 
 description: "Un correo electrónico de invitación a una llamada es una buena forma de concertar una reunión o una consulta con un cliente potencial"
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-03-21"
 slug: /es/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
 path: /es/blog/2022/03/how-to-write-a-call-invitation-email-with-examples
@@ -13,8 +13,8 @@ tags: ["Email", "ai email generator", "Invitation"]
 image: ../images/phone-call-invitation.jpg
 imageStatus: false
 ---
-# Llamada de invitación por correo electrónico.
 
+# Llamada de invitación por correo electrónico.
 
 Un correo electrónico de invitación a una llamada es un correo electrónico que se envía a un cliente potencial para invitarle a una llamada telefónica. Este tipo de correo electrónico se utiliza normalmente para concertar una reunión o consulta, y suele incluir la fecha, la hora y el objetivo de la llamada.
 
@@ -44,7 +44,6 @@ Para terminar tu correo electrónico, tendrás que agradecer a la persona su tie
 
 - Para terminar tu correo electrónico, debes agradecer a la persona su tiempo y añadir tu información de contacto.
 
-
 ## Estructura básica
 
 - Preséntese y explique por qué la persona a la que invita debería unirse a su llamada.
@@ -58,7 +57,6 @@ Para terminar tu correo electrónico, tendrás que agradecer a la persona su tie
 - Agradece a la persona su tiempo.
 
 - Añade tu información de contacto.
-
 
 ## Consejos
 
@@ -104,11 +102,11 @@ Sinceramente,
 
 ---
 
-Estimado ____,
+Estimado \_\_\_\_,
 
 Es un gran placer para nosotros invitarle a nuestro próximo evento.
 
-El acto se celebrará en _____ en _____.
+El acto se celebrará en **\_** en **\_**.
 
 Esperamos que pueda acompañarnos en lo que promete ser una ocasión memorable.
 

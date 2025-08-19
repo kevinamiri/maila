@@ -4,7 +4,7 @@ title: "Rådgivningsstrategier for å få folk til å svare på e -postene dine"
 description: "Ikke send lange e-postmeldinger til folk du vil jobbe med.  Bare legg poenget ditt så raskt som mulig og hold det kort."
 template: blog-body
 templateKey: blog-body
-author: 'Kevin Levin'
+author: "Kevin Levin"
 date: "2022-06-14"
 slug: /no/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
 path: /no/blog/2022/06/advice-strategies-for-getting-people-to-reply-to-your-emails
@@ -37,5 +37,3 @@ imageStatus: true
 10. Vent et par dager før du sender dem en e-post igjen (bare en 'følg opp'-e-post ser ut til å være best - for mange er irriterende) fordi det er sannsynlig at det bare var noe som forstyrret dem (som dem selv). Eller ikke følg opp i det hele tatt, kanskje vent på en annen mulighet, noen ganger er ballen i den andre retten og noen ganger er ballen blitt feid fra domstolen helt på den vindfulle svarte isen til tiden!
 
 11. Prøv denne emnelinjen for ekstra kraft: 'Hjelp: [navn]' - en emnelinje som også fungerer via tekstmelding i følge veteranjournalist og manusforfatter Paul Laverty som jeg alltid tekster når han reiser fordi jeg vet at han ikke svarer, men han gjør det vanligvis når han kommer hjem fordi alle liker noen som spør dem for hjelp (så lenge de ikke er noen som er irriterende!) [/Slutt på råd]
-
-

@@ -127,7 +127,6 @@ module.exports = {
 
   //märkesverktyg
   CT01: "Varumärkesverktyg",
-  B01: "Uppdragsbeskrivning",
   B010: "Uppdragsbeskrivning för varumärket",
   B02: "Vision Statement",
   B020: "Brand Vision Statement",
@@ -138,14 +137,16 @@ module.exports = {
   AG0021: "Google Ad Header",
   AG0022: "Beskrivning av Google-annonsen",
   //ads tools
-  A1203: "Ads Tools",
-  AG0021: "Google Ad Header",
-  AG0022: "Google Ad Description",
+  // REMOVE these duplicates:
+  // A1203: "Ads Tools",
+  // AG0021: "Google Ad Header",
+  // AG0022: "Google Ad Description",
   //writing tools
+  // REMOVE this duplicate:
+  // LP01: "Landing Page rubrik",
   WT01: "Skrivverktyg",
   RH004: "Parapherase",
   GC009: "Bra grammatik",
-  LP01: "Landing Page rubrik",
   LP02: "Landing Page rubrik beskrivning",
   LP03: "Meta beskrivningar",
   LP04: "Frågegenerator",
@@ -421,19 +422,18 @@ module.exports = {
   E56730: "t.ex. en återanvändbar kopp som håller kaffet varmt och är miljövänlig.",
   N78930: "Komponera",
 
-
-  L12330: "Google Ad Header",
-  T00930: "Google Ad Header",
-  D76530: "Den kan användas för att skapa en Google Ad Header för din sida.",
-  H43230: "Skriv några stycken, sedan skapar vi en Google Ad Header för den givna texten.",
-  E56730: "t.ex. en återanvändbar kopp som håller kaffet varmt och är miljövänlig.",
-  N78930: "Komposit",
-
-  L12331: "Google Annonsbeskrivning",
-  T00931: "Beskrivning av Google-annons",
-  D76531: "Den kan användas för att skapa en Google Annonsbeskrivning för din sida.",
-  H43231: "Skriv några stycken, sedan skapar vi en Google Ad Description för den givna texten.",
+  L12331: "Google Ad Header",
+  T00931: "Google Ad Header",
+  D76531: "Den kan användas för att skapa en Google Ad Header för din sida.",
+  H43231: "Skriv några stycken, sedan skapar vi en Google Ad Header för den givna texten.",
   E56731: "t.ex. en återanvändbar kopp som håller kaffet varmt och är miljövänlig.",
-  N78931: "Komponera",
+  N78931: "Komposit",
+
+  L12332: "Google Annonsbeskrivning",
+  T00932: "Beskrivning av Google-annons",
+  D76532: "Den kan användas för att skapa en Google Annonsbeskrivning för din sida.",
+  H43232: "Skriv några stycken, sedan skapar vi en Google Ad Description för den givna texten.",
+  E56732: "t.ex. en återanvändbar kopp som håller kaffet varmt och är miljövänlig.",
+  N78932: "Komponera",
 
 };
