@@ -88,11 +88,8 @@
     "graphql": "16.7.1"
   },
   "scripts": {
-    "predevelop": "npm run format",
     "develop": "NODE_OPTIONS=--max-old-space-size=8096 gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
-    "format": "prettier --write \"src/pages/**/*.md\"",
-    "prebuild": "npm run format",
     "deploy": "gatsby-plugin-s3 deploy",
     "start": "gatsby serve"
   },
